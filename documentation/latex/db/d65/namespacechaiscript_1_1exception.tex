@@ -1,0 +1,42 @@
+\hypertarget{namespacechaiscript_1_1exception}{}\doxysection{chaiscript\+::exception Namespace Reference}
+\label{namespacechaiscript_1_1exception}\index{chaiscript::exception@{chaiscript::exception}}
+
+
+Classes which may be thrown during error cases when \mbox{\hyperlink{classchaiscript_1_1ChaiScript}{Chai\+Script}} is executing.  
+
+
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classchaiscript_1_1exception_1_1bad__boxed__cast}{bad\+\_\+boxed\+\_\+cast}}
+\begin{DoxyCompactList}\small\item\em Thrown in the event that a \mbox{\hyperlink{classchaiscript_1_1Boxed__Value}{Boxed\+\_\+\+Value}} cannot be cast to the desired type. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structchaiscript_1_1exception_1_1arithmetic__error}{arithmetic\+\_\+error}}
+\item 
+class \mbox{\hyperlink{classchaiscript_1_1exception_1_1reserved__word__error}{reserved\+\_\+word\+\_\+error}}
+\begin{DoxyCompactList}\small\item\em Exception thrown in the case that an object name is invalid because it is a reserved word. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classchaiscript_1_1exception_1_1illegal__name__error}{illegal\+\_\+name\+\_\+error}}
+\begin{DoxyCompactList}\small\item\em Exception thrown in the case that an object name is invalid because it contains illegal characters. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classchaiscript_1_1exception_1_1name__conflict__error}{name\+\_\+conflict\+\_\+error}}
+\begin{DoxyCompactList}\small\item\em Exception thrown in the case that an object name is invalid because it already exists in current context. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classchaiscript_1_1exception_1_1global__non__const}{global\+\_\+non\+\_\+const}}
+\begin{DoxyCompactList}\small\item\em Exception thrown in the case that a non-\/const object was added as a shared object. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classchaiscript_1_1exception_1_1guard__error}{guard\+\_\+error}}
+\begin{DoxyCompactList}\small\item\em Exception thrown if a function\textquotesingle{}s guard fails. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classchaiscript_1_1exception_1_1dispatch__error}{dispatch\+\_\+error}}
+\begin{DoxyCompactList}\small\item\em Exception thrown in the case that a method dispatch fails because no matching function was found. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structchaiscript_1_1exception_1_1arity__error}{arity\+\_\+error}}
+\item 
+class \mbox{\hyperlink{classchaiscript_1_1exception_1_1bad__boxed__dynamic__cast}{bad\+\_\+boxed\+\_\+dynamic\+\_\+cast}}
+\item 
+class \mbox{\hyperlink{classchaiscript_1_1exception_1_1bad__boxed__type__cast}{bad\+\_\+boxed\+\_\+type\+\_\+cast}}
+\item 
+struct \mbox{\hyperlink{structchaiscript_1_1exception_1_1load__module__error}{load\+\_\+module\+\_\+error}}
+\begin{DoxyCompactList}\small\item\em Thrown if an error occurs while attempting to load a binary module. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structchaiscript_1_1exception_1_1eval__error}{eval\+\_\+error}}
+\begin{DoxyCompactList}\small\item\em Errors generated during parsing or evaluation. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structchaiscript_1_1exception_1_1file__not__found__error}{file\+\_\+not\+\_\+found\+\_\+error}}
+\begin{DoxyCompactList}\small\item\em Errors generated when loading a file. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Classes which may be thrown during error cases when \mbox{\hyperlink{classchaiscript_1_1ChaiScript}{Chai\+Script}} is executing. 

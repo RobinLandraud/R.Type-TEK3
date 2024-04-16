@@ -1,0 +1,869 @@
+\hypertarget{classchaiscript_1_1parser_1_1ChaiScript__Parser}{}\doxysection{chaiscript\+::parser\+::Chai\+Script\+\_\+\+Parser$<$ Tracer, Optimizer, Parse\+\_\+\+Depth $>$ Class Template Reference}
+\label{classchaiscript_1_1parser_1_1ChaiScript__Parser}\index{chaiscript::parser::ChaiScript\_Parser$<$ Tracer, Optimizer, Parse\_Depth $>$@{chaiscript::parser::ChaiScript\_Parser$<$ Tracer, Optimizer, Parse\_Depth $>$}}
+Inheritance diagram for chaiscript\+::parser\+::Chai\+Script\+\_\+\+Parser$<$ Tracer, Optimizer, Parse\+\_\+\+Depth $>$\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{de/d56/classchaiscript_1_1parser_1_1ChaiScript__Parser}
+\end{center}
+\end{figure}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structchaiscript_1_1parser_1_1ChaiScript__Parser_1_1Char__Parser}{Char\+\_\+\+Parser}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classchaiscript_1_1parser_1_1ChaiScript__Parser_a10234e24f6c80efea18cffcbc3b8d797}\label{classchaiscript_1_1parser_1_1ChaiScript__Parser_a10234e24f6c80efea18cffcbc3b8d797}} 
+{\bfseries Chai\+Script\+\_\+\+Parser} (Tracer tracer=Tracer(), Optimizer optimizer=Optimizer())
+\item 
+\mbox{\Hypertarget{classchaiscript_1_1parser_1_1ChaiScript__Parser_a19e075f41c26599ec4d037ef57b35e32}\label{classchaiscript_1_1parser_1_1ChaiScript__Parser_a19e075f41c26599ec4d037ef57b35e32}} 
+Tracer \& {\bfseries get\+\_\+tracer} ()
+\item 
+\mbox{\Hypertarget{classchaiscript_1_1parser_1_1ChaiScript__Parser_a4280e561d6fe028c095ef1a50ee2cc35}\label{classchaiscript_1_1parser_1_1ChaiScript__Parser_a4280e561d6fe028c095ef1a50ee2cc35}} 
+Optimizer \& {\bfseries get\+\_\+optimizer} ()
+\item 
+\mbox{\Hypertarget{classchaiscript_1_1parser_1_1ChaiScript__Parser_a26e84aa8303282316ee49497b7f9bb20}\label{classchaiscript_1_1parser_1_1ChaiScript__Parser_a26e84aa8303282316ee49497b7f9bb20}} 
+{\bfseries Chai\+Script\+\_\+\+Parser} (const \mbox{\hyperlink{classchaiscript_1_1parser_1_1ChaiScript__Parser}{Chai\+Script\+\_\+\+Parser}} \&)=delete
+\item 
+\mbox{\Hypertarget{classchaiscript_1_1parser_1_1ChaiScript__Parser_a038c1ba370feb295353e96f5564c06a6}\label{classchaiscript_1_1parser_1_1ChaiScript__Parser_a038c1ba370feb295353e96f5564c06a6}} 
+\mbox{\hyperlink{classchaiscript_1_1parser_1_1ChaiScript__Parser}{Chai\+Script\+\_\+\+Parser}} \& {\bfseries operator=} (const \mbox{\hyperlink{classchaiscript_1_1parser_1_1ChaiScript__Parser}{Chai\+Script\+\_\+\+Parser}} \&)=delete
+\item 
+\mbox{\Hypertarget{classchaiscript_1_1parser_1_1ChaiScript__Parser_a288731479f8dfeadda6b1abd9bdc2c51}\label{classchaiscript_1_1parser_1_1ChaiScript__Parser_a288731479f8dfeadda6b1abd9bdc2c51}} 
+{\bfseries Chai\+Script\+\_\+\+Parser} (\mbox{\hyperlink{classchaiscript_1_1parser_1_1ChaiScript__Parser}{Chai\+Script\+\_\+\+Parser}} \&\&)=default
+\item 
+\mbox{\Hypertarget{classchaiscript_1_1parser_1_1ChaiScript__Parser_adf1c8bc7a9c8d84f31012bdb89d49d61}\label{classchaiscript_1_1parser_1_1ChaiScript__Parser_adf1c8bc7a9c8d84f31012bdb89d49d61}} 
+\mbox{\hyperlink{classchaiscript_1_1parser_1_1ChaiScript__Parser}{Chai\+Script\+\_\+\+Parser}} \& {\bfseries operator=} (\mbox{\hyperlink{classchaiscript_1_1parser_1_1ChaiScript__Parser}{Chai\+Script\+\_\+\+Parser}} \&\&)=delete
+\item 
+bool \mbox{\hyperlink{classchaiscript_1_1parser_1_1ChaiScript__Parser_aaddcec1a13ad3983e8de3f5b779510e7}{char\+\_\+in\+\_\+alphabet}} (char c, detail\+::\+Alphabet a) const
+\begin{DoxyCompactList}\small\item\em test a char in an m\+\_\+alphabet \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classchaiscript_1_1parser_1_1ChaiScript__Parser_a5002a137894603a50e4aab8ead549532}{debug\+\_\+print}} (const \mbox{\hyperlink{structchaiscript_1_1AST__Node}{AST\+\_\+\+Node}} \&t, std\+::string prepend=\char`\"{}\char`\"{}) const override
+\begin{DoxyCompactList}\small\item\em Prints the parsed ast\+\_\+nodes as a tree. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename Node\+Type $>$ }\\void \mbox{\hyperlink{classchaiscript_1_1parser_1_1ChaiScript__Parser_a16b59446bdc7cb4be5492ba01bbc5cb2}{build\+\_\+match}} (size\+\_\+t t\+\_\+match\+\_\+start, std\+::string t\+\_\+text=\char`\"{}\char`\"{})
+\begin{DoxyCompactList}\small\item\em Helper function that collects ast\+\_\+nodes from a starting position to the top of the stack into a new AST node. \end{DoxyCompactList}\item 
+auto \mbox{\hyperlink{classchaiscript_1_1parser_1_1ChaiScript__Parser_ae59cf04db2d7022bf8bdc36a7a844f2b}{Symbol\+\_\+}} (const \mbox{\hyperlink{structchaiscript_1_1utility_1_1Static__String}{utility\+::\+Static\+\_\+\+String}} \&sym)
+\begin{DoxyCompactList}\small\item\em Reads a symbol group from input if it matches the parameter, without skipping initial whitespace. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classchaiscript_1_1parser_1_1ChaiScript__Parser_a57d426a0c50879fd6027bd2390faef71}{Skip\+Comment}} ()
+\begin{DoxyCompactList}\small\item\em Skips any multi-\/line or single-\/line comment. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classchaiscript_1_1parser_1_1ChaiScript__Parser_a9c1e5ad7f05ff23e7b5cc90f9a70cdf5}{Skip\+WS}} (bool skip\+\_\+cr=false)
+\item 
+bool \mbox{\hyperlink{classchaiscript_1_1parser_1_1ChaiScript__Parser_ad5fb590c30c20e5989f8904e3c55524d}{read\+\_\+exponent\+\_\+and\+\_\+suffix}} ()
+\begin{DoxyCompactList}\small\item\em Reads the optional exponent (scientific notation) and suffix for a Float. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classchaiscript_1_1parser_1_1ChaiScript__Parser_ad6d40f2958a87ef3c1edac774947c1c4}{Float\+\_\+}} ()
+\begin{DoxyCompactList}\small\item\em Reads a floating point value from input, without skipping initial whitespace. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classchaiscript_1_1parser_1_1ChaiScript__Parser_a252874439d445a7ba1f196da8592b157}{Hex\+\_\+}} ()
+\begin{DoxyCompactList}\small\item\em Reads a hex value from input, without skipping initial whitespace. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classchaiscript_1_1parser_1_1ChaiScript__Parser_a0812f2725e65dfc424009bd124f0db68}{Int\+Suffix\+\_\+}} ()
+\begin{DoxyCompactList}\small\item\em Reads an integer suffix. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classchaiscript_1_1parser_1_1ChaiScript__Parser_aacfce24648e0ab6fe14e1884571e2c67}{Binary\+\_\+}} ()
+\begin{DoxyCompactList}\small\item\em Reads a binary value from input, without skipping initial whitespace. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classchaiscript_1_1parser_1_1ChaiScript__Parser_a278850ae3259bf7dee92f0d9df38ed05}\label{classchaiscript_1_1parser_1_1ChaiScript__Parser_a278850ae3259bf7dee92f0d9df38ed05}} 
+{\footnotesize template$<$typename T , typename ... Param$>$ }\\std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{structchaiscript_1_1eval_1_1AST__Node__Impl}{eval\+::\+AST\+\_\+\+Node\+\_\+\+Impl}}$<$ Tracer $>$ $>$ {\bfseries make\+\_\+node} (std\+::string t\+\_\+match, const int t\+\_\+prev\+\_\+line, const int t\+\_\+prev\+\_\+col, Param \&\&...param)
+\item 
+bool \mbox{\hyperlink{classchaiscript_1_1parser_1_1ChaiScript__Parser_a7ef934ceefde5931fc39c21d2fa74464}{Num}} ()
+\begin{DoxyCompactList}\small\item\em Reads a number from the input, detecting if it\textquotesingle{}s an integer or floating point. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classchaiscript_1_1parser_1_1ChaiScript__Parser_a33b9368e5469e0fa6d90aa8e989a3d46}{Id\+\_\+}} ()
+\begin{DoxyCompactList}\small\item\em Reads an identifier from input which conforms to C\textquotesingle{}s identifier naming conventions, without skipping initial whitespace. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classchaiscript_1_1parser_1_1ChaiScript__Parser_a5b89dcfac5e2de75b1ba2993c84b8df2}{Id}} (const bool validate)
+\begin{DoxyCompactList}\small\item\em Reads (and potentially captures) an identifier from input. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classchaiscript_1_1parser_1_1ChaiScript__Parser_adef7f03efc43cc1565998677fd87085e}{Arg}} (const bool t\+\_\+type\+\_\+allowed=true)
+\begin{DoxyCompactList}\small\item\em Reads an argument from input. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classchaiscript_1_1parser_1_1ChaiScript__Parser_a699667bd8e9d2b3a9458c1785c9e00d7}{Quoted\+\_\+\+String\+\_\+}} ()
+\begin{DoxyCompactList}\small\item\em Reads a quoted string from input, without skipping initial whitespace. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classchaiscript_1_1parser_1_1ChaiScript__Parser_ad439d9d1ba4a306f1dcd739b0aa0abfd}{Quoted\+\_\+\+String}} ()
+\begin{DoxyCompactList}\small\item\em Reads (and potentially captures) a quoted string from input. Translates escaped sequences. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classchaiscript_1_1parser_1_1ChaiScript__Parser_a548af2b9d301cd2d0a26307aba76d1a9}{Single\+\_\+\+Quoted\+\_\+\+String\+\_\+}} ()
+\begin{DoxyCompactList}\small\item\em Reads a character group from input, without skipping initial whitespace. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classchaiscript_1_1parser_1_1ChaiScript__Parser_a26bf7235f64003faf1986dfeafc5635e}{Single\+\_\+\+Quoted\+\_\+\+String}} ()
+\begin{DoxyCompactList}\small\item\em Reads (and potentially captures) a char group from input. Translates escaped sequences. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classchaiscript_1_1parser_1_1ChaiScript__Parser_a5cf82c2aa7d642393236652008f869a0}{Char\+\_\+}} (const char c)
+\begin{DoxyCompactList}\small\item\em Reads a char from input if it matches the parameter, without skipping initial whitespace. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classchaiscript_1_1parser_1_1ChaiScript__Parser_ae1b0c315e54c00c9766414598a25747f}{Char}} (const char t\+\_\+c)
+\begin{DoxyCompactList}\small\item\em Reads (and potentially captures) a char from input if it matches the parameter. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classchaiscript_1_1parser_1_1ChaiScript__Parser_a9c61e9a5735054d42c21c01493d43215}{Keyword\+\_\+}} (const \mbox{\hyperlink{structchaiscript_1_1utility_1_1Static__String}{utility\+::\+Static\+\_\+\+String}} \&t\+\_\+s)
+\begin{DoxyCompactList}\small\item\em Reads a string from input if it matches the parameter, without skipping initial whitespace. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classchaiscript_1_1parser_1_1ChaiScript__Parser_a51818138c136af28995d87d54d7e4e03}{Keyword}} (const \mbox{\hyperlink{structchaiscript_1_1utility_1_1Static__String}{utility\+::\+Static\+\_\+\+String}} \&t\+\_\+s)
+\begin{DoxyCompactList}\small\item\em Reads (and potentially captures) a string from input if it matches the parameter. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classchaiscript_1_1parser_1_1ChaiScript__Parser_a93e1e6d224198e5b6536bb76beadc6cc}\label{classchaiscript_1_1parser_1_1ChaiScript__Parser_a93e1e6d224198e5b6536bb76beadc6cc}} 
+bool {\bfseries is\+\_\+operator} (const std\+::string \&t\+\_\+s) const
+\item 
+bool \mbox{\hyperlink{classchaiscript_1_1parser_1_1ChaiScript__Parser_a302445cc910f5dc80c02687c333d7923}{Symbol}} (const \mbox{\hyperlink{structchaiscript_1_1utility_1_1Static__String}{utility\+::\+Static\+\_\+\+String}} \&t\+\_\+s, const bool t\+\_\+disallow\+\_\+prevention=false)
+\begin{DoxyCompactList}\small\item\em Reads (and potentially captures) a symbol group from input if it matches the parameter. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classchaiscript_1_1parser_1_1ChaiScript__Parser_a4b9300468b39615a9b47196bf3a1bea4}{Eol\+\_\+}} (const bool t\+\_\+eos=false)
+\begin{DoxyCompactList}\small\item\em Reads an end-\/of-\/line group from input, without skipping initial whitespace. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classchaiscript_1_1parser_1_1ChaiScript__Parser_a218097cd3c090f0d089ac3e081101a7f}{Eos}} ()
+\begin{DoxyCompactList}\small\item\em Reads until the end of the current statement. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classchaiscript_1_1parser_1_1ChaiScript__Parser_a25219e35a9e4d1301cd624446483a40d}{Eol}} ()
+\begin{DoxyCompactList}\small\item\em Reads (and potentially captures) an end-\/of-\/line group from input. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classchaiscript_1_1parser_1_1ChaiScript__Parser_a989c9f88c37d88b98ac49648125fd065}{Id\+\_\+\+Arg\+\_\+\+List}} ()
+\begin{DoxyCompactList}\small\item\em Reads a comma-\/separated list of values from input. Id\textquotesingle{}s only, no types allowed. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classchaiscript_1_1parser_1_1ChaiScript__Parser_a6633958ccd16cef0aeffe83315b765a2}{Decl\+\_\+\+Arg\+\_\+\+List}} ()
+\begin{DoxyCompactList}\small\item\em Reads a comma-\/separated list of values from input, for function declarations. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classchaiscript_1_1parser_1_1ChaiScript__Parser_ab6b1bd9e92cc7fdd649a9f99ce415c17}{Arg\+\_\+\+List}} ()
+\begin{DoxyCompactList}\small\item\em Reads a comma-\/separated list of values from input. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classchaiscript_1_1parser_1_1ChaiScript__Parser_a3409f43d55266033213d761258acd57c}{Container\+\_\+\+Arg\+\_\+\+List}} ()
+\begin{DoxyCompactList}\small\item\em Reads possible special container values, including ranges and map\+\_\+pairs. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classchaiscript_1_1parser_1_1ChaiScript__Parser_a6ff5baffd03e47d1c05508a4fd6d4efa}{Lambda}} ()
+\begin{DoxyCompactList}\small\item\em Reads a lambda (anonymous function) from input. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classchaiscript_1_1parser_1_1ChaiScript__Parser_abfb2395d956c70296708077af12e74d7}{Def}} (const bool t\+\_\+class\+\_\+context=false, const std\+::string \&t\+\_\+class\+\_\+name=\char`\"{}\char`\"{})
+\begin{DoxyCompactList}\small\item\em Reads a function definition from input. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classchaiscript_1_1parser_1_1ChaiScript__Parser_a04513a36a94c412e3ee6190c65f333a4}{Try}} ()
+\begin{DoxyCompactList}\small\item\em Reads a function definition from input. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classchaiscript_1_1parser_1_1ChaiScript__Parser_a96a79be70cac52fa7bd981de661d73ae}{If}} ()
+\begin{DoxyCompactList}\small\item\em Reads an if/else if/else block from input. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classchaiscript_1_1parser_1_1ChaiScript__Parser_a985fd1753bbcaf3ad868650cbd4ef7fe}{Class}} (const bool t\+\_\+class\+\_\+allowed)
+\begin{DoxyCompactList}\small\item\em Reads a class block from input. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classchaiscript_1_1parser_1_1ChaiScript__Parser_a2d76e7d6c4b25574353ec2fb39165950}{While}} ()
+\begin{DoxyCompactList}\small\item\em Reads a while block from input. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classchaiscript_1_1parser_1_1ChaiScript__Parser_acba1b318716370c33307654501127b56}{Range\+\_\+\+Expression}} ()
+\begin{DoxyCompactList}\small\item\em Reads the ranged {\ttfamily for} conditions from input. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classchaiscript_1_1parser_1_1ChaiScript__Parser_a2c811487a6bec7189603e5eee4850213}{For\+\_\+\+Guards}} ()
+\begin{DoxyCompactList}\small\item\em Reads the C-\/style {\ttfamily for} conditions from input. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classchaiscript_1_1parser_1_1ChaiScript__Parser_a077404fc1f213a00800249b9b46cafca}{For}} ()
+\begin{DoxyCompactList}\small\item\em Reads a for block from input. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classchaiscript_1_1parser_1_1ChaiScript__Parser_af59b2546657e0e0a5dafb149b9807ba7}{Case}} ()
+\begin{DoxyCompactList}\small\item\em Reads a case block from input. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classchaiscript_1_1parser_1_1ChaiScript__Parser_a9fcb3211ad412ff7ec73471fe9aabd27}{Switch}} ()
+\begin{DoxyCompactList}\small\item\em Reads a switch statement from input. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classchaiscript_1_1parser_1_1ChaiScript__Parser_a0179973d389fb3c3228c9cead4474180}{Class\+\_\+\+Block}} (const std\+::string \&t\+\_\+class\+\_\+name)
+\begin{DoxyCompactList}\small\item\em Reads a curly-\/brace C-\/style class block from input. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classchaiscript_1_1parser_1_1ChaiScript__Parser_a4a6c5fb6f16abaf85d09a3e54132b6eb}{Block}} ()
+\begin{DoxyCompactList}\small\item\em Reads a curly-\/brace C-\/style block from input. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classchaiscript_1_1parser_1_1ChaiScript__Parser_a2f56bd3f8b58f98b9ad5b8bbc1659e7d}{Return}} ()
+\begin{DoxyCompactList}\small\item\em Reads a return statement from input. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classchaiscript_1_1parser_1_1ChaiScript__Parser_a07b4a8644ea1bee9290ed86583b3a694}{Break}} ()
+\begin{DoxyCompactList}\small\item\em Reads a break statement from input. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classchaiscript_1_1parser_1_1ChaiScript__Parser_a2c84607353bf912057e1f8b505b537be}{Continue}} ()
+\begin{DoxyCompactList}\small\item\em Reads a continue statement from input. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classchaiscript_1_1parser_1_1ChaiScript__Parser_a8e14fbb6c0b2545c4602af6598abcbcb}{Dot\+\_\+\+Fun\+\_\+\+Array}} ()
+\begin{DoxyCompactList}\small\item\em Reads a dot expression(member access), then proceeds to check if it\textquotesingle{}s a function or array call. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classchaiscript_1_1parser_1_1ChaiScript__Parser_ad813654b712c331f9c8dfb7d3810a1c2}{Var\+\_\+\+Decl}} (const bool t\+\_\+class\+\_\+context=false, const std\+::string \&t\+\_\+class\+\_\+name=\char`\"{}\char`\"{})
+\begin{DoxyCompactList}\small\item\em Reads a variable declaration from input. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classchaiscript_1_1parser_1_1ChaiScript__Parser_a8da7e3c7ee8523636cf04d004a6aca5a}{Paren\+\_\+\+Expression}} ()
+\begin{DoxyCompactList}\small\item\em Reads an expression surrounded by parentheses from input. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classchaiscript_1_1parser_1_1ChaiScript__Parser_a68e433b3cddf828851ca8aaf91705bdb}{Inline\+\_\+\+Container}} ()
+\begin{DoxyCompactList}\small\item\em Reads, and identifies, a short-\/form container initialization from input. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classchaiscript_1_1parser_1_1ChaiScript__Parser_aaf35451a7b6af01d543717375a10b9f2}{Reference}} ()
+\begin{DoxyCompactList}\small\item\em Parses a variable specified with a \& aka reference. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classchaiscript_1_1parser_1_1ChaiScript__Parser_a276f23f235d328227a8780e0fa851317}{Prefix}} ()
+\begin{DoxyCompactList}\small\item\em Reads a unary prefixed expression from input. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classchaiscript_1_1parser_1_1ChaiScript__Parser_aafe0c633e52dab03cfdb47ec11bedfc4}{Value}} ()
+\begin{DoxyCompactList}\small\item\em Parses any of a group of \textquotesingle{}value\textquotesingle{} style ast\+\_\+node groups from input. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classchaiscript_1_1parser_1_1ChaiScript__Parser_ab18cb5c7b2c46942af37912edd638226}\label{classchaiscript_1_1parser_1_1ChaiScript__Parser_ab18cb5c7b2c46942af37912edd638226}} 
+bool {\bfseries Operator\+\_\+\+Helper} (const size\+\_\+t t\+\_\+precedence, std\+::string \&oper)
+\item 
+\mbox{\Hypertarget{classchaiscript_1_1parser_1_1ChaiScript__Parser_afdbe2dfb17909b804ef46823ec220976}\label{classchaiscript_1_1parser_1_1ChaiScript__Parser_afdbe2dfb17909b804ef46823ec220976}} 
+bool {\bfseries Operator} (const size\+\_\+t t\+\_\+precedence=0)
+\item 
+bool \mbox{\hyperlink{classchaiscript_1_1parser_1_1ChaiScript__Parser_aadb32320654f1a4164a1d268fbf24c82}{Map\+\_\+\+Pair}} ()
+\begin{DoxyCompactList}\small\item\em Reads a pair of values used to create a map initialization from input. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classchaiscript_1_1parser_1_1ChaiScript__Parser_a292aa7a65ead11058d0e573a933a24b0}{Value\+\_\+\+Range}} ()
+\begin{DoxyCompactList}\small\item\em Reads a pair of values used to create a range initialization from input. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classchaiscript_1_1parser_1_1ChaiScript__Parser_ad2261ed54f0e39d38b615932a9487ffb}{Equation}} ()
+\begin{DoxyCompactList}\small\item\em Parses a string of binary equation operators. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classchaiscript_1_1parser_1_1ChaiScript__Parser_a0c91c98cc96cef0a36180683290f5e95}{Class\+\_\+\+Statements}} (const std\+::string \&t\+\_\+class\+\_\+name)
+\begin{DoxyCompactList}\small\item\em Parses statements allowed inside of a class block. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classchaiscript_1_1parser_1_1ChaiScript__Parser_ac618b6edd6226e3422b1aa63a1a66f82}{Statements}} (const bool t\+\_\+class\+\_\+allowed=false)
+\begin{DoxyCompactList}\small\item\em Top level parser, starts parsing of all known parses. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classchaiscript_1_1parser_1_1ChaiScript__Parser_a6ac77745db5c0550497f825e309fda2a}\label{classchaiscript_1_1parser_1_1ChaiScript__Parser_a6ac77745db5c0550497f825e309fda2a}} 
+\mbox{\hyperlink{namespacechaiscript_ae2abddb707865864532aa3a611582f5a}{AST\+\_\+\+Node\+Ptr}} {\bfseries parse} (const std\+::string \&t\+\_\+input, const std\+::string \&t\+\_\+fname) override
+\item 
+\mbox{\Hypertarget{classchaiscript_1_1parser_1_1ChaiScript__Parser_ada1b6f308bf9a47e995c754ee06f2219}\label{classchaiscript_1_1parser_1_1ChaiScript__Parser_ada1b6f308bf9a47e995c754ee06f2219}} 
+eval\+::\+AST\+\_\+\+Node\+\_\+\+Impl\+\_\+\+Ptr$<$ Tracer $>$ {\bfseries parse\+\_\+instr\+\_\+eval} (const std\+::string \&t\+\_\+input)
+\item 
+\mbox{\hyperlink{namespacechaiscript_ae2abddb707865864532aa3a611582f5a}{AST\+\_\+\+Node\+Ptr}} \mbox{\hyperlink{classchaiscript_1_1parser_1_1ChaiScript__Parser_a2f4e339e5c209032ccf61aa971bf4520}{parse\+\_\+internal}} (const std\+::string \&t\+\_\+input, std\+::string t\+\_\+fname)
+\begin{DoxyCompactList}\small\item\em Parses the given input string, tagging parsed ast\+\_\+nodes with the given m\+\_\+filename. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classchaiscript_1_1Boxed__Value}{Boxed\+\_\+\+Value}} \mbox{\hyperlink{classchaiscript_1_1parser_1_1ChaiScript__Parser_a56be828a41291a1587ad017e67998767}{build\+Float}} (const std\+::string \&t\+\_\+val)
+\begin{DoxyCompactList}\small\item\em Parses a floating point value and returns a \mbox{\hyperlink{classchaiscript_1_1Boxed__Value}{Boxed\+\_\+\+Value}} representation of it. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classchaiscript_1_1parser_1_1ChaiScript__Parser_ab978024634e41ffb13659250a16837d3}\label{classchaiscript_1_1parser_1_1ChaiScript__Parser_ab978024634e41ffb13659250a16837d3}} 
+static \mbox{\hyperlink{classchaiscript_1_1Boxed__Value}{Boxed\+\_\+\+Value}} {\bfseries build\+Int} (const int base, const std\+::string \&t\+\_\+val, const bool prefixed)
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classchaiscript_1_1parser_1_1ChaiScript__Parser_adef7f03efc43cc1565998677fd87085e}\label{classchaiscript_1_1parser_1_1ChaiScript__Parser_adef7f03efc43cc1565998677fd87085e}} 
+\index{chaiscript::parser::ChaiScript\_Parser$<$ Tracer, Optimizer, Parse\_Depth $>$@{chaiscript::parser::ChaiScript\_Parser$<$ Tracer, Optimizer, Parse\_Depth $>$}!Arg@{Arg}}
+\index{Arg@{Arg}!chaiscript::parser::ChaiScript\_Parser$<$ Tracer, Optimizer, Parse\_Depth $>$@{chaiscript::parser::ChaiScript\_Parser$<$ Tracer, Optimizer, Parse\_Depth $>$}}
+\doxysubsubsection{\texorpdfstring{Arg()}{Arg()}}
+{\footnotesize\ttfamily template$<$typename Tracer , typename Optimizer , std\+::size\+\_\+t Parse\+\_\+\+Depth = 512$>$ \\
+bool \mbox{\hyperlink{classchaiscript_1_1parser_1_1ChaiScript__Parser}{chaiscript\+::parser\+::\+Chai\+Script\+\_\+\+Parser}}$<$ Tracer, Optimizer, Parse\+\_\+\+Depth $>$\+::Arg (\begin{DoxyParamCaption}\item[{const bool}]{t\+\_\+type\+\_\+allowed = {\ttfamily true} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Reads an argument from input. 
+
+\mbox{\Hypertarget{classchaiscript_1_1parser_1_1ChaiScript__Parser_ab6b1bd9e92cc7fdd649a9f99ce415c17}\label{classchaiscript_1_1parser_1_1ChaiScript__Parser_ab6b1bd9e92cc7fdd649a9f99ce415c17}} 
+\index{chaiscript::parser::ChaiScript\_Parser$<$ Tracer, Optimizer, Parse\_Depth $>$@{chaiscript::parser::ChaiScript\_Parser$<$ Tracer, Optimizer, Parse\_Depth $>$}!Arg\_List@{Arg\_List}}
+\index{Arg\_List@{Arg\_List}!chaiscript::parser::ChaiScript\_Parser$<$ Tracer, Optimizer, Parse\_Depth $>$@{chaiscript::parser::ChaiScript\_Parser$<$ Tracer, Optimizer, Parse\_Depth $>$}}
+\doxysubsubsection{\texorpdfstring{Arg\_List()}{Arg\_List()}}
+{\footnotesize\ttfamily template$<$typename Tracer , typename Optimizer , std\+::size\+\_\+t Parse\+\_\+\+Depth = 512$>$ \\
+bool \mbox{\hyperlink{classchaiscript_1_1parser_1_1ChaiScript__Parser}{chaiscript\+::parser\+::\+Chai\+Script\+\_\+\+Parser}}$<$ Tracer, Optimizer, Parse\+\_\+\+Depth $>$\+::Arg\+\_\+\+List (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Reads a comma-\/separated list of values from input. 
+
+\mbox{\Hypertarget{classchaiscript_1_1parser_1_1ChaiScript__Parser_aacfce24648e0ab6fe14e1884571e2c67}\label{classchaiscript_1_1parser_1_1ChaiScript__Parser_aacfce24648e0ab6fe14e1884571e2c67}} 
+\index{chaiscript::parser::ChaiScript\_Parser$<$ Tracer, Optimizer, Parse\_Depth $>$@{chaiscript::parser::ChaiScript\_Parser$<$ Tracer, Optimizer, Parse\_Depth $>$}!Binary\_@{Binary\_}}
+\index{Binary\_@{Binary\_}!chaiscript::parser::ChaiScript\_Parser$<$ Tracer, Optimizer, Parse\_Depth $>$@{chaiscript::parser::ChaiScript\_Parser$<$ Tracer, Optimizer, Parse\_Depth $>$}}
+\doxysubsubsection{\texorpdfstring{Binary\_()}{Binary\_()}}
+{\footnotesize\ttfamily template$<$typename Tracer , typename Optimizer , std\+::size\+\_\+t Parse\+\_\+\+Depth = 512$>$ \\
+bool \mbox{\hyperlink{classchaiscript_1_1parser_1_1ChaiScript__Parser}{chaiscript\+::parser\+::\+Chai\+Script\+\_\+\+Parser}}$<$ Tracer, Optimizer, Parse\+\_\+\+Depth $>$\+::Binary\+\_\+ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Reads a binary value from input, without skipping initial whitespace. 
+
+\mbox{\Hypertarget{classchaiscript_1_1parser_1_1ChaiScript__Parser_a4a6c5fb6f16abaf85d09a3e54132b6eb}\label{classchaiscript_1_1parser_1_1ChaiScript__Parser_a4a6c5fb6f16abaf85d09a3e54132b6eb}} 
+\index{chaiscript::parser::ChaiScript\_Parser$<$ Tracer, Optimizer, Parse\_Depth $>$@{chaiscript::parser::ChaiScript\_Parser$<$ Tracer, Optimizer, Parse\_Depth $>$}!Block@{Block}}
+\index{Block@{Block}!chaiscript::parser::ChaiScript\_Parser$<$ Tracer, Optimizer, Parse\_Depth $>$@{chaiscript::parser::ChaiScript\_Parser$<$ Tracer, Optimizer, Parse\_Depth $>$}}
+\doxysubsubsection{\texorpdfstring{Block()}{Block()}}
+{\footnotesize\ttfamily template$<$typename Tracer , typename Optimizer , std\+::size\+\_\+t Parse\+\_\+\+Depth = 512$>$ \\
+bool \mbox{\hyperlink{classchaiscript_1_1parser_1_1ChaiScript__Parser}{chaiscript\+::parser\+::\+Chai\+Script\+\_\+\+Parser}}$<$ Tracer, Optimizer, Parse\+\_\+\+Depth $>$\+::Block (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Reads a curly-\/brace C-\/style block from input. 
+
+\mbox{\Hypertarget{classchaiscript_1_1parser_1_1ChaiScript__Parser_a07b4a8644ea1bee9290ed86583b3a694}\label{classchaiscript_1_1parser_1_1ChaiScript__Parser_a07b4a8644ea1bee9290ed86583b3a694}} 
+\index{chaiscript::parser::ChaiScript\_Parser$<$ Tracer, Optimizer, Parse\_Depth $>$@{chaiscript::parser::ChaiScript\_Parser$<$ Tracer, Optimizer, Parse\_Depth $>$}!Break@{Break}}
+\index{Break@{Break}!chaiscript::parser::ChaiScript\_Parser$<$ Tracer, Optimizer, Parse\_Depth $>$@{chaiscript::parser::ChaiScript\_Parser$<$ Tracer, Optimizer, Parse\_Depth $>$}}
+\doxysubsubsection{\texorpdfstring{Break()}{Break()}}
+{\footnotesize\ttfamily template$<$typename Tracer , typename Optimizer , std\+::size\+\_\+t Parse\+\_\+\+Depth = 512$>$ \\
+bool \mbox{\hyperlink{classchaiscript_1_1parser_1_1ChaiScript__Parser}{chaiscript\+::parser\+::\+Chai\+Script\+\_\+\+Parser}}$<$ Tracer, Optimizer, Parse\+\_\+\+Depth $>$\+::Break (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Reads a break statement from input. 
+
+\mbox{\Hypertarget{classchaiscript_1_1parser_1_1ChaiScript__Parser_a16b59446bdc7cb4be5492ba01bbc5cb2}\label{classchaiscript_1_1parser_1_1ChaiScript__Parser_a16b59446bdc7cb4be5492ba01bbc5cb2}} 
+\index{chaiscript::parser::ChaiScript\_Parser$<$ Tracer, Optimizer, Parse\_Depth $>$@{chaiscript::parser::ChaiScript\_Parser$<$ Tracer, Optimizer, Parse\_Depth $>$}!build\_match@{build\_match}}
+\index{build\_match@{build\_match}!chaiscript::parser::ChaiScript\_Parser$<$ Tracer, Optimizer, Parse\_Depth $>$@{chaiscript::parser::ChaiScript\_Parser$<$ Tracer, Optimizer, Parse\_Depth $>$}}
+\doxysubsubsection{\texorpdfstring{build\_match()}{build\_match()}}
+{\footnotesize\ttfamily template$<$typename Tracer , typename Optimizer , std\+::size\+\_\+t Parse\+\_\+\+Depth = 512$>$ \\
+template$<$typename Node\+Type $>$ \\
+void \mbox{\hyperlink{classchaiscript_1_1parser_1_1ChaiScript__Parser}{chaiscript\+::parser\+::\+Chai\+Script\+\_\+\+Parser}}$<$ Tracer, Optimizer, Parse\+\_\+\+Depth $>$\+::build\+\_\+match (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{t\+\_\+match\+\_\+start,  }\item[{std\+::string}]{t\+\_\+text = {\ttfamily \char`\"{}\char`\"{}} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Helper function that collects ast\+\_\+nodes from a starting position to the top of the stack into a new AST node. 
+
+\begin{DoxyRefDesc}{Todo}
+\item[\mbox{\hyperlink{todo__todo000015}{Todo}}]fix the fact that a successful match that captured no ast\+\_\+nodes doesn\textquotesingle{}t have any real start position \end{DoxyRefDesc}
+\mbox{\Hypertarget{classchaiscript_1_1parser_1_1ChaiScript__Parser_a56be828a41291a1587ad017e67998767}\label{classchaiscript_1_1parser_1_1ChaiScript__Parser_a56be828a41291a1587ad017e67998767}} 
+\index{chaiscript::parser::ChaiScript\_Parser$<$ Tracer, Optimizer, Parse\_Depth $>$@{chaiscript::parser::ChaiScript\_Parser$<$ Tracer, Optimizer, Parse\_Depth $>$}!buildFloat@{buildFloat}}
+\index{buildFloat@{buildFloat}!chaiscript::parser::ChaiScript\_Parser$<$ Tracer, Optimizer, Parse\_Depth $>$@{chaiscript::parser::ChaiScript\_Parser$<$ Tracer, Optimizer, Parse\_Depth $>$}}
+\doxysubsubsection{\texorpdfstring{buildFloat()}{buildFloat()}}
+{\footnotesize\ttfamily template$<$typename Tracer , typename Optimizer , std\+::size\+\_\+t Parse\+\_\+\+Depth = 512$>$ \\
+static \mbox{\hyperlink{classchaiscript_1_1Boxed__Value}{Boxed\+\_\+\+Value}} \mbox{\hyperlink{classchaiscript_1_1parser_1_1ChaiScript__Parser}{chaiscript\+::parser\+::\+Chai\+Script\+\_\+\+Parser}}$<$ Tracer, Optimizer, Parse\+\_\+\+Depth $>$\+::build\+Float (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{t\+\_\+val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Parses a floating point value and returns a \mbox{\hyperlink{classchaiscript_1_1Boxed__Value}{Boxed\+\_\+\+Value}} representation of it. 
+
+\mbox{\Hypertarget{classchaiscript_1_1parser_1_1ChaiScript__Parser_af59b2546657e0e0a5dafb149b9807ba7}\label{classchaiscript_1_1parser_1_1ChaiScript__Parser_af59b2546657e0e0a5dafb149b9807ba7}} 
+\index{chaiscript::parser::ChaiScript\_Parser$<$ Tracer, Optimizer, Parse\_Depth $>$@{chaiscript::parser::ChaiScript\_Parser$<$ Tracer, Optimizer, Parse\_Depth $>$}!Case@{Case}}
+\index{Case@{Case}!chaiscript::parser::ChaiScript\_Parser$<$ Tracer, Optimizer, Parse\_Depth $>$@{chaiscript::parser::ChaiScript\_Parser$<$ Tracer, Optimizer, Parse\_Depth $>$}}
+\doxysubsubsection{\texorpdfstring{Case()}{Case()}}
+{\footnotesize\ttfamily template$<$typename Tracer , typename Optimizer , std\+::size\+\_\+t Parse\+\_\+\+Depth = 512$>$ \\
+bool \mbox{\hyperlink{classchaiscript_1_1parser_1_1ChaiScript__Parser}{chaiscript\+::parser\+::\+Chai\+Script\+\_\+\+Parser}}$<$ Tracer, Optimizer, Parse\+\_\+\+Depth $>$\+::Case (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Reads a case block from input. 
+
+\mbox{\Hypertarget{classchaiscript_1_1parser_1_1ChaiScript__Parser_ae1b0c315e54c00c9766414598a25747f}\label{classchaiscript_1_1parser_1_1ChaiScript__Parser_ae1b0c315e54c00c9766414598a25747f}} 
+\index{chaiscript::parser::ChaiScript\_Parser$<$ Tracer, Optimizer, Parse\_Depth $>$@{chaiscript::parser::ChaiScript\_Parser$<$ Tracer, Optimizer, Parse\_Depth $>$}!Char@{Char}}
+\index{Char@{Char}!chaiscript::parser::ChaiScript\_Parser$<$ Tracer, Optimizer, Parse\_Depth $>$@{chaiscript::parser::ChaiScript\_Parser$<$ Tracer, Optimizer, Parse\_Depth $>$}}
+\doxysubsubsection{\texorpdfstring{Char()}{Char()}}
+{\footnotesize\ttfamily template$<$typename Tracer , typename Optimizer , std\+::size\+\_\+t Parse\+\_\+\+Depth = 512$>$ \\
+bool \mbox{\hyperlink{classchaiscript_1_1parser_1_1ChaiScript__Parser}{chaiscript\+::parser\+::\+Chai\+Script\+\_\+\+Parser}}$<$ Tracer, Optimizer, Parse\+\_\+\+Depth $>$\+::Char (\begin{DoxyParamCaption}\item[{const char}]{t\+\_\+c }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Reads (and potentially captures) a char from input if it matches the parameter. 
+
+\mbox{\Hypertarget{classchaiscript_1_1parser_1_1ChaiScript__Parser_a5cf82c2aa7d642393236652008f869a0}\label{classchaiscript_1_1parser_1_1ChaiScript__Parser_a5cf82c2aa7d642393236652008f869a0}} 
+\index{chaiscript::parser::ChaiScript\_Parser$<$ Tracer, Optimizer, Parse\_Depth $>$@{chaiscript::parser::ChaiScript\_Parser$<$ Tracer, Optimizer, Parse\_Depth $>$}!Char\_@{Char\_}}
+\index{Char\_@{Char\_}!chaiscript::parser::ChaiScript\_Parser$<$ Tracer, Optimizer, Parse\_Depth $>$@{chaiscript::parser::ChaiScript\_Parser$<$ Tracer, Optimizer, Parse\_Depth $>$}}
+\doxysubsubsection{\texorpdfstring{Char\_()}{Char\_()}}
+{\footnotesize\ttfamily template$<$typename Tracer , typename Optimizer , std\+::size\+\_\+t Parse\+\_\+\+Depth = 512$>$ \\
+bool \mbox{\hyperlink{classchaiscript_1_1parser_1_1ChaiScript__Parser}{chaiscript\+::parser\+::\+Chai\+Script\+\_\+\+Parser}}$<$ Tracer, Optimizer, Parse\+\_\+\+Depth $>$\+::Char\+\_\+ (\begin{DoxyParamCaption}\item[{const char}]{c }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Reads a char from input if it matches the parameter, without skipping initial whitespace. 
+
+\mbox{\Hypertarget{classchaiscript_1_1parser_1_1ChaiScript__Parser_aaddcec1a13ad3983e8de3f5b779510e7}\label{classchaiscript_1_1parser_1_1ChaiScript__Parser_aaddcec1a13ad3983e8de3f5b779510e7}} 
+\index{chaiscript::parser::ChaiScript\_Parser$<$ Tracer, Optimizer, Parse\_Depth $>$@{chaiscript::parser::ChaiScript\_Parser$<$ Tracer, Optimizer, Parse\_Depth $>$}!char\_in\_alphabet@{char\_in\_alphabet}}
+\index{char\_in\_alphabet@{char\_in\_alphabet}!chaiscript::parser::ChaiScript\_Parser$<$ Tracer, Optimizer, Parse\_Depth $>$@{chaiscript::parser::ChaiScript\_Parser$<$ Tracer, Optimizer, Parse\_Depth $>$}}
+\doxysubsubsection{\texorpdfstring{char\_in\_alphabet()}{char\_in\_alphabet()}}
+{\footnotesize\ttfamily template$<$typename Tracer , typename Optimizer , std\+::size\+\_\+t Parse\+\_\+\+Depth = 512$>$ \\
+bool \mbox{\hyperlink{classchaiscript_1_1parser_1_1ChaiScript__Parser}{chaiscript\+::parser\+::\+Chai\+Script\+\_\+\+Parser}}$<$ Tracer, Optimizer, Parse\+\_\+\+Depth $>$\+::char\+\_\+in\+\_\+alphabet (\begin{DoxyParamCaption}\item[{char}]{c,  }\item[{detail\+::\+Alphabet}]{a }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+test a char in an m\+\_\+alphabet 
+
+\mbox{\Hypertarget{classchaiscript_1_1parser_1_1ChaiScript__Parser_a985fd1753bbcaf3ad868650cbd4ef7fe}\label{classchaiscript_1_1parser_1_1ChaiScript__Parser_a985fd1753bbcaf3ad868650cbd4ef7fe}} 
+\index{chaiscript::parser::ChaiScript\_Parser$<$ Tracer, Optimizer, Parse\_Depth $>$@{chaiscript::parser::ChaiScript\_Parser$<$ Tracer, Optimizer, Parse\_Depth $>$}!Class@{Class}}
+\index{Class@{Class}!chaiscript::parser::ChaiScript\_Parser$<$ Tracer, Optimizer, Parse\_Depth $>$@{chaiscript::parser::ChaiScript\_Parser$<$ Tracer, Optimizer, Parse\_Depth $>$}}
+\doxysubsubsection{\texorpdfstring{Class()}{Class()}}
+{\footnotesize\ttfamily template$<$typename Tracer , typename Optimizer , std\+::size\+\_\+t Parse\+\_\+\+Depth = 512$>$ \\
+bool \mbox{\hyperlink{classchaiscript_1_1parser_1_1ChaiScript__Parser}{chaiscript\+::parser\+::\+Chai\+Script\+\_\+\+Parser}}$<$ Tracer, Optimizer, Parse\+\_\+\+Depth $>$\+::Class (\begin{DoxyParamCaption}\item[{const bool}]{t\+\_\+class\+\_\+allowed }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Reads a class block from input. 
+
+\mbox{\Hypertarget{classchaiscript_1_1parser_1_1ChaiScript__Parser_a0179973d389fb3c3228c9cead4474180}\label{classchaiscript_1_1parser_1_1ChaiScript__Parser_a0179973d389fb3c3228c9cead4474180}} 
+\index{chaiscript::parser::ChaiScript\_Parser$<$ Tracer, Optimizer, Parse\_Depth $>$@{chaiscript::parser::ChaiScript\_Parser$<$ Tracer, Optimizer, Parse\_Depth $>$}!Class\_Block@{Class\_Block}}
+\index{Class\_Block@{Class\_Block}!chaiscript::parser::ChaiScript\_Parser$<$ Tracer, Optimizer, Parse\_Depth $>$@{chaiscript::parser::ChaiScript\_Parser$<$ Tracer, Optimizer, Parse\_Depth $>$}}
+\doxysubsubsection{\texorpdfstring{Class\_Block()}{Class\_Block()}}
+{\footnotesize\ttfamily template$<$typename Tracer , typename Optimizer , std\+::size\+\_\+t Parse\+\_\+\+Depth = 512$>$ \\
+bool \mbox{\hyperlink{classchaiscript_1_1parser_1_1ChaiScript__Parser}{chaiscript\+::parser\+::\+Chai\+Script\+\_\+\+Parser}}$<$ Tracer, Optimizer, Parse\+\_\+\+Depth $>$\+::Class\+\_\+\+Block (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{t\+\_\+class\+\_\+name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Reads a curly-\/brace C-\/style class block from input. 
+
+\mbox{\Hypertarget{classchaiscript_1_1parser_1_1ChaiScript__Parser_a0c91c98cc96cef0a36180683290f5e95}\label{classchaiscript_1_1parser_1_1ChaiScript__Parser_a0c91c98cc96cef0a36180683290f5e95}} 
+\index{chaiscript::parser::ChaiScript\_Parser$<$ Tracer, Optimizer, Parse\_Depth $>$@{chaiscript::parser::ChaiScript\_Parser$<$ Tracer, Optimizer, Parse\_Depth $>$}!Class\_Statements@{Class\_Statements}}
+\index{Class\_Statements@{Class\_Statements}!chaiscript::parser::ChaiScript\_Parser$<$ Tracer, Optimizer, Parse\_Depth $>$@{chaiscript::parser::ChaiScript\_Parser$<$ Tracer, Optimizer, Parse\_Depth $>$}}
+\doxysubsubsection{\texorpdfstring{Class\_Statements()}{Class\_Statements()}}
+{\footnotesize\ttfamily template$<$typename Tracer , typename Optimizer , std\+::size\+\_\+t Parse\+\_\+\+Depth = 512$>$ \\
+bool \mbox{\hyperlink{classchaiscript_1_1parser_1_1ChaiScript__Parser}{chaiscript\+::parser\+::\+Chai\+Script\+\_\+\+Parser}}$<$ Tracer, Optimizer, Parse\+\_\+\+Depth $>$\+::Class\+\_\+\+Statements (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{t\+\_\+class\+\_\+name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Parses statements allowed inside of a class block. 
+
+\mbox{\Hypertarget{classchaiscript_1_1parser_1_1ChaiScript__Parser_a3409f43d55266033213d761258acd57c}\label{classchaiscript_1_1parser_1_1ChaiScript__Parser_a3409f43d55266033213d761258acd57c}} 
+\index{chaiscript::parser::ChaiScript\_Parser$<$ Tracer, Optimizer, Parse\_Depth $>$@{chaiscript::parser::ChaiScript\_Parser$<$ Tracer, Optimizer, Parse\_Depth $>$}!Container\_Arg\_List@{Container\_Arg\_List}}
+\index{Container\_Arg\_List@{Container\_Arg\_List}!chaiscript::parser::ChaiScript\_Parser$<$ Tracer, Optimizer, Parse\_Depth $>$@{chaiscript::parser::ChaiScript\_Parser$<$ Tracer, Optimizer, Parse\_Depth $>$}}
+\doxysubsubsection{\texorpdfstring{Container\_Arg\_List()}{Container\_Arg\_List()}}
+{\footnotesize\ttfamily template$<$typename Tracer , typename Optimizer , std\+::size\+\_\+t Parse\+\_\+\+Depth = 512$>$ \\
+bool \mbox{\hyperlink{classchaiscript_1_1parser_1_1ChaiScript__Parser}{chaiscript\+::parser\+::\+Chai\+Script\+\_\+\+Parser}}$<$ Tracer, Optimizer, Parse\+\_\+\+Depth $>$\+::Container\+\_\+\+Arg\+\_\+\+List (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Reads possible special container values, including ranges and map\+\_\+pairs. 
+
+\mbox{\Hypertarget{classchaiscript_1_1parser_1_1ChaiScript__Parser_a2c84607353bf912057e1f8b505b537be}\label{classchaiscript_1_1parser_1_1ChaiScript__Parser_a2c84607353bf912057e1f8b505b537be}} 
+\index{chaiscript::parser::ChaiScript\_Parser$<$ Tracer, Optimizer, Parse\_Depth $>$@{chaiscript::parser::ChaiScript\_Parser$<$ Tracer, Optimizer, Parse\_Depth $>$}!Continue@{Continue}}
+\index{Continue@{Continue}!chaiscript::parser::ChaiScript\_Parser$<$ Tracer, Optimizer, Parse\_Depth $>$@{chaiscript::parser::ChaiScript\_Parser$<$ Tracer, Optimizer, Parse\_Depth $>$}}
+\doxysubsubsection{\texorpdfstring{Continue()}{Continue()}}
+{\footnotesize\ttfamily template$<$typename Tracer , typename Optimizer , std\+::size\+\_\+t Parse\+\_\+\+Depth = 512$>$ \\
+bool \mbox{\hyperlink{classchaiscript_1_1parser_1_1ChaiScript__Parser}{chaiscript\+::parser\+::\+Chai\+Script\+\_\+\+Parser}}$<$ Tracer, Optimizer, Parse\+\_\+\+Depth $>$\+::Continue (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Reads a continue statement from input. 
+
+\mbox{\Hypertarget{classchaiscript_1_1parser_1_1ChaiScript__Parser_a5002a137894603a50e4aab8ead549532}\label{classchaiscript_1_1parser_1_1ChaiScript__Parser_a5002a137894603a50e4aab8ead549532}} 
+\index{chaiscript::parser::ChaiScript\_Parser$<$ Tracer, Optimizer, Parse\_Depth $>$@{chaiscript::parser::ChaiScript\_Parser$<$ Tracer, Optimizer, Parse\_Depth $>$}!debug\_print@{debug\_print}}
+\index{debug\_print@{debug\_print}!chaiscript::parser::ChaiScript\_Parser$<$ Tracer, Optimizer, Parse\_Depth $>$@{chaiscript::parser::ChaiScript\_Parser$<$ Tracer, Optimizer, Parse\_Depth $>$}}
+\doxysubsubsection{\texorpdfstring{debug\_print()}{debug\_print()}}
+{\footnotesize\ttfamily template$<$typename Tracer , typename Optimizer , std\+::size\+\_\+t Parse\+\_\+\+Depth = 512$>$ \\
+void \mbox{\hyperlink{classchaiscript_1_1parser_1_1ChaiScript__Parser}{chaiscript\+::parser\+::\+Chai\+Script\+\_\+\+Parser}}$<$ Tracer, Optimizer, Parse\+\_\+\+Depth $>$\+::debug\+\_\+print (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structchaiscript_1_1AST__Node}{AST\+\_\+\+Node}} \&}]{t,  }\item[{std\+::string}]{prepend = {\ttfamily \char`\"{}\char`\"{}} }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Prints the parsed ast\+\_\+nodes as a tree. 
+
+
+
+Implements \mbox{\hyperlink{classchaiscript_1_1parser_1_1ChaiScript__Parser__Base}{chaiscript\+::parser\+::\+Chai\+Script\+\_\+\+Parser\+\_\+\+Base}}.
+
+\mbox{\Hypertarget{classchaiscript_1_1parser_1_1ChaiScript__Parser_a6633958ccd16cef0aeffe83315b765a2}\label{classchaiscript_1_1parser_1_1ChaiScript__Parser_a6633958ccd16cef0aeffe83315b765a2}} 
+\index{chaiscript::parser::ChaiScript\_Parser$<$ Tracer, Optimizer, Parse\_Depth $>$@{chaiscript::parser::ChaiScript\_Parser$<$ Tracer, Optimizer, Parse\_Depth $>$}!Decl\_Arg\_List@{Decl\_Arg\_List}}
+\index{Decl\_Arg\_List@{Decl\_Arg\_List}!chaiscript::parser::ChaiScript\_Parser$<$ Tracer, Optimizer, Parse\_Depth $>$@{chaiscript::parser::ChaiScript\_Parser$<$ Tracer, Optimizer, Parse\_Depth $>$}}
+\doxysubsubsection{\texorpdfstring{Decl\_Arg\_List()}{Decl\_Arg\_List()}}
+{\footnotesize\ttfamily template$<$typename Tracer , typename Optimizer , std\+::size\+\_\+t Parse\+\_\+\+Depth = 512$>$ \\
+bool \mbox{\hyperlink{classchaiscript_1_1parser_1_1ChaiScript__Parser}{chaiscript\+::parser\+::\+Chai\+Script\+\_\+\+Parser}}$<$ Tracer, Optimizer, Parse\+\_\+\+Depth $>$\+::Decl\+\_\+\+Arg\+\_\+\+List (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Reads a comma-\/separated list of values from input, for function declarations. 
+
+\mbox{\Hypertarget{classchaiscript_1_1parser_1_1ChaiScript__Parser_abfb2395d956c70296708077af12e74d7}\label{classchaiscript_1_1parser_1_1ChaiScript__Parser_abfb2395d956c70296708077af12e74d7}} 
+\index{chaiscript::parser::ChaiScript\_Parser$<$ Tracer, Optimizer, Parse\_Depth $>$@{chaiscript::parser::ChaiScript\_Parser$<$ Tracer, Optimizer, Parse\_Depth $>$}!Def@{Def}}
+\index{Def@{Def}!chaiscript::parser::ChaiScript\_Parser$<$ Tracer, Optimizer, Parse\_Depth $>$@{chaiscript::parser::ChaiScript\_Parser$<$ Tracer, Optimizer, Parse\_Depth $>$}}
+\doxysubsubsection{\texorpdfstring{Def()}{Def()}}
+{\footnotesize\ttfamily template$<$typename Tracer , typename Optimizer , std\+::size\+\_\+t Parse\+\_\+\+Depth = 512$>$ \\
+bool \mbox{\hyperlink{classchaiscript_1_1parser_1_1ChaiScript__Parser}{chaiscript\+::parser\+::\+Chai\+Script\+\_\+\+Parser}}$<$ Tracer, Optimizer, Parse\+\_\+\+Depth $>$\+::Def (\begin{DoxyParamCaption}\item[{const bool}]{t\+\_\+class\+\_\+context = {\ttfamily false},  }\item[{const std\+::string \&}]{t\+\_\+class\+\_\+name = {\ttfamily \char`\"{}\char`\"{}} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Reads a function definition from input. 
+
+\mbox{\Hypertarget{classchaiscript_1_1parser_1_1ChaiScript__Parser_a8e14fbb6c0b2545c4602af6598abcbcb}\label{classchaiscript_1_1parser_1_1ChaiScript__Parser_a8e14fbb6c0b2545c4602af6598abcbcb}} 
+\index{chaiscript::parser::ChaiScript\_Parser$<$ Tracer, Optimizer, Parse\_Depth $>$@{chaiscript::parser::ChaiScript\_Parser$<$ Tracer, Optimizer, Parse\_Depth $>$}!Dot\_Fun\_Array@{Dot\_Fun\_Array}}
+\index{Dot\_Fun\_Array@{Dot\_Fun\_Array}!chaiscript::parser::ChaiScript\_Parser$<$ Tracer, Optimizer, Parse\_Depth $>$@{chaiscript::parser::ChaiScript\_Parser$<$ Tracer, Optimizer, Parse\_Depth $>$}}
+\doxysubsubsection{\texorpdfstring{Dot\_Fun\_Array()}{Dot\_Fun\_Array()}}
+{\footnotesize\ttfamily template$<$typename Tracer , typename Optimizer , std\+::size\+\_\+t Parse\+\_\+\+Depth = 512$>$ \\
+bool \mbox{\hyperlink{classchaiscript_1_1parser_1_1ChaiScript__Parser}{chaiscript\+::parser\+::\+Chai\+Script\+\_\+\+Parser}}$<$ Tracer, Optimizer, Parse\+\_\+\+Depth $>$\+::Dot\+\_\+\+Fun\+\_\+\+Array (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Reads a dot expression(member access), then proceeds to check if it\textquotesingle{}s a function or array call. 
+
+\begin{DoxyRefDesc}{Todo}
+\item[\mbox{\hyperlink{todo__todo000016}{Todo}}]Work around for method calls until we have a better solution \end{DoxyRefDesc}
+\mbox{\Hypertarget{classchaiscript_1_1parser_1_1ChaiScript__Parser_a25219e35a9e4d1301cd624446483a40d}\label{classchaiscript_1_1parser_1_1ChaiScript__Parser_a25219e35a9e4d1301cd624446483a40d}} 
+\index{chaiscript::parser::ChaiScript\_Parser$<$ Tracer, Optimizer, Parse\_Depth $>$@{chaiscript::parser::ChaiScript\_Parser$<$ Tracer, Optimizer, Parse\_Depth $>$}!Eol@{Eol}}
+\index{Eol@{Eol}!chaiscript::parser::ChaiScript\_Parser$<$ Tracer, Optimizer, Parse\_Depth $>$@{chaiscript::parser::ChaiScript\_Parser$<$ Tracer, Optimizer, Parse\_Depth $>$}}
+\doxysubsubsection{\texorpdfstring{Eol()}{Eol()}}
+{\footnotesize\ttfamily template$<$typename Tracer , typename Optimizer , std\+::size\+\_\+t Parse\+\_\+\+Depth = 512$>$ \\
+bool \mbox{\hyperlink{classchaiscript_1_1parser_1_1ChaiScript__Parser}{chaiscript\+::parser\+::\+Chai\+Script\+\_\+\+Parser}}$<$ Tracer, Optimizer, Parse\+\_\+\+Depth $>$\+::Eol (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Reads (and potentially captures) an end-\/of-\/line group from input. 
+
+\mbox{\Hypertarget{classchaiscript_1_1parser_1_1ChaiScript__Parser_a4b9300468b39615a9b47196bf3a1bea4}\label{classchaiscript_1_1parser_1_1ChaiScript__Parser_a4b9300468b39615a9b47196bf3a1bea4}} 
+\index{chaiscript::parser::ChaiScript\_Parser$<$ Tracer, Optimizer, Parse\_Depth $>$@{chaiscript::parser::ChaiScript\_Parser$<$ Tracer, Optimizer, Parse\_Depth $>$}!Eol\_@{Eol\_}}
+\index{Eol\_@{Eol\_}!chaiscript::parser::ChaiScript\_Parser$<$ Tracer, Optimizer, Parse\_Depth $>$@{chaiscript::parser::ChaiScript\_Parser$<$ Tracer, Optimizer, Parse\_Depth $>$}}
+\doxysubsubsection{\texorpdfstring{Eol\_()}{Eol\_()}}
+{\footnotesize\ttfamily template$<$typename Tracer , typename Optimizer , std\+::size\+\_\+t Parse\+\_\+\+Depth = 512$>$ \\
+bool \mbox{\hyperlink{classchaiscript_1_1parser_1_1ChaiScript__Parser}{chaiscript\+::parser\+::\+Chai\+Script\+\_\+\+Parser}}$<$ Tracer, Optimizer, Parse\+\_\+\+Depth $>$\+::Eol\+\_\+ (\begin{DoxyParamCaption}\item[{const bool}]{t\+\_\+eos = {\ttfamily false} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Reads an end-\/of-\/line group from input, without skipping initial whitespace. 
+
+\mbox{\Hypertarget{classchaiscript_1_1parser_1_1ChaiScript__Parser_a218097cd3c090f0d089ac3e081101a7f}\label{classchaiscript_1_1parser_1_1ChaiScript__Parser_a218097cd3c090f0d089ac3e081101a7f}} 
+\index{chaiscript::parser::ChaiScript\_Parser$<$ Tracer, Optimizer, Parse\_Depth $>$@{chaiscript::parser::ChaiScript\_Parser$<$ Tracer, Optimizer, Parse\_Depth $>$}!Eos@{Eos}}
+\index{Eos@{Eos}!chaiscript::parser::ChaiScript\_Parser$<$ Tracer, Optimizer, Parse\_Depth $>$@{chaiscript::parser::ChaiScript\_Parser$<$ Tracer, Optimizer, Parse\_Depth $>$}}
+\doxysubsubsection{\texorpdfstring{Eos()}{Eos()}}
+{\footnotesize\ttfamily template$<$typename Tracer , typename Optimizer , std\+::size\+\_\+t Parse\+\_\+\+Depth = 512$>$ \\
+bool \mbox{\hyperlink{classchaiscript_1_1parser_1_1ChaiScript__Parser}{chaiscript\+::parser\+::\+Chai\+Script\+\_\+\+Parser}}$<$ Tracer, Optimizer, Parse\+\_\+\+Depth $>$\+::Eos (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Reads until the end of the current statement. 
+
+\mbox{\Hypertarget{classchaiscript_1_1parser_1_1ChaiScript__Parser_ad2261ed54f0e39d38b615932a9487ffb}\label{classchaiscript_1_1parser_1_1ChaiScript__Parser_ad2261ed54f0e39d38b615932a9487ffb}} 
+\index{chaiscript::parser::ChaiScript\_Parser$<$ Tracer, Optimizer, Parse\_Depth $>$@{chaiscript::parser::ChaiScript\_Parser$<$ Tracer, Optimizer, Parse\_Depth $>$}!Equation@{Equation}}
+\index{Equation@{Equation}!chaiscript::parser::ChaiScript\_Parser$<$ Tracer, Optimizer, Parse\_Depth $>$@{chaiscript::parser::ChaiScript\_Parser$<$ Tracer, Optimizer, Parse\_Depth $>$}}
+\doxysubsubsection{\texorpdfstring{Equation()}{Equation()}}
+{\footnotesize\ttfamily template$<$typename Tracer , typename Optimizer , std\+::size\+\_\+t Parse\+\_\+\+Depth = 512$>$ \\
+bool \mbox{\hyperlink{classchaiscript_1_1parser_1_1ChaiScript__Parser}{chaiscript\+::parser\+::\+Chai\+Script\+\_\+\+Parser}}$<$ Tracer, Optimizer, Parse\+\_\+\+Depth $>$\+::Equation (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Parses a string of binary equation operators. 
+
+\mbox{\Hypertarget{classchaiscript_1_1parser_1_1ChaiScript__Parser_ad6d40f2958a87ef3c1edac774947c1c4}\label{classchaiscript_1_1parser_1_1ChaiScript__Parser_ad6d40f2958a87ef3c1edac774947c1c4}} 
+\index{chaiscript::parser::ChaiScript\_Parser$<$ Tracer, Optimizer, Parse\_Depth $>$@{chaiscript::parser::ChaiScript\_Parser$<$ Tracer, Optimizer, Parse\_Depth $>$}!Float\_@{Float\_}}
+\index{Float\_@{Float\_}!chaiscript::parser::ChaiScript\_Parser$<$ Tracer, Optimizer, Parse\_Depth $>$@{chaiscript::parser::ChaiScript\_Parser$<$ Tracer, Optimizer, Parse\_Depth $>$}}
+\doxysubsubsection{\texorpdfstring{Float\_()}{Float\_()}}
+{\footnotesize\ttfamily template$<$typename Tracer , typename Optimizer , std\+::size\+\_\+t Parse\+\_\+\+Depth = 512$>$ \\
+bool \mbox{\hyperlink{classchaiscript_1_1parser_1_1ChaiScript__Parser}{chaiscript\+::parser\+::\+Chai\+Script\+\_\+\+Parser}}$<$ Tracer, Optimizer, Parse\+\_\+\+Depth $>$\+::Float\+\_\+ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Reads a floating point value from input, without skipping initial whitespace. 
+
+\mbox{\Hypertarget{classchaiscript_1_1parser_1_1ChaiScript__Parser_a077404fc1f213a00800249b9b46cafca}\label{classchaiscript_1_1parser_1_1ChaiScript__Parser_a077404fc1f213a00800249b9b46cafca}} 
+\index{chaiscript::parser::ChaiScript\_Parser$<$ Tracer, Optimizer, Parse\_Depth $>$@{chaiscript::parser::ChaiScript\_Parser$<$ Tracer, Optimizer, Parse\_Depth $>$}!For@{For}}
+\index{For@{For}!chaiscript::parser::ChaiScript\_Parser$<$ Tracer, Optimizer, Parse\_Depth $>$@{chaiscript::parser::ChaiScript\_Parser$<$ Tracer, Optimizer, Parse\_Depth $>$}}
+\doxysubsubsection{\texorpdfstring{For()}{For()}}
+{\footnotesize\ttfamily template$<$typename Tracer , typename Optimizer , std\+::size\+\_\+t Parse\+\_\+\+Depth = 512$>$ \\
+bool \mbox{\hyperlink{classchaiscript_1_1parser_1_1ChaiScript__Parser}{chaiscript\+::parser\+::\+Chai\+Script\+\_\+\+Parser}}$<$ Tracer, Optimizer, Parse\+\_\+\+Depth $>$\+::For (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Reads a for block from input. 
+
+\mbox{\Hypertarget{classchaiscript_1_1parser_1_1ChaiScript__Parser_a2c811487a6bec7189603e5eee4850213}\label{classchaiscript_1_1parser_1_1ChaiScript__Parser_a2c811487a6bec7189603e5eee4850213}} 
+\index{chaiscript::parser::ChaiScript\_Parser$<$ Tracer, Optimizer, Parse\_Depth $>$@{chaiscript::parser::ChaiScript\_Parser$<$ Tracer, Optimizer, Parse\_Depth $>$}!For\_Guards@{For\_Guards}}
+\index{For\_Guards@{For\_Guards}!chaiscript::parser::ChaiScript\_Parser$<$ Tracer, Optimizer, Parse\_Depth $>$@{chaiscript::parser::ChaiScript\_Parser$<$ Tracer, Optimizer, Parse\_Depth $>$}}
+\doxysubsubsection{\texorpdfstring{For\_Guards()}{For\_Guards()}}
+{\footnotesize\ttfamily template$<$typename Tracer , typename Optimizer , std\+::size\+\_\+t Parse\+\_\+\+Depth = 512$>$ \\
+bool \mbox{\hyperlink{classchaiscript_1_1parser_1_1ChaiScript__Parser}{chaiscript\+::parser\+::\+Chai\+Script\+\_\+\+Parser}}$<$ Tracer, Optimizer, Parse\+\_\+\+Depth $>$\+::For\+\_\+\+Guards (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Reads the C-\/style {\ttfamily for} conditions from input. 
+
+\mbox{\Hypertarget{classchaiscript_1_1parser_1_1ChaiScript__Parser_a252874439d445a7ba1f196da8592b157}\label{classchaiscript_1_1parser_1_1ChaiScript__Parser_a252874439d445a7ba1f196da8592b157}} 
+\index{chaiscript::parser::ChaiScript\_Parser$<$ Tracer, Optimizer, Parse\_Depth $>$@{chaiscript::parser::ChaiScript\_Parser$<$ Tracer, Optimizer, Parse\_Depth $>$}!Hex\_@{Hex\_}}
+\index{Hex\_@{Hex\_}!chaiscript::parser::ChaiScript\_Parser$<$ Tracer, Optimizer, Parse\_Depth $>$@{chaiscript::parser::ChaiScript\_Parser$<$ Tracer, Optimizer, Parse\_Depth $>$}}
+\doxysubsubsection{\texorpdfstring{Hex\_()}{Hex\_()}}
+{\footnotesize\ttfamily template$<$typename Tracer , typename Optimizer , std\+::size\+\_\+t Parse\+\_\+\+Depth = 512$>$ \\
+bool \mbox{\hyperlink{classchaiscript_1_1parser_1_1ChaiScript__Parser}{chaiscript\+::parser\+::\+Chai\+Script\+\_\+\+Parser}}$<$ Tracer, Optimizer, Parse\+\_\+\+Depth $>$\+::Hex\+\_\+ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Reads a hex value from input, without skipping initial whitespace. 
+
+\mbox{\Hypertarget{classchaiscript_1_1parser_1_1ChaiScript__Parser_a5b89dcfac5e2de75b1ba2993c84b8df2}\label{classchaiscript_1_1parser_1_1ChaiScript__Parser_a5b89dcfac5e2de75b1ba2993c84b8df2}} 
+\index{chaiscript::parser::ChaiScript\_Parser$<$ Tracer, Optimizer, Parse\_Depth $>$@{chaiscript::parser::ChaiScript\_Parser$<$ Tracer, Optimizer, Parse\_Depth $>$}!Id@{Id}}
+\index{Id@{Id}!chaiscript::parser::ChaiScript\_Parser$<$ Tracer, Optimizer, Parse\_Depth $>$@{chaiscript::parser::ChaiScript\_Parser$<$ Tracer, Optimizer, Parse\_Depth $>$}}
+\doxysubsubsection{\texorpdfstring{Id()}{Id()}}
+{\footnotesize\ttfamily template$<$typename Tracer , typename Optimizer , std\+::size\+\_\+t Parse\+\_\+\+Depth = 512$>$ \\
+bool \mbox{\hyperlink{classchaiscript_1_1parser_1_1ChaiScript__Parser}{chaiscript\+::parser\+::\+Chai\+Script\+\_\+\+Parser}}$<$ Tracer, Optimizer, Parse\+\_\+\+Depth $>$\+::Id (\begin{DoxyParamCaption}\item[{const bool}]{validate }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Reads (and potentially captures) an identifier from input. 
+
+\mbox{\Hypertarget{classchaiscript_1_1parser_1_1ChaiScript__Parser_a33b9368e5469e0fa6d90aa8e989a3d46}\label{classchaiscript_1_1parser_1_1ChaiScript__Parser_a33b9368e5469e0fa6d90aa8e989a3d46}} 
+\index{chaiscript::parser::ChaiScript\_Parser$<$ Tracer, Optimizer, Parse\_Depth $>$@{chaiscript::parser::ChaiScript\_Parser$<$ Tracer, Optimizer, Parse\_Depth $>$}!Id\_@{Id\_}}
+\index{Id\_@{Id\_}!chaiscript::parser::ChaiScript\_Parser$<$ Tracer, Optimizer, Parse\_Depth $>$@{chaiscript::parser::ChaiScript\_Parser$<$ Tracer, Optimizer, Parse\_Depth $>$}}
+\doxysubsubsection{\texorpdfstring{Id\_()}{Id\_()}}
+{\footnotesize\ttfamily template$<$typename Tracer , typename Optimizer , std\+::size\+\_\+t Parse\+\_\+\+Depth = 512$>$ \\
+bool \mbox{\hyperlink{classchaiscript_1_1parser_1_1ChaiScript__Parser}{chaiscript\+::parser\+::\+Chai\+Script\+\_\+\+Parser}}$<$ Tracer, Optimizer, Parse\+\_\+\+Depth $>$\+::Id\+\_\+ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Reads an identifier from input which conforms to C\textquotesingle{}s identifier naming conventions, without skipping initial whitespace. 
+
+\mbox{\Hypertarget{classchaiscript_1_1parser_1_1ChaiScript__Parser_a989c9f88c37d88b98ac49648125fd065}\label{classchaiscript_1_1parser_1_1ChaiScript__Parser_a989c9f88c37d88b98ac49648125fd065}} 
+\index{chaiscript::parser::ChaiScript\_Parser$<$ Tracer, Optimizer, Parse\_Depth $>$@{chaiscript::parser::ChaiScript\_Parser$<$ Tracer, Optimizer, Parse\_Depth $>$}!Id\_Arg\_List@{Id\_Arg\_List}}
+\index{Id\_Arg\_List@{Id\_Arg\_List}!chaiscript::parser::ChaiScript\_Parser$<$ Tracer, Optimizer, Parse\_Depth $>$@{chaiscript::parser::ChaiScript\_Parser$<$ Tracer, Optimizer, Parse\_Depth $>$}}
+\doxysubsubsection{\texorpdfstring{Id\_Arg\_List()}{Id\_Arg\_List()}}
+{\footnotesize\ttfamily template$<$typename Tracer , typename Optimizer , std\+::size\+\_\+t Parse\+\_\+\+Depth = 512$>$ \\
+bool \mbox{\hyperlink{classchaiscript_1_1parser_1_1ChaiScript__Parser}{chaiscript\+::parser\+::\+Chai\+Script\+\_\+\+Parser}}$<$ Tracer, Optimizer, Parse\+\_\+\+Depth $>$\+::Id\+\_\+\+Arg\+\_\+\+List (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Reads a comma-\/separated list of values from input. Id\textquotesingle{}s only, no types allowed. 
+
+\mbox{\Hypertarget{classchaiscript_1_1parser_1_1ChaiScript__Parser_a96a79be70cac52fa7bd981de661d73ae}\label{classchaiscript_1_1parser_1_1ChaiScript__Parser_a96a79be70cac52fa7bd981de661d73ae}} 
+\index{chaiscript::parser::ChaiScript\_Parser$<$ Tracer, Optimizer, Parse\_Depth $>$@{chaiscript::parser::ChaiScript\_Parser$<$ Tracer, Optimizer, Parse\_Depth $>$}!If@{If}}
+\index{If@{If}!chaiscript::parser::ChaiScript\_Parser$<$ Tracer, Optimizer, Parse\_Depth $>$@{chaiscript::parser::ChaiScript\_Parser$<$ Tracer, Optimizer, Parse\_Depth $>$}}
+\doxysubsubsection{\texorpdfstring{If()}{If()}}
+{\footnotesize\ttfamily template$<$typename Tracer , typename Optimizer , std\+::size\+\_\+t Parse\+\_\+\+Depth = 512$>$ \\
+bool \mbox{\hyperlink{classchaiscript_1_1parser_1_1ChaiScript__Parser}{chaiscript\+::parser\+::\+Chai\+Script\+\_\+\+Parser}}$<$ Tracer, Optimizer, Parse\+\_\+\+Depth $>$\+::If (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Reads an if/else if/else block from input. 
+
+\mbox{\Hypertarget{classchaiscript_1_1parser_1_1ChaiScript__Parser_a68e433b3cddf828851ca8aaf91705bdb}\label{classchaiscript_1_1parser_1_1ChaiScript__Parser_a68e433b3cddf828851ca8aaf91705bdb}} 
+\index{chaiscript::parser::ChaiScript\_Parser$<$ Tracer, Optimizer, Parse\_Depth $>$@{chaiscript::parser::ChaiScript\_Parser$<$ Tracer, Optimizer, Parse\_Depth $>$}!Inline\_Container@{Inline\_Container}}
+\index{Inline\_Container@{Inline\_Container}!chaiscript::parser::ChaiScript\_Parser$<$ Tracer, Optimizer, Parse\_Depth $>$@{chaiscript::parser::ChaiScript\_Parser$<$ Tracer, Optimizer, Parse\_Depth $>$}}
+\doxysubsubsection{\texorpdfstring{Inline\_Container()}{Inline\_Container()}}
+{\footnotesize\ttfamily template$<$typename Tracer , typename Optimizer , std\+::size\+\_\+t Parse\+\_\+\+Depth = 512$>$ \\
+bool \mbox{\hyperlink{classchaiscript_1_1parser_1_1ChaiScript__Parser}{chaiscript\+::parser\+::\+Chai\+Script\+\_\+\+Parser}}$<$ Tracer, Optimizer, Parse\+\_\+\+Depth $>$\+::Inline\+\_\+\+Container (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Reads, and identifies, a short-\/form container initialization from input. 
+
+\mbox{\Hypertarget{classchaiscript_1_1parser_1_1ChaiScript__Parser_a0812f2725e65dfc424009bd124f0db68}\label{classchaiscript_1_1parser_1_1ChaiScript__Parser_a0812f2725e65dfc424009bd124f0db68}} 
+\index{chaiscript::parser::ChaiScript\_Parser$<$ Tracer, Optimizer, Parse\_Depth $>$@{chaiscript::parser::ChaiScript\_Parser$<$ Tracer, Optimizer, Parse\_Depth $>$}!IntSuffix\_@{IntSuffix\_}}
+\index{IntSuffix\_@{IntSuffix\_}!chaiscript::parser::ChaiScript\_Parser$<$ Tracer, Optimizer, Parse\_Depth $>$@{chaiscript::parser::ChaiScript\_Parser$<$ Tracer, Optimizer, Parse\_Depth $>$}}
+\doxysubsubsection{\texorpdfstring{IntSuffix\_()}{IntSuffix\_()}}
+{\footnotesize\ttfamily template$<$typename Tracer , typename Optimizer , std\+::size\+\_\+t Parse\+\_\+\+Depth = 512$>$ \\
+void \mbox{\hyperlink{classchaiscript_1_1parser_1_1ChaiScript__Parser}{chaiscript\+::parser\+::\+Chai\+Script\+\_\+\+Parser}}$<$ Tracer, Optimizer, Parse\+\_\+\+Depth $>$\+::Int\+Suffix\+\_\+ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Reads an integer suffix. 
+
+\mbox{\Hypertarget{classchaiscript_1_1parser_1_1ChaiScript__Parser_a51818138c136af28995d87d54d7e4e03}\label{classchaiscript_1_1parser_1_1ChaiScript__Parser_a51818138c136af28995d87d54d7e4e03}} 
+\index{chaiscript::parser::ChaiScript\_Parser$<$ Tracer, Optimizer, Parse\_Depth $>$@{chaiscript::parser::ChaiScript\_Parser$<$ Tracer, Optimizer, Parse\_Depth $>$}!Keyword@{Keyword}}
+\index{Keyword@{Keyword}!chaiscript::parser::ChaiScript\_Parser$<$ Tracer, Optimizer, Parse\_Depth $>$@{chaiscript::parser::ChaiScript\_Parser$<$ Tracer, Optimizer, Parse\_Depth $>$}}
+\doxysubsubsection{\texorpdfstring{Keyword()}{Keyword()}}
+{\footnotesize\ttfamily template$<$typename Tracer , typename Optimizer , std\+::size\+\_\+t Parse\+\_\+\+Depth = 512$>$ \\
+bool \mbox{\hyperlink{classchaiscript_1_1parser_1_1ChaiScript__Parser}{chaiscript\+::parser\+::\+Chai\+Script\+\_\+\+Parser}}$<$ Tracer, Optimizer, Parse\+\_\+\+Depth $>$\+::Keyword (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structchaiscript_1_1utility_1_1Static__String}{utility\+::\+Static\+\_\+\+String}} \&}]{t\+\_\+s }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Reads (and potentially captures) a string from input if it matches the parameter. 
+
+\mbox{\Hypertarget{classchaiscript_1_1parser_1_1ChaiScript__Parser_a9c61e9a5735054d42c21c01493d43215}\label{classchaiscript_1_1parser_1_1ChaiScript__Parser_a9c61e9a5735054d42c21c01493d43215}} 
+\index{chaiscript::parser::ChaiScript\_Parser$<$ Tracer, Optimizer, Parse\_Depth $>$@{chaiscript::parser::ChaiScript\_Parser$<$ Tracer, Optimizer, Parse\_Depth $>$}!Keyword\_@{Keyword\_}}
+\index{Keyword\_@{Keyword\_}!chaiscript::parser::ChaiScript\_Parser$<$ Tracer, Optimizer, Parse\_Depth $>$@{chaiscript::parser::ChaiScript\_Parser$<$ Tracer, Optimizer, Parse\_Depth $>$}}
+\doxysubsubsection{\texorpdfstring{Keyword\_()}{Keyword\_()}}
+{\footnotesize\ttfamily template$<$typename Tracer , typename Optimizer , std\+::size\+\_\+t Parse\+\_\+\+Depth = 512$>$ \\
+bool \mbox{\hyperlink{classchaiscript_1_1parser_1_1ChaiScript__Parser}{chaiscript\+::parser\+::\+Chai\+Script\+\_\+\+Parser}}$<$ Tracer, Optimizer, Parse\+\_\+\+Depth $>$\+::Keyword\+\_\+ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structchaiscript_1_1utility_1_1Static__String}{utility\+::\+Static\+\_\+\+String}} \&}]{t\+\_\+s }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Reads a string from input if it matches the parameter, without skipping initial whitespace. 
+
+\mbox{\Hypertarget{classchaiscript_1_1parser_1_1ChaiScript__Parser_a6ff5baffd03e47d1c05508a4fd6d4efa}\label{classchaiscript_1_1parser_1_1ChaiScript__Parser_a6ff5baffd03e47d1c05508a4fd6d4efa}} 
+\index{chaiscript::parser::ChaiScript\_Parser$<$ Tracer, Optimizer, Parse\_Depth $>$@{chaiscript::parser::ChaiScript\_Parser$<$ Tracer, Optimizer, Parse\_Depth $>$}!Lambda@{Lambda}}
+\index{Lambda@{Lambda}!chaiscript::parser::ChaiScript\_Parser$<$ Tracer, Optimizer, Parse\_Depth $>$@{chaiscript::parser::ChaiScript\_Parser$<$ Tracer, Optimizer, Parse\_Depth $>$}}
+\doxysubsubsection{\texorpdfstring{Lambda()}{Lambda()}}
+{\footnotesize\ttfamily template$<$typename Tracer , typename Optimizer , std\+::size\+\_\+t Parse\+\_\+\+Depth = 512$>$ \\
+bool \mbox{\hyperlink{classchaiscript_1_1parser_1_1ChaiScript__Parser}{chaiscript\+::parser\+::\+Chai\+Script\+\_\+\+Parser}}$<$ Tracer, Optimizer, Parse\+\_\+\+Depth $>$\+::Lambda (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Reads a lambda (anonymous function) from input. 
+
+\mbox{\Hypertarget{classchaiscript_1_1parser_1_1ChaiScript__Parser_aadb32320654f1a4164a1d268fbf24c82}\label{classchaiscript_1_1parser_1_1ChaiScript__Parser_aadb32320654f1a4164a1d268fbf24c82}} 
+\index{chaiscript::parser::ChaiScript\_Parser$<$ Tracer, Optimizer, Parse\_Depth $>$@{chaiscript::parser::ChaiScript\_Parser$<$ Tracer, Optimizer, Parse\_Depth $>$}!Map\_Pair@{Map\_Pair}}
+\index{Map\_Pair@{Map\_Pair}!chaiscript::parser::ChaiScript\_Parser$<$ Tracer, Optimizer, Parse\_Depth $>$@{chaiscript::parser::ChaiScript\_Parser$<$ Tracer, Optimizer, Parse\_Depth $>$}}
+\doxysubsubsection{\texorpdfstring{Map\_Pair()}{Map\_Pair()}}
+{\footnotesize\ttfamily template$<$typename Tracer , typename Optimizer , std\+::size\+\_\+t Parse\+\_\+\+Depth = 512$>$ \\
+bool \mbox{\hyperlink{classchaiscript_1_1parser_1_1ChaiScript__Parser}{chaiscript\+::parser\+::\+Chai\+Script\+\_\+\+Parser}}$<$ Tracer, Optimizer, Parse\+\_\+\+Depth $>$\+::Map\+\_\+\+Pair (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Reads a pair of values used to create a map initialization from input. 
+
+\mbox{\Hypertarget{classchaiscript_1_1parser_1_1ChaiScript__Parser_a7ef934ceefde5931fc39c21d2fa74464}\label{classchaiscript_1_1parser_1_1ChaiScript__Parser_a7ef934ceefde5931fc39c21d2fa74464}} 
+\index{chaiscript::parser::ChaiScript\_Parser$<$ Tracer, Optimizer, Parse\_Depth $>$@{chaiscript::parser::ChaiScript\_Parser$<$ Tracer, Optimizer, Parse\_Depth $>$}!Num@{Num}}
+\index{Num@{Num}!chaiscript::parser::ChaiScript\_Parser$<$ Tracer, Optimizer, Parse\_Depth $>$@{chaiscript::parser::ChaiScript\_Parser$<$ Tracer, Optimizer, Parse\_Depth $>$}}
+\doxysubsubsection{\texorpdfstring{Num()}{Num()}}
+{\footnotesize\ttfamily template$<$typename Tracer , typename Optimizer , std\+::size\+\_\+t Parse\+\_\+\+Depth = 512$>$ \\
+bool \mbox{\hyperlink{classchaiscript_1_1parser_1_1ChaiScript__Parser}{chaiscript\+::parser\+::\+Chai\+Script\+\_\+\+Parser}}$<$ Tracer, Optimizer, Parse\+\_\+\+Depth $>$\+::Num (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Reads a number from the input, detecting if it\textquotesingle{}s an integer or floating point. 
+
+\mbox{\Hypertarget{classchaiscript_1_1parser_1_1ChaiScript__Parser_a8da7e3c7ee8523636cf04d004a6aca5a}\label{classchaiscript_1_1parser_1_1ChaiScript__Parser_a8da7e3c7ee8523636cf04d004a6aca5a}} 
+\index{chaiscript::parser::ChaiScript\_Parser$<$ Tracer, Optimizer, Parse\_Depth $>$@{chaiscript::parser::ChaiScript\_Parser$<$ Tracer, Optimizer, Parse\_Depth $>$}!Paren\_Expression@{Paren\_Expression}}
+\index{Paren\_Expression@{Paren\_Expression}!chaiscript::parser::ChaiScript\_Parser$<$ Tracer, Optimizer, Parse\_Depth $>$@{chaiscript::parser::ChaiScript\_Parser$<$ Tracer, Optimizer, Parse\_Depth $>$}}
+\doxysubsubsection{\texorpdfstring{Paren\_Expression()}{Paren\_Expression()}}
+{\footnotesize\ttfamily template$<$typename Tracer , typename Optimizer , std\+::size\+\_\+t Parse\+\_\+\+Depth = 512$>$ \\
+bool \mbox{\hyperlink{classchaiscript_1_1parser_1_1ChaiScript__Parser}{chaiscript\+::parser\+::\+Chai\+Script\+\_\+\+Parser}}$<$ Tracer, Optimizer, Parse\+\_\+\+Depth $>$\+::Paren\+\_\+\+Expression (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Reads an expression surrounded by parentheses from input. 
+
+\mbox{\Hypertarget{classchaiscript_1_1parser_1_1ChaiScript__Parser_a2f4e339e5c209032ccf61aa971bf4520}\label{classchaiscript_1_1parser_1_1ChaiScript__Parser_a2f4e339e5c209032ccf61aa971bf4520}} 
+\index{chaiscript::parser::ChaiScript\_Parser$<$ Tracer, Optimizer, Parse\_Depth $>$@{chaiscript::parser::ChaiScript\_Parser$<$ Tracer, Optimizer, Parse\_Depth $>$}!parse\_internal@{parse\_internal}}
+\index{parse\_internal@{parse\_internal}!chaiscript::parser::ChaiScript\_Parser$<$ Tracer, Optimizer, Parse\_Depth $>$@{chaiscript::parser::ChaiScript\_Parser$<$ Tracer, Optimizer, Parse\_Depth $>$}}
+\doxysubsubsection{\texorpdfstring{parse\_internal()}{parse\_internal()}}
+{\footnotesize\ttfamily template$<$typename Tracer , typename Optimizer , std\+::size\+\_\+t Parse\+\_\+\+Depth = 512$>$ \\
+\mbox{\hyperlink{namespacechaiscript_ae2abddb707865864532aa3a611582f5a}{AST\+\_\+\+Node\+Ptr}} \mbox{\hyperlink{classchaiscript_1_1parser_1_1ChaiScript__Parser}{chaiscript\+::parser\+::\+Chai\+Script\+\_\+\+Parser}}$<$ Tracer, Optimizer, Parse\+\_\+\+Depth $>$\+::parse\+\_\+internal (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{t\+\_\+input,  }\item[{std\+::string}]{t\+\_\+fname }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Parses the given input string, tagging parsed ast\+\_\+nodes with the given m\+\_\+filename. 
+
+\mbox{\Hypertarget{classchaiscript_1_1parser_1_1ChaiScript__Parser_a276f23f235d328227a8780e0fa851317}\label{classchaiscript_1_1parser_1_1ChaiScript__Parser_a276f23f235d328227a8780e0fa851317}} 
+\index{chaiscript::parser::ChaiScript\_Parser$<$ Tracer, Optimizer, Parse\_Depth $>$@{chaiscript::parser::ChaiScript\_Parser$<$ Tracer, Optimizer, Parse\_Depth $>$}!Prefix@{Prefix}}
+\index{Prefix@{Prefix}!chaiscript::parser::ChaiScript\_Parser$<$ Tracer, Optimizer, Parse\_Depth $>$@{chaiscript::parser::ChaiScript\_Parser$<$ Tracer, Optimizer, Parse\_Depth $>$}}
+\doxysubsubsection{\texorpdfstring{Prefix()}{Prefix()}}
+{\footnotesize\ttfamily template$<$typename Tracer , typename Optimizer , std\+::size\+\_\+t Parse\+\_\+\+Depth = 512$>$ \\
+bool \mbox{\hyperlink{classchaiscript_1_1parser_1_1ChaiScript__Parser}{chaiscript\+::parser\+::\+Chai\+Script\+\_\+\+Parser}}$<$ Tracer, Optimizer, Parse\+\_\+\+Depth $>$\+::Prefix (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Reads a unary prefixed expression from input. 
+
+\mbox{\Hypertarget{classchaiscript_1_1parser_1_1ChaiScript__Parser_ad439d9d1ba4a306f1dcd739b0aa0abfd}\label{classchaiscript_1_1parser_1_1ChaiScript__Parser_ad439d9d1ba4a306f1dcd739b0aa0abfd}} 
+\index{chaiscript::parser::ChaiScript\_Parser$<$ Tracer, Optimizer, Parse\_Depth $>$@{chaiscript::parser::ChaiScript\_Parser$<$ Tracer, Optimizer, Parse\_Depth $>$}!Quoted\_String@{Quoted\_String}}
+\index{Quoted\_String@{Quoted\_String}!chaiscript::parser::ChaiScript\_Parser$<$ Tracer, Optimizer, Parse\_Depth $>$@{chaiscript::parser::ChaiScript\_Parser$<$ Tracer, Optimizer, Parse\_Depth $>$}}
+\doxysubsubsection{\texorpdfstring{Quoted\_String()}{Quoted\_String()}}
+{\footnotesize\ttfamily template$<$typename Tracer , typename Optimizer , std\+::size\+\_\+t Parse\+\_\+\+Depth = 512$>$ \\
+bool \mbox{\hyperlink{classchaiscript_1_1parser_1_1ChaiScript__Parser}{chaiscript\+::parser\+::\+Chai\+Script\+\_\+\+Parser}}$<$ Tracer, Optimizer, Parse\+\_\+\+Depth $>$\+::Quoted\+\_\+\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Reads (and potentially captures) a quoted string from input. Translates escaped sequences. 
+
+\mbox{\Hypertarget{classchaiscript_1_1parser_1_1ChaiScript__Parser_a699667bd8e9d2b3a9458c1785c9e00d7}\label{classchaiscript_1_1parser_1_1ChaiScript__Parser_a699667bd8e9d2b3a9458c1785c9e00d7}} 
+\index{chaiscript::parser::ChaiScript\_Parser$<$ Tracer, Optimizer, Parse\_Depth $>$@{chaiscript::parser::ChaiScript\_Parser$<$ Tracer, Optimizer, Parse\_Depth $>$}!Quoted\_String\_@{Quoted\_String\_}}
+\index{Quoted\_String\_@{Quoted\_String\_}!chaiscript::parser::ChaiScript\_Parser$<$ Tracer, Optimizer, Parse\_Depth $>$@{chaiscript::parser::ChaiScript\_Parser$<$ Tracer, Optimizer, Parse\_Depth $>$}}
+\doxysubsubsection{\texorpdfstring{Quoted\_String\_()}{Quoted\_String\_()}}
+{\footnotesize\ttfamily template$<$typename Tracer , typename Optimizer , std\+::size\+\_\+t Parse\+\_\+\+Depth = 512$>$ \\
+bool \mbox{\hyperlink{classchaiscript_1_1parser_1_1ChaiScript__Parser}{chaiscript\+::parser\+::\+Chai\+Script\+\_\+\+Parser}}$<$ Tracer, Optimizer, Parse\+\_\+\+Depth $>$\+::Quoted\+\_\+\+String\+\_\+ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Reads a quoted string from input, without skipping initial whitespace. 
+
+\mbox{\Hypertarget{classchaiscript_1_1parser_1_1ChaiScript__Parser_acba1b318716370c33307654501127b56}\label{classchaiscript_1_1parser_1_1ChaiScript__Parser_acba1b318716370c33307654501127b56}} 
+\index{chaiscript::parser::ChaiScript\_Parser$<$ Tracer, Optimizer, Parse\_Depth $>$@{chaiscript::parser::ChaiScript\_Parser$<$ Tracer, Optimizer, Parse\_Depth $>$}!Range\_Expression@{Range\_Expression}}
+\index{Range\_Expression@{Range\_Expression}!chaiscript::parser::ChaiScript\_Parser$<$ Tracer, Optimizer, Parse\_Depth $>$@{chaiscript::parser::ChaiScript\_Parser$<$ Tracer, Optimizer, Parse\_Depth $>$}}
+\doxysubsubsection{\texorpdfstring{Range\_Expression()}{Range\_Expression()}}
+{\footnotesize\ttfamily template$<$typename Tracer , typename Optimizer , std\+::size\+\_\+t Parse\+\_\+\+Depth = 512$>$ \\
+bool \mbox{\hyperlink{classchaiscript_1_1parser_1_1ChaiScript__Parser}{chaiscript\+::parser\+::\+Chai\+Script\+\_\+\+Parser}}$<$ Tracer, Optimizer, Parse\+\_\+\+Depth $>$\+::Range\+\_\+\+Expression (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Reads the ranged {\ttfamily for} conditions from input. 
+
+\mbox{\Hypertarget{classchaiscript_1_1parser_1_1ChaiScript__Parser_ad5fb590c30c20e5989f8904e3c55524d}\label{classchaiscript_1_1parser_1_1ChaiScript__Parser_ad5fb590c30c20e5989f8904e3c55524d}} 
+\index{chaiscript::parser::ChaiScript\_Parser$<$ Tracer, Optimizer, Parse\_Depth $>$@{chaiscript::parser::ChaiScript\_Parser$<$ Tracer, Optimizer, Parse\_Depth $>$}!read\_exponent\_and\_suffix@{read\_exponent\_and\_suffix}}
+\index{read\_exponent\_and\_suffix@{read\_exponent\_and\_suffix}!chaiscript::parser::ChaiScript\_Parser$<$ Tracer, Optimizer, Parse\_Depth $>$@{chaiscript::parser::ChaiScript\_Parser$<$ Tracer, Optimizer, Parse\_Depth $>$}}
+\doxysubsubsection{\texorpdfstring{read\_exponent\_and\_suffix()}{read\_exponent\_and\_suffix()}}
+{\footnotesize\ttfamily template$<$typename Tracer , typename Optimizer , std\+::size\+\_\+t Parse\+\_\+\+Depth = 512$>$ \\
+bool \mbox{\hyperlink{classchaiscript_1_1parser_1_1ChaiScript__Parser}{chaiscript\+::parser\+::\+Chai\+Script\+\_\+\+Parser}}$<$ Tracer, Optimizer, Parse\+\_\+\+Depth $>$\+::read\+\_\+exponent\+\_\+and\+\_\+suffix (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Reads the optional exponent (scientific notation) and suffix for a Float. 
+
+\mbox{\Hypertarget{classchaiscript_1_1parser_1_1ChaiScript__Parser_aaf35451a7b6af01d543717375a10b9f2}\label{classchaiscript_1_1parser_1_1ChaiScript__Parser_aaf35451a7b6af01d543717375a10b9f2}} 
+\index{chaiscript::parser::ChaiScript\_Parser$<$ Tracer, Optimizer, Parse\_Depth $>$@{chaiscript::parser::ChaiScript\_Parser$<$ Tracer, Optimizer, Parse\_Depth $>$}!Reference@{Reference}}
+\index{Reference@{Reference}!chaiscript::parser::ChaiScript\_Parser$<$ Tracer, Optimizer, Parse\_Depth $>$@{chaiscript::parser::ChaiScript\_Parser$<$ Tracer, Optimizer, Parse\_Depth $>$}}
+\doxysubsubsection{\texorpdfstring{Reference()}{Reference()}}
+{\footnotesize\ttfamily template$<$typename Tracer , typename Optimizer , std\+::size\+\_\+t Parse\+\_\+\+Depth = 512$>$ \\
+bool \mbox{\hyperlink{classchaiscript_1_1parser_1_1ChaiScript__Parser}{chaiscript\+::parser\+::\+Chai\+Script\+\_\+\+Parser}}$<$ Tracer, Optimizer, Parse\+\_\+\+Depth $>$\+::Reference (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Parses a variable specified with a \& aka reference. 
+
+\mbox{\Hypertarget{classchaiscript_1_1parser_1_1ChaiScript__Parser_a2f56bd3f8b58f98b9ad5b8bbc1659e7d}\label{classchaiscript_1_1parser_1_1ChaiScript__Parser_a2f56bd3f8b58f98b9ad5b8bbc1659e7d}} 
+\index{chaiscript::parser::ChaiScript\_Parser$<$ Tracer, Optimizer, Parse\_Depth $>$@{chaiscript::parser::ChaiScript\_Parser$<$ Tracer, Optimizer, Parse\_Depth $>$}!Return@{Return}}
+\index{Return@{Return}!chaiscript::parser::ChaiScript\_Parser$<$ Tracer, Optimizer, Parse\_Depth $>$@{chaiscript::parser::ChaiScript\_Parser$<$ Tracer, Optimizer, Parse\_Depth $>$}}
+\doxysubsubsection{\texorpdfstring{Return()}{Return()}}
+{\footnotesize\ttfamily template$<$typename Tracer , typename Optimizer , std\+::size\+\_\+t Parse\+\_\+\+Depth = 512$>$ \\
+bool \mbox{\hyperlink{classchaiscript_1_1parser_1_1ChaiScript__Parser}{chaiscript\+::parser\+::\+Chai\+Script\+\_\+\+Parser}}$<$ Tracer, Optimizer, Parse\+\_\+\+Depth $>$\+::Return (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Reads a return statement from input. 
+
+\mbox{\Hypertarget{classchaiscript_1_1parser_1_1ChaiScript__Parser_a26bf7235f64003faf1986dfeafc5635e}\label{classchaiscript_1_1parser_1_1ChaiScript__Parser_a26bf7235f64003faf1986dfeafc5635e}} 
+\index{chaiscript::parser::ChaiScript\_Parser$<$ Tracer, Optimizer, Parse\_Depth $>$@{chaiscript::parser::ChaiScript\_Parser$<$ Tracer, Optimizer, Parse\_Depth $>$}!Single\_Quoted\_String@{Single\_Quoted\_String}}
+\index{Single\_Quoted\_String@{Single\_Quoted\_String}!chaiscript::parser::ChaiScript\_Parser$<$ Tracer, Optimizer, Parse\_Depth $>$@{chaiscript::parser::ChaiScript\_Parser$<$ Tracer, Optimizer, Parse\_Depth $>$}}
+\doxysubsubsection{\texorpdfstring{Single\_Quoted\_String()}{Single\_Quoted\_String()}}
+{\footnotesize\ttfamily template$<$typename Tracer , typename Optimizer , std\+::size\+\_\+t Parse\+\_\+\+Depth = 512$>$ \\
+bool \mbox{\hyperlink{classchaiscript_1_1parser_1_1ChaiScript__Parser}{chaiscript\+::parser\+::\+Chai\+Script\+\_\+\+Parser}}$<$ Tracer, Optimizer, Parse\+\_\+\+Depth $>$\+::Single\+\_\+\+Quoted\+\_\+\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Reads (and potentially captures) a char group from input. Translates escaped sequences. 
+
+\mbox{\Hypertarget{classchaiscript_1_1parser_1_1ChaiScript__Parser_a548af2b9d301cd2d0a26307aba76d1a9}\label{classchaiscript_1_1parser_1_1ChaiScript__Parser_a548af2b9d301cd2d0a26307aba76d1a9}} 
+\index{chaiscript::parser::ChaiScript\_Parser$<$ Tracer, Optimizer, Parse\_Depth $>$@{chaiscript::parser::ChaiScript\_Parser$<$ Tracer, Optimizer, Parse\_Depth $>$}!Single\_Quoted\_String\_@{Single\_Quoted\_String\_}}
+\index{Single\_Quoted\_String\_@{Single\_Quoted\_String\_}!chaiscript::parser::ChaiScript\_Parser$<$ Tracer, Optimizer, Parse\_Depth $>$@{chaiscript::parser::ChaiScript\_Parser$<$ Tracer, Optimizer, Parse\_Depth $>$}}
+\doxysubsubsection{\texorpdfstring{Single\_Quoted\_String\_()}{Single\_Quoted\_String\_()}}
+{\footnotesize\ttfamily template$<$typename Tracer , typename Optimizer , std\+::size\+\_\+t Parse\+\_\+\+Depth = 512$>$ \\
+bool \mbox{\hyperlink{classchaiscript_1_1parser_1_1ChaiScript__Parser}{chaiscript\+::parser\+::\+Chai\+Script\+\_\+\+Parser}}$<$ Tracer, Optimizer, Parse\+\_\+\+Depth $>$\+::Single\+\_\+\+Quoted\+\_\+\+String\+\_\+ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Reads a character group from input, without skipping initial whitespace. 
+
+\mbox{\Hypertarget{classchaiscript_1_1parser_1_1ChaiScript__Parser_a57d426a0c50879fd6027bd2390faef71}\label{classchaiscript_1_1parser_1_1ChaiScript__Parser_a57d426a0c50879fd6027bd2390faef71}} 
+\index{chaiscript::parser::ChaiScript\_Parser$<$ Tracer, Optimizer, Parse\_Depth $>$@{chaiscript::parser::ChaiScript\_Parser$<$ Tracer, Optimizer, Parse\_Depth $>$}!SkipComment@{SkipComment}}
+\index{SkipComment@{SkipComment}!chaiscript::parser::ChaiScript\_Parser$<$ Tracer, Optimizer, Parse\_Depth $>$@{chaiscript::parser::ChaiScript\_Parser$<$ Tracer, Optimizer, Parse\_Depth $>$}}
+\doxysubsubsection{\texorpdfstring{SkipComment()}{SkipComment()}}
+{\footnotesize\ttfamily template$<$typename Tracer , typename Optimizer , std\+::size\+\_\+t Parse\+\_\+\+Depth = 512$>$ \\
+bool \mbox{\hyperlink{classchaiscript_1_1parser_1_1ChaiScript__Parser}{chaiscript\+::parser\+::\+Chai\+Script\+\_\+\+Parser}}$<$ Tracer, Optimizer, Parse\+\_\+\+Depth $>$\+::Skip\+Comment (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Skips any multi-\/line or single-\/line comment. 
+
+\mbox{\Hypertarget{classchaiscript_1_1parser_1_1ChaiScript__Parser_a9c1e5ad7f05ff23e7b5cc90f9a70cdf5}\label{classchaiscript_1_1parser_1_1ChaiScript__Parser_a9c1e5ad7f05ff23e7b5cc90f9a70cdf5}} 
+\index{chaiscript::parser::ChaiScript\_Parser$<$ Tracer, Optimizer, Parse\_Depth $>$@{chaiscript::parser::ChaiScript\_Parser$<$ Tracer, Optimizer, Parse\_Depth $>$}!SkipWS@{SkipWS}}
+\index{SkipWS@{SkipWS}!chaiscript::parser::ChaiScript\_Parser$<$ Tracer, Optimizer, Parse\_Depth $>$@{chaiscript::parser::ChaiScript\_Parser$<$ Tracer, Optimizer, Parse\_Depth $>$}}
+\doxysubsubsection{\texorpdfstring{SkipWS()}{SkipWS()}}
+{\footnotesize\ttfamily template$<$typename Tracer , typename Optimizer , std\+::size\+\_\+t Parse\+\_\+\+Depth = 512$>$ \\
+bool \mbox{\hyperlink{classchaiscript_1_1parser_1_1ChaiScript__Parser}{chaiscript\+::parser\+::\+Chai\+Script\+\_\+\+Parser}}$<$ Tracer, Optimizer, Parse\+\_\+\+Depth $>$\+::Skip\+WS (\begin{DoxyParamCaption}\item[{bool}]{skip\+\_\+cr = {\ttfamily false} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Skips \mbox{\hyperlink{classchaiscript_1_1ChaiScript}{Chai\+Script}} whitespace, which means space and tab, but not cr/lf jespada\+: Modified Skip\+WS to skip optionally CR (\textquotesingle{}~\newline
+\textquotesingle{}) and/or LF+\+CR (\char`\"{}\textbackslash{}r\textbackslash{}n\char`\"{}) Alek\+Mosingiewicz\+: Added exception when illegal character detected \mbox{\Hypertarget{classchaiscript_1_1parser_1_1ChaiScript__Parser_ac618b6edd6226e3422b1aa63a1a66f82}\label{classchaiscript_1_1parser_1_1ChaiScript__Parser_ac618b6edd6226e3422b1aa63a1a66f82}} 
+\index{chaiscript::parser::ChaiScript\_Parser$<$ Tracer, Optimizer, Parse\_Depth $>$@{chaiscript::parser::ChaiScript\_Parser$<$ Tracer, Optimizer, Parse\_Depth $>$}!Statements@{Statements}}
+\index{Statements@{Statements}!chaiscript::parser::ChaiScript\_Parser$<$ Tracer, Optimizer, Parse\_Depth $>$@{chaiscript::parser::ChaiScript\_Parser$<$ Tracer, Optimizer, Parse\_Depth $>$}}
+\doxysubsubsection{\texorpdfstring{Statements()}{Statements()}}
+{\footnotesize\ttfamily template$<$typename Tracer , typename Optimizer , std\+::size\+\_\+t Parse\+\_\+\+Depth = 512$>$ \\
+bool \mbox{\hyperlink{classchaiscript_1_1parser_1_1ChaiScript__Parser}{chaiscript\+::parser\+::\+Chai\+Script\+\_\+\+Parser}}$<$ Tracer, Optimizer, Parse\+\_\+\+Depth $>$\+::Statements (\begin{DoxyParamCaption}\item[{const bool}]{t\+\_\+class\+\_\+allowed = {\ttfamily false} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Top level parser, starts parsing of all known parses. 
+
+\mbox{\Hypertarget{classchaiscript_1_1parser_1_1ChaiScript__Parser_a9fcb3211ad412ff7ec73471fe9aabd27}\label{classchaiscript_1_1parser_1_1ChaiScript__Parser_a9fcb3211ad412ff7ec73471fe9aabd27}} 
+\index{chaiscript::parser::ChaiScript\_Parser$<$ Tracer, Optimizer, Parse\_Depth $>$@{chaiscript::parser::ChaiScript\_Parser$<$ Tracer, Optimizer, Parse\_Depth $>$}!Switch@{Switch}}
+\index{Switch@{Switch}!chaiscript::parser::ChaiScript\_Parser$<$ Tracer, Optimizer, Parse\_Depth $>$@{chaiscript::parser::ChaiScript\_Parser$<$ Tracer, Optimizer, Parse\_Depth $>$}}
+\doxysubsubsection{\texorpdfstring{Switch()}{Switch()}}
+{\footnotesize\ttfamily template$<$typename Tracer , typename Optimizer , std\+::size\+\_\+t Parse\+\_\+\+Depth = 512$>$ \\
+bool \mbox{\hyperlink{classchaiscript_1_1parser_1_1ChaiScript__Parser}{chaiscript\+::parser\+::\+Chai\+Script\+\_\+\+Parser}}$<$ Tracer, Optimizer, Parse\+\_\+\+Depth $>$\+::Switch (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Reads a switch statement from input. 
+
+\mbox{\Hypertarget{classchaiscript_1_1parser_1_1ChaiScript__Parser_a302445cc910f5dc80c02687c333d7923}\label{classchaiscript_1_1parser_1_1ChaiScript__Parser_a302445cc910f5dc80c02687c333d7923}} 
+\index{chaiscript::parser::ChaiScript\_Parser$<$ Tracer, Optimizer, Parse\_Depth $>$@{chaiscript::parser::ChaiScript\_Parser$<$ Tracer, Optimizer, Parse\_Depth $>$}!Symbol@{Symbol}}
+\index{Symbol@{Symbol}!chaiscript::parser::ChaiScript\_Parser$<$ Tracer, Optimizer, Parse\_Depth $>$@{chaiscript::parser::ChaiScript\_Parser$<$ Tracer, Optimizer, Parse\_Depth $>$}}
+\doxysubsubsection{\texorpdfstring{Symbol()}{Symbol()}}
+{\footnotesize\ttfamily template$<$typename Tracer , typename Optimizer , std\+::size\+\_\+t Parse\+\_\+\+Depth = 512$>$ \\
+bool \mbox{\hyperlink{classchaiscript_1_1parser_1_1ChaiScript__Parser}{chaiscript\+::parser\+::\+Chai\+Script\+\_\+\+Parser}}$<$ Tracer, Optimizer, Parse\+\_\+\+Depth $>$\+::Symbol (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structchaiscript_1_1utility_1_1Static__String}{utility\+::\+Static\+\_\+\+String}} \&}]{t\+\_\+s,  }\item[{const bool}]{t\+\_\+disallow\+\_\+prevention = {\ttfamily false} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Reads (and potentially captures) a symbol group from input if it matches the parameter. 
+
+\mbox{\Hypertarget{classchaiscript_1_1parser_1_1ChaiScript__Parser_ae59cf04db2d7022bf8bdc36a7a844f2b}\label{classchaiscript_1_1parser_1_1ChaiScript__Parser_ae59cf04db2d7022bf8bdc36a7a844f2b}} 
+\index{chaiscript::parser::ChaiScript\_Parser$<$ Tracer, Optimizer, Parse\_Depth $>$@{chaiscript::parser::ChaiScript\_Parser$<$ Tracer, Optimizer, Parse\_Depth $>$}!Symbol\_@{Symbol\_}}
+\index{Symbol\_@{Symbol\_}!chaiscript::parser::ChaiScript\_Parser$<$ Tracer, Optimizer, Parse\_Depth $>$@{chaiscript::parser::ChaiScript\_Parser$<$ Tracer, Optimizer, Parse\_Depth $>$}}
+\doxysubsubsection{\texorpdfstring{Symbol\_()}{Symbol\_()}}
+{\footnotesize\ttfamily template$<$typename Tracer , typename Optimizer , std\+::size\+\_\+t Parse\+\_\+\+Depth = 512$>$ \\
+auto \mbox{\hyperlink{classchaiscript_1_1parser_1_1ChaiScript__Parser}{chaiscript\+::parser\+::\+Chai\+Script\+\_\+\+Parser}}$<$ Tracer, Optimizer, Parse\+\_\+\+Depth $>$\+::Symbol\+\_\+ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structchaiscript_1_1utility_1_1Static__String}{utility\+::\+Static\+\_\+\+String}} \&}]{sym }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Reads a symbol group from input if it matches the parameter, without skipping initial whitespace. 
+
+\mbox{\Hypertarget{classchaiscript_1_1parser_1_1ChaiScript__Parser_a04513a36a94c412e3ee6190c65f333a4}\label{classchaiscript_1_1parser_1_1ChaiScript__Parser_a04513a36a94c412e3ee6190c65f333a4}} 
+\index{chaiscript::parser::ChaiScript\_Parser$<$ Tracer, Optimizer, Parse\_Depth $>$@{chaiscript::parser::ChaiScript\_Parser$<$ Tracer, Optimizer, Parse\_Depth $>$}!Try@{Try}}
+\index{Try@{Try}!chaiscript::parser::ChaiScript\_Parser$<$ Tracer, Optimizer, Parse\_Depth $>$@{chaiscript::parser::ChaiScript\_Parser$<$ Tracer, Optimizer, Parse\_Depth $>$}}
+\doxysubsubsection{\texorpdfstring{Try()}{Try()}}
+{\footnotesize\ttfamily template$<$typename Tracer , typename Optimizer , std\+::size\+\_\+t Parse\+\_\+\+Depth = 512$>$ \\
+bool \mbox{\hyperlink{classchaiscript_1_1parser_1_1ChaiScript__Parser}{chaiscript\+::parser\+::\+Chai\+Script\+\_\+\+Parser}}$<$ Tracer, Optimizer, Parse\+\_\+\+Depth $>$\+::Try (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Reads a function definition from input. 
+
+\mbox{\Hypertarget{classchaiscript_1_1parser_1_1ChaiScript__Parser_aafe0c633e52dab03cfdb47ec11bedfc4}\label{classchaiscript_1_1parser_1_1ChaiScript__Parser_aafe0c633e52dab03cfdb47ec11bedfc4}} 
+\index{chaiscript::parser::ChaiScript\_Parser$<$ Tracer, Optimizer, Parse\_Depth $>$@{chaiscript::parser::ChaiScript\_Parser$<$ Tracer, Optimizer, Parse\_Depth $>$}!Value@{Value}}
+\index{Value@{Value}!chaiscript::parser::ChaiScript\_Parser$<$ Tracer, Optimizer, Parse\_Depth $>$@{chaiscript::parser::ChaiScript\_Parser$<$ Tracer, Optimizer, Parse\_Depth $>$}}
+\doxysubsubsection{\texorpdfstring{Value()}{Value()}}
+{\footnotesize\ttfamily template$<$typename Tracer , typename Optimizer , std\+::size\+\_\+t Parse\+\_\+\+Depth = 512$>$ \\
+bool \mbox{\hyperlink{classchaiscript_1_1parser_1_1ChaiScript__Parser}{chaiscript\+::parser\+::\+Chai\+Script\+\_\+\+Parser}}$<$ Tracer, Optimizer, Parse\+\_\+\+Depth $>$\+::Value (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Parses any of a group of \textquotesingle{}value\textquotesingle{} style ast\+\_\+node groups from input. 
+
+\mbox{\Hypertarget{classchaiscript_1_1parser_1_1ChaiScript__Parser_a292aa7a65ead11058d0e573a933a24b0}\label{classchaiscript_1_1parser_1_1ChaiScript__Parser_a292aa7a65ead11058d0e573a933a24b0}} 
+\index{chaiscript::parser::ChaiScript\_Parser$<$ Tracer, Optimizer, Parse\_Depth $>$@{chaiscript::parser::ChaiScript\_Parser$<$ Tracer, Optimizer, Parse\_Depth $>$}!Value\_Range@{Value\_Range}}
+\index{Value\_Range@{Value\_Range}!chaiscript::parser::ChaiScript\_Parser$<$ Tracer, Optimizer, Parse\_Depth $>$@{chaiscript::parser::ChaiScript\_Parser$<$ Tracer, Optimizer, Parse\_Depth $>$}}
+\doxysubsubsection{\texorpdfstring{Value\_Range()}{Value\_Range()}}
+{\footnotesize\ttfamily template$<$typename Tracer , typename Optimizer , std\+::size\+\_\+t Parse\+\_\+\+Depth = 512$>$ \\
+bool \mbox{\hyperlink{classchaiscript_1_1parser_1_1ChaiScript__Parser}{chaiscript\+::parser\+::\+Chai\+Script\+\_\+\+Parser}}$<$ Tracer, Optimizer, Parse\+\_\+\+Depth $>$\+::Value\+\_\+\+Range (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Reads a pair of values used to create a range initialization from input. 
+
+\mbox{\Hypertarget{classchaiscript_1_1parser_1_1ChaiScript__Parser_ad813654b712c331f9c8dfb7d3810a1c2}\label{classchaiscript_1_1parser_1_1ChaiScript__Parser_ad813654b712c331f9c8dfb7d3810a1c2}} 
+\index{chaiscript::parser::ChaiScript\_Parser$<$ Tracer, Optimizer, Parse\_Depth $>$@{chaiscript::parser::ChaiScript\_Parser$<$ Tracer, Optimizer, Parse\_Depth $>$}!Var\_Decl@{Var\_Decl}}
+\index{Var\_Decl@{Var\_Decl}!chaiscript::parser::ChaiScript\_Parser$<$ Tracer, Optimizer, Parse\_Depth $>$@{chaiscript::parser::ChaiScript\_Parser$<$ Tracer, Optimizer, Parse\_Depth $>$}}
+\doxysubsubsection{\texorpdfstring{Var\_Decl()}{Var\_Decl()}}
+{\footnotesize\ttfamily template$<$typename Tracer , typename Optimizer , std\+::size\+\_\+t Parse\+\_\+\+Depth = 512$>$ \\
+bool \mbox{\hyperlink{classchaiscript_1_1parser_1_1ChaiScript__Parser}{chaiscript\+::parser\+::\+Chai\+Script\+\_\+\+Parser}}$<$ Tracer, Optimizer, Parse\+\_\+\+Depth $>$\+::Var\+\_\+\+Decl (\begin{DoxyParamCaption}\item[{const bool}]{t\+\_\+class\+\_\+context = {\ttfamily false},  }\item[{const std\+::string \&}]{t\+\_\+class\+\_\+name = {\ttfamily \char`\"{}\char`\"{}} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Reads a variable declaration from input. 
+
+\mbox{\Hypertarget{classchaiscript_1_1parser_1_1ChaiScript__Parser_a2d76e7d6c4b25574353ec2fb39165950}\label{classchaiscript_1_1parser_1_1ChaiScript__Parser_a2d76e7d6c4b25574353ec2fb39165950}} 
+\index{chaiscript::parser::ChaiScript\_Parser$<$ Tracer, Optimizer, Parse\_Depth $>$@{chaiscript::parser::ChaiScript\_Parser$<$ Tracer, Optimizer, Parse\_Depth $>$}!While@{While}}
+\index{While@{While}!chaiscript::parser::ChaiScript\_Parser$<$ Tracer, Optimizer, Parse\_Depth $>$@{chaiscript::parser::ChaiScript\_Parser$<$ Tracer, Optimizer, Parse\_Depth $>$}}
+\doxysubsubsection{\texorpdfstring{While()}{While()}}
+{\footnotesize\ttfamily template$<$typename Tracer , typename Optimizer , std\+::size\+\_\+t Parse\+\_\+\+Depth = 512$>$ \\
+bool \mbox{\hyperlink{classchaiscript_1_1parser_1_1ChaiScript__Parser}{chaiscript\+::parser\+::\+Chai\+Script\+\_\+\+Parser}}$<$ Tracer, Optimizer, Parse\+\_\+\+Depth $>$\+::While (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Reads a while block from input. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Chai\+Script-\/6.\+1.\+0/include/chaiscript/language/chaiscript\+\_\+parser.\+hpp\end{DoxyCompactItemize}

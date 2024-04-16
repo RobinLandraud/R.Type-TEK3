@@ -1,0 +1,269 @@
+\hypertarget{classScriptGraphicsEngine}{}\doxysection{Script\+Graphics\+Engine Class Reference}
+\label{classScriptGraphicsEngine}\index{ScriptGraphicsEngine@{ScriptGraphicsEngine}}
+
+
+A class that handle the \mbox{\hyperlink{classScript}{Script}} graphics engine. Used to handle the \mbox{\hyperlink{classScript}{Script}} graphics engine.  
+
+
+
+
+{\ttfamily \#include $<$Script\+Engine.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classScriptGraphicsEngine_acf42b7ab93037e7e2d979c08c159aaf4}{Script\+Graphics\+Engine}} (\mbox{\hyperlink{classAGraphicsEngine}{AGraphics\+Engine}} \&graphics\+Engine)
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classScriptGraphicsEngine_aba0898798af49eaad0d85d35f55bf7b2}{$\sim$\+Script\+Graphics\+Engine}} ()=default
+\item 
+void \mbox{\hyperlink{classScriptGraphicsEngine_aea99d6d256f34043fecfd3c36e9f932d}{create\+Texture}} (const std\+::string name, const std\+::string source)
+\begin{DoxyCompactList}\small\item\em Create a texture. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classScriptGraphicsEngine_a50aaf972ea98f0f64e1beb889b0202f7}{create\+Sprite}} (std\+::string name, std\+::string texture\+Name)
+\begin{DoxyCompactList}\small\item\em Create a sprite. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classScriptGraphicsEngine_a78b3ccc9caddfa3a5dc3608487569792}{draw\+Sprite}} (std\+::string name, float x, float y)
+\begin{DoxyCompactList}\small\item\em Draw a sprite. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classScriptGraphicsEngine_ae42733c2034a65f570af6716cd7e7253}{create\+Circle}} (std\+::string name, float radius)
+\begin{DoxyCompactList}\small\item\em Create a circle. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classScriptGraphicsEngine_ae5adcd7518dd85d42cce776eb83d40dd}{draw\+Circle}} (std\+::string name, float x, float y)
+\begin{DoxyCompactList}\small\item\em Draw a circle. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classScriptGraphicsEngine_ab59695216c6e8cf7ad006fda25c4ec7c}{create\+Rectangle}} (std\+::string name, float width, float height)
+\begin{DoxyCompactList}\small\item\em Create a rectangle. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classScriptGraphicsEngine_abb3082a01e80dd8d9200793beaad4839}{draw\+Rectangle}} (std\+::string name, float x, float y)
+\begin{DoxyCompactList}\small\item\em Draw a rectangle. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classScriptGraphicsEngine_a6cd00260d02f5705ad4cff1b004b048b}{create\+Font}} (std\+::string name, std\+::string source)
+\begin{DoxyCompactList}\small\item\em Create a font. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classScriptGraphicsEngine_ae8cf10182562fe3e5e4401d61b3fa654}{create\+Text}} (std\+::string name, std\+::string text, std\+::string font, int size)
+\begin{DoxyCompactList}\small\item\em Create a text. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classScriptGraphicsEngine_ab7a47a345b46b6ba93afdccc8ebd5401}{draw\+Text}} (std\+::string name, float x, float y)
+\begin{DoxyCompactList}\small\item\em Draw a text. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A class that handle the \mbox{\hyperlink{classScript}{Script}} graphics engine. Used to handle the \mbox{\hyperlink{classScript}{Script}} graphics engine. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classScriptGraphicsEngine_acf42b7ab93037e7e2d979c08c159aaf4}\label{classScriptGraphicsEngine_acf42b7ab93037e7e2d979c08c159aaf4}} 
+\index{ScriptGraphicsEngine@{ScriptGraphicsEngine}!ScriptGraphicsEngine@{ScriptGraphicsEngine}}
+\index{ScriptGraphicsEngine@{ScriptGraphicsEngine}!ScriptGraphicsEngine@{ScriptGraphicsEngine}}
+\doxysubsubsection{\texorpdfstring{ScriptGraphicsEngine()}{ScriptGraphicsEngine()}}
+{\footnotesize\ttfamily Script\+Graphics\+Engine\+::\+Script\+Graphics\+Engine (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classAGraphicsEngine}{AGraphics\+Engine}} \&}]{graphics\+Engine }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em graphics\+Engine} & The graphics engine \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classScriptGraphicsEngine_aba0898798af49eaad0d85d35f55bf7b2}\label{classScriptGraphicsEngine_aba0898798af49eaad0d85d35f55bf7b2}} 
+\index{ScriptGraphicsEngine@{ScriptGraphicsEngine}!````~ScriptGraphicsEngine@{$\sim$ScriptGraphicsEngine}}
+\index{````~ScriptGraphicsEngine@{$\sim$ScriptGraphicsEngine}!ScriptGraphicsEngine@{ScriptGraphicsEngine}}
+\doxysubsubsection{\texorpdfstring{$\sim$ScriptGraphicsEngine()}{~ScriptGraphicsEngine()}}
+{\footnotesize\ttfamily Script\+Graphics\+Engine\+::$\sim$\+Script\+Graphics\+Engine (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+Default destructor 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classScriptGraphicsEngine_ae42733c2034a65f570af6716cd7e7253}\label{classScriptGraphicsEngine_ae42733c2034a65f570af6716cd7e7253}} 
+\index{ScriptGraphicsEngine@{ScriptGraphicsEngine}!createCircle@{createCircle}}
+\index{createCircle@{createCircle}!ScriptGraphicsEngine@{ScriptGraphicsEngine}}
+\doxysubsubsection{\texorpdfstring{createCircle()}{createCircle()}}
+{\footnotesize\ttfamily int Script\+Graphics\+Engine\+::create\+Circle (\begin{DoxyParamCaption}\item[{std\+::string}]{name,  }\item[{float}]{radius }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Create a circle. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The name of the circle \\
+\hline
+{\em radius} & The radius of the circle \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The id of the circle 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classScriptGraphicsEngine_a6cd00260d02f5705ad4cff1b004b048b}\label{classScriptGraphicsEngine_a6cd00260d02f5705ad4cff1b004b048b}} 
+\index{ScriptGraphicsEngine@{ScriptGraphicsEngine}!createFont@{createFont}}
+\index{createFont@{createFont}!ScriptGraphicsEngine@{ScriptGraphicsEngine}}
+\doxysubsubsection{\texorpdfstring{createFont()}{createFont()}}
+{\footnotesize\ttfamily int Script\+Graphics\+Engine\+::create\+Font (\begin{DoxyParamCaption}\item[{std\+::string}]{name,  }\item[{std\+::string}]{source }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Create a font. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The name of the font \\
+\hline
+{\em source} & The source of the font \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The id of the font 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classScriptGraphicsEngine_ab59695216c6e8cf7ad006fda25c4ec7c}\label{classScriptGraphicsEngine_ab59695216c6e8cf7ad006fda25c4ec7c}} 
+\index{ScriptGraphicsEngine@{ScriptGraphicsEngine}!createRectangle@{createRectangle}}
+\index{createRectangle@{createRectangle}!ScriptGraphicsEngine@{ScriptGraphicsEngine}}
+\doxysubsubsection{\texorpdfstring{createRectangle()}{createRectangle()}}
+{\footnotesize\ttfamily int Script\+Graphics\+Engine\+::create\+Rectangle (\begin{DoxyParamCaption}\item[{std\+::string}]{name,  }\item[{float}]{width,  }\item[{float}]{height }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Create a rectangle. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The name of the rectangle \\
+\hline
+{\em width} & The width of the rectangle \\
+\hline
+{\em height} & The height of the rectangle \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The id of the rectangle 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classScriptGraphicsEngine_a50aaf972ea98f0f64e1beb889b0202f7}\label{classScriptGraphicsEngine_a50aaf972ea98f0f64e1beb889b0202f7}} 
+\index{ScriptGraphicsEngine@{ScriptGraphicsEngine}!createSprite@{createSprite}}
+\index{createSprite@{createSprite}!ScriptGraphicsEngine@{ScriptGraphicsEngine}}
+\doxysubsubsection{\texorpdfstring{createSprite()}{createSprite()}}
+{\footnotesize\ttfamily void Script\+Graphics\+Engine\+::create\+Sprite (\begin{DoxyParamCaption}\item[{std\+::string}]{name,  }\item[{std\+::string}]{texture\+Name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Create a sprite. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The name of the sprite \\
+\hline
+{\em texture\+Name} & The name of the texture \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classScriptGraphicsEngine_ae8cf10182562fe3e5e4401d61b3fa654}\label{classScriptGraphicsEngine_ae8cf10182562fe3e5e4401d61b3fa654}} 
+\index{ScriptGraphicsEngine@{ScriptGraphicsEngine}!createText@{createText}}
+\index{createText@{createText}!ScriptGraphicsEngine@{ScriptGraphicsEngine}}
+\doxysubsubsection{\texorpdfstring{createText()}{createText()}}
+{\footnotesize\ttfamily int Script\+Graphics\+Engine\+::create\+Text (\begin{DoxyParamCaption}\item[{std\+::string}]{name,  }\item[{std\+::string}]{text,  }\item[{std\+::string}]{font,  }\item[{int}]{size }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Create a text. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The name of the text \\
+\hline
+{\em text} & The text \\
+\hline
+{\em font} & The font \\
+\hline
+{\em size} & The size of the text \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The id of the text 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classScriptGraphicsEngine_aea99d6d256f34043fecfd3c36e9f932d}\label{classScriptGraphicsEngine_aea99d6d256f34043fecfd3c36e9f932d}} 
+\index{ScriptGraphicsEngine@{ScriptGraphicsEngine}!createTexture@{createTexture}}
+\index{createTexture@{createTexture}!ScriptGraphicsEngine@{ScriptGraphicsEngine}}
+\doxysubsubsection{\texorpdfstring{createTexture()}{createTexture()}}
+{\footnotesize\ttfamily void Script\+Graphics\+Engine\+::create\+Texture (\begin{DoxyParamCaption}\item[{const std\+::string}]{name,  }\item[{const std\+::string}]{source }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Create a texture. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The name of the texture \\
+\hline
+{\em source} & The source of the texture \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classScriptGraphicsEngine_ae5adcd7518dd85d42cce776eb83d40dd}\label{classScriptGraphicsEngine_ae5adcd7518dd85d42cce776eb83d40dd}} 
+\index{ScriptGraphicsEngine@{ScriptGraphicsEngine}!drawCircle@{drawCircle}}
+\index{drawCircle@{drawCircle}!ScriptGraphicsEngine@{ScriptGraphicsEngine}}
+\doxysubsubsection{\texorpdfstring{drawCircle()}{drawCircle()}}
+{\footnotesize\ttfamily void Script\+Graphics\+Engine\+::draw\+Circle (\begin{DoxyParamCaption}\item[{std\+::string}]{name,  }\item[{float}]{x,  }\item[{float}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Draw a circle. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The name of the circle \\
+\hline
+{\em x} & The x position of the circle \\
+\hline
+{\em y} & The y position of the circle \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classScriptGraphicsEngine_abb3082a01e80dd8d9200793beaad4839}\label{classScriptGraphicsEngine_abb3082a01e80dd8d9200793beaad4839}} 
+\index{ScriptGraphicsEngine@{ScriptGraphicsEngine}!drawRectangle@{drawRectangle}}
+\index{drawRectangle@{drawRectangle}!ScriptGraphicsEngine@{ScriptGraphicsEngine}}
+\doxysubsubsection{\texorpdfstring{drawRectangle()}{drawRectangle()}}
+{\footnotesize\ttfamily void Script\+Graphics\+Engine\+::draw\+Rectangle (\begin{DoxyParamCaption}\item[{std\+::string}]{name,  }\item[{float}]{x,  }\item[{float}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Draw a rectangle. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The name of the rectangle \\
+\hline
+{\em x} & The x position of the rectangle \\
+\hline
+{\em y} & The y position of the rectangle \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classScriptGraphicsEngine_a78b3ccc9caddfa3a5dc3608487569792}\label{classScriptGraphicsEngine_a78b3ccc9caddfa3a5dc3608487569792}} 
+\index{ScriptGraphicsEngine@{ScriptGraphicsEngine}!drawSprite@{drawSprite}}
+\index{drawSprite@{drawSprite}!ScriptGraphicsEngine@{ScriptGraphicsEngine}}
+\doxysubsubsection{\texorpdfstring{drawSprite()}{drawSprite()}}
+{\footnotesize\ttfamily void Script\+Graphics\+Engine\+::draw\+Sprite (\begin{DoxyParamCaption}\item[{std\+::string}]{name,  }\item[{float}]{x,  }\item[{float}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Draw a sprite. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The name of the sprite \\
+\hline
+{\em x} & The x position of the sprite \\
+\hline
+{\em y} & The y position of the sprite \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classScriptGraphicsEngine_ab7a47a345b46b6ba93afdccc8ebd5401}\label{classScriptGraphicsEngine_ab7a47a345b46b6ba93afdccc8ebd5401}} 
+\index{ScriptGraphicsEngine@{ScriptGraphicsEngine}!drawText@{drawText}}
+\index{drawText@{drawText}!ScriptGraphicsEngine@{ScriptGraphicsEngine}}
+\doxysubsubsection{\texorpdfstring{drawText()}{drawText()}}
+{\footnotesize\ttfamily void Script\+Graphics\+Engine\+::draw\+Text (\begin{DoxyParamCaption}\item[{std\+::string}]{name,  }\item[{float}]{x,  }\item[{float}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Draw a text. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The name of the text \\
+\hline
+{\em x} & The x position of the text \\
+\hline
+{\em y} & The y position of the text \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Client/\+Script/Script\+Engine.\+hpp\end{DoxyCompactItemize}

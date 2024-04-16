@@ -1,0 +1,245 @@
+\hypertarget{classClock}{}\doxysection{Clock Class Reference}
+\label{classClock}\index{Clock@{Clock}}
+
+
+A simple class to measure time. Used to create a clock.  
+
+
+
+
+{\ttfamily \#include $<$Clocks\+Component.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classClock_a71d5a17b661c878a139e11791ff357f4}{Clock}} (float secondes=1)
+\begin{DoxyCompactList}\small\item\em Default constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classClock_a63aaef7990c16a7aba25163846dcbf01}{$\sim$\+Clock}} ()=default
+\item 
+\mbox{\hyperlink{classClock_a8db457ffaa31e1bc853f893fd07fa102}{Clock}} (\mbox{\hyperlink{classClock}{Clock}} const \&)=default
+\item 
+\mbox{\hyperlink{classClock_ae8b73e8ad0e1a2c09f276cd3c6466d72}{Clock}} (\mbox{\hyperlink{classClock}{Clock}} \&\&) noexcept=default
+\item 
+\mbox{\hyperlink{classClock}{Clock}} \& \mbox{\hyperlink{classClock_a20ccb8428d7550010322a205bfed3388}{operator=}} (\mbox{\hyperlink{classClock}{Clock}} const \&)=default
+\item 
+\mbox{\hyperlink{classClock}{Clock}} \& \mbox{\hyperlink{classClock_a047dfec30bf593658c4ff736cb51d7c3}{operator=}} (\mbox{\hyperlink{classClock}{Clock}} \&\&) noexcept=default
+\item 
+void \mbox{\hyperlink{classClock_aede94d6c5ece1cc6869b1d913b714d53}{pause}} ()
+\begin{DoxyCompactList}\small\item\em Pause the clock. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classClock_a0cec209ce53def4724e0dfe2756eaad3}{play}} ()
+\begin{DoxyCompactList}\small\item\em Run the clock. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classClock_a5deab76244f8effa84068d2e21cc3658}{is\+Running}} () const
+\begin{DoxyCompactList}\small\item\em Check if the clock is running. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classClock_a436217c8d8678d2db4e18961c743eb07}{refresh}} ()
+\begin{DoxyCompactList}\small\item\em Refresh the clock. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classClock_a0ab5423b0a997aa13d7b6131c46d1358}{reset}} ()
+\begin{DoxyCompactList}\small\item\em Reset the clock. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classClock_ab964c32646e07c6480537d4678774e85}{loop}} ()
+\begin{DoxyCompactList}\small\item\em Loop the clock. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classClock_a73892c5c56f97990013befa9067da107}{is\+Tick}} () const
+\begin{DoxyCompactList}\small\item\em Check if the clock is tick. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classClock_a71d5a17b661c878a139e11791ff357f4}\label{classClock_a71d5a17b661c878a139e11791ff357f4}} 
+{\bfseries Clock} (float secondes=1)
+\item 
+\mbox{\hyperlink{classClock_a63aaef7990c16a7aba25163846dcbf01}{$\sim$\+Clock}} ()=default
+\item 
+\mbox{\hyperlink{classClock_a8db457ffaa31e1bc853f893fd07fa102}{Clock}} (\mbox{\hyperlink{classClock}{Clock}} const \&)=default
+\item 
+\mbox{\hyperlink{classClock_ae8b73e8ad0e1a2c09f276cd3c6466d72}{Clock}} (\mbox{\hyperlink{classClock}{Clock}} \&\&) noexcept=default
+\item 
+\mbox{\hyperlink{classClock}{Clock}} \& \mbox{\hyperlink{classClock_a20ccb8428d7550010322a205bfed3388}{operator=}} (\mbox{\hyperlink{classClock}{Clock}} const \&)=default
+\item 
+\mbox{\hyperlink{classClock}{Clock}} \& \mbox{\hyperlink{classClock_a047dfec30bf593658c4ff736cb51d7c3}{operator=}} (\mbox{\hyperlink{classClock}{Clock}} \&\&) noexcept=default
+\item 
+\mbox{\Hypertarget{classClock_aede94d6c5ece1cc6869b1d913b714d53}\label{classClock_aede94d6c5ece1cc6869b1d913b714d53}} 
+void {\bfseries pause} ()
+\item 
+\mbox{\Hypertarget{classClock_a0cec209ce53def4724e0dfe2756eaad3}\label{classClock_a0cec209ce53def4724e0dfe2756eaad3}} 
+void {\bfseries play} ()
+\item 
+\mbox{\Hypertarget{classClock_a5deab76244f8effa84068d2e21cc3658}\label{classClock_a5deab76244f8effa84068d2e21cc3658}} 
+bool {\bfseries is\+Running} () const
+\item 
+\mbox{\Hypertarget{classClock_a436217c8d8678d2db4e18961c743eb07}\label{classClock_a436217c8d8678d2db4e18961c743eb07}} 
+void {\bfseries refresh} ()
+\item 
+\mbox{\Hypertarget{classClock_a0ab5423b0a997aa13d7b6131c46d1358}\label{classClock_a0ab5423b0a997aa13d7b6131c46d1358}} 
+void {\bfseries reset} ()
+\item 
+\mbox{\Hypertarget{classClock_ab964c32646e07c6480537d4678774e85}\label{classClock_ab964c32646e07c6480537d4678774e85}} 
+void {\bfseries loop} ()
+\item 
+\mbox{\Hypertarget{classClock_a73892c5c56f97990013befa9067da107}\label{classClock_a73892c5c56f97990013befa9067da107}} 
+bool {\bfseries is\+Tick} () const
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A simple class to measure time. Used to create a clock. 
+
+A simple class to measure time. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classClock_a71d5a17b661c878a139e11791ff357f4}\label{classClock_a71d5a17b661c878a139e11791ff357f4}} 
+\index{Clock@{Clock}!Clock@{Clock}}
+\index{Clock@{Clock}!Clock@{Clock}}
+\doxysubsubsection{\texorpdfstring{Clock()}{Clock()}\hspace{0.1cm}{\footnotesize\ttfamily [1/5]}}
+{\footnotesize\ttfamily Clock\+::\+Clock (\begin{DoxyParamCaption}\item[{float}]{secondes = {\ttfamily 1} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}
+
+
+
+Default constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em secondes} & The number of seconds \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classClock_a63aaef7990c16a7aba25163846dcbf01}\label{classClock_a63aaef7990c16a7aba25163846dcbf01}} 
+\index{Clock@{Clock}!````~Clock@{$\sim$Clock}}
+\index{````~Clock@{$\sim$Clock}!Clock@{Clock}}
+\doxysubsubsection{\texorpdfstring{$\sim$Clock()}{~Clock()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Clock\+::$\sim$\+Clock (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+Default destructor \mbox{\Hypertarget{classClock_a8db457ffaa31e1bc853f893fd07fa102}\label{classClock_a8db457ffaa31e1bc853f893fd07fa102}} 
+\index{Clock@{Clock}!Clock@{Clock}}
+\index{Clock@{Clock}!Clock@{Clock}}
+\doxysubsubsection{\texorpdfstring{Clock()}{Clock()}\hspace{0.1cm}{\footnotesize\ttfamily [2/5]}}
+{\footnotesize\ttfamily Clock\+::\+Clock (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classClock}{Clock}} const \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+Default copy constructor \mbox{\Hypertarget{classClock_ae8b73e8ad0e1a2c09f276cd3c6466d72}\label{classClock_ae8b73e8ad0e1a2c09f276cd3c6466d72}} 
+\index{Clock@{Clock}!Clock@{Clock}}
+\index{Clock@{Clock}!Clock@{Clock}}
+\doxysubsubsection{\texorpdfstring{Clock()}{Clock()}\hspace{0.1cm}{\footnotesize\ttfamily [3/5]}}
+{\footnotesize\ttfamily Clock\+::\+Clock (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classClock}{Clock}} \&\&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}, {\ttfamily [noexcept]}}
+
+Default move constructor \mbox{\Hypertarget{classClock_a63aaef7990c16a7aba25163846dcbf01}\label{classClock_a63aaef7990c16a7aba25163846dcbf01}} 
+\index{Clock@{Clock}!````~Clock@{$\sim$Clock}}
+\index{````~Clock@{$\sim$Clock}!Clock@{Clock}}
+\doxysubsubsection{\texorpdfstring{$\sim$Clock()}{~Clock()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Clock\+::$\sim$\+Clock (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+Default destructor \mbox{\Hypertarget{classClock_a8db457ffaa31e1bc853f893fd07fa102}\label{classClock_a8db457ffaa31e1bc853f893fd07fa102}} 
+\index{Clock@{Clock}!Clock@{Clock}}
+\index{Clock@{Clock}!Clock@{Clock}}
+\doxysubsubsection{\texorpdfstring{Clock()}{Clock()}\hspace{0.1cm}{\footnotesize\ttfamily [4/5]}}
+{\footnotesize\ttfamily Clock\+::\+Clock (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classClock}{Clock}} const \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+Default copy constructor \mbox{\Hypertarget{classClock_ae8b73e8ad0e1a2c09f276cd3c6466d72}\label{classClock_ae8b73e8ad0e1a2c09f276cd3c6466d72}} 
+\index{Clock@{Clock}!Clock@{Clock}}
+\index{Clock@{Clock}!Clock@{Clock}}
+\doxysubsubsection{\texorpdfstring{Clock()}{Clock()}\hspace{0.1cm}{\footnotesize\ttfamily [5/5]}}
+{\footnotesize\ttfamily Clock\+::\+Clock (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classClock}{Clock}} \&\&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}, {\ttfamily [noexcept]}}
+
+Default move constructor 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classClock_a5deab76244f8effa84068d2e21cc3658}\label{classClock_a5deab76244f8effa84068d2e21cc3658}} 
+\index{Clock@{Clock}!isRunning@{isRunning}}
+\index{isRunning@{isRunning}!Clock@{Clock}}
+\doxysubsubsection{\texorpdfstring{isRunning()}{isRunning()}}
+{\footnotesize\ttfamily bool Clock\+::is\+Running (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Check if the clock is running. 
+
+\begin{DoxyReturn}{Returns}
+True if the clock is running, false otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classClock_a73892c5c56f97990013befa9067da107}\label{classClock_a73892c5c56f97990013befa9067da107}} 
+\index{Clock@{Clock}!isTick@{isTick}}
+\index{isTick@{isTick}!Clock@{Clock}}
+\doxysubsubsection{\texorpdfstring{isTick()}{isTick()}}
+{\footnotesize\ttfamily bool Clock\+::is\+Tick (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Check if the clock is tick. 
+
+Check if the clock is ticking.
+
+\begin{DoxyReturn}{Returns}
+true if the clock is tick, false otherwise
+
+True if the clock is ticking, false otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classClock_ab964c32646e07c6480537d4678774e85}\label{classClock_ab964c32646e07c6480537d4678774e85}} 
+\index{Clock@{Clock}!loop@{loop}}
+\index{loop@{loop}!Clock@{Clock}}
+\doxysubsubsection{\texorpdfstring{loop()}{loop()}}
+{\footnotesize\ttfamily void Clock\+::loop (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Loop the clock. 
+
+\mbox{\Hypertarget{classClock_a047dfec30bf593658c4ff736cb51d7c3}\label{classClock_a047dfec30bf593658c4ff736cb51d7c3}} 
+\index{Clock@{Clock}!operator=@{operator=}}
+\index{operator=@{operator=}!Clock@{Clock}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classClock}{Clock}}\& Clock\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classClock}{Clock}} \&\&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}, {\ttfamily [noexcept]}}
+
+Default move assignment operator \mbox{\Hypertarget{classClock_a047dfec30bf593658c4ff736cb51d7c3}\label{classClock_a047dfec30bf593658c4ff736cb51d7c3}} 
+\index{Clock@{Clock}!operator=@{operator=}}
+\index{operator=@{operator=}!Clock@{Clock}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classClock}{Clock}}\& Clock\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classClock}{Clock}} \&\&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}, {\ttfamily [noexcept]}}
+
+Default move assignment operator \mbox{\Hypertarget{classClock_a20ccb8428d7550010322a205bfed3388}\label{classClock_a20ccb8428d7550010322a205bfed3388}} 
+\index{Clock@{Clock}!operator=@{operator=}}
+\index{operator=@{operator=}!Clock@{Clock}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classClock}{Clock}}\& Clock\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classClock}{Clock}} const \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+Default copy assignment operator \mbox{\Hypertarget{classClock_a20ccb8428d7550010322a205bfed3388}\label{classClock_a20ccb8428d7550010322a205bfed3388}} 
+\index{Clock@{Clock}!operator=@{operator=}}
+\index{operator=@{operator=}!Clock@{Clock}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classClock}{Clock}}\& Clock\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classClock}{Clock}} const \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+Default copy assignment operator \mbox{\Hypertarget{classClock_aede94d6c5ece1cc6869b1d913b714d53}\label{classClock_aede94d6c5ece1cc6869b1d913b714d53}} 
+\index{Clock@{Clock}!pause@{pause}}
+\index{pause@{pause}!Clock@{Clock}}
+\doxysubsubsection{\texorpdfstring{pause()}{pause()}}
+{\footnotesize\ttfamily void Clock\+::pause (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Pause the clock. 
+
+\mbox{\Hypertarget{classClock_a0cec209ce53def4724e0dfe2756eaad3}\label{classClock_a0cec209ce53def4724e0dfe2756eaad3}} 
+\index{Clock@{Clock}!play@{play}}
+\index{play@{play}!Clock@{Clock}}
+\doxysubsubsection{\texorpdfstring{play()}{play()}}
+{\footnotesize\ttfamily void Clock\+::play (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Run the clock. 
+
+\mbox{\Hypertarget{classClock_a436217c8d8678d2db4e18961c743eb07}\label{classClock_a436217c8d8678d2db4e18961c743eb07}} 
+\index{Clock@{Clock}!refresh@{refresh}}
+\index{refresh@{refresh}!Clock@{Clock}}
+\doxysubsubsection{\texorpdfstring{refresh()}{refresh()}}
+{\footnotesize\ttfamily void Clock\+::refresh (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Refresh the clock. 
+
+\mbox{\Hypertarget{classClock_a0ab5423b0a997aa13d7b6131c46d1358}\label{classClock_a0ab5423b0a997aa13d7b6131c46d1358}} 
+\index{Clock@{Clock}!reset@{reset}}
+\index{reset@{reset}!Clock@{Clock}}
+\doxysubsubsection{\texorpdfstring{reset()}{reset()}}
+{\footnotesize\ttfamily void Clock\+::reset (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Reset the clock. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Client/\+Component/Clocks\+Component.\+hpp\end{DoxyCompactItemize}

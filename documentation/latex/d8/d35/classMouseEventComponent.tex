@@ -1,0 +1,199 @@
+\hypertarget{classMouseEventComponent}{}\doxysection{Mouse\+Event\+Component Class Reference}
+\label{classMouseEventComponent}\index{MouseEventComponent@{MouseEventComponent}}
+
+
+A component that handle a button. Used to create a button.  
+
+
+
+
+{\ttfamily \#include $<$Mouse\+Event\+Component.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classMouseEventComponent_a740c0ea95878b3db48a254ba191df274}{Mouse\+Event\+Component}} ()=default
+\item 
+\mbox{\hyperlink{classMouseEventComponent_a54eb5c274b53a2ee56ca69b62eebe52e}{Mouse\+Event\+Component}} (std\+::function$<$ void(size\+\_\+t, \mbox{\hyperlink{classregistry}{registry}} \&, \mbox{\hyperlink{classAEngine}{AEngine}} \&, \mbox{\hyperlink{structServerToken}{Server\+Token}} \&server\+Token)$>$ \&\&\mbox{\hyperlink{classMouseEventComponent_ac83d419886a0d4577b28eb2665e1cf6c}{on\+Click}}, std\+::function$<$ void(size\+\_\+t, \mbox{\hyperlink{classregistry}{registry}} \&, \mbox{\hyperlink{classAEngine}{AEngine}} \&, \mbox{\hyperlink{structServerToken}{Server\+Token}} \&server\+Token)$>$ \&\&\mbox{\hyperlink{classMouseEventComponent_ad124dbc94b28fea86849fb16448206ce}{on\+Release}}, std\+::function$<$ void(size\+\_\+t, \mbox{\hyperlink{classregistry}{registry}} \&, \mbox{\hyperlink{classAEngine}{AEngine}} \&, \mbox{\hyperlink{structServerToken}{Server\+Token}} \&server\+Token)$>$ \&\&\mbox{\hyperlink{classMouseEventComponent_a27fa5d1343cdef994e1f21db0549fdeb}{on\+Hover}})
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classMouseEventComponent_afb3aea3b9c03b0062625b43da27ca1af}{$\sim$\+Mouse\+Event\+Component}} ()=default
+\item 
+\mbox{\hyperlink{classMouseEventComponent_ab9326d1312356ae95f1f345f795e6ec9}{Mouse\+Event\+Component}} (\mbox{\hyperlink{classMouseEventComponent}{Mouse\+Event\+Component}} const \&)=default
+\item 
+\mbox{\hyperlink{classMouseEventComponent_a34f94fe7f82135a0b20f7fd5cec1ccc4}{Mouse\+Event\+Component}} (\mbox{\hyperlink{classMouseEventComponent}{Mouse\+Event\+Component}} \&\&) noexcept=default
+\item 
+\mbox{\hyperlink{classMouseEventComponent}{Mouse\+Event\+Component}} \& \mbox{\hyperlink{classMouseEventComponent_aadfae1f88115e7f8080cc79daae534bf}{operator=}} (\mbox{\hyperlink{classMouseEventComponent}{Mouse\+Event\+Component}} const \&)=default
+\item 
+\mbox{\hyperlink{classMouseEventComponent}{Mouse\+Event\+Component}} \& \mbox{\hyperlink{classMouseEventComponent_a73b54c65b90fe024c256626083a2754c}{operator=}} (\mbox{\hyperlink{classMouseEventComponent}{Mouse\+Event\+Component}} \&\&) noexcept=default
+\item 
+void \mbox{\hyperlink{classMouseEventComponent_aa132f3f9fb79987e1ff8e73032dc27e3}{set\+On\+Click}} (std\+::function$<$ void(size\+\_\+t, \mbox{\hyperlink{classregistry}{registry}} \&, \mbox{\hyperlink{classAEngine}{AEngine}} \&, \mbox{\hyperlink{structServerToken}{Server\+Token}} \&server\+Token)$>$ \&\&\mbox{\hyperlink{classMouseEventComponent_ac83d419886a0d4577b28eb2665e1cf6c}{on\+Click}})
+\begin{DoxyCompactList}\small\item\em Set the function to execute when the button is clicked. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classMouseEventComponent_a008762598b497485e5ae1ede19e4977b}{set\+On\+Release}} (std\+::function$<$ void(size\+\_\+t, \mbox{\hyperlink{classregistry}{registry}} \&, \mbox{\hyperlink{classAEngine}{AEngine}} \&, \mbox{\hyperlink{structServerToken}{Server\+Token}} \&server\+Token)$>$ \&\&\mbox{\hyperlink{classMouseEventComponent_ad124dbc94b28fea86849fb16448206ce}{on\+Release}})
+\begin{DoxyCompactList}\small\item\em Set the function to execute when the button is released. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classMouseEventComponent_a02d782be46c1a88d5713688e242707d5}{set\+On\+Hover}} (std\+::function$<$ void(size\+\_\+t, \mbox{\hyperlink{classregistry}{registry}} \&, \mbox{\hyperlink{classAEngine}{AEngine}} \&, \mbox{\hyperlink{structServerToken}{Server\+Token}} \&server\+Token)$>$ \&\&\mbox{\hyperlink{classMouseEventComponent_a27fa5d1343cdef994e1f21db0549fdeb}{on\+Hover}})
+\begin{DoxyCompactList}\small\item\em Set the function to execute when the button is hovered. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::function$<$ void(size\+\_\+t, \mbox{\hyperlink{classregistry}{registry}} \&, \mbox{\hyperlink{classAEngine}{AEngine}} \&, \mbox{\hyperlink{structServerToken}{Server\+Token}} \&server\+Token)$>$ \mbox{\hyperlink{classMouseEventComponent_ac83d419886a0d4577b28eb2665e1cf6c}{on\+Click}}
+\item 
+std\+::function$<$ void(size\+\_\+t, \mbox{\hyperlink{classregistry}{registry}} \&, \mbox{\hyperlink{classAEngine}{AEngine}} \&, \mbox{\hyperlink{structServerToken}{Server\+Token}} \&server\+Token)$>$ \mbox{\hyperlink{classMouseEventComponent_ad124dbc94b28fea86849fb16448206ce}{on\+Release}}
+\item 
+std\+::function$<$ void(size\+\_\+t, \mbox{\hyperlink{classregistry}{registry}} \&, \mbox{\hyperlink{classAEngine}{AEngine}} \&, \mbox{\hyperlink{structServerToken}{Server\+Token}} \&server\+Token)$>$ \mbox{\hyperlink{classMouseEventComponent_a27fa5d1343cdef994e1f21db0549fdeb}{on\+Hover}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A component that handle a button. Used to create a button. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classMouseEventComponent_a740c0ea95878b3db48a254ba191df274}\label{classMouseEventComponent_a740c0ea95878b3db48a254ba191df274}} 
+\index{MouseEventComponent@{MouseEventComponent}!MouseEventComponent@{MouseEventComponent}}
+\index{MouseEventComponent@{MouseEventComponent}!MouseEventComponent@{MouseEventComponent}}
+\doxysubsubsection{\texorpdfstring{MouseEventComponent()}{MouseEventComponent()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily Mouse\+Event\+Component\+::\+Mouse\+Event\+Component (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+Default constructor \mbox{\Hypertarget{classMouseEventComponent_a54eb5c274b53a2ee56ca69b62eebe52e}\label{classMouseEventComponent_a54eb5c274b53a2ee56ca69b62eebe52e}} 
+\index{MouseEventComponent@{MouseEventComponent}!MouseEventComponent@{MouseEventComponent}}
+\index{MouseEventComponent@{MouseEventComponent}!MouseEventComponent@{MouseEventComponent}}
+\doxysubsubsection{\texorpdfstring{MouseEventComponent()}{MouseEventComponent()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily Mouse\+Event\+Component\+::\+Mouse\+Event\+Component (\begin{DoxyParamCaption}\item[{std\+::function$<$ void(size\+\_\+t, \mbox{\hyperlink{classregistry}{registry}} \&, \mbox{\hyperlink{classAEngine}{AEngine}} \&, \mbox{\hyperlink{structServerToken}{Server\+Token}} \&server\+Token)$>$ \&\&}]{on\+Click,  }\item[{std\+::function$<$ void(size\+\_\+t, \mbox{\hyperlink{classregistry}{registry}} \&, \mbox{\hyperlink{classAEngine}{AEngine}} \&, \mbox{\hyperlink{structServerToken}{Server\+Token}} \&server\+Token)$>$ \&\&}]{on\+Release,  }\item[{std\+::function$<$ void(size\+\_\+t, \mbox{\hyperlink{classregistry}{registry}} \&, \mbox{\hyperlink{classAEngine}{AEngine}} \&, \mbox{\hyperlink{structServerToken}{Server\+Token}} \&server\+Token)$>$ \&\&}]{on\+Hover }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em on\+Click} & the function to execute when the button is clicked \\
+\hline
+{\em on\+Release} & the function to execute when the button is released \\
+\hline
+{\em on\+Hover} & the function to execute when the button is hovered \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classMouseEventComponent_afb3aea3b9c03b0062625b43da27ca1af}\label{classMouseEventComponent_afb3aea3b9c03b0062625b43da27ca1af}} 
+\index{MouseEventComponent@{MouseEventComponent}!````~MouseEventComponent@{$\sim$MouseEventComponent}}
+\index{````~MouseEventComponent@{$\sim$MouseEventComponent}!MouseEventComponent@{MouseEventComponent}}
+\doxysubsubsection{\texorpdfstring{$\sim$MouseEventComponent()}{~MouseEventComponent()}}
+{\footnotesize\ttfamily Mouse\+Event\+Component\+::$\sim$\+Mouse\+Event\+Component (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+Default destructor \mbox{\Hypertarget{classMouseEventComponent_ab9326d1312356ae95f1f345f795e6ec9}\label{classMouseEventComponent_ab9326d1312356ae95f1f345f795e6ec9}} 
+\index{MouseEventComponent@{MouseEventComponent}!MouseEventComponent@{MouseEventComponent}}
+\index{MouseEventComponent@{MouseEventComponent}!MouseEventComponent@{MouseEventComponent}}
+\doxysubsubsection{\texorpdfstring{MouseEventComponent()}{MouseEventComponent()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily Mouse\+Event\+Component\+::\+Mouse\+Event\+Component (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classMouseEventComponent}{Mouse\+Event\+Component}} const \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+Copy constructor \mbox{\Hypertarget{classMouseEventComponent_a34f94fe7f82135a0b20f7fd5cec1ccc4}\label{classMouseEventComponent_a34f94fe7f82135a0b20f7fd5cec1ccc4}} 
+\index{MouseEventComponent@{MouseEventComponent}!MouseEventComponent@{MouseEventComponent}}
+\index{MouseEventComponent@{MouseEventComponent}!MouseEventComponent@{MouseEventComponent}}
+\doxysubsubsection{\texorpdfstring{MouseEventComponent()}{MouseEventComponent()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily Mouse\+Event\+Component\+::\+Mouse\+Event\+Component (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classMouseEventComponent}{Mouse\+Event\+Component}} \&\&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}, {\ttfamily [noexcept]}}
+
+Move constructor 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classMouseEventComponent_a73b54c65b90fe024c256626083a2754c}\label{classMouseEventComponent_a73b54c65b90fe024c256626083a2754c}} 
+\index{MouseEventComponent@{MouseEventComponent}!operator=@{operator=}}
+\index{operator=@{operator=}!MouseEventComponent@{MouseEventComponent}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classMouseEventComponent}{Mouse\+Event\+Component}}\& Mouse\+Event\+Component\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classMouseEventComponent}{Mouse\+Event\+Component}} \&\&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}, {\ttfamily [noexcept]}}
+
+Move assignment operator \mbox{\Hypertarget{classMouseEventComponent_aadfae1f88115e7f8080cc79daae534bf}\label{classMouseEventComponent_aadfae1f88115e7f8080cc79daae534bf}} 
+\index{MouseEventComponent@{MouseEventComponent}!operator=@{operator=}}
+\index{operator=@{operator=}!MouseEventComponent@{MouseEventComponent}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classMouseEventComponent}{Mouse\+Event\+Component}}\& Mouse\+Event\+Component\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classMouseEventComponent}{Mouse\+Event\+Component}} const \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+Copy assignment operator \mbox{\Hypertarget{classMouseEventComponent_aa132f3f9fb79987e1ff8e73032dc27e3}\label{classMouseEventComponent_aa132f3f9fb79987e1ff8e73032dc27e3}} 
+\index{MouseEventComponent@{MouseEventComponent}!setOnClick@{setOnClick}}
+\index{setOnClick@{setOnClick}!MouseEventComponent@{MouseEventComponent}}
+\doxysubsubsection{\texorpdfstring{setOnClick()}{setOnClick()}}
+{\footnotesize\ttfamily void Mouse\+Event\+Component\+::set\+On\+Click (\begin{DoxyParamCaption}\item[{std\+::function$<$ void(size\+\_\+t, \mbox{\hyperlink{classregistry}{registry}} \&, \mbox{\hyperlink{classAEngine}{AEngine}} \&, \mbox{\hyperlink{structServerToken}{Server\+Token}} \&server\+Token)$>$ \&\&}]{on\+Click }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Set the function to execute when the button is clicked. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em on\+Click} & the function to execute when the button is clicked \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classMouseEventComponent_a02d782be46c1a88d5713688e242707d5}\label{classMouseEventComponent_a02d782be46c1a88d5713688e242707d5}} 
+\index{MouseEventComponent@{MouseEventComponent}!setOnHover@{setOnHover}}
+\index{setOnHover@{setOnHover}!MouseEventComponent@{MouseEventComponent}}
+\doxysubsubsection{\texorpdfstring{setOnHover()}{setOnHover()}}
+{\footnotesize\ttfamily void Mouse\+Event\+Component\+::set\+On\+Hover (\begin{DoxyParamCaption}\item[{std\+::function$<$ void(size\+\_\+t, \mbox{\hyperlink{classregistry}{registry}} \&, \mbox{\hyperlink{classAEngine}{AEngine}} \&, \mbox{\hyperlink{structServerToken}{Server\+Token}} \&server\+Token)$>$ \&\&}]{on\+Hover }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Set the function to execute when the button is hovered. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em on\+Hover} & the function to execute when the button is hovered \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classMouseEventComponent_a008762598b497485e5ae1ede19e4977b}\label{classMouseEventComponent_a008762598b497485e5ae1ede19e4977b}} 
+\index{MouseEventComponent@{MouseEventComponent}!setOnRelease@{setOnRelease}}
+\index{setOnRelease@{setOnRelease}!MouseEventComponent@{MouseEventComponent}}
+\doxysubsubsection{\texorpdfstring{setOnRelease()}{setOnRelease()}}
+{\footnotesize\ttfamily void Mouse\+Event\+Component\+::set\+On\+Release (\begin{DoxyParamCaption}\item[{std\+::function$<$ void(size\+\_\+t, \mbox{\hyperlink{classregistry}{registry}} \&, \mbox{\hyperlink{classAEngine}{AEngine}} \&, \mbox{\hyperlink{structServerToken}{Server\+Token}} \&server\+Token)$>$ \&\&}]{on\+Release }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Set the function to execute when the button is released. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em on\+Release} & the function to execute when the button is released \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classMouseEventComponent_ac83d419886a0d4577b28eb2665e1cf6c}\label{classMouseEventComponent_ac83d419886a0d4577b28eb2665e1cf6c}} 
+\index{MouseEventComponent@{MouseEventComponent}!onClick@{onClick}}
+\index{onClick@{onClick}!MouseEventComponent@{MouseEventComponent}}
+\doxysubsubsection{\texorpdfstring{onClick}{onClick}}
+{\footnotesize\ttfamily std\+::function$<$void(size\+\_\+t, \mbox{\hyperlink{classregistry}{registry}}\&, \mbox{\hyperlink{classAEngine}{AEngine}}\&, \mbox{\hyperlink{structServerToken}{Server\+Token}}\& server\+Token)$>$ Mouse\+Event\+Component\+::on\+Click}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= [](size\_t, \mbox{\hyperlink{classregistry}{registry}}\&, \mbox{\hyperlink{classAEngine}{AEngine}}\&, \mbox{\hyperlink{structServerToken}{ServerToken}}\& serverToken) \{}
+\DoxyCodeLine{            \textcolor{keywordflow}{return};}
+\DoxyCodeLine{        \}}
+
+\end{DoxyCode}
+Function called when the button is clicked \mbox{\Hypertarget{classMouseEventComponent_a27fa5d1343cdef994e1f21db0549fdeb}\label{classMouseEventComponent_a27fa5d1343cdef994e1f21db0549fdeb}} 
+\index{MouseEventComponent@{MouseEventComponent}!onHover@{onHover}}
+\index{onHover@{onHover}!MouseEventComponent@{MouseEventComponent}}
+\doxysubsubsection{\texorpdfstring{onHover}{onHover}}
+{\footnotesize\ttfamily std\+::function$<$void(size\+\_\+t, \mbox{\hyperlink{classregistry}{registry}}\&, \mbox{\hyperlink{classAEngine}{AEngine}}\&, \mbox{\hyperlink{structServerToken}{Server\+Token}}\& server\+Token)$>$ Mouse\+Event\+Component\+::on\+Hover}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= [](size\_t, \mbox{\hyperlink{classregistry}{registry}}\&, \mbox{\hyperlink{classAEngine}{AEngine}}\&, \mbox{\hyperlink{structServerToken}{ServerToken}}\& serverToken) \{}
+\DoxyCodeLine{            \textcolor{keywordflow}{return};}
+\DoxyCodeLine{        \}}
+
+\end{DoxyCode}
+Function to call when the mouse is on the button \mbox{\Hypertarget{classMouseEventComponent_ad124dbc94b28fea86849fb16448206ce}\label{classMouseEventComponent_ad124dbc94b28fea86849fb16448206ce}} 
+\index{MouseEventComponent@{MouseEventComponent}!onRelease@{onRelease}}
+\index{onRelease@{onRelease}!MouseEventComponent@{MouseEventComponent}}
+\doxysubsubsection{\texorpdfstring{onRelease}{onRelease}}
+{\footnotesize\ttfamily std\+::function$<$void(size\+\_\+t, \mbox{\hyperlink{classregistry}{registry}}\&, \mbox{\hyperlink{classAEngine}{AEngine}}\&, \mbox{\hyperlink{structServerToken}{Server\+Token}}\& server\+Token)$>$ Mouse\+Event\+Component\+::on\+Release}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= [](size\_t, \mbox{\hyperlink{classregistry}{registry}}\&, \mbox{\hyperlink{classAEngine}{AEngine}}\&, \mbox{\hyperlink{structServerToken}{ServerToken}}\& serverToken) \{}
+\DoxyCodeLine{            \textcolor{keywordflow}{return};}
+\DoxyCodeLine{        \}}
+
+\end{DoxyCode}
+Function to call when the button is released 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Client/\+Component/Mouse\+Event\+Component.\+hpp\end{DoxyCompactItemize}

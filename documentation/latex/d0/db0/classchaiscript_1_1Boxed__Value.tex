@@ -1,0 +1,157 @@
+\hypertarget{classchaiscript_1_1Boxed__Value}{}\doxysection{chaiscript\+::Boxed\+\_\+\+Value Class Reference}
+\label{classchaiscript_1_1Boxed__Value}\index{chaiscript::Boxed\_Value@{chaiscript::Boxed\_Value}}
+
+
+\mbox{\hyperlink{classA}{A}} wrapper for holding any valid C++ type. All types in \mbox{\hyperlink{classchaiscript_1_1ChaiScript}{Chai\+Script}} are \mbox{\hyperlink{classchaiscript_1_1Boxed__Value}{Boxed\+\_\+\+Value}} objects.  
+
+
+
+
+{\ttfamily \#include $<$boxed\+\_\+value.\+hpp$>$}
+
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structchaiscript_1_1Boxed__Value_1_1Void__Type}{Void\+\_\+\+Type}}
+\begin{DoxyCompactList}\small\item\em used for explicitly creating a \char`\"{}void\char`\"{} object \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename T , typename  = typename std\+::enable\+\_\+if$<$!std\+::is\+\_\+same$<$\+Boxed\+\_\+\+Value, typename std\+::decay$<$\+T$>$\+::type$>$\+::value$>$\+::type$>$ }\\\mbox{\hyperlink{classchaiscript_1_1Boxed__Value_a41298bf1211caf0dd30486761d2e156d}{Boxed\+\_\+\+Value}} (T \&\&t, bool t\+\_\+return\+\_\+value=false)
+\begin{DoxyCompactList}\small\item\em Basic \mbox{\hyperlink{classchaiscript_1_1Boxed__Value}{Boxed\+\_\+\+Value}} constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classchaiscript_1_1Boxed__Value_aea54b19ddbb42039b39417ef31c9cf68}{Boxed\+\_\+\+Value}} ()=default
+\begin{DoxyCompactList}\small\item\em Unknown-\/type constructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classchaiscript_1_1Boxed__Value_a0eee8ee084a750ba40342f525b1956a4}\label{classchaiscript_1_1Boxed__Value_a0eee8ee084a750ba40342f525b1956a4}} 
+{\bfseries Boxed\+\_\+\+Value} (\mbox{\hyperlink{classchaiscript_1_1Boxed__Value}{Boxed\+\_\+\+Value}} \&\&)=default
+\item 
+\mbox{\Hypertarget{classchaiscript_1_1Boxed__Value_a111afca4887f1ffac40695804c69dada}\label{classchaiscript_1_1Boxed__Value_a111afca4887f1ffac40695804c69dada}} 
+\mbox{\hyperlink{classchaiscript_1_1Boxed__Value}{Boxed\+\_\+\+Value}} \& {\bfseries operator=} (\mbox{\hyperlink{classchaiscript_1_1Boxed__Value}{Boxed\+\_\+\+Value}} \&\&)=default
+\item 
+\mbox{\Hypertarget{classchaiscript_1_1Boxed__Value_a3ee12581877cc2549fc525dfa75c2445}\label{classchaiscript_1_1Boxed__Value_a3ee12581877cc2549fc525dfa75c2445}} 
+{\bfseries Boxed\+\_\+\+Value} (const \mbox{\hyperlink{classchaiscript_1_1Boxed__Value}{Boxed\+\_\+\+Value}} \&)=default
+\item 
+\mbox{\Hypertarget{classchaiscript_1_1Boxed__Value_a2d58be584dd8191682d28285501b54f7}\label{classchaiscript_1_1Boxed__Value_a2d58be584dd8191682d28285501b54f7}} 
+\mbox{\hyperlink{classchaiscript_1_1Boxed__Value}{Boxed\+\_\+\+Value}} \& {\bfseries operator=} (const \mbox{\hyperlink{classchaiscript_1_1Boxed__Value}{Boxed\+\_\+\+Value}} \&)=default
+\item 
+\mbox{\Hypertarget{classchaiscript_1_1Boxed__Value_a98810b2b95f2b0efeaa25cfcdc894965}\label{classchaiscript_1_1Boxed__Value_a98810b2b95f2b0efeaa25cfcdc894965}} 
+void {\bfseries swap} (\mbox{\hyperlink{classchaiscript_1_1Boxed__Value}{Boxed\+\_\+\+Value}} \&rhs)
+\item 
+\mbox{\hyperlink{classchaiscript_1_1Boxed__Value}{Boxed\+\_\+\+Value}} \mbox{\hyperlink{classchaiscript_1_1Boxed__Value_a50da52ef137a62699106c0d3cf1cf9b4}{assign}} (const \mbox{\hyperlink{classchaiscript_1_1Boxed__Value}{Boxed\+\_\+\+Value}} \&rhs)
+\item 
+\mbox{\Hypertarget{classchaiscript_1_1Boxed__Value_a9b2620c1e61d488d87cfae1cc57480d3}\label{classchaiscript_1_1Boxed__Value_a9b2620c1e61d488d87cfae1cc57480d3}} 
+const \mbox{\hyperlink{classchaiscript_1_1Type__Info}{Type\+\_\+\+Info}} \& {\bfseries get\+\_\+type\+\_\+info} () const noexcept
+\item 
+bool \mbox{\hyperlink{classchaiscript_1_1Boxed__Value_a90ae8b17d4a5885a96a2ad9a9c6525a8}{is\+\_\+undef}} () const noexcept
+\begin{DoxyCompactList}\small\item\em return true if the object is uninitialized \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classchaiscript_1_1Boxed__Value_a48d1d6992f7216b8672cb478c1bdeb87}\label{classchaiscript_1_1Boxed__Value_a48d1d6992f7216b8672cb478c1bdeb87}} 
+bool {\bfseries is\+\_\+const} () const noexcept
+\item 
+\mbox{\Hypertarget{classchaiscript_1_1Boxed__Value_a7793ee2cf982ad7388e2f9447a01b542}\label{classchaiscript_1_1Boxed__Value_a7793ee2cf982ad7388e2f9447a01b542}} 
+bool {\bfseries is\+\_\+type} (const \mbox{\hyperlink{classchaiscript_1_1Type__Info}{Type\+\_\+\+Info}} \&ti) const noexcept
+\item 
+\mbox{\Hypertarget{classchaiscript_1_1Boxed__Value_aeb28d3cc93ddaf2c7d5dc8d77970bab7}\label{classchaiscript_1_1Boxed__Value_aeb28d3cc93ddaf2c7d5dc8d77970bab7}} 
+{\footnotesize template$<$typename T $>$ }\\auto {\bfseries pointer\+\_\+sentinel} (std\+::shared\+\_\+ptr$<$ T $>$ \&ptr) const
+\item 
+\mbox{\Hypertarget{classchaiscript_1_1Boxed__Value_a9009c14cae6bbc804ab74840671447d8}\label{classchaiscript_1_1Boxed__Value_a9009c14cae6bbc804ab74840671447d8}} 
+bool {\bfseries is\+\_\+null} () const noexcept
+\item 
+\mbox{\Hypertarget{classchaiscript_1_1Boxed__Value_a1acb23ae0530d18763268ee8ad5f2733}\label{classchaiscript_1_1Boxed__Value_a1acb23ae0530d18763268ee8ad5f2733}} 
+const \mbox{\hyperlink{classchaiscript_1_1detail_1_1Any}{chaiscript\+::detail\+::\+Any}} \& {\bfseries get} () const noexcept
+\item 
+\mbox{\Hypertarget{classchaiscript_1_1Boxed__Value_a0bf5431c2cd4b276fedf4a566988f181}\label{classchaiscript_1_1Boxed__Value_a0bf5431c2cd4b276fedf4a566988f181}} 
+bool {\bfseries is\+\_\+ref} () const noexcept
+\item 
+\mbox{\Hypertarget{classchaiscript_1_1Boxed__Value_ad070d69148ca4196da274a8c9d1a9e71}\label{classchaiscript_1_1Boxed__Value_ad070d69148ca4196da274a8c9d1a9e71}} 
+bool {\bfseries is\+\_\+return\+\_\+value} () const noexcept
+\item 
+\mbox{\Hypertarget{classchaiscript_1_1Boxed__Value_aae79a7850440b032a4fab86ea983c457}\label{classchaiscript_1_1Boxed__Value_aae79a7850440b032a4fab86ea983c457}} 
+void {\bfseries reset\+\_\+return\+\_\+value} () const noexcept
+\item 
+\mbox{\Hypertarget{classchaiscript_1_1Boxed__Value_a2151d39180b4bfb59c8bdf5d087ea507}\label{classchaiscript_1_1Boxed__Value_a2151d39180b4bfb59c8bdf5d087ea507}} 
+bool {\bfseries is\+\_\+pointer} () const noexcept
+\item 
+\mbox{\Hypertarget{classchaiscript_1_1Boxed__Value_a392bd051c856408e2dfcce7458f674e1}\label{classchaiscript_1_1Boxed__Value_a392bd051c856408e2dfcce7458f674e1}} 
+void $\ast$ {\bfseries get\+\_\+ptr} () const noexcept
+\item 
+\mbox{\Hypertarget{classchaiscript_1_1Boxed__Value_a1ed57b0a877801bc27f55729c6756b6a}\label{classchaiscript_1_1Boxed__Value_a1ed57b0a877801bc27f55729c6756b6a}} 
+const void $\ast$ {\bfseries get\+\_\+const\+\_\+ptr} () const noexcept
+\item 
+\mbox{\Hypertarget{classchaiscript_1_1Boxed__Value_aef2f14dfcc13cf659fc6108108c6fa65}\label{classchaiscript_1_1Boxed__Value_aef2f14dfcc13cf659fc6108108c6fa65}} 
+\mbox{\hyperlink{classchaiscript_1_1Boxed__Value}{Boxed\+\_\+\+Value}} {\bfseries get\+\_\+attr} (const std\+::string \&t\+\_\+name)
+\item 
+\mbox{\Hypertarget{classchaiscript_1_1Boxed__Value_a375d2fd73129c34a239ec463a35d2869}\label{classchaiscript_1_1Boxed__Value_a375d2fd73129c34a239ec463a35d2869}} 
+\mbox{\hyperlink{classchaiscript_1_1Boxed__Value}{Boxed\+\_\+\+Value}} \& {\bfseries copy\+\_\+attrs} (const \mbox{\hyperlink{classchaiscript_1_1Boxed__Value}{Boxed\+\_\+\+Value}} \&t\+\_\+obj)
+\item 
+\mbox{\Hypertarget{classchaiscript_1_1Boxed__Value_a80dc4219450d2b2f85da44875976cb88}\label{classchaiscript_1_1Boxed__Value_a80dc4219450d2b2f85da44875976cb88}} 
+\mbox{\hyperlink{classchaiscript_1_1Boxed__Value}{Boxed\+\_\+\+Value}} \& {\bfseries clone\+\_\+attrs} (const \mbox{\hyperlink{classchaiscript_1_1Boxed__Value}{Boxed\+\_\+\+Value}} \&t\+\_\+obj)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static bool \mbox{\hyperlink{classchaiscript_1_1Boxed__Value_ac6b2b4b5a38ffdd4d0a75020311df507}{type\+\_\+match}} (const \mbox{\hyperlink{classchaiscript_1_1Boxed__Value}{Boxed\+\_\+\+Value}} \&l, const \mbox{\hyperlink{classchaiscript_1_1Boxed__Value}{Boxed\+\_\+\+Value}} \&r) noexcept
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{classA}{A}} wrapper for holding any valid C++ type. All types in \mbox{\hyperlink{classchaiscript_1_1ChaiScript}{Chai\+Script}} are \mbox{\hyperlink{classchaiscript_1_1Boxed__Value}{Boxed\+\_\+\+Value}} objects. 
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{namespacechaiscript_a2de45834af1787f63a901a871414b749}{chaiscript\+::boxed\+\_\+cast}} 
+\end{DoxySeeAlso}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classchaiscript_1_1Boxed__Value_a41298bf1211caf0dd30486761d2e156d}\label{classchaiscript_1_1Boxed__Value_a41298bf1211caf0dd30486761d2e156d}} 
+\index{chaiscript::Boxed\_Value@{chaiscript::Boxed\_Value}!Boxed\_Value@{Boxed\_Value}}
+\index{Boxed\_Value@{Boxed\_Value}!chaiscript::Boxed\_Value@{chaiscript::Boxed\_Value}}
+\doxysubsubsection{\texorpdfstring{Boxed\_Value()}{Boxed\_Value()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename T , typename  = typename std\+::enable\+\_\+if$<$!std\+::is\+\_\+same$<$\+Boxed\+\_\+\+Value, typename std\+::decay$<$\+T$>$\+::type$>$\+::value$>$\+::type$>$ \\
+chaiscript\+::\+Boxed\+\_\+\+Value\+::\+Boxed\+\_\+\+Value (\begin{DoxyParamCaption}\item[{T \&\&}]{t,  }\item[{bool}]{t\+\_\+return\+\_\+value = {\ttfamily false} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}
+
+
+
+Basic \mbox{\hyperlink{classchaiscript_1_1Boxed__Value}{Boxed\+\_\+\+Value}} constructor. 
+
+\mbox{\Hypertarget{classchaiscript_1_1Boxed__Value_aea54b19ddbb42039b39417ef31c9cf68}\label{classchaiscript_1_1Boxed__Value_aea54b19ddbb42039b39417ef31c9cf68}} 
+\index{chaiscript::Boxed\_Value@{chaiscript::Boxed\_Value}!Boxed\_Value@{Boxed\_Value}}
+\index{Boxed\_Value@{Boxed\_Value}!chaiscript::Boxed\_Value@{chaiscript::Boxed\_Value}}
+\doxysubsubsection{\texorpdfstring{Boxed\_Value()}{Boxed\_Value()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily chaiscript\+::\+Boxed\+\_\+\+Value\+::\+Boxed\+\_\+\+Value (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+
+
+Unknown-\/type constructor. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classchaiscript_1_1Boxed__Value_a50da52ef137a62699106c0d3cf1cf9b4}\label{classchaiscript_1_1Boxed__Value_a50da52ef137a62699106c0d3cf1cf9b4}} 
+\index{chaiscript::Boxed\_Value@{chaiscript::Boxed\_Value}!assign@{assign}}
+\index{assign@{assign}!chaiscript::Boxed\_Value@{chaiscript::Boxed\_Value}}
+\doxysubsubsection{\texorpdfstring{assign()}{assign()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classchaiscript_1_1Boxed__Value}{Boxed\+\_\+\+Value}} chaiscript\+::\+Boxed\+\_\+\+Value\+::assign (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classchaiscript_1_1Boxed__Value}{Boxed\+\_\+\+Value}} \&}]{rhs }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Copy the values stored in rhs.\+m\+\_\+data to m\+\_\+data. m\+\_\+data pointers are not shared in this case \mbox{\Hypertarget{classchaiscript_1_1Boxed__Value_a90ae8b17d4a5885a96a2ad9a9c6525a8}\label{classchaiscript_1_1Boxed__Value_a90ae8b17d4a5885a96a2ad9a9c6525a8}} 
+\index{chaiscript::Boxed\_Value@{chaiscript::Boxed\_Value}!is\_undef@{is\_undef}}
+\index{is\_undef@{is\_undef}!chaiscript::Boxed\_Value@{chaiscript::Boxed\_Value}}
+\doxysubsubsection{\texorpdfstring{is\_undef()}{is\_undef()}}
+{\footnotesize\ttfamily bool chaiscript\+::\+Boxed\+\_\+\+Value\+::is\+\_\+undef (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [noexcept]}}
+
+
+
+return true if the object is uninitialized 
+
+\mbox{\Hypertarget{classchaiscript_1_1Boxed__Value_ac6b2b4b5a38ffdd4d0a75020311df507}\label{classchaiscript_1_1Boxed__Value_ac6b2b4b5a38ffdd4d0a75020311df507}} 
+\index{chaiscript::Boxed\_Value@{chaiscript::Boxed\_Value}!type\_match@{type\_match}}
+\index{type\_match@{type\_match}!chaiscript::Boxed\_Value@{chaiscript::Boxed\_Value}}
+\doxysubsubsection{\texorpdfstring{type\_match()}{type\_match()}}
+{\footnotesize\ttfamily static bool chaiscript\+::\+Boxed\+\_\+\+Value\+::type\+\_\+match (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classchaiscript_1_1Boxed__Value}{Boxed\+\_\+\+Value}} \&}]{l,  }\item[{const \mbox{\hyperlink{classchaiscript_1_1Boxed__Value}{Boxed\+\_\+\+Value}} \&}]{r }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}, {\ttfamily [noexcept]}}
+
+\begin{DoxyReturn}{Returns}
+true if the two Boxed\+\_\+\+Values share the same internal type 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Chai\+Script-\/6.\+1.\+0/include/chaiscript/dispatchkit/boxed\+\_\+value.\+hpp\end{DoxyCompactItemize}

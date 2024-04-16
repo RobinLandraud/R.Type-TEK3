@@ -1,0 +1,166 @@
+\hypertarget{classScript}{}\doxysection{Script Class Reference}
+\label{classScript}\index{Script@{Script}}
+
+
+The script class.  
+
+
+
+
+{\ttfamily \#include $<$Script.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classScript_a90f60a80701266ce8493935815d2912e}{Script}} (\mbox{\hyperlink{classregistry}{registry}} \&reg, \mbox{\hyperlink{classAEngine}{AEngine}} \&engine)
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classScript_a991fdaa989ed13bab6bc28249b935c52}{$\sim$\+Script}} ()=default
+\item 
+void \mbox{\hyperlink{classScript_a37f0b56b7201de346e0936ffce5132eb}{add\+\_\+script}} (std\+::string script)
+\begin{DoxyCompactList}\small\item\em Add a script to the script engine. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classScript_ab371c8e549fc7ece9bead9d737c74f2f}{add\+\_\+script\+\_\+from\+\_\+file}} (std\+::string path)
+\begin{DoxyCompactList}\small\item\em Add a script from a file to the script engine. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classScript_a278c3d4434b61b2ed230df2fb9082e01}{add\+\_\+scripts\+\_\+from\+\_\+folder}} (std\+::string path)
+\begin{DoxyCompactList}\small\item\em Add all scripts from a folder to the script engine. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classScript_a54d60d7129e39dbf4fb486c17ea6f9cf}{update\+\_\+scripts}} ()
+\begin{DoxyCompactList}\small\item\em Update all the scripts. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The script class. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classScript_a90f60a80701266ce8493935815d2912e}\label{classScript_a90f60a80701266ce8493935815d2912e}} 
+\index{Script@{Script}!Script@{Script}}
+\index{Script@{Script}!Script@{Script}}
+\doxysubsubsection{\texorpdfstring{Script()}{Script()}}
+{\footnotesize\ttfamily Script\+::\+Script (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classregistry}{registry}} \&}]{reg,  }\item[{\mbox{\hyperlink{classAEngine}{AEngine}} \&}]{engine }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em reg} & The registry \\
+\hline
+{\em engine} & The engine \\
+\hline
+\end{DoxyParams}
+$<$ add Scene\+Type
+
+$<$ add Drawable\+Type
+
+$<$ add Event\+Type
+
+$<$ add \mbox{\hyperlink{structmouse__t}{mouse\+\_\+t}}
+
+$<$ add \mbox{\hyperlink{structPosition3D__t}{Position3\+D\+\_\+t}}
+
+$<$ add \mbox{\hyperlink{structPosition2D__t}{Position2\+D\+\_\+t}}
+
+$<$ add \mbox{\hyperlink{structSize2D__t}{Size2\+D\+\_\+t}}
+
+$<$ add \mbox{\hyperlink{structCollideBox}{Collide\+Box}}
+
+$<$ add Buffer\+Method
+
+$<$ add enum Key from \mbox{\hyperlink{classAEventEngine}{AEvent\+Engine}} file
+
+$<$ add the Audio\+Engine as global in chaiscript
+
+$<$ add the Event\+Engine as global in chaiscript
+
+$<$ add the Graphics\+Engine as global in chaiscript
+
+$<$ add the Window\+Engine as global in chaiscript
+
+$<$ add registry
+
+$<$ add \mbox{\hyperlink{classEntity}{Entity}}
+
+$<$ add Data\+Components
+
+$<$ add Blink\+Components
+
+$<$ add Clock\+Components
+
+$<$ add Drawable\+Components
+
+$<$ add\+Scene\+Manager\+Components
+
+$<$ add\+Velocity\+Components
+
+$<$ add Transform\+Components
+
+$<$ add Server\+Properties\+Components
+
+$<$ add Collider\+Components\mbox{\Hypertarget{classScript_a991fdaa989ed13bab6bc28249b935c52}\label{classScript_a991fdaa989ed13bab6bc28249b935c52}} 
+\index{Script@{Script}!````~Script@{$\sim$Script}}
+\index{````~Script@{$\sim$Script}!Script@{Script}}
+\doxysubsubsection{\texorpdfstring{$\sim$Script()}{~Script()}}
+{\footnotesize\ttfamily Script\+::$\sim$\+Script (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+Destructor 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classScript_a37f0b56b7201de346e0936ffce5132eb}\label{classScript_a37f0b56b7201de346e0936ffce5132eb}} 
+\index{Script@{Script}!add\_script@{add\_script}}
+\index{add\_script@{add\_script}!Script@{Script}}
+\doxysubsubsection{\texorpdfstring{add\_script()}{add\_script()}}
+{\footnotesize\ttfamily void Script\+::add\+\_\+script (\begin{DoxyParamCaption}\item[{std\+::string}]{script }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Add a script to the script engine. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em script} & the script to add \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classScript_ab371c8e549fc7ece9bead9d737c74f2f}\label{classScript_ab371c8e549fc7ece9bead9d737c74f2f}} 
+\index{Script@{Script}!add\_script\_from\_file@{add\_script\_from\_file}}
+\index{add\_script\_from\_file@{add\_script\_from\_file}!Script@{Script}}
+\doxysubsubsection{\texorpdfstring{add\_script\_from\_file()}{add\_script\_from\_file()}}
+{\footnotesize\ttfamily void Script\+::add\+\_\+script\+\_\+from\+\_\+file (\begin{DoxyParamCaption}\item[{std\+::string}]{path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Add a script from a file to the script engine. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em path} & the path to the file \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classScript_a278c3d4434b61b2ed230df2fb9082e01}\label{classScript_a278c3d4434b61b2ed230df2fb9082e01}} 
+\index{Script@{Script}!add\_scripts\_from\_folder@{add\_scripts\_from\_folder}}
+\index{add\_scripts\_from\_folder@{add\_scripts\_from\_folder}!Script@{Script}}
+\doxysubsubsection{\texorpdfstring{add\_scripts\_from\_folder()}{add\_scripts\_from\_folder()}}
+{\footnotesize\ttfamily void Script\+::add\+\_\+scripts\+\_\+from\+\_\+folder (\begin{DoxyParamCaption}\item[{std\+::string}]{path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Add all scripts from a folder to the script engine. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em path} & the path to the folder \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classScript_a54d60d7129e39dbf4fb486c17ea6f9cf}\label{classScript_a54d60d7129e39dbf4fb486c17ea6f9cf}} 
+\index{Script@{Script}!update\_scripts@{update\_scripts}}
+\index{update\_scripts@{update\_scripts}!Script@{Script}}
+\doxysubsubsection{\texorpdfstring{update\_scripts()}{update\_scripts()}}
+{\footnotesize\ttfamily void Script\+::update\+\_\+scripts (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Update all the scripts. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Client/\+Script/Script.\+hpp\end{DoxyCompactItemize}

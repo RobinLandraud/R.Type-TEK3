@@ -1,0 +1,177 @@
+\hypertarget{classChaiScript__Language_1_1Function}{}\doxysection{Chai\+Script\+\_\+\+Language\+::Function Class Reference}
+\label{classChaiScript__Language_1_1Function}\index{ChaiScript\_Language::Function@{ChaiScript\_Language::Function}}
+
+
+Represents a function object in Chai\+Script.  
+
+
+
+
+{\ttfamily \#include $<$chaiscript\+\_\+prelude\+\_\+docs.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classChaiScript__Language_1_1string}{string}} \mbox{\hyperlink{classChaiScript__Language_1_1Function_aa58cc3d8f921b7c324a0ee982ce56c02}{get\+\_\+annotation}} () const
+\begin{DoxyCompactList}\small\item\em Returns the annotation description of the function. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classChaiScript__Language_1_1Function_afc8a06bc23050fd4095d64f6b238eda1}{get\+\_\+arity}} () const
+\begin{DoxyCompactList}\small\item\em Returns the arity of the function, -\/1 if the function takes a variable number of parameters. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classChaiScript__Language_1_1Vector}{Vector}} \mbox{\hyperlink{classChaiScript__Language_1_1Function_a4ebca3a8cc1542ed402b87b54624626c}{get\+\_\+contained\+\_\+functions}} () const
+\begin{DoxyCompactList}\small\item\em Returns a vector of the contained functions. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classChaiScript__Language_1_1Function}{Function}} \mbox{\hyperlink{classChaiScript__Language_1_1Function_aaf4bb705c367f7d58ef78dbf43f08d6b}{get\+\_\+guard}} () const
+\begin{DoxyCompactList}\small\item\em Returns a function guard as function. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classChaiScript__Language_1_1Vector}{Vector}} \mbox{\hyperlink{classChaiScript__Language_1_1Function_ae1695cba611d1b728a6178e648e6b174}{get\+\_\+param\+\_\+types}} () const
+\begin{DoxyCompactList}\small\item\em Returns a vector of \mbox{\hyperlink{classChaiScript__Language_1_1Type__Info}{Type\+\_\+\+Info}} objects that represent the param types for this function. The first value in the list is the return type. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classChaiScript__Language_1_1Function_afdb0a06e59e95bbf1f93f506c505c7ea}{has\+\_\+guard}} () const
+\begin{DoxyCompactList}\small\item\em Returns true if the function has a guard to it. Always returns false for a conglomerate function. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classChaiScript__Language_1_1Object}{Object}} \mbox{\hyperlink{classChaiScript__Language_1_1Function_a69abe9d2a07a9a8fc6c29994fe990a79}{call}} (\mbox{\hyperlink{classChaiScript__Language_1_1Vector}{Vector}} t\+\_\+params) const
+\begin{DoxyCompactList}\small\item\em Calls the function with the given set of parameters and returns the value;. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Represents a function object in Chai\+Script. 
+
+\mbox{\hyperlink{classA}{A}} function object may be one function, such as\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\mbox{\hyperlink{namespacechaiscript_a7f9fcf9713fa8a33bcc304a16ac2834b}{var}} f = \mbox{\hyperlink{namespacechaiscript_a629bad3e8026e3327ec8aae56e0b086f}{fun}}(x) \{ \textcolor{keywordflow}{return} x; \}}
+
+\end{DoxyCode}
+
+
+Or it may represent multiple functions 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\mbox{\hyperlink{namespacechaiscript_a7f9fcf9713fa8a33bcc304a16ac2834b}{var}} f2 = `-\/`; \textcolor{comment}{// represents the unary -\/ as well as the set of binary -\/ operators}}
+
+\end{DoxyCode}
+
+
+Guarded function example 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{def f3(x) : x > 2 \{}
+\DoxyCodeLine{ \textcolor{keywordflow}{return} x;}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+
+
+Examples in the function definitions below will reference these examples 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classChaiScript__Language_1_1Function_a69abe9d2a07a9a8fc6c29994fe990a79}\label{classChaiScript__Language_1_1Function_a69abe9d2a07a9a8fc6c29994fe990a79}} 
+\index{ChaiScript\_Language::Function@{ChaiScript\_Language::Function}!call@{call}}
+\index{call@{call}!ChaiScript\_Language::Function@{ChaiScript\_Language::Function}}
+\doxysubsubsection{\texorpdfstring{call()}{call()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classChaiScript__Language_1_1Object}{Object}} Chai\+Script\+\_\+\+Language\+::\+Function\+::call (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classChaiScript__Language_1_1Vector}{Vector}}}]{t\+\_\+params }\end{DoxyParamCaption}) const}
+
+
+
+Calls the function with the given set of parameters and returns the value;. 
+
+Example\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{eval> `-\/`.call([2,1]);}
+\DoxyCodeLine{1}
+
+\end{DoxyCode}
+ \mbox{\Hypertarget{classChaiScript__Language_1_1Function_aa58cc3d8f921b7c324a0ee982ce56c02}\label{classChaiScript__Language_1_1Function_aa58cc3d8f921b7c324a0ee982ce56c02}} 
+\index{ChaiScript\_Language::Function@{ChaiScript\_Language::Function}!get\_annotation@{get\_annotation}}
+\index{get\_annotation@{get\_annotation}!ChaiScript\_Language::Function@{ChaiScript\_Language::Function}}
+\doxysubsubsection{\texorpdfstring{get\_annotation()}{get\_annotation()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classChaiScript__Language_1_1string}{string}} Chai\+Script\+\_\+\+Language\+::\+Function\+::get\+\_\+annotation (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Returns the annotation description of the function. 
+
+\mbox{\Hypertarget{classChaiScript__Language_1_1Function_afc8a06bc23050fd4095d64f6b238eda1}\label{classChaiScript__Language_1_1Function_afc8a06bc23050fd4095d64f6b238eda1}} 
+\index{ChaiScript\_Language::Function@{ChaiScript\_Language::Function}!get\_arity@{get\_arity}}
+\index{get\_arity@{get\_arity}!ChaiScript\_Language::Function@{ChaiScript\_Language::Function}}
+\doxysubsubsection{\texorpdfstring{get\_arity()}{get\_arity()}}
+{\footnotesize\ttfamily int Chai\+Script\+\_\+\+Language\+::\+Function\+::get\+\_\+arity (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Returns the arity of the function, -\/1 if the function takes a variable number of parameters. 
+
+Example\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{eval> f.get\_arity()}
+\DoxyCodeLine{1}
+\DoxyCodeLine{eval> f2.get\_arity()}
+\DoxyCodeLine{-\/1}
+
+\end{DoxyCode}
+ \mbox{\Hypertarget{classChaiScript__Language_1_1Function_a4ebca3a8cc1542ed402b87b54624626c}\label{classChaiScript__Language_1_1Function_a4ebca3a8cc1542ed402b87b54624626c}} 
+\index{ChaiScript\_Language::Function@{ChaiScript\_Language::Function}!get\_contained\_functions@{get\_contained\_functions}}
+\index{get\_contained\_functions@{get\_contained\_functions}!ChaiScript\_Language::Function@{ChaiScript\_Language::Function}}
+\doxysubsubsection{\texorpdfstring{get\_contained\_functions()}{get\_contained\_functions()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classChaiScript__Language_1_1Vector}{Vector}} Chai\+Script\+\_\+\+Language\+::\+Function\+::get\+\_\+contained\+\_\+functions (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Returns a vector of the contained functions. 
+
+Example\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{eval> f.get\_contained\_functions().size()}
+\DoxyCodeLine{0}
+\DoxyCodeLine{eval> f2.get\_contained\_functions().size()}
+\DoxyCodeLine{11}
+\DoxyCodeLine{eval> \mbox{\hyperlink{namespacechaiscript_a7f9fcf9713fa8a33bcc304a16ac2834b}{var}} v = f2.get\_contained\_functions();}
+\DoxyCodeLine{v[0].get\_arity()}
+\DoxyCodeLine{2}
+
+\end{DoxyCode}
+ \mbox{\Hypertarget{classChaiScript__Language_1_1Function_aaf4bb705c367f7d58ef78dbf43f08d6b}\label{classChaiScript__Language_1_1Function_aaf4bb705c367f7d58ef78dbf43f08d6b}} 
+\index{ChaiScript\_Language::Function@{ChaiScript\_Language::Function}!get\_guard@{get\_guard}}
+\index{get\_guard@{get\_guard}!ChaiScript\_Language::Function@{ChaiScript\_Language::Function}}
+\doxysubsubsection{\texorpdfstring{get\_guard()}{get\_guard()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classChaiScript__Language_1_1Function}{Function}} Chai\+Script\+\_\+\+Language\+::\+Function\+::get\+\_\+guard (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Returns a function guard as function. 
+
+Example\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{eval> f.get\_guard() \textcolor{comment}{// Throws exception}}
+\DoxyCodeLine{Function does not have a guard}
+\DoxyCodeLine{eval> f3.get\_guard().get\_arity()}
+\DoxyCodeLine{1}
+
+\end{DoxyCode}
+ \mbox{\Hypertarget{classChaiScript__Language_1_1Function_ae1695cba611d1b728a6178e648e6b174}\label{classChaiScript__Language_1_1Function_ae1695cba611d1b728a6178e648e6b174}} 
+\index{ChaiScript\_Language::Function@{ChaiScript\_Language::Function}!get\_param\_types@{get\_param\_types}}
+\index{get\_param\_types@{get\_param\_types}!ChaiScript\_Language::Function@{ChaiScript\_Language::Function}}
+\doxysubsubsection{\texorpdfstring{get\_param\_types()}{get\_param\_types()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classChaiScript__Language_1_1Vector}{Vector}} Chai\+Script\+\_\+\+Language\+::\+Function\+::get\+\_\+param\+\_\+types (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Returns a vector of \mbox{\hyperlink{classChaiScript__Language_1_1Type__Info}{Type\+\_\+\+Info}} objects that represent the param types for this function. The first value in the list is the return type. 
+
+If this function is a conglomerate of several functions (get\+\_\+contained\+\_\+values().size() $>$ 0) then the function returns as many \mbox{\hyperlink{classChaiScript__Language_1_1Type__Info}{Type\+\_\+\+Info}} objects as it can. If the functions contained all have the same arity, then it represents the arity. If they have different arities, it returns only one value -\/ the return type.
+
+For each parameter that is the same type, the type is returned. If the types are different then a \mbox{\hyperlink{classChaiScript__Language_1_1Type__Info}{Type\+\_\+\+Info}} for \mbox{\hyperlink{classChaiScript__Language_1_1Object}{Object}} is returned.
+
+Example\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{eval> f2.get\_param\_types().size(); \textcolor{comment}{// Returns a Type\_Info for Object for the return type}}
+\DoxyCodeLine{1}
+
+\end{DoxyCode}
+ \mbox{\Hypertarget{classChaiScript__Language_1_1Function_afdb0a06e59e95bbf1f93f506c505c7ea}\label{classChaiScript__Language_1_1Function_afdb0a06e59e95bbf1f93f506c505c7ea}} 
+\index{ChaiScript\_Language::Function@{ChaiScript\_Language::Function}!has\_guard@{has\_guard}}
+\index{has\_guard@{has\_guard}!ChaiScript\_Language::Function@{ChaiScript\_Language::Function}}
+\doxysubsubsection{\texorpdfstring{has\_guard()}{has\_guard()}}
+{\footnotesize\ttfamily bool Chai\+Script\+\_\+\+Language\+::\+Function\+::has\+\_\+guard (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Returns true if the function has a guard to it. Always returns false for a conglomerate function. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Chai\+Script-\/6.\+1.\+0/include/chaiscript/language/chaiscript\+\_\+prelude\+\_\+docs.\+hpp\end{DoxyCompactItemize}

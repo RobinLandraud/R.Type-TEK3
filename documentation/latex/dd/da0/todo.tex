@@ -1,0 +1,43 @@
+
+\begin{DoxyRefList}
+\item[Class \mbox{\hyperlink{structchaiscript_1_1bootstrap_1_1standard__library_1_1Bidir__Range}{chaiscript\+::bootstrap\+::standard\+\_\+library\+::Bidir\+\_\+\+Range$<$ Container, Iter\+Type $>$}} ]\label{todo__todo000001}%
+\Hypertarget{todo__todo000001}%
+Update the Range code to base its capabilities on the user\+\_\+typetraits of the iterator passed in  
+\item[Member \mbox{\hyperlink{bootstrap__stl_8hpp_a79ad40d2c8f924f12cb33ae5b20145c4}{chaiscript\+::bootstrap\+::standard\+\_\+library\+::random\+\_\+access\+\_\+container\+\_\+type}} (const std\+::string \&, \mbox{\hyperlink{classchaiscript_1_1Module}{Module}} \&m)]\label{todo__todo000002}%
+\Hypertarget{todo__todo000002}%
+we are prefering to keep the key as \textquotesingle{}int\textquotesingle{} to avoid runtime conversions during dispatch. reevaluate 
+
+\label{todo__todo000003}%
+\Hypertarget{todo__todo000003}%
+we are prefering to keep the key as \textquotesingle{}int\textquotesingle{} to avoid runtime conversions during dispatch. reevaluate  
+\item[Member \mbox{\hyperlink{namespacechaiscript_af4f2de09723af9248cb1a8a34242ace7}{chaiscript\+::const\+\_\+var}} (const T \&t)]\label{todo__todo000007}%
+\Hypertarget{todo__todo000007}%
+support C++11 strongly typed enums  
+\item[Class \mbox{\hyperlink{structchaiscript_1_1detail_1_1Cast__Helper__Inner_3_01const_01std_1_1unique__ptr_3_01Result_01_4_01_6_01_4}{chaiscript\+::detail\+::Cast\+\_\+\+Helper\+\_\+\+Inner$<$ const std\+::unique\+\_\+ptr$<$ Result $>$ \& $>$}} ]\label{todo__todo000006}%
+\Hypertarget{todo__todo000006}%
+Fix the fact that this has to be in a shared\+\_\+ptr for now  
+\item[Class \mbox{\hyperlink{structchaiscript_1_1detail_1_1Cast__Helper__Inner_3_01std_1_1unique__ptr_3_01Result_01_4_01_6_01_4}{chaiscript\+::detail\+::Cast\+\_\+\+Helper\+\_\+\+Inner$<$ std\+::unique\+\_\+ptr$<$ Result $>$ \& $>$}} ]\label{todo__todo000005}%
+\Hypertarget{todo__todo000005}%
+Fix the fact that this has to be in a shared\+\_\+ptr for now  
+\item[Class \mbox{\hyperlink{structchaiscript_1_1detail_1_1Cast__Helper__Inner_3_01std_1_1unique__ptr_3_01Result_01_4_01_6_6_01_4}{chaiscript\+::detail\+::Cast\+\_\+\+Helper\+\_\+\+Inner$<$ std\+::unique\+\_\+ptr$<$ Result $>$ \&\& $>$}} ]\label{todo__todo000004}%
+\Hypertarget{todo__todo000004}%
+Fix the fact that this has to be in a shared\+\_\+ptr for now  
+\item[Member \mbox{\hyperlink{classchaiscript_1_1detail_1_1Type__Conversion__Impl_a1b3e63b0255b96619e659e128731f22e}{chaiscript\+::detail\+::Type\+\_\+\+Conversion\+\_\+\+Impl$<$ Callable $>$\+::convert}} (const \mbox{\hyperlink{classchaiscript_1_1Boxed__Value}{Boxed\+\_\+\+Value}} \&t\+\_\+from) const override]\label{todo__todo000011}%
+\Hypertarget{todo__todo000011}%
+better handling of errors from the conversion function  
+\item[Member \mbox{\hyperlink{structchaiscript_1_1eval_1_1Class__AST__Node_a64ca461a4eba3b61f55d60389d7e23d2}{chaiscript\+::eval\+::Class\+\_\+\+AST\+\_\+\+Node$<$ T $>$\+::eval\+\_\+internal}} (const \mbox{\hyperlink{classchaiscript_1_1detail_1_1Dispatch__State}{chaiscript\+::detail\+::\+Dispatch\+\_\+\+State}} \&t\+\_\+ss) const override]\label{todo__todo000014}%
+\Hypertarget{todo__todo000014}%
+do this better  
+\item[Member \mbox{\hyperlink{structchaiscript_1_1eval_1_1Equation__AST__Node_a96fecdd27c616bd5afeed9c9828e1c58}{chaiscript\+::eval\+::Equation\+\_\+\+AST\+\_\+\+Node$<$ T $>$\+::eval\+\_\+internal}} (const \mbox{\hyperlink{classchaiscript_1_1detail_1_1Dispatch__State}{chaiscript\+::detail\+::\+Dispatch\+\_\+\+State}} \&t\+\_\+ss) const override]\label{todo__todo000013}%
+\Hypertarget{todo__todo000013}%
+This does not handle the case of an unassigned reference variable being assigned outside of its declaration  
+\item[Member \mbox{\hyperlink{classchaiscript_1_1parser_1_1ChaiScript__Parser_a16b59446bdc7cb4be5492ba01bbc5cb2}{chaiscript\+::parser\+::Chai\+Script\+\_\+\+Parser$<$ Tracer, Optimizer, Parse\+\_\+\+Depth $>$\+::build\+\_\+match}} (size\+\_\+t t\+\_\+match\+\_\+start, std\+::string t\+\_\+text=\char`\"{}\char`\"{})]\label{todo__todo000015}%
+\Hypertarget{todo__todo000015}%
+fix the fact that a successful match that captured no ast\+\_\+nodes doesn\textquotesingle{}t have any real start position  
+\item[Member \mbox{\hyperlink{classchaiscript_1_1parser_1_1ChaiScript__Parser_a8e14fbb6c0b2545c4602af6598abcbcb}{chaiscript\+::parser\+::Chai\+Script\+\_\+\+Parser$<$ Tracer, Optimizer, Parse\+\_\+\+Depth $>$\+::Dot\+\_\+\+Fun\+\_\+\+Array}} ()]\label{todo__todo000016}%
+\Hypertarget{todo__todo000016}%
+Work around for method calls until we have a better solution  
+\item[Member \mbox{\hyperlink{classchaiscript_1_1Type__Conversions_a20a1cf396152c06b23af93ff01063d1e}{chaiscript\+::Type\+\_\+\+Conversions\+::add\+\_\+conversion}} (const std\+::shared\+\_\+ptr$<$ detail\+::\+Type\+\_\+\+Conversion\+\_\+\+Base $>$ \&conversion)]\label{todo__todo000012}%
+\Hypertarget{todo__todo000012}%
+error if a conversion already exists 
+\end{DoxyRefList}

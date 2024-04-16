@@ -1,0 +1,448 @@
+\hypertarget{classScriptClocksComponents}{}\doxysection{Script\+Clocks\+Components Class Reference}
+\label{classScriptClocksComponents}\index{ScriptClocksComponents@{ScriptClocksComponents}}
+
+
+\mbox{\hyperlink{classScriptClocksComponents}{Script\+Clocks\+Components}} class.  
+
+
+
+
+{\ttfamily \#include $<$Script\+Clocks\+Components.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classScriptClocksComponents_a22929f9906ed3190bbf69c58b76cee6f}{Script\+Clocks\+Components}} (\mbox{\hyperlink{classregistry}{registry}} \&reg)
+\begin{DoxyCompactList}\small\item\em The constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classScriptClocksComponents_a84e41e4467c2d5653eae4db1ee451dae}{$\sim$\+Script\+Clocks\+Components}} ()=default
+\item 
+void \mbox{\hyperlink{classScriptClocksComponents_a518e426841e955e5b6e99f4bcc66dc16}{add}} (size\+\_\+t ent\+\_\+id, float secondes)
+\begin{DoxyCompactList}\small\item\em Add a clock component to an entity. \end{DoxyCompactList}\item 
+size\+\_\+t \mbox{\hyperlink{classScriptClocksComponents_acf3e8d19753cf6efd049cf791dab0493}{size}} ()
+\begin{DoxyCompactList}\small\item\em Get the number of clock components. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classClocksComponent}{Clocks\+Component}} \& \mbox{\hyperlink{classScriptClocksComponents_aef33910773c3549b7fe0f1d5c7d37a24}{at}} (size\+\_\+t index)
+\begin{DoxyCompactList}\small\item\em Get a clock component at a specific index. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classScriptClocksComponents_a77e973e787323b8e85735b8129f34bc4}{exists}} (size\+\_\+t index)
+\begin{DoxyCompactList}\small\item\em Check if a clock component exists at a specific index. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classScriptClocksComponents_a8d81b0290e2504736662630ace381b20}{add\+Clock\+At}} (size\+\_\+t index, std\+::string key, float secondes)
+\begin{DoxyCompactList}\small\item\em Add a clock to a clock component at a specific index. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classScriptClocksComponents_aa95f3bd3754222e1c7cf3ffaeac18008}{remove\+Clock\+At}} (size\+\_\+t index, std\+::string key)
+\begin{DoxyCompactList}\small\item\em Remove a clock from a clock component at a specific index. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classScriptClocksComponents_a8e839312ef05fae1f04d92374c13fe6c}{update\+Clocks\+At}} (size\+\_\+t index)
+\begin{DoxyCompactList}\small\item\em Update the clocks of a clock component at a specific index. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classScriptClocksComponents_a6afedd33fae9a25ab94721d3c90127e1}{pause\+Clock\+At}} (size\+\_\+t index, std\+::string key)
+\begin{DoxyCompactList}\small\item\em Pause a clock of a clock component at a specific index. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classScriptClocksComponents_ada4841fe506cc4dbdb10a2b116580516}{play\+Clock\+At}} (size\+\_\+t index, std\+::string key)
+\begin{DoxyCompactList}\small\item\em Play a clock of a clock component at a specific index. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classScriptClocksComponents_ada2d28143715639b37dc9132aa1bf262}{is\+Running\+Clock\+At}} (size\+\_\+t index, std\+::string key)
+\begin{DoxyCompactList}\small\item\em Check if a clock of a clock component at a specific index is running. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classScriptClocksComponents_ad0a4024827dc8304ca37584de809523c}{refresh\+Clock\+At}} (size\+\_\+t index, std\+::string key)
+\begin{DoxyCompactList}\small\item\em Refresh a clock of a clock component at a specific index. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classScriptClocksComponents_a3ad14824ca1163bd5e14310c7e11e765}{reset\+Clock\+At}} (size\+\_\+t index, std\+::string key)
+\begin{DoxyCompactList}\small\item\em Reset a clock of a clock component at a specific index. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classScriptClocksComponents_a76f005c97dc0408f86740d00d1f00cc9}{loop\+Clock\+At}} (size\+\_\+t index, std\+::string key)
+\begin{DoxyCompactList}\small\item\em Loop a clock of a clock component at a specific index. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classScriptClocksComponents_a1f350e7a4dcdbc25047943e3844c963b}{is\+Tick\+Clock\+At}} (size\+\_\+t index, std\+::string key)
+\begin{DoxyCompactList}\small\item\em Check if a clock of a clock component at a specific index is ticked. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classScriptClocksComponents_acd1e343eeda9e67f59fc7ea2cc8f2cdd}{pause\+Default\+Clock\+At}} (size\+\_\+t index)
+\begin{DoxyCompactList}\small\item\em Pause the default clock of a clock component at a specific index. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classScriptClocksComponents_a4a2f3e80a47f3339c1b53f986978a376}{play\+Default\+Clock\+At}} (size\+\_\+t index)
+\begin{DoxyCompactList}\small\item\em Play the default clock of a clock component at a specific index. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classScriptClocksComponents_a2c3c16df9d448ace657b9ea3ba160ab5}{is\+Running\+Default\+Clock\+At}} (size\+\_\+t index)
+\begin{DoxyCompactList}\small\item\em Check if the default clock of a clock component at a specific index is running. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classScriptClocksComponents_a0130a6c860ebec420cdd0e6c5a3e26fe}{refresh\+Default\+Clock\+At}} (size\+\_\+t index)
+\begin{DoxyCompactList}\small\item\em Refresh the default clock of a clock component at a specific index. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classScriptClocksComponents_a340ca9a6a2106e6c13bdddee5a19a3da}{reset\+Default\+Clock\+At}} (size\+\_\+t index)
+\begin{DoxyCompactList}\small\item\em Reset the default clock of a clock component at a specific index. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classScriptClocksComponents_a0841d9892ae01e591df4a676a3231114}{loop\+Default\+Clock\+At}} (size\+\_\+t index)
+\begin{DoxyCompactList}\small\item\em Loop the default clock of a clock component at a specific index. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classScriptClocksComponents_a281efdcafc0ef84f8a0c8fc732e68737}{is\+Tick\+Default\+Clock\+At}} (size\+\_\+t index)
+\begin{DoxyCompactList}\small\item\em Check if the default clock of a clock component at a specific index is ticked. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{classScriptClocksComponents}{Script\+Clocks\+Components}} class. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classScriptClocksComponents_a22929f9906ed3190bbf69c58b76cee6f}\label{classScriptClocksComponents_a22929f9906ed3190bbf69c58b76cee6f}} 
+\index{ScriptClocksComponents@{ScriptClocksComponents}!ScriptClocksComponents@{ScriptClocksComponents}}
+\index{ScriptClocksComponents@{ScriptClocksComponents}!ScriptClocksComponents@{ScriptClocksComponents}}
+\doxysubsubsection{\texorpdfstring{ScriptClocksComponents()}{ScriptClocksComponents()}}
+{\footnotesize\ttfamily Script\+Clocks\+Components\+::\+Script\+Clocks\+Components (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classregistry}{registry}} \&}]{reg }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+The constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em reg} & The registry \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classScriptClocksComponents_a84e41e4467c2d5653eae4db1ee451dae}\label{classScriptClocksComponents_a84e41e4467c2d5653eae4db1ee451dae}} 
+\index{ScriptClocksComponents@{ScriptClocksComponents}!````~ScriptClocksComponents@{$\sim$ScriptClocksComponents}}
+\index{````~ScriptClocksComponents@{$\sim$ScriptClocksComponents}!ScriptClocksComponents@{ScriptClocksComponents}}
+\doxysubsubsection{\texorpdfstring{$\sim$ScriptClocksComponents()}{~ScriptClocksComponents()}}
+{\footnotesize\ttfamily Script\+Clocks\+Components\+::$\sim$\+Script\+Clocks\+Components (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+Default destructor 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classScriptClocksComponents_a518e426841e955e5b6e99f4bcc66dc16}\label{classScriptClocksComponents_a518e426841e955e5b6e99f4bcc66dc16}} 
+\index{ScriptClocksComponents@{ScriptClocksComponents}!add@{add}}
+\index{add@{add}!ScriptClocksComponents@{ScriptClocksComponents}}
+\doxysubsubsection{\texorpdfstring{add()}{add()}}
+{\footnotesize\ttfamily void Script\+Clocks\+Components\+::add (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{ent\+\_\+id,  }\item[{float}]{secondes }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Add a clock component to an entity. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ent\+\_\+id} & The entity id \\
+\hline
+{\em secondes} & The number of secondes of the clock \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classScriptClocksComponents_a8d81b0290e2504736662630ace381b20}\label{classScriptClocksComponents_a8d81b0290e2504736662630ace381b20}} 
+\index{ScriptClocksComponents@{ScriptClocksComponents}!addClockAt@{addClockAt}}
+\index{addClockAt@{addClockAt}!ScriptClocksComponents@{ScriptClocksComponents}}
+\doxysubsubsection{\texorpdfstring{addClockAt()}{addClockAt()}}
+{\footnotesize\ttfamily void Script\+Clocks\+Components\+::add\+Clock\+At (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{index,  }\item[{std\+::string}]{key,  }\item[{float}]{secondes }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Add a clock to a clock component at a specific index. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & The index of the clock component \\
+\hline
+{\em key} & The key of the clock \\
+\hline
+{\em secondes} & The number of secondes of the clock \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classScriptClocksComponents_aef33910773c3549b7fe0f1d5c7d37a24}\label{classScriptClocksComponents_aef33910773c3549b7fe0f1d5c7d37a24}} 
+\index{ScriptClocksComponents@{ScriptClocksComponents}!at@{at}}
+\index{at@{at}!ScriptClocksComponents@{ScriptClocksComponents}}
+\doxysubsubsection{\texorpdfstring{at()}{at()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classClocksComponent}{Clocks\+Component}} \& Script\+Clocks\+Components\+::at (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get a clock component at a specific index. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & The index of the clock component \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{classClocksComponent}{Clocks\+Component}}\& The clock component 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classScriptClocksComponents_a77e973e787323b8e85735b8129f34bc4}\label{classScriptClocksComponents_a77e973e787323b8e85735b8129f34bc4}} 
+\index{ScriptClocksComponents@{ScriptClocksComponents}!exists@{exists}}
+\index{exists@{exists}!ScriptClocksComponents@{ScriptClocksComponents}}
+\doxysubsubsection{\texorpdfstring{exists()}{exists()}}
+{\footnotesize\ttfamily bool Script\+Clocks\+Components\+::exists (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Check if a clock component exists at a specific index. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & The index of the clock component \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool True if the clock component exists, false otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classScriptClocksComponents_ada2d28143715639b37dc9132aa1bf262}\label{classScriptClocksComponents_ada2d28143715639b37dc9132aa1bf262}} 
+\index{ScriptClocksComponents@{ScriptClocksComponents}!isRunningClockAt@{isRunningClockAt}}
+\index{isRunningClockAt@{isRunningClockAt}!ScriptClocksComponents@{ScriptClocksComponents}}
+\doxysubsubsection{\texorpdfstring{isRunningClockAt()}{isRunningClockAt()}}
+{\footnotesize\ttfamily bool Script\+Clocks\+Components\+::is\+Running\+Clock\+At (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{index,  }\item[{std\+::string}]{key }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Check if a clock of a clock component at a specific index is running. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & The index of the clock component \\
+\hline
+{\em key} & The key of the clock \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the clock is running, false otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classScriptClocksComponents_a2c3c16df9d448ace657b9ea3ba160ab5}\label{classScriptClocksComponents_a2c3c16df9d448ace657b9ea3ba160ab5}} 
+\index{ScriptClocksComponents@{ScriptClocksComponents}!isRunningDefaultClockAt@{isRunningDefaultClockAt}}
+\index{isRunningDefaultClockAt@{isRunningDefaultClockAt}!ScriptClocksComponents@{ScriptClocksComponents}}
+\doxysubsubsection{\texorpdfstring{isRunningDefaultClockAt()}{isRunningDefaultClockAt()}}
+{\footnotesize\ttfamily bool Script\+Clocks\+Components\+::is\+Running\+Default\+Clock\+At (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Check if the default clock of a clock component at a specific index is running. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & The index of the clock component \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the default clock is running, false otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classScriptClocksComponents_a1f350e7a4dcdbc25047943e3844c963b}\label{classScriptClocksComponents_a1f350e7a4dcdbc25047943e3844c963b}} 
+\index{ScriptClocksComponents@{ScriptClocksComponents}!isTickClockAt@{isTickClockAt}}
+\index{isTickClockAt@{isTickClockAt}!ScriptClocksComponents@{ScriptClocksComponents}}
+\doxysubsubsection{\texorpdfstring{isTickClockAt()}{isTickClockAt()}}
+{\footnotesize\ttfamily bool Script\+Clocks\+Components\+::is\+Tick\+Clock\+At (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{index,  }\item[{std\+::string}]{key }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Check if a clock of a clock component at a specific index is ticked. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & The index of the clock component \\
+\hline
+{\em key} & The key of the clock \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the clock is ticked, false otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classScriptClocksComponents_a281efdcafc0ef84f8a0c8fc732e68737}\label{classScriptClocksComponents_a281efdcafc0ef84f8a0c8fc732e68737}} 
+\index{ScriptClocksComponents@{ScriptClocksComponents}!isTickDefaultClockAt@{isTickDefaultClockAt}}
+\index{isTickDefaultClockAt@{isTickDefaultClockAt}!ScriptClocksComponents@{ScriptClocksComponents}}
+\doxysubsubsection{\texorpdfstring{isTickDefaultClockAt()}{isTickDefaultClockAt()}}
+{\footnotesize\ttfamily bool Script\+Clocks\+Components\+::is\+Tick\+Default\+Clock\+At (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Check if the default clock of a clock component at a specific index is ticked. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & The index of the clock component \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the default clock is ticked, false otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classScriptClocksComponents_a76f005c97dc0408f86740d00d1f00cc9}\label{classScriptClocksComponents_a76f005c97dc0408f86740d00d1f00cc9}} 
+\index{ScriptClocksComponents@{ScriptClocksComponents}!loopClockAt@{loopClockAt}}
+\index{loopClockAt@{loopClockAt}!ScriptClocksComponents@{ScriptClocksComponents}}
+\doxysubsubsection{\texorpdfstring{loopClockAt()}{loopClockAt()}}
+{\footnotesize\ttfamily void Script\+Clocks\+Components\+::loop\+Clock\+At (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{index,  }\item[{std\+::string}]{key }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Loop a clock of a clock component at a specific index. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & The index of the clock component \\
+\hline
+{\em key} & The key of the clock \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classScriptClocksComponents_a0841d9892ae01e591df4a676a3231114}\label{classScriptClocksComponents_a0841d9892ae01e591df4a676a3231114}} 
+\index{ScriptClocksComponents@{ScriptClocksComponents}!loopDefaultClockAt@{loopDefaultClockAt}}
+\index{loopDefaultClockAt@{loopDefaultClockAt}!ScriptClocksComponents@{ScriptClocksComponents}}
+\doxysubsubsection{\texorpdfstring{loopDefaultClockAt()}{loopDefaultClockAt()}}
+{\footnotesize\ttfamily void Script\+Clocks\+Components\+::loop\+Default\+Clock\+At (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Loop the default clock of a clock component at a specific index. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & The index of the clock component \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classScriptClocksComponents_a6afedd33fae9a25ab94721d3c90127e1}\label{classScriptClocksComponents_a6afedd33fae9a25ab94721d3c90127e1}} 
+\index{ScriptClocksComponents@{ScriptClocksComponents}!pauseClockAt@{pauseClockAt}}
+\index{pauseClockAt@{pauseClockAt}!ScriptClocksComponents@{ScriptClocksComponents}}
+\doxysubsubsection{\texorpdfstring{pauseClockAt()}{pauseClockAt()}}
+{\footnotesize\ttfamily void Script\+Clocks\+Components\+::pause\+Clock\+At (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{index,  }\item[{std\+::string}]{key }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Pause a clock of a clock component at a specific index. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & The index of the clock component \\
+\hline
+{\em key} & The key of the clock \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classScriptClocksComponents_acd1e343eeda9e67f59fc7ea2cc8f2cdd}\label{classScriptClocksComponents_acd1e343eeda9e67f59fc7ea2cc8f2cdd}} 
+\index{ScriptClocksComponents@{ScriptClocksComponents}!pauseDefaultClockAt@{pauseDefaultClockAt}}
+\index{pauseDefaultClockAt@{pauseDefaultClockAt}!ScriptClocksComponents@{ScriptClocksComponents}}
+\doxysubsubsection{\texorpdfstring{pauseDefaultClockAt()}{pauseDefaultClockAt()}}
+{\footnotesize\ttfamily void Script\+Clocks\+Components\+::pause\+Default\+Clock\+At (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Pause the default clock of a clock component at a specific index. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & The index of the clock component \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classScriptClocksComponents_ada4841fe506cc4dbdb10a2b116580516}\label{classScriptClocksComponents_ada4841fe506cc4dbdb10a2b116580516}} 
+\index{ScriptClocksComponents@{ScriptClocksComponents}!playClockAt@{playClockAt}}
+\index{playClockAt@{playClockAt}!ScriptClocksComponents@{ScriptClocksComponents}}
+\doxysubsubsection{\texorpdfstring{playClockAt()}{playClockAt()}}
+{\footnotesize\ttfamily void Script\+Clocks\+Components\+::play\+Clock\+At (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{index,  }\item[{std\+::string}]{key }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Play a clock of a clock component at a specific index. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & The index of the clock component \\
+\hline
+{\em key} & The key of the clock \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classScriptClocksComponents_a4a2f3e80a47f3339c1b53f986978a376}\label{classScriptClocksComponents_a4a2f3e80a47f3339c1b53f986978a376}} 
+\index{ScriptClocksComponents@{ScriptClocksComponents}!playDefaultClockAt@{playDefaultClockAt}}
+\index{playDefaultClockAt@{playDefaultClockAt}!ScriptClocksComponents@{ScriptClocksComponents}}
+\doxysubsubsection{\texorpdfstring{playDefaultClockAt()}{playDefaultClockAt()}}
+{\footnotesize\ttfamily void Script\+Clocks\+Components\+::play\+Default\+Clock\+At (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Play the default clock of a clock component at a specific index. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & The index of the clock component \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classScriptClocksComponents_ad0a4024827dc8304ca37584de809523c}\label{classScriptClocksComponents_ad0a4024827dc8304ca37584de809523c}} 
+\index{ScriptClocksComponents@{ScriptClocksComponents}!refreshClockAt@{refreshClockAt}}
+\index{refreshClockAt@{refreshClockAt}!ScriptClocksComponents@{ScriptClocksComponents}}
+\doxysubsubsection{\texorpdfstring{refreshClockAt()}{refreshClockAt()}}
+{\footnotesize\ttfamily void Script\+Clocks\+Components\+::refresh\+Clock\+At (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{index,  }\item[{std\+::string}]{key }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Refresh a clock of a clock component at a specific index. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & The index of the clock component \\
+\hline
+{\em key} & The key of the clock \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classScriptClocksComponents_a0130a6c860ebec420cdd0e6c5a3e26fe}\label{classScriptClocksComponents_a0130a6c860ebec420cdd0e6c5a3e26fe}} 
+\index{ScriptClocksComponents@{ScriptClocksComponents}!refreshDefaultClockAt@{refreshDefaultClockAt}}
+\index{refreshDefaultClockAt@{refreshDefaultClockAt}!ScriptClocksComponents@{ScriptClocksComponents}}
+\doxysubsubsection{\texorpdfstring{refreshDefaultClockAt()}{refreshDefaultClockAt()}}
+{\footnotesize\ttfamily void Script\+Clocks\+Components\+::refresh\+Default\+Clock\+At (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Refresh the default clock of a clock component at a specific index. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & The index of the clock component \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classScriptClocksComponents_aa95f3bd3754222e1c7cf3ffaeac18008}\label{classScriptClocksComponents_aa95f3bd3754222e1c7cf3ffaeac18008}} 
+\index{ScriptClocksComponents@{ScriptClocksComponents}!removeClockAt@{removeClockAt}}
+\index{removeClockAt@{removeClockAt}!ScriptClocksComponents@{ScriptClocksComponents}}
+\doxysubsubsection{\texorpdfstring{removeClockAt()}{removeClockAt()}}
+{\footnotesize\ttfamily void Script\+Clocks\+Components\+::remove\+Clock\+At (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{index,  }\item[{std\+::string}]{key }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Remove a clock from a clock component at a specific index. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & The index of the clock component \\
+\hline
+{\em key} & The key of the clock \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classScriptClocksComponents_a3ad14824ca1163bd5e14310c7e11e765}\label{classScriptClocksComponents_a3ad14824ca1163bd5e14310c7e11e765}} 
+\index{ScriptClocksComponents@{ScriptClocksComponents}!resetClockAt@{resetClockAt}}
+\index{resetClockAt@{resetClockAt}!ScriptClocksComponents@{ScriptClocksComponents}}
+\doxysubsubsection{\texorpdfstring{resetClockAt()}{resetClockAt()}}
+{\footnotesize\ttfamily void Script\+Clocks\+Components\+::reset\+Clock\+At (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{index,  }\item[{std\+::string}]{key }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Reset a clock of a clock component at a specific index. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & The index of the clock component \\
+\hline
+{\em key} & The key of the clock \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classScriptClocksComponents_a340ca9a6a2106e6c13bdddee5a19a3da}\label{classScriptClocksComponents_a340ca9a6a2106e6c13bdddee5a19a3da}} 
+\index{ScriptClocksComponents@{ScriptClocksComponents}!resetDefaultClockAt@{resetDefaultClockAt}}
+\index{resetDefaultClockAt@{resetDefaultClockAt}!ScriptClocksComponents@{ScriptClocksComponents}}
+\doxysubsubsection{\texorpdfstring{resetDefaultClockAt()}{resetDefaultClockAt()}}
+{\footnotesize\ttfamily void Script\+Clocks\+Components\+::reset\+Default\+Clock\+At (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Reset the default clock of a clock component at a specific index. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & The index of the clock component \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classScriptClocksComponents_acf3e8d19753cf6efd049cf791dab0493}\label{classScriptClocksComponents_acf3e8d19753cf6efd049cf791dab0493}} 
+\index{ScriptClocksComponents@{ScriptClocksComponents}!size@{size}}
+\index{size@{size}!ScriptClocksComponents@{ScriptClocksComponents}}
+\doxysubsubsection{\texorpdfstring{size()}{size()}}
+{\footnotesize\ttfamily size\+\_\+t Script\+Clocks\+Components\+::size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the number of clock components. 
+
+\begin{DoxyReturn}{Returns}
+size\+\_\+t The number of clock components 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classScriptClocksComponents_a8e839312ef05fae1f04d92374c13fe6c}\label{classScriptClocksComponents_a8e839312ef05fae1f04d92374c13fe6c}} 
+\index{ScriptClocksComponents@{ScriptClocksComponents}!updateClocksAt@{updateClocksAt}}
+\index{updateClocksAt@{updateClocksAt}!ScriptClocksComponents@{ScriptClocksComponents}}
+\doxysubsubsection{\texorpdfstring{updateClocksAt()}{updateClocksAt()}}
+{\footnotesize\ttfamily void Script\+Clocks\+Components\+::update\+Clocks\+At (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Update the clocks of a clock component at a specific index. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & The index of the clock component \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Client/\+Script/Script\+Clocks\+Components.\+hpp\end{DoxyCompactItemize}

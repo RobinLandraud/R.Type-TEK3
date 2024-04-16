@@ -1,0 +1,26 @@
+for (var i = 0; i < SceneManagerComponents.size(); ++i) {
+    if (SceneManagerComponents.exists(i)) {
+        if (SceneManagerComponents.isStartAt(i)) {
+            if (SceneManagerComponents.isUpdatedAt(i)) {
+                print("---------------------------------------")
+                print("test.chai")
+                print("---------------------------------------")
+                print("DataComponents size is ${DataComponents.size()}")
+                var ent = Registry.spawn_entity();
+                print("create entity");
+                print("entity index is ${ent}");
+                DataComponents.add(ent);
+                print("DataComponents size is ${DataComponents.size()}")
+                DataComponents.addStringAt(ent, "name", "toto")
+                print("key: 'name' value: 'toto' added in DataComponent ${ent}")
+                var dataName = DataComponents.getStringAt(ent, "name").to_string()
+                print("get value at key 'name' in stringDataComp : " + dataName)
+                DataComponents.addFloatAt(ent, "value", 2.5)
+                print("key: 'value' value: 2.5 added in DataComponent ${ent}")
+                var dataValue = DataComponents.getFloatAt(ent, "value").to_string()
+                print("get value at key 'value' in FloatDataComp : " + dataValue)
+                print("---------------------------------------")
+            }
+        }
+    }
+}

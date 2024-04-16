@@ -1,0 +1,611 @@
+\hypertarget{namespaceChaiScript__Language}{}\doxysection{Chai\+Script\+\_\+\+Language Namespace Reference}
+\label{namespaceChaiScript__Language}\index{ChaiScript\_Language@{ChaiScript\_Language}}
+
+
+Items in this namespace exist in the Chai\+Script language runtime. They are not part of the C++ API.  
+
+
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classChaiScript__Language_1_1Object}{Object}}
+\begin{DoxyCompactList}\small\item\em Generic concept of a value in Chai\+Script. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classChaiScript__Language_1_1Map__Pair}{Map\+\_\+\+Pair}}
+\begin{DoxyCompactList}\small\item\em Item returned from a \mbox{\hyperlink{classChaiScript__Language_1_1Range}{Range}} object from a \mbox{\hyperlink{classChaiScript__Language_1_1Map}{Map}}. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classChaiScript__Language_1_1Map}{Map}}
+\begin{DoxyCompactList}\small\item\em Maps strings to Objects. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classChaiScript__Language_1_1Container}{Container}}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classA}{A}} concept implemented by string, \mbox{\hyperlink{classChaiScript__Language_1_1Vector}{Vector}} and \mbox{\hyperlink{classChaiScript__Language_1_1Map}{Map}}. It is convertible to \mbox{\hyperlink{classChaiScript__Language_1_1Range}{Range}}, default constructable and back\+\_\+insertable. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classChaiScript__Language_1_1string}{string}}
+\begin{DoxyCompactList}\small\item\em Chai\+Script representation of std\+::string. It is an std\+::string but only some member are exposed to Chai\+Script. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classChaiScript__Language_1_1Range}{Range}}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classA}{A}} concept in Chai\+Script that is implemented by \mbox{\hyperlink{classChaiScript__Language_1_1string}{string}}, \mbox{\hyperlink{classChaiScript__Language_1_1Vector}{Vector}} and \mbox{\hyperlink{classChaiScript__Language_1_1Map}{Map}}. It provides easy iteration over the elements in a container. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classChaiScript__Language_1_1Const__Range}{Const\+\_\+\+Range}}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classA}{A}} concept in Chai\+Script that is implemented by \mbox{\hyperlink{classChaiScript__Language_1_1string}{string}}, \mbox{\hyperlink{classChaiScript__Language_1_1Vector}{Vector}} and \mbox{\hyperlink{classChaiScript__Language_1_1Map}{Map}}. It provides easy iteration over the elements in a container. Contained values are const. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classChaiScript__Language_1_1Vector}{Vector}}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classA}{A}} vector of Objects. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classChaiScript__Language_1_1Type__Info}{Type\+\_\+\+Info}}
+\item 
+class \mbox{\hyperlink{classChaiScript__Language_1_1Function}{Function}}
+\begin{DoxyCompactList}\small\item\em Represents a function object in Chai\+Script. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classChaiScript__Language_1_1string}{string}} \mbox{\hyperlink{namespaceChaiScript__Language_a486f5c31e7ce9f28ec130f04aaf697e1}{to\+\_\+string}} (\mbox{\hyperlink{classChaiScript__Language_1_1Object}{Object}} o)
+\begin{DoxyCompactList}\small\item\em Converts o into a string. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{namespaceChaiScript__Language_a87d3415a25b5fe9ab67bf229c46cf247}{puts}} (\mbox{\hyperlink{classChaiScript__Language_1_1Object}{Object}} o)
+\begin{DoxyCompactList}\small\item\em Prints o to the terminal, without a trailing carriage return. Applies conversions to string automatically. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{namespaceChaiScript__Language_a997db82b5a5b891b648ea6a8b9cf3271}{print}} (\mbox{\hyperlink{classChaiScript__Language_1_1Object}{Object}} o)
+\begin{DoxyCompactList}\small\item\em Prints o to the terminal, with a trailing carriage return. Applies conversions to string automatically. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classChaiScript__Language_1_1Function}{Chai\+Script\+\_\+\+Language\+::\+Function}} \mbox{\hyperlink{namespaceChaiScript__Language_ad229e636e54b8efc944cd56812c5e337}{max}} (\mbox{\hyperlink{classChaiScript__Language_1_1Object}{Object}} a, \mbox{\hyperlink{classChaiScript__Language_1_1Object}{Object}} b)
+\begin{DoxyCompactList}\small\item\em Returns the max of a or b. Requires that operator$>$(a, b) exists Equivalent to. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classChaiScript__Language_1_1Object}{Object}} \mbox{\hyperlink{namespaceChaiScript__Language_a618072d80e52470e2b6890d636e84648}{min}} (\mbox{\hyperlink{classChaiScript__Language_1_1Object}{Object}} a, \mbox{\hyperlink{classChaiScript__Language_1_1Object}{Object}} b)
+\begin{DoxyCompactList}\small\item\em Returns the min of a or b. Requires that operator$<$(a, b) exists. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{namespaceChaiScript__Language_ab43f5c02c17f46a66e75496e6f73607b}{even}} (\mbox{\hyperlink{classChaiScript__Language_1_1Object}{Object}} x)
+\begin{DoxyCompactList}\small\item\em Returns true if x is an even integer. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{namespaceChaiScript__Language_a4738e1f2e94cd1c4f3f97cbe94044ec7}{for\+\_\+each}} (\mbox{\hyperlink{classChaiScript__Language_1_1Range}{Range}} c, \mbox{\hyperlink{classChaiScript__Language_1_1Function}{Function}} f)
+\begin{DoxyCompactList}\small\item\em Applies the function f over each element in the \mbox{\hyperlink{classChaiScript__Language_1_1Range}{Range}} c. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classChaiScript__Language_1_1Object}{Object}} \mbox{\hyperlink{namespaceChaiScript__Language_a7d9ad512925ab9a17d7cc2e200f88ba0}{map}} (\mbox{\hyperlink{classChaiScript__Language_1_1Range}{Range}} c, \mbox{\hyperlink{classChaiScript__Language_1_1Function}{Function}} f)
+\begin{DoxyCompactList}\small\item\em Applies f over each element in the \mbox{\hyperlink{classChaiScript__Language_1_1Range}{Range}} c, joining all the results. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classChaiScript__Language_1_1Object}{Object}} \mbox{\hyperlink{namespaceChaiScript__Language_a3f83544ac1c3261de097e78a8d1d2a6d}{foldl}} (\mbox{\hyperlink{classChaiScript__Language_1_1Range}{Range}} c, \mbox{\hyperlink{classChaiScript__Language_1_1Function}{Function}} f, \mbox{\hyperlink{classChaiScript__Language_1_1Object}{Object}} initial)
+\begin{DoxyCompactList}\small\item\em Starts with the initial value and applies the function f to it and the first element of the \mbox{\hyperlink{classChaiScript__Language_1_1Range}{Range}} c. The result is then applied to the second element, and so on until the elements are exhausted. \end{DoxyCompactList}\item 
+Numeric \mbox{\hyperlink{namespaceChaiScript__Language_a57ec6e7d326a72031b13b4b5dca9531d}{sum}} (\mbox{\hyperlink{classChaiScript__Language_1_1Range}{Range}} c)
+\begin{DoxyCompactList}\small\item\em Returns the sum total of the values in the \mbox{\hyperlink{classChaiScript__Language_1_1Range}{Range}} c. \end{DoxyCompactList}\item 
+Numeric \mbox{\hyperlink{namespaceChaiScript__Language_ade9d1799a939facb549b7e0c1aa10f69}{product}} (\mbox{\hyperlink{classChaiScript__Language_1_1Range}{Range}} c)
+\begin{DoxyCompactList}\small\item\em Returns the product of the value in the \mbox{\hyperlink{classChaiScript__Language_1_1Range}{Range}} c. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classChaiScript__Language_1_1Object}{Object}} \mbox{\hyperlink{namespaceChaiScript__Language_aa0fd9c6e43308aab843032a927908246}{take}} (\mbox{\hyperlink{classChaiScript__Language_1_1Range}{Range}} c, int num)
+\begin{DoxyCompactList}\small\item\em Takes num elements from the \mbox{\hyperlink{classChaiScript__Language_1_1Range}{Range}} c, returning them. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classChaiScript__Language_1_1Object}{Object}} \mbox{\hyperlink{namespaceChaiScript__Language_a93bacdf3f423f2e9a40508b10e5fd922}{take\+\_\+while}} (\mbox{\hyperlink{classChaiScript__Language_1_1Range}{Range}} c, \mbox{\hyperlink{classChaiScript__Language_1_1Function}{Function}} f)
+\begin{DoxyCompactList}\small\item\em Takes elements from the \mbox{\hyperlink{classChaiScript__Language_1_1Range}{Range}} c that match function f, stopping at the first non-\/match, returning them as a new \mbox{\hyperlink{classChaiScript__Language_1_1Vector}{Vector}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classChaiScript__Language_1_1Object}{Object}} \mbox{\hyperlink{namespaceChaiScript__Language_a22e7e2b8f773f1c29a71f4abd127911a}{drop}} (\mbox{\hyperlink{classChaiScript__Language_1_1Range}{Range}} c, int num)
+\begin{DoxyCompactList}\small\item\em Drops num elements from the \mbox{\hyperlink{classChaiScript__Language_1_1Range}{Range}} c, returning the remainder. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classChaiScript__Language_1_1Object}{Object}} \mbox{\hyperlink{namespaceChaiScript__Language_abd36d54ab1ffaa530e5c46c341039eaa}{drop\+\_\+while}} (\mbox{\hyperlink{classChaiScript__Language_1_1Range}{Range}} c, \mbox{\hyperlink{classChaiScript__Language_1_1Function}{Function}} f)
+\begin{DoxyCompactList}\small\item\em Drops elements from the \mbox{\hyperlink{classChaiScript__Language_1_1Range}{Range}} c that match f, stopping at the first non-\/match, returning the remainder. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classChaiScript__Language_1_1Object}{Object}} \mbox{\hyperlink{namespaceChaiScript__Language_ad8c55c2982eb649ea0361fd5baa4a499}{reduce}} (\mbox{\hyperlink{classChaiScript__Language_1_1Range}{Range}} c, \mbox{\hyperlink{classChaiScript__Language_1_1Function}{Function}} f)
+\begin{DoxyCompactList}\small\item\em Similar to foldl, this takes the first two elements as its starting values for f. This assumes \mbox{\hyperlink{classChaiScript__Language_1_1Range}{Range}} c has at least 2 elements. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classChaiScript__Language_1_1Object}{Object}} \mbox{\hyperlink{namespaceChaiScript__Language_adbabe7e9a8a9f98a4cca110a63fa95b7}{filter}} (\mbox{\hyperlink{classChaiScript__Language_1_1Container}{Container}} c, \mbox{\hyperlink{classChaiScript__Language_1_1Function}{Function}} f)
+\begin{DoxyCompactList}\small\item\em Takes elements from \mbox{\hyperlink{classChaiScript__Language_1_1Container}{Container}} c that match function f, return them. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classChaiScript__Language_1_1string}{string}} \mbox{\hyperlink{namespaceChaiScript__Language_ad9c1b0bcfbd33e5ab75f41e9ba6561e1}{join}} (\mbox{\hyperlink{classChaiScript__Language_1_1Range}{Range}} c, \mbox{\hyperlink{classChaiScript__Language_1_1string}{string}} delim)
+\begin{DoxyCompactList}\small\item\em Joins the elements of the \mbox{\hyperlink{classChaiScript__Language_1_1Range}{Range}} c into a string, delimiting each with the delim string. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classChaiScript__Language_1_1Container}{Container}} \mbox{\hyperlink{namespaceChaiScript__Language_aafbaf72455408b2f84dbc240c55f672d}{reverse}} (\mbox{\hyperlink{classChaiScript__Language_1_1Container}{Container}} c)
+\begin{DoxyCompactList}\small\item\em Returns the contents of the \mbox{\hyperlink{classChaiScript__Language_1_1Container}{Container}} c in reversed order. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classChaiScript__Language_1_1Vector}{Vector}} \mbox{\hyperlink{namespaceChaiScript__Language_ac134cdc0f93a526021b66f12885fa0df}{generate\+\_\+range}} (\mbox{\hyperlink{classChaiScript__Language_1_1Object}{Object}} x, \mbox{\hyperlink{classChaiScript__Language_1_1Object}{Object}} y)
+\begin{DoxyCompactList}\small\item\em Generates a new \mbox{\hyperlink{classChaiScript__Language_1_1Vector}{Vector}} filled with values starting at x and ending with y. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classChaiScript__Language_1_1Object}{Object}} \mbox{\hyperlink{namespaceChaiScript__Language_a3844aaf56084f676b797bebeecd103e0}{concat}} (\mbox{\hyperlink{classChaiScript__Language_1_1Range}{Range}} x, \mbox{\hyperlink{classChaiScript__Language_1_1Range}{Range}} y)
+\begin{DoxyCompactList}\small\item\em Returns a new \mbox{\hyperlink{classChaiScript__Language_1_1Range}{Range}} with x and y concatenated. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classChaiScript__Language_1_1Vector}{Vector}} \mbox{\hyperlink{namespaceChaiScript__Language_a0531304eadfd6b5fc43fb0dcc2deb453}{collate}} (\mbox{\hyperlink{classChaiScript__Language_1_1Object}{Object}} x, \mbox{\hyperlink{classChaiScript__Language_1_1Object}{Object}} y)
+\begin{DoxyCompactList}\small\item\em Returns a new \mbox{\hyperlink{classChaiScript__Language_1_1Vector}{Vector}} with x and y as its values. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classChaiScript__Language_1_1Vector}{Vector}} \mbox{\hyperlink{namespaceChaiScript__Language_abd9f6dada483f7c8da067ec622501588}{zip\+\_\+with}} (\mbox{\hyperlink{classChaiScript__Language_1_1Function}{Function}} f, \mbox{\hyperlink{classChaiScript__Language_1_1Range}{Range}} x, \mbox{\hyperlink{classChaiScript__Language_1_1Range}{Range}} y)
+\begin{DoxyCompactList}\small\item\em Applies f to elements of x and y, returning a new \mbox{\hyperlink{classChaiScript__Language_1_1Vector}{Vector}} with the result of each application. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classChaiScript__Language_1_1Vector}{Vector}} \mbox{\hyperlink{namespaceChaiScript__Language_a5d3aedd0e7372c85e66ea8239b998bea}{zip}} (\mbox{\hyperlink{classChaiScript__Language_1_1Range}{Range}} x, \mbox{\hyperlink{classChaiScript__Language_1_1Range}{Range}} y)
+\begin{DoxyCompactList}\small\item\em Collates elements of x and y, returning a new \mbox{\hyperlink{classChaiScript__Language_1_1Vector}{Vector}} with the result. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{namespaceChaiScript__Language_ae5b3a0649d8f663bb0a057c6c78e6cc4}{call\+\_\+exists}} (\mbox{\hyperlink{classChaiScript__Language_1_1Function}{Function}} f,...)
+\begin{DoxyCompactList}\small\item\em returns true if there exists a call to the \mbox{\hyperlink{classChaiScript__Language_1_1Function}{Function}} f that takes the given parameters \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classChaiScript__Language_1_1Range}{Range}} \mbox{\hyperlink{namespaceChaiScript__Language_a1b2491e745e6002abac65e5780e99c49}{retro}} (\mbox{\hyperlink{classChaiScript__Language_1_1Range}{Range}})
+\begin{DoxyCompactList}\small\item\em Reverses a \mbox{\hyperlink{classChaiScript__Language_1_1Range}{Range}} object so that the elements are accessed in reverse. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classChaiScript__Language_1_1Const__Range}{Const\+\_\+\+Range}} \mbox{\hyperlink{namespaceChaiScript__Language_a60730fc2f32d359081e2c77a3935bfd0}{retro}} (\mbox{\hyperlink{classChaiScript__Language_1_1Const__Range}{Const\+\_\+\+Range}})
+\begin{DoxyCompactList}\small\item\em Reverses a \mbox{\hyperlink{classChaiScript__Language_1_1Const__Range}{Const\+\_\+\+Range}} object so that the elements are accessed in reverse. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{namespaceChaiScript__Language_a9913570d8d0eb54d2e1db3cccb1ec1d8}{throw}} (\mbox{\hyperlink{classChaiScript__Language_1_1Object}{Object}})
+\begin{DoxyCompactList}\small\item\em Raises the given object as an exception. Any type of object can be thrown. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Items in this namespace exist in the Chai\+Script language runtime. They are not part of the C++ API. 
+
+This file is not technically part of the Chai\+Script API. It is used solely for generating Doxygen docs regarding the Chai\+Script standard runtime library. 
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{namespaceChaiScript__Language_ae5b3a0649d8f663bb0a057c6c78e6cc4}\label{namespaceChaiScript__Language_ae5b3a0649d8f663bb0a057c6c78e6cc4}} 
+\index{ChaiScript\_Language@{ChaiScript\_Language}!call\_exists@{call\_exists}}
+\index{call\_exists@{call\_exists}!ChaiScript\_Language@{ChaiScript\_Language}}
+\doxysubsubsection{\texorpdfstring{call\_exists()}{call\_exists()}}
+{\footnotesize\ttfamily bool Chai\+Script\+\_\+\+Language\+::call\+\_\+exists (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classChaiScript__Language_1_1Function}{Function}}}]{f,  }\item[{}]{... }\end{DoxyParamCaption})}
+
+
+
+returns true if there exists a call to the \mbox{\hyperlink{classChaiScript__Language_1_1Function}{Function}} f that takes the given parameters 
+
+Example\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{eval> \mbox{\hyperlink{namespaceChaiScript__Language_ae5b3a0649d8f663bb0a057c6c78e6cc4}{call\_exists}}(`+`, 1, 2)}
+\DoxyCodeLine{true}
+
+\end{DoxyCode}
+ \mbox{\Hypertarget{namespaceChaiScript__Language_a0531304eadfd6b5fc43fb0dcc2deb453}\label{namespaceChaiScript__Language_a0531304eadfd6b5fc43fb0dcc2deb453}} 
+\index{ChaiScript\_Language@{ChaiScript\_Language}!collate@{collate}}
+\index{collate@{collate}!ChaiScript\_Language@{ChaiScript\_Language}}
+\doxysubsubsection{\texorpdfstring{collate()}{collate()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classChaiScript__Language_1_1Vector}{Vector}} Chai\+Script\+\_\+\+Language\+::collate (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classChaiScript__Language_1_1Object}{Object}}}]{x,  }\item[{\mbox{\hyperlink{classChaiScript__Language_1_1Object}{Object}}}]{y }\end{DoxyParamCaption})}
+
+
+
+Returns a new \mbox{\hyperlink{classChaiScript__Language_1_1Vector}{Vector}} with x and y as its values. 
+
+Example\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{eval> \mbox{\hyperlink{namespaceChaiScript__Language_a0531304eadfd6b5fc43fb0dcc2deb453}{collate}}(1, 2)}
+\DoxyCodeLine{[1, 2]}
+
+\end{DoxyCode}
+ \mbox{\Hypertarget{namespaceChaiScript__Language_a3844aaf56084f676b797bebeecd103e0}\label{namespaceChaiScript__Language_a3844aaf56084f676b797bebeecd103e0}} 
+\index{ChaiScript\_Language@{ChaiScript\_Language}!concat@{concat}}
+\index{concat@{concat}!ChaiScript\_Language@{ChaiScript\_Language}}
+\doxysubsubsection{\texorpdfstring{concat()}{concat()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classChaiScript__Language_1_1Object}{Object}} Chai\+Script\+\_\+\+Language\+::concat (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classChaiScript__Language_1_1Range}{Range}}}]{x,  }\item[{\mbox{\hyperlink{classChaiScript__Language_1_1Range}{Range}}}]{y }\end{DoxyParamCaption})}
+
+
+
+Returns a new \mbox{\hyperlink{classChaiScript__Language_1_1Range}{Range}} with x and y concatenated. 
+
+Example\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{eval> \mbox{\hyperlink{namespaceChaiScript__Language_a3844aaf56084f676b797bebeecd103e0}{concat}}([1, 2, 3], [4, 5, 6])}
+\DoxyCodeLine{[1, 2, 3, 4, 5, 6]}
+
+\end{DoxyCode}
+ \mbox{\Hypertarget{namespaceChaiScript__Language_a22e7e2b8f773f1c29a71f4abd127911a}\label{namespaceChaiScript__Language_a22e7e2b8f773f1c29a71f4abd127911a}} 
+\index{ChaiScript\_Language@{ChaiScript\_Language}!drop@{drop}}
+\index{drop@{drop}!ChaiScript\_Language@{ChaiScript\_Language}}
+\doxysubsubsection{\texorpdfstring{drop()}{drop()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classChaiScript__Language_1_1Object}{Object}} Chai\+Script\+\_\+\+Language\+::drop (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classChaiScript__Language_1_1Range}{Range}}}]{c,  }\item[{int}]{num }\end{DoxyParamCaption})}
+
+
+
+Drops num elements from the \mbox{\hyperlink{classChaiScript__Language_1_1Range}{Range}} c, returning the remainder. 
+
+Example\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{eval> \mbox{\hyperlink{namespaceChaiScript__Language_a22e7e2b8f773f1c29a71f4abd127911a}{drop}}([1, 2, 3, 4], 2)}
+\DoxyCodeLine{[3, 4]}
+
+\end{DoxyCode}
+
+
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{classA}{A}} container of the same type that was passed in 
+\end{DoxyReturn}
+\mbox{\Hypertarget{namespaceChaiScript__Language_abd36d54ab1ffaa530e5c46c341039eaa}\label{namespaceChaiScript__Language_abd36d54ab1ffaa530e5c46c341039eaa}} 
+\index{ChaiScript\_Language@{ChaiScript\_Language}!drop\_while@{drop\_while}}
+\index{drop\_while@{drop\_while}!ChaiScript\_Language@{ChaiScript\_Language}}
+\doxysubsubsection{\texorpdfstring{drop\_while()}{drop\_while()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classChaiScript__Language_1_1Object}{Object}} Chai\+Script\+\_\+\+Language\+::drop\+\_\+while (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classChaiScript__Language_1_1Range}{Range}}}]{c,  }\item[{\mbox{\hyperlink{classChaiScript__Language_1_1Function}{Function}}}]{f }\end{DoxyParamCaption})}
+
+
+
+Drops elements from the \mbox{\hyperlink{classChaiScript__Language_1_1Range}{Range}} c that match f, stopping at the first non-\/match, returning the remainder. 
+
+Example\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{eval> \mbox{\hyperlink{namespaceChaiScript__Language_abd36d54ab1ffaa530e5c46c341039eaa}{drop\_while}}([1, 2, 3], odd)         }
+\DoxyCodeLine{[2, 3]}
+
+\end{DoxyCode}
+ \mbox{\Hypertarget{namespaceChaiScript__Language_ab43f5c02c17f46a66e75496e6f73607b}\label{namespaceChaiScript__Language_ab43f5c02c17f46a66e75496e6f73607b}} 
+\index{ChaiScript\_Language@{ChaiScript\_Language}!even@{even}}
+\index{even@{even}!ChaiScript\_Language@{ChaiScript\_Language}}
+\doxysubsubsection{\texorpdfstring{even()}{even()}}
+{\footnotesize\ttfamily bool Chai\+Script\+\_\+\+Language\+::even (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classChaiScript__Language_1_1Object}{Object}}}]{x }\end{DoxyParamCaption})}
+
+
+
+Returns true if x is an even integer. 
+
+Returns true if x is an odd integer.
+
+Will also work on any non-\/integer type for which an operator\%(x, int) exists
+
+Example\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{eval> \mbox{\hyperlink{namespaceChaiScript__Language_ab43f5c02c17f46a66e75496e6f73607b}{even}}(4)}
+\DoxyCodeLine{true}
+
+\end{DoxyCode}
+
+
+Will also work on any non-\/integer type for which an operator\%(x, int) exists
+
+Example\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{eval> odd(4)}
+\DoxyCodeLine{false }
+
+\end{DoxyCode}
+ \mbox{\Hypertarget{namespaceChaiScript__Language_adbabe7e9a8a9f98a4cca110a63fa95b7}\label{namespaceChaiScript__Language_adbabe7e9a8a9f98a4cca110a63fa95b7}} 
+\index{ChaiScript\_Language@{ChaiScript\_Language}!filter@{filter}}
+\index{filter@{filter}!ChaiScript\_Language@{ChaiScript\_Language}}
+\doxysubsubsection{\texorpdfstring{filter()}{filter()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classChaiScript__Language_1_1Object}{Object}} Chai\+Script\+\_\+\+Language\+::filter (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classChaiScript__Language_1_1Container}{Container}}}]{c,  }\item[{\mbox{\hyperlink{classChaiScript__Language_1_1Function}{Function}}}]{f }\end{DoxyParamCaption})}
+
+
+
+Takes elements from \mbox{\hyperlink{classChaiScript__Language_1_1Container}{Container}} c that match function f, return them. 
+
+Example\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{eval> \mbox{\hyperlink{namespaceChaiScript__Language_adbabe7e9a8a9f98a4cca110a63fa95b7}{filter}}([1, 2, 3, 4], odd)}
+\DoxyCodeLine{[1, 3]}
+
+\end{DoxyCode}
+ \mbox{\Hypertarget{namespaceChaiScript__Language_a3f83544ac1c3261de097e78a8d1d2a6d}\label{namespaceChaiScript__Language_a3f83544ac1c3261de097e78a8d1d2a6d}} 
+\index{ChaiScript\_Language@{ChaiScript\_Language}!foldl@{foldl}}
+\index{foldl@{foldl}!ChaiScript\_Language@{ChaiScript\_Language}}
+\doxysubsubsection{\texorpdfstring{foldl()}{foldl()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classChaiScript__Language_1_1Object}{Object}} Chai\+Script\+\_\+\+Language\+::foldl (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classChaiScript__Language_1_1Range}{Range}}}]{c,  }\item[{\mbox{\hyperlink{classChaiScript__Language_1_1Function}{Function}}}]{f,  }\item[{\mbox{\hyperlink{classChaiScript__Language_1_1Object}{Object}}}]{initial }\end{DoxyParamCaption})}
+
+
+
+Starts with the initial value and applies the function f to it and the first element of the \mbox{\hyperlink{classChaiScript__Language_1_1Range}{Range}} c. The result is then applied to the second element, and so on until the elements are exhausted. 
+
+Example\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{eval> \mbox{\hyperlink{namespaceChaiScript__Language_a3f83544ac1c3261de097e78a8d1d2a6d}{foldl}}([1, 2, 3, 4], `+`, 0)}
+\DoxyCodeLine{10}
+
+\end{DoxyCode}
+ \mbox{\Hypertarget{namespaceChaiScript__Language_a4738e1f2e94cd1c4f3f97cbe94044ec7}\label{namespaceChaiScript__Language_a4738e1f2e94cd1c4f3f97cbe94044ec7}} 
+\index{ChaiScript\_Language@{ChaiScript\_Language}!for\_each@{for\_each}}
+\index{for\_each@{for\_each}!ChaiScript\_Language@{ChaiScript\_Language}}
+\doxysubsubsection{\texorpdfstring{for\_each()}{for\_each()}}
+{\footnotesize\ttfamily void Chai\+Script\+\_\+\+Language\+::for\+\_\+each (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classChaiScript__Language_1_1Range}{Range}}}]{c,  }\item[{\mbox{\hyperlink{classChaiScript__Language_1_1Function}{Function}}}]{f }\end{DoxyParamCaption})}
+
+
+
+Applies the function f over each element in the \mbox{\hyperlink{classChaiScript__Language_1_1Range}{Range}} c. 
+
+Example\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{eval> \mbox{\hyperlink{namespaceChaiScript__Language_a4738e1f2e94cd1c4f3f97cbe94044ec7}{for\_each}}([1, 2, 3], \mbox{\hyperlink{namespaceChaiScript__Language_a997db82b5a5b891b648ea6a8b9cf3271}{print}})}
+\DoxyCodeLine{1}
+\DoxyCodeLine{2}
+\DoxyCodeLine{3}
+
+\end{DoxyCode}
+ \mbox{\Hypertarget{namespaceChaiScript__Language_ac134cdc0f93a526021b66f12885fa0df}\label{namespaceChaiScript__Language_ac134cdc0f93a526021b66f12885fa0df}} 
+\index{ChaiScript\_Language@{ChaiScript\_Language}!generate\_range@{generate\_range}}
+\index{generate\_range@{generate\_range}!ChaiScript\_Language@{ChaiScript\_Language}}
+\doxysubsubsection{\texorpdfstring{generate\_range()}{generate\_range()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classChaiScript__Language_1_1Vector}{Vector}} Chai\+Script\+\_\+\+Language\+::generate\+\_\+range (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classChaiScript__Language_1_1Object}{Object}}}]{x,  }\item[{\mbox{\hyperlink{classChaiScript__Language_1_1Object}{Object}}}]{y }\end{DoxyParamCaption})}
+
+
+
+Generates a new \mbox{\hyperlink{classChaiScript__Language_1_1Vector}{Vector}} filled with values starting at x and ending with y. 
+
+Works on types supporting operator$<$=(x, y) and operator++(x)
+
+Example\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{eval> \mbox{\hyperlink{namespaceChaiScript__Language_ac134cdc0f93a526021b66f12885fa0df}{generate\_range}}(1, 10)}
+\DoxyCodeLine{[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]}
+
+\end{DoxyCode}
+ \mbox{\Hypertarget{namespaceChaiScript__Language_ad9c1b0bcfbd33e5ab75f41e9ba6561e1}\label{namespaceChaiScript__Language_ad9c1b0bcfbd33e5ab75f41e9ba6561e1}} 
+\index{ChaiScript\_Language@{ChaiScript\_Language}!join@{join}}
+\index{join@{join}!ChaiScript\_Language@{ChaiScript\_Language}}
+\doxysubsubsection{\texorpdfstring{join()}{join()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classChaiScript__Language_1_1string}{string}} Chai\+Script\+\_\+\+Language\+::join (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classChaiScript__Language_1_1Range}{Range}}}]{c,  }\item[{\mbox{\hyperlink{classChaiScript__Language_1_1string}{string}}}]{delim }\end{DoxyParamCaption})}
+
+
+
+Joins the elements of the \mbox{\hyperlink{classChaiScript__Language_1_1Range}{Range}} c into a string, delimiting each with the delim string. 
+
+Example\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{eval> \mbox{\hyperlink{namespaceChaiScript__Language_ad9c1b0bcfbd33e5ab75f41e9ba6561e1}{join}}([1, 2, 3], \textcolor{stringliteral}{"{}*"{}}) }
+\DoxyCodeLine{1*2*3}
+
+\end{DoxyCode}
+ \mbox{\Hypertarget{namespaceChaiScript__Language_a7d9ad512925ab9a17d7cc2e200f88ba0}\label{namespaceChaiScript__Language_a7d9ad512925ab9a17d7cc2e200f88ba0}} 
+\index{ChaiScript\_Language@{ChaiScript\_Language}!map@{map}}
+\index{map@{map}!ChaiScript\_Language@{ChaiScript\_Language}}
+\doxysubsubsection{\texorpdfstring{map()}{map()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classChaiScript__Language_1_1Object}{Object}} Chai\+Script\+\_\+\+Language\+::map (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classChaiScript__Language_1_1Range}{Range}}}]{c,  }\item[{\mbox{\hyperlink{classChaiScript__Language_1_1Function}{Function}}}]{f }\end{DoxyParamCaption})}
+
+
+
+Applies f over each element in the \mbox{\hyperlink{classChaiScript__Language_1_1Range}{Range}} c, joining all the results. 
+
+Example\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{eval> \mbox{\hyperlink{namespaceChaiScript__Language_a7d9ad512925ab9a17d7cc2e200f88ba0}{map}}([1, 2, 3], odd)}
+\DoxyCodeLine{[\textcolor{keyword}{true}, \textcolor{keyword}{false}, \textcolor{keyword}{true}]}
+
+\end{DoxyCode}
+ \mbox{\Hypertarget{namespaceChaiScript__Language_ad229e636e54b8efc944cd56812c5e337}\label{namespaceChaiScript__Language_ad229e636e54b8efc944cd56812c5e337}} 
+\index{ChaiScript\_Language@{ChaiScript\_Language}!max@{max}}
+\index{max@{max}!ChaiScript\_Language@{ChaiScript\_Language}}
+\doxysubsubsection{\texorpdfstring{max()}{max()}}
+{\footnotesize\ttfamily class \mbox{\hyperlink{classChaiScript__Language_1_1Function}{Chai\+Script\+\_\+\+Language\+::\+Function}} Chai\+Script\+\_\+\+Language\+::max (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classChaiScript__Language_1_1Object}{Object}}}]{a,  }\item[{\mbox{\hyperlink{classChaiScript__Language_1_1Object}{Object}}}]{b }\end{DoxyParamCaption})}
+
+
+
+Returns the max of a or b. Requires that operator$>$(a, b) exists Equivalent to. 
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keywordflow}{return} a>b?a:b;}
+
+\end{DoxyCode}
+
+
+Example\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{eval> \mbox{\hyperlink{namespaceChaiScript__Language_ad229e636e54b8efc944cd56812c5e337}{max}}(4, 10)}
+\DoxyCodeLine{10}
+
+\end{DoxyCode}
+ \mbox{\Hypertarget{namespaceChaiScript__Language_a618072d80e52470e2b6890d636e84648}\label{namespaceChaiScript__Language_a618072d80e52470e2b6890d636e84648}} 
+\index{ChaiScript\_Language@{ChaiScript\_Language}!min@{min}}
+\index{min@{min}!ChaiScript\_Language@{ChaiScript\_Language}}
+\doxysubsubsection{\texorpdfstring{min()}{min()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classChaiScript__Language_1_1Object}{Object}} Chai\+Script\+\_\+\+Language\+::min (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classChaiScript__Language_1_1Object}{Object}}}]{a,  }\item[{\mbox{\hyperlink{classChaiScript__Language_1_1Object}{Object}}}]{b }\end{DoxyParamCaption})}
+
+
+
+Returns the min of a or b. Requires that operator$<$(a, b) exists. 
+
+Equivalent to 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keywordflow}{return} a<b?a:b;}
+
+\end{DoxyCode}
+
+
+Example\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{eval> \mbox{\hyperlink{namespaceChaiScript__Language_a618072d80e52470e2b6890d636e84648}{min}}(4, 10)}
+\DoxyCodeLine{4}
+
+\end{DoxyCode}
+ \mbox{\Hypertarget{namespaceChaiScript__Language_a997db82b5a5b891b648ea6a8b9cf3271}\label{namespaceChaiScript__Language_a997db82b5a5b891b648ea6a8b9cf3271}} 
+\index{ChaiScript\_Language@{ChaiScript\_Language}!print@{print}}
+\index{print@{print}!ChaiScript\_Language@{ChaiScript\_Language}}
+\doxysubsubsection{\texorpdfstring{print()}{print()}}
+{\footnotesize\ttfamily void Chai\+Script\+\_\+\+Language\+::print (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classChaiScript__Language_1_1Object}{Object}}}]{o }\end{DoxyParamCaption})}
+
+
+
+Prints o to the terminal, with a trailing carriage return. Applies conversions to string automatically. 
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{eval> \mbox{\hyperlink{namespaceChaiScript__Language_a997db82b5a5b891b648ea6a8b9cf3271}{print}}(\textcolor{stringliteral}{"{}hello"{}})}
+\DoxyCodeLine{hello}
+\DoxyCodeLine{eval>}
+
+\end{DoxyCode}
+ \begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{namespaceChaiScript__Language_a486f5c31e7ce9f28ec130f04aaf697e1}{to\+\_\+string}} 
+
+\mbox{\hyperlink{namespaceChaiScript__Language_a87d3415a25b5fe9ab67bf229c46cf247}{puts}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{namespaceChaiScript__Language_ade9d1799a939facb549b7e0c1aa10f69}\label{namespaceChaiScript__Language_ade9d1799a939facb549b7e0c1aa10f69}} 
+\index{ChaiScript\_Language@{ChaiScript\_Language}!product@{product}}
+\index{product@{product}!ChaiScript\_Language@{ChaiScript\_Language}}
+\doxysubsubsection{\texorpdfstring{product()}{product()}}
+{\footnotesize\ttfamily Numeric Chai\+Script\+\_\+\+Language\+::product (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classChaiScript__Language_1_1Range}{Range}}}]{c }\end{DoxyParamCaption})}
+
+
+
+Returns the product of the value in the \mbox{\hyperlink{classChaiScript__Language_1_1Range}{Range}} c. 
+
+Example\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{eval> \mbox{\hyperlink{namespaceChaiScript__Language_ade9d1799a939facb549b7e0c1aa10f69}{product}}([1, 2, 3, 4])}
+\DoxyCodeLine{24}
+
+\end{DoxyCode}
+
+
+Equivalent to\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\mbox{\hyperlink{namespaceChaiScript__Language_a3f83544ac1c3261de097e78a8d1d2a6d}{foldl}}(c, `*`, 1.0);}
+
+\end{DoxyCode}
+ \mbox{\Hypertarget{namespaceChaiScript__Language_a87d3415a25b5fe9ab67bf229c46cf247}\label{namespaceChaiScript__Language_a87d3415a25b5fe9ab67bf229c46cf247}} 
+\index{ChaiScript\_Language@{ChaiScript\_Language}!puts@{puts}}
+\index{puts@{puts}!ChaiScript\_Language@{ChaiScript\_Language}}
+\doxysubsubsection{\texorpdfstring{puts()}{puts()}}
+{\footnotesize\ttfamily void Chai\+Script\+\_\+\+Language\+::puts (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classChaiScript__Language_1_1Object}{Object}}}]{o }\end{DoxyParamCaption})}
+
+
+
+Prints o to the terminal, without a trailing carriage return. Applies conversions to string automatically. 
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{eval> \mbox{\hyperlink{namespaceChaiScript__Language_a87d3415a25b5fe9ab67bf229c46cf247}{puts}}(\textcolor{stringliteral}{"{}hi, "{}}); \mbox{\hyperlink{namespaceChaiScript__Language_a87d3415a25b5fe9ab67bf229c46cf247}{puts}}(\textcolor{stringliteral}{"{}there"{}})}
+\DoxyCodeLine{hi, thereeval>}
+
+\end{DoxyCode}
+ \begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{namespaceChaiScript__Language_a486f5c31e7ce9f28ec130f04aaf697e1}{to\+\_\+string}} 
+
+\mbox{\hyperlink{namespaceChaiScript__Language_a997db82b5a5b891b648ea6a8b9cf3271}{print}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{namespaceChaiScript__Language_ad8c55c2982eb649ea0361fd5baa4a499}\label{namespaceChaiScript__Language_ad8c55c2982eb649ea0361fd5baa4a499}} 
+\index{ChaiScript\_Language@{ChaiScript\_Language}!reduce@{reduce}}
+\index{reduce@{reduce}!ChaiScript\_Language@{ChaiScript\_Language}}
+\doxysubsubsection{\texorpdfstring{reduce()}{reduce()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classChaiScript__Language_1_1Object}{Object}} Chai\+Script\+\_\+\+Language\+::reduce (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classChaiScript__Language_1_1Range}{Range}}}]{c,  }\item[{\mbox{\hyperlink{classChaiScript__Language_1_1Function}{Function}}}]{f }\end{DoxyParamCaption})}
+
+
+
+Similar to foldl, this takes the first two elements as its starting values for f. This assumes \mbox{\hyperlink{classChaiScript__Language_1_1Range}{Range}} c has at least 2 elements. 
+
+Example\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{eval> \mbox{\hyperlink{namespaceChaiScript__Language_ad8c55c2982eb649ea0361fd5baa4a499}{reduce}}([1, 2, 3, 4], `+`)}
+\DoxyCodeLine{10}
+
+\end{DoxyCode}
+ \mbox{\Hypertarget{namespaceChaiScript__Language_a60730fc2f32d359081e2c77a3935bfd0}\label{namespaceChaiScript__Language_a60730fc2f32d359081e2c77a3935bfd0}} 
+\index{ChaiScript\_Language@{ChaiScript\_Language}!retro@{retro}}
+\index{retro@{retro}!ChaiScript\_Language@{ChaiScript\_Language}}
+\doxysubsubsection{\texorpdfstring{retro()}{retro()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classChaiScript__Language_1_1Const__Range}{Const\+\_\+\+Range}} Chai\+Script\+\_\+\+Language\+::retro (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classChaiScript__Language_1_1Const__Range}{Const\+\_\+\+Range}}}]{ }\end{DoxyParamCaption})}
+
+
+
+Reverses a \mbox{\hyperlink{classChaiScript__Language_1_1Const__Range}{Const\+\_\+\+Range}} object so that the elements are accessed in reverse. 
+
+\mbox{\Hypertarget{namespaceChaiScript__Language_a1b2491e745e6002abac65e5780e99c49}\label{namespaceChaiScript__Language_a1b2491e745e6002abac65e5780e99c49}} 
+\index{ChaiScript\_Language@{ChaiScript\_Language}!retro@{retro}}
+\index{retro@{retro}!ChaiScript\_Language@{ChaiScript\_Language}}
+\doxysubsubsection{\texorpdfstring{retro()}{retro()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classChaiScript__Language_1_1Range}{Range}} Chai\+Script\+\_\+\+Language\+::retro (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classChaiScript__Language_1_1Range}{Range}}}]{ }\end{DoxyParamCaption})}
+
+
+
+Reverses a \mbox{\hyperlink{classChaiScript__Language_1_1Range}{Range}} object so that the elements are accessed in reverse. 
+
+\mbox{\Hypertarget{namespaceChaiScript__Language_aafbaf72455408b2f84dbc240c55f672d}\label{namespaceChaiScript__Language_aafbaf72455408b2f84dbc240c55f672d}} 
+\index{ChaiScript\_Language@{ChaiScript\_Language}!reverse@{reverse}}
+\index{reverse@{reverse}!ChaiScript\_Language@{ChaiScript\_Language}}
+\doxysubsubsection{\texorpdfstring{reverse()}{reverse()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classChaiScript__Language_1_1Container}{Container}} Chai\+Script\+\_\+\+Language\+::reverse (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classChaiScript__Language_1_1Container}{Container}}}]{c }\end{DoxyParamCaption})}
+
+
+
+Returns the contents of the \mbox{\hyperlink{classChaiScript__Language_1_1Container}{Container}} c in reversed order. 
+
+Example\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{eval> \mbox{\hyperlink{namespaceChaiScript__Language_aafbaf72455408b2f84dbc240c55f672d}{reverse}}([1, 2, 3, 4, 5, 6, 7])}
+\DoxyCodeLine{[7, 6, 5, 4, 3, 2, 1]}
+
+\end{DoxyCode}
+ \mbox{\Hypertarget{namespaceChaiScript__Language_a57ec6e7d326a72031b13b4b5dca9531d}\label{namespaceChaiScript__Language_a57ec6e7d326a72031b13b4b5dca9531d}} 
+\index{ChaiScript\_Language@{ChaiScript\_Language}!sum@{sum}}
+\index{sum@{sum}!ChaiScript\_Language@{ChaiScript\_Language}}
+\doxysubsubsection{\texorpdfstring{sum()}{sum()}}
+{\footnotesize\ttfamily Numeric Chai\+Script\+\_\+\+Language\+::sum (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classChaiScript__Language_1_1Range}{Range}}}]{c }\end{DoxyParamCaption})}
+
+
+
+Returns the sum total of the values in the \mbox{\hyperlink{classChaiScript__Language_1_1Range}{Range}} c. 
+
+Example\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{eval> \mbox{\hyperlink{namespaceChaiScript__Language_a57ec6e7d326a72031b13b4b5dca9531d}{sum}}([1, 2, 3, 4])}
+\DoxyCodeLine{10}
+
+\end{DoxyCode}
+
+
+Equivalent to\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\mbox{\hyperlink{namespaceChaiScript__Language_a3f83544ac1c3261de097e78a8d1d2a6d}{foldl}}(c, `+`, 0.0);}
+
+\end{DoxyCode}
+ \mbox{\Hypertarget{namespaceChaiScript__Language_aa0fd9c6e43308aab843032a927908246}\label{namespaceChaiScript__Language_aa0fd9c6e43308aab843032a927908246}} 
+\index{ChaiScript\_Language@{ChaiScript\_Language}!take@{take}}
+\index{take@{take}!ChaiScript\_Language@{ChaiScript\_Language}}
+\doxysubsubsection{\texorpdfstring{take()}{take()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classChaiScript__Language_1_1Object}{Object}} Chai\+Script\+\_\+\+Language\+::take (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classChaiScript__Language_1_1Range}{Range}}}]{c,  }\item[{int}]{num }\end{DoxyParamCaption})}
+
+
+
+Takes num elements from the \mbox{\hyperlink{classChaiScript__Language_1_1Range}{Range}} c, returning them. 
+
+Example\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{eval> \mbox{\hyperlink{namespaceChaiScript__Language_aa0fd9c6e43308aab843032a927908246}{take}}([1, 2, 3, 4], 2)}
+\DoxyCodeLine{[1, 2]}
+
+\end{DoxyCode}
+
+
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{classA}{A}} container of the same type that was passed in 
+\end{DoxyReturn}
+\mbox{\Hypertarget{namespaceChaiScript__Language_a93bacdf3f423f2e9a40508b10e5fd922}\label{namespaceChaiScript__Language_a93bacdf3f423f2e9a40508b10e5fd922}} 
+\index{ChaiScript\_Language@{ChaiScript\_Language}!take\_while@{take\_while}}
+\index{take\_while@{take\_while}!ChaiScript\_Language@{ChaiScript\_Language}}
+\doxysubsubsection{\texorpdfstring{take\_while()}{take\_while()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classChaiScript__Language_1_1Object}{Object}} Chai\+Script\+\_\+\+Language\+::take\+\_\+while (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classChaiScript__Language_1_1Range}{Range}}}]{c,  }\item[{\mbox{\hyperlink{classChaiScript__Language_1_1Function}{Function}}}]{f }\end{DoxyParamCaption})}
+
+
+
+Takes elements from the \mbox{\hyperlink{classChaiScript__Language_1_1Range}{Range}} c that match function f, stopping at the first non-\/match, returning them as a new \mbox{\hyperlink{classChaiScript__Language_1_1Vector}{Vector}}. 
+
+Example\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{eval> \mbox{\hyperlink{namespaceChaiScript__Language_a93bacdf3f423f2e9a40508b10e5fd922}{take\_while}}([1, 2, 3], odd)}
+\DoxyCodeLine{[1]}
+
+\end{DoxyCode}
+
+
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{classA}{A}} container of the same type that was passed in 
+\end{DoxyReturn}
+\mbox{\Hypertarget{namespaceChaiScript__Language_a9913570d8d0eb54d2e1db3cccb1ec1d8}\label{namespaceChaiScript__Language_a9913570d8d0eb54d2e1db3cccb1ec1d8}} 
+\index{ChaiScript\_Language@{ChaiScript\_Language}!throw@{throw}}
+\index{throw@{throw}!ChaiScript\_Language@{ChaiScript\_Language}}
+\doxysubsubsection{\texorpdfstring{throw()}{throw()}}
+{\footnotesize\ttfamily void Chai\+Script\+\_\+\+Language\+::throw (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classChaiScript__Language_1_1Object}{Object}}}]{ }\end{DoxyParamCaption})}
+
+
+
+Raises the given object as an exception. Any type of object can be thrown. 
+
+Example\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{eval> \textcolor{keywordflow}{try} \{ \textcolor{keywordflow}{throw}(1); \} \textcolor{keywordflow}{catch} (e) \{ \mbox{\hyperlink{namespaceChaiScript__Language_a997db82b5a5b891b648ea6a8b9cf3271}{print}}(\textcolor{stringliteral}{"{}Exception caught: "{}} + \mbox{\hyperlink{namespaceChaiScript__Language_a486f5c31e7ce9f28ec130f04aaf697e1}{to\_string}}(e)); \}}
+\DoxyCodeLine{Exception caught: 1}
+
+\end{DoxyCode}
+
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{LangKeywordRef_keywordtry}{try}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{namespaceChaiScript__Language_a486f5c31e7ce9f28ec130f04aaf697e1}\label{namespaceChaiScript__Language_a486f5c31e7ce9f28ec130f04aaf697e1}} 
+\index{ChaiScript\_Language@{ChaiScript\_Language}!to\_string@{to\_string}}
+\index{to\_string@{to\_string}!ChaiScript\_Language@{ChaiScript\_Language}}
+\doxysubsubsection{\texorpdfstring{to\_string()}{to\_string()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classChaiScript__Language_1_1string}{string}} Chai\+Script\+\_\+\+Language\+::to\+\_\+string (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classChaiScript__Language_1_1Object}{Object}}}]{o }\end{DoxyParamCaption})}
+
+
+
+Converts o into a string. 
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{eval> \mbox{\hyperlink{namespaceChaiScript__Language_a486f5c31e7ce9f28ec130f04aaf697e1}{to\_string}}(3).is\_type(\textcolor{stringliteral}{"{}string"{}}) <br>}
+\DoxyCodeLine{true<br>}
+
+\end{DoxyCode}
+ \mbox{\Hypertarget{namespaceChaiScript__Language_a5d3aedd0e7372c85e66ea8239b998bea}\label{namespaceChaiScript__Language_a5d3aedd0e7372c85e66ea8239b998bea}} 
+\index{ChaiScript\_Language@{ChaiScript\_Language}!zip@{zip}}
+\index{zip@{zip}!ChaiScript\_Language@{ChaiScript\_Language}}
+\doxysubsubsection{\texorpdfstring{zip()}{zip()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classChaiScript__Language_1_1Vector}{Vector}} Chai\+Script\+\_\+\+Language\+::zip (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classChaiScript__Language_1_1Range}{Range}}}]{x,  }\item[{\mbox{\hyperlink{classChaiScript__Language_1_1Range}{Range}}}]{y }\end{DoxyParamCaption})}
+
+
+
+Collates elements of x and y, returning a new \mbox{\hyperlink{classChaiScript__Language_1_1Vector}{Vector}} with the result. 
+
+Example\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{eval> \mbox{\hyperlink{namespaceChaiScript__Language_a5d3aedd0e7372c85e66ea8239b998bea}{zip}}([1, 2, 3], [4, 5, 6])}
+\DoxyCodeLine{[[1, 4], [2, 5], [3, 6]]}
+
+\end{DoxyCode}
+ \mbox{\Hypertarget{namespaceChaiScript__Language_abd9f6dada483f7c8da067ec622501588}\label{namespaceChaiScript__Language_abd9f6dada483f7c8da067ec622501588}} 
+\index{ChaiScript\_Language@{ChaiScript\_Language}!zip\_with@{zip\_with}}
+\index{zip\_with@{zip\_with}!ChaiScript\_Language@{ChaiScript\_Language}}
+\doxysubsubsection{\texorpdfstring{zip\_with()}{zip\_with()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classChaiScript__Language_1_1Vector}{Vector}} Chai\+Script\+\_\+\+Language\+::zip\+\_\+with (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classChaiScript__Language_1_1Function}{Function}}}]{f,  }\item[{\mbox{\hyperlink{classChaiScript__Language_1_1Range}{Range}}}]{x,  }\item[{\mbox{\hyperlink{classChaiScript__Language_1_1Range}{Range}}}]{y }\end{DoxyParamCaption})}
+
+
+
+Applies f to elements of x and y, returning a new \mbox{\hyperlink{classChaiScript__Language_1_1Vector}{Vector}} with the result of each application. 
+
+Example\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{eval> \mbox{\hyperlink{namespaceChaiScript__Language_abd9f6dada483f7c8da067ec622501588}{zip\_with}}(`+`, [1, 2, 3], [4, 5, 6])}
+\DoxyCodeLine{[5, 7, 9]}
+
+\end{DoxyCode}
+ 

@@ -1,0 +1,98 @@
+\hypertarget{classChaiScript__Language_1_1Range}{}\doxysection{Chai\+Script\+\_\+\+Language\+::Range Class Reference}
+\label{classChaiScript__Language_1_1Range}\index{ChaiScript\_Language::Range@{ChaiScript\_Language::Range}}
+
+
+\mbox{\hyperlink{classA}{A}} concept in Chai\+Script that is implemented by \mbox{\hyperlink{classChaiScript__Language_1_1string}{string}}, \mbox{\hyperlink{classChaiScript__Language_1_1Vector}{Vector}} and \mbox{\hyperlink{classChaiScript__Language_1_1Map}{Map}}. It provides easy iteration over the elements in a container.  
+
+
+
+
+{\ttfamily \#include $<$chaiscript\+\_\+prelude\+\_\+docs.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classChaiScript__Language_1_1Object}{Object}} \mbox{\hyperlink{classChaiScript__Language_1_1Range_a9108d388534704035f876e0de696d074}{back}} ()
+\begin{DoxyCompactList}\small\item\em Returns the last item of the range. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classChaiScript__Language_1_1Range_aa1a78f22f91c1c928eb8a25cad063277}{empty}} () const
+\begin{DoxyCompactList}\small\item\em Returns true if the front and back pointers have passed each other, if no items are left in the \mbox{\hyperlink{classChaiScript__Language_1_1Range}{Range}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classChaiScript__Language_1_1Object}{Object}} \mbox{\hyperlink{classChaiScript__Language_1_1Range_ad3aaed670bdb11e32df78406f14d84b6}{front}} ()
+\begin{DoxyCompactList}\small\item\em Returns the first item of the range. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classChaiScript__Language_1_1Range_a488d4af4b8a806687981480bf34ddd64}{pop\+\_\+back}} ()
+\begin{DoxyCompactList}\small\item\em Moves the back pointer back one. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classChaiScript__Language_1_1Range_a2178474efceb1741d1cffa6cc13f6899}{pop\+\_\+front}} ()
+\begin{DoxyCompactList}\small\item\em Moves the front pointer forward one. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{classA}{A}} concept in Chai\+Script that is implemented by \mbox{\hyperlink{classChaiScript__Language_1_1string}{string}}, \mbox{\hyperlink{classChaiScript__Language_1_1Vector}{Vector}} and \mbox{\hyperlink{classChaiScript__Language_1_1Map}{Map}}. It provides easy iteration over the elements in a container. 
+
+Implemented by the template \mbox{\hyperlink{structchaiscript_1_1bootstrap_1_1standard__library_1_1Bidir__Range}{chaiscript\+::bootstrap\+::standard\+\_\+library\+::\+Bidir\+\_\+\+Range}}
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classChaiScript__Language_1_1Const__Range}{Const\+\_\+\+Range}} 
+\end{DoxySeeAlso}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classChaiScript__Language_1_1Range_a9108d388534704035f876e0de696d074}\label{classChaiScript__Language_1_1Range_a9108d388534704035f876e0de696d074}} 
+\index{ChaiScript\_Language::Range@{ChaiScript\_Language::Range}!back@{back}}
+\index{back@{back}!ChaiScript\_Language::Range@{ChaiScript\_Language::Range}}
+\doxysubsubsection{\texorpdfstring{back()}{back()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classChaiScript__Language_1_1Object}{Object}} Chai\+Script\+\_\+\+Language\+::\+Range\+::back (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns the last item of the range. 
+
+\mbox{\Hypertarget{classChaiScript__Language_1_1Range_aa1a78f22f91c1c928eb8a25cad063277}\label{classChaiScript__Language_1_1Range_aa1a78f22f91c1c928eb8a25cad063277}} 
+\index{ChaiScript\_Language::Range@{ChaiScript\_Language::Range}!empty@{empty}}
+\index{empty@{empty}!ChaiScript\_Language::Range@{ChaiScript\_Language::Range}}
+\doxysubsubsection{\texorpdfstring{empty()}{empty()}}
+{\footnotesize\ttfamily bool Chai\+Script\+\_\+\+Language\+::\+Range\+::empty (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Returns true if the front and back pointers have passed each other, if no items are left in the \mbox{\hyperlink{classChaiScript__Language_1_1Range}{Range}}. 
+
+\mbox{\Hypertarget{classChaiScript__Language_1_1Range_ad3aaed670bdb11e32df78406f14d84b6}\label{classChaiScript__Language_1_1Range_ad3aaed670bdb11e32df78406f14d84b6}} 
+\index{ChaiScript\_Language::Range@{ChaiScript\_Language::Range}!front@{front}}
+\index{front@{front}!ChaiScript\_Language::Range@{ChaiScript\_Language::Range}}
+\doxysubsubsection{\texorpdfstring{front()}{front()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classChaiScript__Language_1_1Object}{Object}} Chai\+Script\+\_\+\+Language\+::\+Range\+::front (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns the first item of the range. 
+
+\mbox{\Hypertarget{classChaiScript__Language_1_1Range_a488d4af4b8a806687981480bf34ddd64}\label{classChaiScript__Language_1_1Range_a488d4af4b8a806687981480bf34ddd64}} 
+\index{ChaiScript\_Language::Range@{ChaiScript\_Language::Range}!pop\_back@{pop\_back}}
+\index{pop\_back@{pop\_back}!ChaiScript\_Language::Range@{ChaiScript\_Language::Range}}
+\doxysubsubsection{\texorpdfstring{pop\_back()}{pop\_back()}}
+{\footnotesize\ttfamily void Chai\+Script\+\_\+\+Language\+::\+Range\+::pop\+\_\+back (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Moves the back pointer back one. 
+
+\begin{DoxyPostcond}{Postcondition}
+\mbox{\hyperlink{classChaiScript__Language_1_1Range_a9108d388534704035f876e0de696d074}{back()}} returns the element at \mbox{\hyperlink{classChaiScript__Language_1_1Range_a9108d388534704035f876e0de696d074}{back()}} -\/ 1; 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{classChaiScript__Language_1_1Range_a2178474efceb1741d1cffa6cc13f6899}\label{classChaiScript__Language_1_1Range_a2178474efceb1741d1cffa6cc13f6899}} 
+\index{ChaiScript\_Language::Range@{ChaiScript\_Language::Range}!pop\_front@{pop\_front}}
+\index{pop\_front@{pop\_front}!ChaiScript\_Language::Range@{ChaiScript\_Language::Range}}
+\doxysubsubsection{\texorpdfstring{pop\_front()}{pop\_front()}}
+{\footnotesize\ttfamily void Chai\+Script\+\_\+\+Language\+::\+Range\+::pop\+\_\+front (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Moves the front pointer forward one. 
+
+\begin{DoxyPostcond}{Postcondition}
+\mbox{\hyperlink{classChaiScript__Language_1_1Range_ad3aaed670bdb11e32df78406f14d84b6}{front()}} returns the element at \mbox{\hyperlink{classChaiScript__Language_1_1Range_ad3aaed670bdb11e32df78406f14d84b6}{front()}} + 1; 
+\end{DoxyPostcond}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Chai\+Script-\/6.\+1.\+0/include/chaiscript/language/chaiscript\+\_\+prelude\+\_\+docs.\+hpp\end{DoxyCompactItemize}

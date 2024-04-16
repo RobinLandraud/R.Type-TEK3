@@ -1,0 +1,87 @@
+\hypertarget{classIWindowEngine}{}\doxysection{IWindow\+Engine Class Reference}
+\label{classIWindowEngine}\index{IWindowEngine@{IWindowEngine}}
+
+
+Interface for the window engine Used to create a window.  
+
+
+
+
+{\ttfamily \#include $<$IWindow\+Engine.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{classIWindowEngine_aa200e5ebdcabdb0a14d3b26e3fbf7568}{$\sim$\+IWindow\+Engine}} ()=default
+\item 
+virtual void \mbox{\hyperlink{classIWindowEngine_a198bcd8d940a30df58eba7fbbcda1b07}{close\+Window}} ()=0
+\begin{DoxyCompactList}\small\item\em Close the window. \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{classIWindowEngine_a1af0999bc6f2f1b2e323cae8612ff67d}{is\+Open}} ()=0
+\begin{DoxyCompactList}\small\item\em Check if the window is open. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classIWindowEngine_a6dd2b56ba7324730db9a28f9f7b51edc}{clear}} ()=0
+\begin{DoxyCompactList}\small\item\em Clear the window. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classIWindowEngine_ab26f68e2b9142e649baab3f57fb0f79e}{display}} ()=0
+\begin{DoxyCompactList}\small\item\em Display the window. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Interface for the window engine Used to create a window. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classIWindowEngine_aa200e5ebdcabdb0a14d3b26e3fbf7568}\label{classIWindowEngine_aa200e5ebdcabdb0a14d3b26e3fbf7568}} 
+\index{IWindowEngine@{IWindowEngine}!````~IWindowEngine@{$\sim$IWindowEngine}}
+\index{````~IWindowEngine@{$\sim$IWindowEngine}!IWindowEngine@{IWindowEngine}}
+\doxysubsubsection{\texorpdfstring{$\sim$IWindowEngine()}{~IWindowEngine()}}
+{\footnotesize\ttfamily virtual IWindow\+Engine\+::$\sim$\+IWindow\+Engine (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [default]}}
+
+Default destructor 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classIWindowEngine_a6dd2b56ba7324730db9a28f9f7b51edc}\label{classIWindowEngine_a6dd2b56ba7324730db9a28f9f7b51edc}} 
+\index{IWindowEngine@{IWindowEngine}!clear@{clear}}
+\index{clear@{clear}!IWindowEngine@{IWindowEngine}}
+\doxysubsubsection{\texorpdfstring{clear()}{clear()}}
+{\footnotesize\ttfamily void IWindow\+Engine\+::clear (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Clear the window. 
+
+\mbox{\Hypertarget{classIWindowEngine_a198bcd8d940a30df58eba7fbbcda1b07}\label{classIWindowEngine_a198bcd8d940a30df58eba7fbbcda1b07}} 
+\index{IWindowEngine@{IWindowEngine}!closeWindow@{closeWindow}}
+\index{closeWindow@{closeWindow}!IWindowEngine@{IWindowEngine}}
+\doxysubsubsection{\texorpdfstring{closeWindow()}{closeWindow()}}
+{\footnotesize\ttfamily void IWindow\+Engine\+::close\+Window (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Close the window. 
+
+\mbox{\Hypertarget{classIWindowEngine_ab26f68e2b9142e649baab3f57fb0f79e}\label{classIWindowEngine_ab26f68e2b9142e649baab3f57fb0f79e}} 
+\index{IWindowEngine@{IWindowEngine}!display@{display}}
+\index{display@{display}!IWindowEngine@{IWindowEngine}}
+\doxysubsubsection{\texorpdfstring{display()}{display()}}
+{\footnotesize\ttfamily void IWindow\+Engine\+::display (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Display the window. 
+
+\mbox{\Hypertarget{classIWindowEngine_a1af0999bc6f2f1b2e323cae8612ff67d}\label{classIWindowEngine_a1af0999bc6f2f1b2e323cae8612ff67d}} 
+\index{IWindowEngine@{IWindowEngine}!isOpen@{isOpen}}
+\index{isOpen@{isOpen}!IWindowEngine@{IWindowEngine}}
+\doxysubsubsection{\texorpdfstring{isOpen()}{isOpen()}}
+{\footnotesize\ttfamily bool IWindow\+Engine\+::is\+Open (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Check if the window is open. 
+
+\begin{DoxyReturn}{Returns}
+True if the window is open, false otherwise 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Client/\+IEngine/IWindow\+Engine.\+hpp\end{DoxyCompactItemize}

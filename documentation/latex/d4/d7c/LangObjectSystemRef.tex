@@ -1,0 +1,39 @@
+Chai\+Script has an object system built in, for types defined within the Chai\+Script system.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{attr Rectangle::height}
+\DoxyCodeLine{attr Rectangle::width}
+\DoxyCodeLine{def Rectangle::Rectangle() \{ this.height = 10; this.width = 20 \}}
+\DoxyCodeLine{def Rectangle::area() \{ this.height * this.width \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\mbox{\hyperlink{namespacechaiscript_a7f9fcf9713fa8a33bcc304a16ac2834b}{var}} rect = Rectangle()}
+\DoxyCodeLine{rect.height = 30}
+\DoxyCodeLine{print(rect.area())}
+
+\end{DoxyCode}
+
+
+Since Chai\+Script 5.\+4.\+0 it has been possible to use the \char`\"{}class\char`\"{} keyword to simplify this code.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keyword}{class }Rectangle \{}
+\DoxyCodeLine{  attr height}
+\DoxyCodeLine{  attr width}
+\DoxyCodeLine{  def Rectangle() \{ this.height = 10; this.width = 20 \}}
+\DoxyCodeLine{  def area() \{ this.height * this.width \}}
+\DoxyCodeLine{\}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\mbox{\hyperlink{namespacechaiscript_a7f9fcf9713fa8a33bcc304a16ac2834b}{var}} rect = Rectangle()}
+\DoxyCodeLine{rect.height = 30}
+\DoxyCodeLine{print(rect.area())}
+
+\end{DoxyCode}
+
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{LangKeywordRef_keywordattr}{attr}} 
+
+\mbox{\hyperlink{LangKeywordRef_keyworddef}{def}} 
+\end{DoxySeeAlso}

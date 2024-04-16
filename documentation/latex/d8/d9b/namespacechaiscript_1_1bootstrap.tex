@@ -1,0 +1,185 @@
+\hypertarget{namespacechaiscript_1_1bootstrap}{}\doxysection{chaiscript\+::bootstrap Namespace Reference}
+\label{namespacechaiscript_1_1bootstrap}\index{chaiscript::bootstrap@{chaiscript::bootstrap}}
+
+
+Classes and functions useful for bootstrapping of \mbox{\hyperlink{classchaiscript_1_1ChaiScript}{Chai\+Script}} and adding of new types.  
+
+
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classchaiscript_1_1bootstrap_1_1Bootstrap}{Bootstrap}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{namespacechaiscript_1_1bootstrap_a1ef92d03e674ea73197d63fe76d2435c}\label{namespacechaiscript_1_1bootstrap_a1ef92d03e674ea73197d63fe76d2435c}} 
+{\footnotesize template$<$typename T , typename  = typename std\+::enable\+\_\+if$<$std\+::is\+\_\+array$<$\+T$>$\+::value$>$\+::type$>$ }\\void {\bfseries array} (const std\+::string \&type, \mbox{\hyperlink{classchaiscript_1_1Module}{Module}} \&m)
+\item 
+{\footnotesize template$<$typename T $>$ }\\void \mbox{\hyperlink{namespacechaiscript_1_1bootstrap_adbb3c272bf73ed1026148c20ac23f781}{copy\+\_\+constructor}} (const std\+::string \&type, \mbox{\hyperlink{classchaiscript_1_1Module}{Module}} \&m)
+\begin{DoxyCompactList}\small\item\em Adds a copy constructor for the given type to the given Model. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T $>$ }\\void \mbox{\hyperlink{namespacechaiscript_1_1bootstrap_ae3084f56441426f5507c4093ddc77828}{opers\+\_\+comparison}} (\mbox{\hyperlink{classchaiscript_1_1Module}{Module}} \&m)
+\begin{DoxyCompactList}\small\item\em Add all comparison operators for the templated type. Used during bootstrap, also available to users. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T $>$ }\\void \mbox{\hyperlink{namespacechaiscript_1_1bootstrap_afd442a6f68582b464a1975fcf973392f}{basic\+\_\+constructors}} (const std\+::string \&type, \mbox{\hyperlink{classchaiscript_1_1Module}{Module}} \&m)
+\begin{DoxyCompactList}\small\item\em Adds default and copy constructors for the given type. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T $>$ }\\void \mbox{\hyperlink{namespacechaiscript_1_1bootstrap_aa2933d49993940b80bf9cd0f6d49a418}{construct\+\_\+pod}} (const std\+::string \&type, \mbox{\hyperlink{classchaiscript_1_1Module}{Module}} \&m)
+\begin{DoxyCompactList}\small\item\em Adds a constructor for a POD type. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename Input $>$ }\\auto \mbox{\hyperlink{namespacechaiscript_1_1bootstrap_a584ea06ec12b9f4a81770d25719b99a2}{parse\+\_\+string}} (const std\+::string \&i) -\/$>$ typename std\+::enable\+\_\+if$<$ !std\+::is\+\_\+same$<$ Input, wchar\+\_\+t $>$\+::value \&\&!std\+::is\+\_\+same$<$ Input, char16\+\_\+t $>$\+::value \&\&!std\+::is\+\_\+same$<$ Input, char32\+\_\+t $>$\+::value, Input $>$\+::type
+\item 
+{\footnotesize template$<$typename T $>$ }\\void \mbox{\hyperlink{namespacechaiscript_1_1bootstrap_afba49137472c2d76279ee0d37b66d45b}{bootstrap\+\_\+pod\+\_\+type}} (const std\+::string \&name, \mbox{\hyperlink{classchaiscript_1_1Module}{Module}} \&m)
+\item 
+{\footnotesize template$<$typename Type $>$ }\\auto \mbox{\hyperlink{namespacechaiscript_1_1bootstrap_ab79a16ebb7b6a080bd14c8930d4bc47f}{shared\+\_\+ptr\+\_\+clone}} (const std\+::shared\+\_\+ptr$<$ Type $>$ \&p)
+\item 
+{\footnotesize template$<$typename Type $>$ }\\std\+::shared\+\_\+ptr$<$ typename std\+::remove\+\_\+const$<$ Type $>$\+::type $>$ \mbox{\hyperlink{namespacechaiscript_1_1bootstrap_ab0668febe4778add252293767363ea5b}{shared\+\_\+ptr\+\_\+unconst\+\_\+clone}} (const std\+::shared\+\_\+ptr$<$ typename std\+::add\+\_\+const$<$ Type $>$\+::type $>$ \&p)
+\begin{DoxyCompactList}\small\item\em Specific version of shared\+\_\+ptr\+\_\+clone just for Proxy\+\_\+\+Functions. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename Type $>$ }\\\mbox{\hyperlink{classchaiscript_1_1Boxed__Value}{Boxed\+\_\+\+Value}} \mbox{\hyperlink{namespacechaiscript_1_1bootstrap_a623740447e841e35e50172dcde4b33c3}{ptr\+\_\+assign}} (\mbox{\hyperlink{classchaiscript_1_1Boxed__Value}{Boxed\+\_\+\+Value}} lhs, const std\+::shared\+\_\+ptr$<$ Type $>$ \&rhs)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Classes and functions useful for bootstrapping of \mbox{\hyperlink{classchaiscript_1_1ChaiScript}{Chai\+Script}} and adding of new types. 
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{namespacechaiscript_1_1bootstrap_afd442a6f68582b464a1975fcf973392f}\label{namespacechaiscript_1_1bootstrap_afd442a6f68582b464a1975fcf973392f}} 
+\index{chaiscript::bootstrap@{chaiscript::bootstrap}!basic\_constructors@{basic\_constructors}}
+\index{basic\_constructors@{basic\_constructors}!chaiscript::bootstrap@{chaiscript::bootstrap}}
+\doxysubsubsection{\texorpdfstring{basic\_constructors()}{basic\_constructors()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+void chaiscript\+::bootstrap\+::basic\+\_\+constructors (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{type,  }\item[{\mbox{\hyperlink{classchaiscript_1_1Module}{Module}} \&}]{m }\end{DoxyParamCaption})}
+
+
+
+Adds default and copy constructors for the given type. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em type} & The name of the type to add the constructors for. \\
+\hline
+\mbox{\texttt{ in,out}}  & {\em m} & The \mbox{\hyperlink{classchaiscript_1_1Module}{Module}} to add the basic constructors to \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & Type to generate basic constructors for \\
+\hline
+\end{DoxyTemplParams}
+\begin{DoxyReturn}{Returns}
+The passed in \mbox{\hyperlink{classchaiscript_1_1Module}{Module}} 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{namespacechaiscript_1_1bootstrap_adbb3c272bf73ed1026148c20ac23f781}{copy\+\_\+constructor}} 
+
+\mbox{\hyperlink{namespacechaiscript_a4c163e3599e8cc01f144338b99944fe0}{constructor}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{namespacechaiscript_1_1bootstrap_afba49137472c2d76279ee0d37b66d45b}\label{namespacechaiscript_1_1bootstrap_afba49137472c2d76279ee0d37b66d45b}} 
+\index{chaiscript::bootstrap@{chaiscript::bootstrap}!bootstrap\_pod\_type@{bootstrap\_pod\_type}}
+\index{bootstrap\_pod\_type@{bootstrap\_pod\_type}!chaiscript::bootstrap@{chaiscript::bootstrap}}
+\doxysubsubsection{\texorpdfstring{bootstrap\_pod\_type()}{bootstrap\_pod\_type()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+void chaiscript\+::bootstrap\+::bootstrap\+\_\+pod\+\_\+type (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{name,  }\item[{\mbox{\hyperlink{classchaiscript_1_1Module}{Module}} \&}]{m }\end{DoxyParamCaption})}
+
+Add all common functions for a POD type. All operators, and common conversions \mbox{\Hypertarget{namespacechaiscript_1_1bootstrap_aa2933d49993940b80bf9cd0f6d49a418}\label{namespacechaiscript_1_1bootstrap_aa2933d49993940b80bf9cd0f6d49a418}} 
+\index{chaiscript::bootstrap@{chaiscript::bootstrap}!construct\_pod@{construct\_pod}}
+\index{construct\_pod@{construct\_pod}!chaiscript::bootstrap@{chaiscript::bootstrap}}
+\doxysubsubsection{\texorpdfstring{construct\_pod()}{construct\_pod()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+void chaiscript\+::bootstrap\+::construct\+\_\+pod (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{type,  }\item[{\mbox{\hyperlink{classchaiscript_1_1Module}{Module}} \&}]{m }\end{DoxyParamCaption})}
+
+
+
+Adds a constructor for a POD type. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & The type to add the constructor for \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em type} & The name of the type \\
+\hline
+\mbox{\texttt{ in,out}}  & {\em m} & The \mbox{\hyperlink{classchaiscript_1_1Module}{Module}} to add the constructor to \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{namespacechaiscript_1_1bootstrap_adbb3c272bf73ed1026148c20ac23f781}\label{namespacechaiscript_1_1bootstrap_adbb3c272bf73ed1026148c20ac23f781}} 
+\index{chaiscript::bootstrap@{chaiscript::bootstrap}!copy\_constructor@{copy\_constructor}}
+\index{copy\_constructor@{copy\_constructor}!chaiscript::bootstrap@{chaiscript::bootstrap}}
+\doxysubsubsection{\texorpdfstring{copy\_constructor()}{copy\_constructor()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+void chaiscript\+::bootstrap\+::copy\+\_\+constructor (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{type,  }\item[{\mbox{\hyperlink{classchaiscript_1_1Module}{Module}} \&}]{m }\end{DoxyParamCaption})}
+
+
+
+Adds a copy constructor for the given type to the given Model. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em type} & The name of the type. The copy constructor will be named \char`\"{}type\char`\"{}. \\
+\hline
+\mbox{\texttt{ in,out}}  & {\em m} & The \mbox{\hyperlink{classchaiscript_1_1Module}{Module}} to add the copy constructor to \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & The type to add a copy constructor for \\
+\hline
+\end{DoxyTemplParams}
+\begin{DoxyReturn}{Returns}
+The passed in \mbox{\hyperlink{classchaiscript_1_1Module}{Module}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{namespacechaiscript_1_1bootstrap_ae3084f56441426f5507c4093ddc77828}\label{namespacechaiscript_1_1bootstrap_ae3084f56441426f5507c4093ddc77828}} 
+\index{chaiscript::bootstrap@{chaiscript::bootstrap}!opers\_comparison@{opers\_comparison}}
+\index{opers\_comparison@{opers\_comparison}!chaiscript::bootstrap@{chaiscript::bootstrap}}
+\doxysubsubsection{\texorpdfstring{opers\_comparison()}{opers\_comparison()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+void chaiscript\+::bootstrap\+::opers\+\_\+comparison (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classchaiscript_1_1Module}{Module}} \&}]{m }\end{DoxyParamCaption})}
+
+
+
+Add all comparison operators for the templated type. Used during bootstrap, also available to users. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & Type to create comparison operators for \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in,out}}  & {\em m} & module to add comparison operators to \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the passed in \mbox{\hyperlink{classchaiscript_1_1Module}{Module}}. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{namespacechaiscript_1_1bootstrap_a584ea06ec12b9f4a81770d25719b99a2}\label{namespacechaiscript_1_1bootstrap_a584ea06ec12b9f4a81770d25719b99a2}} 
+\index{chaiscript::bootstrap@{chaiscript::bootstrap}!parse\_string@{parse\_string}}
+\index{parse\_string@{parse\_string}!chaiscript::bootstrap@{chaiscript::bootstrap}}
+\doxysubsubsection{\texorpdfstring{parse\_string()}{parse\_string()}}
+{\footnotesize\ttfamily template$<$typename Input $>$ \\
+auto chaiscript\+::bootstrap\+::parse\+\_\+string (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{i }\end{DoxyParamCaption}) -\/$>$ typename std\+::enable\+\_\+if$<$              !std\+::is\+\_\+same$<$Input, wchar\+\_\+t$>$\+::value              \&\& !std\+::is\+\_\+same$<$Input, char16\+\_\+t$>$\+::value              \&\& !std\+::is\+\_\+same$<$Input, char32\+\_\+t$>$\+::value,       Input$>$\+::type     }
+
+Internal function for converting from a string to a value uses ostream operator $>$$>$ to perform the conversion \mbox{\Hypertarget{namespacechaiscript_1_1bootstrap_a623740447e841e35e50172dcde4b33c3}\label{namespacechaiscript_1_1bootstrap_a623740447e841e35e50172dcde4b33c3}} 
+\index{chaiscript::bootstrap@{chaiscript::bootstrap}!ptr\_assign@{ptr\_assign}}
+\index{ptr\_assign@{ptr\_assign}!chaiscript::bootstrap@{chaiscript::bootstrap}}
+\doxysubsubsection{\texorpdfstring{ptr\_assign()}{ptr\_assign()}}
+{\footnotesize\ttfamily template$<$typename Type $>$ \\
+\mbox{\hyperlink{classchaiscript_1_1Boxed__Value}{Boxed\+\_\+\+Value}} chaiscript\+::bootstrap\+::ptr\+\_\+assign (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classchaiscript_1_1Boxed__Value}{Boxed\+\_\+\+Value}}}]{lhs,  }\item[{const std\+::shared\+\_\+ptr$<$ Type $>$ \&}]{rhs }\end{DoxyParamCaption})}
+
+Assignment function for shared\+\_\+ptr objects, does not perform a copy of the object pointed to, instead maintains the shared\+\_\+ptr concept. Similar to shared\+\_\+ptr\+\_\+clone. Used for Proxy\+\_\+\+Function. \mbox{\Hypertarget{namespacechaiscript_1_1bootstrap_ab79a16ebb7b6a080bd14c8930d4bc47f}\label{namespacechaiscript_1_1bootstrap_ab79a16ebb7b6a080bd14c8930d4bc47f}} 
+\index{chaiscript::bootstrap@{chaiscript::bootstrap}!shared\_ptr\_clone@{shared\_ptr\_clone}}
+\index{shared\_ptr\_clone@{shared\_ptr\_clone}!chaiscript::bootstrap@{chaiscript::bootstrap}}
+\doxysubsubsection{\texorpdfstring{shared\_ptr\_clone()}{shared\_ptr\_clone()}}
+{\footnotesize\ttfamily template$<$typename Type $>$ \\
+auto chaiscript\+::bootstrap\+::shared\+\_\+ptr\+\_\+clone (\begin{DoxyParamCaption}\item[{const std\+::shared\+\_\+ptr$<$ Type $>$ \&}]{p }\end{DoxyParamCaption})}
+
+\char`\"{}clone\char`\"{} function for a shared\+\_\+ptr type. This is used in the case where you do not want to make a deep copy of an object during cloning but want to instead maintain the shared\+\_\+ptr. It is needed internally for handling of Proxy\+\_\+\+Function object (that is, function variables. \mbox{\Hypertarget{namespacechaiscript_1_1bootstrap_ab0668febe4778add252293767363ea5b}\label{namespacechaiscript_1_1bootstrap_ab0668febe4778add252293767363ea5b}} 
+\index{chaiscript::bootstrap@{chaiscript::bootstrap}!shared\_ptr\_unconst\_clone@{shared\_ptr\_unconst\_clone}}
+\index{shared\_ptr\_unconst\_clone@{shared\_ptr\_unconst\_clone}!chaiscript::bootstrap@{chaiscript::bootstrap}}
+\doxysubsubsection{\texorpdfstring{shared\_ptr\_unconst\_clone()}{shared\_ptr\_unconst\_clone()}}
+{\footnotesize\ttfamily template$<$typename Type $>$ \\
+std\+::shared\+\_\+ptr$<$typename std\+::remove\+\_\+const$<$Type$>$\+::type$>$ chaiscript\+::bootstrap\+::shared\+\_\+ptr\+\_\+unconst\+\_\+clone (\begin{DoxyParamCaption}\item[{const std\+::shared\+\_\+ptr$<$ typename std\+::add\+\_\+const$<$ Type $>$\+::type $>$ \&}]{p }\end{DoxyParamCaption})}
+
+
+
+Specific version of shared\+\_\+ptr\+\_\+clone just for Proxy\+\_\+\+Functions. 
+

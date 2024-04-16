@@ -1,0 +1,175 @@
+\hypertarget{classDrawableComponent}{}\doxysection{Drawable\+Component Class Reference}
+\label{classDrawableComponent}\index{DrawableComponent@{DrawableComponent}}
+
+
+A component that handle a drawable object. Used to create a drawable object.  
+
+
+
+
+{\ttfamily \#include $<$Drawable\+Component.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classDrawableComponent_a61fc763479bb439679fbbe442b4517f9}{Drawable\+Component}} (std\+::string name, Drawable\+Type type)
+\begin{DoxyCompactList}\small\item\em Default constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classDrawableComponent_a5b9d821ae97fe36cff752c71ffbfb157}{$\sim$\+Drawable\+Component}} ()=default
+\item 
+\mbox{\hyperlink{classDrawableComponent_a0e33894e50fc6275524c86b0a82690f4}{Drawable\+Component}} (\mbox{\hyperlink{classDrawableComponent}{Drawable\+Component}} const \&)=default
+\item 
+\mbox{\hyperlink{classDrawableComponent_a61ce630554b70b628108e43ed0c52bd8}{Drawable\+Component}} (\mbox{\hyperlink{classDrawableComponent}{Drawable\+Component}} \&\&) noexcept=default
+\item 
+\mbox{\hyperlink{classDrawableComponent}{Drawable\+Component}} \& \mbox{\hyperlink{classDrawableComponent_a32e7785a8a3a18e589478288c224da58}{operator=}} (\mbox{\hyperlink{classDrawableComponent}{Drawable\+Component}} const \&)=default
+\item 
+\mbox{\hyperlink{classDrawableComponent}{Drawable\+Component}} \& \mbox{\hyperlink{classDrawableComponent_a62a2b4dec947d15f2dc1ffddea566848}{operator=}} (\mbox{\hyperlink{classDrawableComponent}{Drawable\+Component}} \&\&) noexcept=default
+\item 
+bool \mbox{\hyperlink{classDrawableComponent_a6aea890f5abb2cc91c66853df2a99b5c}{is\+Enable}} () const
+\begin{DoxyCompactList}\small\item\em Check if the component is enable. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classDrawableComponent_a2bcec2b83e73619255a907a8e190c53d}{set\+Enable}} ()
+\begin{DoxyCompactList}\small\item\em enable the component \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classDrawableComponent_a8d25cd342e67bb9e15d93c1ac420a4cf}{set\+Disable}} ()
+\begin{DoxyCompactList}\small\item\em disable the component \end{DoxyCompactList}\item 
+std\+::string \& \mbox{\hyperlink{classDrawableComponent_ad3ebaed85bc87b2135955ef8896c54da}{get\+Name}} ()
+\begin{DoxyCompactList}\small\item\em Get the name of the object from engine to draw. \end{DoxyCompactList}\item 
+Drawable\+Type \mbox{\hyperlink{classDrawableComponent_a0f44a87fe4d2e62cfda234d06cd2ff5f}{get\+Type}} () const
+\begin{DoxyCompactList}\small\item\em Get the type of the object from engine to draw. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classDrawableComponent_a1ced9550a6d5afc73520917575f5030d}{change\+Drawable}} (std\+::string \&name, Drawable\+Type type)
+\begin{DoxyCompactList}\small\item\em Change the drawable object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A component that handle a drawable object. Used to create a drawable object. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classDrawableComponent_a61fc763479bb439679fbbe442b4517f9}\label{classDrawableComponent_a61fc763479bb439679fbbe442b4517f9}} 
+\index{DrawableComponent@{DrawableComponent}!DrawableComponent@{DrawableComponent}}
+\index{DrawableComponent@{DrawableComponent}!DrawableComponent@{DrawableComponent}}
+\doxysubsubsection{\texorpdfstring{DrawableComponent()}{DrawableComponent()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily Drawable\+Component\+::\+Drawable\+Component (\begin{DoxyParamCaption}\item[{std\+::string}]{name,  }\item[{Drawable\+Type}]{type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Default constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & Name of the object from engine to draw \\
+\hline
+{\em type} & Type of the object from engine to draw \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classDrawableComponent_a5b9d821ae97fe36cff752c71ffbfb157}\label{classDrawableComponent_a5b9d821ae97fe36cff752c71ffbfb157}} 
+\index{DrawableComponent@{DrawableComponent}!````~DrawableComponent@{$\sim$DrawableComponent}}
+\index{````~DrawableComponent@{$\sim$DrawableComponent}!DrawableComponent@{DrawableComponent}}
+\doxysubsubsection{\texorpdfstring{$\sim$DrawableComponent()}{~DrawableComponent()}}
+{\footnotesize\ttfamily Drawable\+Component\+::$\sim$\+Drawable\+Component (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+Default destructor \mbox{\Hypertarget{classDrawableComponent_a0e33894e50fc6275524c86b0a82690f4}\label{classDrawableComponent_a0e33894e50fc6275524c86b0a82690f4}} 
+\index{DrawableComponent@{DrawableComponent}!DrawableComponent@{DrawableComponent}}
+\index{DrawableComponent@{DrawableComponent}!DrawableComponent@{DrawableComponent}}
+\doxysubsubsection{\texorpdfstring{DrawableComponent()}{DrawableComponent()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily Drawable\+Component\+::\+Drawable\+Component (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classDrawableComponent}{Drawable\+Component}} const \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+Default copy constructor \mbox{\Hypertarget{classDrawableComponent_a61ce630554b70b628108e43ed0c52bd8}\label{classDrawableComponent_a61ce630554b70b628108e43ed0c52bd8}} 
+\index{DrawableComponent@{DrawableComponent}!DrawableComponent@{DrawableComponent}}
+\index{DrawableComponent@{DrawableComponent}!DrawableComponent@{DrawableComponent}}
+\doxysubsubsection{\texorpdfstring{DrawableComponent()}{DrawableComponent()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily Drawable\+Component\+::\+Drawable\+Component (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classDrawableComponent}{Drawable\+Component}} \&\&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}, {\ttfamily [noexcept]}}
+
+Default moveconstructor 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classDrawableComponent_a1ced9550a6d5afc73520917575f5030d}\label{classDrawableComponent_a1ced9550a6d5afc73520917575f5030d}} 
+\index{DrawableComponent@{DrawableComponent}!changeDrawable@{changeDrawable}}
+\index{changeDrawable@{changeDrawable}!DrawableComponent@{DrawableComponent}}
+\doxysubsubsection{\texorpdfstring{changeDrawable()}{changeDrawable()}}
+{\footnotesize\ttfamily void Drawable\+Component\+::change\+Drawable (\begin{DoxyParamCaption}\item[{std\+::string \&}]{name,  }\item[{Drawable\+Type}]{type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Change the drawable object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & Name of the object from engine to draw \\
+\hline
+{\em type} & Type of the object from engine to draw \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classDrawableComponent_ad3ebaed85bc87b2135955ef8896c54da}\label{classDrawableComponent_ad3ebaed85bc87b2135955ef8896c54da}} 
+\index{DrawableComponent@{DrawableComponent}!getName@{getName}}
+\index{getName@{getName}!DrawableComponent@{DrawableComponent}}
+\doxysubsubsection{\texorpdfstring{getName()}{getName()}}
+{\footnotesize\ttfamily std\+::string \& Drawable\+Component\+::get\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the name of the object from engine to draw. 
+
+\begin{DoxyReturn}{Returns}
+The name of the object from engine to draw 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classDrawableComponent_a0f44a87fe4d2e62cfda234d06cd2ff5f}\label{classDrawableComponent_a0f44a87fe4d2e62cfda234d06cd2ff5f}} 
+\index{DrawableComponent@{DrawableComponent}!getType@{getType}}
+\index{getType@{getType}!DrawableComponent@{DrawableComponent}}
+\doxysubsubsection{\texorpdfstring{getType()}{getType()}}
+{\footnotesize\ttfamily Drawable\+Type Drawable\+Component\+::get\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the type of the object from engine to draw. 
+
+\begin{DoxyReturn}{Returns}
+The type of the object from engine to draw 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classDrawableComponent_a6aea890f5abb2cc91c66853df2a99b5c}\label{classDrawableComponent_a6aea890f5abb2cc91c66853df2a99b5c}} 
+\index{DrawableComponent@{DrawableComponent}!isEnable@{isEnable}}
+\index{isEnable@{isEnable}!DrawableComponent@{DrawableComponent}}
+\doxysubsubsection{\texorpdfstring{isEnable()}{isEnable()}}
+{\footnotesize\ttfamily bool Drawable\+Component\+::is\+Enable (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Check if the component is enable. 
+
+\begin{DoxyReturn}{Returns}
+true if the component is enable 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classDrawableComponent_a62a2b4dec947d15f2dc1ffddea566848}\label{classDrawableComponent_a62a2b4dec947d15f2dc1ffddea566848}} 
+\index{DrawableComponent@{DrawableComponent}!operator=@{operator=}}
+\index{operator=@{operator=}!DrawableComponent@{DrawableComponent}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classDrawableComponent}{Drawable\+Component}}\& Drawable\+Component\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classDrawableComponent}{Drawable\+Component}} \&\&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}, {\ttfamily [noexcept]}}
+
+Default move assignment operator \mbox{\Hypertarget{classDrawableComponent_a32e7785a8a3a18e589478288c224da58}\label{classDrawableComponent_a32e7785a8a3a18e589478288c224da58}} 
+\index{DrawableComponent@{DrawableComponent}!operator=@{operator=}}
+\index{operator=@{operator=}!DrawableComponent@{DrawableComponent}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classDrawableComponent}{Drawable\+Component}}\& Drawable\+Component\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classDrawableComponent}{Drawable\+Component}} const \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+Default copy assignment operator \mbox{\Hypertarget{classDrawableComponent_a8d25cd342e67bb9e15d93c1ac420a4cf}\label{classDrawableComponent_a8d25cd342e67bb9e15d93c1ac420a4cf}} 
+\index{DrawableComponent@{DrawableComponent}!setDisable@{setDisable}}
+\index{setDisable@{setDisable}!DrawableComponent@{DrawableComponent}}
+\doxysubsubsection{\texorpdfstring{setDisable()}{setDisable()}}
+{\footnotesize\ttfamily void Drawable\+Component\+::set\+Disable (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+disable the component 
+
+\mbox{\Hypertarget{classDrawableComponent_a2bcec2b83e73619255a907a8e190c53d}\label{classDrawableComponent_a2bcec2b83e73619255a907a8e190c53d}} 
+\index{DrawableComponent@{DrawableComponent}!setEnable@{setEnable}}
+\index{setEnable@{setEnable}!DrawableComponent@{DrawableComponent}}
+\doxysubsubsection{\texorpdfstring{setEnable()}{setEnable()}}
+{\footnotesize\ttfamily void Drawable\+Component\+::set\+Enable (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+enable the component 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Client/\+Component/Drawable\+Component.\+hpp\end{DoxyCompactItemize}

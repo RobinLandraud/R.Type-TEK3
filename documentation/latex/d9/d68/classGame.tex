@@ -1,0 +1,465 @@
+\hypertarget{classGame}{}\doxysection{Game Class Reference}
+\label{classGame}\index{Game@{Game}}
+
+
+\mbox{\hyperlink{classGame}{Game}} class.  
+
+
+
+
+{\ttfamily \#include $<$Game.\+hpp$>$}
+
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{classGame_afeeddf6b52aac01ef4b1cf173f50276e}{Fire\+Type}} \{ {\bfseries BASIC\+\_\+\+FIRE}
+, {\bfseries UNKNOWN\+\_\+\+FIRE}
+ \}
+\begin{DoxyCompactList}\small\item\em Type of fire. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classGame_a77f472accba4198ad487230bc3149d04}{Game}} (\mbox{\hyperlink{classASocket}{ASocket}} \&params\+Socket)
+\begin{DoxyCompactList}\small\item\em Constructor of the \mbox{\hyperlink{classGame}{Game}} class. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classGame_a3d09cd0b68ef69107d36360ca903e023}{$\sim$\+Game}} ()=default
+\item 
+\mbox{\hyperlink{classGame_a9ada32114e3a56cb290df06dfc76cf51}{Game}} (\mbox{\hyperlink{classGame}{Game}} const \&)=default
+\item 
+\mbox{\hyperlink{classGame_a9a7798e0c5d04d27a3c88b63a2cc4205}{Game}} (\mbox{\hyperlink{classGame}{Game}} \&\&) noexcept=default
+\item 
+\mbox{\hyperlink{classGame}{Game}} \& \mbox{\hyperlink{classGame_a0e7691a60fecd6a76a6be120b8103d38}{operator=}} (\mbox{\hyperlink{classGame}{Game}} const \&)=default
+\item 
+\mbox{\hyperlink{classGame}{Game}} \& \mbox{\hyperlink{classGame_a73ea75f012d2c6933c3f32c0a896c5a7}{operator=}} (\mbox{\hyperlink{classGame}{Game}} \&\&) noexcept=default
+\item 
+bool \mbox{\hyperlink{classGame_acc5e7797cfec5fd5c14f61c6dff38afb}{is\+Runnning}} () const
+\begin{DoxyCompactList}\small\item\em Check if the game is running. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classGame_accc8350e9d752a2169c217afb81ae52d}{add\+Player}} (const \mbox{\hyperlink{structUser}{User}} \&user, \mbox{\hyperlink{structPosition3D__t}{Position3\+D\+\_\+t}} pos, const std\+::vector$<$ \mbox{\hyperlink{structUser}{User}} $>$ \&all\+User)
+\begin{DoxyCompactList}\small\item\em Add a player to the game. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classGame_a7ad92b77b596d7882a7ae76eb18b5e6c}{loop}} ()
+\begin{DoxyCompactList}\small\item\em The main loop of the game. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classGame_a7c2e2d989934b059dd00836c4d5552b5}{get\+NBPlayer}} ()
+\begin{DoxyCompactList}\small\item\em Get the number of player in the game. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classGame_a7279da7fc3b2f007f10a3945d7510ca4}{move\+Entity}} (int entity\+Id, int x, int y)
+\begin{DoxyCompactList}\small\item\em Move an entity. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classGame_aaef5249f0e518852e42447d1d515e4e2}{player\+Fire}} (const \mbox{\hyperlink{structUser}{User}} \&sender, \mbox{\hyperlink{classGame_afeeddf6b52aac01ef4b1cf173f50276e}{Fire\+Type}} type)
+\begin{DoxyCompactList}\small\item\em A player fire. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classGame_ad0f399306ec28ed3c769a5d9f7df0603}{create\+Bullet}} (\mbox{\hyperlink{structPosition3D__t}{Position3\+D\+\_\+t}} pos, int owner)
+\begin{DoxyCompactList}\small\item\em Create a bullet. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classGame_abde07561e8b670c6e995d2dee6ec2110}{player\+Leave}} (const \mbox{\hyperlink{structUser}{User}} \&sender)
+\begin{DoxyCompactList}\small\item\em Make a player leave the game. \end{DoxyCompactList}\item 
+size\+\_\+t \mbox{\hyperlink{classGame_a196980d546a459eaf4bdefd387990a79}{register\+Name\+User}} (\mbox{\hyperlink{structUser}{User}} user)
+\begin{DoxyCompactList}\small\item\em Register a user in the game. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classGame_a87d986847bf6bf45129cce1f32854d82}{start}} (const std\+::vector$<$ \mbox{\hyperlink{structUser}{User}} $>$ \&users)
+\begin{DoxyCompactList}\small\item\em Start the game. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{classGame_a53fb191837144d2c8f24d4fb741c731f}{send\+To\+Every\+Player}} (\mbox{\hyperlink{classregistry}{registry}} \&reg, \mbox{\hyperlink{classASocket}{ASocket}} \&socket, Protocol type, int args1, int args2, int args3, int args4)
+\item 
+static void \mbox{\hyperlink{classGame_a12a7221d98cae90f1e318d9782a7aaab}{send\+String\+Packet}} (\mbox{\hyperlink{classregistry}{registry}} \&reg, \mbox{\hyperlink{classASocket}{ASocket}} \&socket, Protocol type, int args1, int args2, int args3, int args4, const std\+::string \&buff, const \mbox{\hyperlink{structUser}{User}} \&receiver)
+\begin{DoxyCompactList}\small\item\em Send a string packet to a player. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{classGame_ae41f1aa7a7cc9022e588483cbda0efc5}{send\+To\+Every\+Player\+With\+String}} (\mbox{\hyperlink{classregistry}{registry}} \&reg, \mbox{\hyperlink{classASocket}{ASocket}} \&socket, Protocol type, int args1, int args2, int args3, int args4, const std\+::string \&buff)
+\begin{DoxyCompactList}\small\item\em Send a string packet to every player. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{classGame}{Game}} class. 
+
+\doxysubsection{Member Enumeration Documentation}
+\mbox{\Hypertarget{classGame_afeeddf6b52aac01ef4b1cf173f50276e}\label{classGame_afeeddf6b52aac01ef4b1cf173f50276e}} 
+\index{Game@{Game}!FireType@{FireType}}
+\index{FireType@{FireType}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{FireType}{FireType}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{classGame_afeeddf6b52aac01ef4b1cf173f50276e}{Game\+::\+Fire\+Type}}}
+
+
+
+Type of fire. 
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classGame_a77f472accba4198ad487230bc3149d04}\label{classGame_a77f472accba4198ad487230bc3149d04}} 
+\index{Game@{Game}!Game@{Game}}
+\index{Game@{Game}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{Game()}{Game()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily Game\+::\+Game (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classASocket}{ASocket}} \&}]{params\+Socket }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+
+Constructor of the \mbox{\hyperlink{classGame}{Game}} class. 
+
+Constructor.
+
+
+\begin{DoxyParams}{Parameters}
+{\em params\+Socket} & The socket to use\\
+\hline
+{\em params\+Socket} & Socket to communicate with the client \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classGame_a3d09cd0b68ef69107d36360ca903e023}\label{classGame_a3d09cd0b68ef69107d36360ca903e023}} 
+\index{Game@{Game}!````~Game@{$\sim$Game}}
+\index{````~Game@{$\sim$Game}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{$\sim$Game()}{~Game()}}
+{\footnotesize\ttfamily Game\+::$\sim$\+Game (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+Default Destructor \mbox{\Hypertarget{classGame_a9ada32114e3a56cb290df06dfc76cf51}\label{classGame_a9ada32114e3a56cb290df06dfc76cf51}} 
+\index{Game@{Game}!Game@{Game}}
+\index{Game@{Game}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{Game()}{Game()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily Game\+::\+Game (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classGame}{Game}} const \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+Default copy constructor \mbox{\Hypertarget{classGame_a9a7798e0c5d04d27a3c88b63a2cc4205}\label{classGame_a9a7798e0c5d04d27a3c88b63a2cc4205}} 
+\index{Game@{Game}!Game@{Game}}
+\index{Game@{Game}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{Game()}{Game()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily Game\+::\+Game (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classGame}{Game}} \&\&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}, {\ttfamily [noexcept]}}
+
+Default move constructor 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classGame_accc8350e9d752a2169c217afb81ae52d}\label{classGame_accc8350e9d752a2169c217afb81ae52d}} 
+\index{Game@{Game}!addPlayer@{addPlayer}}
+\index{addPlayer@{addPlayer}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{addPlayer()}{addPlayer()}}
+{\footnotesize\ttfamily void Game\+::add\+Player (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structUser}{User}} \&}]{user,  }\item[{\mbox{\hyperlink{structPosition3D__t}{Position3\+D\+\_\+t}}}]{pos,  }\item[{const std\+::vector$<$ \mbox{\hyperlink{structUser}{User}} $>$ \&}]{all\+User }\end{DoxyParamCaption})}
+
+
+
+Add a player to the game. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em user} & The user to add\\
+\hline
+{\em user} & \mbox{\hyperlink{structUser}{User}} to add \\
+\hline
+{\em pos} & Init pos of player \\
+\hline
+{\em all\+User} & List of all user \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classGame_ad0f399306ec28ed3c769a5d9f7df0603}\label{classGame_ad0f399306ec28ed3c769a5d9f7df0603}} 
+\index{Game@{Game}!createBullet@{createBullet}}
+\index{createBullet@{createBullet}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{createBullet()}{createBullet()}}
+{\footnotesize\ttfamily void Game\+::create\+Bullet (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structPosition3D__t}{Position3\+D\+\_\+t}}}]{pos,  }\item[{int}]{owner }\end{DoxyParamCaption})}
+
+
+
+Create a bullet. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pos} & The position of the bullet \\
+\hline
+{\em owner} & The owner of the bullet\\
+\hline
+{\em pos} & Position of the bullet \\
+\hline
+{\em owner} & Owner of the bullet \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classGame_a7c2e2d989934b059dd00836c4d5552b5}\label{classGame_a7c2e2d989934b059dd00836c4d5552b5}} 
+\index{Game@{Game}!getNBPlayer@{getNBPlayer}}
+\index{getNBPlayer@{getNBPlayer}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{getNBPlayer()}{getNBPlayer()}}
+{\footnotesize\ttfamily int Game\+::get\+NBPlayer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the number of player in the game. 
+
+\begin{DoxyReturn}{Returns}
+The number of player 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classGame_acc5e7797cfec5fd5c14f61c6dff38afb}\label{classGame_acc5e7797cfec5fd5c14f61c6dff38afb}} 
+\index{Game@{Game}!isRunnning@{isRunnning}}
+\index{isRunnning@{isRunnning}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{isRunnning()}{isRunnning()}}
+{\footnotesize\ttfamily bool Game\+::is\+Runnning (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Check if the game is running. 
+
+\begin{DoxyReturn}{Returns}
+true if the game is running, false otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classGame_a7ad92b77b596d7882a7ae76eb18b5e6c}\label{classGame_a7ad92b77b596d7882a7ae76eb18b5e6c}} 
+\index{Game@{Game}!loop@{loop}}
+\index{loop@{loop}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{loop()}{loop()}}
+{\footnotesize\ttfamily void Game\+::loop (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+The main loop of the game. 
+
+\mbox{\hyperlink{classGame}{Game}} loop. \mbox{\Hypertarget{classGame_a7279da7fc3b2f007f10a3945d7510ca4}\label{classGame_a7279da7fc3b2f007f10a3945d7510ca4}} 
+\index{Game@{Game}!moveEntity@{moveEntity}}
+\index{moveEntity@{moveEntity}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{moveEntity()}{moveEntity()}}
+{\footnotesize\ttfamily void Game\+::move\+Entity (\begin{DoxyParamCaption}\item[{int}]{entity\+Id,  }\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})}
+
+
+
+Move an entity. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em entity\+Id} & The id of the entity to move \\
+\hline
+{\em x} & The x position \\
+\hline
+{\em y} & The y position\\
+\hline
+{\em entity\+Id} & Id of the entity to move \\
+\hline
+{\em x} & X position \\
+\hline
+{\em y} & Y position \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classGame_a73ea75f012d2c6933c3f32c0a896c5a7}\label{classGame_a73ea75f012d2c6933c3f32c0a896c5a7}} 
+\index{Game@{Game}!operator=@{operator=}}
+\index{operator=@{operator=}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classGame}{Game}}\& Game\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classGame}{Game}} \&\&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}, {\ttfamily [noexcept]}}
+
+Default move assignment operator \mbox{\Hypertarget{classGame_a0e7691a60fecd6a76a6be120b8103d38}\label{classGame_a0e7691a60fecd6a76a6be120b8103d38}} 
+\index{Game@{Game}!operator=@{operator=}}
+\index{operator=@{operator=}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classGame}{Game}}\& Game\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classGame}{Game}} const \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+Default copy assignment operator \mbox{\Hypertarget{classGame_aaef5249f0e518852e42447d1d515e4e2}\label{classGame_aaef5249f0e518852e42447d1d515e4e2}} 
+\index{Game@{Game}!playerFire@{playerFire}}
+\index{playerFire@{playerFire}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{playerFire()}{playerFire()}}
+{\footnotesize\ttfamily void Game\+::player\+Fire (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structUser}{User}} \&}]{sender,  }\item[{\mbox{\hyperlink{classGame_afeeddf6b52aac01ef4b1cf173f50276e}{Fire\+Type}}}]{type }\end{DoxyParamCaption})}
+
+
+
+A player fire. 
+
+Make the player fire.
+
+
+\begin{DoxyParams}{Parameters}
+{\em sender} & The user who fire \\
+\hline
+{\em type} & The type of the fire\\
+\hline
+{\em sender} & \mbox{\hyperlink{structUser}{User}} who fire \\
+\hline
+{\em type} & Type of fire \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classGame_abde07561e8b670c6e995d2dee6ec2110}\label{classGame_abde07561e8b670c6e995d2dee6ec2110}} 
+\index{Game@{Game}!playerLeave@{playerLeave}}
+\index{playerLeave@{playerLeave}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{playerLeave()}{playerLeave()}}
+{\footnotesize\ttfamily void Game\+::player\+Leave (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structUser}{User}} \&}]{sender }\end{DoxyParamCaption})}
+
+
+
+Make a player leave the game. 
+
+Make the player leave the game.
+
+
+\begin{DoxyParams}{Parameters}
+{\em sender} & The user who leave\\
+\hline
+{\em sender} & \mbox{\hyperlink{structUser}{User}} who leave \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classGame_a196980d546a459eaf4bdefd387990a79}\label{classGame_a196980d546a459eaf4bdefd387990a79}} 
+\index{Game@{Game}!registerNameUser@{registerNameUser}}
+\index{registerNameUser@{registerNameUser}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{registerNameUser()}{registerNameUser()}}
+{\footnotesize\ttfamily size\+\_\+t Game\+::register\+Name\+User (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structUser}{User}}}]{user }\end{DoxyParamCaption})}
+
+
+
+Register a user in the game. 
+
+Register the name of a user.
+
+
+\begin{DoxyParams}{Parameters}
+{\em user} & The user to register \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The id of the user
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em user} & \mbox{\hyperlink{structUser}{User}} to register \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Id of the user 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classGame_a12a7221d98cae90f1e318d9782a7aaab}\label{classGame_a12a7221d98cae90f1e318d9782a7aaab}} 
+\index{Game@{Game}!sendStringPacket@{sendStringPacket}}
+\index{sendStringPacket@{sendStringPacket}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{sendStringPacket()}{sendStringPacket()}}
+{\footnotesize\ttfamily static void Game\+::send\+String\+Packet (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classregistry}{registry}} \&}]{reg,  }\item[{\mbox{\hyperlink{classASocket}{ASocket}} \&}]{socket,  }\item[{Protocol}]{type,  }\item[{int}]{args1,  }\item[{int}]{args2,  }\item[{int}]{args3,  }\item[{int}]{args4,  }\item[{const std\+::string \&}]{buff,  }\item[{const \mbox{\hyperlink{structUser}{User}} \&}]{receiver }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Send a string packet to a player. 
+
+Send a string packet.
+
+
+\begin{DoxyParams}{Parameters}
+{\em reg} & The registry \\
+\hline
+{\em socket} & The socket \\
+\hline
+{\em type} & The type of the message \\
+\hline
+{\em args1} & The first argument \\
+\hline
+{\em args2} & The second argument \\
+\hline
+{\em args3} & The third argument \\
+\hline
+{\em args4} & The fourth argument \\
+\hline
+{\em buff} & The string to send \\
+\hline
+{\em receiver} & The receiver of the message\\
+\hline
+{\em reg} & \mbox{\hyperlink{classRegistry}{Registry}} \\
+\hline
+{\em socket} & Socket to communicate with the client \\
+\hline
+{\em type} & Type of message \\
+\hline
+{\em args1} & First argument \\
+\hline
+{\em args2} & Second argument \\
+\hline
+{\em args3} & Third argument \\
+\hline
+{\em args4} & Fourth argument \\
+\hline
+{\em buff} & String to send \\
+\hline
+{\em receiver} & \mbox{\hyperlink{structUser}{User}} who receive the message \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classGame_a53fb191837144d2c8f24d4fb741c731f}\label{classGame_a53fb191837144d2c8f24d4fb741c731f}} 
+\index{Game@{Game}!sendToEveryPlayer@{sendToEveryPlayer}}
+\index{sendToEveryPlayer@{sendToEveryPlayer}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{sendToEveryPlayer()}{sendToEveryPlayer()}}
+{\footnotesize\ttfamily static void Game\+::send\+To\+Every\+Player (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classregistry}{registry}} \&}]{reg,  }\item[{\mbox{\hyperlink{classASocket}{ASocket}} \&}]{socket,  }\item[{Protocol}]{type,  }\item[{int}]{args1,  }\item[{int}]{args2,  }\item[{int}]{args3,  }\item[{int}]{args4 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+every player
+\begin{DoxyParams}{Parameters}
+{\em reg} & The registry\\
+\hline
+{\em socket} & The socket\\
+\hline
+{\em type} & The type of the message\\
+\hline
+{\em args1} & The first argument\\
+\hline
+{\em args2} & The second argument\\
+\hline
+{\em args3} & The third argument\\
+\hline
+{\em args4} & The fourth argument\\
+\hline
+\end{DoxyParams}
+message to every player
+\begin{DoxyParams}{Parameters}
+{\em reg} & \mbox{\hyperlink{classRegistry}{Registry}}\\
+\hline
+{\em socket} & Socket to communicate with the client\\
+\hline
+{\em type} & Type of message\\
+\hline
+{\em args1} & First argument\\
+\hline
+{\em args2} & Second argument\\
+\hline
+{\em args3} & Third argument \\
+\hline
+{\em args4} & Fourth argument \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classGame_ae41f1aa7a7cc9022e588483cbda0efc5}\label{classGame_ae41f1aa7a7cc9022e588483cbda0efc5}} 
+\index{Game@{Game}!sendToEveryPlayerWithString@{sendToEveryPlayerWithString}}
+\index{sendToEveryPlayerWithString@{sendToEveryPlayerWithString}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{sendToEveryPlayerWithString()}{sendToEveryPlayerWithString()}}
+{\footnotesize\ttfamily static void Game\+::send\+To\+Every\+Player\+With\+String (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classregistry}{registry}} \&}]{reg,  }\item[{\mbox{\hyperlink{classASocket}{ASocket}} \&}]{socket,  }\item[{Protocol}]{type,  }\item[{int}]{args1,  }\item[{int}]{args2,  }\item[{int}]{args3,  }\item[{int}]{args4,  }\item[{const std\+::string \&}]{buff }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Send a string packet to every player. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em reg} & The registry \\
+\hline
+{\em socket} & The socket \\
+\hline
+{\em type} & The type of the message \\
+\hline
+{\em args1} & The first argument \\
+\hline
+{\em args2} & The second argument \\
+\hline
+{\em args3} & The third argument \\
+\hline
+{\em args4} & The fourth argument \\
+\hline
+{\em buff} & The string to send\\
+\hline
+{\em reg} & \mbox{\hyperlink{classRegistry}{Registry}} \\
+\hline
+{\em socket} & Socket to communicate with the client \\
+\hline
+{\em type} & Type of message \\
+\hline
+{\em args1} & First argument \\
+\hline
+{\em args2} & Second argument \\
+\hline
+{\em args3} & Third argument \\
+\hline
+{\em args4} & Fourth argument \\
+\hline
+{\em buff} & String to send \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classGame_a87d986847bf6bf45129cce1f32854d82}\label{classGame_a87d986847bf6bf45129cce1f32854d82}} 
+\index{Game@{Game}!start@{start}}
+\index{start@{start}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{start()}{start()}}
+{\footnotesize\ttfamily void Game\+::start (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ \mbox{\hyperlink{structUser}{User}} $>$ \&}]{users }\end{DoxyParamCaption})}
+
+
+
+Start the game. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em users} & The users to start the game with\\
+\hline
+{\em users} & List of user \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Server/\+Server\+Side/\+Game/Game.\+hpp\item 
+Server/\+Server\+Side/\+Game/Game.\+cpp\end{DoxyCompactItemize}

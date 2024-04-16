@@ -1,0 +1,115 @@
+\hypertarget{classKeyboardEventComponent}{}\doxysection{Keyboard\+Event\+Component Class Reference}
+\label{classKeyboardEventComponent}\index{KeyboardEventComponent@{KeyboardEventComponent}}
+
+
+A component that handle a controllable object. Used to create a controllable object.  
+
+
+
+
+{\ttfamily \#include $<$Keyboard\+Event\+Component.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classKeyboardEventComponent_a574c60c4d5f743a72d7d57d1d2be63ca}{Keyboard\+Event\+Component}} ()=default
+\item 
+\mbox{\hyperlink{classKeyboardEventComponent_ada4e87088170467464d7ba6f9f5d1041}{$\sim$\+Keyboard\+Event\+Component}} ()=default
+\item 
+\mbox{\hyperlink{classKeyboardEventComponent_a50feaed66dcb801953fdfb396e2e3dec}{Keyboard\+Event\+Component}} (\mbox{\hyperlink{classKeyboardEventComponent}{Keyboard\+Event\+Component}} const \&)=default
+\item 
+\mbox{\hyperlink{classKeyboardEventComponent_a8108c953bd0d8c758164d1974d339c9e}{Keyboard\+Event\+Component}} (\mbox{\hyperlink{classKeyboardEventComponent}{Keyboard\+Event\+Component}} \&\&) noexcept=default
+\item 
+\mbox{\hyperlink{classKeyboardEventComponent}{Keyboard\+Event\+Component}} \& \mbox{\hyperlink{classKeyboardEventComponent_ae51339166a5d78bb7f75bdd5c3ede19a}{operator=}} (\mbox{\hyperlink{classKeyboardEventComponent}{Keyboard\+Event\+Component}} const \&)=default
+\item 
+\mbox{\hyperlink{classKeyboardEventComponent}{Keyboard\+Event\+Component}} \& \mbox{\hyperlink{classKeyboardEventComponent_a894e31b9ad00db77fce49891c0130be1}{operator=}} (\mbox{\hyperlink{classKeyboardEventComponent}{Keyboard\+Event\+Component}} \&\&) noexcept=default
+\item 
+void \mbox{\hyperlink{classKeyboardEventComponent_a1688f7be175724657411e4d340aadefc}{add\+Action}} (Key key, std\+::function$<$ void(size\+\_\+t, \mbox{\hyperlink{classregistry}{registry}} \&, \mbox{\hyperlink{classAEngine}{AEngine}} \&, \mbox{\hyperlink{structServerToken}{Server\+Token}} \&)$>$ \&\&action)
+\begin{DoxyCompactList}\small\item\em Add a function to the list of function to execute. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classKeyboardEventComponent_ae5fe17fef2581633de0024a79599af60}{add\+Default\+Action}} (std\+::function$<$ void(size\+\_\+t, \mbox{\hyperlink{classregistry}{registry}} \&, \mbox{\hyperlink{classAEngine}{AEngine}} \&, \mbox{\hyperlink{structServerToken}{Server\+Token}} \&)$>$ \&\&action)
+\begin{DoxyCompactList}\small\item\em Add a function to the list of function to execute. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classKeyboardEventComponent_a7b110f52e4143f45b816f483e55b50ee}\label{classKeyboardEventComponent_a7b110f52e4143f45b816f483e55b50ee}} 
+std\+::vector$<$ std\+::function$<$ void(size\+\_\+t, \mbox{\hyperlink{classregistry}{registry}} \&, \mbox{\hyperlink{classAEngine}{AEngine}} \&, \mbox{\hyperlink{structServerToken}{Server\+Token}} \&)$>$ $>$ \& {\bfseries get\+Actions\+By\+Key} (Key key)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A component that handle a controllable object. Used to create a controllable object. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classKeyboardEventComponent_a574c60c4d5f743a72d7d57d1d2be63ca}\label{classKeyboardEventComponent_a574c60c4d5f743a72d7d57d1d2be63ca}} 
+\index{KeyboardEventComponent@{KeyboardEventComponent}!KeyboardEventComponent@{KeyboardEventComponent}}
+\index{KeyboardEventComponent@{KeyboardEventComponent}!KeyboardEventComponent@{KeyboardEventComponent}}
+\doxysubsubsection{\texorpdfstring{KeyboardEventComponent()}{KeyboardEventComponent()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily Keyboard\+Event\+Component\+::\+Keyboard\+Event\+Component (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+Default constructor \mbox{\Hypertarget{classKeyboardEventComponent_ada4e87088170467464d7ba6f9f5d1041}\label{classKeyboardEventComponent_ada4e87088170467464d7ba6f9f5d1041}} 
+\index{KeyboardEventComponent@{KeyboardEventComponent}!````~KeyboardEventComponent@{$\sim$KeyboardEventComponent}}
+\index{````~KeyboardEventComponent@{$\sim$KeyboardEventComponent}!KeyboardEventComponent@{KeyboardEventComponent}}
+\doxysubsubsection{\texorpdfstring{$\sim$KeyboardEventComponent()}{~KeyboardEventComponent()}}
+{\footnotesize\ttfamily Keyboard\+Event\+Component\+::$\sim$\+Keyboard\+Event\+Component (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+Default destructor \mbox{\Hypertarget{classKeyboardEventComponent_a50feaed66dcb801953fdfb396e2e3dec}\label{classKeyboardEventComponent_a50feaed66dcb801953fdfb396e2e3dec}} 
+\index{KeyboardEventComponent@{KeyboardEventComponent}!KeyboardEventComponent@{KeyboardEventComponent}}
+\index{KeyboardEventComponent@{KeyboardEventComponent}!KeyboardEventComponent@{KeyboardEventComponent}}
+\doxysubsubsection{\texorpdfstring{KeyboardEventComponent()}{KeyboardEventComponent()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily Keyboard\+Event\+Component\+::\+Keyboard\+Event\+Component (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classKeyboardEventComponent}{Keyboard\+Event\+Component}} const \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+Copy constructor \mbox{\Hypertarget{classKeyboardEventComponent_a8108c953bd0d8c758164d1974d339c9e}\label{classKeyboardEventComponent_a8108c953bd0d8c758164d1974d339c9e}} 
+\index{KeyboardEventComponent@{KeyboardEventComponent}!KeyboardEventComponent@{KeyboardEventComponent}}
+\index{KeyboardEventComponent@{KeyboardEventComponent}!KeyboardEventComponent@{KeyboardEventComponent}}
+\doxysubsubsection{\texorpdfstring{KeyboardEventComponent()}{KeyboardEventComponent()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily Keyboard\+Event\+Component\+::\+Keyboard\+Event\+Component (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classKeyboardEventComponent}{Keyboard\+Event\+Component}} \&\&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}, {\ttfamily [noexcept]}}
+
+Move constructor 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classKeyboardEventComponent_a1688f7be175724657411e4d340aadefc}\label{classKeyboardEventComponent_a1688f7be175724657411e4d340aadefc}} 
+\index{KeyboardEventComponent@{KeyboardEventComponent}!addAction@{addAction}}
+\index{addAction@{addAction}!KeyboardEventComponent@{KeyboardEventComponent}}
+\doxysubsubsection{\texorpdfstring{addAction()}{addAction()}}
+{\footnotesize\ttfamily void Keyboard\+Event\+Component\+::add\+Action (\begin{DoxyParamCaption}\item[{Key}]{key,  }\item[{std\+::function$<$ void(size\+\_\+t, \mbox{\hyperlink{classregistry}{registry}} \&, \mbox{\hyperlink{classAEngine}{AEngine}} \&, \mbox{\hyperlink{structServerToken}{Server\+Token}} \&)$>$ \&\&}]{action }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Add a function to the list of function to execute. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & the key to bind the action to \\
+\hline
+{\em action} & the action to execute \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classKeyboardEventComponent_ae5fe17fef2581633de0024a79599af60}\label{classKeyboardEventComponent_ae5fe17fef2581633de0024a79599af60}} 
+\index{KeyboardEventComponent@{KeyboardEventComponent}!addDefaultAction@{addDefaultAction}}
+\index{addDefaultAction@{addDefaultAction}!KeyboardEventComponent@{KeyboardEventComponent}}
+\doxysubsubsection{\texorpdfstring{addDefaultAction()}{addDefaultAction()}}
+{\footnotesize\ttfamily void Keyboard\+Event\+Component\+::add\+Default\+Action (\begin{DoxyParamCaption}\item[{std\+::function$<$ void(size\+\_\+t, \mbox{\hyperlink{classregistry}{registry}} \&, \mbox{\hyperlink{classAEngine}{AEngine}} \&, \mbox{\hyperlink{structServerToken}{Server\+Token}} \&)$>$ \&\&}]{action }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Add a function to the list of function to execute. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em action} & the action to execute \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classKeyboardEventComponent_a894e31b9ad00db77fce49891c0130be1}\label{classKeyboardEventComponent_a894e31b9ad00db77fce49891c0130be1}} 
+\index{KeyboardEventComponent@{KeyboardEventComponent}!operator=@{operator=}}
+\index{operator=@{operator=}!KeyboardEventComponent@{KeyboardEventComponent}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classKeyboardEventComponent}{Keyboard\+Event\+Component}}\& Keyboard\+Event\+Component\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classKeyboardEventComponent}{Keyboard\+Event\+Component}} \&\&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}, {\ttfamily [noexcept]}}
+
+Move assignment operator \mbox{\Hypertarget{classKeyboardEventComponent_ae51339166a5d78bb7f75bdd5c3ede19a}\label{classKeyboardEventComponent_ae51339166a5d78bb7f75bdd5c3ede19a}} 
+\index{KeyboardEventComponent@{KeyboardEventComponent}!operator=@{operator=}}
+\index{operator=@{operator=}!KeyboardEventComponent@{KeyboardEventComponent}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classKeyboardEventComponent}{Keyboard\+Event\+Component}}\& Keyboard\+Event\+Component\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classKeyboardEventComponent}{Keyboard\+Event\+Component}} const \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+Copy assignment operator 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Client/\+Component/Keyboard\+Event\+Component.\+hpp\end{DoxyCompactItemize}

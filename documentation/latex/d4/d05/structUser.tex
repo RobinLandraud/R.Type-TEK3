@@ -1,0 +1,123 @@
+\hypertarget{structUser}{}\doxysection{User Struct Reference}
+\label{structUser}\index{User@{User}}
+
+
+The user.  
+
+
+
+
+{\ttfamily \#include $<$User.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{structUser_a09a70e1b9186157d4fac0c8d9676a942}{operator$<$}} (const \mbox{\hyperlink{structUser}{User}} \&o) const
+\begin{DoxyCompactList}\small\item\em Operator $<$ overload. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{structUser_a6be1cd9ce6a49a8cd7736715b2ca6f30}{operator==}} (const \mbox{\hyperlink{structUser}{User}} \&lhs) const
+\begin{DoxyCompactList}\small\item\em Operator == overload. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{structUser_a5bef54fbed12f4a29ebea7e59c58e463}{operator!=}} (const \mbox{\hyperlink{structUser}{User}} \&lhs) const
+\begin{DoxyCompactList}\small\item\em Operator != overload. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \mbox{\hyperlink{structUser_a085d8d69282b6298964eab8351584536}{name}}
+\item 
+std\+::string \mbox{\hyperlink{structUser_ab9b10f6f0255db497f7b017ed1d1ba41}{ip}}
+\item 
+unsigned short \mbox{\hyperlink{structUser_a74fa09dfd921d76ece33bbe0ce5933cd}{port}}
+\item 
+bool \mbox{\hyperlink{structUser_a81363a274362a44bdc71c7711a8d9936}{is\+Active}} = false
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The user. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{structUser_a5bef54fbed12f4a29ebea7e59c58e463}\label{structUser_a5bef54fbed12f4a29ebea7e59c58e463}} 
+\index{User@{User}!operator"!=@{operator"!=}}
+\index{operator"!=@{operator"!=}!User@{User}}
+\doxysubsubsection{\texorpdfstring{operator"!=()}{operator!=()}}
+{\footnotesize\ttfamily bool User\+::operator!= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structUser}{User}} \&}]{lhs }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Operator != overload. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em lhs} & The user to compare \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the user is not equal to the other user, false otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{structUser_a09a70e1b9186157d4fac0c8d9676a942}\label{structUser_a09a70e1b9186157d4fac0c8d9676a942}} 
+\index{User@{User}!operator$<$@{operator$<$}}
+\index{operator$<$@{operator$<$}!User@{User}}
+\doxysubsubsection{\texorpdfstring{operator$<$()}{operator<()}}
+{\footnotesize\ttfamily bool User\+::operator$<$ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structUser}{User}} \&}]{o }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Operator $<$ overload. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em o} & The user to compare \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the user is less than the other user, false otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{structUser_a6be1cd9ce6a49a8cd7736715b2ca6f30}\label{structUser_a6be1cd9ce6a49a8cd7736715b2ca6f30}} 
+\index{User@{User}!operator==@{operator==}}
+\index{operator==@{operator==}!User@{User}}
+\doxysubsubsection{\texorpdfstring{operator==()}{operator==()}}
+{\footnotesize\ttfamily bool User\+::operator== (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structUser}{User}} \&}]{lhs }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Operator == overload. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em lhs} & The user to compare \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the user is equal to the other user, false otherwise 
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{structUser_ab9b10f6f0255db497f7b017ed1d1ba41}\label{structUser_ab9b10f6f0255db497f7b017ed1d1ba41}} 
+\index{User@{User}!ip@{ip}}
+\index{ip@{ip}!User@{User}}
+\doxysubsubsection{\texorpdfstring{ip}{ip}}
+{\footnotesize\ttfamily std\+::string User\+::ip}
+
+The ip of the user \mbox{\Hypertarget{structUser_a81363a274362a44bdc71c7711a8d9936}\label{structUser_a81363a274362a44bdc71c7711a8d9936}} 
+\index{User@{User}!isActive@{isActive}}
+\index{isActive@{isActive}!User@{User}}
+\doxysubsubsection{\texorpdfstring{isActive}{isActive}}
+{\footnotesize\ttfamily bool User\+::is\+Active = false}
+
+Is the user active \mbox{\Hypertarget{structUser_a085d8d69282b6298964eab8351584536}\label{structUser_a085d8d69282b6298964eab8351584536}} 
+\index{User@{User}!name@{name}}
+\index{name@{name}!User@{User}}
+\doxysubsubsection{\texorpdfstring{name}{name}}
+{\footnotesize\ttfamily std\+::string User\+::name}
+
+The name of the user \mbox{\Hypertarget{structUser_a74fa09dfd921d76ece33bbe0ce5933cd}\label{structUser_a74fa09dfd921d76ece33bbe0ce5933cd}} 
+\index{User@{User}!port@{port}}
+\index{port@{port}!User@{User}}
+\doxysubsubsection{\texorpdfstring{port}{port}}
+{\footnotesize\ttfamily unsigned short User\+::port}
+
+The port of the user 
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Server/\+Server\+Side/User.\+hpp\end{DoxyCompactItemize}

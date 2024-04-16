@@ -1,0 +1,263 @@
+\hypertarget{classProtocolBuilder}{}\doxysection{Protocol\+Builder Class Reference}
+\label{classProtocolBuilder}\index{ProtocolBuilder@{ProtocolBuilder}}
+
+
+A class that handle the protocol.  
+
+
+
+
+{\ttfamily \#include $<$Protocol\+Builder.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classProtocolBuilder_a1545ef0cfcb5813be3fc02dc1543f8ae}{Protocol\+Builder}} ()=default
+\item 
+\mbox{\hyperlink{classProtocolBuilder_a2ee3eff0299314e721eda1e94e2e84b2}{$\sim$\+Protocol\+Builder}} ()=default
+\item 
+\mbox{\hyperlink{classProtocolBuilder_a1545ef0cfcb5813be3fc02dc1543f8ae}{Protocol\+Builder}} ()=default
+\item 
+\mbox{\hyperlink{classProtocolBuilder_a2ee3eff0299314e721eda1e94e2e84b2}{$\sim$\+Protocol\+Builder}} ()=default
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static std\+::uint64\+\_\+t \mbox{\hyperlink{classProtocolBuilder_a46eafc60892dbddbcd98bc52166d304c}{create\+Packet}} (Protocol protocol, int arg1, int arg2, int arg3, int arg4)
+\begin{DoxyCompactList}\small\item\em Create a packet. \end{DoxyCompactList}\item 
+static std\+::uint64\+\_\+t \mbox{\hyperlink{classProtocolBuilder_a78e705f57ee3e4e5b4ee765b30708d46}{create\+Packet}} (Element\+Type type, int method, int arg1, int arg2, int arg3, int arg4)
+\begin{DoxyCompactList}\small\item\em Create a packet. \end{DoxyCompactList}\item 
+static int \mbox{\hyperlink{classProtocolBuilder_ab199cecedf9cd414d5c321752522dad1}{Bool\+To\+Int}} (bool arg)
+\begin{DoxyCompactList}\small\item\em Convert a bool to an int. \end{DoxyCompactList}\item 
+static int \mbox{\hyperlink{classProtocolBuilder_a59ca918317fc08cd06aed759e13733a5}{Float\+To\+Int}} (float arg)
+\begin{DoxyCompactList}\small\item\em Convert a float to an int. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{classProtocolBuilder_a71eef77d36defb9f1f52834cbc2063da}{build\+Packet}} (char $\ast$data, std\+::uint64\+\_\+t packet)
+\begin{DoxyCompactList}\small\item\em Build a packet. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{classProtocolBuilder_aa90f80f855c21d69f7342cf0ae23eeab}{build\+Packet}} (char $\ast$data, std\+::uint64\+\_\+t packet, std\+::string str)
+\begin{DoxyCompactList}\small\item\em Build a packet. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classProtocolBuilder_a46eafc60892dbddbcd98bc52166d304c}\label{classProtocolBuilder_a46eafc60892dbddbcd98bc52166d304c}} 
+static std\+::uint64\+\_\+t {\bfseries create\+Packet} (Protocol protocol, int arg1, int arg2, int arg3, int arg4)
+\item 
+\mbox{\Hypertarget{classProtocolBuilder_a78e705f57ee3e4e5b4ee765b30708d46}\label{classProtocolBuilder_a78e705f57ee3e4e5b4ee765b30708d46}} 
+static std\+::uint64\+\_\+t {\bfseries create\+Packet} (Element\+Type type, int method, int arg1, int arg2, int arg3, int arg4)
+\item 
+\mbox{\Hypertarget{classProtocolBuilder_ab199cecedf9cd414d5c321752522dad1}\label{classProtocolBuilder_ab199cecedf9cd414d5c321752522dad1}} 
+static int {\bfseries Bool\+To\+Int} (bool arg)
+\item 
+\mbox{\Hypertarget{classProtocolBuilder_a59ca918317fc08cd06aed759e13733a5}\label{classProtocolBuilder_a59ca918317fc08cd06aed759e13733a5}} 
+static int {\bfseries Float\+To\+Int} (float arg)
+\item 
+\mbox{\Hypertarget{classProtocolBuilder_a46eafc60892dbddbcd98bc52166d304c}\label{classProtocolBuilder_a46eafc60892dbddbcd98bc52166d304c}} 
+static std\+::uint64\+\_\+t {\bfseries create\+Packet} (Protocol protocol, int arg1, int arg2, int arg3, int arg4)
+\item 
+\mbox{\Hypertarget{classProtocolBuilder_a78e705f57ee3e4e5b4ee765b30708d46}\label{classProtocolBuilder_a78e705f57ee3e4e5b4ee765b30708d46}} 
+static std\+::uint64\+\_\+t {\bfseries create\+Packet} (Element\+Type type, int method, int arg1, int arg2, int arg3, int arg4)
+\item 
+\mbox{\Hypertarget{classProtocolBuilder_ab199cecedf9cd414d5c321752522dad1}\label{classProtocolBuilder_ab199cecedf9cd414d5c321752522dad1}} 
+static int {\bfseries Bool\+To\+Int} (bool arg)
+\item 
+\mbox{\Hypertarget{classProtocolBuilder_a59ca918317fc08cd06aed759e13733a5}\label{classProtocolBuilder_a59ca918317fc08cd06aed759e13733a5}} 
+static int {\bfseries Float\+To\+Int} (float arg)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A class that handle the protocol. 
+
+Class to build a protocol message. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classProtocolBuilder_a1545ef0cfcb5813be3fc02dc1543f8ae}\label{classProtocolBuilder_a1545ef0cfcb5813be3fc02dc1543f8ae}} 
+\index{ProtocolBuilder@{ProtocolBuilder}!ProtocolBuilder@{ProtocolBuilder}}
+\index{ProtocolBuilder@{ProtocolBuilder}!ProtocolBuilder@{ProtocolBuilder}}
+\doxysubsubsection{\texorpdfstring{ProtocolBuilder()}{ProtocolBuilder()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Protocol\+Builder\+::\+Protocol\+Builder (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+Default constructor \mbox{\Hypertarget{classProtocolBuilder_a2ee3eff0299314e721eda1e94e2e84b2}\label{classProtocolBuilder_a2ee3eff0299314e721eda1e94e2e84b2}} 
+\index{ProtocolBuilder@{ProtocolBuilder}!````~ProtocolBuilder@{$\sim$ProtocolBuilder}}
+\index{````~ProtocolBuilder@{$\sim$ProtocolBuilder}!ProtocolBuilder@{ProtocolBuilder}}
+\doxysubsubsection{\texorpdfstring{$\sim$ProtocolBuilder()}{~ProtocolBuilder()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Protocol\+Builder\+::$\sim$\+Protocol\+Builder (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+Default destructor \mbox{\Hypertarget{classProtocolBuilder_a1545ef0cfcb5813be3fc02dc1543f8ae}\label{classProtocolBuilder_a1545ef0cfcb5813be3fc02dc1543f8ae}} 
+\index{ProtocolBuilder@{ProtocolBuilder}!ProtocolBuilder@{ProtocolBuilder}}
+\index{ProtocolBuilder@{ProtocolBuilder}!ProtocolBuilder@{ProtocolBuilder}}
+\doxysubsubsection{\texorpdfstring{ProtocolBuilder()}{ProtocolBuilder()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Protocol\+Builder\+::\+Protocol\+Builder (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+Default constructor \mbox{\Hypertarget{classProtocolBuilder_a2ee3eff0299314e721eda1e94e2e84b2}\label{classProtocolBuilder_a2ee3eff0299314e721eda1e94e2e84b2}} 
+\index{ProtocolBuilder@{ProtocolBuilder}!````~ProtocolBuilder@{$\sim$ProtocolBuilder}}
+\index{````~ProtocolBuilder@{$\sim$ProtocolBuilder}!ProtocolBuilder@{ProtocolBuilder}}
+\doxysubsubsection{\texorpdfstring{$\sim$ProtocolBuilder()}{~ProtocolBuilder()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Protocol\+Builder\+::$\sim$\+Protocol\+Builder (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+Default destructor 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classProtocolBuilder_ab199cecedf9cd414d5c321752522dad1}\label{classProtocolBuilder_ab199cecedf9cd414d5c321752522dad1}} 
+\index{ProtocolBuilder@{ProtocolBuilder}!BoolToInt@{BoolToInt}}
+\index{BoolToInt@{BoolToInt}!ProtocolBuilder@{ProtocolBuilder}}
+\doxysubsubsection{\texorpdfstring{BoolToInt()}{BoolToInt()}}
+{\footnotesize\ttfamily static int Protocol\+Builder\+::\+Bool\+To\+Int (\begin{DoxyParamCaption}\item[{bool}]{arg }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Convert a bool to an int. 
+
+Convert a boolean to an integer.
+
+
+\begin{DoxyParams}{Parameters}
+{\em arg} & The bool \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The int
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em arg} & Boolean to convert \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Integer 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classProtocolBuilder_a71eef77d36defb9f1f52834cbc2063da}\label{classProtocolBuilder_a71eef77d36defb9f1f52834cbc2063da}} 
+\index{ProtocolBuilder@{ProtocolBuilder}!buildPacket@{buildPacket}}
+\index{buildPacket@{buildPacket}!ProtocolBuilder@{ProtocolBuilder}}
+\doxysubsubsection{\texorpdfstring{buildPacket()}{buildPacket()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily static void Protocol\+Builder\+::build\+Packet (\begin{DoxyParamCaption}\item[{char $\ast$}]{data,  }\item[{std\+::uint64\+\_\+t}]{packet }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Build a packet. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em data} & The data \\
+\hline
+{\em packet} & The packet \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classProtocolBuilder_aa90f80f855c21d69f7342cf0ae23eeab}\label{classProtocolBuilder_aa90f80f855c21d69f7342cf0ae23eeab}} 
+\index{ProtocolBuilder@{ProtocolBuilder}!buildPacket@{buildPacket}}
+\index{buildPacket@{buildPacket}!ProtocolBuilder@{ProtocolBuilder}}
+\doxysubsubsection{\texorpdfstring{buildPacket()}{buildPacket()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily static void Protocol\+Builder\+::build\+Packet (\begin{DoxyParamCaption}\item[{char $\ast$}]{data,  }\item[{std\+::uint64\+\_\+t}]{packet,  }\item[{std\+::string}]{str }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Build a packet. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em data} & The data \\
+\hline
+{\em packet} & The packet \\
+\hline
+{\em str} & The string \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classProtocolBuilder_a78e705f57ee3e4e5b4ee765b30708d46}\label{classProtocolBuilder_a78e705f57ee3e4e5b4ee765b30708d46}} 
+\index{ProtocolBuilder@{ProtocolBuilder}!createPacket@{createPacket}}
+\index{createPacket@{createPacket}!ProtocolBuilder@{ProtocolBuilder}}
+\doxysubsubsection{\texorpdfstring{createPacket()}{createPacket()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily static std\+::uint64\+\_\+t Protocol\+Builder\+::create\+Packet (\begin{DoxyParamCaption}\item[{Element\+Type}]{type,  }\item[{int}]{method,  }\item[{int}]{arg1,  }\item[{int}]{arg2,  }\item[{int}]{arg3,  }\item[{int}]{arg4 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Create a packet. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em type} & The type of the element \\
+\hline
+{\em method} & The method of the element \\
+\hline
+{\em arg1} & The first argument \\
+\hline
+{\em arg2} & The second argument \\
+\hline
+{\em arg3} & The third argument \\
+\hline
+{\em arg4} & The fourth argument \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The packet 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classProtocolBuilder_a46eafc60892dbddbcd98bc52166d304c}\label{classProtocolBuilder_a46eafc60892dbddbcd98bc52166d304c}} 
+\index{ProtocolBuilder@{ProtocolBuilder}!createPacket@{createPacket}}
+\index{createPacket@{createPacket}!ProtocolBuilder@{ProtocolBuilder}}
+\doxysubsubsection{\texorpdfstring{createPacket()}{createPacket()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily static std\+::uint64\+\_\+t Protocol\+Builder\+::create\+Packet (\begin{DoxyParamCaption}\item[{Protocol}]{protocol,  }\item[{int}]{arg1,  }\item[{int}]{arg2,  }\item[{int}]{arg3,  }\item[{int}]{arg4 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Create a packet. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em protocol} & The protocol \\
+\hline
+{\em arg1} & The first argument \\
+\hline
+{\em arg2} & The second argument \\
+\hline
+{\em arg3} & The third argument \\
+\hline
+{\em arg4} & The fourth argument \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+std\+::uint64\+\_\+t The packet
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em protocol} & Protocol to use \\
+\hline
+{\em arg1} & First argument \\
+\hline
+{\em arg2} & Second argument \\
+\hline
+{\em arg3} & Third argument \\
+\hline
+{\em arg4} & Fourth argument \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Packet 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classProtocolBuilder_a59ca918317fc08cd06aed759e13733a5}\label{classProtocolBuilder_a59ca918317fc08cd06aed759e13733a5}} 
+\index{ProtocolBuilder@{ProtocolBuilder}!FloatToInt@{FloatToInt}}
+\index{FloatToInt@{FloatToInt}!ProtocolBuilder@{ProtocolBuilder}}
+\doxysubsubsection{\texorpdfstring{FloatToInt()}{FloatToInt()}}
+{\footnotesize\ttfamily static int Protocol\+Builder\+::\+Float\+To\+Int (\begin{DoxyParamCaption}\item[{float}]{arg }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Convert a float to an int. 
+
+Convert a float to an integer.
+
+
+\begin{DoxyParams}{Parameters}
+{\em arg} & The float \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The int
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em arg} & Float to convert \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Integer 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Client/\+Protocol/Protocol\+Builder.\+hpp\end{DoxyCompactItemize}

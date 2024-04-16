@@ -1,0 +1,23 @@
+This document outlines the principles that drive the development of Chai\+Script. Chai\+Script does not intent to be the perfect tool for {\itshape every} situation, but it does intend to be a good general purpose tool for {\itshape most} situations.\hypertarget{md_ChaiScript_6_1_0_DesignGoals_autotoc_md57}{}\doxysection{Goals}\label{md_ChaiScript_6_1_0_DesignGoals_autotoc_md57}
+
+\begin{DoxyEnumerate}
+\item Trivially easy to integrate with C++ projects
+\item 0 external depenencies
+\item \char`\"{}\+Perfect\char`\"{} integration with C++
+\begin{DoxyItemize}
+\item Direct mapping between Chai\+Script objects and C++ objects
+\item Direct mapping between Chai\+Script functions and C++ functions
+\item Direct mapping between Chai\+Script exceptions and C++ exceptions
+\end{DoxyItemize}
+\end{DoxyEnumerate}
+\begin{DoxyEnumerate}
+\item Never surprise the C++ developer
+\begin{DoxyItemize}
+\item Object lifetimes managed by the stack
+\item Familiar syntax to C++ developers
+\end{DoxyItemize}
+\item Perform \char`\"{}well enough\char`\"{} to not get in the way
+\end{DoxyEnumerate}\hypertarget{md_ChaiScript_6_1_0_DesignGoals_autotoc_md58}{}\doxysection{Alternatives}\label{md_ChaiScript_6_1_0_DesignGoals_autotoc_md58}
+\hypertarget{md_ChaiScript_6_1_0_DesignGoals_autotoc_md59}{}\doxysubsection{Sol2}\label{md_ChaiScript_6_1_0_DesignGoals_autotoc_md59}
+If you are looking for the fastest performing scripting language and don\textquotesingle{}t mind Lua, you might want to consider \href{https://github.com/ThePhD/sol2}{\texttt{ sol2}}.\hypertarget{md_ChaiScript_6_1_0_DesignGoals_autotoc_md60}{}\doxysubsection{SWIG}\label{md_ChaiScript_6_1_0_DesignGoals_autotoc_md60}
+If you are looking for the most flexible solution to be able to support multiple target languages, consider \href{http://swig.org}{\texttt{ SWIG}} 

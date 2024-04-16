@@ -1,0 +1,47 @@
+\hypertarget{structchaiscript_1_1dispatch_1_1detail_1_1Build__Function__Caller__Helper}{}\doxysection{chaiscript\+::dispatch\+::detail\+::Build\+\_\+\+Function\+\_\+\+Caller\+\_\+\+Helper$<$ Ret, Param $>$ Struct Template Reference}
+\label{structchaiscript_1_1dispatch_1_1detail_1_1Build__Function__Caller__Helper}\index{chaiscript::dispatch::detail::Build\_Function\_Caller\_Helper$<$ Ret, Param $>$@{chaiscript::dispatch::detail::Build\_Function\_Caller\_Helper$<$ Ret, Param $>$}}
+
+
+{\ttfamily \#include $<$function\+\_\+call\+\_\+detail.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structchaiscript_1_1dispatch_1_1detail_1_1Build__Function__Caller__Helper_ab6fcd01df35836a7051c366ee96ea7bf}\label{structchaiscript_1_1dispatch_1_1detail_1_1Build__Function__Caller__Helper_ab6fcd01df35836a7051c366ee96ea7bf}} 
+{\bfseries Build\+\_\+\+Function\+\_\+\+Caller\+\_\+\+Helper} (std\+::vector$<$ \mbox{\hyperlink{namespacechaiscript_a131610313026f28092a69541b013d463}{Const\+\_\+\+Proxy\+\_\+\+Function}} $>$ t\+\_\+funcs, const \mbox{\hyperlink{classchaiscript_1_1Type__Conversions}{Type\+\_\+\+Conversions}} $\ast$t\+\_\+conversions)
+\item 
+\mbox{\Hypertarget{structchaiscript_1_1dispatch_1_1detail_1_1Build__Function__Caller__Helper_acb27316709e76a9f1f1dfe253227d848}\label{structchaiscript_1_1dispatch_1_1detail_1_1Build__Function__Caller__Helper_acb27316709e76a9f1f1dfe253227d848}} 
+{\footnotesize template$<$typename ... P$>$ }\\Ret {\bfseries operator()} (P \&\&... param)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structchaiscript_1_1dispatch_1_1detail_1_1Build__Function__Caller__Helper_ad6998c807c6fca356e538ee72dd7ad1d}\label{structchaiscript_1_1dispatch_1_1detail_1_1Build__Function__Caller__Helper_ad6998c807c6fca356e538ee72dd7ad1d}} 
+{\footnotesize template$<$typename P , typename Q $>$ }\\static auto {\bfseries box} (Q \&\&q) -\/$>$ typename std\+::enable\+\_\+if$<$ std\+::is\+\_\+reference$<$ P $>$\+::value \&\&!std\+::is\+\_\+same$<$ \mbox{\hyperlink{classchaiscript_1_1Boxed__Value}{chaiscript\+::\+Boxed\+\_\+\+Value}}, typename std\+::remove\+\_\+const$<$ typename std\+::remove\+\_\+reference$<$ P $>$\+::type $>$\+::type $>$\+::value, \mbox{\hyperlink{classchaiscript_1_1Boxed__Value}{Boxed\+\_\+\+Value}} $>$\+::type
+\item 
+\mbox{\Hypertarget{structchaiscript_1_1dispatch_1_1detail_1_1Build__Function__Caller__Helper_ac5e6120ea2898e046526f6cafec2b46b}\label{structchaiscript_1_1dispatch_1_1detail_1_1Build__Function__Caller__Helper_ac5e6120ea2898e046526f6cafec2b46b}} 
+{\footnotesize template$<$typename P , typename Q $>$ }\\static auto {\bfseries box} (Q \&\&q) -\/$>$ typename std\+::enable\+\_\+if$<$!std\+::is\+\_\+reference$<$ P $>$\+::value \&\&!std\+::is\+\_\+same$<$ \mbox{\hyperlink{classchaiscript_1_1Boxed__Value}{chaiscript\+::\+Boxed\+\_\+\+Value}}, typename std\+::remove\+\_\+const$<$ typename std\+::remove\+\_\+reference$<$ P $>$\+::type $>$\+::type $>$\+::value, \mbox{\hyperlink{classchaiscript_1_1Boxed__Value}{Boxed\+\_\+\+Value}} $>$\+::type
+\item 
+\mbox{\Hypertarget{structchaiscript_1_1dispatch_1_1detail_1_1Build__Function__Caller__Helper_a741a4c2fee7eb0e00f9ef1af3ebf4ea0}\label{structchaiscript_1_1dispatch_1_1detail_1_1Build__Function__Caller__Helper_a741a4c2fee7eb0e00f9ef1af3ebf4ea0}} 
+{\footnotesize template$<$typename P $>$ }\\static \mbox{\hyperlink{classchaiscript_1_1Boxed__Value}{Boxed\+\_\+\+Value}} {\bfseries box} (\mbox{\hyperlink{classchaiscript_1_1Boxed__Value}{Boxed\+\_\+\+Value}} bv)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structchaiscript_1_1dispatch_1_1detail_1_1Build__Function__Caller__Helper_ae65c99dc13a3e5f32af8fd0583f26f2f}\label{structchaiscript_1_1dispatch_1_1detail_1_1Build__Function__Caller__Helper_ae65c99dc13a3e5f32af8fd0583f26f2f}} 
+std\+::vector$<$ \mbox{\hyperlink{namespacechaiscript_a131610313026f28092a69541b013d463}{Const\+\_\+\+Proxy\+\_\+\+Function}} $>$ {\bfseries m\+\_\+funcs}
+\item 
+\mbox{\Hypertarget{structchaiscript_1_1dispatch_1_1detail_1_1Build__Function__Caller__Helper_a2efd43de071c04b403d110a5333ae6f8}\label{structchaiscript_1_1dispatch_1_1detail_1_1Build__Function__Caller__Helper_a2efd43de071c04b403d110a5333ae6f8}} 
+const \mbox{\hyperlink{classchaiscript_1_1Type__Conversions}{Type\+\_\+\+Conversions}} $\ast$ {\bfseries m\+\_\+conversions}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$typename Ret, typename ... Param$>$\newline
+struct chaiscript\+::dispatch\+::detail\+::\+Build\+\_\+\+Function\+\_\+\+Caller\+\_\+\+Helper$<$ Ret, Param $>$}
+
+used internally for unwrapping a function call\textquotesingle{}s types 
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Chai\+Script-\/6.\+1.\+0/include/chaiscript/dispatchkit/function\+\_\+call\+\_\+detail.\+hpp\end{DoxyCompactItemize}

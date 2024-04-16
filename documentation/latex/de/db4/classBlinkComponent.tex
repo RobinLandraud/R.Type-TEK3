@@ -1,0 +1,163 @@
+\hypertarget{classBlinkComponent}{}\doxysection{Blink\+Component Class Reference}
+\label{classBlinkComponent}\index{BlinkComponent@{BlinkComponent}}
+
+
+A component to blink an entity. Used to create a blinking entity.  
+
+
+
+
+{\ttfamily \#include $<$Blink\+Component.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classBlinkComponent_afceaa7e2b6eec32991fcdfe7bd94c7ee}{Blink\+Component}} (unsigned int clock\+Loops=1, std\+::string clock\+Name=\char`\"{}\char`\"{})
+\begin{DoxyCompactList}\small\item\em Default constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classBlinkComponent_a04f9daecacfad7cb0fa8e4b7f8705a3c}{$\sim$\+Blink\+Component}} ()=default
+\item 
+\mbox{\hyperlink{classBlinkComponent_a1ec0932a9c34a22b9b989eb9561a3c1c}{Blink\+Component}} (\mbox{\hyperlink{classBlinkComponent}{Blink\+Component}} const \&)=default
+\item 
+\mbox{\hyperlink{classBlinkComponent_ad5cbde47f65aae58fc192db651aed1a7}{Blink\+Component}} (\mbox{\hyperlink{classBlinkComponent}{Blink\+Component}} \&\&) noexcept=default
+\item 
+\mbox{\hyperlink{classBlinkComponent}{Blink\+Component}} \& \mbox{\hyperlink{classBlinkComponent_ad8333def173dd9e7184ec918241c77da}{operator=}} (\mbox{\hyperlink{classBlinkComponent}{Blink\+Component}} const \&)=default
+\item 
+\mbox{\hyperlink{classBlinkComponent}{Blink\+Component}} \& \mbox{\hyperlink{classBlinkComponent_a077ed9f1e336cba412bffff8936eb57b}{operator=}} (\mbox{\hyperlink{classBlinkComponent}{Blink\+Component}} \&\&) noexcept=default
+\item 
+bool \mbox{\hyperlink{classBlinkComponent_abe557b4be2ae48b64576b2c128243115}{is\+Blink}} () const
+\begin{DoxyCompactList}\small\item\em Check if the entity is blinking. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classBlinkComponent_aba192f1e564a6c63ebc143dc64cab79c}{set\+Clock\+Loops}} (unsigned int count)
+\begin{DoxyCompactList}\small\item\em Set the number of loops of clock to switch the state of blink. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classBlinkComponent_aa46692441707b5dc8c2a4d346fe9e9c0}{add\+Actual\+Loop}} ()
+\begin{DoxyCompactList}\small\item\em Add a loop to the actual loop. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classBlinkComponent_a772db742c772e9b4550e241827a982f5}{get\+Clock\+Name}} ()
+\begin{DoxyCompactList}\small\item\em Get the name of the clock. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classBlinkComponent_a9e97854c4addaa7d523aa5621de40ac4}{set\+Clock\+Name}} (const std\+::string clock\+Name)
+\begin{DoxyCompactList}\small\item\em Set the name of the clock. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A component to blink an entity. Used to create a blinking entity. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classBlinkComponent_afceaa7e2b6eec32991fcdfe7bd94c7ee}\label{classBlinkComponent_afceaa7e2b6eec32991fcdfe7bd94c7ee}} 
+\index{BlinkComponent@{BlinkComponent}!BlinkComponent@{BlinkComponent}}
+\index{BlinkComponent@{BlinkComponent}!BlinkComponent@{BlinkComponent}}
+\doxysubsubsection{\texorpdfstring{BlinkComponent()}{BlinkComponent()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily Blink\+Component\+::\+Blink\+Component (\begin{DoxyParamCaption}\item[{unsigned int}]{clock\+Loops = {\ttfamily 1},  }\item[{std\+::string}]{clock\+Name = {\ttfamily \char`\"{}\char`\"{}} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}
+
+
+
+Default constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em clock\+Loops} & Number of loops of the clock \\
+\hline
+{\em clock\+Name} & Name of the clock \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classBlinkComponent_a04f9daecacfad7cb0fa8e4b7f8705a3c}\label{classBlinkComponent_a04f9daecacfad7cb0fa8e4b7f8705a3c}} 
+\index{BlinkComponent@{BlinkComponent}!````~BlinkComponent@{$\sim$BlinkComponent}}
+\index{````~BlinkComponent@{$\sim$BlinkComponent}!BlinkComponent@{BlinkComponent}}
+\doxysubsubsection{\texorpdfstring{$\sim$BlinkComponent()}{~BlinkComponent()}}
+{\footnotesize\ttfamily Blink\+Component\+::$\sim$\+Blink\+Component (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+Default destructor \mbox{\Hypertarget{classBlinkComponent_a1ec0932a9c34a22b9b989eb9561a3c1c}\label{classBlinkComponent_a1ec0932a9c34a22b9b989eb9561a3c1c}} 
+\index{BlinkComponent@{BlinkComponent}!BlinkComponent@{BlinkComponent}}
+\index{BlinkComponent@{BlinkComponent}!BlinkComponent@{BlinkComponent}}
+\doxysubsubsection{\texorpdfstring{BlinkComponent()}{BlinkComponent()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily Blink\+Component\+::\+Blink\+Component (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classBlinkComponent}{Blink\+Component}} const \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+Default copy constructor \mbox{\Hypertarget{classBlinkComponent_ad5cbde47f65aae58fc192db651aed1a7}\label{classBlinkComponent_ad5cbde47f65aae58fc192db651aed1a7}} 
+\index{BlinkComponent@{BlinkComponent}!BlinkComponent@{BlinkComponent}}
+\index{BlinkComponent@{BlinkComponent}!BlinkComponent@{BlinkComponent}}
+\doxysubsubsection{\texorpdfstring{BlinkComponent()}{BlinkComponent()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily Blink\+Component\+::\+Blink\+Component (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classBlinkComponent}{Blink\+Component}} \&\&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}, {\ttfamily [noexcept]}}
+
+Default move constructor 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classBlinkComponent_aa46692441707b5dc8c2a4d346fe9e9c0}\label{classBlinkComponent_aa46692441707b5dc8c2a4d346fe9e9c0}} 
+\index{BlinkComponent@{BlinkComponent}!addActualLoop@{addActualLoop}}
+\index{addActualLoop@{addActualLoop}!BlinkComponent@{BlinkComponent}}
+\doxysubsubsection{\texorpdfstring{addActualLoop()}{addActualLoop()}}
+{\footnotesize\ttfamily void Blink\+Component\+::add\+Actual\+Loop (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Add a loop to the actual loop. 
+
+\mbox{\Hypertarget{classBlinkComponent_a772db742c772e9b4550e241827a982f5}\label{classBlinkComponent_a772db742c772e9b4550e241827a982f5}} 
+\index{BlinkComponent@{BlinkComponent}!getClockName@{getClockName}}
+\index{getClockName@{getClockName}!BlinkComponent@{BlinkComponent}}
+\doxysubsubsection{\texorpdfstring{getClockName()}{getClockName()}}
+{\footnotesize\ttfamily std\+::string Blink\+Component\+::get\+Clock\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the name of the clock. 
+
+\begin{DoxyReturn}{Returns}
+The name of the clock 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classBlinkComponent_abe557b4be2ae48b64576b2c128243115}\label{classBlinkComponent_abe557b4be2ae48b64576b2c128243115}} 
+\index{BlinkComponent@{BlinkComponent}!isBlink@{isBlink}}
+\index{isBlink@{isBlink}!BlinkComponent@{BlinkComponent}}
+\doxysubsubsection{\texorpdfstring{isBlink()}{isBlink()}}
+{\footnotesize\ttfamily bool Blink\+Component\+::is\+Blink (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Check if the entity is blinking. 
+
+\begin{DoxyReturn}{Returns}
+true if the entity is blinking 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classBlinkComponent_a077ed9f1e336cba412bffff8936eb57b}\label{classBlinkComponent_a077ed9f1e336cba412bffff8936eb57b}} 
+\index{BlinkComponent@{BlinkComponent}!operator=@{operator=}}
+\index{operator=@{operator=}!BlinkComponent@{BlinkComponent}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classBlinkComponent}{Blink\+Component}}\& Blink\+Component\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classBlinkComponent}{Blink\+Component}} \&\&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}, {\ttfamily [noexcept]}}
+
+Default move assignment operator \mbox{\Hypertarget{classBlinkComponent_ad8333def173dd9e7184ec918241c77da}\label{classBlinkComponent_ad8333def173dd9e7184ec918241c77da}} 
+\index{BlinkComponent@{BlinkComponent}!operator=@{operator=}}
+\index{operator=@{operator=}!BlinkComponent@{BlinkComponent}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classBlinkComponent}{Blink\+Component}}\& Blink\+Component\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classBlinkComponent}{Blink\+Component}} const \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+Default copy assignment operator \mbox{\Hypertarget{classBlinkComponent_aba192f1e564a6c63ebc143dc64cab79c}\label{classBlinkComponent_aba192f1e564a6c63ebc143dc64cab79c}} 
+\index{BlinkComponent@{BlinkComponent}!setClockLoops@{setClockLoops}}
+\index{setClockLoops@{setClockLoops}!BlinkComponent@{BlinkComponent}}
+\doxysubsubsection{\texorpdfstring{setClockLoops()}{setClockLoops()}}
+{\footnotesize\ttfamily void Blink\+Component\+::set\+Clock\+Loops (\begin{DoxyParamCaption}\item[{unsigned int}]{count }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Set the number of loops of clock to switch the state of blink. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em clock\+Loops} & the number of loops of clock to switch the state of blink \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classBlinkComponent_a9e97854c4addaa7d523aa5621de40ac4}\label{classBlinkComponent_a9e97854c4addaa7d523aa5621de40ac4}} 
+\index{BlinkComponent@{BlinkComponent}!setClockName@{setClockName}}
+\index{setClockName@{setClockName}!BlinkComponent@{BlinkComponent}}
+\doxysubsubsection{\texorpdfstring{setClockName()}{setClockName()}}
+{\footnotesize\ttfamily void Blink\+Component\+::set\+Clock\+Name (\begin{DoxyParamCaption}\item[{const std\+::string}]{clock\+Name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Set the name of the clock. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em clock\+Name} & The name of the clock \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Client/\+Component/Blink\+Component.\+hpp\end{DoxyCompactItemize}

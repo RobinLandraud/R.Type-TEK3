@@ -1,0 +1,97 @@
+\hypertarget{structchaiscript_1_1AST__Node}{}\doxysection{chaiscript\+::AST\+\_\+\+Node Struct Reference}
+\label{structchaiscript_1_1AST__Node}\index{chaiscript::AST\_Node@{chaiscript::AST\_Node}}
+
+
+Struct that doubles as both a parser ast\+\_\+node and an AST node.  
+
+
+
+
+{\ttfamily \#include $<$chaiscript\+\_\+common.\+hpp$>$}
+
+Inheritance diagram for chaiscript\+::AST\+\_\+\+Node\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=12.000000cm]{d6/d70/structchaiscript_1_1AST__Node}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structchaiscript_1_1AST__Node_aea98e0b3ac4c8cf9d2e8256dc3f28277}\label{structchaiscript_1_1AST__Node_aea98e0b3ac4c8cf9d2e8256dc3f28277}} 
+const std\+::string \& {\bfseries filename} () const
+\item 
+\mbox{\Hypertarget{structchaiscript_1_1AST__Node_aa58738f562b1061931d3ee9f5abaa97b}\label{structchaiscript_1_1AST__Node_aa58738f562b1061931d3ee9f5abaa97b}} 
+const \mbox{\hyperlink{structchaiscript_1_1File__Position}{File\+\_\+\+Position}} \& {\bfseries start} () const
+\item 
+\mbox{\Hypertarget{structchaiscript_1_1AST__Node_ab1a10b8f25d87f9a549f73b74b1aa56e}\label{structchaiscript_1_1AST__Node_ab1a10b8f25d87f9a549f73b74b1aa56e}} 
+const \mbox{\hyperlink{structchaiscript_1_1File__Position}{File\+\_\+\+Position}} \& {\bfseries end} () const
+\item 
+\mbox{\Hypertarget{structchaiscript_1_1AST__Node_ac5ee31f4832a7a47707add6cc6d54d22}\label{structchaiscript_1_1AST__Node_ac5ee31f4832a7a47707add6cc6d54d22}} 
+std\+::string {\bfseries pretty\+\_\+print} () const
+\item 
+\mbox{\Hypertarget{structchaiscript_1_1AST__Node_accc20427f2ec7ad240f50cd98b205865}\label{structchaiscript_1_1AST__Node_accc20427f2ec7ad240f50cd98b205865}} 
+virtual std\+::vector$<$ std\+::reference\+\_\+wrapper$<$ \mbox{\hyperlink{structchaiscript_1_1AST__Node}{AST\+\_\+\+Node}} $>$ $>$ {\bfseries get\+\_\+children} () const =0
+\item 
+\mbox{\Hypertarget{structchaiscript_1_1AST__Node_ad55ff88978c17bd8ec013da551160cbc}\label{structchaiscript_1_1AST__Node_ad55ff88978c17bd8ec013da551160cbc}} 
+virtual \mbox{\hyperlink{classchaiscript_1_1Boxed__Value}{Boxed\+\_\+\+Value}} {\bfseries eval} (const \mbox{\hyperlink{classchaiscript_1_1detail_1_1Dispatch__State}{chaiscript\+::detail\+::\+Dispatch\+\_\+\+State}} \&t\+\_\+e) const =0
+\item 
+std\+::string \mbox{\hyperlink{structchaiscript_1_1AST__Node_acb8f405b7d3d36fb7b476e9912071f6b}{to\+\_\+string}} (const std\+::string \&t\+\_\+prepend=\char`\"{}\char`\"{}) const
+\begin{DoxyCompactList}\small\item\em Prints the contents of an AST node, including its children, recursively. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structchaiscript_1_1AST__Node_a4b5a66e06575e22e3e2c4e6bd712cb94}\label{structchaiscript_1_1AST__Node_a4b5a66e06575e22e3e2c4e6bd712cb94}} 
+{\bfseries AST\+\_\+\+Node} (\mbox{\hyperlink{structchaiscript_1_1AST__Node}{AST\+\_\+\+Node}} \&\&)=default
+\item 
+\mbox{\Hypertarget{structchaiscript_1_1AST__Node_afb77bd6165b2b4ba59f8f1bd6da2c806}\label{structchaiscript_1_1AST__Node_afb77bd6165b2b4ba59f8f1bd6da2c806}} 
+\mbox{\hyperlink{structchaiscript_1_1AST__Node}{AST\+\_\+\+Node}} \& {\bfseries operator=} (\mbox{\hyperlink{structchaiscript_1_1AST__Node}{AST\+\_\+\+Node}} \&\&)=default
+\item 
+\mbox{\Hypertarget{structchaiscript_1_1AST__Node_a62e2fbd56e7f1ab67bf6b01c44964b05}\label{structchaiscript_1_1AST__Node_a62e2fbd56e7f1ab67bf6b01c44964b05}} 
+{\bfseries AST\+\_\+\+Node} (const \mbox{\hyperlink{structchaiscript_1_1AST__Node}{AST\+\_\+\+Node}} \&)=delete
+\item 
+\mbox{\Hypertarget{structchaiscript_1_1AST__Node_ababa4ed9caf8544349964764819d8323}\label{structchaiscript_1_1AST__Node_ababa4ed9caf8544349964764819d8323}} 
+\mbox{\hyperlink{structchaiscript_1_1AST__Node}{AST\+\_\+\+Node}} \& {\bfseries operator=} (const \mbox{\hyperlink{structchaiscript_1_1AST__Node}{AST\+\_\+\+Node}} \&)=delete
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structchaiscript_1_1AST__Node_aff372cb330c109000f9a4424be7e85e4}\label{structchaiscript_1_1AST__Node_aff372cb330c109000f9a4424be7e85e4}} 
+static bool {\bfseries get\+\_\+bool\+\_\+condition} (const \mbox{\hyperlink{classchaiscript_1_1Boxed__Value}{Boxed\+\_\+\+Value}} \&t\+\_\+bv, const \mbox{\hyperlink{classchaiscript_1_1detail_1_1Dispatch__State}{chaiscript\+::detail\+::\+Dispatch\+\_\+\+State}} \&t\+\_\+ss)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structchaiscript_1_1AST__Node_a8b3b27244dcfaa00ba6e4ce26392b715}\label{structchaiscript_1_1AST__Node_a8b3b27244dcfaa00ba6e4ce26392b715}} 
+const \mbox{\hyperlink{namespacechaiscript_aadbe98f65a9ef492fbf506733dec41d9}{AST\+\_\+\+Node\+\_\+\+Type}} {\bfseries identifier}
+\item 
+\mbox{\Hypertarget{structchaiscript_1_1AST__Node_a63e939d6973e706505b1e3942d594559}\label{structchaiscript_1_1AST__Node_a63e939d6973e706505b1e3942d594559}} 
+const std\+::string {\bfseries text}
+\item 
+\mbox{\Hypertarget{structchaiscript_1_1AST__Node_abf542a3954b1097c9fe728b5b2990ec3}\label{structchaiscript_1_1AST__Node_abf542a3954b1097c9fe728b5b2990ec3}} 
+\mbox{\hyperlink{structchaiscript_1_1Parse__Location}{Parse\+\_\+\+Location}} {\bfseries location}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structchaiscript_1_1AST__Node_a6769fbc06fb88251ce933e9c1cf1f263}\label{structchaiscript_1_1AST__Node_a6769fbc06fb88251ce933e9c1cf1f263}} 
+{\bfseries AST\+\_\+\+Node} (std\+::string t\+\_\+ast\+\_\+node\+\_\+text, \mbox{\hyperlink{namespacechaiscript_aadbe98f65a9ef492fbf506733dec41d9}{AST\+\_\+\+Node\+\_\+\+Type}} t\+\_\+id, \mbox{\hyperlink{structchaiscript_1_1Parse__Location}{Parse\+\_\+\+Location}} t\+\_\+loc)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Struct that doubles as both a parser ast\+\_\+node and an AST node. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{structchaiscript_1_1AST__Node_acb8f405b7d3d36fb7b476e9912071f6b}\label{structchaiscript_1_1AST__Node_acb8f405b7d3d36fb7b476e9912071f6b}} 
+\index{chaiscript::AST\_Node@{chaiscript::AST\_Node}!to\_string@{to\_string}}
+\index{to\_string@{to\_string}!chaiscript::AST\_Node@{chaiscript::AST\_Node}}
+\doxysubsubsection{\texorpdfstring{to\_string()}{to\_string()}}
+{\footnotesize\ttfamily std\+::string chaiscript\+::\+AST\+\_\+\+Node\+::to\+\_\+string (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{t\+\_\+prepend = {\ttfamily \char`\"{}\char`\"{}} }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Prints the contents of an AST node, including its children, recursively. 
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Chai\+Script-\/6.\+1.\+0/include/chaiscript/language/chaiscript\+\_\+common.\+hpp\end{DoxyCompactItemize}

@@ -1,0 +1,203 @@
+\hypertarget{classServerPropertiesComponent}{}\doxysection{Server\+Properties\+Component Class Reference}
+\label{classServerPropertiesComponent}\index{ServerPropertiesComponent@{ServerPropertiesComponent}}
+
+
+A component that handle the server properties. Used to create a server properties.  
+
+
+
+
+{\ttfamily \#include $<$Server\+Properties\+Component.\+hpp$>$}
+
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{structServerPropertiesComponent_1_1BufferMethod}{Buffer\+Method}}
+\begin{DoxyCompactList}\small\item\em A class that handle the buffer method. Used to create a buffer method. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classServerPropertiesComponent_aa47a0f1220a4578721d97f50e711cc19}{Server\+Properties\+Component}} (size\+\_\+t p\+\_\+id) noexcept
+\begin{DoxyCompactList}\small\item\em Default constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classServerPropertiesComponent_a8023724b0635af9abf758deafcb23036}{$\sim$\+Server\+Properties\+Component}} () noexcept=default
+\item 
+\mbox{\hyperlink{classServerPropertiesComponent_a6fba401d06714d5a5251774abb6f5e38}{Server\+Properties\+Component}} (\mbox{\hyperlink{classServerPropertiesComponent}{Server\+Properties\+Component}} const \&) noexcept=default
+\item 
+\mbox{\hyperlink{classServerPropertiesComponent_a9852a4816be799fabb6ad3e123bd5a8f}{Server\+Properties\+Component}} (\mbox{\hyperlink{classServerPropertiesComponent}{Server\+Properties\+Component}} \&\&) noexcept=default
+\item 
+\mbox{\hyperlink{classServerPropertiesComponent}{Server\+Properties\+Component}} \& \mbox{\hyperlink{classServerPropertiesComponent_a071c4a590a729a511b8c9f9aefeefa47}{operator=}} (\mbox{\hyperlink{classServerPropertiesComponent}{Server\+Properties\+Component}} const \&) noexcept=default
+\item 
+\mbox{\hyperlink{classServerPropertiesComponent}{Server\+Properties\+Component}} \& \mbox{\hyperlink{classServerPropertiesComponent_acd834feaaaa26f9c639d7bfdfdc0d04a}{operator=}} (\mbox{\hyperlink{classServerPropertiesComponent}{Server\+Properties\+Component}} \&\&) noexcept=default
+\item 
+\mbox{\hyperlink{classServerPropertiesComponent_a60295390ba55df62100e445cb1c0ed91}{operator size\+\_\+t}} () const
+\begin{DoxyCompactList}\small\item\em Get the id of the server. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classServerPropertiesComponent_ac4159925071d552b18dcecf8f437fd98}{is\+Update}} ()
+\begin{DoxyCompactList}\small\item\em Check if the server need to be updated. \end{DoxyCompactList}\item 
+std\+::vector$<$ \mbox{\hyperlink{structServerPropertiesComponent_1_1BufferMethod}{Buffer\+Method}} $>$ \mbox{\hyperlink{classServerPropertiesComponent_ae6f9950a3002cb49332aa6579b42462d}{get\+Method\+List}} () const
+\begin{DoxyCompactList}\small\item\em Get the list of method to call. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classServerPropertiesComponent_a04b19d8b53a2df22712665fa4a5bfd52}{set\+Method\+List}} (std\+::vector$<$ \mbox{\hyperlink{structServerPropertiesComponent_1_1BufferMethod}{Buffer\+Method}} $>$ p\+\_\+args)
+\begin{DoxyCompactList}\small\item\em Set the list of method to call. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classServerPropertiesComponent_a90de40e79de59458523a5cf534cf429a}{add\+Method}} (\mbox{\hyperlink{structServerPropertiesComponent_1_1BufferMethod}{Buffer\+Method}} p\+\_\+method)
+\begin{DoxyCompactList}\small\item\em Add a method to the list of method to call. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classServerPropertiesComponent_ab65481145b7ce986205dfb02f2d4758a}{Build\+And\+Add\+Method}} (uint64\+\_\+t p\+\_\+header, std\+::string p\+\_\+buffer)
+\begin{DoxyCompactList}\small\item\em Build and add a method to the list of method to call. \end{DoxyCompactList}\item 
+size\+\_\+t \mbox{\hyperlink{classServerPropertiesComponent_a46d1691566e345e8dbafe920269364f2}{get\+Id}} () const
+\begin{DoxyCompactList}\small\item\em Get the id of the server. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A component that handle the server properties. Used to create a server properties. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classServerPropertiesComponent_aa47a0f1220a4578721d97f50e711cc19}\label{classServerPropertiesComponent_aa47a0f1220a4578721d97f50e711cc19}} 
+\index{ServerPropertiesComponent@{ServerPropertiesComponent}!ServerPropertiesComponent@{ServerPropertiesComponent}}
+\index{ServerPropertiesComponent@{ServerPropertiesComponent}!ServerPropertiesComponent@{ServerPropertiesComponent}}
+\doxysubsubsection{\texorpdfstring{ServerPropertiesComponent()}{ServerPropertiesComponent()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily Server\+Properties\+Component\+::\+Server\+Properties\+Component (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{p\+\_\+id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}, {\ttfamily [noexcept]}}
+
+
+
+Default constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+id} & The id of the server \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classServerPropertiesComponent_a8023724b0635af9abf758deafcb23036}\label{classServerPropertiesComponent_a8023724b0635af9abf758deafcb23036}} 
+\index{ServerPropertiesComponent@{ServerPropertiesComponent}!````~ServerPropertiesComponent@{$\sim$ServerPropertiesComponent}}
+\index{````~ServerPropertiesComponent@{$\sim$ServerPropertiesComponent}!ServerPropertiesComponent@{ServerPropertiesComponent}}
+\doxysubsubsection{\texorpdfstring{$\sim$ServerPropertiesComponent()}{~ServerPropertiesComponent()}}
+{\footnotesize\ttfamily Server\+Properties\+Component\+::$\sim$\+Server\+Properties\+Component (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}, {\ttfamily [noexcept]}}
+
+Default destructor \mbox{\Hypertarget{classServerPropertiesComponent_a6fba401d06714d5a5251774abb6f5e38}\label{classServerPropertiesComponent_a6fba401d06714d5a5251774abb6f5e38}} 
+\index{ServerPropertiesComponent@{ServerPropertiesComponent}!ServerPropertiesComponent@{ServerPropertiesComponent}}
+\index{ServerPropertiesComponent@{ServerPropertiesComponent}!ServerPropertiesComponent@{ServerPropertiesComponent}}
+\doxysubsubsection{\texorpdfstring{ServerPropertiesComponent()}{ServerPropertiesComponent()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily Server\+Properties\+Component\+::\+Server\+Properties\+Component (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classServerPropertiesComponent}{Server\+Properties\+Component}} const \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}, {\ttfamily [noexcept]}}
+
+Copy constructor \mbox{\Hypertarget{classServerPropertiesComponent_a9852a4816be799fabb6ad3e123bd5a8f}\label{classServerPropertiesComponent_a9852a4816be799fabb6ad3e123bd5a8f}} 
+\index{ServerPropertiesComponent@{ServerPropertiesComponent}!ServerPropertiesComponent@{ServerPropertiesComponent}}
+\index{ServerPropertiesComponent@{ServerPropertiesComponent}!ServerPropertiesComponent@{ServerPropertiesComponent}}
+\doxysubsubsection{\texorpdfstring{ServerPropertiesComponent()}{ServerPropertiesComponent()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily Server\+Properties\+Component\+::\+Server\+Properties\+Component (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classServerPropertiesComponent}{Server\+Properties\+Component}} \&\&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}, {\ttfamily [noexcept]}}
+
+Move constructor 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classServerPropertiesComponent_a90de40e79de59458523a5cf534cf429a}\label{classServerPropertiesComponent_a90de40e79de59458523a5cf534cf429a}} 
+\index{ServerPropertiesComponent@{ServerPropertiesComponent}!addMethod@{addMethod}}
+\index{addMethod@{addMethod}!ServerPropertiesComponent@{ServerPropertiesComponent}}
+\doxysubsubsection{\texorpdfstring{addMethod()}{addMethod()}}
+{\footnotesize\ttfamily void Server\+Properties\+Component\+::add\+Method (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structServerPropertiesComponent_1_1BufferMethod}{Buffer\+Method}}}]{p\+\_\+method }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Add a method to the list of method to call. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+method} & The method to add \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classServerPropertiesComponent_ab65481145b7ce986205dfb02f2d4758a}\label{classServerPropertiesComponent_ab65481145b7ce986205dfb02f2d4758a}} 
+\index{ServerPropertiesComponent@{ServerPropertiesComponent}!BuildAndAddMethod@{BuildAndAddMethod}}
+\index{BuildAndAddMethod@{BuildAndAddMethod}!ServerPropertiesComponent@{ServerPropertiesComponent}}
+\doxysubsubsection{\texorpdfstring{BuildAndAddMethod()}{BuildAndAddMethod()}}
+{\footnotesize\ttfamily void Server\+Properties\+Component\+::\+Build\+And\+Add\+Method (\begin{DoxyParamCaption}\item[{uint64\+\_\+t}]{p\+\_\+header,  }\item[{std\+::string}]{p\+\_\+buffer }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Build and add a method to the list of method to call. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+header} & The header of the method \\
+\hline
+{\em p\+\_\+buffer} & The buffer of the method \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classServerPropertiesComponent_a46d1691566e345e8dbafe920269364f2}\label{classServerPropertiesComponent_a46d1691566e345e8dbafe920269364f2}} 
+\index{ServerPropertiesComponent@{ServerPropertiesComponent}!getId@{getId}}
+\index{getId@{getId}!ServerPropertiesComponent@{ServerPropertiesComponent}}
+\doxysubsubsection{\texorpdfstring{getId()}{getId()}}
+{\footnotesize\ttfamily size\+\_\+t Server\+Properties\+Component\+::get\+Id (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the id of the server. 
+
+\begin{DoxyReturn}{Returns}
+The id of the server 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classServerPropertiesComponent_ae6f9950a3002cb49332aa6579b42462d}\label{classServerPropertiesComponent_ae6f9950a3002cb49332aa6579b42462d}} 
+\index{ServerPropertiesComponent@{ServerPropertiesComponent}!getMethodList@{getMethodList}}
+\index{getMethodList@{getMethodList}!ServerPropertiesComponent@{ServerPropertiesComponent}}
+\doxysubsubsection{\texorpdfstring{getMethodList()}{getMethodList()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{structServerPropertiesComponent_1_1BufferMethod}{Buffer\+Method}} $>$ Server\+Properties\+Component\+::get\+Method\+List (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the list of method to call. 
+
+\begin{DoxyReturn}{Returns}
+The list of method to call 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classServerPropertiesComponent_ac4159925071d552b18dcecf8f437fd98}\label{classServerPropertiesComponent_ac4159925071d552b18dcecf8f437fd98}} 
+\index{ServerPropertiesComponent@{ServerPropertiesComponent}!isUpdate@{isUpdate}}
+\index{isUpdate@{isUpdate}!ServerPropertiesComponent@{ServerPropertiesComponent}}
+\doxysubsubsection{\texorpdfstring{isUpdate()}{isUpdate()}}
+{\footnotesize\ttfamily bool Server\+Properties\+Component\+::is\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Check if the server need to be updated. 
+
+\begin{DoxyReturn}{Returns}
+true if the server need to be updated, false otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classServerPropertiesComponent_a60295390ba55df62100e445cb1c0ed91}\label{classServerPropertiesComponent_a60295390ba55df62100e445cb1c0ed91}} 
+\index{ServerPropertiesComponent@{ServerPropertiesComponent}!operator size\_t@{operator size\_t}}
+\index{operator size\_t@{operator size\_t}!ServerPropertiesComponent@{ServerPropertiesComponent}}
+\doxysubsubsection{\texorpdfstring{operator size\_t()}{operator size\_t()}}
+{\footnotesize\ttfamily Server\+Properties\+Component\+::operator size\+\_\+t (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}
+
+
+
+Get the id of the server. 
+
+\begin{DoxyReturn}{Returns}
+size\+\_\+t The id of the server 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classServerPropertiesComponent_acd834feaaaa26f9c639d7bfdfdc0d04a}\label{classServerPropertiesComponent_acd834feaaaa26f9c639d7bfdfdc0d04a}} 
+\index{ServerPropertiesComponent@{ServerPropertiesComponent}!operator=@{operator=}}
+\index{operator=@{operator=}!ServerPropertiesComponent@{ServerPropertiesComponent}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classServerPropertiesComponent}{Server\+Properties\+Component}}\& Server\+Properties\+Component\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classServerPropertiesComponent}{Server\+Properties\+Component}} \&\&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}, {\ttfamily [noexcept]}}
+
+Move assignment operator \mbox{\Hypertarget{classServerPropertiesComponent_a071c4a590a729a511b8c9f9aefeefa47}\label{classServerPropertiesComponent_a071c4a590a729a511b8c9f9aefeefa47}} 
+\index{ServerPropertiesComponent@{ServerPropertiesComponent}!operator=@{operator=}}
+\index{operator=@{operator=}!ServerPropertiesComponent@{ServerPropertiesComponent}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classServerPropertiesComponent}{Server\+Properties\+Component}}\& Server\+Properties\+Component\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classServerPropertiesComponent}{Server\+Properties\+Component}} const \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}, {\ttfamily [noexcept]}}
+
+Copy assignment operator \mbox{\Hypertarget{classServerPropertiesComponent_a04b19d8b53a2df22712665fa4a5bfd52}\label{classServerPropertiesComponent_a04b19d8b53a2df22712665fa4a5bfd52}} 
+\index{ServerPropertiesComponent@{ServerPropertiesComponent}!setMethodList@{setMethodList}}
+\index{setMethodList@{setMethodList}!ServerPropertiesComponent@{ServerPropertiesComponent}}
+\doxysubsubsection{\texorpdfstring{setMethodList()}{setMethodList()}}
+{\footnotesize\ttfamily void Server\+Properties\+Component\+::set\+Method\+List (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \mbox{\hyperlink{structServerPropertiesComponent_1_1BufferMethod}{Buffer\+Method}} $>$}]{p\+\_\+args }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Set the list of method to call. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+args} & The list of method to call \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Client/\+Component/Server\+Properties\+Component.\+hpp\end{DoxyCompactItemize}

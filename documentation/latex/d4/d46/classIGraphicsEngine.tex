@@ -1,0 +1,182 @@
+\hypertarget{classIGraphicsEngine}{}\doxysection{IGraphics\+Engine Class Reference}
+\label{classIGraphicsEngine}\index{IGraphicsEngine@{IGraphicsEngine}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{classIGraphicsEngine_a817b7a3021112dc8938a0d2eaa03052e}{$\sim$\+IGraphics\+Engine}} ()=default
+\item 
+virtual int \mbox{\hyperlink{classIGraphicsEngine_aa076a56be2b9d3b16a1aec9c49072063}{create\+Sprite}} (std\+::string \&name, std\+::string \&source)=0
+\begin{DoxyCompactList}\small\item\em Create a sprite. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classIGraphicsEngine_ad1a2c625fa47786525e29f48e2c05b67}{draw\+Sprite}} (std\+::string \&name, unsigned int x, unsigned int y)=0
+\item 
+virtual int \mbox{\hyperlink{classIGraphicsEngine_ab6bdab7eb151d6ac7eff0caedcdf3b15}{create\+Circle}} (std\+::string \&name, unsigned int radius)=0
+\begin{DoxyCompactList}\small\item\em Create a circle. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classIGraphicsEngine_a7767610bf62b39fa27625c5c2c3dfae2}{draw\+Circle}} (std\+::string \&name, unsigned int x, unsigned int y)=0
+\item 
+virtual int \mbox{\hyperlink{classIGraphicsEngine_aaa471a6a46b7cb143a7ff661b3dbabc1}{create\+Rectangle}} (std\+::string \&name, unsigned int width, unsigned int height)=0
+\item 
+virtual void \mbox{\hyperlink{classIGraphicsEngine_a2bf77049601338ed913ca89ac7c0c4ec}{draw\+Rectangle}} (std\+::string \&name, unsigned int x, unsigned int y)=0
+\item 
+virtual int \mbox{\hyperlink{classIGraphicsEngine_ae8ff28b897ce2212ff25152845bbad54}{create\+Font}} (std\+::string \&name, std\+::string \&source)=0
+\begin{DoxyCompactList}\small\item\em Create a font. \end{DoxyCompactList}\item 
+virtual int \mbox{\hyperlink{classIGraphicsEngine_acf2dc855b28ae7f2b7d391bd48f90bea}{create\+Text}} (std\+::string \&name, std\+::string \&text, std\+::string \&font, unsigned int size)=0
+\item 
+virtual void \mbox{\hyperlink{classIGraphicsEngine_a69997436a200fba33aafa69e45ac474d}{draw\+Text}} (std\+::string \&text, unsigned int x, unsigned int y)=0
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classIGraphicsEngine_a817b7a3021112dc8938a0d2eaa03052e}\label{classIGraphicsEngine_a817b7a3021112dc8938a0d2eaa03052e}} 
+\index{IGraphicsEngine@{IGraphicsEngine}!````~IGraphicsEngine@{$\sim$IGraphicsEngine}}
+\index{````~IGraphicsEngine@{$\sim$IGraphicsEngine}!IGraphicsEngine@{IGraphicsEngine}}
+\doxysubsubsection{\texorpdfstring{$\sim$IGraphicsEngine()}{~IGraphicsEngine()}}
+{\footnotesize\ttfamily virtual IGraphics\+Engine\+::$\sim$\+IGraphics\+Engine (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [default]}}
+
+Default destructor 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classIGraphicsEngine_ab6bdab7eb151d6ac7eff0caedcdf3b15}\label{classIGraphicsEngine_ab6bdab7eb151d6ac7eff0caedcdf3b15}} 
+\index{IGraphicsEngine@{IGraphicsEngine}!createCircle@{createCircle}}
+\index{createCircle@{createCircle}!IGraphicsEngine@{IGraphicsEngine}}
+\doxysubsubsection{\texorpdfstring{createCircle()}{createCircle()}}
+{\footnotesize\ttfamily int IGraphics\+Engine\+::create\+Circle (\begin{DoxyParamCaption}\item[{std\+::string \&}]{name,  }\item[{unsigned int}]{radius }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Create a circle. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & Name of the circle \\
+\hline
+{\em radius} & Radius of the circle \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Error code 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classIGraphicsEngine_ae8ff28b897ce2212ff25152845bbad54}\label{classIGraphicsEngine_ae8ff28b897ce2212ff25152845bbad54}} 
+\index{IGraphicsEngine@{IGraphicsEngine}!createFont@{createFont}}
+\index{createFont@{createFont}!IGraphicsEngine@{IGraphicsEngine}}
+\doxysubsubsection{\texorpdfstring{createFont()}{createFont()}}
+{\footnotesize\ttfamily int IGraphics\+Engine\+::create\+Font (\begin{DoxyParamCaption}\item[{std\+::string \&}]{name,  }\item[{std\+::string \&}]{source }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Create a font. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & Name of the font \\
+\hline
+{\em source} & Path to the font file \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Error code 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classIGraphicsEngine_aaa471a6a46b7cb143a7ff661b3dbabc1}\label{classIGraphicsEngine_aaa471a6a46b7cb143a7ff661b3dbabc1}} 
+\index{IGraphicsEngine@{IGraphicsEngine}!createRectangle@{createRectangle}}
+\index{createRectangle@{createRectangle}!IGraphicsEngine@{IGraphicsEngine}}
+\doxysubsubsection{\texorpdfstring{createRectangle()}{createRectangle()}}
+{\footnotesize\ttfamily int IGraphics\+Engine\+::create\+Rectangle (\begin{DoxyParamCaption}\item[{std\+::string \&}]{name,  }\item[{unsigned int}]{width,  }\item[{unsigned int}]{height }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+the rectangle
+\begin{DoxyParams}{Parameters}
+{\em width} & Width of the rectangle\\
+\hline
+{\em height} & Height of the rectangle \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Error code 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classIGraphicsEngine_aa076a56be2b9d3b16a1aec9c49072063}\label{classIGraphicsEngine_aa076a56be2b9d3b16a1aec9c49072063}} 
+\index{IGraphicsEngine@{IGraphicsEngine}!createSprite@{createSprite}}
+\index{createSprite@{createSprite}!IGraphicsEngine@{IGraphicsEngine}}
+\doxysubsubsection{\texorpdfstring{createSprite()}{createSprite()}}
+{\footnotesize\ttfamily int IGraphics\+Engine\+::create\+Sprite (\begin{DoxyParamCaption}\item[{std\+::string \&}]{name,  }\item[{std\+::string \&}]{source }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Create a sprite. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & Name of the sprite \\
+\hline
+{\em source} & Path to the sprite file \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Error code 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classIGraphicsEngine_acf2dc855b28ae7f2b7d391bd48f90bea}\label{classIGraphicsEngine_acf2dc855b28ae7f2b7d391bd48f90bea}} 
+\index{IGraphicsEngine@{IGraphicsEngine}!createText@{createText}}
+\index{createText@{createText}!IGraphicsEngine@{IGraphicsEngine}}
+\doxysubsubsection{\texorpdfstring{createText()}{createText()}}
+{\footnotesize\ttfamily int IGraphics\+Engine\+::create\+Text (\begin{DoxyParamCaption}\item[{std\+::string \&}]{name,  }\item[{std\+::string \&}]{text,  }\item[{std\+::string \&}]{font,  }\item[{unsigned int}]{size }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+name Name of the text
+\begin{DoxyParams}{Parameters}
+{\em text} & Text to display\\
+\hline
+{\em font} & Name of the font\\
+\hline
+{\em size} & Size of the text \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Error code 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classIGraphicsEngine_a7767610bf62b39fa27625c5c2c3dfae2}\label{classIGraphicsEngine_a7767610bf62b39fa27625c5c2c3dfae2}} 
+\index{IGraphicsEngine@{IGraphicsEngine}!drawCircle@{drawCircle}}
+\index{drawCircle@{drawCircle}!IGraphicsEngine@{IGraphicsEngine}}
+\doxysubsubsection{\texorpdfstring{drawCircle()}{drawCircle()}}
+{\footnotesize\ttfamily void IGraphics\+Engine\+::draw\+Circle (\begin{DoxyParamCaption}\item[{std\+::string \&}]{name,  }\item[{unsigned int}]{x,  }\item[{unsigned int}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+X position of the circle
+\begin{DoxyParams}{Parameters}
+{\em y} & Y position of the circle \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classIGraphicsEngine_a2bf77049601338ed913ca89ac7c0c4ec}\label{classIGraphicsEngine_a2bf77049601338ed913ca89ac7c0c4ec}} 
+\index{IGraphicsEngine@{IGraphicsEngine}!drawRectangle@{drawRectangle}}
+\index{drawRectangle@{drawRectangle}!IGraphicsEngine@{IGraphicsEngine}}
+\doxysubsubsection{\texorpdfstring{drawRectangle()}{drawRectangle()}}
+{\footnotesize\ttfamily void IGraphics\+Engine\+::draw\+Rectangle (\begin{DoxyParamCaption}\item[{std\+::string \&}]{name,  }\item[{unsigned int}]{x,  }\item[{unsigned int}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+rectangle
+\begin{DoxyParams}{Parameters}
+{\em x} & X position of the rectangle\\
+\hline
+{\em y} & Y position of the rectangle \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classIGraphicsEngine_ad1a2c625fa47786525e29f48e2c05b67}\label{classIGraphicsEngine_ad1a2c625fa47786525e29f48e2c05b67}} 
+\index{IGraphicsEngine@{IGraphicsEngine}!drawSprite@{drawSprite}}
+\index{drawSprite@{drawSprite}!IGraphicsEngine@{IGraphicsEngine}}
+\doxysubsubsection{\texorpdfstring{drawSprite()}{drawSprite()}}
+{\footnotesize\ttfamily void IGraphics\+Engine\+::draw\+Sprite (\begin{DoxyParamCaption}\item[{std\+::string \&}]{name,  }\item[{unsigned int}]{x,  }\item[{unsigned int}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+X position of the sprite
+\begin{DoxyParams}{Parameters}
+{\em y} & Y position of the sprite \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classIGraphicsEngine_a69997436a200fba33aafa69e45ac474d}\label{classIGraphicsEngine_a69997436a200fba33aafa69e45ac474d}} 
+\index{IGraphicsEngine@{IGraphicsEngine}!drawText@{drawText}}
+\index{drawText@{drawText}!IGraphicsEngine@{IGraphicsEngine}}
+\doxysubsubsection{\texorpdfstring{drawText()}{drawText()}}
+{\footnotesize\ttfamily void IGraphics\+Engine\+::draw\+Text (\begin{DoxyParamCaption}\item[{std\+::string \&}]{text,  }\item[{unsigned int}]{x,  }\item[{unsigned int}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+position of the text
+\begin{DoxyParams}{Parameters}
+{\em y} & Y position of the text \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Client/\+IEngine/IGraphics\+Engine.\+hpp\end{DoxyCompactItemize}

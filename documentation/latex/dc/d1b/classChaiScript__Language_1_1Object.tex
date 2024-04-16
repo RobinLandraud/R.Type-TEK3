@@ -1,0 +1,145 @@
+\hypertarget{classChaiScript__Language_1_1Object}{}\doxysection{Chai\+Script\+\_\+\+Language\+::Object Class Reference}
+\label{classChaiScript__Language_1_1Object}\index{ChaiScript\_Language::Object@{ChaiScript\_Language::Object}}
+
+
+Generic concept of a value in Chai\+Script.  
+
+
+
+
+{\ttfamily \#include $<$chaiscript\+\_\+prelude\+\_\+docs.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classChaiScript__Language_1_1Type__Info}{Type\+\_\+\+Info}} \mbox{\hyperlink{classChaiScript__Language_1_1Object_aecc27d010b89f57169b218806cd397cf}{get\+\_\+type\+\_\+info}} () const
+\begin{DoxyCompactList}\small\item\em Returns the \mbox{\hyperlink{classChaiScript__Language_1_1Type__Info}{Type\+\_\+\+Info}} value for this \mbox{\hyperlink{classChaiScript__Language_1_1Object}{Object}}. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classChaiScript__Language_1_1Object_ab808c237efadce76cc0aa1a99270f447}{is\+\_\+type}} (\mbox{\hyperlink{classChaiScript__Language_1_1string}{string}}) const
+\begin{DoxyCompactList}\small\item\em Returns true if the \mbox{\hyperlink{classChaiScript__Language_1_1Object}{Object}} is of the named type. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classChaiScript__Language_1_1Object_a4b9f1bb6ee803916f0cb0846839f4cb5}{is\+\_\+type}} (\mbox{\hyperlink{classChaiScript__Language_1_1Type__Info}{Type\+\_\+\+Info}}) const
+\begin{DoxyCompactList}\small\item\em Returns true if the \mbox{\hyperlink{classChaiScript__Language_1_1Object}{Object}} is of the \mbox{\hyperlink{classChaiScript__Language_1_1Type__Info}{Type\+\_\+\+Info}} passed in. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classChaiScript__Language_1_1Object_aff781216b4221cfcd03a4554b6d802e3}{is\+\_\+var\+\_\+const}} () const
+\begin{DoxyCompactList}\small\item\em Returns true if the \mbox{\hyperlink{classChaiScript__Language_1_1Object}{Object}} is immutable. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classChaiScript__Language_1_1Object_a993d36094985a34879dca1901d443289}{is\+\_\+var\+\_\+null}} () const
+\begin{DoxyCompactList}\small\item\em Returns true if the \mbox{\hyperlink{classChaiScript__Language_1_1Object}{Object}} is a pointer and the pointer is null. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classChaiScript__Language_1_1Object_a183cca198b3c05815ab71d9d0e2ad1f9}{is\+\_\+var\+\_\+pointer}} () const
+\begin{DoxyCompactList}\small\item\em Returns true if the \mbox{\hyperlink{classChaiScript__Language_1_1Object}{Object}} is stored as a pointer. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classChaiScript__Language_1_1Object_ae0309a61dbdcf7ac6bad972d4381e36c}{is\+\_\+var\+\_\+reference}} () const
+\begin{DoxyCompactList}\small\item\em Returns true if the \mbox{\hyperlink{classChaiScript__Language_1_1Object}{Object}} is stored as a reference ~\newline
+ \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classChaiScript__Language_1_1Object_a7b90e07274220e7ec4ac2ab7ea71e62e}{is\+\_\+var\+\_\+undef}} () const
+\begin{DoxyCompactList}\small\item\em Returns true if the \mbox{\hyperlink{classChaiScript__Language_1_1Object}{Object}} does not contain a value is is undefined. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classChaiScript__Language_1_1string}{string}} \mbox{\hyperlink{classChaiScript__Language_1_1Object_a74d3cf3daa63f6206b2cbe78ae44de82}{type\+\_\+name}} () const
+\begin{DoxyCompactList}\small\item\em Returns the registered name of the type of the object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Generic concept of a value in Chai\+Script. 
+
+The \mbox{\hyperlink{classChaiScript__Language_1_1Object}{Object}} type exists merely as a concept. All objects in Chai\+Script support this concept and have the following methods available to them. All objects are stored internally as \mbox{\hyperlink{classchaiscript_1_1Boxed__Value}{chaiscript\+::\+Boxed\+\_\+\+Value}} types.
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classchaiscript_1_1Boxed__Value}{chaiscript\+::\+Boxed\+\_\+\+Value}} 
+\end{DoxySeeAlso}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classChaiScript__Language_1_1Object_aecc27d010b89f57169b218806cd397cf}\label{classChaiScript__Language_1_1Object_aecc27d010b89f57169b218806cd397cf}} 
+\index{ChaiScript\_Language::Object@{ChaiScript\_Language::Object}!get\_type\_info@{get\_type\_info}}
+\index{get\_type\_info@{get\_type\_info}!ChaiScript\_Language::Object@{ChaiScript\_Language::Object}}
+\doxysubsubsection{\texorpdfstring{get\_type\_info()}{get\_type\_info()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classChaiScript__Language_1_1Type__Info}{Type\+\_\+\+Info}} Chai\+Script\+\_\+\+Language\+::\+Object\+::get\+\_\+type\+\_\+info (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Returns the \mbox{\hyperlink{classChaiScript__Language_1_1Type__Info}{Type\+\_\+\+Info}} value for this \mbox{\hyperlink{classChaiScript__Language_1_1Object}{Object}}. 
+
+\mbox{\Hypertarget{classChaiScript__Language_1_1Object_ab808c237efadce76cc0aa1a99270f447}\label{classChaiScript__Language_1_1Object_ab808c237efadce76cc0aa1a99270f447}} 
+\index{ChaiScript\_Language::Object@{ChaiScript\_Language::Object}!is\_type@{is\_type}}
+\index{is\_type@{is\_type}!ChaiScript\_Language::Object@{ChaiScript\_Language::Object}}
+\doxysubsubsection{\texorpdfstring{is\_type()}{is\_type()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily bool Chai\+Script\+\_\+\+Language\+::\+Object\+::is\+\_\+type (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classChaiScript__Language_1_1string}{string}}}]{ }\end{DoxyParamCaption}) const}
+
+
+
+Returns true if the \mbox{\hyperlink{classChaiScript__Language_1_1Object}{Object}} is of the named type. 
+
+\mbox{\Hypertarget{classChaiScript__Language_1_1Object_a4b9f1bb6ee803916f0cb0846839f4cb5}\label{classChaiScript__Language_1_1Object_a4b9f1bb6ee803916f0cb0846839f4cb5}} 
+\index{ChaiScript\_Language::Object@{ChaiScript\_Language::Object}!is\_type@{is\_type}}
+\index{is\_type@{is\_type}!ChaiScript\_Language::Object@{ChaiScript\_Language::Object}}
+\doxysubsubsection{\texorpdfstring{is\_type()}{is\_type()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily bool Chai\+Script\+\_\+\+Language\+::\+Object\+::is\+\_\+type (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classChaiScript__Language_1_1Type__Info}{Type\+\_\+\+Info}}}]{ }\end{DoxyParamCaption}) const}
+
+
+
+Returns true if the \mbox{\hyperlink{classChaiScript__Language_1_1Object}{Object}} is of the \mbox{\hyperlink{classChaiScript__Language_1_1Type__Info}{Type\+\_\+\+Info}} passed in. 
+
+\mbox{\Hypertarget{classChaiScript__Language_1_1Object_aff781216b4221cfcd03a4554b6d802e3}\label{classChaiScript__Language_1_1Object_aff781216b4221cfcd03a4554b6d802e3}} 
+\index{ChaiScript\_Language::Object@{ChaiScript\_Language::Object}!is\_var\_const@{is\_var\_const}}
+\index{is\_var\_const@{is\_var\_const}!ChaiScript\_Language::Object@{ChaiScript\_Language::Object}}
+\doxysubsubsection{\texorpdfstring{is\_var\_const()}{is\_var\_const()}}
+{\footnotesize\ttfamily bool Chai\+Script\+\_\+\+Language\+::\+Object\+::is\+\_\+var\+\_\+const (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Returns true if the \mbox{\hyperlink{classChaiScript__Language_1_1Object}{Object}} is immutable. 
+
+\mbox{\Hypertarget{classChaiScript__Language_1_1Object_a993d36094985a34879dca1901d443289}\label{classChaiScript__Language_1_1Object_a993d36094985a34879dca1901d443289}} 
+\index{ChaiScript\_Language::Object@{ChaiScript\_Language::Object}!is\_var\_null@{is\_var\_null}}
+\index{is\_var\_null@{is\_var\_null}!ChaiScript\_Language::Object@{ChaiScript\_Language::Object}}
+\doxysubsubsection{\texorpdfstring{is\_var\_null()}{is\_var\_null()}}
+{\footnotesize\ttfamily bool Chai\+Script\+\_\+\+Language\+::\+Object\+::is\+\_\+var\+\_\+null (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Returns true if the \mbox{\hyperlink{classChaiScript__Language_1_1Object}{Object}} is a pointer and the pointer is null. 
+
+\mbox{\Hypertarget{classChaiScript__Language_1_1Object_a183cca198b3c05815ab71d9d0e2ad1f9}\label{classChaiScript__Language_1_1Object_a183cca198b3c05815ab71d9d0e2ad1f9}} 
+\index{ChaiScript\_Language::Object@{ChaiScript\_Language::Object}!is\_var\_pointer@{is\_var\_pointer}}
+\index{is\_var\_pointer@{is\_var\_pointer}!ChaiScript\_Language::Object@{ChaiScript\_Language::Object}}
+\doxysubsubsection{\texorpdfstring{is\_var\_pointer()}{is\_var\_pointer()}}
+{\footnotesize\ttfamily bool Chai\+Script\+\_\+\+Language\+::\+Object\+::is\+\_\+var\+\_\+pointer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Returns true if the \mbox{\hyperlink{classChaiScript__Language_1_1Object}{Object}} is stored as a pointer. 
+
+\mbox{\Hypertarget{classChaiScript__Language_1_1Object_ae0309a61dbdcf7ac6bad972d4381e36c}\label{classChaiScript__Language_1_1Object_ae0309a61dbdcf7ac6bad972d4381e36c}} 
+\index{ChaiScript\_Language::Object@{ChaiScript\_Language::Object}!is\_var\_reference@{is\_var\_reference}}
+\index{is\_var\_reference@{is\_var\_reference}!ChaiScript\_Language::Object@{ChaiScript\_Language::Object}}
+\doxysubsubsection{\texorpdfstring{is\_var\_reference()}{is\_var\_reference()}}
+{\footnotesize\ttfamily bool Chai\+Script\+\_\+\+Language\+::\+Object\+::is\+\_\+var\+\_\+reference (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Returns true if the \mbox{\hyperlink{classChaiScript__Language_1_1Object}{Object}} is stored as a reference ~\newline
+ 
+
+\mbox{\Hypertarget{classChaiScript__Language_1_1Object_a7b90e07274220e7ec4ac2ab7ea71e62e}\label{classChaiScript__Language_1_1Object_a7b90e07274220e7ec4ac2ab7ea71e62e}} 
+\index{ChaiScript\_Language::Object@{ChaiScript\_Language::Object}!is\_var\_undef@{is\_var\_undef}}
+\index{is\_var\_undef@{is\_var\_undef}!ChaiScript\_Language::Object@{ChaiScript\_Language::Object}}
+\doxysubsubsection{\texorpdfstring{is\_var\_undef()}{is\_var\_undef()}}
+{\footnotesize\ttfamily bool Chai\+Script\+\_\+\+Language\+::\+Object\+::is\+\_\+var\+\_\+undef (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Returns true if the \mbox{\hyperlink{classChaiScript__Language_1_1Object}{Object}} does not contain a value is is undefined. 
+
+\mbox{\Hypertarget{classChaiScript__Language_1_1Object_a74d3cf3daa63f6206b2cbe78ae44de82}\label{classChaiScript__Language_1_1Object_a74d3cf3daa63f6206b2cbe78ae44de82}} 
+\index{ChaiScript\_Language::Object@{ChaiScript\_Language::Object}!type\_name@{type\_name}}
+\index{type\_name@{type\_name}!ChaiScript\_Language::Object@{ChaiScript\_Language::Object}}
+\doxysubsubsection{\texorpdfstring{type\_name()}{type\_name()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classChaiScript__Language_1_1string}{string}} Chai\+Script\+\_\+\+Language\+::\+Object\+::type\+\_\+name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Returns the registered name of the type of the object. 
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classChaiScript__Language_1_1Type__Info_a90e9c842a167ffd11600fe105d1383a4}{Type\+\_\+\+Info\+::name()}}; 
+\end{DoxySeeAlso}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Chai\+Script-\/6.\+1.\+0/include/chaiscript/language/chaiscript\+\_\+prelude\+\_\+docs.\+hpp\end{DoxyCompactItemize}

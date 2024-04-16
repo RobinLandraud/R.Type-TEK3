@@ -1,0 +1,67 @@
+\href{https://www.patreon.com/bePatron?u=2977989&redirect_uri=https\%3A\%2F\%2Fwww.patreon.com\%2Flefticus}{\texttt{  }}
+
+Master Status\+: \href{https://travis-ci.org/ChaiScript/ChaiScript}{\texttt{ }} \href{https://ci.appveyor.com/project/lefticus/chaiscript}{\texttt{ }} \href{http://codecov.io/github/ChaiScript/ChaiScript?branch=master}{\texttt{ }}
+
+Develop Status\+: \href{https://travis-ci.org/ChaiScript/ChaiScript}{\texttt{ }} \href{https://ci.appveyor.com/project/lefticus/chaiscript/branch/develop}{\texttt{ }} \href{http://codecov.io/github/ChaiScript/ChaiScript?branch=develop}{\texttt{ }}
+
+\href{https://scan.coverity.com/projects/5297}{\texttt{  }}
+
+Chai\+Script
+
+\href{http://www.chaiscript.com}{\texttt{ http\+://www.\+chaiscript.\+com}}
+
+(c) 2009-\/2012 Jonathan Turner (c) 2009-\/2017 Jason Turner
+
+Release under the BSD license, see \char`\"{}license.\+txt\char`\"{} for details.\hypertarget{md_ChaiScript_6_1_0_readme_autotoc_md89}{}\doxysection{Introduction}\label{md_ChaiScript_6_1_0_readme_autotoc_md89}
+\href{https://gitter.im/ChaiScript/ChaiScript?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge}{\texttt{ }}
+
+Chai\+Script is one of the only embedded scripting language designed from the ground up to directly target C++ and take advantage of modern C++ development techniques, working with the developer like he expects it to work. Being a native C++ application, it has some advantages over existing embedded scripting languages\+:
+
+
+\begin{DoxyEnumerate}
+\item It uses a header-\/only approach, which makes it easy to integrate with existing projects.
+\item It maintains type safety between your C++ application and the user scripts.
+\item It supports a variety of C++ techniques including callbacks, overloaded functions, class methods, and stl containers.
+\end{DoxyEnumerate}\hypertarget{md_ChaiScript_6_1_0_readme_autotoc_md90}{}\doxysection{Requirements}\label{md_ChaiScript_6_1_0_readme_autotoc_md90}
+Chai\+Script requires a C++14 compiler to build with support for variadic templates. It has been tested with gcc 4.\+9 and clang 3.\+6 (with libcxx). For more information see the build \href{http://chaiscript.com/ChaiScript-BuildResults/index.html}{\texttt{ dashboard}}.\hypertarget{md_ChaiScript_6_1_0_readme_autotoc_md91}{}\doxysection{Usage}\label{md_ChaiScript_6_1_0_readme_autotoc_md91}
+
+\begin{DoxyItemize}
+\item Add the Chai\+Script include directory to your project\textquotesingle{}s header search path
+\item Add {\ttfamily \#include $<$\mbox{\hyperlink{chaiscript_8hpp_source}{chaiscript/chaiscript.\+hpp}}$>$} to your source file
+\item Instantiate the Chai\+Script engine in your application. For example, create a new engine with the name {\ttfamily chai} like so\+: {\ttfamily \mbox{\hyperlink{classchaiscript_1_1ChaiScript}{chaiscript\+::\+Chai\+Script}} chai}
+\item The default behavior is to load the Chai\+Script standard library from a loadable module. \mbox{\hyperlink{classA}{A}} second option is to compile the library into your code, see below for an example.
+\end{DoxyItemize}
+
+Once instantiated, the engine is ready to start running Chai\+Script source. You have two main options for processing Chai\+Script source\+: a line at a time using {\ttfamily chai.\+eval(string)} and a file at a time using {\ttfamily chai.\+eval\+\_\+file(fname)}
+
+To make functions in your C++ code visible to scripts, they must be registered with the scripting engine. To do so, call add\+: \begin{DoxyVerb}chai.add(chaiscript::fun(&my_function), "my_function_name");
+\end{DoxyVerb}
+ Once registered the function will be visible to scripts as \char`\"{}my\+\_\+function\+\_\+name\char`\"{}\hypertarget{md_ChaiScript_6_1_0_readme_autotoc_md92}{}\doxysection{Examples}\label{md_ChaiScript_6_1_0_readme_autotoc_md92}
+Chai\+Script is similar to ECMAScript (aka Java\+Script(tm)), but with some modifications to make it easier to use. For usage examples see the \char`\"{}samples\char`\"{} directory, and for more in-\/depth look at the language, the unit tests in the \char`\"{}unittests\char`\"{} directory cover the most ground.
+
+For examples of how to register parts of your C++ application, see \char`\"{}example.\+cpp\char`\"{} in the \char`\"{}samples\char`\"{} directory. Example.\+cpp is verbose and shows every possible way of working with the library. For further documentation generate the doxygen documentation in the build folder or see the website \href{http://www.chaiscript.com}{\texttt{ http\+://www.\+chaiscript.\+com}}.
+
+The shortest complete example possible follows\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{ \{C++\}}
+\DoxyCodeLine{/// main.cpp}
+\DoxyCodeLine{}
+\DoxyCodeLine{\#include <chaiscript/chaiscript.hpp>}
+\DoxyCodeLine{}
+\DoxyCodeLine{double function(int i, double j)}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{  return i * j;}
+\DoxyCodeLine{\}}
+\DoxyCodeLine{}
+\DoxyCodeLine{int main()}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{  chaiscript::ChaiScript chai;}
+\DoxyCodeLine{  chai.add(chaiscript::fun(\&function), "{}function"{});}
+\DoxyCodeLine{}
+\DoxyCodeLine{  double d = chai.eval<double>("{}function(3, 4.75);"{});}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+ 

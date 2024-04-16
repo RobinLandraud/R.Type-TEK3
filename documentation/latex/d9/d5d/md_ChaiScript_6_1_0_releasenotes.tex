@@ -1,0 +1,327 @@
+Current Version\+: 6.\+1.\+0\hypertarget{md_ChaiScript_6_1_0_releasenotes_autotoc_md93}{}\doxysubsection{Changes since 6.\+0.\+0}\label{md_ChaiScript_6_1_0_releasenotes_autotoc_md93}
+
+\begin{DoxyItemize}
+\item Add namespacing support \#290 @stephenberry
+\item Add utf parsing support
+\item cheatsheet.\+md updates
+\item {\ttfamily add\+\_\+class} utility support for scoped enums \#306 @\+Stan\+Epp
+\item Parser optimizations \#300 @ni\+Xman
+\item Various JSON fixes \#377 \#400 \#409 \#371 @totalgee @dinghram @arco\+Rocks
+\item Various cleanups, bugfixes and warning fixes and minor performance improvements
+\item Support for C++17 compilers!
+\item Support for UTF8 BOM \#439 @\+Alek\+Mosingiewicz @\+Mario\+Liebisch
+\end{DoxyItemize}\hypertarget{md_ChaiScript_6_1_0_releasenotes_autotoc_md94}{}\doxysubsection{Changes since 5.\+8.\+6}\label{md_ChaiScript_6_1_0_releasenotes_autotoc_md94}
+{\itshape 6.\+0.\+0 is a massive rework compared to 5.\+x. It now requires a C++14 enabled compiler}\hypertarget{md_ChaiScript_6_1_0_releasenotes_autotoc_md95}{}\doxysubsubsection{Compiler Requirements}\label{md_ChaiScript_6_1_0_releasenotes_autotoc_md95}
+
+\begin{DoxyItemize}
+\item MSVC 2015 or greater
+\item g++ 4.\+9 or greater
+\item clang 3.\+6 or greater
+\end{DoxyItemize}\hypertarget{md_ChaiScript_6_1_0_releasenotes_autotoc_md96}{}\doxysubsubsection{Breaking Changes}\label{md_ChaiScript_6_1_0_releasenotes_autotoc_md96}
+
+\begin{DoxyItemize}
+\item Instantiating a Chai\+Script object now, by default, builds the stdlib in
+\begin{DoxyItemize}
+\item This was done to address the most common support issues of loading stdlib dynamically at runtime
+\item If you want the old behavior, use \mbox{\hyperlink{chaiscript__basic_8hpp_source}{include/chaiscript/chaiscript\+\_\+basic.\+hpp}}
+\end{DoxyItemize}
+\item Headers have been reorganized to fully separate stdlib/parser/engine from each other (some faster builds)
+\item Bootstrap functions no longer return a reference to the module added to (compile time savings)
+\item It\textquotesingle{}s now no longer possible modify AST\+\_\+\+Nodes (compile time, runtime efficiency)
+\item Function annotations no longer exist (simplifies code, reduces compile time, compile size)
+\end{DoxyItemize}\hypertarget{md_ChaiScript_6_1_0_releasenotes_autotoc_md97}{}\doxysubsubsection{New Features Added}\label{md_ChaiScript_6_1_0_releasenotes_autotoc_md97}
+
+\begin{DoxyItemize}
+\item Modular optimization system; this can be accessed via the Chai\+Script\+\_\+\+Basic interface
+\item Execution tracing capability; also accessed via Chai\+Script\+\_\+\+Basic interface
+\item range-\/based for loops {\ttfamily for( id \+: container ) \{ \}} (much better performance than other loop types)
+\item If-\/init expressions (ala C++17)
+\item Support for passing r-\/value references to functions
+\item Support for containing unique\+\_\+ptr
+\item Add helpers for exposing enum classes to Chai\+Script
+\item Allow typed Chai\+Script defined functions to perform conversions on call \#303
+\end{DoxyItemize}\hypertarget{md_ChaiScript_6_1_0_releasenotes_autotoc_md98}{}\doxysubsubsection{Improvements}\label{md_ChaiScript_6_1_0_releasenotes_autotoc_md98}
+
+\begin{DoxyItemize}
+\item Compile time improvements
+\item Compile size improvements
+\item Significant runtime improvements (see \char`\"{}\+Modular optimization system\char`\"{})
+\item Significant parser improvements, both with parse-\/time and parser initialization time (Thanks @ni\+Xman)
+\item Fix type conversion to bool in conditionals
+\end{DoxyItemize}\hypertarget{md_ChaiScript_6_1_0_releasenotes_autotoc_md99}{}\doxysubsubsection{Improvements Still Need To Be Made}\label{md_ChaiScript_6_1_0_releasenotes_autotoc_md99}
+
+\begin{DoxyItemize}
+\item File location tracking has been rewritten; this currently means error location reporting is not as good as it was
+\item Tracing capability needs to be tested and vetted
+\end{DoxyItemize}\hypertarget{md_ChaiScript_6_1_0_releasenotes_autotoc_md100}{}\doxysubsection{Changes since 5.\+8.\+5}\label{md_ChaiScript_6_1_0_releasenotes_autotoc_md100}
+
+\begin{DoxyItemize}
+\item Optimize away {\ttfamily return} statements in lambdas also
+\item Allow conversions to bool in conditionals
+\item Don\textquotesingle{}t allow {\ttfamily class} statements inside of scopes
+\item Properly error when a dynamic object non-\/function member is called
+\end{DoxyItemize}\hypertarget{md_ChaiScript_6_1_0_releasenotes_autotoc_md101}{}\doxysubsection{Changes since 5.\+8.\+4}\label{md_ChaiScript_6_1_0_releasenotes_autotoc_md101}
+
+\begin{DoxyItemize}
+\item Fix order of operations for prefix operators
+\item Make sure atomics are initialized properly
+\item Remove parsing of unused prefix {\ttfamily \&} operator
+\end{DoxyItemize}\hypertarget{md_ChaiScript_6_1_0_releasenotes_autotoc_md102}{}\doxysubsection{Changes since 5.\+8.\+3}\label{md_ChaiScript_6_1_0_releasenotes_autotoc_md102}
+
+\begin{DoxyItemize}
+\item Fix case with some numeric conversions mixed with numerics that do not need conversion
+\end{DoxyItemize}\hypertarget{md_ChaiScript_6_1_0_releasenotes_autotoc_md103}{}\doxysubsection{Changes since 5.\+8.\+2}\label{md_ChaiScript_6_1_0_releasenotes_autotoc_md103}
+
+\begin{DoxyItemize}
+\item Add support for reference of pointer return types
+\end{DoxyItemize}\hypertarget{md_ChaiScript_6_1_0_releasenotes_autotoc_md104}{}\doxysubsection{Changes since 5.\+8.\+1}\label{md_ChaiScript_6_1_0_releasenotes_autotoc_md104}
+
+\begin{DoxyItemize}
+\item Allow casting to non-\/const \& std\+::shared\+\_\+ptr$<$\+T$>$
+\end{DoxyItemize}\hypertarget{md_ChaiScript_6_1_0_releasenotes_autotoc_md105}{}\doxysubsection{Changes since 5.\+8.\+0}\label{md_ChaiScript_6_1_0_releasenotes_autotoc_md105}
+
+\begin{DoxyItemize}
+\item Fix parsing of floats to be locale independent \#250
+\item Various warning fixes on various platforms
+\end{DoxyItemize}\hypertarget{md_ChaiScript_6_1_0_releasenotes_autotoc_md106}{}\doxysubsection{Changes since 5.\+7.\+1}\label{md_ChaiScript_6_1_0_releasenotes_autotoc_md106}
+
+\begin{DoxyItemize}
+\item Make all parser iterator operations range checked
+\item Parse in-\/string eval statements once, not once for each execution
+\item Fix parsing of operators (ie 1$<$-\/1 now parses)
+\item Fix variable scoping for functors
+\item Exception reduction
+\item Various object lifetime fixes
+\item Add JSON support for load / save \#207
+\item Numeric overload resolution fixes \#209
+\item Fix long long \#208
+\item Add octal escapes in strings \#211
+\item Fixed sizing of binary literals \#213
+\item Added support for != with bool values \#217
+\item Various value assignment vector fixes
+\item Fixed broken hex escape sequences from @\+Christian\+Kaeser
+\item Multiply defined symbols fixes \#232 @\+Raptor\+Factor
+\item Add add\+\_\+class$<$\+Enum$>$ helper \#233 @vrennert
+\item Cheatsheet fixes \#235 @mlamby
+\item Fix parsing of strings inside of in-\/string eval statements
+\item Allow lower-\/case global keyword
+\item Enable thread-\/local on MSVC (should be significant performance boost)
+\end{DoxyItemize}\hypertarget{md_ChaiScript_6_1_0_releasenotes_autotoc_md107}{}\doxysubsection{Changes since 5.\+7.\+0}\label{md_ChaiScript_6_1_0_releasenotes_autotoc_md107}
+
+\begin{DoxyItemize}
+\item Build time reduction
+\item Build size reduction
+\item Performance increases
+\item Fixed $\sim$20 crash-\/bugs found with fuzzy testing \#194
+\begin{DoxyItemize}
+\item Let unhandled exceptions propogate to user
+\item Report eval\+\_\+error when break statement is not in loop
+\item Fix handling of 0 length scripts closes \#193
+\item Don\textquotesingle{}t crash on arity mismatch -\/ Specifically affects the case where no overloads exist for a given function
+\item Fix error printing for {\ttfamily bind} calls
+\item Handle unexpected continue statement
+\item Check arity during bind
+\item Don\textquotesingle{}t allow arith conversion on variadic function
+\item Correct {\ttfamily bind} parameter match count
+\item Add in expected Boxed\+\_\+\+Value exception cases
+\item Check access to AST, don\textquotesingle{}t allow {\ttfamily ;} in func def
+\item Don\textquotesingle{}t attempt arithmetic unary \& call
+\item Don\textquotesingle{}t crash on 0 param call to {\ttfamily bind}
+\item Catch errors during member function dispatch
+\item Properly handle type of const bool \&
+\end{DoxyItemize}
+\item Automatic deduction of lambda type signatures
+\item Work with non-\/polymorphic parent/child conversions
+\item Move to codecov for coverage reporting
+\item Add {\ttfamily .at} method for Map objects
+\item Various corrections for support of move-\/only objects
+\end{DoxyItemize}\hypertarget{md_ChaiScript_6_1_0_releasenotes_autotoc_md108}{}\doxysubsection{Changes since 5.\+6.\+0}\label{md_ChaiScript_6_1_0_releasenotes_autotoc_md108}
+
+\begin{DoxyItemize}
+\item Significant code cleanups and reduction
+\item Smaller builds
+\item Faster compiles
+\item Less runtime memory usage
+\item $\sim$2x faster runtimes
+\item biicode support
+\item method\+\_\+missing feature added \#164 @ar\+Bmind
+\item Generic objects with dynamic properties support
+\item Add ability to call functions contained in properties
+\item Add lambda captures
+\item Create \mbox{\hyperlink{md_ChaiScript_6_1_0_cheatsheet}{cheatsheet.md}} for all-\/in-\/one reference of features
+\item Fix support for libc++
+\item Eliminate clone of return value stored locally
+\item Eliminate \textquotesingle{}return\textquotesingle{} statements when last line of function
+\item Reduce number of runtime exceptions occuring
+\item Reduce copies / moves of return values.
+\item make {\ttfamily use} statement return value of last statement in file
+\item Add ability to access fixed array sizes
+\item Add support for scientific notation floating point literals \#174 @totalgee
+\end{DoxyItemize}\hypertarget{md_ChaiScript_6_1_0_releasenotes_autotoc_md109}{}\doxysubsection{Changes since 5.\+5.\+1}\label{md_ChaiScript_6_1_0_releasenotes_autotoc_md109}
+
+\begin{DoxyItemize}
+\item Throw exception on integer divide by 0
+\item Add optional type specification to function declarations
+\end{DoxyItemize}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{def func(int i, j, double k) \{}
+\DoxyCodeLine{  // i must be an int.}
+\DoxyCodeLine{  // j can be anything}
+\DoxyCodeLine{  // k must be a double}
+\DoxyCodeLine{  // normal conversion rules still apply}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+
+\begin{DoxyItemize}
+\item Many minor fixes for compiler warnings
+\item Add support for {\ttfamily std\+::future} and {\ttfamily std\+::async} 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{var f := async(someFunction);}
+\DoxyCodeLine{var f2 := async(someFunction2);}
+\DoxyCodeLine{}
+\DoxyCodeLine{// someFunction and someFunction2 are running in parallel now}
+\DoxyCodeLine{f.get();}
+\DoxyCodeLine{f2.get();}
+
+\end{DoxyCode}
+
+\item Fully support r-\/value returns, supporting move-\/only objects and reducing object copies
+\end{DoxyItemize}\hypertarget{md_ChaiScript_6_1_0_releasenotes_autotoc_md110}{}\doxysubsection{Changes since 5.\+5.\+0}\label{md_ChaiScript_6_1_0_releasenotes_autotoc_md110}
+
+\begin{DoxyItemize}
+\item 30\% performance increase
+\item Fix handling of object stack, resulting in greatly reduced memory usage
+\item Code cleanups
+\end{DoxyItemize}\hypertarget{md_ChaiScript_6_1_0_releasenotes_autotoc_md111}{}\doxysubsection{Changes since 5.\+4.\+0}\label{md_ChaiScript_6_1_0_releasenotes_autotoc_md111}
+
+\begin{DoxyItemize}
+\item 2x performance increase
+\item Significant code cleanups
+\item Throw exception if user attempts to call function on null object
+\item Allow user defined type conversions
+\item Fix object lifetime for nested function calls made at the global scope
+\item Fix returning of boolean values from function calls
+\end{DoxyItemize}\hypertarget{md_ChaiScript_6_1_0_releasenotes_autotoc_md112}{}\doxysubsection{Changes since 5.\+3.\+1}\label{md_ChaiScript_6_1_0_releasenotes_autotoc_md112}
+
+\begin{DoxyItemize}
+\item Decreased compile time and build size
+\item Make \char`\"{}reflection\char`\"{} module built in (losing some of the time / build size gains)
+\item Add new \char`\"{}class\char`\"{} syntax for Chai\+Script defined methods and attributes see\+: \href{unittests/class.chai}{\texttt{ unittests/class.\+chai}} for examples
+\item Minor performance enhancements
+\item major to\+\_\+string performance enhancements
+\item Provide API for retrieving registered type name \#124
+\item Added strong reference to container to range object \#132
+\end{DoxyItemize}\hypertarget{md_ChaiScript_6_1_0_releasenotes_autotoc_md113}{}\doxysubsection{Changes since 5.\+3.\+0}\label{md_ChaiScript_6_1_0_releasenotes_autotoc_md113}
+
+\begin{DoxyItemize}
+\item Add automatic conversion of arithmetic return types, following the same rules as conversion of arithmetic types when passing parameters
+\item Add automatic casting up the inheritence hierarchy when possible.
+\item Enable travis.\+ci testing
+\item Allow users to add globals from within script
+\item Various static analysis fixes
+\item Code modernization to C++11
+\item Unofficial support for Haiku added
+\item Fix \#121 -\/ Inability to compile on cygwin
+\item Formatting fixes and spelling corrections
+\item Apply \char`\"{}include what you use\char`\"{} \href{https://code.google.com/p/include-what-you-use/}{\texttt{ https\+://code.\+google.\+com/p/include-\/what-\/you-\/use/}}
+\item Apply clang-\/modernize
+\item Various threading fixes
+\item Performance improvements
+\end{DoxyItemize}\hypertarget{md_ChaiScript_6_1_0_releasenotes_autotoc_md114}{}\doxysubsection{Changes since 5.\+2.\+0}\label{md_ChaiScript_6_1_0_releasenotes_autotoc_md114}
+
+\begin{DoxyItemize}
+\item Official support for MSVC with C++11. All major platforms and compilers are now support for C++11 release
+\end{DoxyItemize}\hypertarget{md_ChaiScript_6_1_0_releasenotes_autotoc_md115}{}\doxysubsection{Changes since 4.\+2.\+0}\label{md_ChaiScript_6_1_0_releasenotes_autotoc_md115}
+
+\begin{DoxyItemize}
+\item Enhanced unit tests
+\item Add {\ttfamily continue} statement, fix various use cases for {\ttfamily for} loops
+\item Fix use of suffixed numbers in vector initialization
+\item Code cleanups
+\item Eliminate global data, which makes code more portable and thread safe
+\item Fix issue \#79
+\item Merge pretty\+\_\+print fixes from @mgee \#82
+\item Compiler warning fixes for latest compiler releases
+\item Fix threading problems
+\item Fix linking error on Mac\+OS Mavericks \#88
+\item Allow non-\/const globals
+\item Make sure user cannot name a variable with {\ttfamily \+::} in it \#91
+\item Fix various string / map / vector {\ttfamily size} and {\ttfamily count} calls for compilers which have weird overloads for them. \#90 \#93 \#95
+\item Make module search path relative to the currently running executable
+\item Build and work with wstring windows builds
+\item fix for some new line cases in the middle of a vector initialization from jespada
+\end{DoxyItemize}\hypertarget{md_ChaiScript_6_1_0_releasenotes_autotoc_md116}{}\doxysubsection{Changes since 5.\+1.\+0}\label{md_ChaiScript_6_1_0_releasenotes_autotoc_md116}
+
+\begin{DoxyItemize}
+\item Add support for automatic conversion of arithmetic types when possible and when no ambiguous method dispatch exists.
+\end{DoxyItemize}\hypertarget{md_ChaiScript_6_1_0_releasenotes_autotoc_md117}{}\doxysubsection{Changes since 5.\+0.\+0}\label{md_ChaiScript_6_1_0_releasenotes_autotoc_md117}
+
+\begin{DoxyItemize}
+\item Fix sizing of numeric constants to match that of the C++ standard
+\item Add support for u,ll,l,f suffixes for numeric constants
+\item Siginificant improvement in error reporting
+\end{DoxyItemize}\hypertarget{md_ChaiScript_6_1_0_releasenotes_autotoc_md118}{}\doxysubsection{Changes since 4.\+0.\+0}\label{md_ChaiScript_6_1_0_releasenotes_autotoc_md118}
+
+\begin{DoxyItemize}
+\item Dropped boost in favor of C++11
+\item Separated out stdlib to make more options for compile time improvements
+\end{DoxyItemize}\hypertarget{md_ChaiScript_6_1_0_releasenotes_autotoc_md119}{}\doxysubsection{Changes since 3.\+1.\+0}\label{md_ChaiScript_6_1_0_releasenotes_autotoc_md119}
+
+\begin{DoxyItemize}
+\item svenstaro\+: Unused variables and CMake consistency fixes
+\item Added support for returning pointers from functions (\#13)
+\item Compile with -\/pedantic (\#9)
+\item Fix issues with multiple Chai\+Script object types having the same attribute name (\#15)
+\item Prevent variable redeclaration in same scope (\#22)
+\item mgee\+: Boxed\+\_\+\+Number improvements (\#27)
+\item Support switch statements (\#34)
+\item Fix uint16 comparions (\#26)
+\item Add ability to add const\+\_\+var globals in Module objects (\#14)
+\item Add support for ternary operators ?\+:
+\item Add headers to CMake\+Lists so they show up in IDEs
+\item Add ability to get vector of defined objects and vector of defined functions
+\item Fix memory leak in cyclical references
+\item Clean up static analysis issues discovered
+\item Fix vector construction to be consistent with map construction
+\item Increased unit tests to 161
+\item Performance enhancements
+\end{DoxyItemize}\hypertarget{md_ChaiScript_6_1_0_releasenotes_autotoc_md120}{}\doxysubsection{Changes since 3.\+0.\+0}\label{md_ChaiScript_6_1_0_releasenotes_autotoc_md120}
+
+\begin{DoxyItemize}
+\item Numeric operations performance increased approximately 10x
+\item Looping operations performance increased up to 2x
+\item Engine start up time decreased
+\item Several parsing bugs related to index operators fixed
+\item Added full support for all C algebraic types\+: double, long double, float, int, long, char, uint8\+\_\+t, uint16\+\_\+t, uint32\+\_\+t, uint64\+\_\+t, int8\+\_\+t, int16\+\_\+t, int32\+\_\+t, int64\+\_\+t
+\item Enhanced support for capturing of exceptions thrown from Chai\+Script in C++
+\end{DoxyItemize}\hypertarget{md_ChaiScript_6_1_0_releasenotes_autotoc_md121}{}\doxysubsection{Changes since 2.\+3.\+3}\label{md_ChaiScript_6_1_0_releasenotes_autotoc_md121}
+
+\begin{DoxyItemize}
+\item Code simplifications
+\item Fully integrate documentation with source code in doxygen style comments
+\item Unit tests increased from 114 to 137
+\item Automatic conversion between boost\+::function objects and Chai\+Script functions
+\item Many bug fixes
+\item Minor performance improvements
+\item Namespace reorganization to make end user code more accessible
+\item clang support
+\item Visual\+Studio 2010 Support
+\item Support for C++ base classes and automatic upcasting
+\item Remove \+\_\+\+\_\+ reserved identifiers
+\item Better code organization to reduce \#ifdefs
+\item clanmills\+: command line options for chai eval
+\item clanmills\+: parser cleanups and code reduction
+\item Function introspection and reflection
+\item Correct function dispatch order to account for base classes and provide a defined order of dispatch
+\item Predictable object lifetime that emulates C++ stack lifetime
+\item emarcotte\+: pkgconfig support
+\item standardize on method/member naming and indentation
+\item 64bit Visual Studio support
+\item Better support for const objects
+\item Drastic reduction of runtime exceptions -\/ making debug builds orders of magnitude faster
+\item Support for platforms with no loadable module support
+\item Add helper macro for registering class 
+\end{DoxyItemize}

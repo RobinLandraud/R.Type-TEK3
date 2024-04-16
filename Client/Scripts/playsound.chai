@@ -1,0 +1,14 @@
+for (var i = 0; i < SceneManagerComponents.size(); ++i) {
+    if (SceneManagerComponents.exists(i)) {
+        if (SceneManagerComponents.isUpdatedAt(i)) {
+            print("---------------------------------------")
+            print("playSound.chai")
+            print("---------------------------------------")
+            AudioEngine.createSound("LaunchSound", "assets/sounds/click.wav")
+            print("Sound 'LaunchSound' created from file 'assets/sounds/click.wav'")
+            AudioEngine.playSound("LaunchSound")
+            print("Sound 'LaunchSound' played")
+            print("---------------------------------------")
+        }
+    }
+}

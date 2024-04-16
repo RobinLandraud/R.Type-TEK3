@@ -1,0 +1,132 @@
+\hypertarget{classSHA3}{}\doxysection{SHA3 Class Reference}
+\label{classSHA3}\index{SHA3@{SHA3}}
+
+
+compute \mbox{\hyperlink{classSHA3}{SHA3}} hash  
+
+
+
+
+{\ttfamily \#include $<$sha3.\+h$>$}
+
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{classSHA3_a199fb11b82ed5d6f4c76585fd64e96df}{Bits}} \{ {\bfseries Bits224} = 224
+, {\bfseries Bits256} = 256
+, {\bfseries Bits384} = 384
+, {\bfseries Bits512} = 512
+ \}
+\begin{DoxyCompactList}\small\item\em algorithm variants \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classSHA3_a64630e556f1e897495e1a8a16c7c0590}{SHA3}} (\mbox{\hyperlink{classSHA3_a199fb11b82ed5d6f4c76585fd64e96df}{Bits}} bits=Bits256)
+\begin{DoxyCompactList}\small\item\em same as \mbox{\hyperlink{classSHA3_a0c262d808585468b81f4ef4036dbb836}{reset()}} \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classSHA3_a0cd43201230e255f35d0bc91422eb9d2}{operator()}} (const void $\ast$data, size\+\_\+t num\+Bytes)
+\begin{DoxyCompactList}\small\item\em compute hash of a memory block \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classSHA3_ad0e5fc63d9962dda1c19a5ec14373312}{operator()}} (const std\+::string \&text)
+\begin{DoxyCompactList}\small\item\em compute hash of a string, excluding final zero \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classSHA3_a6d4d74f38e3dc2527ebe6a923a5ef4f0}{add}} (const void $\ast$data, size\+\_\+t num\+Bytes)
+\begin{DoxyCompactList}\small\item\em add arbitrary number of bytes \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classSHA3_ad58b48ef50d72a85be73c8e329835245}{get\+Hash}} ()
+\begin{DoxyCompactList}\small\item\em return latest hash as hex characters \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classSHA3_a0c262d808585468b81f4ef4036dbb836}{reset}} ()
+\begin{DoxyCompactList}\small\item\em restart \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+compute \mbox{\hyperlink{classSHA3}{SHA3}} hash 
+
+Usage\+: \mbox{\hyperlink{classSHA3}{SHA3}} sha3; std\+::string my\+Hash = sha3(\char`\"{}\+Hello World\char`\"{}); // std\+::string std\+::string my\+Hash2 = sha3(\char`\"{}\+How are you\char`\"{}, 11); // arbitrary data, 11 bytes
+
+or in a streaming fashion\+: \begin{DoxyVerb}SHA3 sha3;
+while (more data available)
+  sha3.add(pointer to fresh data, number of new bytes);
+std::string myHash3 = sha3.getHash();
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Enumeration Documentation}
+\mbox{\Hypertarget{classSHA3_a199fb11b82ed5d6f4c76585fd64e96df}\label{classSHA3_a199fb11b82ed5d6f4c76585fd64e96df}} 
+\index{SHA3@{SHA3}!Bits@{Bits}}
+\index{Bits@{Bits}!SHA3@{SHA3}}
+\doxysubsubsection{\texorpdfstring{Bits}{Bits}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{classSHA3_a199fb11b82ed5d6f4c76585fd64e96df}{SHA3\+::\+Bits}}}
+
+
+
+algorithm variants 
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classSHA3_a64630e556f1e897495e1a8a16c7c0590}\label{classSHA3_a64630e556f1e897495e1a8a16c7c0590}} 
+\index{SHA3@{SHA3}!SHA3@{SHA3}}
+\index{SHA3@{SHA3}!SHA3@{SHA3}}
+\doxysubsubsection{\texorpdfstring{SHA3()}{SHA3()}}
+{\footnotesize\ttfamily SHA3\+::\+SHA3 (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classSHA3_a199fb11b82ed5d6f4c76585fd64e96df}{Bits}}}]{bits = {\ttfamily Bits256} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+
+same as \mbox{\hyperlink{classSHA3_a0c262d808585468b81f4ef4036dbb836}{reset()}} 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classSHA3_a6d4d74f38e3dc2527ebe6a923a5ef4f0}\label{classSHA3_a6d4d74f38e3dc2527ebe6a923a5ef4f0}} 
+\index{SHA3@{SHA3}!add@{add}}
+\index{add@{add}!SHA3@{SHA3}}
+\doxysubsubsection{\texorpdfstring{add()}{add()}}
+{\footnotesize\ttfamily void SHA3\+::add (\begin{DoxyParamCaption}\item[{const void $\ast$}]{data,  }\item[{size\+\_\+t}]{num\+Bytes }\end{DoxyParamCaption})}
+
+
+
+add arbitrary number of bytes 
+
+\mbox{\Hypertarget{classSHA3_ad58b48ef50d72a85be73c8e329835245}\label{classSHA3_ad58b48ef50d72a85be73c8e329835245}} 
+\index{SHA3@{SHA3}!getHash@{getHash}}
+\index{getHash@{getHash}!SHA3@{SHA3}}
+\doxysubsubsection{\texorpdfstring{getHash()}{getHash()}}
+{\footnotesize\ttfamily std\+::string SHA3\+::get\+Hash (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+return latest hash as hex characters 
+
+return latest hash as 16 hex characters \mbox{\Hypertarget{classSHA3_ad0e5fc63d9962dda1c19a5ec14373312}\label{classSHA3_ad0e5fc63d9962dda1c19a5ec14373312}} 
+\index{SHA3@{SHA3}!operator()@{operator()}}
+\index{operator()@{operator()}!SHA3@{SHA3}}
+\doxysubsubsection{\texorpdfstring{operator()()}{operator()()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily std\+::string SHA3\+::operator() (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{text }\end{DoxyParamCaption})}
+
+
+
+compute hash of a string, excluding final zero 
+
+compute \mbox{\hyperlink{classSHA3}{SHA3}} of a string, excluding final zero \mbox{\Hypertarget{classSHA3_a0cd43201230e255f35d0bc91422eb9d2}\label{classSHA3_a0cd43201230e255f35d0bc91422eb9d2}} 
+\index{SHA3@{SHA3}!operator()@{operator()}}
+\index{operator()@{operator()}!SHA3@{SHA3}}
+\doxysubsubsection{\texorpdfstring{operator()()}{operator()()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily std\+::string SHA3\+::operator() (\begin{DoxyParamCaption}\item[{const void $\ast$}]{data,  }\item[{size\+\_\+t}]{num\+Bytes }\end{DoxyParamCaption})}
+
+
+
+compute hash of a memory block 
+
+compute \mbox{\hyperlink{classSHA3}{SHA3}} of a memory block \mbox{\Hypertarget{classSHA3_a0c262d808585468b81f4ef4036dbb836}\label{classSHA3_a0c262d808585468b81f4ef4036dbb836}} 
+\index{SHA3@{SHA3}!reset@{reset}}
+\index{reset@{reset}!SHA3@{SHA3}}
+\doxysubsubsection{\texorpdfstring{reset()}{reset()}}
+{\footnotesize\ttfamily void SHA3\+::reset (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+restart 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Chai\+Script-\/6.\+1.\+0/src/sha3.\+h\item 
+Chai\+Script-\/6.\+1.\+0/src/sha3.\+cpp\end{DoxyCompactItemize}

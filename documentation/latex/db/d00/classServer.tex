@@ -1,0 +1,112 @@
+\hypertarget{classServer}{}\doxysection{Server Class Reference}
+\label{classServer}\index{Server@{Server}}
+
+
+A \mbox{\hyperlink{classServer}{Server}} class.  
+
+
+
+
+{\ttfamily \#include $<$Server.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classServer_ad5ec9462b520e59f7ea831e157ee5e59}{Server}} ()
+\begin{DoxyCompactList}\small\item\em Constructor of the server class. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classServer_ab257c72aa5dd6dd65cd982580d5a1a99}{Server}} (\mbox{\hyperlink{classServer}{Server}} const \&)=default
+\item 
+\mbox{\hyperlink{classServer_ad898ae096f73058619ead6b2a8e2efe6}{Server}} (\mbox{\hyperlink{classServer}{Server}} \&\&) noexcept=default
+\item 
+\mbox{\hyperlink{classServer}{Server}} \& \mbox{\hyperlink{classServer_a94a7b86f0b538c9e5094dccde62aa9b6}{operator=}} (\mbox{\hyperlink{classServer}{Server}} const \&)=default
+\item 
+\mbox{\hyperlink{classServer}{Server}} \& \mbox{\hyperlink{classServer_a8dc786c2af10b591156bbb4fb8b3966c}{operator=}} (\mbox{\hyperlink{classServer}{Server}} \&\&) noexcept=default
+\item 
+\mbox{\hyperlink{classServer_ac0c2f1f04de64bd49ef343ca283e71ed}{$\sim$\+Server}} ()=default
+\item 
+void \mbox{\hyperlink{classServer_aec705e55beff33b9febab24fa4cba1cc}{handle\+User}} ()
+\begin{DoxyCompactList}\small\item\em Handle the user. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classServer_a719f138caa195104992d5cd1b396904a}{add\+New\+Lobby}} (const \mbox{\hyperlink{structUser}{User}} \&owner, const std\+::string \&lobby\+Name)
+\begin{DoxyCompactList}\small\item\em Add a new lobby. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A \mbox{\hyperlink{classServer}{Server}} class. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classServer_ad5ec9462b520e59f7ea831e157ee5e59}\label{classServer_ad5ec9462b520e59f7ea831e157ee5e59}} 
+\index{Server@{Server}!Server@{Server}}
+\index{Server@{Server}!Server@{Server}}
+\doxysubsubsection{\texorpdfstring{Server()}{Server()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily Server\+::\+Server (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Constructor of the server class. 
+
+Default constructor \mbox{\Hypertarget{classServer_ab257c72aa5dd6dd65cd982580d5a1a99}\label{classServer_ab257c72aa5dd6dd65cd982580d5a1a99}} 
+\index{Server@{Server}!Server@{Server}}
+\index{Server@{Server}!Server@{Server}}
+\doxysubsubsection{\texorpdfstring{Server()}{Server()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily Server\+::\+Server (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classServer}{Server}} const \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+Default copy constructor \mbox{\Hypertarget{classServer_ad898ae096f73058619ead6b2a8e2efe6}\label{classServer_ad898ae096f73058619ead6b2a8e2efe6}} 
+\index{Server@{Server}!Server@{Server}}
+\index{Server@{Server}!Server@{Server}}
+\doxysubsubsection{\texorpdfstring{Server()}{Server()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily Server\+::\+Server (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classServer}{Server}} \&\&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}, {\ttfamily [noexcept]}}
+
+Default move constructor \mbox{\Hypertarget{classServer_ac0c2f1f04de64bd49ef343ca283e71ed}\label{classServer_ac0c2f1f04de64bd49ef343ca283e71ed}} 
+\index{Server@{Server}!````~Server@{$\sim$Server}}
+\index{````~Server@{$\sim$Server}!Server@{Server}}
+\doxysubsubsection{\texorpdfstring{$\sim$Server()}{~Server()}}
+{\footnotesize\ttfamily Server\+::$\sim$\+Server (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+Default Destructor 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classServer_a719f138caa195104992d5cd1b396904a}\label{classServer_a719f138caa195104992d5cd1b396904a}} 
+\index{Server@{Server}!addNewLobby@{addNewLobby}}
+\index{addNewLobby@{addNewLobby}!Server@{Server}}
+\doxysubsubsection{\texorpdfstring{addNewLobby()}{addNewLobby()}}
+{\footnotesize\ttfamily void Server\+::add\+New\+Lobby (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structUser}{User}} \&}]{owner,  }\item[{const std\+::string \&}]{lobby\+Name }\end{DoxyParamCaption})}
+
+
+
+Add a new lobby. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em owner} & the owner of the new lobby \\
+\hline
+{\em lobby\+Name} & the name of the lobby \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classServer_aec705e55beff33b9febab24fa4cba1cc}\label{classServer_aec705e55beff33b9febab24fa4cba1cc}} 
+\index{Server@{Server}!handleUser@{handleUser}}
+\index{handleUser@{handleUser}!Server@{Server}}
+\doxysubsubsection{\texorpdfstring{handleUser()}{handleUser()}}
+{\footnotesize\ttfamily void Server\+::handle\+User (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Handle the user. 
+
+\mbox{\Hypertarget{classServer_a8dc786c2af10b591156bbb4fb8b3966c}\label{classServer_a8dc786c2af10b591156bbb4fb8b3966c}} 
+\index{Server@{Server}!operator=@{operator=}}
+\index{operator=@{operator=}!Server@{Server}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classServer}{Server}}\& Server\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classServer}{Server}} \&\&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}, {\ttfamily [noexcept]}}
+
+Default move assignment operator \mbox{\Hypertarget{classServer_a94a7b86f0b538c9e5094dccde62aa9b6}\label{classServer_a94a7b86f0b538c9e5094dccde62aa9b6}} 
+\index{Server@{Server}!operator=@{operator=}}
+\index{operator=@{operator=}!Server@{Server}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classServer}{Server}}\& Server\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classServer}{Server}} const \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+Default copy assignment operator 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Server/\+Server\+Side/\+Server/Server.\+hpp\item 
+Server/\+Server\+Side/\+Server/Server.\+cpp\end{DoxyCompactItemize}

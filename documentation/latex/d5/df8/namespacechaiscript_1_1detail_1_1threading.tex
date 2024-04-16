@@ -1,0 +1,26 @@
+\hypertarget{namespacechaiscript_1_1detail_1_1threading}{}\doxysection{chaiscript\+::detail\+::threading Namespace Reference}
+\label{namespacechaiscript_1_1detail_1_1threading}\index{chaiscript::detail::threading@{chaiscript::detail::threading}}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classchaiscript_1_1detail_1_1threading_1_1Thread__Storage}{Thread\+\_\+\+Storage}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{namespacechaiscript_1_1detail_1_1threading_afd762d40a136a0bfc95943c19cd1b27d}\label{namespacechaiscript_1_1detail_1_1threading_afd762d40a136a0bfc95943c19cd1b27d}} 
+{\footnotesize template$<$typename T $>$ }\\using {\bfseries unique\+\_\+lock} = std\+::unique\+\_\+lock$<$ T $>$
+\item 
+\mbox{\Hypertarget{namespacechaiscript_1_1detail_1_1threading_a54be59246b5785e6474f8918cc2be327}\label{namespacechaiscript_1_1detail_1_1threading_a54be59246b5785e6474f8918cc2be327}} 
+{\footnotesize template$<$typename T $>$ }\\using {\bfseries shared\+\_\+lock} = std\+::unique\+\_\+lock$<$ T $>$
+\item 
+\mbox{\Hypertarget{namespacechaiscript_1_1detail_1_1threading_a172fdc8b012854fdf543fcbea0a174e1}\label{namespacechaiscript_1_1detail_1_1threading_a172fdc8b012854fdf543fcbea0a174e1}} 
+{\footnotesize template$<$typename T $>$ }\\using {\bfseries lock\+\_\+guard} = std\+::lock\+\_\+guard$<$ T $>$
+\item 
+\mbox{\Hypertarget{namespacechaiscript_1_1detail_1_1threading_ada57647a106d82424f23b5351bf2d3cb}\label{namespacechaiscript_1_1detail_1_1threading_ada57647a106d82424f23b5351bf2d3cb}} 
+using {\bfseries shared\+\_\+mutex} = std\+::mutex
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+If threading is enabled, then this namespace contains std thread classes. If threading is not enabled, then stubbed in wrappers that do nothing are provided. This allows us to avoid \#ifdef code in the sections that need thread safety. 

@@ -1,0 +1,707 @@
+\hypertarget{namespacechaiscript}{}\doxysection{chaiscript Namespace Reference}
+\label{namespacechaiscript}\index{chaiscript@{chaiscript}}
+
+
+Namespace chaiscript contains every API call that the average user will be concerned with.  
+
+
+\doxysubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \mbox{\hyperlink{namespacechaiscript_1_1bootstrap}{bootstrap}}
+\begin{DoxyCompactList}\small\item\em Classes and functions useful for bootstrapping of \mbox{\hyperlink{classchaiscript_1_1ChaiScript}{Chai\+Script}} and adding of new types. \end{DoxyCompactList}\item 
+ \mbox{\hyperlink{namespacechaiscript_1_1detail}{detail}}
+\begin{DoxyCompactList}\small\item\em Classes and functions reserved for internal use. Items in this namespace are not supported. \end{DoxyCompactList}\item 
+ \mbox{\hyperlink{namespacechaiscript_1_1dispatch}{dispatch}}
+\begin{DoxyCompactList}\small\item\em Classes and functions specific to the runtime dispatch side of \mbox{\hyperlink{classchaiscript_1_1ChaiScript}{Chai\+Script}}. Some items may be of use to the end user. \end{DoxyCompactList}\item 
+ \mbox{\hyperlink{namespacechaiscript_1_1eval}{eval}}
+\begin{DoxyCompactList}\small\item\em Classes and functions that are part of the runtime eval system. \end{DoxyCompactList}\item 
+ \mbox{\hyperlink{namespacechaiscript_1_1exception}{exception}}
+\begin{DoxyCompactList}\small\item\em Classes which may be thrown during error cases when \mbox{\hyperlink{classchaiscript_1_1ChaiScript}{Chai\+Script}} is executing. \end{DoxyCompactList}\item 
+ \mbox{\hyperlink{namespacechaiscript_1_1parser}{parser}}
+\begin{DoxyCompactList}\small\item\em Classes and functions used during the parsing process. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classchaiscript_1_1ChaiScript}{Chai\+Script}}
+\item 
+struct \mbox{\hyperlink{structchaiscript_1_1Build__Info}{Build\+\_\+\+Info}}
+\item 
+class \mbox{\hyperlink{classchaiscript_1_1Std__Lib}{Std\+\_\+\+Lib}}
+\item 
+class \mbox{\hyperlink{classchaiscript_1_1Boxed__Number}{Boxed\+\_\+\+Number}}
+\begin{DoxyCompactList}\small\item\em Represents any numeric type, generically. Used internally for generic operations between POD values. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classchaiscript_1_1Boxed__Value}{Boxed\+\_\+\+Value}}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classA}{A}} wrapper for holding any valid C++ type. All types in \mbox{\hyperlink{classchaiscript_1_1ChaiScript}{Chai\+Script}} are \mbox{\hyperlink{classchaiscript_1_1Boxed__Value}{Boxed\+\_\+\+Value}} objects. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classchaiscript_1_1Module}{Module}}
+\begin{DoxyCompactList}\small\item\em Holds a collection of \mbox{\hyperlink{classchaiscript_1_1ChaiScript}{Chai\+Script}} settings which can be applied to the \mbox{\hyperlink{classchaiscript_1_1ChaiScript}{Chai\+Script}} runtime. Used to implement loadable module support. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classchaiscript_1_1Type__Conversions}{Type\+\_\+\+Conversions}}
+\item 
+class \mbox{\hyperlink{classchaiscript_1_1Type__Conversions__State}{Type\+\_\+\+Conversions\+\_\+\+State}}
+\item 
+class \mbox{\hyperlink{classchaiscript_1_1Type__Info}{Type\+\_\+\+Info}}
+\begin{DoxyCompactList}\small\item\em Compile time deduced information about a type. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structchaiscript_1_1Operators}{Operators}}
+\item 
+struct \mbox{\hyperlink{structchaiscript_1_1Name__Validator}{Name\+\_\+\+Validator}}
+\item 
+struct \mbox{\hyperlink{structchaiscript_1_1File__Position}{File\+\_\+\+Position}}
+\begin{DoxyCompactList}\small\item\em Convenience type for file positions. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structchaiscript_1_1Parse__Location}{Parse\+\_\+\+Location}}
+\item 
+struct \mbox{\hyperlink{structchaiscript_1_1AST__Node}{AST\+\_\+\+Node}}
+\begin{DoxyCompactList}\small\item\em Struct that doubles as both a parser ast\+\_\+node and an AST node. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structchaiscript_1_1AST__Node__Trace}{AST\+\_\+\+Node\+\_\+\+Trace}}
+\item 
+class \mbox{\hyperlink{classchaiscript_1_1ChaiScript__Basic}{Chai\+Script\+\_\+\+Basic}}
+\begin{DoxyCompactList}\small\item\em The main object that the \mbox{\hyperlink{classchaiscript_1_1ChaiScript}{Chai\+Script}} user will use. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structchaiscript_1_1ChaiScript__Prelude}{Chai\+Script\+\_\+\+Prelude}}
+\item 
+class \mbox{\hyperlink{classchaiscript_1_1json__wrap}{json\+\_\+wrap}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classchaiscript_1_1Module}{Module}} $>$ \mbox{\hyperlink{namespacechaiscript_ab925da5ee9dd05a82a7d94b559d4d2af}{Module\+Ptr}}
+\begin{DoxyCompactList}\small\item\em Convenience typedef for \mbox{\hyperlink{classchaiscript_1_1Module}{Module}} objects to be added to the \mbox{\hyperlink{classchaiscript_1_1ChaiScript}{Chai\+Script}} runtime. \end{DoxyCompactList}\item 
+typedef std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{structchaiscript_1_1detail_1_1Exception__Handler__Base}{detail\+::\+Exception\+\_\+\+Handler\+\_\+\+Base}} $>$ \mbox{\hyperlink{namespacechaiscript_a859802297db86dd58b7709203710425d}{Exception\+\_\+\+Handler}}
+\begin{DoxyCompactList}\small\item\em Used in the automatic unboxing of exceptions thrown during script evaluation. \end{DoxyCompactList}\item 
+typedef std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{structchaiscript_1_1AST__Node}{AST\+\_\+\+Node}} $>$ \mbox{\hyperlink{namespacechaiscript_ae2abddb707865864532aa3a611582f5a}{AST\+\_\+\+Node\+Ptr}}
+\begin{DoxyCompactList}\small\item\em Typedef for pointers to \mbox{\hyperlink{structchaiscript_1_1AST__Node}{AST\+\_\+\+Node}} objects. Used in building of the \mbox{\hyperlink{structchaiscript_1_1AST__Node}{AST\+\_\+\+Node}} tree. \end{DoxyCompactList}\item 
+typedef std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classchaiscript_1_1dispatch_1_1Proxy__Function__Base}{dispatch\+::\+Proxy\+\_\+\+Function\+\_\+\+Base}} $>$ \mbox{\hyperlink{namespacechaiscript_a0c4629731b82bec640c9b485efca2e8a}{Proxy\+\_\+\+Function}}
+\begin{DoxyCompactList}\small\item\em Common typedef used for passing of any registered function in \mbox{\hyperlink{classchaiscript_1_1ChaiScript}{Chai\+Script}}. \end{DoxyCompactList}\item 
+typedef std\+::shared\+\_\+ptr$<$ const \mbox{\hyperlink{classchaiscript_1_1dispatch_1_1Proxy__Function__Base}{dispatch\+::\+Proxy\+\_\+\+Function\+\_\+\+Base}} $>$ \mbox{\hyperlink{namespacechaiscript_a131610313026f28092a69541b013d463}{Const\+\_\+\+Proxy\+\_\+\+Function}}
+\begin{DoxyCompactList}\small\item\em Const version of Proxy\+\_\+\+Function. Points to a const Proxy\+\_\+\+Function. This is how most registered functions are handled internally. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{namespacechaiscript_a7062a185efde16ab706d8327b9275816}\label{namespacechaiscript_a7062a185efde16ab706d8327b9275816}} 
+typedef std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classchaiscript_1_1detail_1_1Type__Conversion__Base}{chaiscript\+::detail\+::\+Type\+\_\+\+Conversion\+\_\+\+Base}} $>$ {\bfseries Type\+\_\+\+Conversion}
+\item 
+typedef \mbox{\hyperlink{namespacechaiscript_ab925da5ee9dd05a82a7d94b559d4d2af}{Module\+Ptr}}($\ast$ \mbox{\hyperlink{namespacechaiscript_af43cd5600374aa7563ea32d20c8224f9}{Create\+\_\+\+Module\+\_\+\+Func}}) ()
+\begin{DoxyCompactList}\small\item\em Signature of module entry point that all binary loadable modules must implement. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{namespacechaiscript_a7ad529af7323941f988a90df4b524f42}\label{namespacechaiscript_a7ad529af7323941f988a90df4b524f42}} 
+typedef std\+::unique\+\_\+ptr$<$ const \mbox{\hyperlink{structchaiscript_1_1AST__Node}{AST\+\_\+\+Node}} $>$ {\bfseries AST\+\_\+\+Node\+Ptr\+\_\+\+Const}
+\item 
+using \mbox{\hyperlink{namespacechaiscript_a6cf7e58901e652493e48ccca815aed44}{Namespace}} = \mbox{\hyperlink{classchaiscript_1_1dispatch_1_1Dynamic__Object}{dispatch\+::\+Dynamic\+\_\+\+Object}}
+\begin{DoxyCompactList}\small\item\em Namespace alias to provide cleaner and more explicit syntax to users. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{namespacechaiscript_a3df56b55dd62bb762e5d853b1b81c29f}\label{namespacechaiscript_a3df56b55dd62bb762e5d853b1b81c29f}} 
+enum class {\bfseries Options} \{ {\bfseries No\+\_\+\+Load\+\_\+\+Modules}
+, {\bfseries Load\+\_\+\+Modules}
+, {\bfseries No\+\_\+\+External\+\_\+\+Scripts}
+, {\bfseries External\+\_\+\+Scripts}
+ \}
+\item 
+enum class \mbox{\hyperlink{namespacechaiscript_aadbe98f65a9ef492fbf506733dec41d9}{AST\+\_\+\+Node\+\_\+\+Type}} \{ \newline
+{\bfseries Id}
+, {\bfseries Fun\+\_\+\+Call}
+, {\bfseries Unused\+\_\+\+Return\+\_\+\+Fun\+\_\+\+Call}
+, {\bfseries Arg\+\_\+\+List}
+, \newline
+{\bfseries Equation}
+, {\bfseries Var\+\_\+\+Decl}
+, {\bfseries Assign\+\_\+\+Decl}
+, {\bfseries Array\+\_\+\+Call}
+, \newline
+{\bfseries Dot\+\_\+\+Access}
+, {\bfseries Lambda}
+, {\bfseries Block}
+, {\bfseries Scopeless\+\_\+\+Block}
+, \newline
+{\bfseries Def}
+, {\bfseries While}
+, {\bfseries If}
+, {\bfseries For}
+, \newline
+{\bfseries Ranged\+\_\+\+For}
+, {\bfseries Inline\+\_\+\+Array}
+, {\bfseries Inline\+\_\+\+Map}
+, {\bfseries Return}
+, \newline
+{\bfseries File}
+, {\bfseries Prefix}
+, {\bfseries Break}
+, {\bfseries Continue}
+, \newline
+{\bfseries Map\+\_\+\+Pair}
+, {\bfseries Value\+\_\+\+Range}
+, {\bfseries Inline\+\_\+\+Range}
+, {\bfseries Try}
+, \newline
+{\bfseries Catch}
+, {\bfseries Finally}
+, {\bfseries Method}
+, {\bfseries Attr\+\_\+\+Decl}
+, \newline
+{\bfseries Logical\+\_\+\+And}
+, {\bfseries Logical\+\_\+\+Or}
+, {\bfseries Reference}
+, {\bfseries Switch}
+, \newline
+{\bfseries Case}
+, {\bfseries Default}
+, {\bfseries Noop}
+, {\bfseries Class}
+, \newline
+{\bfseries Binary}
+, {\bfseries Arg}
+, {\bfseries Global\+\_\+\+Decl}
+, {\bfseries Constant}
+, \newline
+{\bfseries Compiled}
+ \}
+\begin{DoxyCompactList}\small\item\em Types of AST nodes available to the parser and eval. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{namespacechaiscript_a263c4f9a30acd4b2917a747f82260e81}\label{namespacechaiscript_a263c4f9a30acd4b2917a747f82260e81}} 
+enum class {\bfseries Operator\+\_\+\+Precidence} \{ \newline
+{\bfseries Ternary\+\_\+\+Cond}
+, {\bfseries Logical\+\_\+\+Or}
+, {\bfseries Logical\+\_\+\+And}
+, {\bfseries Bitwise\+\_\+\+Or}
+, \newline
+{\bfseries Bitwise\+\_\+\+Xor}
+, {\bfseries Bitwise\+\_\+\+And}
+, {\bfseries Equality}
+, {\bfseries Comparison}
+, \newline
+{\bfseries Shift}
+, {\bfseries Addition}
+, {\bfseries Multiplication}
+, {\bfseries Prefix}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{namespacechaiscript_aa5a3915e47a12c925c873c5cca96fefd}\label{namespacechaiscript_aa5a3915e47a12c925c873c5cca96fefd}} 
+{\footnotesize template$<$typename B , typename D , typename ... Arg$>$ }\\std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classB}{B}} $>$ {\bfseries make\+\_\+shared} (Arg \&\&... arg)
+\item 
+\mbox{\Hypertarget{namespacechaiscript_a65202d04d2651dc22507a5e86d191b7a}\label{namespacechaiscript_a65202d04d2651dc22507a5e86d191b7a}} 
+{\footnotesize template$<$typename B , typename D , typename ... Arg$>$ }\\std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classB}{B}} $>$ {\bfseries make\+\_\+unique} (Arg \&\&... arg)
+\item 
+\mbox{\Hypertarget{namespacechaiscript_aaa8901bd56989833931dd3b64ab34525}\label{namespacechaiscript_aaa8901bd56989833931dd3b64ab34525}} 
+{\footnotesize template$<$typename T $>$ }\\auto {\bfseries parse\+\_\+num} (const char $\ast$t\+\_\+str) -\/$>$ typename std\+::enable\+\_\+if$<$ std\+::is\+\_\+integral$<$ T $>$\+::value, T $>$\+::type
+\item 
+\mbox{\Hypertarget{namespacechaiscript_af2d5a6e10c7675accab92c03dff531f5}\label{namespacechaiscript_af2d5a6e10c7675accab92c03dff531f5}} 
+{\footnotesize template$<$typename T $>$ }\\T {\bfseries parse\+\_\+num} (const std\+::string \&t\+\_\+str)
+\item 
+{\footnotesize template$<$typename Type $>$ }\\decltype(auto) \mbox{\hyperlink{namespacechaiscript_a2de45834af1787f63a901a871414b749}{boxed\+\_\+cast}} (const \mbox{\hyperlink{classchaiscript_1_1Boxed__Value}{Boxed\+\_\+\+Value}} \&bv, const \mbox{\hyperlink{classchaiscript_1_1Type__Conversions__State}{Type\+\_\+\+Conversions\+\_\+\+State}} $\ast$t\+\_\+conversions=nullptr)
+\begin{DoxyCompactList}\small\item\em Function for extracting a value stored in a \mbox{\hyperlink{classchaiscript_1_1Boxed__Value}{Boxed\+\_\+\+Value}} object. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T $>$ }\\\mbox{\hyperlink{classchaiscript_1_1Boxed__Value}{Boxed\+\_\+\+Value}} \mbox{\hyperlink{namespacechaiscript_a7f9fcf9713fa8a33bcc304a16ac2834b}{var}} (T \&\&t)
+\begin{DoxyCompactList}\small\item\em Creates a \mbox{\hyperlink{classchaiscript_1_1Boxed__Value}{Boxed\+\_\+\+Value}}. If the object passed in is a value type, it is copied. If it is a pointer, std\+::shared\+\_\+ptr, or std\+::reference\+\_\+type a copy is not made. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T $>$ }\\\mbox{\hyperlink{classchaiscript_1_1Boxed__Value}{Boxed\+\_\+\+Value}} \mbox{\hyperlink{namespacechaiscript_af4f2de09723af9248cb1a8a34242ace7}{const\+\_\+var}} (const T \&t)
+\begin{DoxyCompactList}\small\item\em Takes an object and returns an immutable \mbox{\hyperlink{classchaiscript_1_1Boxed__Value}{Boxed\+\_\+\+Value}}. If the object is a std\+::reference or pointer type the value is not copied. If it is an object type, it is copied. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{namespacechaiscript_a247d5a7e8a2cd1d631c4c4fe786103c3}\label{namespacechaiscript_a247d5a7e8a2cd1d631c4c4fe786103c3}} 
+\mbox{\hyperlink{classchaiscript_1_1Boxed__Value}{Boxed\+\_\+\+Value}} {\bfseries void\+\_\+var} ()
+\item 
+\mbox{\Hypertarget{namespacechaiscript_a15e188026a8aee970d49179f1cd1a60b}\label{namespacechaiscript_a15e188026a8aee970d49179f1cd1a60b}} 
+\mbox{\hyperlink{classchaiscript_1_1Boxed__Value}{Boxed\+\_\+\+Value}} {\bfseries const\+\_\+var} (bool b)
+\item 
+{\footnotesize template$<$typename ... T$>$ }\\\mbox{\hyperlink{namespacechaiscript_a859802297db86dd58b7709203710425d}{Exception\+\_\+\+Handler}} \mbox{\hyperlink{namespacechaiscript_aab5118c74b42adcb50556e8d8f1017b6}{exception\+\_\+specification}} ()
+\begin{DoxyCompactList}\small\item\em creates a \mbox{\hyperlink{namespacechaiscript_a859802297db86dd58b7709203710425d}{chaiscript\+::\+Exception\+\_\+\+Handler}} which handles one type of exception unboxing \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T $>$ }\\\mbox{\hyperlink{namespacechaiscript_a0c4629731b82bec640c9b485efca2e8a}{Proxy\+\_\+\+Function}} \mbox{\hyperlink{namespacechaiscript_a4c163e3599e8cc01f144338b99944fe0}{constructor}} ()
+\begin{DoxyCompactList}\small\item\em Generates a constructor function for use with \mbox{\hyperlink{classchaiscript_1_1ChaiScript}{Chai\+Script}}. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T $>$ }\\\mbox{\hyperlink{namespacechaiscript_a0c4629731b82bec640c9b485efca2e8a}{Proxy\+\_\+\+Function}} \mbox{\hyperlink{namespacechaiscript_a629bad3e8026e3327ec8aae56e0b086f}{fun}} (const T \&t)
+\begin{DoxyCompactList}\small\item\em Creates a new Proxy\+\_\+\+Function object from a free function, member function or data member. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{namespacechaiscript_ab05f50c3b02fafda8cc5ac57b3719a22}\label{namespacechaiscript_ab05f50c3b02fafda8cc5ac57b3719a22}} 
+{\footnotesize template$<$typename Ret , typename ... Param$>$ }\\\mbox{\hyperlink{namespacechaiscript_a0c4629731b82bec640c9b485efca2e8a}{Proxy\+\_\+\+Function}} {\bfseries fun} (Ret($\ast$func)(Param...))
+\item 
+\mbox{\Hypertarget{namespacechaiscript_abd9f1103ba6990f3a1cf9ade9306ae14}\label{namespacechaiscript_abd9f1103ba6990f3a1cf9ade9306ae14}} 
+{\footnotesize template$<$typename Ret , typename Class , typename ... Param$>$ }\\\mbox{\hyperlink{namespacechaiscript_a0c4629731b82bec640c9b485efca2e8a}{Proxy\+\_\+\+Function}} {\bfseries fun} (Ret(Class\+::$\ast$t\+\_\+func)(Param...) const)
+\item 
+\mbox{\Hypertarget{namespacechaiscript_af4d678ef37198f2c3c0d31e9b13320ee}\label{namespacechaiscript_af4d678ef37198f2c3c0d31e9b13320ee}} 
+{\footnotesize template$<$typename T , typename Class $>$ }\\\mbox{\hyperlink{namespacechaiscript_a0c4629731b82bec640c9b485efca2e8a}{Proxy\+\_\+\+Function}} {\bfseries fun} (T Class\+::$\ast$m)
+\item 
+{\footnotesize template$<$typename T , typename Q $>$ }\\\mbox{\hyperlink{namespacechaiscript_a0c4629731b82bec640c9b485efca2e8a}{Proxy\+\_\+\+Function}} \mbox{\hyperlink{namespacechaiscript_ac5d5f51c81e0c83f3604d6024244f8e8}{fun}} (T \&\&t, const Q \&q)
+\begin{DoxyCompactList}\small\item\em Creates a new Proxy\+\_\+\+Function object from a free function, member function or data member and binds the first parameter of it. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename Base , typename Derived $>$ }\\Type\+\_\+\+Conversion \mbox{\hyperlink{namespacechaiscript_aa2a5c6954c863d33c3eb1469844c4c50}{base\+\_\+class}} (typename std\+::enable\+\_\+if$<$ std\+::is\+\_\+polymorphic$<$ Base $>$\+::value \&\&std\+::is\+\_\+polymorphic$<$ Derived $>$\+::value $>$\+::type $\ast$=nullptr)
+\begin{DoxyCompactList}\small\item\em Used to register a to / parent class relationship with \mbox{\hyperlink{classchaiscript_1_1ChaiScript}{Chai\+Script}}. Necessary if you want automatic conversions up your inheritance hierarchy. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{namespacechaiscript_a39a034b031b69ca3a763293a542bdbeb}\label{namespacechaiscript_a39a034b031b69ca3a763293a542bdbeb}} 
+{\footnotesize template$<$typename Base , typename Derived $>$ }\\Type\+\_\+\+Conversion {\bfseries base\+\_\+class} (typename std\+::enable\+\_\+if$<$!std\+::is\+\_\+polymorphic$<$ Base $>$\+::value$\vert$$\vert$!std\+::is\+\_\+polymorphic$<$ Derived $>$\+::value $>$\+::type $\ast$=nullptr)
+\item 
+\mbox{\Hypertarget{namespacechaiscript_a13ee197595d9ea8fec87d6188200bd81}\label{namespacechaiscript_a13ee197595d9ea8fec87d6188200bd81}} 
+{\footnotesize template$<$typename Callable $>$ }\\Type\+\_\+\+Conversion {\bfseries type\+\_\+conversion} (const \mbox{\hyperlink{classchaiscript_1_1Type__Info}{Type\+\_\+\+Info}} \&t\+\_\+from, const \mbox{\hyperlink{classchaiscript_1_1Type__Info}{Type\+\_\+\+Info}} \&t\+\_\+to, const Callable \&t\+\_\+func)
+\item 
+\mbox{\Hypertarget{namespacechaiscript_a03525f89636f7a6c966c6c26c6b7a392}\label{namespacechaiscript_a03525f89636f7a6c966c6c26c6b7a392}} 
+{\footnotesize template$<$typename From , typename To , typename Callable $>$ }\\Type\+\_\+\+Conversion {\bfseries type\+\_\+conversion} (const Callable \&t\+\_\+function)
+\item 
+\mbox{\Hypertarget{namespacechaiscript_af50551d081cbd0a142ee019624ae7681}\label{namespacechaiscript_af50551d081cbd0a142ee019624ae7681}} 
+{\footnotesize template$<$typename From , typename To $>$ }\\Type\+\_\+\+Conversion {\bfseries type\+\_\+conversion} ()
+\item 
+\mbox{\Hypertarget{namespacechaiscript_af5c49ab823534d4693cfdb1d1437fbfe}\label{namespacechaiscript_af5c49ab823534d4693cfdb1d1437fbfe}} 
+{\footnotesize template$<$typename To $>$ }\\Type\+\_\+\+Conversion {\bfseries vector\+\_\+conversion} ()
+\item 
+\mbox{\Hypertarget{namespacechaiscript_ab7205b650eca4bad1285788d6fdbacfa}\label{namespacechaiscript_ab7205b650eca4bad1285788d6fdbacfa}} 
+{\footnotesize template$<$typename To $>$ }\\Type\+\_\+\+Conversion {\bfseries map\+\_\+conversion} ()
+\item 
+{\footnotesize template$<$typename T $>$ }\\constexpr \mbox{\hyperlink{classchaiscript_1_1Type__Info}{Type\+\_\+\+Info}} \mbox{\hyperlink{namespacechaiscript_a20c13c7e0a5f56ded61596f4cb0da525}{user\+\_\+type}} (const T \&)
+\begin{DoxyCompactList}\small\item\em Creates a \mbox{\hyperlink{classchaiscript_1_1Type__Info}{Type\+\_\+\+Info}} object representing the type passed in. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T $>$ }\\constexpr \mbox{\hyperlink{classchaiscript_1_1Type__Info}{Type\+\_\+\+Info}} \mbox{\hyperlink{namespacechaiscript_a89851115da47789aacb0e63c5355d9de}{user\+\_\+type}} ()
+\begin{DoxyCompactList}\small\item\em Creates a \mbox{\hyperlink{classchaiscript_1_1Type__Info}{Type\+\_\+\+Info}} object representing the templated type. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Namespace chaiscript contains every API call that the average user will be concerned with. 
+
+\doxysubsection{Typedef Documentation}
+\mbox{\Hypertarget{namespacechaiscript_ae2abddb707865864532aa3a611582f5a}\label{namespacechaiscript_ae2abddb707865864532aa3a611582f5a}} 
+\index{chaiscript@{chaiscript}!AST\_NodePtr@{AST\_NodePtr}}
+\index{AST\_NodePtr@{AST\_NodePtr}!chaiscript@{chaiscript}}
+\doxysubsubsection{\texorpdfstring{AST\_NodePtr}{AST\_NodePtr}}
+{\footnotesize\ttfamily typedef std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{structchaiscript_1_1AST__Node}{AST\+\_\+\+Node}} $>$ \mbox{\hyperlink{namespacechaiscript_ae2abddb707865864532aa3a611582f5a}{chaiscript\+::\+AST\+\_\+\+Node\+Ptr}}}
+
+
+
+Typedef for pointers to \mbox{\hyperlink{structchaiscript_1_1AST__Node}{AST\+\_\+\+Node}} objects. Used in building of the \mbox{\hyperlink{structchaiscript_1_1AST__Node}{AST\+\_\+\+Node}} tree. 
+
+\mbox{\Hypertarget{namespacechaiscript_a131610313026f28092a69541b013d463}\label{namespacechaiscript_a131610313026f28092a69541b013d463}} 
+\index{chaiscript@{chaiscript}!Const\_Proxy\_Function@{Const\_Proxy\_Function}}
+\index{Const\_Proxy\_Function@{Const\_Proxy\_Function}!chaiscript@{chaiscript}}
+\doxysubsubsection{\texorpdfstring{Const\_Proxy\_Function}{Const\_Proxy\_Function}}
+{\footnotesize\ttfamily typedef std\+::shared\+\_\+ptr$<$const \mbox{\hyperlink{classchaiscript_1_1dispatch_1_1Proxy__Function__Base}{dispatch\+::\+Proxy\+\_\+\+Function\+\_\+\+Base}}$>$ \mbox{\hyperlink{namespacechaiscript_a131610313026f28092a69541b013d463}{chaiscript\+::\+Const\+\_\+\+Proxy\+\_\+\+Function}}}
+
+
+
+Const version of Proxy\+\_\+\+Function. Points to a const Proxy\+\_\+\+Function. This is how most registered functions are handled internally. 
+
+\mbox{\Hypertarget{namespacechaiscript_af43cd5600374aa7563ea32d20c8224f9}\label{namespacechaiscript_af43cd5600374aa7563ea32d20c8224f9}} 
+\index{chaiscript@{chaiscript}!Create\_Module\_Func@{Create\_Module\_Func}}
+\index{Create\_Module\_Func@{Create\_Module\_Func}!chaiscript@{chaiscript}}
+\doxysubsubsection{\texorpdfstring{Create\_Module\_Func}{Create\_Module\_Func}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{namespacechaiscript_ab925da5ee9dd05a82a7d94b559d4d2af}{Module\+Ptr}}($\ast$ chaiscript\+::\+Create\+\_\+\+Module\+\_\+\+Func) ()}
+
+
+
+Signature of module entry point that all binary loadable modules must implement. 
+
+\mbox{\Hypertarget{namespacechaiscript_a859802297db86dd58b7709203710425d}\label{namespacechaiscript_a859802297db86dd58b7709203710425d}} 
+\index{chaiscript@{chaiscript}!Exception\_Handler@{Exception\_Handler}}
+\index{Exception\_Handler@{Exception\_Handler}!chaiscript@{chaiscript}}
+\doxysubsubsection{\texorpdfstring{Exception\_Handler}{Exception\_Handler}}
+{\footnotesize\ttfamily typedef std\+::shared\+\_\+ptr$<$\mbox{\hyperlink{structchaiscript_1_1detail_1_1Exception__Handler__Base}{detail\+::\+Exception\+\_\+\+Handler\+\_\+\+Base}}$>$ \mbox{\hyperlink{namespacechaiscript_a859802297db86dd58b7709203710425d}{chaiscript\+::\+Exception\+\_\+\+Handler}}}
+
+
+
+Used in the automatic unboxing of exceptions thrown during script evaluation. 
+
+Exception specifications allow the user to tell \mbox{\hyperlink{classchaiscript_1_1ChaiScript}{Chai\+Script}} what possible exceptions are expected from the script being executed. Exception\+\_\+\+Handler objects are created with the \mbox{\hyperlink{namespacechaiscript_aab5118c74b42adcb50556e8d8f1017b6}{chaiscript\+::exception\+\_\+specification()}} function.
+
+Example\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\mbox{\hyperlink{classchaiscript_1_1ChaiScript}{chaiscript::ChaiScript}} chai;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{keywordflow}{try} \{}
+\DoxyCodeLine{  chai.eval(\textcolor{stringliteral}{"{}throw(runtime\_error(\(\backslash\)"{}error\(\backslash\)"{}))"{}}, chaiscript::exception\_specification<int, double, float, const std::string \&, const std::exception \&>());}
+\DoxyCodeLine{\} \textcolor{keywordflow}{catch} (\textcolor{keyword}{const} \textcolor{keywordtype}{double} e) \{}
+\DoxyCodeLine{\} \textcolor{keywordflow}{catch} (\textcolor{keywordtype}{int}) \{}
+\DoxyCodeLine{\} \textcolor{keywordflow}{catch} (\textcolor{keywordtype}{float}) \{}
+\DoxyCodeLine{\} \textcolor{keywordflow}{catch} (\textcolor{keyword}{const} std::string \&) \{}
+\DoxyCodeLine{\} \textcolor{keywordflow}{catch} (\textcolor{keyword}{const} std::exception \&e) \{}
+\DoxyCodeLine{  \textcolor{comment}{// This is the one what will be called in the specific throw() above}}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+
+
+It is recommended that if catching the generic {\ttfamily std\+::exception\&} type that you specifically catch the \mbox{\hyperlink{structchaiscript_1_1exception_1_1eval__error}{chaiscript\+::exception\+::eval\+\_\+error}} type, so that there is no confusion.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keywordflow}{try} \{}
+\DoxyCodeLine{  chai.eval(\textcolor{stringliteral}{"{}throw(runtime\_error(\(\backslash\)"{}error\(\backslash\)"{}))"{}}, chaiscript::exception\_specification<const std::exception \&>());}
+\DoxyCodeLine{\} \textcolor{keywordflow}{catch} (\textcolor{keyword}{const} \mbox{\hyperlink{structchaiscript_1_1exception_1_1eval__error}{chaiscript::exception::eval\_error}} \&) \{}
+\DoxyCodeLine{  \textcolor{comment}{// Error in script parsing / execution}}
+\DoxyCodeLine{\} \textcolor{keywordflow}{catch} (\textcolor{keyword}{const} std::exception \&e) \{}
+\DoxyCodeLine{  \textcolor{comment}{// Error explicitly thrown from script}}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+
+
+Similarly, if you are using the Chai\+Script\+::eval form that unboxes the return value, then \mbox{\hyperlink{classchaiscript_1_1exception_1_1bad__boxed__cast}{chaiscript\+::exception\+::bad\+\_\+boxed\+\_\+cast}} should be handled as well.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keywordflow}{try} \{}
+\DoxyCodeLine{  chai.eval<\textcolor{keywordtype}{int}>(\textcolor{stringliteral}{"{}1.0"{}}, chaiscript::exception\_specification<const std::exception \&>());}
+\DoxyCodeLine{\} \textcolor{keywordflow}{catch} (\textcolor{keyword}{const} \mbox{\hyperlink{structchaiscript_1_1exception_1_1eval__error}{chaiscript::exception::eval\_error}} \&) \{}
+\DoxyCodeLine{  \textcolor{comment}{// Error in script parsing / execution}}
+\DoxyCodeLine{\} \textcolor{keywordflow}{catch} (\textcolor{keyword}{const} \mbox{\hyperlink{classchaiscript_1_1exception_1_1bad__boxed__cast}{chaiscript::exception::bad\_boxed\_cast}} \&) \{}
+\DoxyCodeLine{  \textcolor{comment}{// Error unboxing return value}}
+\DoxyCodeLine{\} \textcolor{keywordflow}{catch} (\textcolor{keyword}{const} std::exception \&e) \{}
+\DoxyCodeLine{  \textcolor{comment}{// Error explicitly thrown from script}}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{namespacechaiscript_aab5118c74b42adcb50556e8d8f1017b6}{chaiscript\+::exception\+\_\+specification}} for creation of \mbox{\hyperlink{namespacechaiscript_a859802297db86dd58b7709203710425d}{chaiscript\+::\+Exception\+\_\+\+Handler}} objects 
+
+\mbox{\hyperlink{index_exceptions}{Exception Handling}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{namespacechaiscript_ab925da5ee9dd05a82a7d94b559d4d2af}\label{namespacechaiscript_ab925da5ee9dd05a82a7d94b559d4d2af}} 
+\index{chaiscript@{chaiscript}!ModulePtr@{ModulePtr}}
+\index{ModulePtr@{ModulePtr}!chaiscript@{chaiscript}}
+\doxysubsubsection{\texorpdfstring{ModulePtr}{ModulePtr}}
+{\footnotesize\ttfamily typedef std\+::shared\+\_\+ptr$<$\mbox{\hyperlink{classchaiscript_1_1Module}{Module}}$>$ \mbox{\hyperlink{namespacechaiscript_ab925da5ee9dd05a82a7d94b559d4d2af}{chaiscript\+::\+Module\+Ptr}}}
+
+
+
+Convenience typedef for \mbox{\hyperlink{classchaiscript_1_1Module}{Module}} objects to be added to the \mbox{\hyperlink{classchaiscript_1_1ChaiScript}{Chai\+Script}} runtime. 
+
+\mbox{\Hypertarget{namespacechaiscript_a6cf7e58901e652493e48ccca815aed44}\label{namespacechaiscript_a6cf7e58901e652493e48ccca815aed44}} 
+\index{chaiscript@{chaiscript}!Namespace@{Namespace}}
+\index{Namespace@{Namespace}!chaiscript@{chaiscript}}
+\doxysubsubsection{\texorpdfstring{Namespace}{Namespace}}
+{\footnotesize\ttfamily using \mbox{\hyperlink{namespacechaiscript_a6cf7e58901e652493e48ccca815aed44}{chaiscript\+::\+Namespace}} = typedef \mbox{\hyperlink{classchaiscript_1_1dispatch_1_1Dynamic__Object}{dispatch\+::\+Dynamic\+\_\+\+Object}}}
+
+
+
+Namespace alias to provide cleaner and more explicit syntax to users. 
+
+\mbox{\Hypertarget{namespacechaiscript_a0c4629731b82bec640c9b485efca2e8a}\label{namespacechaiscript_a0c4629731b82bec640c9b485efca2e8a}} 
+\index{chaiscript@{chaiscript}!Proxy\_Function@{Proxy\_Function}}
+\index{Proxy\_Function@{Proxy\_Function}!chaiscript@{chaiscript}}
+\doxysubsubsection{\texorpdfstring{Proxy\_Function}{Proxy\_Function}}
+{\footnotesize\ttfamily typedef std\+::shared\+\_\+ptr$<$\mbox{\hyperlink{classchaiscript_1_1dispatch_1_1Proxy__Function__Base}{dispatch\+::\+Proxy\+\_\+\+Function\+\_\+\+Base}}$>$ \mbox{\hyperlink{namespacechaiscript_a0c4629731b82bec640c9b485efca2e8a}{chaiscript\+::\+Proxy\+\_\+\+Function}}}
+
+
+
+Common typedef used for passing of any registered function in \mbox{\hyperlink{classchaiscript_1_1ChaiScript}{Chai\+Script}}. 
+
+
+
+\doxysubsection{Enumeration Type Documentation}
+\mbox{\Hypertarget{namespacechaiscript_aadbe98f65a9ef492fbf506733dec41d9}\label{namespacechaiscript_aadbe98f65a9ef492fbf506733dec41d9}} 
+\index{chaiscript@{chaiscript}!AST\_Node\_Type@{AST\_Node\_Type}}
+\index{AST\_Node\_Type@{AST\_Node\_Type}!chaiscript@{chaiscript}}
+\doxysubsubsection{\texorpdfstring{AST\_Node\_Type}{AST\_Node\_Type}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{namespacechaiscript_aadbe98f65a9ef492fbf506733dec41d9}{chaiscript\+::\+AST\+\_\+\+Node\+\_\+\+Type}}\hspace{0.3cm}{\ttfamily [strong]}}
+
+
+
+Types of AST nodes available to the parser and eval. 
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{namespacechaiscript_aa2a5c6954c863d33c3eb1469844c4c50}\label{namespacechaiscript_aa2a5c6954c863d33c3eb1469844c4c50}} 
+\index{chaiscript@{chaiscript}!base\_class@{base\_class}}
+\index{base\_class@{base\_class}!chaiscript@{chaiscript}}
+\doxysubsubsection{\texorpdfstring{base\_class()}{base\_class()}}
+{\footnotesize\ttfamily template$<$typename Base , typename Derived $>$ \\
+Type\+\_\+\+Conversion chaiscript\+::base\+\_\+class (\begin{DoxyParamCaption}\item[{typename std\+::enable\+\_\+if$<$ std\+::is\+\_\+polymorphic$<$ Base $>$\+::value \&\&std\+::is\+\_\+polymorphic$<$ Derived $>$\+::value $>$\+::type $\ast$}]{ = {\ttfamily nullptr} }\end{DoxyParamCaption})}
+
+
+
+Used to register a to / parent class relationship with \mbox{\hyperlink{classchaiscript_1_1ChaiScript}{Chai\+Script}}. Necessary if you want automatic conversions up your inheritance hierarchy. 
+
+Create a new to class registration for applying to a module or to the \mbox{\hyperlink{classchaiscript_1_1ChaiScript}{Chai\+Script}} engine Currently, due to limitations in module loading on Windows, and for the sake of portability, if you have a type that is introduced in a loadable module and is used by multiple modules (through a tertiary dll that is shared between the modules, static linking the new type into both loadable modules would not be portable), you need to register the type relationship in all modules that use the newly added type in a polymorphic way.
+
+Example\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keyword}{class }Base}
+\DoxyCodeLine{\{\};}
+\DoxyCodeLine{\textcolor{keyword}{class }Derived : \textcolor{keyword}{public} Base}
+\DoxyCodeLine{\{\};}
+\DoxyCodeLine{}
+\DoxyCodeLine{\mbox{\hyperlink{classchaiscript_1_1ChaiScript}{chaiscript::ChaiScript}} chai;}
+\DoxyCodeLine{chai.\mbox{\hyperlink{classchaiscript_1_1ChaiScript__Basic_a50e721330ff490d553e72260879beb16}{add}}(chaiscript::to\_class<Base, Derived>());}
+
+\end{DoxyCode}
+ \mbox{\Hypertarget{namespacechaiscript_a2de45834af1787f63a901a871414b749}\label{namespacechaiscript_a2de45834af1787f63a901a871414b749}} 
+\index{chaiscript@{chaiscript}!boxed\_cast@{boxed\_cast}}
+\index{boxed\_cast@{boxed\_cast}!chaiscript@{chaiscript}}
+\doxysubsubsection{\texorpdfstring{boxed\_cast()}{boxed\_cast()}}
+{\footnotesize\ttfamily template$<$typename Type $>$ \\
+decltype(auto) chaiscript\+::boxed\+\_\+cast (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classchaiscript_1_1Boxed__Value}{Boxed\+\_\+\+Value}} \&}]{bv,  }\item[{const \mbox{\hyperlink{classchaiscript_1_1Type__Conversions__State}{Type\+\_\+\+Conversions\+\_\+\+State}} $\ast$}]{t\+\_\+conversions = {\ttfamily nullptr} }\end{DoxyParamCaption})}
+
+
+
+Function for extracting a value stored in a \mbox{\hyperlink{classchaiscript_1_1Boxed__Value}{Boxed\+\_\+\+Value}} object. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em Type} & The type to extract from the \mbox{\hyperlink{classchaiscript_1_1Boxed__Value}{Boxed\+\_\+\+Value}} \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em bv} & The \mbox{\hyperlink{classchaiscript_1_1Boxed__Value}{Boxed\+\_\+\+Value}} to extract a typed value from \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Type equivalent to the requested type 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \mbox{\hyperlink{classchaiscript_1_1exception_1_1bad__boxed__cast}{exception\+::bad\+\_\+boxed\+\_\+cast}}} & If the requested conversion is not possible\\
+\hline
+\end{DoxyExceptions}
+boxed\+\_\+cast will attempt to make conversions between value, \&, $\ast$, std\+::shared\+\_\+ptr, std\+::reference\+\_\+wrapper, and std\+::function (const and non-\/const) where possible. boxed\+\_\+cast is used internally during function dispatch. This means that all of these conversions will be attempted automatically for you during \mbox{\hyperlink{classchaiscript_1_1ChaiScript}{Chai\+Script}} function calls.
+
+\begin{DoxyItemize}
+\item non-\/const values can be extracted as const or non-\/const \item const values can be extracted only as const \item \mbox{\hyperlink{classchaiscript_1_1Boxed__Value}{Boxed\+\_\+\+Value}} constructed from pointer or std\+::reference\+\_\+wrapper can be extracted as reference, pointer or value types \item \mbox{\hyperlink{classchaiscript_1_1Boxed__Value}{Boxed\+\_\+\+Value}} constructed from std\+::shared\+\_\+ptr or value types can be extracted as reference, pointer, value, or std\+::shared\+\_\+ptr types\end{DoxyItemize}
+Conversions to std\+::function objects are attempted as well
+
+Example\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{comment}{// All of the following should succeed}}
+\DoxyCodeLine{\mbox{\hyperlink{classchaiscript_1_1Boxed__Value}{chaiscript::Boxed\_Value}} bv(1);}
+\DoxyCodeLine{std::shared\_ptr<int> spi = chaiscript::boxed\_cast<std::shared\_ptr<int> >(bv);}
+\DoxyCodeLine{\textcolor{keywordtype}{int} i = chaiscript::boxed\_cast<int>(bv);}
+\DoxyCodeLine{\textcolor{keywordtype}{int} *ip = chaiscript::boxed\_cast<int *>(bv);}
+\DoxyCodeLine{\textcolor{keywordtype}{int} \&ir = chaiscript::boxed\_cast<int \&>(bv);}
+\DoxyCodeLine{std::shared\_ptr<const int> cspi = chaiscript::boxed\_cast<std::shared\_ptr<const int> >(bv);}
+\DoxyCodeLine{\textcolor{keyword}{const} \textcolor{keywordtype}{int} ci = chaiscript::boxed\_cast<const int>(bv);}
+\DoxyCodeLine{\textcolor{keyword}{const} \textcolor{keywordtype}{int} *cip = chaiscript::boxed\_cast<const int *>(bv);}
+\DoxyCodeLine{\textcolor{keyword}{const} \textcolor{keywordtype}{int} \&cir = chaiscript::boxed\_cast<const int \&>(bv);}
+
+\end{DoxyCode}
+
+
+std\+::function conversion example 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\mbox{\hyperlink{classchaiscript_1_1ChaiScript}{chaiscript::ChaiScript}} chai;}
+\DoxyCodeLine{Boxed\_Value bv = chai.eval(\textcolor{stringliteral}{"{}`+`"{}}); \textcolor{comment}{// Get the functor for the + operator which is built in }}
+\DoxyCodeLine{std::function<int (\textcolor{keywordtype}{int}, \textcolor{keywordtype}{int})> f = \mbox{\hyperlink{namespacechaiscript_a2de45834af1787f63a901a871414b749}{chaiscript::boxed\_cast}}<std::function<int (\textcolor{keywordtype}{int}, \textcolor{keywordtype}{int})> >(bv);}
+\DoxyCodeLine{\textcolor{keywordtype}{int} i = f(2,3);}
+\DoxyCodeLine{assert(i == 5);}
+
+\end{DoxyCode}
+ \mbox{\Hypertarget{namespacechaiscript_af4f2de09723af9248cb1a8a34242ace7}\label{namespacechaiscript_af4f2de09723af9248cb1a8a34242ace7}} 
+\index{chaiscript@{chaiscript}!const\_var@{const\_var}}
+\index{const\_var@{const\_var}!chaiscript@{chaiscript}}
+\doxysubsubsection{\texorpdfstring{const\_var()}{const\_var()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{classchaiscript_1_1Boxed__Value}{Boxed\+\_\+\+Value}} chaiscript\+::const\+\_\+var (\begin{DoxyParamCaption}\item[{const T \&}]{t }\end{DoxyParamCaption})}
+
+
+
+Takes an object and returns an immutable \mbox{\hyperlink{classchaiscript_1_1Boxed__Value}{Boxed\+\_\+\+Value}}. If the object is a std\+::reference or pointer type the value is not copied. If it is an object type, it is copied. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em t} & Object to make immutable \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Immutable \mbox{\hyperlink{classchaiscript_1_1Boxed__Value}{Boxed\+\_\+\+Value}} 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+chaiscript\+::\+Boxed\+\_\+\+Value\+::is\+\_\+const 
+
+\mbox{\hyperlink{namespacechaiscript_a7f9fcf9713fa8a33bcc304a16ac2834b}{chaiscript\+::var}}
+\end{DoxySeeAlso}
+Example\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keyword}{enum} Colors}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{  Blue,}
+\DoxyCodeLine{  Green,}
+\DoxyCodeLine{  Red}
+\DoxyCodeLine{\};}
+\DoxyCodeLine{\mbox{\hyperlink{classchaiscript_1_1ChaiScript}{chaiscript::ChaiScript}} chai}
+\DoxyCodeLine{chai.\mbox{\hyperlink{classchaiscript_1_1ChaiScript__Basic_a50e721330ff490d553e72260879beb16}{add}}(\mbox{\hyperlink{namespacechaiscript_af4f2de09723af9248cb1a8a34242ace7}{chaiscript::const\_var}}(Blue), \textcolor{stringliteral}{"{}Blue"{}}); \textcolor{comment}{// add immutable constant}}
+\DoxyCodeLine{chai.\mbox{\hyperlink{classchaiscript_1_1ChaiScript__Basic_a50e721330ff490d553e72260879beb16}{add}}(\mbox{\hyperlink{namespacechaiscript_af4f2de09723af9248cb1a8a34242ace7}{chaiscript::const\_var}}(Red), \textcolor{stringliteral}{"{}Red"{}});}
+\DoxyCodeLine{chai.\mbox{\hyperlink{classchaiscript_1_1ChaiScript__Basic_a50e721330ff490d553e72260879beb16}{add}}(\mbox{\hyperlink{namespacechaiscript_af4f2de09723af9248cb1a8a34242ace7}{chaiscript::const\_var}}(Green), \textcolor{stringliteral}{"{}Green"{}});}
+
+\end{DoxyCode}
+
+
+\begin{DoxyRefDesc}{Todo}
+\item[\mbox{\hyperlink{todo__todo000007}{Todo}}]support C++11 strongly typed enums \end{DoxyRefDesc}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{index_adding_objects}{Adding Objects}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{namespacechaiscript_a4c163e3599e8cc01f144338b99944fe0}\label{namespacechaiscript_a4c163e3599e8cc01f144338b99944fe0}} 
+\index{chaiscript@{chaiscript}!constructor@{constructor}}
+\index{constructor@{constructor}!chaiscript@{chaiscript}}
+\doxysubsubsection{\texorpdfstring{constructor()}{constructor()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{namespacechaiscript_a0c4629731b82bec640c9b485efca2e8a}{Proxy\+\_\+\+Function}} chaiscript\+::constructor (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Generates a constructor function for use with \mbox{\hyperlink{classchaiscript_1_1ChaiScript}{Chai\+Script}}. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & The signature of the constructor to generate. In the form of\+: Class\+Type (Param\+Type1, Param\+Type2, ...)\\
+\hline
+\end{DoxyTemplParams}
+Example\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\mbox{\hyperlink{classchaiscript_1_1ChaiScript}{chaiscript::ChaiScript}} chai;}
+\DoxyCodeLine{\textcolor{comment}{// Create a new function that creates a MyClass object using the (int, float) constructor}}
+\DoxyCodeLine{\textcolor{comment}{// and call that function "{}MyClass"{} so that it appears as a normal constructor to the user.}}
+\DoxyCodeLine{chai.\mbox{\hyperlink{classchaiscript_1_1ChaiScript__Basic_a50e721330ff490d553e72260879beb16}{add}}(\mbox{\hyperlink{namespacechaiscript_a4c163e3599e8cc01f144338b99944fe0}{constructor}}<MyClass (\textcolor{keywordtype}{int}, \textcolor{keywordtype}{float})>(), \textcolor{stringliteral}{"{}MyClass"{}});}
+
+\end{DoxyCode}
+ \mbox{\Hypertarget{namespacechaiscript_aab5118c74b42adcb50556e8d8f1017b6}\label{namespacechaiscript_aab5118c74b42adcb50556e8d8f1017b6}} 
+\index{chaiscript@{chaiscript}!exception\_specification@{exception\_specification}}
+\index{exception\_specification@{exception\_specification}!chaiscript@{chaiscript}}
+\doxysubsubsection{\texorpdfstring{exception\_specification()}{exception\_specification()}}
+{\footnotesize\ttfamily template$<$typename ... T$>$ \\
+\mbox{\hyperlink{namespacechaiscript_a859802297db86dd58b7709203710425d}{Exception\+\_\+\+Handler}} chaiscript\+::exception\+\_\+specification (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+creates a \mbox{\hyperlink{namespacechaiscript_a859802297db86dd58b7709203710425d}{chaiscript\+::\+Exception\+\_\+\+Handler}} which handles one type of exception unboxing 
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{index_exceptions}{Exception Handling}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{namespacechaiscript_a629bad3e8026e3327ec8aae56e0b086f}\label{namespacechaiscript_a629bad3e8026e3327ec8aae56e0b086f}} 
+\index{chaiscript@{chaiscript}!fun@{fun}}
+\index{fun@{fun}!chaiscript@{chaiscript}}
+\doxysubsubsection{\texorpdfstring{fun()}{fun()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{namespacechaiscript_a0c4629731b82bec640c9b485efca2e8a}{Proxy\+\_\+\+Function}} chaiscript\+::fun (\begin{DoxyParamCaption}\item[{const T \&}]{t }\end{DoxyParamCaption})}
+
+
+
+Creates a new Proxy\+\_\+\+Function object from a free function, member function or data member. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em t} & Function / member to expose\\
+\hline
+\end{DoxyParams}
+{\bfseries{Example\+:}} 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keywordtype}{int} myfunction(\textcolor{keyword}{const} std::string \&);}
+\DoxyCodeLine{\textcolor{keyword}{class }MyClass}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{  \textcolor{keyword}{public}:}
+\DoxyCodeLine{    \textcolor{keywordtype}{void} memberfunction();}
+\DoxyCodeLine{    \textcolor{keywordtype}{int} memberdata;}
+\DoxyCodeLine{\};}
+\DoxyCodeLine{}
+\DoxyCodeLine{\mbox{\hyperlink{classchaiscript_1_1ChaiScript}{chaiscript::ChaiScript}} chai;}
+\DoxyCodeLine{chai.\mbox{\hyperlink{classchaiscript_1_1ChaiScript__Basic_a50e721330ff490d553e72260879beb16}{add}}(\mbox{\hyperlink{namespacechaiscript_a629bad3e8026e3327ec8aae56e0b086f}{fun}}(\&myfunction), \textcolor{stringliteral}{"{}myfunction"{}});}
+\DoxyCodeLine{chai.\mbox{\hyperlink{classchaiscript_1_1ChaiScript__Basic_a50e721330ff490d553e72260879beb16}{add}}(\mbox{\hyperlink{namespacechaiscript_a629bad3e8026e3327ec8aae56e0b086f}{fun}}(\&MyClass::memberfunction), \textcolor{stringliteral}{"{}memberfunction"{}});}
+\DoxyCodeLine{chai.\mbox{\hyperlink{classchaiscript_1_1ChaiScript__Basic_a50e721330ff490d553e72260879beb16}{add}}(\mbox{\hyperlink{namespacechaiscript_a629bad3e8026e3327ec8aae56e0b086f}{fun}}(\&MyClass::memberdata), \textcolor{stringliteral}{"{}memberdata"{}});}
+
+\end{DoxyCode}
+
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{index_adding_functions}{Adding Functions}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{namespacechaiscript_ac5d5f51c81e0c83f3604d6024244f8e8}\label{namespacechaiscript_ac5d5f51c81e0c83f3604d6024244f8e8}} 
+\index{chaiscript@{chaiscript}!fun@{fun}}
+\index{fun@{fun}!chaiscript@{chaiscript}}
+\doxysubsubsection{\texorpdfstring{fun()}{fun()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename T , typename Q $>$ \\
+\mbox{\hyperlink{namespacechaiscript_a0c4629731b82bec640c9b485efca2e8a}{Proxy\+\_\+\+Function}} chaiscript\+::fun (\begin{DoxyParamCaption}\item[{T \&\&}]{t,  }\item[{const Q \&}]{q }\end{DoxyParamCaption})}
+
+
+
+Creates a new Proxy\+\_\+\+Function object from a free function, member function or data member and binds the first parameter of it. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em t} & Function / member to expose \\
+\hline
+\mbox{\texttt{ in}}  & {\em q} & Value to bind to first parameter\\
+\hline
+\end{DoxyParams}
+{\bfseries{Example\+:}} 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keyword}{struct }MyClass}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{  \textcolor{keywordtype}{void} memberfunction(\textcolor{keywordtype}{int});}
+\DoxyCodeLine{\};}
+\DoxyCodeLine{}
+\DoxyCodeLine{MyClass obj;}
+\DoxyCodeLine{\mbox{\hyperlink{classchaiscript_1_1ChaiScript}{chaiscript::ChaiScript}} chai;}
+\DoxyCodeLine{\textcolor{comment}{// Add function taking only one argument, an int, and permanently bound to "{}obj"{}}}
+\DoxyCodeLine{chai.\mbox{\hyperlink{classchaiscript_1_1ChaiScript__Basic_a50e721330ff490d553e72260879beb16}{add}}(\mbox{\hyperlink{namespacechaiscript_a629bad3e8026e3327ec8aae56e0b086f}{fun}}(\&MyClass::memberfunction, std::ref(obj)), \textcolor{stringliteral}{"{}memberfunction"{}}); }
+
+\end{DoxyCode}
+
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{index_adding_functions}{Adding Functions}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{namespacechaiscript_a89851115da47789aacb0e63c5355d9de}\label{namespacechaiscript_a89851115da47789aacb0e63c5355d9de}} 
+\index{chaiscript@{chaiscript}!user\_type@{user\_type}}
+\index{user\_type@{user\_type}!chaiscript@{chaiscript}}
+\doxysubsubsection{\texorpdfstring{user\_type()}{user\_type()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+constexpr \mbox{\hyperlink{classchaiscript_1_1Type__Info}{Type\+\_\+\+Info}} chaiscript\+::user\+\_\+type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [constexpr]}}
+
+
+
+Creates a \mbox{\hyperlink{classchaiscript_1_1Type__Info}{Type\+\_\+\+Info}} object representing the templated type. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & Type of object to get a \mbox{\hyperlink{classchaiscript_1_1Type__Info}{Type\+\_\+\+Info}} for \\
+\hline
+\end{DoxyTemplParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{classchaiscript_1_1Type__Info}{Type\+\_\+\+Info}} for T
+\end{DoxyReturn}
+{\bfseries{Example\+:}} 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\mbox{\hyperlink{classchaiscript_1_1Type__Info}{chaiscript::Type\_Info}} ti = chaiscript::user\_type<int>();}
+
+\end{DoxyCode}
+ \mbox{\Hypertarget{namespacechaiscript_a20c13c7e0a5f56ded61596f4cb0da525}\label{namespacechaiscript_a20c13c7e0a5f56ded61596f4cb0da525}} 
+\index{chaiscript@{chaiscript}!user\_type@{user\_type}}
+\index{user\_type@{user\_type}!chaiscript@{chaiscript}}
+\doxysubsubsection{\texorpdfstring{user\_type()}{user\_type()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+constexpr \mbox{\hyperlink{classchaiscript_1_1Type__Info}{Type\+\_\+\+Info}} chaiscript\+::user\+\_\+type (\begin{DoxyParamCaption}\item[{const T \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [constexpr]}}
+
+
+
+Creates a \mbox{\hyperlink{classchaiscript_1_1Type__Info}{Type\+\_\+\+Info}} object representing the type passed in. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & Type of object to get a \mbox{\hyperlink{classchaiscript_1_1Type__Info}{Type\+\_\+\+Info}} for, derived from the passed in parameter \\
+\hline
+\end{DoxyTemplParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{classchaiscript_1_1Type__Info}{Type\+\_\+\+Info}} for T
+\end{DoxyReturn}
+{\bfseries{Example\+:}} 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keywordtype}{int} i;}
+\DoxyCodeLine{\mbox{\hyperlink{classchaiscript_1_1Type__Info}{chaiscript::Type\_Info}} ti = \mbox{\hyperlink{namespacechaiscript_a20c13c7e0a5f56ded61596f4cb0da525}{chaiscript::user\_type}}(i);}
+
+\end{DoxyCode}
+ \mbox{\Hypertarget{namespacechaiscript_a7f9fcf9713fa8a33bcc304a16ac2834b}\label{namespacechaiscript_a7f9fcf9713fa8a33bcc304a16ac2834b}} 
+\index{chaiscript@{chaiscript}!var@{var}}
+\index{var@{var}!chaiscript@{chaiscript}}
+\doxysubsubsection{\texorpdfstring{var()}{var()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{classchaiscript_1_1Boxed__Value}{Boxed\+\_\+\+Value}} chaiscript\+::var (\begin{DoxyParamCaption}\item[{T \&\&}]{t }\end{DoxyParamCaption})}
+
+
+
+Creates a \mbox{\hyperlink{classchaiscript_1_1Boxed__Value}{Boxed\+\_\+\+Value}}. If the object passed in is a value type, it is copied. If it is a pointer, std\+::shared\+\_\+ptr, or std\+::reference\+\_\+type a copy is not made. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em t} & The value to box\\
+\hline
+\end{DoxyParams}
+Example\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keywordtype}{int} i;}
+\DoxyCodeLine{\mbox{\hyperlink{classchaiscript_1_1ChaiScript}{chaiscript::ChaiScript}} chai;}
+\DoxyCodeLine{chai.\mbox{\hyperlink{classchaiscript_1_1ChaiScript__Basic_a50e721330ff490d553e72260879beb16}{add}}(\mbox{\hyperlink{namespacechaiscript_a7f9fcf9713fa8a33bcc304a16ac2834b}{chaiscript::var}}(i), \textcolor{stringliteral}{"{}i"{}});}
+\DoxyCodeLine{chai.\mbox{\hyperlink{classchaiscript_1_1ChaiScript__Basic_a50e721330ff490d553e72260879beb16}{add}}(\mbox{\hyperlink{namespacechaiscript_a7f9fcf9713fa8a33bcc304a16ac2834b}{chaiscript::var}}(\&i), \textcolor{stringliteral}{"{}ip"{}});}
+
+\end{DoxyCode}
+
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{index_adding_objects}{Adding Objects}} 
+\end{DoxySeeAlso}

@@ -1,0 +1,57 @@
+\hypertarget{classshort__alloc}{}\doxysection{short\+\_\+alloc$<$ T, N, Align $>$ Class Template Reference}
+\label{classshort__alloc}\index{short\_alloc$<$ T, N, Align $>$@{short\_alloc$<$ T, N, Align $>$}}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structshort__alloc_1_1rebind}{rebind}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classshort__alloc_a37ebd1a58eacbd74dbf3241e314de1d3}\label{classshort__alloc_a37ebd1a58eacbd74dbf3241e314de1d3}} 
+using {\bfseries value\+\_\+type} = T
+\item 
+\mbox{\Hypertarget{classshort__alloc_a4308a3f44caabe60abac39bca8a6d949}\label{classshort__alloc_a4308a3f44caabe60abac39bca8a6d949}} 
+using {\bfseries arena\+\_\+type} = \mbox{\hyperlink{classarena}{arena}}$<$ size, alignment $>$
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classshort__alloc_ace36a2dcdd4d1e6d0bb180499df91c1c}\label{classshort__alloc_ace36a2dcdd4d1e6d0bb180499df91c1c}} 
+{\bfseries short\+\_\+alloc} (const \mbox{\hyperlink{classshort__alloc}{short\+\_\+alloc}} \&)=default
+\item 
+\mbox{\Hypertarget{classshort__alloc_a847e3874e22f5ca6cff7c26da134cea9}\label{classshort__alloc_a847e3874e22f5ca6cff7c26da134cea9}} 
+\mbox{\hyperlink{classshort__alloc}{short\+\_\+alloc}} \& {\bfseries operator=} (const \mbox{\hyperlink{classshort__alloc}{short\+\_\+alloc}} \&)=delete
+\item 
+\mbox{\Hypertarget{classshort__alloc_a0af51c8d068914e4445dcf2b32933aa9}\label{classshort__alloc_a0af51c8d068914e4445dcf2b32933aa9}} 
+{\bfseries short\+\_\+alloc} (\mbox{\hyperlink{classarena}{arena\+\_\+type}} \&a) noexcept
+\item 
+\mbox{\Hypertarget{classshort__alloc_a100c85fad7b73c30577e0fea08d6bce9}\label{classshort__alloc_a100c85fad7b73c30577e0fea08d6bce9}} 
+{\footnotesize template$<$class U $>$ }\\{\bfseries short\+\_\+alloc} (const \mbox{\hyperlink{classshort__alloc}{short\+\_\+alloc}}$<$ U, N, alignment $>$ \&a) noexcept
+\item 
+\mbox{\Hypertarget{classshort__alloc_a3c0e2c2da28b93c74a1e6b7203229278}\label{classshort__alloc_a3c0e2c2da28b93c74a1e6b7203229278}} 
+T $\ast$ {\bfseries allocate} (std\+::size\+\_\+t n)
+\item 
+\mbox{\Hypertarget{classshort__alloc_a635d228ee62565e6e8edf382e635c122}\label{classshort__alloc_a635d228ee62565e6e8edf382e635c122}} 
+void {\bfseries deallocate} (T $\ast$p, std\+::size\+\_\+t n) noexcept
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classshort__alloc_a98d69dd48d404476afeee8736ea0cd7d}\label{classshort__alloc_a98d69dd48d404476afeee8736ea0cd7d}} 
+static constexpr auto {\bfseries alignment} = Align
+\item 
+\mbox{\Hypertarget{classshort__alloc_a3386af01276c524f1dc5267544637383}\label{classshort__alloc_a3386af01276c524f1dc5267544637383}} 
+static constexpr auto {\bfseries size} = N
+\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classshort__alloc_a810dd7dc453bbabaeb1caa018817b487}\label{classshort__alloc_a810dd7dc453bbabaeb1caa018817b487}} 
+{\footnotesize template$<$class T1 , std\+::size\+\_\+t N1, std\+::size\+\_\+t A1, class U , std\+::size\+\_\+t M, std\+::size\+\_\+t A2$>$ }\\bool {\bfseries operator==} (const \mbox{\hyperlink{classshort__alloc}{short\+\_\+alloc}}$<$ T1, N1, A1 $>$ \&x, const \mbox{\hyperlink{classshort__alloc}{short\+\_\+alloc}}$<$ U, M, A2 $>$ \&y) noexcept
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Chai\+Script-\/6.\+1.\+0/include/chaiscript/dispatchkit/short\+\_\+alloc.\+hpp\end{DoxyCompactItemize}

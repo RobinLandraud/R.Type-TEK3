@@ -1,0 +1,121 @@
+\hypertarget{namespacechaiscript_1_1eval}{}\doxysection{chaiscript\+::eval Namespace Reference}
+\label{namespacechaiscript_1_1eval}\index{chaiscript::eval@{chaiscript::eval}}
+
+
+Classes and functions that are part of the runtime eval system.  
+
+
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structchaiscript_1_1eval_1_1AST__Node__Impl}{AST\+\_\+\+Node\+\_\+\+Impl}}
+\item 
+struct \mbox{\hyperlink{structchaiscript_1_1eval_1_1Compiled__AST__Node}{Compiled\+\_\+\+AST\+\_\+\+Node}}
+\item 
+struct \mbox{\hyperlink{structchaiscript_1_1eval_1_1Fold__Right__Binary__Operator__AST__Node}{Fold\+\_\+\+Right\+\_\+\+Binary\+\_\+\+Operator\+\_\+\+AST\+\_\+\+Node}}
+\item 
+struct \mbox{\hyperlink{structchaiscript_1_1eval_1_1Binary__Operator__AST__Node}{Binary\+\_\+\+Operator\+\_\+\+AST\+\_\+\+Node}}
+\item 
+struct \mbox{\hyperlink{structchaiscript_1_1eval_1_1Constant__AST__Node}{Constant\+\_\+\+AST\+\_\+\+Node}}
+\item 
+struct \mbox{\hyperlink{structchaiscript_1_1eval_1_1Id__AST__Node}{Id\+\_\+\+AST\+\_\+\+Node}}
+\item 
+struct \mbox{\hyperlink{structchaiscript_1_1eval_1_1Fun__Call__AST__Node}{Fun\+\_\+\+Call\+\_\+\+AST\+\_\+\+Node}}
+\item 
+struct \mbox{\hyperlink{structchaiscript_1_1eval_1_1Unused__Return__Fun__Call__AST__Node}{Unused\+\_\+\+Return\+\_\+\+Fun\+\_\+\+Call\+\_\+\+AST\+\_\+\+Node}}
+\item 
+struct \mbox{\hyperlink{structchaiscript_1_1eval_1_1Arg__AST__Node}{Arg\+\_\+\+AST\+\_\+\+Node}}
+\item 
+struct \mbox{\hyperlink{structchaiscript_1_1eval_1_1Arg__List__AST__Node}{Arg\+\_\+\+List\+\_\+\+AST\+\_\+\+Node}}
+\item 
+struct \mbox{\hyperlink{structchaiscript_1_1eval_1_1Equation__AST__Node}{Equation\+\_\+\+AST\+\_\+\+Node}}
+\item 
+struct \mbox{\hyperlink{structchaiscript_1_1eval_1_1Global__Decl__AST__Node}{Global\+\_\+\+Decl\+\_\+\+AST\+\_\+\+Node}}
+\item 
+struct \mbox{\hyperlink{structchaiscript_1_1eval_1_1Var__Decl__AST__Node}{Var\+\_\+\+Decl\+\_\+\+AST\+\_\+\+Node}}
+\item 
+struct \mbox{\hyperlink{structchaiscript_1_1eval_1_1Assign__Decl__AST__Node}{Assign\+\_\+\+Decl\+\_\+\+AST\+\_\+\+Node}}
+\item 
+struct \mbox{\hyperlink{structchaiscript_1_1eval_1_1Array__Call__AST__Node}{Array\+\_\+\+Call\+\_\+\+AST\+\_\+\+Node}}
+\item 
+struct \mbox{\hyperlink{structchaiscript_1_1eval_1_1Dot__Access__AST__Node}{Dot\+\_\+\+Access\+\_\+\+AST\+\_\+\+Node}}
+\item 
+struct \mbox{\hyperlink{structchaiscript_1_1eval_1_1Lambda__AST__Node}{Lambda\+\_\+\+AST\+\_\+\+Node}}
+\item 
+struct \mbox{\hyperlink{structchaiscript_1_1eval_1_1Scopeless__Block__AST__Node}{Scopeless\+\_\+\+Block\+\_\+\+AST\+\_\+\+Node}}
+\item 
+struct \mbox{\hyperlink{structchaiscript_1_1eval_1_1Block__AST__Node}{Block\+\_\+\+AST\+\_\+\+Node}}
+\item 
+struct \mbox{\hyperlink{structchaiscript_1_1eval_1_1Def__AST__Node}{Def\+\_\+\+AST\+\_\+\+Node}}
+\item 
+struct \mbox{\hyperlink{structchaiscript_1_1eval_1_1While__AST__Node}{While\+\_\+\+AST\+\_\+\+Node}}
+\item 
+struct \mbox{\hyperlink{structchaiscript_1_1eval_1_1Class__AST__Node}{Class\+\_\+\+AST\+\_\+\+Node}}
+\item 
+struct \mbox{\hyperlink{structchaiscript_1_1eval_1_1If__AST__Node}{If\+\_\+\+AST\+\_\+\+Node}}
+\item 
+struct \mbox{\hyperlink{structchaiscript_1_1eval_1_1Ranged__For__AST__Node}{Ranged\+\_\+\+For\+\_\+\+AST\+\_\+\+Node}}
+\item 
+struct \mbox{\hyperlink{structchaiscript_1_1eval_1_1For__AST__Node}{For\+\_\+\+AST\+\_\+\+Node}}
+\item 
+struct \mbox{\hyperlink{structchaiscript_1_1eval_1_1Switch__AST__Node}{Switch\+\_\+\+AST\+\_\+\+Node}}
+\item 
+struct \mbox{\hyperlink{structchaiscript_1_1eval_1_1Case__AST__Node}{Case\+\_\+\+AST\+\_\+\+Node}}
+\item 
+struct \mbox{\hyperlink{structchaiscript_1_1eval_1_1Default__AST__Node}{Default\+\_\+\+AST\+\_\+\+Node}}
+\item 
+struct \mbox{\hyperlink{structchaiscript_1_1eval_1_1Inline__Array__AST__Node}{Inline\+\_\+\+Array\+\_\+\+AST\+\_\+\+Node}}
+\item 
+struct \mbox{\hyperlink{structchaiscript_1_1eval_1_1Inline__Map__AST__Node}{Inline\+\_\+\+Map\+\_\+\+AST\+\_\+\+Node}}
+\item 
+struct \mbox{\hyperlink{structchaiscript_1_1eval_1_1Return__AST__Node}{Return\+\_\+\+AST\+\_\+\+Node}}
+\item 
+struct \mbox{\hyperlink{structchaiscript_1_1eval_1_1File__AST__Node}{File\+\_\+\+AST\+\_\+\+Node}}
+\item 
+struct \mbox{\hyperlink{structchaiscript_1_1eval_1_1Reference__AST__Node}{Reference\+\_\+\+AST\+\_\+\+Node}}
+\item 
+struct \mbox{\hyperlink{structchaiscript_1_1eval_1_1Prefix__AST__Node}{Prefix\+\_\+\+AST\+\_\+\+Node}}
+\item 
+struct \mbox{\hyperlink{structchaiscript_1_1eval_1_1Break__AST__Node}{Break\+\_\+\+AST\+\_\+\+Node}}
+\item 
+struct \mbox{\hyperlink{structchaiscript_1_1eval_1_1Continue__AST__Node}{Continue\+\_\+\+AST\+\_\+\+Node}}
+\item 
+struct \mbox{\hyperlink{structchaiscript_1_1eval_1_1Noop__AST__Node}{Noop\+\_\+\+AST\+\_\+\+Node}}
+\item 
+struct \mbox{\hyperlink{structchaiscript_1_1eval_1_1Map__Pair__AST__Node}{Map\+\_\+\+Pair\+\_\+\+AST\+\_\+\+Node}}
+\item 
+struct \mbox{\hyperlink{structchaiscript_1_1eval_1_1Value__Range__AST__Node}{Value\+\_\+\+Range\+\_\+\+AST\+\_\+\+Node}}
+\item 
+struct \mbox{\hyperlink{structchaiscript_1_1eval_1_1Inline__Range__AST__Node}{Inline\+\_\+\+Range\+\_\+\+AST\+\_\+\+Node}}
+\item 
+struct \mbox{\hyperlink{structchaiscript_1_1eval_1_1Try__AST__Node}{Try\+\_\+\+AST\+\_\+\+Node}}
+\item 
+struct \mbox{\hyperlink{structchaiscript_1_1eval_1_1Catch__AST__Node}{Catch\+\_\+\+AST\+\_\+\+Node}}
+\item 
+struct \mbox{\hyperlink{structchaiscript_1_1eval_1_1Finally__AST__Node}{Finally\+\_\+\+AST\+\_\+\+Node}}
+\item 
+struct \mbox{\hyperlink{structchaiscript_1_1eval_1_1Method__AST__Node}{Method\+\_\+\+AST\+\_\+\+Node}}
+\item 
+struct \mbox{\hyperlink{structchaiscript_1_1eval_1_1Attr__Decl__AST__Node}{Attr\+\_\+\+Decl\+\_\+\+AST\+\_\+\+Node}}
+\item 
+struct \mbox{\hyperlink{structchaiscript_1_1eval_1_1Logical__And__AST__Node}{Logical\+\_\+\+And\+\_\+\+AST\+\_\+\+Node}}
+\item 
+struct \mbox{\hyperlink{structchaiscript_1_1eval_1_1Logical__Or__AST__Node}{Logical\+\_\+\+Or\+\_\+\+AST\+\_\+\+Node}}
+\item 
+struct \mbox{\hyperlink{structchaiscript_1_1eval_1_1Noop__Tracer__Detail}{Noop\+\_\+\+Tracer\+\_\+\+Detail}}
+\item 
+struct \mbox{\hyperlink{structchaiscript_1_1eval_1_1Tracer}{Tracer}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{namespacechaiscript_1_1eval_a476a79b8adc30474356e477060dddc6d}\label{namespacechaiscript_1_1eval_a476a79b8adc30474356e477060dddc6d}} 
+{\footnotesize template$<$typename T $>$ }\\using {\bfseries AST\+\_\+\+Node\+\_\+\+Impl\+\_\+\+Ptr} = typename std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{structchaiscript_1_1eval_1_1AST__Node__Impl}{AST\+\_\+\+Node\+\_\+\+Impl}}$<$ T $>$ $>$
+\item 
+\mbox{\Hypertarget{namespacechaiscript_1_1eval_af23700b18f10c723460710203ee0b374}\label{namespacechaiscript_1_1eval_af23700b18f10c723460710203ee0b374}} 
+typedef \mbox{\hyperlink{structchaiscript_1_1eval_1_1Tracer}{Tracer}}$<$ \mbox{\hyperlink{structchaiscript_1_1eval_1_1Noop__Tracer__Detail}{Noop\+\_\+\+Tracer\+\_\+\+Detail}} $>$ {\bfseries Noop\+\_\+\+Tracer}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Classes and functions that are part of the runtime eval system. 

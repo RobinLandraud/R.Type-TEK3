@@ -1,0 +1,335 @@
+\hypertarget{classChaiScript__Language_1_1string}{}\doxysection{Chai\+Script\+\_\+\+Language\+::string Class Reference}
+\label{classChaiScript__Language_1_1string}\index{ChaiScript\_Language::string@{ChaiScript\_Language::string}}
+
+
+Chai\+Script representation of std\+::string. It is an std\+::string but only some member are exposed to Chai\+Script.  
+
+
+
+
+{\ttfamily \#include $<$chaiscript\+\_\+prelude\+\_\+docs.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classChaiScript__Language_1_1string_a3c4b43db1a1a2e740fc36634e375e1db}{find}} (\mbox{\hyperlink{classChaiScript__Language_1_1string}{string}} s) const
+\begin{DoxyCompactList}\small\item\em Finds the first instance of substr. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classChaiScript__Language_1_1string_a1f631c4278ab0beeb20904f7bd50d16c}{rfind}} (\mbox{\hyperlink{classChaiScript__Language_1_1string}{string}} s) const
+\begin{DoxyCompactList}\small\item\em Finds the last instance of substr. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classChaiScript__Language_1_1string_af38b43ee91ed4a2af93fad7d1819f83e}{find\+\_\+first\+\_\+of}} (\mbox{\hyperlink{classChaiScript__Language_1_1string}{string}} list) const
+\begin{DoxyCompactList}\small\item\em Finds the first of characters in list in the string. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classChaiScript__Language_1_1string_abdf4a1c8faa07eb137a58f89d0467cb6}{find\+\_\+last\+\_\+of}} (\mbox{\hyperlink{classChaiScript__Language_1_1string}{string}} list) const
+\begin{DoxyCompactList}\small\item\em Finds the last of characters in list in the string. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classChaiScript__Language_1_1string_a82ab116d479987557fc2d250815518c6}{find\+\_\+first\+\_\+not\+\_\+of}} (\mbox{\hyperlink{classChaiScript__Language_1_1string}{string}} list) const
+\begin{DoxyCompactList}\small\item\em Finds the first non-\/matching character to list in the str string. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classChaiScript__Language_1_1string_aff11ca1e51769eb66a1c4d3da567c109}{find\+\_\+last\+\_\+not\+\_\+of}} (\mbox{\hyperlink{classChaiScript__Language_1_1string}{string}} list) const
+\begin{DoxyCompactList}\small\item\em Finds the last non-\/matching character to list in the list string. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classChaiScript__Language_1_1string}{string}} \mbox{\hyperlink{classChaiScript__Language_1_1string_a6999309a6fbd281711199915a43b5356}{lstrim}} () const
+\begin{DoxyCompactList}\small\item\em Removes whitespace from the front of the string, returning a new string. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classChaiScript__Language_1_1string}{string}} \mbox{\hyperlink{classChaiScript__Language_1_1string_ab0133519272536216eac6fa3c8845df7}{rtrim}} () const
+\begin{DoxyCompactList}\small\item\em Removes whitespace from the back of the string, returning a new string. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classChaiScript__Language_1_1string}{string}} \mbox{\hyperlink{classChaiScript__Language_1_1string_acd8c33a93989c9c4c89c8b8112c041ea}{trim}} () const
+\begin{DoxyCompactList}\small\item\em Removes whitespace from the front and back of the string, returning a new string. \end{DoxyCompactList}\item 
+const char \& \mbox{\hyperlink{classChaiScript__Language_1_1string_a474d8833314892bf0b39343b15289265}{operator\mbox{[}$\,$\mbox{]}}} (int t\+\_\+index) const
+\begin{DoxyCompactList}\small\item\em Returns the character at the given index in the string, const version. \end{DoxyCompactList}\item 
+char \& \mbox{\hyperlink{classChaiScript__Language_1_1string_af2f1f65a11fb801625fa80017351abf9}{operator\mbox{[}$\,$\mbox{]}}} (int t\+\_\+index)
+\begin{DoxyCompactList}\small\item\em Returns the character at the given index in the string. \end{DoxyCompactList}\item 
+const char $\ast$ \mbox{\hyperlink{classChaiScript__Language_1_1string_a47d3ea141edd483ed322848aa1c6a90a}{c\+\_\+str}} () const
+\begin{DoxyCompactList}\small\item\em Returns underlying const char $\ast$ for C api compatibility. \end{DoxyCompactList}\item 
+const char $\ast$ \mbox{\hyperlink{classChaiScript__Language_1_1string_acd00eec8182e7e2e0892defd693a15b6}{data}} () const
+\begin{DoxyCompactList}\small\item\em Returns a pointer to the raw data in the string. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classChaiScript__Language_1_1string_a6ef7362d40cd1babee6391c104149afb}{clear}} ()
+\begin{DoxyCompactList}\small\item\em Resets the string to empty. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classChaiScript__Language_1_1string_a9a3d28ce7ea336ad4c4030a1effc7db6}{empty}} () const
+\begin{DoxyCompactList}\small\item\em Returns true if the string is empty. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classChaiScript__Language_1_1string_a223aeb7553ecec681944b3b111354e00}{size}} () const
+\begin{DoxyCompactList}\small\item\em Returns the size of the string in bytes. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classChaiScript__Language_1_1Range}{Range}} \mbox{\hyperlink{classChaiScript__Language_1_1string_af3d8fbc9f4b626647839ba6c06864ce8}{range}} ()
+\begin{DoxyCompactList}\small\item\em Returns an object that implements the \mbox{\hyperlink{classChaiScript__Language_1_1Range}{Range}} concept for the characters of this string. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classChaiScript__Language_1_1Const__Range}{Const\+\_\+\+Range}} \mbox{\hyperlink{classChaiScript__Language_1_1string_af5ddd4b2f7bd549da7495ac5726f6028}{range}} () const
+\begin{DoxyCompactList}\small\item\em Returns an object that implements the \mbox{\hyperlink{classChaiScript__Language_1_1Const__Range}{Const\+\_\+\+Range}} concept for the characters of this string. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Chai\+Script representation of std\+::string. It is an std\+::string but only some member are exposed to Chai\+Script. 
+
+Because the Chai\+Script string object is an std\+::string, it is directly convertible to and from std\+::string using the \mbox{\hyperlink{namespacechaiscript_a2de45834af1787f63a901a871414b749}{chaiscript\+::boxed\+\_\+cast}} and \mbox{\hyperlink{namespacechaiscript_a7f9fcf9713fa8a33bcc304a16ac2834b}{chaiscript\+::var}} functions.
+
+With the exception of \mbox{\hyperlink{classChaiScript__Language_1_1string_acd8c33a93989c9c4c89c8b8112c041ea}{string\+::trim}}, \mbox{\hyperlink{classChaiScript__Language_1_1string_ab0133519272536216eac6fa3c8845df7}{string\+::rtrim}}, string\+::ltrim, all members are direct pass-\/throughs to the std\+::string of the same name.
+
+\begin{DoxyNote}{Note}
+\mbox{\hyperlink{classChaiScript__Language_1_1Object}{Object}} and function notations are equivalent in Chai\+Script. This means that {\ttfamily \char`\"{}bob\char`\"{}}.find(\char`\"{}b\char`\"{}) and {\ttfamily find}(\char`\"{}bob\char`\"{}, \char`\"{}b\char`\"{}) are exactly the same. Most examples below follow the second formation of the function calls. 
+\end{DoxyNote}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{LangKeywordRef_keyworddef}{def}} for extending existing C++ classes in Chai\+Script 
+
+chaiscript\+::bootstrap\+::standard\+\_\+library\+::string\+\_\+type 
+\end{DoxySeeAlso}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classChaiScript__Language_1_1string_a47d3ea141edd483ed322848aa1c6a90a}\label{classChaiScript__Language_1_1string_a47d3ea141edd483ed322848aa1c6a90a}} 
+\index{ChaiScript\_Language::string@{ChaiScript\_Language::string}!c\_str@{c\_str}}
+\index{c\_str@{c\_str}!ChaiScript\_Language::string@{ChaiScript\_Language::string}}
+\doxysubsubsection{\texorpdfstring{c\_str()}{c\_str()}}
+{\footnotesize\ttfamily const char$\ast$ Chai\+Script\+\_\+\+Language\+::string\+::c\+\_\+str (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Returns underlying const char $\ast$ for C api compatibility. 
+
+\mbox{\Hypertarget{classChaiScript__Language_1_1string_a6ef7362d40cd1babee6391c104149afb}\label{classChaiScript__Language_1_1string_a6ef7362d40cd1babee6391c104149afb}} 
+\index{ChaiScript\_Language::string@{ChaiScript\_Language::string}!clear@{clear}}
+\index{clear@{clear}!ChaiScript\_Language::string@{ChaiScript\_Language::string}}
+\doxysubsubsection{\texorpdfstring{clear()}{clear()}}
+{\footnotesize\ttfamily void Chai\+Script\+\_\+\+Language\+::string\+::clear (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Resets the string to empty. 
+
+\mbox{\Hypertarget{classChaiScript__Language_1_1string_acd00eec8182e7e2e0892defd693a15b6}\label{classChaiScript__Language_1_1string_acd00eec8182e7e2e0892defd693a15b6}} 
+\index{ChaiScript\_Language::string@{ChaiScript\_Language::string}!data@{data}}
+\index{data@{data}!ChaiScript\_Language::string@{ChaiScript\_Language::string}}
+\doxysubsubsection{\texorpdfstring{data()}{data()}}
+{\footnotesize\ttfamily const char$\ast$ Chai\+Script\+\_\+\+Language\+::string\+::data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Returns a pointer to the raw data in the string. 
+
+\mbox{\Hypertarget{classChaiScript__Language_1_1string_a9a3d28ce7ea336ad4c4030a1effc7db6}\label{classChaiScript__Language_1_1string_a9a3d28ce7ea336ad4c4030a1effc7db6}} 
+\index{ChaiScript\_Language::string@{ChaiScript\_Language::string}!empty@{empty}}
+\index{empty@{empty}!ChaiScript\_Language::string@{ChaiScript\_Language::string}}
+\doxysubsubsection{\texorpdfstring{empty()}{empty()}}
+{\footnotesize\ttfamily bool Chai\+Script\+\_\+\+Language\+::string\+::empty (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Returns true if the string is empty. 
+
+\mbox{\Hypertarget{classChaiScript__Language_1_1string_a3c4b43db1a1a2e740fc36634e375e1db}\label{classChaiScript__Language_1_1string_a3c4b43db1a1a2e740fc36634e375e1db}} 
+\index{ChaiScript\_Language::string@{ChaiScript\_Language::string}!find@{find}}
+\index{find@{find}!ChaiScript\_Language::string@{ChaiScript\_Language::string}}
+\doxysubsubsection{\texorpdfstring{find()}{find()}}
+{\footnotesize\ttfamily int Chai\+Script\+\_\+\+Language\+::string\+::find (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classChaiScript__Language_1_1string}{string}}}]{s }\end{DoxyParamCaption}) const}
+
+
+
+Finds the first instance of substr. 
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{eval> \mbox{\hyperlink{classChaiScript__Language_1_1string_a3c4b43db1a1a2e740fc36634e375e1db}{find}}(\textcolor{stringliteral}{"{}abab"{}}, \textcolor{stringliteral}{"{}ab"{}})}
+\DoxyCodeLine{0}
+
+\end{DoxyCode}
+ \mbox{\Hypertarget{classChaiScript__Language_1_1string_a82ab116d479987557fc2d250815518c6}\label{classChaiScript__Language_1_1string_a82ab116d479987557fc2d250815518c6}} 
+\index{ChaiScript\_Language::string@{ChaiScript\_Language::string}!find\_first\_not\_of@{find\_first\_not\_of}}
+\index{find\_first\_not\_of@{find\_first\_not\_of}!ChaiScript\_Language::string@{ChaiScript\_Language::string}}
+\doxysubsubsection{\texorpdfstring{find\_first\_not\_of()}{find\_first\_not\_of()}}
+{\footnotesize\ttfamily int Chai\+Script\+\_\+\+Language\+::string\+::find\+\_\+first\+\_\+not\+\_\+of (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classChaiScript__Language_1_1string}{string}}}]{list }\end{DoxyParamCaption}) const}
+
+
+
+Finds the first non-\/matching character to list in the str string. 
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{eval> \mbox{\hyperlink{classChaiScript__Language_1_1string_a82ab116d479987557fc2d250815518c6}{find\_first\_not\_of}}(\textcolor{stringliteral}{"{}abcd"{}}, \textcolor{stringliteral}{"{}fec"{}})}
+\DoxyCodeLine{0}
+
+\end{DoxyCode}
+ \mbox{\Hypertarget{classChaiScript__Language_1_1string_af38b43ee91ed4a2af93fad7d1819f83e}\label{classChaiScript__Language_1_1string_af38b43ee91ed4a2af93fad7d1819f83e}} 
+\index{ChaiScript\_Language::string@{ChaiScript\_Language::string}!find\_first\_of@{find\_first\_of}}
+\index{find\_first\_of@{find\_first\_of}!ChaiScript\_Language::string@{ChaiScript\_Language::string}}
+\doxysubsubsection{\texorpdfstring{find\_first\_of()}{find\_first\_of()}}
+{\footnotesize\ttfamily int Chai\+Script\+\_\+\+Language\+::string\+::find\+\_\+first\+\_\+of (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classChaiScript__Language_1_1string}{string}}}]{list }\end{DoxyParamCaption}) const}
+
+
+
+Finds the first of characters in list in the string. 
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{eval> \mbox{\hyperlink{classChaiScript__Language_1_1string_af38b43ee91ed4a2af93fad7d1819f83e}{find\_first\_of}}(\textcolor{stringliteral}{"{}abab"{}}, \textcolor{stringliteral}{"{}bec"{}})}
+\DoxyCodeLine{1}
+
+\end{DoxyCode}
+ \mbox{\Hypertarget{classChaiScript__Language_1_1string_aff11ca1e51769eb66a1c4d3da567c109}\label{classChaiScript__Language_1_1string_aff11ca1e51769eb66a1c4d3da567c109}} 
+\index{ChaiScript\_Language::string@{ChaiScript\_Language::string}!find\_last\_not\_of@{find\_last\_not\_of}}
+\index{find\_last\_not\_of@{find\_last\_not\_of}!ChaiScript\_Language::string@{ChaiScript\_Language::string}}
+\doxysubsubsection{\texorpdfstring{find\_last\_not\_of()}{find\_last\_not\_of()}}
+{\footnotesize\ttfamily int Chai\+Script\+\_\+\+Language\+::string\+::find\+\_\+last\+\_\+not\+\_\+of (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classChaiScript__Language_1_1string}{string}}}]{list }\end{DoxyParamCaption}) const}
+
+
+
+Finds the last non-\/matching character to list in the list string. 
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{eval> \mbox{\hyperlink{classChaiScript__Language_1_1string_aff11ca1e51769eb66a1c4d3da567c109}{find\_last\_not\_of}}(\textcolor{stringliteral}{"{}abcd"{}}, \textcolor{stringliteral}{"{}fec"{}})}
+\DoxyCodeLine{3}
+
+\end{DoxyCode}
+ \mbox{\Hypertarget{classChaiScript__Language_1_1string_abdf4a1c8faa07eb137a58f89d0467cb6}\label{classChaiScript__Language_1_1string_abdf4a1c8faa07eb137a58f89d0467cb6}} 
+\index{ChaiScript\_Language::string@{ChaiScript\_Language::string}!find\_last\_of@{find\_last\_of}}
+\index{find\_last\_of@{find\_last\_of}!ChaiScript\_Language::string@{ChaiScript\_Language::string}}
+\doxysubsubsection{\texorpdfstring{find\_last\_of()}{find\_last\_of()}}
+{\footnotesize\ttfamily int Chai\+Script\+\_\+\+Language\+::string\+::find\+\_\+last\+\_\+of (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classChaiScript__Language_1_1string}{string}}}]{list }\end{DoxyParamCaption}) const}
+
+
+
+Finds the last of characters in list in the string. 
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{eval> \mbox{\hyperlink{classChaiScript__Language_1_1string_abdf4a1c8faa07eb137a58f89d0467cb6}{find\_last\_of}}(\textcolor{stringliteral}{"{}abab"{}}, \textcolor{stringliteral}{"{}bec"{}})}
+\DoxyCodeLine{3}
+
+\end{DoxyCode}
+ \mbox{\Hypertarget{classChaiScript__Language_1_1string_a6999309a6fbd281711199915a43b5356}\label{classChaiScript__Language_1_1string_a6999309a6fbd281711199915a43b5356}} 
+\index{ChaiScript\_Language::string@{ChaiScript\_Language::string}!lstrim@{lstrim}}
+\index{lstrim@{lstrim}!ChaiScript\_Language::string@{ChaiScript\_Language::string}}
+\doxysubsubsection{\texorpdfstring{lstrim()}{lstrim()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classChaiScript__Language_1_1string}{string}} Chai\+Script\+\_\+\+Language\+::string\+::lstrim (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Removes whitespace from the front of the string, returning a new string. 
+
+\begin{DoxyNote}{Note}
+This function is implemented as a Chai\+Script function using the def member function notation.
+\end{DoxyNote}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{eval> ltrim(\textcolor{stringliteral}{"{}  bob"{}})}
+\DoxyCodeLine{bob}
+
+\end{DoxyCode}
+
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{LangKeywordRef_keyworddef}{def}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classChaiScript__Language_1_1string_af2f1f65a11fb801625fa80017351abf9}\label{classChaiScript__Language_1_1string_af2f1f65a11fb801625fa80017351abf9}} 
+\index{ChaiScript\_Language::string@{ChaiScript\_Language::string}!operator\mbox{[}\mbox{]}@{operator[]}}
+\index{operator\mbox{[}\mbox{]}@{operator[]}!ChaiScript\_Language::string@{ChaiScript\_Language::string}}
+\doxysubsubsection{\texorpdfstring{operator[]()}{operator[]()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily char\& Chai\+Script\+\_\+\+Language\+::string\+::operator\mbox{[}$\,$\mbox{]} (\begin{DoxyParamCaption}\item[{int}]{t\+\_\+index }\end{DoxyParamCaption})}
+
+
+
+Returns the character at the given index in the string. 
+
+\mbox{\Hypertarget{classChaiScript__Language_1_1string_a474d8833314892bf0b39343b15289265}\label{classChaiScript__Language_1_1string_a474d8833314892bf0b39343b15289265}} 
+\index{ChaiScript\_Language::string@{ChaiScript\_Language::string}!operator\mbox{[}\mbox{]}@{operator[]}}
+\index{operator\mbox{[}\mbox{]}@{operator[]}!ChaiScript\_Language::string@{ChaiScript\_Language::string}}
+\doxysubsubsection{\texorpdfstring{operator[]()}{operator[]()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily const char\& Chai\+Script\+\_\+\+Language\+::string\+::operator\mbox{[}$\,$\mbox{]} (\begin{DoxyParamCaption}\item[{int}]{t\+\_\+index }\end{DoxyParamCaption}) const}
+
+
+
+Returns the character at the given index in the string, const version. 
+
+\mbox{\Hypertarget{classChaiScript__Language_1_1string_af3d8fbc9f4b626647839ba6c06864ce8}\label{classChaiScript__Language_1_1string_af3d8fbc9f4b626647839ba6c06864ce8}} 
+\index{ChaiScript\_Language::string@{ChaiScript\_Language::string}!range@{range}}
+\index{range@{range}!ChaiScript\_Language::string@{ChaiScript\_Language::string}}
+\doxysubsubsection{\texorpdfstring{range()}{range()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classChaiScript__Language_1_1Range}{Range}} Chai\+Script\+\_\+\+Language\+::string\+::range (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns an object that implements the \mbox{\hyperlink{classChaiScript__Language_1_1Range}{Range}} concept for the characters of this string. 
+
+\mbox{\Hypertarget{classChaiScript__Language_1_1string_af5ddd4b2f7bd549da7495ac5726f6028}\label{classChaiScript__Language_1_1string_af5ddd4b2f7bd549da7495ac5726f6028}} 
+\index{ChaiScript\_Language::string@{ChaiScript\_Language::string}!range@{range}}
+\index{range@{range}!ChaiScript\_Language::string@{ChaiScript\_Language::string}}
+\doxysubsubsection{\texorpdfstring{range()}{range()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classChaiScript__Language_1_1Const__Range}{Const\+\_\+\+Range}} Chai\+Script\+\_\+\+Language\+::string\+::range (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Returns an object that implements the \mbox{\hyperlink{classChaiScript__Language_1_1Const__Range}{Const\+\_\+\+Range}} concept for the characters of this string. 
+
+\mbox{\Hypertarget{classChaiScript__Language_1_1string_a1f631c4278ab0beeb20904f7bd50d16c}\label{classChaiScript__Language_1_1string_a1f631c4278ab0beeb20904f7bd50d16c}} 
+\index{ChaiScript\_Language::string@{ChaiScript\_Language::string}!rfind@{rfind}}
+\index{rfind@{rfind}!ChaiScript\_Language::string@{ChaiScript\_Language::string}}
+\doxysubsubsection{\texorpdfstring{rfind()}{rfind()}}
+{\footnotesize\ttfamily int Chai\+Script\+\_\+\+Language\+::string\+::rfind (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classChaiScript__Language_1_1string}{string}}}]{s }\end{DoxyParamCaption}) const}
+
+
+
+Finds the last instance of substr. 
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{eval> \mbox{\hyperlink{classChaiScript__Language_1_1string_a1f631c4278ab0beeb20904f7bd50d16c}{rfind}}(\textcolor{stringliteral}{"{}abab"{}}, \textcolor{stringliteral}{"{}ab"{}})}
+\DoxyCodeLine{2}
+
+\end{DoxyCode}
+ \mbox{\Hypertarget{classChaiScript__Language_1_1string_ab0133519272536216eac6fa3c8845df7}\label{classChaiScript__Language_1_1string_ab0133519272536216eac6fa3c8845df7}} 
+\index{ChaiScript\_Language::string@{ChaiScript\_Language::string}!rtrim@{rtrim}}
+\index{rtrim@{rtrim}!ChaiScript\_Language::string@{ChaiScript\_Language::string}}
+\doxysubsubsection{\texorpdfstring{rtrim()}{rtrim()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classChaiScript__Language_1_1string}{string}} Chai\+Script\+\_\+\+Language\+::string\+::rtrim (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Removes whitespace from the back of the string, returning a new string. 
+
+\begin{DoxyNote}{Note}
+This function is implemented as a Chai\+Script function using the def member function notation.
+\end{DoxyNote}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{eval> \mbox{\hyperlink{classChaiScript__Language_1_1string_ab0133519272536216eac6fa3c8845df7}{rtrim}}(\textcolor{stringliteral}{"{}bob  "{}}) + \textcolor{stringliteral}{"{}|"{}}}
+\DoxyCodeLine{bob|}
+
+\end{DoxyCode}
+
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{LangKeywordRef_keyworddef}{def}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classChaiScript__Language_1_1string_a223aeb7553ecec681944b3b111354e00}\label{classChaiScript__Language_1_1string_a223aeb7553ecec681944b3b111354e00}} 
+\index{ChaiScript\_Language::string@{ChaiScript\_Language::string}!size@{size}}
+\index{size@{size}!ChaiScript\_Language::string@{ChaiScript\_Language::string}}
+\doxysubsubsection{\texorpdfstring{size()}{size()}}
+{\footnotesize\ttfamily int Chai\+Script\+\_\+\+Language\+::string\+::size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Returns the size of the string in bytes. 
+
+This function normally returns size\+\_\+t in C++. In Chai\+Script the return value is cast to int for ease of use. \mbox{\Hypertarget{classChaiScript__Language_1_1string_acd8c33a93989c9c4c89c8b8112c041ea}\label{classChaiScript__Language_1_1string_acd8c33a93989c9c4c89c8b8112c041ea}} 
+\index{ChaiScript\_Language::string@{ChaiScript\_Language::string}!trim@{trim}}
+\index{trim@{trim}!ChaiScript\_Language::string@{ChaiScript\_Language::string}}
+\doxysubsubsection{\texorpdfstring{trim()}{trim()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classChaiScript__Language_1_1string}{string}} Chai\+Script\+\_\+\+Language\+::string\+::trim (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Removes whitespace from the front and back of the string, returning a new string. 
+
+\begin{DoxyNote}{Note}
+This function is implemented as a Chai\+Script function using the def member function notation.
+\end{DoxyNote}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{eval> \mbox{\hyperlink{classChaiScript__Language_1_1string_acd8c33a93989c9c4c89c8b8112c041ea}{trim}}(\textcolor{stringliteral}{"{}  bob  "{}}) + \textcolor{stringliteral}{"{}|"{}}}
+\DoxyCodeLine{bob|}
+
+\end{DoxyCode}
+
+
+Equivalent to rtrim(ltrim(\char`\"{}  bob  \char`\"{}));
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{LangKeywordRef_keyworddef}{def}} 
+\end{DoxySeeAlso}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Chai\+Script-\/6.\+1.\+0/include/chaiscript/language/chaiscript\+\_\+prelude\+\_\+docs.\+hpp\end{DoxyCompactItemize}

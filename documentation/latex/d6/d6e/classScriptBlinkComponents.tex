@@ -1,0 +1,224 @@
+\hypertarget{classScriptBlinkComponents}{}\doxysection{Script\+Blink\+Components Class Reference}
+\label{classScriptBlinkComponents}\index{ScriptBlinkComponents@{ScriptBlinkComponents}}
+
+
+\mbox{\hyperlink{classScript}{Script}} to blink components.  
+
+
+
+
+{\ttfamily \#include $<$Script\+Blink\+Components.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classScriptBlinkComponents_a0817314927097a6ef3992301ef92be7a}{Script\+Blink\+Components}} (\mbox{\hyperlink{classregistry}{registry}} \&reg)
+\begin{DoxyCompactList}\small\item\em The constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classScriptBlinkComponents_ad09a64a79fa1c783883fa1d9af43e22f}{$\sim$\+Script\+Blink\+Components}} ()=default
+\item 
+void \mbox{\hyperlink{classScriptBlinkComponents_a098c12c994eb436d42e5711558eb57af}{add}} (size\+\_\+t ent\+\_\+id, unsigned int clock\+Loops=1, std\+::string clock\+Name=\char`\"{}\char`\"{})
+\begin{DoxyCompactList}\small\item\em Add a blink component to an entity. \end{DoxyCompactList}\item 
+size\+\_\+t \mbox{\hyperlink{classScriptBlinkComponents_a79ed5e317e084fd446796c7c80eccce2}{size}} ()
+\begin{DoxyCompactList}\small\item\em Get the number of blink components. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classBlinkComponent}{Blink\+Component}} \& \mbox{\hyperlink{classScriptBlinkComponents_a33d5269572eca8bb23ee0f4427868368}{at}} (size\+\_\+t index)
+\begin{DoxyCompactList}\small\item\em Get a blink component. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classScriptBlinkComponents_a8bdf91a294e72999495659b40824d284}{exists}} (size\+\_\+t index)
+\begin{DoxyCompactList}\small\item\em Check if a blink component exists. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classScriptBlinkComponents_a5e4d47d90e751248bd4d2048ed879ef0}{is\+Blink\+At}} (size\+\_\+t index)
+\begin{DoxyCompactList}\small\item\em Check if a blink component is blinking. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classScriptBlinkComponents_af95b8539a62d3ec91ea3ead3735f3976}{set\+Clock\+Loops\+At}} (size\+\_\+t index, unsigned int clock\+Loops)
+\begin{DoxyCompactList}\small\item\em Set the number of loops of a blink component. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classScriptBlinkComponents_ad309b580c5e2c9fddf460563a9ae1739}{add\+Actual\+Loop\+At}} (size\+\_\+t index)
+\begin{DoxyCompactList}\small\item\em Add an actual loop to a blink component. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classScriptBlinkComponents_ae5e19f1fde3bd7c7d18b503fd632e33f}{get\+Clock\+Name\+At}} (size\+\_\+t index)
+\begin{DoxyCompactList}\small\item\em Get the name of the clock of a blink component. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classScriptBlinkComponents_ab65f244e4c83ed21d952c960206e0180}{set\+Clock\+Name\+At}} (size\+\_\+t index, std\+::string clock\+Name)
+\begin{DoxyCompactList}\small\item\em Set the name of the clock of a blink component. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{classScript}{Script}} to blink components. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classScriptBlinkComponents_a0817314927097a6ef3992301ef92be7a}\label{classScriptBlinkComponents_a0817314927097a6ef3992301ef92be7a}} 
+\index{ScriptBlinkComponents@{ScriptBlinkComponents}!ScriptBlinkComponents@{ScriptBlinkComponents}}
+\index{ScriptBlinkComponents@{ScriptBlinkComponents}!ScriptBlinkComponents@{ScriptBlinkComponents}}
+\doxysubsubsection{\texorpdfstring{ScriptBlinkComponents()}{ScriptBlinkComponents()}}
+{\footnotesize\ttfamily Script\+Blink\+Components\+::\+Script\+Blink\+Components (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classregistry}{registry}} \&}]{reg }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+The constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em reg} & The registry \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classScriptBlinkComponents_ad09a64a79fa1c783883fa1d9af43e22f}\label{classScriptBlinkComponents_ad09a64a79fa1c783883fa1d9af43e22f}} 
+\index{ScriptBlinkComponents@{ScriptBlinkComponents}!````~ScriptBlinkComponents@{$\sim$ScriptBlinkComponents}}
+\index{````~ScriptBlinkComponents@{$\sim$ScriptBlinkComponents}!ScriptBlinkComponents@{ScriptBlinkComponents}}
+\doxysubsubsection{\texorpdfstring{$\sim$ScriptBlinkComponents()}{~ScriptBlinkComponents()}}
+{\footnotesize\ttfamily Script\+Blink\+Components\+::$\sim$\+Script\+Blink\+Components (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+Default destructor 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classScriptBlinkComponents_a098c12c994eb436d42e5711558eb57af}\label{classScriptBlinkComponents_a098c12c994eb436d42e5711558eb57af}} 
+\index{ScriptBlinkComponents@{ScriptBlinkComponents}!add@{add}}
+\index{add@{add}!ScriptBlinkComponents@{ScriptBlinkComponents}}
+\doxysubsubsection{\texorpdfstring{add()}{add()}}
+{\footnotesize\ttfamily void Script\+Blink\+Components\+::add (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{ent\+\_\+id,  }\item[{unsigned int}]{clock\+Loops = {\ttfamily 1},  }\item[{std\+::string}]{clock\+Name = {\ttfamily \char`\"{}\char`\"{}} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Add a blink component to an entity. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ent\+\_\+id} & The entity id \\
+\hline
+{\em clock\+Loops} & The number of loops of the clock \\
+\hline
+{\em clock\+Name} & The name of the clock \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classScriptBlinkComponents_ad309b580c5e2c9fddf460563a9ae1739}\label{classScriptBlinkComponents_ad309b580c5e2c9fddf460563a9ae1739}} 
+\index{ScriptBlinkComponents@{ScriptBlinkComponents}!addActualLoopAt@{addActualLoopAt}}
+\index{addActualLoopAt@{addActualLoopAt}!ScriptBlinkComponents@{ScriptBlinkComponents}}
+\doxysubsubsection{\texorpdfstring{addActualLoopAt()}{addActualLoopAt()}}
+{\footnotesize\ttfamily void Script\+Blink\+Components\+::add\+Actual\+Loop\+At (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Add an actual loop to a blink component. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & The index of the blink component \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classScriptBlinkComponents_a33d5269572eca8bb23ee0f4427868368}\label{classScriptBlinkComponents_a33d5269572eca8bb23ee0f4427868368}} 
+\index{ScriptBlinkComponents@{ScriptBlinkComponents}!at@{at}}
+\index{at@{at}!ScriptBlinkComponents@{ScriptBlinkComponents}}
+\doxysubsubsection{\texorpdfstring{at()}{at()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classBlinkComponent}{Blink\+Component}} \& Script\+Blink\+Components\+::at (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get a blink component. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & The index of the blink component \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The blink component 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classScriptBlinkComponents_a8bdf91a294e72999495659b40824d284}\label{classScriptBlinkComponents_a8bdf91a294e72999495659b40824d284}} 
+\index{ScriptBlinkComponents@{ScriptBlinkComponents}!exists@{exists}}
+\index{exists@{exists}!ScriptBlinkComponents@{ScriptBlinkComponents}}
+\doxysubsubsection{\texorpdfstring{exists()}{exists()}}
+{\footnotesize\ttfamily bool Script\+Blink\+Components\+::exists (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Check if a blink component exists. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & The index of the blink component \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the blink component exists, false otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classScriptBlinkComponents_ae5e19f1fde3bd7c7d18b503fd632e33f}\label{classScriptBlinkComponents_ae5e19f1fde3bd7c7d18b503fd632e33f}} 
+\index{ScriptBlinkComponents@{ScriptBlinkComponents}!getClockNameAt@{getClockNameAt}}
+\index{getClockNameAt@{getClockNameAt}!ScriptBlinkComponents@{ScriptBlinkComponents}}
+\doxysubsubsection{\texorpdfstring{getClockNameAt()}{getClockNameAt()}}
+{\footnotesize\ttfamily std\+::string Script\+Blink\+Components\+::get\+Clock\+Name\+At (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the name of the clock of a blink component. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & The index of the blink component \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The name of the clock 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classScriptBlinkComponents_a5e4d47d90e751248bd4d2048ed879ef0}\label{classScriptBlinkComponents_a5e4d47d90e751248bd4d2048ed879ef0}} 
+\index{ScriptBlinkComponents@{ScriptBlinkComponents}!isBlinkAt@{isBlinkAt}}
+\index{isBlinkAt@{isBlinkAt}!ScriptBlinkComponents@{ScriptBlinkComponents}}
+\doxysubsubsection{\texorpdfstring{isBlinkAt()}{isBlinkAt()}}
+{\footnotesize\ttfamily bool Script\+Blink\+Components\+::is\+Blink\+At (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Check if a blink component is blinking. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & The index of the blink component \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the blink component is blinking, false otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classScriptBlinkComponents_af95b8539a62d3ec91ea3ead3735f3976}\label{classScriptBlinkComponents_af95b8539a62d3ec91ea3ead3735f3976}} 
+\index{ScriptBlinkComponents@{ScriptBlinkComponents}!setClockLoopsAt@{setClockLoopsAt}}
+\index{setClockLoopsAt@{setClockLoopsAt}!ScriptBlinkComponents@{ScriptBlinkComponents}}
+\doxysubsubsection{\texorpdfstring{setClockLoopsAt()}{setClockLoopsAt()}}
+{\footnotesize\ttfamily void Script\+Blink\+Components\+::set\+Clock\+Loops\+At (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{index,  }\item[{unsigned int}]{clock\+Loops }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Set the number of loops of a blink component. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & The index of the blink component \\
+\hline
+{\em clock\+Loops} & The number of loops of the clock \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classScriptBlinkComponents_ab65f244e4c83ed21d952c960206e0180}\label{classScriptBlinkComponents_ab65f244e4c83ed21d952c960206e0180}} 
+\index{ScriptBlinkComponents@{ScriptBlinkComponents}!setClockNameAt@{setClockNameAt}}
+\index{setClockNameAt@{setClockNameAt}!ScriptBlinkComponents@{ScriptBlinkComponents}}
+\doxysubsubsection{\texorpdfstring{setClockNameAt()}{setClockNameAt()}}
+{\footnotesize\ttfamily void Script\+Blink\+Components\+::set\+Clock\+Name\+At (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{index,  }\item[{std\+::string}]{clock\+Name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Set the name of the clock of a blink component. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & The index of the blink component \\
+\hline
+{\em clock\+Name} & The name of the clock \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classScriptBlinkComponents_a79ed5e317e084fd446796c7c80eccce2}\label{classScriptBlinkComponents_a79ed5e317e084fd446796c7c80eccce2}} 
+\index{ScriptBlinkComponents@{ScriptBlinkComponents}!size@{size}}
+\index{size@{size}!ScriptBlinkComponents@{ScriptBlinkComponents}}
+\doxysubsubsection{\texorpdfstring{size()}{size()}}
+{\footnotesize\ttfamily size\+\_\+t Script\+Blink\+Components\+::size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the number of blink components. 
+
+\begin{DoxyReturn}{Returns}
+The number of blink components 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Client/\+Script/Script\+Blink\+Components.\+hpp\end{DoxyCompactItemize}

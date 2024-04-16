@@ -1,0 +1,143 @@
+\hypertarget{classjson_1_1JSON}{}\doxysection{json\+::JSON Class Reference}
+\label{classjson_1_1JSON}\index{json::JSON@{json::JSON}}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classjson_1_1JSON_1_1JSONConstWrapper}{JSONConst\+Wrapper}}
+\item 
+class \mbox{\hyperlink{classjson_1_1JSON_1_1JSONWrapper}{JSONWrapper}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classjson_1_1JSON_a762f55df6d407c1af61607ed516ffe07}\label{classjson_1_1JSON_a762f55df6d407c1af61607ed516ffe07}} 
+enum class {\bfseries Class} \{ \newline
+{\bfseries Null}
+, {\bfseries Object}
+, {\bfseries Array}
+, {\bfseries String}
+, \newline
+{\bfseries Floating}
+, {\bfseries Integral}
+, {\bfseries Boolean}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classjson_1_1JSON_ac26eaaa4a2b504b8f7393e73c96e89ec}\label{classjson_1_1JSON_ac26eaaa4a2b504b8f7393e73c96e89ec}} 
+{\bfseries JSON} (std\+::nullptr\+\_\+t)
+\item 
+\mbox{\Hypertarget{classjson_1_1JSON_a43a5117edd2497777e51ea5dcd8195ff}\label{classjson_1_1JSON_a43a5117edd2497777e51ea5dcd8195ff}} 
+{\bfseries JSON} (Class type)
+\item 
+\mbox{\Hypertarget{classjson_1_1JSON_acada0833f1b9fb6974610c031b6eabe7}\label{classjson_1_1JSON_acada0833f1b9fb6974610c031b6eabe7}} 
+{\bfseries JSON} (initializer\+\_\+list$<$ \mbox{\hyperlink{classjson_1_1JSON}{JSON}} $>$ list)
+\item 
+\mbox{\Hypertarget{classjson_1_1JSON_a7830be5fcc050bb8a0d1c4f0ea111689}\label{classjson_1_1JSON_a7830be5fcc050bb8a0d1c4f0ea111689}} 
+{\footnotesize template$<$typename T $>$ }\\{\bfseries JSON} (T b, typename enable\+\_\+if$<$ is\+\_\+same$<$ T, bool $>$\+::value $>$\+::type $\ast$=nullptr)
+\item 
+\mbox{\Hypertarget{classjson_1_1JSON_a54a497983a4b51359eb000c8556c7380}\label{classjson_1_1JSON_a54a497983a4b51359eb000c8556c7380}} 
+{\footnotesize template$<$typename T $>$ }\\{\bfseries JSON} (T i, typename enable\+\_\+if$<$ is\+\_\+integral$<$ T $>$\+::value \&\&!is\+\_\+same$<$ T, bool $>$\+::value $>$\+::type $\ast$=nullptr)
+\item 
+\mbox{\Hypertarget{classjson_1_1JSON_abdabdd9516d9e16350bf6a667a6af6dd}\label{classjson_1_1JSON_abdabdd9516d9e16350bf6a667a6af6dd}} 
+{\footnotesize template$<$typename T $>$ }\\{\bfseries JSON} (T f, typename enable\+\_\+if$<$ is\+\_\+floating\+\_\+point$<$ T $>$\+::value $>$\+::type $\ast$=nullptr)
+\item 
+\mbox{\Hypertarget{classjson_1_1JSON_a671a3b869907159a3153db055888e935}\label{classjson_1_1JSON_a671a3b869907159a3153db055888e935}} 
+{\footnotesize template$<$typename T $>$ }\\{\bfseries JSON} (T s, typename enable\+\_\+if$<$ is\+\_\+convertible$<$ T, std\+::string $>$\+::value $>$\+::type $\ast$=nullptr)
+\item 
+\mbox{\Hypertarget{classjson_1_1JSON_a7ad2ca8faca9216392f80985f103d6b1}\label{classjson_1_1JSON_a7ad2ca8faca9216392f80985f103d6b1}} 
+\mbox{\hyperlink{classjson_1_1JSON}{JSON}} \& {\bfseries operator\mbox{[}$\,$\mbox{]}} (const std\+::string \&key)
+\item 
+\mbox{\Hypertarget{classjson_1_1JSON_a1894cd154f90b50376b6e33b81f8b005}\label{classjson_1_1JSON_a1894cd154f90b50376b6e33b81f8b005}} 
+\mbox{\hyperlink{classjson_1_1JSON}{JSON}} \& {\bfseries operator\mbox{[}$\,$\mbox{]}} (const size\+\_\+t index)
+\item 
+\mbox{\Hypertarget{classjson_1_1JSON_a1bf25d71ca54a3105e70ecb13a975446}\label{classjson_1_1JSON_a1bf25d71ca54a3105e70ecb13a975446}} 
+\mbox{\hyperlink{classjson_1_1JSON}{JSON}} \& {\bfseries at} (const std\+::string \&key)
+\item 
+\mbox{\Hypertarget{classjson_1_1JSON_a1def51090e0a46cf9210ca1b2783a94a}\label{classjson_1_1JSON_a1def51090e0a46cf9210ca1b2783a94a}} 
+const \mbox{\hyperlink{classjson_1_1JSON}{JSON}} \& {\bfseries at} (const std\+::string \&key) const
+\item 
+\mbox{\Hypertarget{classjson_1_1JSON_a79e8ea926573b2b517d360aff9854dc7}\label{classjson_1_1JSON_a79e8ea926573b2b517d360aff9854dc7}} 
+\mbox{\hyperlink{classjson_1_1JSON}{JSON}} \& {\bfseries at} (size\+\_\+t index)
+\item 
+\mbox{\Hypertarget{classjson_1_1JSON_a6551934bf48797513d1d4ff6a126a76b}\label{classjson_1_1JSON_a6551934bf48797513d1d4ff6a126a76b}} 
+const \mbox{\hyperlink{classjson_1_1JSON}{JSON}} \& {\bfseries at} (size\+\_\+t index) const
+\item 
+\mbox{\Hypertarget{classjson_1_1JSON_a6dc6bfeb7cf38f9890a4dd036c30342e}\label{classjson_1_1JSON_a6dc6bfeb7cf38f9890a4dd036c30342e}} 
+long {\bfseries length} () const
+\item 
+\mbox{\Hypertarget{classjson_1_1JSON_a0071332c02059fd1b30e4623eb3579b9}\label{classjson_1_1JSON_a0071332c02059fd1b30e4623eb3579b9}} 
+bool {\bfseries has\+\_\+key} (const std\+::string \&key) const
+\item 
+\mbox{\Hypertarget{classjson_1_1JSON_af8665d4f94afa84c3e20d52a7184f7ee}\label{classjson_1_1JSON_af8665d4f94afa84c3e20d52a7184f7ee}} 
+int {\bfseries size} () const
+\item 
+\mbox{\Hypertarget{classjson_1_1JSON_a3c91ab49425b2542665a194d6c07ecb6}\label{classjson_1_1JSON_a3c91ab49425b2542665a194d6c07ecb6}} 
+Class {\bfseries JSONType} () const
+\item 
+bool \mbox{\hyperlink{classjson_1_1JSON_a2099d16bf15736654aca3e0f6de6d3f6}{is\+\_\+null}} () const
+\begin{DoxyCompactList}\small\item\em Functions for getting primitives from the \mbox{\hyperlink{classjson_1_1JSON}{JSON}} object. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classjson_1_1JSON_a12a8da3ed205cc769fcfa5e2da8c1be9}\label{classjson_1_1JSON_a12a8da3ed205cc769fcfa5e2da8c1be9}} 
+std\+::string {\bfseries to\+\_\+string} () const
+\item 
+\mbox{\Hypertarget{classjson_1_1JSON_a033beac140484b6448ecdcaf00fac9d5}\label{classjson_1_1JSON_a033beac140484b6448ecdcaf00fac9d5}} 
+std\+::string {\bfseries to\+\_\+string} (bool \&ok) const
+\item 
+\mbox{\Hypertarget{classjson_1_1JSON_a19f4ab6270c56addd1e667b831e7a5f7}\label{classjson_1_1JSON_a19f4ab6270c56addd1e667b831e7a5f7}} 
+double {\bfseries to\+\_\+float} () const
+\item 
+\mbox{\Hypertarget{classjson_1_1JSON_aad33a7ab9e63cbf9d78b7e2de2058b9b}\label{classjson_1_1JSON_aad33a7ab9e63cbf9d78b7e2de2058b9b}} 
+double {\bfseries to\+\_\+float} (bool \&ok) const
+\item 
+\mbox{\Hypertarget{classjson_1_1JSON_ad428cb75cde27c1d76a901658200be0b}\label{classjson_1_1JSON_ad428cb75cde27c1d76a901658200be0b}} 
+int64\+\_\+t {\bfseries to\+\_\+int} () const
+\item 
+\mbox{\Hypertarget{classjson_1_1JSON_ac30ad9ca02f7c02e31ecd41ed33b4832}\label{classjson_1_1JSON_ac30ad9ca02f7c02e31ecd41ed33b4832}} 
+int64\+\_\+t {\bfseries to\+\_\+int} (bool \&ok) const
+\item 
+\mbox{\Hypertarget{classjson_1_1JSON_ac7cd42fdc778e85ba8a566c68740a757}\label{classjson_1_1JSON_ac7cd42fdc778e85ba8a566c68740a757}} 
+bool {\bfseries to\+\_\+bool} () const
+\item 
+\mbox{\Hypertarget{classjson_1_1JSON_a5db2f5f34d89df87f1729579c86143af}\label{classjson_1_1JSON_a5db2f5f34d89df87f1729579c86143af}} 
+bool {\bfseries to\+\_\+bool} (bool \&ok) const
+\item 
+\mbox{\Hypertarget{classjson_1_1JSON_a8c6b6a56108327a9759204f97942b71d}\label{classjson_1_1JSON_a8c6b6a56108327a9759204f97942b71d}} 
+\mbox{\hyperlink{classjson_1_1JSON_1_1JSONWrapper}{JSONWrapper}}$<$ Quick\+Flat\+Map $>$ {\bfseries object\+\_\+range} ()
+\item 
+\mbox{\Hypertarget{classjson_1_1JSON_a096e3021f653542b10ecfaef27ef498b}\label{classjson_1_1JSON_a096e3021f653542b10ecfaef27ef498b}} 
+\mbox{\hyperlink{classjson_1_1JSON_1_1JSONWrapper}{JSONWrapper}}$<$ std\+::vector$<$ \mbox{\hyperlink{classjson_1_1JSON}{JSON}} $>$ $>$ {\bfseries array\+\_\+range} ()
+\item 
+\mbox{\Hypertarget{classjson_1_1JSON_a867b61b44f81b5af733a7b6be08e7d47}\label{classjson_1_1JSON_a867b61b44f81b5af733a7b6be08e7d47}} 
+\mbox{\hyperlink{classjson_1_1JSON_1_1JSONConstWrapper}{JSONConst\+Wrapper}}$<$ Quick\+Flat\+Map $>$ {\bfseries object\+\_\+range} () const
+\item 
+\mbox{\Hypertarget{classjson_1_1JSON_ab8e16cbce373c99634ec34b489b49660}\label{classjson_1_1JSON_ab8e16cbce373c99634ec34b489b49660}} 
+\mbox{\hyperlink{classjson_1_1JSON_1_1JSONConstWrapper}{JSONConst\+Wrapper}}$<$ std\+::vector$<$ \mbox{\hyperlink{classjson_1_1JSON}{JSON}} $>$ $>$ {\bfseries array\+\_\+range} () const
+\item 
+\mbox{\Hypertarget{classjson_1_1JSON_a58087314fe86ac46dafbf890ab0c6a04}\label{classjson_1_1JSON_a58087314fe86ac46dafbf890ab0c6a04}} 
+std\+::string {\bfseries dump} (long depth=1, std\+::string tab=\char`\"{}  \char`\"{}) const
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classjson_1_1JSON_a67290b0563d67d39ff5b0426eb5adecc}\label{classjson_1_1JSON_a67290b0563d67d39ff5b0426eb5adecc}} 
+static \mbox{\hyperlink{classjson_1_1JSON}{JSON}} {\bfseries Load} (const std\+::string \&)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classjson_1_1JSON_a2099d16bf15736654aca3e0f6de6d3f6}\label{classjson_1_1JSON_a2099d16bf15736654aca3e0f6de6d3f6}} 
+\index{json::JSON@{json::JSON}!is\_null@{is\_null}}
+\index{is\_null@{is\_null}!json::JSON@{json::JSON}}
+\doxysubsubsection{\texorpdfstring{is\_null()}{is\_null()}}
+{\footnotesize\ttfamily bool json\+::\+JSON\+::is\+\_\+null (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Functions for getting primitives from the \mbox{\hyperlink{classjson_1_1JSON}{JSON}} object. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Chai\+Script-\/6.\+1.\+0/include/chaiscript/utility/json.\+hpp\end{DoxyCompactItemize}

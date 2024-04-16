@@ -1,0 +1,172 @@
+\hypertarget{classchaiscript_1_1Boxed__Number}{}\doxysection{chaiscript\+::Boxed\+\_\+\+Number Class Reference}
+\label{classchaiscript_1_1Boxed__Number}\index{chaiscript::Boxed\_Number@{chaiscript::Boxed\_Number}}
+
+
+Represents any numeric type, generically. Used internally for generic operations between POD values.  
+
+
+
+
+{\ttfamily \#include $<$boxed\+\_\+number.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classchaiscript_1_1Boxed__Number_a27a37ce2b9432f235ad25818309c84eb}\label{classchaiscript_1_1Boxed__Number_a27a37ce2b9432f235ad25818309c84eb}} 
+{\bfseries Boxed\+\_\+\+Number} (\mbox{\hyperlink{classchaiscript_1_1Boxed__Value}{Boxed\+\_\+\+Value}} v)
+\item 
+\mbox{\Hypertarget{classchaiscript_1_1Boxed__Number_abe2e888c2ecbe5c400cfee580bbb2d72}\label{classchaiscript_1_1Boxed__Number_abe2e888c2ecbe5c400cfee580bbb2d72}} 
+{\bfseries Boxed\+\_\+\+Number} (const \mbox{\hyperlink{classchaiscript_1_1Boxed__Number}{Boxed\+\_\+\+Number}} \&)=default
+\item 
+\mbox{\Hypertarget{classchaiscript_1_1Boxed__Number_af79d93828cd192957de147fe7057191e}\label{classchaiscript_1_1Boxed__Number_af79d93828cd192957de147fe7057191e}} 
+{\bfseries Boxed\+\_\+\+Number} (\mbox{\hyperlink{classchaiscript_1_1Boxed__Number}{Boxed\+\_\+\+Number}} \&\&)=default
+\item 
+\mbox{\Hypertarget{classchaiscript_1_1Boxed__Number_ab5efa6b0025bf8bc638585c0e6500faf}\label{classchaiscript_1_1Boxed__Number_ab5efa6b0025bf8bc638585c0e6500faf}} 
+\mbox{\hyperlink{classchaiscript_1_1Boxed__Number}{Boxed\+\_\+\+Number}} \& {\bfseries operator=} (\mbox{\hyperlink{classchaiscript_1_1Boxed__Number}{Boxed\+\_\+\+Number}} \&\&)=default
+\item 
+\mbox{\Hypertarget{classchaiscript_1_1Boxed__Number_a69345567b753a8704d04391e9317e0dc}\label{classchaiscript_1_1Boxed__Number_a69345567b753a8704d04391e9317e0dc}} 
+{\footnotesize template$<$typename T $>$ }\\{\bfseries Boxed\+\_\+\+Number} (T t)
+\item 
+\mbox{\Hypertarget{classchaiscript_1_1Boxed__Number_af447025198d8f9cad2765aadba042d98}\label{classchaiscript_1_1Boxed__Number_af447025198d8f9cad2765aadba042d98}} 
+\mbox{\hyperlink{classchaiscript_1_1Boxed__Number}{Boxed\+\_\+\+Number}} {\bfseries get\+\_\+as} (const \mbox{\hyperlink{classchaiscript_1_1Type__Info}{Type\+\_\+\+Info}} \&inp\+\_\+) const
+\item 
+\mbox{\Hypertarget{classchaiscript_1_1Boxed__Number_aa89870cf624bcc574e435de755cdaf8c}\label{classchaiscript_1_1Boxed__Number_aa89870cf624bcc574e435de755cdaf8c}} 
+{\footnotesize template$<$typename Target $>$ }\\Target {\bfseries get\+\_\+as\+\_\+checked} () const
+\item 
+\mbox{\Hypertarget{classchaiscript_1_1Boxed__Number_a4c9e60bdd313e0597aebb7da914a3d42}\label{classchaiscript_1_1Boxed__Number_a4c9e60bdd313e0597aebb7da914a3d42}} 
+{\footnotesize template$<$typename Target $>$ }\\Target {\bfseries get\+\_\+as} () const
+\item 
+\mbox{\Hypertarget{classchaiscript_1_1Boxed__Number_a47cd4470cda6d555c56077b3f6e79bc4}\label{classchaiscript_1_1Boxed__Number_a47cd4470cda6d555c56077b3f6e79bc4}} 
+std\+::string {\bfseries to\+\_\+string} () const
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classchaiscript_1_1Boxed__Number_a120d74cf2311b797d97747ef7725ab18}\label{classchaiscript_1_1Boxed__Number_a120d74cf2311b797d97747ef7725ab18}} 
+static \mbox{\hyperlink{classchaiscript_1_1Boxed__Value}{Boxed\+\_\+\+Value}} {\bfseries clone} (const \mbox{\hyperlink{classchaiscript_1_1Boxed__Value}{Boxed\+\_\+\+Value}} \&t\+\_\+bv)
+\item 
+\mbox{\Hypertarget{classchaiscript_1_1Boxed__Number_aecb43684a605079407c9aa1c1d9d1aa5}\label{classchaiscript_1_1Boxed__Number_aecb43684a605079407c9aa1c1d9d1aa5}} 
+static bool {\bfseries is\+\_\+floating\+\_\+point} (const \mbox{\hyperlink{classchaiscript_1_1Boxed__Value}{Boxed\+\_\+\+Value}} \&t\+\_\+bv)
+\item 
+\mbox{\Hypertarget{classchaiscript_1_1Boxed__Number_ab3bd6358d61dc7450a26e0a27b6d4671}\label{classchaiscript_1_1Boxed__Number_ab3bd6358d61dc7450a26e0a27b6d4671}} 
+{\footnotesize template$<$typename Source , typename Target $>$ }\\static void {\bfseries check\+\_\+type} ()
+\item 
+\mbox{\Hypertarget{classchaiscript_1_1Boxed__Number_a5d03151bde4893fe0e48117d1258193e}\label{classchaiscript_1_1Boxed__Number_a5d03151bde4893fe0e48117d1258193e}} 
+static void {\bfseries validate\+\_\+boxed\+\_\+number} (const \mbox{\hyperlink{classchaiscript_1_1Boxed__Value}{Boxed\+\_\+\+Value}} \&v)
+\item 
+\mbox{\Hypertarget{classchaiscript_1_1Boxed__Number_ae40ed2a9b7bc97bf2ddc11b2651117ad}\label{classchaiscript_1_1Boxed__Number_ae40ed2a9b7bc97bf2ddc11b2651117ad}} 
+static bool {\bfseries equals} (const \mbox{\hyperlink{classchaiscript_1_1Boxed__Number}{Boxed\+\_\+\+Number}} \&t\+\_\+lhs, const \mbox{\hyperlink{classchaiscript_1_1Boxed__Number}{Boxed\+\_\+\+Number}} \&t\+\_\+rhs)
+\item 
+\mbox{\Hypertarget{classchaiscript_1_1Boxed__Number_a3bf69bd1fa4e06050475057cfb7fb504}\label{classchaiscript_1_1Boxed__Number_a3bf69bd1fa4e06050475057cfb7fb504}} 
+static bool {\bfseries less\+\_\+than} (const \mbox{\hyperlink{classchaiscript_1_1Boxed__Number}{Boxed\+\_\+\+Number}} \&t\+\_\+lhs, const \mbox{\hyperlink{classchaiscript_1_1Boxed__Number}{Boxed\+\_\+\+Number}} \&t\+\_\+rhs)
+\item 
+\mbox{\Hypertarget{classchaiscript_1_1Boxed__Number_a2e42dae5adf0f5b39383c05bbede94a3}\label{classchaiscript_1_1Boxed__Number_a2e42dae5adf0f5b39383c05bbede94a3}} 
+static bool {\bfseries greater\+\_\+than} (const \mbox{\hyperlink{classchaiscript_1_1Boxed__Number}{Boxed\+\_\+\+Number}} \&t\+\_\+lhs, const \mbox{\hyperlink{classchaiscript_1_1Boxed__Number}{Boxed\+\_\+\+Number}} \&t\+\_\+rhs)
+\item 
+\mbox{\Hypertarget{classchaiscript_1_1Boxed__Number_a9263681f21531505913f0f4f8babd123}\label{classchaiscript_1_1Boxed__Number_a9263681f21531505913f0f4f8babd123}} 
+static bool {\bfseries greater\+\_\+than\+\_\+equal} (const \mbox{\hyperlink{classchaiscript_1_1Boxed__Number}{Boxed\+\_\+\+Number}} \&t\+\_\+lhs, const \mbox{\hyperlink{classchaiscript_1_1Boxed__Number}{Boxed\+\_\+\+Number}} \&t\+\_\+rhs)
+\item 
+\mbox{\Hypertarget{classchaiscript_1_1Boxed__Number_ae74cbbc661bdc624b3f8d5061640f6d8}\label{classchaiscript_1_1Boxed__Number_ae74cbbc661bdc624b3f8d5061640f6d8}} 
+static bool {\bfseries less\+\_\+than\+\_\+equal} (const \mbox{\hyperlink{classchaiscript_1_1Boxed__Number}{Boxed\+\_\+\+Number}} \&t\+\_\+lhs, const \mbox{\hyperlink{classchaiscript_1_1Boxed__Number}{Boxed\+\_\+\+Number}} \&t\+\_\+rhs)
+\item 
+\mbox{\Hypertarget{classchaiscript_1_1Boxed__Number_a11d98c6c20b01f4dc9464e529b8508ab}\label{classchaiscript_1_1Boxed__Number_a11d98c6c20b01f4dc9464e529b8508ab}} 
+static bool {\bfseries not\+\_\+equal} (const \mbox{\hyperlink{classchaiscript_1_1Boxed__Number}{Boxed\+\_\+\+Number}} \&t\+\_\+lhs, const \mbox{\hyperlink{classchaiscript_1_1Boxed__Number}{Boxed\+\_\+\+Number}} \&t\+\_\+rhs)
+\item 
+\mbox{\Hypertarget{classchaiscript_1_1Boxed__Number_a2abf03b9eca60523c4f9f9894d4decbb}\label{classchaiscript_1_1Boxed__Number_a2abf03b9eca60523c4f9f9894d4decbb}} 
+static \mbox{\hyperlink{classchaiscript_1_1Boxed__Number}{Boxed\+\_\+\+Number}} {\bfseries pre\+\_\+decrement} (\mbox{\hyperlink{classchaiscript_1_1Boxed__Number}{Boxed\+\_\+\+Number}} t\+\_\+lhs)
+\item 
+\mbox{\Hypertarget{classchaiscript_1_1Boxed__Number_a29d92f25b0f54898eb941f22da6186b8}\label{classchaiscript_1_1Boxed__Number_a29d92f25b0f54898eb941f22da6186b8}} 
+static \mbox{\hyperlink{classchaiscript_1_1Boxed__Number}{Boxed\+\_\+\+Number}} {\bfseries pre\+\_\+increment} (\mbox{\hyperlink{classchaiscript_1_1Boxed__Number}{Boxed\+\_\+\+Number}} t\+\_\+lhs)
+\item 
+\mbox{\Hypertarget{classchaiscript_1_1Boxed__Number_a4738dff5599a99b93fb47f5f99ee8c5e}\label{classchaiscript_1_1Boxed__Number_a4738dff5599a99b93fb47f5f99ee8c5e}} 
+static const \mbox{\hyperlink{classchaiscript_1_1Boxed__Number}{Boxed\+\_\+\+Number}} {\bfseries sum} (const \mbox{\hyperlink{classchaiscript_1_1Boxed__Number}{Boxed\+\_\+\+Number}} \&t\+\_\+lhs, const \mbox{\hyperlink{classchaiscript_1_1Boxed__Number}{Boxed\+\_\+\+Number}} \&t\+\_\+rhs)
+\item 
+\mbox{\Hypertarget{classchaiscript_1_1Boxed__Number_a3e54efb2a88758b59cc6d27c1d72d4a0}\label{classchaiscript_1_1Boxed__Number_a3e54efb2a88758b59cc6d27c1d72d4a0}} 
+static const \mbox{\hyperlink{classchaiscript_1_1Boxed__Number}{Boxed\+\_\+\+Number}} {\bfseries unary\+\_\+plus} (const \mbox{\hyperlink{classchaiscript_1_1Boxed__Number}{Boxed\+\_\+\+Number}} \&t\+\_\+lhs)
+\item 
+\mbox{\Hypertarget{classchaiscript_1_1Boxed__Number_a4634e8404c05a54f76f21ec4371faf84}\label{classchaiscript_1_1Boxed__Number_a4634e8404c05a54f76f21ec4371faf84}} 
+static const \mbox{\hyperlink{classchaiscript_1_1Boxed__Number}{Boxed\+\_\+\+Number}} {\bfseries unary\+\_\+minus} (const \mbox{\hyperlink{classchaiscript_1_1Boxed__Number}{Boxed\+\_\+\+Number}} \&t\+\_\+lhs)
+\item 
+\mbox{\Hypertarget{classchaiscript_1_1Boxed__Number_ae9ca83495fea5cc5481011e61f0a15c1}\label{classchaiscript_1_1Boxed__Number_ae9ca83495fea5cc5481011e61f0a15c1}} 
+static const \mbox{\hyperlink{classchaiscript_1_1Boxed__Number}{Boxed\+\_\+\+Number}} {\bfseries difference} (const \mbox{\hyperlink{classchaiscript_1_1Boxed__Number}{Boxed\+\_\+\+Number}} \&t\+\_\+lhs, const \mbox{\hyperlink{classchaiscript_1_1Boxed__Number}{Boxed\+\_\+\+Number}} \&t\+\_\+rhs)
+\item 
+\mbox{\Hypertarget{classchaiscript_1_1Boxed__Number_a24cd9d66ae707236777cfa5ab33f478a}\label{classchaiscript_1_1Boxed__Number_a24cd9d66ae707236777cfa5ab33f478a}} 
+static \mbox{\hyperlink{classchaiscript_1_1Boxed__Number}{Boxed\+\_\+\+Number}} {\bfseries assign\+\_\+bitwise\+\_\+and} (\mbox{\hyperlink{classchaiscript_1_1Boxed__Number}{Boxed\+\_\+\+Number}} t\+\_\+lhs, const \mbox{\hyperlink{classchaiscript_1_1Boxed__Number}{Boxed\+\_\+\+Number}} \&t\+\_\+rhs)
+\item 
+\mbox{\Hypertarget{classchaiscript_1_1Boxed__Number_a129f1935f716fd999294d7878bd36713}\label{classchaiscript_1_1Boxed__Number_a129f1935f716fd999294d7878bd36713}} 
+static \mbox{\hyperlink{classchaiscript_1_1Boxed__Number}{Boxed\+\_\+\+Number}} {\bfseries assign} (\mbox{\hyperlink{classchaiscript_1_1Boxed__Number}{Boxed\+\_\+\+Number}} t\+\_\+lhs, const \mbox{\hyperlink{classchaiscript_1_1Boxed__Number}{Boxed\+\_\+\+Number}} \&t\+\_\+rhs)
+\item 
+\mbox{\Hypertarget{classchaiscript_1_1Boxed__Number_ab34c97172cbb14b90b139f826ad2b81a}\label{classchaiscript_1_1Boxed__Number_ab34c97172cbb14b90b139f826ad2b81a}} 
+static \mbox{\hyperlink{classchaiscript_1_1Boxed__Number}{Boxed\+\_\+\+Number}} {\bfseries assign\+\_\+bitwise\+\_\+or} (\mbox{\hyperlink{classchaiscript_1_1Boxed__Number}{Boxed\+\_\+\+Number}} t\+\_\+lhs, const \mbox{\hyperlink{classchaiscript_1_1Boxed__Number}{Boxed\+\_\+\+Number}} \&t\+\_\+rhs)
+\item 
+\mbox{\Hypertarget{classchaiscript_1_1Boxed__Number_a590e4d40c8d0e11b94f0b33ab22393f5}\label{classchaiscript_1_1Boxed__Number_a590e4d40c8d0e11b94f0b33ab22393f5}} 
+static \mbox{\hyperlink{classchaiscript_1_1Boxed__Number}{Boxed\+\_\+\+Number}} {\bfseries assign\+\_\+bitwise\+\_\+xor} (\mbox{\hyperlink{classchaiscript_1_1Boxed__Number}{Boxed\+\_\+\+Number}} t\+\_\+lhs, const \mbox{\hyperlink{classchaiscript_1_1Boxed__Number}{Boxed\+\_\+\+Number}} \&t\+\_\+rhs)
+\item 
+\mbox{\Hypertarget{classchaiscript_1_1Boxed__Number_a85fa5972127bc5df16359fe266df2339}\label{classchaiscript_1_1Boxed__Number_a85fa5972127bc5df16359fe266df2339}} 
+static \mbox{\hyperlink{classchaiscript_1_1Boxed__Number}{Boxed\+\_\+\+Number}} {\bfseries assign\+\_\+remainder} (\mbox{\hyperlink{classchaiscript_1_1Boxed__Number}{Boxed\+\_\+\+Number}} t\+\_\+lhs, const \mbox{\hyperlink{classchaiscript_1_1Boxed__Number}{Boxed\+\_\+\+Number}} \&t\+\_\+rhs)
+\item 
+\mbox{\Hypertarget{classchaiscript_1_1Boxed__Number_a57559355f248cbecf9207ec465dd23ed}\label{classchaiscript_1_1Boxed__Number_a57559355f248cbecf9207ec465dd23ed}} 
+static \mbox{\hyperlink{classchaiscript_1_1Boxed__Number}{Boxed\+\_\+\+Number}} {\bfseries assign\+\_\+shift\+\_\+left} (\mbox{\hyperlink{classchaiscript_1_1Boxed__Number}{Boxed\+\_\+\+Number}} t\+\_\+lhs, const \mbox{\hyperlink{classchaiscript_1_1Boxed__Number}{Boxed\+\_\+\+Number}} \&t\+\_\+rhs)
+\item 
+\mbox{\Hypertarget{classchaiscript_1_1Boxed__Number_acc5f912fca81eb24668ff838adba3487}\label{classchaiscript_1_1Boxed__Number_acc5f912fca81eb24668ff838adba3487}} 
+static \mbox{\hyperlink{classchaiscript_1_1Boxed__Number}{Boxed\+\_\+\+Number}} {\bfseries assign\+\_\+shift\+\_\+right} (\mbox{\hyperlink{classchaiscript_1_1Boxed__Number}{Boxed\+\_\+\+Number}} t\+\_\+lhs, const \mbox{\hyperlink{classchaiscript_1_1Boxed__Number}{Boxed\+\_\+\+Number}} \&t\+\_\+rhs)
+\item 
+\mbox{\Hypertarget{classchaiscript_1_1Boxed__Number_a928e451a06b7574277bf8742bae52df0}\label{classchaiscript_1_1Boxed__Number_a928e451a06b7574277bf8742bae52df0}} 
+static const \mbox{\hyperlink{classchaiscript_1_1Boxed__Number}{Boxed\+\_\+\+Number}} {\bfseries bitwise\+\_\+and} (const \mbox{\hyperlink{classchaiscript_1_1Boxed__Number}{Boxed\+\_\+\+Number}} \&t\+\_\+lhs, const \mbox{\hyperlink{classchaiscript_1_1Boxed__Number}{Boxed\+\_\+\+Number}} \&t\+\_\+rhs)
+\item 
+\mbox{\Hypertarget{classchaiscript_1_1Boxed__Number_a135f3a20d16c86999a8e106d54a8a23e}\label{classchaiscript_1_1Boxed__Number_a135f3a20d16c86999a8e106d54a8a23e}} 
+static const \mbox{\hyperlink{classchaiscript_1_1Boxed__Number}{Boxed\+\_\+\+Number}} {\bfseries bitwise\+\_\+complement} (const \mbox{\hyperlink{classchaiscript_1_1Boxed__Number}{Boxed\+\_\+\+Number}} \&t\+\_\+lhs)
+\item 
+\mbox{\Hypertarget{classchaiscript_1_1Boxed__Number_a6a4c5bdebc232a492851a30bc720d66c}\label{classchaiscript_1_1Boxed__Number_a6a4c5bdebc232a492851a30bc720d66c}} 
+static const \mbox{\hyperlink{classchaiscript_1_1Boxed__Number}{Boxed\+\_\+\+Number}} {\bfseries bitwise\+\_\+xor} (const \mbox{\hyperlink{classchaiscript_1_1Boxed__Number}{Boxed\+\_\+\+Number}} \&t\+\_\+lhs, const \mbox{\hyperlink{classchaiscript_1_1Boxed__Number}{Boxed\+\_\+\+Number}} \&t\+\_\+rhs)
+\item 
+\mbox{\Hypertarget{classchaiscript_1_1Boxed__Number_a3d2f65cf3f073f3229ae62038469630b}\label{classchaiscript_1_1Boxed__Number_a3d2f65cf3f073f3229ae62038469630b}} 
+static const \mbox{\hyperlink{classchaiscript_1_1Boxed__Number}{Boxed\+\_\+\+Number}} {\bfseries bitwise\+\_\+or} (const \mbox{\hyperlink{classchaiscript_1_1Boxed__Number}{Boxed\+\_\+\+Number}} \&t\+\_\+lhs, const \mbox{\hyperlink{classchaiscript_1_1Boxed__Number}{Boxed\+\_\+\+Number}} \&t\+\_\+rhs)
+\item 
+\mbox{\Hypertarget{classchaiscript_1_1Boxed__Number_a2d6a30c7aed56852a2ceaf9856003f3e}\label{classchaiscript_1_1Boxed__Number_a2d6a30c7aed56852a2ceaf9856003f3e}} 
+static \mbox{\hyperlink{classchaiscript_1_1Boxed__Number}{Boxed\+\_\+\+Number}} {\bfseries assign\+\_\+product} (\mbox{\hyperlink{classchaiscript_1_1Boxed__Number}{Boxed\+\_\+\+Number}} t\+\_\+lhs, const \mbox{\hyperlink{classchaiscript_1_1Boxed__Number}{Boxed\+\_\+\+Number}} \&t\+\_\+rhs)
+\item 
+\mbox{\Hypertarget{classchaiscript_1_1Boxed__Number_abf00b587c5a47c53096d5d0163006b63}\label{classchaiscript_1_1Boxed__Number_abf00b587c5a47c53096d5d0163006b63}} 
+static \mbox{\hyperlink{classchaiscript_1_1Boxed__Number}{Boxed\+\_\+\+Number}} {\bfseries assign\+\_\+quotient} (\mbox{\hyperlink{classchaiscript_1_1Boxed__Number}{Boxed\+\_\+\+Number}} t\+\_\+lhs, const \mbox{\hyperlink{classchaiscript_1_1Boxed__Number}{Boxed\+\_\+\+Number}} \&t\+\_\+rhs)
+\item 
+\mbox{\Hypertarget{classchaiscript_1_1Boxed__Number_aac9f5914bcd16f1c957031add5300da4}\label{classchaiscript_1_1Boxed__Number_aac9f5914bcd16f1c957031add5300da4}} 
+static \mbox{\hyperlink{classchaiscript_1_1Boxed__Number}{Boxed\+\_\+\+Number}} {\bfseries assign\+\_\+sum} (\mbox{\hyperlink{classchaiscript_1_1Boxed__Number}{Boxed\+\_\+\+Number}} t\+\_\+lhs, const \mbox{\hyperlink{classchaiscript_1_1Boxed__Number}{Boxed\+\_\+\+Number}} \&t\+\_\+rhs)
+\item 
+\mbox{\Hypertarget{classchaiscript_1_1Boxed__Number_a5f0d60f6bf89902c5daa42c0864b9761}\label{classchaiscript_1_1Boxed__Number_a5f0d60f6bf89902c5daa42c0864b9761}} 
+static \mbox{\hyperlink{classchaiscript_1_1Boxed__Number}{Boxed\+\_\+\+Number}} {\bfseries assign\+\_\+difference} (\mbox{\hyperlink{classchaiscript_1_1Boxed__Number}{Boxed\+\_\+\+Number}} t\+\_\+lhs, const \mbox{\hyperlink{classchaiscript_1_1Boxed__Number}{Boxed\+\_\+\+Number}} \&t\+\_\+rhs)
+\item 
+\mbox{\Hypertarget{classchaiscript_1_1Boxed__Number_a4448d2b9b3bbef6a53aa4aad44a276c4}\label{classchaiscript_1_1Boxed__Number_a4448d2b9b3bbef6a53aa4aad44a276c4}} 
+static const \mbox{\hyperlink{classchaiscript_1_1Boxed__Number}{Boxed\+\_\+\+Number}} {\bfseries quotient} (const \mbox{\hyperlink{classchaiscript_1_1Boxed__Number}{Boxed\+\_\+\+Number}} \&t\+\_\+lhs, const \mbox{\hyperlink{classchaiscript_1_1Boxed__Number}{Boxed\+\_\+\+Number}} \&t\+\_\+rhs)
+\item 
+\mbox{\Hypertarget{classchaiscript_1_1Boxed__Number_a285e07b1d06945cf9c1ac136ecb306dc}\label{classchaiscript_1_1Boxed__Number_a285e07b1d06945cf9c1ac136ecb306dc}} 
+static const \mbox{\hyperlink{classchaiscript_1_1Boxed__Number}{Boxed\+\_\+\+Number}} {\bfseries shift\+\_\+left} (const \mbox{\hyperlink{classchaiscript_1_1Boxed__Number}{Boxed\+\_\+\+Number}} \&t\+\_\+lhs, const \mbox{\hyperlink{classchaiscript_1_1Boxed__Number}{Boxed\+\_\+\+Number}} \&t\+\_\+rhs)
+\item 
+\mbox{\Hypertarget{classchaiscript_1_1Boxed__Number_aae79c4b9487b2bff339cc037d0fab813}\label{classchaiscript_1_1Boxed__Number_aae79c4b9487b2bff339cc037d0fab813}} 
+static const \mbox{\hyperlink{classchaiscript_1_1Boxed__Number}{Boxed\+\_\+\+Number}} {\bfseries product} (const \mbox{\hyperlink{classchaiscript_1_1Boxed__Number}{Boxed\+\_\+\+Number}} \&t\+\_\+lhs, const \mbox{\hyperlink{classchaiscript_1_1Boxed__Number}{Boxed\+\_\+\+Number}} \&t\+\_\+rhs)
+\item 
+\mbox{\Hypertarget{classchaiscript_1_1Boxed__Number_aaa5d8ba4318346cad61aea5af73d2f9a}\label{classchaiscript_1_1Boxed__Number_aaa5d8ba4318346cad61aea5af73d2f9a}} 
+static const \mbox{\hyperlink{classchaiscript_1_1Boxed__Number}{Boxed\+\_\+\+Number}} {\bfseries remainder} (const \mbox{\hyperlink{classchaiscript_1_1Boxed__Number}{Boxed\+\_\+\+Number}} \&t\+\_\+lhs, const \mbox{\hyperlink{classchaiscript_1_1Boxed__Number}{Boxed\+\_\+\+Number}} \&t\+\_\+rhs)
+\item 
+\mbox{\Hypertarget{classchaiscript_1_1Boxed__Number_a70b921c1dae8cf2e37719d68b9ed751f}\label{classchaiscript_1_1Boxed__Number_a70b921c1dae8cf2e37719d68b9ed751f}} 
+static const \mbox{\hyperlink{classchaiscript_1_1Boxed__Number}{Boxed\+\_\+\+Number}} {\bfseries shift\+\_\+right} (const \mbox{\hyperlink{classchaiscript_1_1Boxed__Number}{Boxed\+\_\+\+Number}} \&t\+\_\+lhs, const \mbox{\hyperlink{classchaiscript_1_1Boxed__Number}{Boxed\+\_\+\+Number}} \&t\+\_\+rhs)
+\item 
+\mbox{\Hypertarget{classchaiscript_1_1Boxed__Number_ace8c578d865e5a0c66775335beb43946}\label{classchaiscript_1_1Boxed__Number_ace8c578d865e5a0c66775335beb43946}} 
+static \mbox{\hyperlink{classchaiscript_1_1Boxed__Value}{Boxed\+\_\+\+Value}} {\bfseries do\+\_\+oper} (Operators\+::\+Opers t\+\_\+oper, const \mbox{\hyperlink{classchaiscript_1_1Boxed__Value}{Boxed\+\_\+\+Value}} \&t\+\_\+lhs, const \mbox{\hyperlink{classchaiscript_1_1Boxed__Value}{Boxed\+\_\+\+Value}} \&t\+\_\+rhs)
+\item 
+\mbox{\Hypertarget{classchaiscript_1_1Boxed__Number_a8ae9a588efeae3032c6101a62d9a6f7d}\label{classchaiscript_1_1Boxed__Number_a8ae9a588efeae3032c6101a62d9a6f7d}} 
+static \mbox{\hyperlink{classchaiscript_1_1Boxed__Value}{Boxed\+\_\+\+Value}} {\bfseries do\+\_\+oper} (Operators\+::\+Opers t\+\_\+oper, const \mbox{\hyperlink{classchaiscript_1_1Boxed__Value}{Boxed\+\_\+\+Value}} \&t\+\_\+lhs)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classchaiscript_1_1Boxed__Number_af68799e4c118d4526114cfa3f453c14d}\label{classchaiscript_1_1Boxed__Number_af68799e4c118d4526114cfa3f453c14d}} 
+\mbox{\hyperlink{classchaiscript_1_1Boxed__Value}{Boxed\+\_\+\+Value}} {\bfseries bv}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Represents any numeric type, generically. Used internally for generic operations between POD values. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Chai\+Script-\/6.\+1.\+0/include/chaiscript/dispatchkit/boxed\+\_\+number.\+hpp\end{DoxyCompactItemize}

@@ -1,0 +1,103 @@
+\hypertarget{namespacechaiscript_1_1dispatch}{}\doxysection{chaiscript\+::dispatch Namespace Reference}
+\label{namespacechaiscript_1_1dispatch}\index{chaiscript::dispatch@{chaiscript::dispatch}}
+
+
+Classes and functions specific to the runtime dispatch side of \mbox{\hyperlink{classchaiscript_1_1ChaiScript}{Chai\+Script}}. Some items may be of use to the end user.  
+
+
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structchaiscript_1_1dispatch_1_1option__explicit__set}{option\+\_\+explicit\+\_\+set}}
+\item 
+class \mbox{\hyperlink{classchaiscript_1_1dispatch_1_1Dynamic__Object}{Dynamic\+\_\+\+Object}}
+\item 
+class \mbox{\hyperlink{classchaiscript_1_1dispatch_1_1Proxy__Function__Callable__Impl}{Proxy\+\_\+\+Function\+\_\+\+Callable\+\_\+\+Impl}}
+\begin{DoxyCompactList}\small\item\em For any callable object. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classchaiscript_1_1dispatch_1_1Assignable__Proxy__Function__Impl}{Assignable\+\_\+\+Proxy\+\_\+\+Function\+\_\+\+Impl}}
+\item 
+class \mbox{\hyperlink{classchaiscript_1_1dispatch_1_1Param__Types}{Param\+\_\+\+Types}}
+\item 
+class \mbox{\hyperlink{classchaiscript_1_1dispatch_1_1Proxy__Function__Base}{Proxy\+\_\+\+Function\+\_\+\+Base}}
+\item 
+class \mbox{\hyperlink{classchaiscript_1_1dispatch_1_1Dynamic__Proxy__Function}{Dynamic\+\_\+\+Proxy\+\_\+\+Function}}
+\item 
+class \mbox{\hyperlink{classchaiscript_1_1dispatch_1_1Dynamic__Proxy__Function__Impl}{Dynamic\+\_\+\+Proxy\+\_\+\+Function\+\_\+\+Impl}}
+\item 
+struct \mbox{\hyperlink{structchaiscript_1_1dispatch_1_1Placeholder__Object}{Placeholder\+\_\+\+Object}}
+\item 
+class \mbox{\hyperlink{classchaiscript_1_1dispatch_1_1Bound__Function}{Bound\+\_\+\+Function}}
+\item 
+class \mbox{\hyperlink{classchaiscript_1_1dispatch_1_1Proxy__Function__Impl__Base}{Proxy\+\_\+\+Function\+\_\+\+Impl\+\_\+\+Base}}
+\item 
+class \mbox{\hyperlink{classchaiscript_1_1dispatch_1_1Assignable__Proxy__Function}{Assignable\+\_\+\+Proxy\+\_\+\+Function}}
+\item 
+class \mbox{\hyperlink{classchaiscript_1_1dispatch_1_1Attribute__Access}{Attribute\+\_\+\+Access}}
+\begin{DoxyCompactList}\small\item\em Attribute getter Proxy\+\_\+\+Function implementation. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename Function\+Type $>$ }\\std\+::function$<$ Function\+Type $>$ \mbox{\hyperlink{namespacechaiscript_1_1dispatch_a9665739802eb13faee04a0451f641e9f}{functor}} (const std\+::vector$<$ \mbox{\hyperlink{namespacechaiscript_a131610313026f28092a69541b013d463}{Const\+\_\+\+Proxy\+\_\+\+Function}} $>$ \&funcs, const \mbox{\hyperlink{classchaiscript_1_1Type__Conversions__State}{Type\+\_\+\+Conversions\+\_\+\+State}} $\ast$t\+\_\+conversions)
+\item 
+{\footnotesize template$<$typename Function\+Type $>$ }\\std\+::function$<$ Function\+Type $>$ \mbox{\hyperlink{namespacechaiscript_1_1dispatch_aae9810da86160ccf197cd59b29fbe5b2}{functor}} (\mbox{\hyperlink{namespacechaiscript_a131610313026f28092a69541b013d463}{Const\+\_\+\+Proxy\+\_\+\+Function}} func, const \mbox{\hyperlink{classchaiscript_1_1Type__Conversions__State}{Type\+\_\+\+Conversions\+\_\+\+State}} $\ast$t\+\_\+conversions)
+\item 
+{\footnotesize template$<$typename Function\+Type $>$ }\\std\+::function$<$ Function\+Type $>$ \mbox{\hyperlink{namespacechaiscript_1_1dispatch_a7b0be8ebdd35bd8317aeee2c1072f547}{functor}} (const \mbox{\hyperlink{classchaiscript_1_1Boxed__Value}{Boxed\+\_\+\+Value}} \&bv, const \mbox{\hyperlink{classchaiscript_1_1Type__Conversions__State}{Type\+\_\+\+Conversions\+\_\+\+State}} $\ast$t\+\_\+conversions)
+\item 
+\mbox{\Hypertarget{namespacechaiscript_1_1dispatch_ad25af419ce22620713d84fa10c3f8921}\label{namespacechaiscript_1_1dispatch_ad25af419ce22620713d84fa10c3f8921}} 
+{\footnotesize template$<$typename Function\+Type $>$ }\\std\+::function$<$ Function\+Type $>$ {\bfseries functor} (std\+::shared\+\_\+ptr$<$ const \mbox{\hyperlink{classchaiscript_1_1dispatch_1_1Proxy__Function__Base}{Proxy\+\_\+\+Function\+\_\+\+Base}} $>$ func, const \mbox{\hyperlink{classchaiscript_1_1Type__Conversions__State}{Type\+\_\+\+Conversions\+\_\+\+State}} $\ast$t\+\_\+conversions)
+\item 
+\mbox{\Hypertarget{namespacechaiscript_1_1dispatch_a77e375d6720892b2e4238b012cfcae31}\label{namespacechaiscript_1_1dispatch_a77e375d6720892b2e4238b012cfcae31}} 
+{\footnotesize template$<$typename Callable , typename ... Arg$>$ }\\\mbox{\hyperlink{namespacechaiscript_a0c4629731b82bec640c9b485efca2e8a}{Proxy\+\_\+\+Function}} {\bfseries make\+\_\+dynamic\+\_\+proxy\+\_\+function} (Callable \&\&c, Arg \&\&... a)
+\item 
+{\footnotesize template$<$typename Funcs $>$ }\\\mbox{\hyperlink{classchaiscript_1_1Boxed__Value}{Boxed\+\_\+\+Value}} \mbox{\hyperlink{namespacechaiscript_1_1dispatch_ace492863e613d771bd9f793445c288f7}{dispatch}} (const Funcs \&funcs, const std\+::vector$<$ \mbox{\hyperlink{classchaiscript_1_1Boxed__Value}{Boxed\+\_\+\+Value}} $>$ \&plist, const \mbox{\hyperlink{classchaiscript_1_1Type__Conversions__State}{Type\+\_\+\+Conversions\+\_\+\+State}} \&t\+\_\+conversions)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Classes and functions specific to the runtime dispatch side of \mbox{\hyperlink{classchaiscript_1_1ChaiScript}{Chai\+Script}}. Some items may be of use to the end user. 
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{namespacechaiscript_1_1dispatch_ace492863e613d771bd9f793445c288f7}\label{namespacechaiscript_1_1dispatch_ace492863e613d771bd9f793445c288f7}} 
+\index{chaiscript::dispatch@{chaiscript::dispatch}!dispatch@{dispatch}}
+\index{dispatch@{dispatch}!chaiscript::dispatch@{chaiscript::dispatch}}
+\doxysubsubsection{\texorpdfstring{dispatch()}{dispatch()}}
+{\footnotesize\ttfamily template$<$typename Funcs $>$ \\
+\mbox{\hyperlink{classchaiscript_1_1Boxed__Value}{Boxed\+\_\+\+Value}} chaiscript\+::dispatch\+::dispatch (\begin{DoxyParamCaption}\item[{const Funcs \&}]{funcs,  }\item[{const std\+::vector$<$ \mbox{\hyperlink{classchaiscript_1_1Boxed__Value}{Boxed\+\_\+\+Value}} $>$ \&}]{plist,  }\item[{const \mbox{\hyperlink{classchaiscript_1_1Type__Conversions__State}{Type\+\_\+\+Conversions\+\_\+\+State}} \&}]{t\+\_\+conversions }\end{DoxyParamCaption})}
+
+Take a vector of functions and a vector of parameters. Attempt to execute each function against the set of parameters, in order, until a matching function is found or throw dispatch\+\_\+error if no matching function is found \mbox{\Hypertarget{namespacechaiscript_1_1dispatch_a7b0be8ebdd35bd8317aeee2c1072f547}\label{namespacechaiscript_1_1dispatch_a7b0be8ebdd35bd8317aeee2c1072f547}} 
+\index{chaiscript::dispatch@{chaiscript::dispatch}!functor@{functor}}
+\index{functor@{functor}!chaiscript::dispatch@{chaiscript::dispatch}}
+\doxysubsubsection{\texorpdfstring{functor()}{functor()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily template$<$typename Function\+Type $>$ \\
+std\+::function$<$Function\+Type$>$ chaiscript\+::dispatch\+::functor (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classchaiscript_1_1Boxed__Value}{Boxed\+\_\+\+Value}} \&}]{bv,  }\item[{const \mbox{\hyperlink{classchaiscript_1_1Type__Conversions__State}{Type\+\_\+\+Conversions\+\_\+\+State}} $\ast$}]{t\+\_\+conversions }\end{DoxyParamCaption})}
+
+Helper for automatically unboxing a \mbox{\hyperlink{classchaiscript_1_1Boxed__Value}{Boxed\+\_\+\+Value}} that contains a function object and creating a typesafe C++ function caller from it. \mbox{\Hypertarget{namespacechaiscript_1_1dispatch_a9665739802eb13faee04a0451f641e9f}\label{namespacechaiscript_1_1dispatch_a9665739802eb13faee04a0451f641e9f}} 
+\index{chaiscript::dispatch@{chaiscript::dispatch}!functor@{functor}}
+\index{functor@{functor}!chaiscript::dispatch@{chaiscript::dispatch}}
+\doxysubsubsection{\texorpdfstring{functor()}{functor()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily template$<$typename Function\+Type $>$ \\
+std\+::function$<$Function\+Type$>$ chaiscript\+::dispatch\+::functor (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ \mbox{\hyperlink{namespacechaiscript_a131610313026f28092a69541b013d463}{Const\+\_\+\+Proxy\+\_\+\+Function}} $>$ \&}]{funcs,  }\item[{const \mbox{\hyperlink{classchaiscript_1_1Type__Conversions__State}{Type\+\_\+\+Conversions\+\_\+\+State}} $\ast$}]{t\+\_\+conversions }\end{DoxyParamCaption})}
+
+Build a function caller that knows how to dispatch on a set of functions example\+: std\+::function$<$void (int)$>$ f = build\+\_\+function\+\_\+caller(dispatchkit.\+get\+\_\+function(\char`\"{}print\char`\"{})); \begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{classA}{A}} std\+::function object for dispatching 
+\end{DoxyReturn}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em funcs} & the set of functions to dispatch on. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{namespacechaiscript_1_1dispatch_aae9810da86160ccf197cd59b29fbe5b2}\label{namespacechaiscript_1_1dispatch_aae9810da86160ccf197cd59b29fbe5b2}} 
+\index{chaiscript::dispatch@{chaiscript::dispatch}!functor@{functor}}
+\index{functor@{functor}!chaiscript::dispatch@{chaiscript::dispatch}}
+\doxysubsubsection{\texorpdfstring{functor()}{functor()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily template$<$typename Function\+Type $>$ \\
+std\+::function$<$Function\+Type$>$ chaiscript\+::dispatch\+::functor (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacechaiscript_a131610313026f28092a69541b013d463}{Const\+\_\+\+Proxy\+\_\+\+Function}}}]{func,  }\item[{const \mbox{\hyperlink{classchaiscript_1_1Type__Conversions__State}{Type\+\_\+\+Conversions\+\_\+\+State}} $\ast$}]{t\+\_\+conversions }\end{DoxyParamCaption})}
+
+Build a function caller for a particular Proxy\+\_\+\+Function object useful in the case that a function is being pass out from scripting back into code example\+: void my\+\_\+function(\+Proxy\+\_\+\+Function f) \{ std\+::function$<$void (int)$>$ local\+\_\+f = build\+\_\+function\+\_\+caller(f); \} \begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{classA}{A}} std\+::function object for dispatching 
+\end{DoxyReturn}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em func} & \mbox{\hyperlink{classA}{A}} function to execute. \\
+\hline
+\end{DoxyParams}

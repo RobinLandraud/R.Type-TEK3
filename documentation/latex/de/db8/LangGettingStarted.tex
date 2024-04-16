@@ -1,0 +1,134 @@
+Chai\+Script is a simple language that should feel familiar to anyone who knows C++ or ECMAScript (Java\+Script).
+
+\DoxyHorRuler{0}
+\hypertarget{LangGettingStarted_chaiscriptloops}{}\doxysection{Loops}\label{LangGettingStarted_chaiscriptloops}
+Common looping constructs exist in Chai\+Script
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\mbox{\hyperlink{namespacechaiscript_a7f9fcf9713fa8a33bcc304a16ac2834b}{var}} i = 0;}
+\DoxyCodeLine{\textcolor{keywordflow}{while} (i < 10)}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{  \textcolor{comment}{// do something}}
+\DoxyCodeLine{  ++i;}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keywordflow}{for} (var i = 0; i < 10; ++i)}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{  \textcolor{comment}{// do something}}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{LangKeywordRef_keywordfor}{for}} 
+
+\mbox{\hyperlink{LangKeywordRef_keywordwhile}{while}}
+\end{DoxySeeAlso}
+\DoxyHorRuler{0}
+\hypertarget{LangGettingStarted_chaiscriptifs}{}\doxysection{Conditionals}\label{LangGettingStarted_chaiscriptifs}
+If statements work as expected
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\mbox{\hyperlink{namespacechaiscript_a7f9fcf9713fa8a33bcc304a16ac2834b}{var}} b = \textcolor{keyword}{true};}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{keywordflow}{if} (b) \{}
+\DoxyCodeLine{  \textcolor{comment}{// do something}}
+\DoxyCodeLine{\} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (c < 10) \{}
+\DoxyCodeLine{  \textcolor{comment}{// do something else}}
+\DoxyCodeLine{\} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{  \textcolor{comment}{// or do this}}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{LangKeywordRef_keywordif}{if}}
+\end{DoxySeeAlso}
+\DoxyHorRuler{0}
+\hypertarget{LangGettingStarted_chaiscriptfunctions}{}\doxysection{Functions}\label{LangGettingStarted_chaiscriptfunctions}
+Functions are defined with the def keyword
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{def myfun(x) \{ \mbox{\hyperlink{namespaceChaiScript__Language_a997db82b5a5b891b648ea6a8b9cf3271}{print}}(x); \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{myfun(10);}
+
+\end{DoxyCode}
+
+
+Functions may have \char`\"{}guards\char`\"{} which determine if which is called.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{eval> def myfun2(x) : x < 10 \{ \mbox{\hyperlink{namespaceChaiScript__Language_a997db82b5a5b891b648ea6a8b9cf3271}{print}}(\textcolor{stringliteral}{"{}less than 10"{}}); \}}
+\DoxyCodeLine{eval> def myfun2(x) : x >= 10 \{ \mbox{\hyperlink{namespaceChaiScript__Language_a997db82b5a5b891b648ea6a8b9cf3271}{print}}(\textcolor{stringliteral}{"{}10 or greater"{}}); \}}
+\DoxyCodeLine{eval> myfun2(5)}
+\DoxyCodeLine{less than 10}
+\DoxyCodeLine{eval> myfun2(12)}
+\DoxyCodeLine{10 or greater}
+
+\end{DoxyCode}
+
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{LangKeywordRef_keyworddef}{def}} 
+
+\mbox{\hyperlink{LangKeywordRef_keywordattr}{attr}} 
+
+\mbox{\hyperlink{LangObjectSystemRef}{Chai\+Script Language Object Model Reference}}
+\end{DoxySeeAlso}
+\DoxyHorRuler{0}
+\hypertarget{LangGettingStarted_chaiscriptfunctionobjects}{}\doxysection{Function Objects}\label{LangGettingStarted_chaiscriptfunctionobjects}
+Functions are first class types in Chai\+Script and can be used as variables.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{eval> \mbox{\hyperlink{namespacechaiscript_a7f9fcf9713fa8a33bcc304a16ac2834b}{var}} p = \mbox{\hyperlink{namespaceChaiScript__Language_a997db82b5a5b891b648ea6a8b9cf3271}{print}};}
+\DoxyCodeLine{eval> p(1);}
+\DoxyCodeLine{1}
+
+\end{DoxyCode}
+
+
+They can also be passed to functions.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{eval> def callfunc(f, lhs, rhs) \{ \textcolor{keywordflow}{return} f(lhs, rhs); \}}
+\DoxyCodeLine{eval> def do\_something(lhs, rhs) \{ \mbox{\hyperlink{namespaceChaiScript__Language_a997db82b5a5b891b648ea6a8b9cf3271}{print}}(\textcolor{stringliteral}{"{}lhs: \$\{lhs\}, rhs: \$\{rhs\}"{}}); \}}
+\DoxyCodeLine{eval> callfunc(do\_something, 1, 2);}
+\DoxyCodeLine{lhs: 1, rhs: 2}
+
+\end{DoxyCode}
+
+
+Operators can also be treated as functions by using the back tick operator. Building on the above example\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{eval> callfunc(`+`, 1, 4);}
+\DoxyCodeLine{5}
+\DoxyCodeLine{eval> callfunc(`*`, 3, 2);}
+\DoxyCodeLine{6}
+
+\end{DoxyCode}
+
+
+\DoxyHorRuler{0}
+
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{LangKeywordRef}{Chai\+Script Language Keyword Reference}} 
+
+\mbox{\hyperlink{namespaceChaiScript__Language}{Chai\+Script\+\_\+\+Language}} for Built in Functions 
+\end{DoxySeeAlso}

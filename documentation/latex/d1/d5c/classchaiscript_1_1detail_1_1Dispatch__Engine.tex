@@ -1,0 +1,552 @@
+\hypertarget{classchaiscript_1_1detail_1_1Dispatch__Engine}{}\doxysection{chaiscript\+::detail\+::Dispatch\+\_\+\+Engine Class Reference}
+\label{classchaiscript_1_1detail_1_1Dispatch__Engine}\index{chaiscript::detail::Dispatch\_Engine@{chaiscript::detail::Dispatch\_Engine}}
+
+
+{\ttfamily \#include $<$dispatchkit.\+hpp$>$}
+
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structchaiscript_1_1detail_1_1Dispatch__Engine_1_1State}{State}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classchaiscript_1_1detail_1_1Dispatch__Engine_a776269748b3c6da710371b9c71accff1}\label{classchaiscript_1_1detail_1_1Dispatch__Engine_a776269748b3c6da710371b9c71accff1}} 
+typedef std\+::map$<$ std\+::string, \mbox{\hyperlink{classchaiscript_1_1Type__Info}{chaiscript\+::\+Type\+\_\+\+Info}} $>$ {\bfseries Type\+\_\+\+Name\+\_\+\+Map}
+\item 
+\mbox{\Hypertarget{classchaiscript_1_1detail_1_1Dispatch__Engine_a7e9dcd9bd1d35f379a6b823b8040f90a}\label{classchaiscript_1_1detail_1_1Dispatch__Engine_a7e9dcd9bd1d35f379a6b823b8040f90a}} 
+typedef std\+::vector$<$ std\+::pair$<$ std\+::string, \mbox{\hyperlink{classchaiscript_1_1Boxed__Value}{Boxed\+\_\+\+Value}} $>$ $>$ {\bfseries Scope}
+\item 
+\mbox{\Hypertarget{classchaiscript_1_1detail_1_1Dispatch__Engine_ae2db3ccc7b7591ad17f46f7b4c2bd4f0}\label{classchaiscript_1_1detail_1_1Dispatch__Engine_ae2db3ccc7b7591ad17f46f7b4c2bd4f0}} 
+typedef Stack\+\_\+\+Holder\+::\+Stack\+Data {\bfseries Stack\+Data}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classchaiscript_1_1detail_1_1Dispatch__Engine_a67007efffb9f0aec3647a41cc6a95860}\label{classchaiscript_1_1detail_1_1Dispatch__Engine_a67007efffb9f0aec3647a41cc6a95860}} 
+{\bfseries Dispatch\+\_\+\+Engine} (\mbox{\hyperlink{classchaiscript_1_1parser_1_1ChaiScript__Parser__Base}{chaiscript\+::parser\+::\+Chai\+Script\+\_\+\+Parser\+\_\+\+Base}} \&parser)
+\item 
+{\footnotesize template$<$typename Type $>$ }\\decltype(auto) \mbox{\hyperlink{classchaiscript_1_1detail_1_1Dispatch__Engine_a1b3da9d1e308feb3034ea4263bb12b28}{boxed\+\_\+cast}} (const \mbox{\hyperlink{classchaiscript_1_1Boxed__Value}{Boxed\+\_\+\+Value}} \&bv) const
+\begin{DoxyCompactList}\small\item\em casts an object while applying any Dynamic\+\_\+\+Conversion available \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classchaiscript_1_1detail_1_1Dispatch__Engine_a806407e3f0c85fd0f6d6f8db296ef7ef}{add}} (const Type\+\_\+\+Conversion \&d)
+\begin{DoxyCompactList}\small\item\em Add a new conversion for upcasting to a base class. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classchaiscript_1_1detail_1_1Dispatch__Engine_abbb5ab49a4b1156478fd3beee6ac0ace}{add}} (const \mbox{\hyperlink{namespacechaiscript_a0c4629731b82bec640c9b485efca2e8a}{Proxy\+\_\+\+Function}} \&f, const std\+::string \&name)
+\begin{DoxyCompactList}\small\item\em Add a new named Proxy\+\_\+\+Function to the system. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classchaiscript_1_1detail_1_1Dispatch__Engine_a87a14335f868052de7b363841d98da87}{add}} (\mbox{\hyperlink{classchaiscript_1_1Boxed__Value}{Boxed\+\_\+\+Value}} obj, const std\+::string \&name)
+\item 
+\mbox{\hyperlink{classchaiscript_1_1Boxed__Value}{Boxed\+\_\+\+Value}} \& \mbox{\hyperlink{classchaiscript_1_1detail_1_1Dispatch__Engine_ae2286c56e4ffa40cb0e0a3e34b72be4a}{add\+\_\+get\+\_\+object}} (const std\+::string \&t\+\_\+name, \mbox{\hyperlink{classchaiscript_1_1Boxed__Value}{Boxed\+\_\+\+Value}} obj, \mbox{\hyperlink{structchaiscript_1_1detail_1_1Stack__Holder}{Stack\+\_\+\+Holder}} \&t\+\_\+holder)
+\item 
+void \mbox{\hyperlink{classchaiscript_1_1detail_1_1Dispatch__Engine_a134c703b1586f96dcd583949f96053e7}{add\+\_\+object}} (const std\+::string \&t\+\_\+name, \mbox{\hyperlink{classchaiscript_1_1Boxed__Value}{Boxed\+\_\+\+Value}} obj, \mbox{\hyperlink{structchaiscript_1_1detail_1_1Stack__Holder}{Stack\+\_\+\+Holder}} \&t\+\_\+holder)
+\item 
+void \mbox{\hyperlink{classchaiscript_1_1detail_1_1Dispatch__Engine_a61dd4dfc6eb09443c9242e147913832c}{add\+\_\+object}} (const std\+::string \&name, \mbox{\hyperlink{classchaiscript_1_1Boxed__Value}{Boxed\+\_\+\+Value}} obj)
+\item 
+void \mbox{\hyperlink{classchaiscript_1_1detail_1_1Dispatch__Engine_a00a015ef8d5a4178b3ebf0398d7265b8}{add\+\_\+global\+\_\+const}} (const \mbox{\hyperlink{classchaiscript_1_1Boxed__Value}{Boxed\+\_\+\+Value}} \&obj, const std\+::string \&name)
+\begin{DoxyCompactList}\small\item\em Adds a new global shared object, between all the threads. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classchaiscript_1_1Boxed__Value}{Boxed\+\_\+\+Value}} \mbox{\hyperlink{classchaiscript_1_1detail_1_1Dispatch__Engine_ad844dca713a57b2f4cede69f26c89b20}{add\+\_\+global\+\_\+no\+\_\+throw}} (const \mbox{\hyperlink{classchaiscript_1_1Boxed__Value}{Boxed\+\_\+\+Value}} \&obj, const std\+::string \&name)
+\begin{DoxyCompactList}\small\item\em Adds a new global (non-\/const) shared object, between all the threads. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classchaiscript_1_1detail_1_1Dispatch__Engine_a75110954cf0855152f83f00b68486943}{add\+\_\+global}} (const \mbox{\hyperlink{classchaiscript_1_1Boxed__Value}{Boxed\+\_\+\+Value}} \&obj, const std\+::string \&name)
+\begin{DoxyCompactList}\small\item\em Adds a new global (non-\/const) shared object, between all the threads. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classchaiscript_1_1detail_1_1Dispatch__Engine_a76984dc42a66b3c896db3a09a40cb042}{set\+\_\+global}} (const \mbox{\hyperlink{classchaiscript_1_1Boxed__Value}{Boxed\+\_\+\+Value}} \&obj, const std\+::string \&name)
+\begin{DoxyCompactList}\small\item\em Updates an existing global shared object or adds a new global shared object if not found. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classchaiscript_1_1detail_1_1Dispatch__Engine_a30b1aa8fc6cce58457201a337478ad07}{new\+\_\+scope}} ()
+\begin{DoxyCompactList}\small\item\em Adds a new scope to the stack. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classchaiscript_1_1detail_1_1Dispatch__Engine_ae06c588ed9b8687fcff54a1c50ad903e}{pop\+\_\+scope}} ()
+\begin{DoxyCompactList}\small\item\em Pops the current scope from the stack. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classchaiscript_1_1Boxed__Value}{Boxed\+\_\+\+Value}} \mbox{\hyperlink{classchaiscript_1_1detail_1_1Dispatch__Engine_aa7574d414838534e8d9e8edf78c08ae2}{get\+\_\+object}} (const std\+::string \&name, std\+::atomic\+\_\+uint\+\_\+fast32\+\_\+t \&t\+\_\+loc, \mbox{\hyperlink{structchaiscript_1_1detail_1_1Stack__Holder}{Stack\+\_\+\+Holder}} \&t\+\_\+holder) const
+\item 
+void \mbox{\hyperlink{classchaiscript_1_1detail_1_1Dispatch__Engine_ae33094dfaf79392ee19116da2bf83f68}{add}} (const \mbox{\hyperlink{classchaiscript_1_1Type__Info}{Type\+\_\+\+Info}} \&ti, const std\+::string \&name)
+\begin{DoxyCompactList}\small\item\em Registers a new named type. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classchaiscript_1_1Type__Info}{Type\+\_\+\+Info}} \mbox{\hyperlink{classchaiscript_1_1detail_1_1Dispatch__Engine_a7ffba1752bfae0ae30ef62abd5f76667}{get\+\_\+type}} (const std\+::string \&name, bool t\+\_\+throw=true) const
+\begin{DoxyCompactList}\small\item\em Returns the type info for a named type. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classchaiscript_1_1detail_1_1Dispatch__Engine_a6c7f17aedd8c835cf01bd9d5c40c7f7c}{get\+\_\+type\+\_\+name}} (const \mbox{\hyperlink{classchaiscript_1_1Type__Info}{Type\+\_\+\+Info}} \&ti) const
+\item 
+std\+::vector$<$ std\+::pair$<$ std\+::string, \mbox{\hyperlink{classchaiscript_1_1Type__Info}{Type\+\_\+\+Info}} $>$ $>$ \mbox{\hyperlink{classchaiscript_1_1detail_1_1Dispatch__Engine_aa66d41f71ae9a09182228664d5de7527}{get\+\_\+types}} () const
+\begin{DoxyCompactList}\small\item\em Return all registered types. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classchaiscript_1_1detail_1_1Dispatch__Engine_af663d63a84ea91f1ac478b99e07f3c3e}\label{classchaiscript_1_1detail_1_1Dispatch__Engine_af663d63a84ea91f1ac478b99e07f3c3e}} 
+std\+::shared\+\_\+ptr$<$ std\+::vector$<$ \mbox{\hyperlink{namespacechaiscript_a0c4629731b82bec640c9b485efca2e8a}{Proxy\+\_\+\+Function}} $>$ $>$ {\bfseries get\+\_\+method\+\_\+missing\+\_\+functions} () const
+\item 
+std\+::pair$<$ size\+\_\+t, std\+::shared\+\_\+ptr$<$ std\+::vector$<$ \mbox{\hyperlink{namespacechaiscript_a0c4629731b82bec640c9b485efca2e8a}{Proxy\+\_\+\+Function}} $>$ $>$ $>$ \mbox{\hyperlink{classchaiscript_1_1detail_1_1Dispatch__Engine_ab8846759cf538d624688d09e7b6157d1}{get\+\_\+function}} (const std\+::string \&t\+\_\+name, const size\+\_\+t t\+\_\+hint) const
+\begin{DoxyCompactList}\small\item\em Return a function by name. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classchaiscript_1_1Boxed__Value}{Boxed\+\_\+\+Value}} \mbox{\hyperlink{classchaiscript_1_1detail_1_1Dispatch__Engine_a2f14bb06df066dee8e6414d162c6783e}{get\+\_\+function\+\_\+object}} (const std\+::string \&t\+\_\+name) const
+\item 
+std\+::pair$<$ size\+\_\+t, \mbox{\hyperlink{classchaiscript_1_1Boxed__Value}{Boxed\+\_\+\+Value}} $>$ \mbox{\hyperlink{classchaiscript_1_1detail_1_1Dispatch__Engine_a0bb97eabe3f8d9906345e8335389bbc3}{get\+\_\+function\+\_\+object\+\_\+int}} (const std\+::string \&t\+\_\+name, const size\+\_\+t t\+\_\+hint) const
+\item 
+bool \mbox{\hyperlink{classchaiscript_1_1detail_1_1Dispatch__Engine_ab79f14d595def08c8be75ddbf299c2dc}{function\+\_\+exists}} (const std\+::string \&name) const
+\begin{DoxyCompactList}\small\item\em Return true if a function exists. \end{DoxyCompactList}\item 
+std\+::map$<$ std\+::string, \mbox{\hyperlink{classchaiscript_1_1Boxed__Value}{Boxed\+\_\+\+Value}} $>$ \mbox{\hyperlink{classchaiscript_1_1detail_1_1Dispatch__Engine_a6ff4da2293e539bf32eb270e5346a3bb}{get\+\_\+parent\+\_\+locals}} () const
+\item 
+std\+::map$<$ std\+::string, \mbox{\hyperlink{classchaiscript_1_1Boxed__Value}{Boxed\+\_\+\+Value}} $>$ \mbox{\hyperlink{classchaiscript_1_1detail_1_1Dispatch__Engine_a6edef1432891cff37db5011a02e85c99}{get\+\_\+locals}} () const
+\item 
+void \mbox{\hyperlink{classchaiscript_1_1detail_1_1Dispatch__Engine_a04711d182e337b38cbbec3cfd4586b87}{set\+\_\+locals}} (const std\+::map$<$ std\+::string, \mbox{\hyperlink{classchaiscript_1_1Boxed__Value}{Boxed\+\_\+\+Value}} $>$ \&t\+\_\+locals)
+\begin{DoxyCompactList}\small\item\em Sets all of the locals for the current thread state. \end{DoxyCompactList}\item 
+std\+::map$<$ std\+::string, \mbox{\hyperlink{classchaiscript_1_1Boxed__Value}{Boxed\+\_\+\+Value}} $>$ \mbox{\hyperlink{classchaiscript_1_1detail_1_1Dispatch__Engine_a8214ba189970defa0d950a488909a8cf}{get\+\_\+scripting\+\_\+objects}} () const
+\item 
+std\+::map$<$ std\+::string, \mbox{\hyperlink{classchaiscript_1_1Boxed__Value}{Boxed\+\_\+\+Value}} $>$ \mbox{\hyperlink{classchaiscript_1_1detail_1_1Dispatch__Engine_a8e6bfd827af494e6d1d51102e36151aa}{get\+\_\+function\+\_\+objects}} () const
+\item 
+std\+::vector$<$ std\+::pair$<$ std\+::string, \mbox{\hyperlink{namespacechaiscript_a0c4629731b82bec640c9b485efca2e8a}{Proxy\+\_\+\+Function}} $>$ $>$ \mbox{\hyperlink{classchaiscript_1_1detail_1_1Dispatch__Engine_af3b0b4077b110009cc4b410a7129ad48}{get\+\_\+functions}} () const
+\begin{DoxyCompactList}\small\item\em Get a vector of all registered functions. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classchaiscript_1_1detail_1_1Dispatch__Engine_a277492aa67dc21fad1ec09c1647b0057}\label{classchaiscript_1_1detail_1_1Dispatch__Engine_a277492aa67dc21fad1ec09c1647b0057}} 
+const \mbox{\hyperlink{classchaiscript_1_1Type__Conversions}{Type\+\_\+\+Conversions}} \& {\bfseries conversions} () const
+\item 
+\mbox{\Hypertarget{classchaiscript_1_1detail_1_1Dispatch__Engine_a12d2e871fcfa5e73dda2181dcdd64ed6}\label{classchaiscript_1_1detail_1_1Dispatch__Engine_a12d2e871fcfa5e73dda2181dcdd64ed6}} 
+\mbox{\hyperlink{classchaiscript_1_1Boxed__Value}{Boxed\+\_\+\+Value}} {\bfseries call\+\_\+member} (const std\+::string \&t\+\_\+name, std\+::atomic\+\_\+uint\+\_\+fast32\+\_\+t \&t\+\_\+loc, const std\+::vector$<$ \mbox{\hyperlink{classchaiscript_1_1Boxed__Value}{Boxed\+\_\+\+Value}} $>$ \&params, bool t\+\_\+has\+\_\+params, const \mbox{\hyperlink{classchaiscript_1_1Type__Conversions__State}{Type\+\_\+\+Conversions\+\_\+\+State}} \&t\+\_\+conversions)
+\item 
+\mbox{\Hypertarget{classchaiscript_1_1detail_1_1Dispatch__Engine_a1e0cbccbf859fdd0c7332de52599e2cf}\label{classchaiscript_1_1detail_1_1Dispatch__Engine_a1e0cbccbf859fdd0c7332de52599e2cf}} 
+\mbox{\hyperlink{classchaiscript_1_1Boxed__Value}{Boxed\+\_\+\+Value}} {\bfseries call\+\_\+function} (const std\+::string \&t\+\_\+name, std\+::atomic\+\_\+uint\+\_\+fast32\+\_\+t \&t\+\_\+loc, const std\+::vector$<$ \mbox{\hyperlink{classchaiscript_1_1Boxed__Value}{Boxed\+\_\+\+Value}} $>$ \&params, const \mbox{\hyperlink{classchaiscript_1_1Type__Conversions__State}{Type\+\_\+\+Conversions\+\_\+\+State}} \&t\+\_\+conversions) const
+\item 
+void \mbox{\hyperlink{classchaiscript_1_1detail_1_1Dispatch__Engine_ad20a765e206457c6b888797b2606747e}{dump\+\_\+object}} (const \mbox{\hyperlink{classchaiscript_1_1Boxed__Value}{Boxed\+\_\+\+Value}} \&o) const
+\begin{DoxyCompactList}\small\item\em Dump object info to stdout. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classchaiscript_1_1detail_1_1Dispatch__Engine_ac9deded42a4f34ee6df82a35c827833b}{dump\+\_\+type}} (const \mbox{\hyperlink{classchaiscript_1_1Type__Info}{Type\+\_\+\+Info}} \&type) const
+\begin{DoxyCompactList}\small\item\em Dump type info to stdout. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classchaiscript_1_1detail_1_1Dispatch__Engine_a36a57d90cdc9b5369527751380a9fc80}{dump\+\_\+function}} (const std\+::pair$<$ const std\+::string, \mbox{\hyperlink{namespacechaiscript_a0c4629731b82bec640c9b485efca2e8a}{Proxy\+\_\+\+Function}} $>$ \&f) const
+\begin{DoxyCompactList}\small\item\em Dump function to stdout. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classchaiscript_1_1Boxed__Value}{Boxed\+\_\+\+Value}} \mbox{\hyperlink{classchaiscript_1_1detail_1_1Dispatch__Engine_a620ebc6ceef6369c7270dcdc1d7bfc17}{call\+\_\+exists}} (const std\+::vector$<$ \mbox{\hyperlink{classchaiscript_1_1Boxed__Value}{Boxed\+\_\+\+Value}} $>$ \&params) const
+\item 
+void \mbox{\hyperlink{classchaiscript_1_1detail_1_1Dispatch__Engine_a2351127e7d164f3e8b2bed03e603621d}{dump\+\_\+system}} () const
+\begin{DoxyCompactList}\small\item\em Dump all system info to stdout. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classchaiscript_1_1detail_1_1Dispatch__Engine_a0ed05463e05e4a77b6801a26bd44c763}{is\+\_\+type}} (const \mbox{\hyperlink{classchaiscript_1_1Boxed__Value}{Boxed\+\_\+\+Value}} \&r, const std\+::string \&user\+\_\+typename) const
+\begin{DoxyCompactList}\small\item\em return true if the \mbox{\hyperlink{classchaiscript_1_1Boxed__Value}{Boxed\+\_\+\+Value}} matches the registered type by name \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classchaiscript_1_1detail_1_1Dispatch__Engine_ac46747cf0b4b82219b85b0f15a79061d}\label{classchaiscript_1_1detail_1_1Dispatch__Engine_ac46747cf0b4b82219b85b0f15a79061d}} 
+std\+::string {\bfseries type\+\_\+name} (const \mbox{\hyperlink{classchaiscript_1_1Boxed__Value}{Boxed\+\_\+\+Value}} \&obj) const
+\item 
+\mbox{\Hypertarget{classchaiscript_1_1detail_1_1Dispatch__Engine_a36bffc0663d7a1306a421dc2f0699eb0}\label{classchaiscript_1_1detail_1_1Dispatch__Engine_a36bffc0663d7a1306a421dc2f0699eb0}} 
+\mbox{\hyperlink{structchaiscript_1_1detail_1_1Dispatch__Engine_1_1State}{State}} {\bfseries get\+\_\+state} () const
+\item 
+\mbox{\Hypertarget{classchaiscript_1_1detail_1_1Dispatch__Engine_a815bc8fcc54f176722f9b3521a283758}\label{classchaiscript_1_1detail_1_1Dispatch__Engine_a815bc8fcc54f176722f9b3521a283758}} 
+void {\bfseries set\+\_\+state} (const \mbox{\hyperlink{structchaiscript_1_1detail_1_1Dispatch__Engine_1_1State}{State}} \&t\+\_\+state)
+\item 
+\mbox{\Hypertarget{classchaiscript_1_1detail_1_1Dispatch__Engine_abd02e4bc264aeb94e3625956746de359}\label{classchaiscript_1_1detail_1_1Dispatch__Engine_abd02e4bc264aeb94e3625956746de359}} 
+void {\bfseries save\+\_\+function\+\_\+params} (std\+::initializer\+\_\+list$<$ \mbox{\hyperlink{classchaiscript_1_1Boxed__Value}{Boxed\+\_\+\+Value}} $>$ t\+\_\+params)
+\item 
+\mbox{\Hypertarget{classchaiscript_1_1detail_1_1Dispatch__Engine_ac2f4be97082d0b5d2168d8b5915668eb}\label{classchaiscript_1_1detail_1_1Dispatch__Engine_ac2f4be97082d0b5d2168d8b5915668eb}} 
+void {\bfseries save\+\_\+function\+\_\+params} (std\+::vector$<$ \mbox{\hyperlink{classchaiscript_1_1Boxed__Value}{Boxed\+\_\+\+Value}} $>$ \&\&t\+\_\+params)
+\item 
+\mbox{\Hypertarget{classchaiscript_1_1detail_1_1Dispatch__Engine_a417044bf980e0beb497a9260d56e215a}\label{classchaiscript_1_1detail_1_1Dispatch__Engine_a417044bf980e0beb497a9260d56e215a}} 
+void {\bfseries save\+\_\+function\+\_\+params} (const std\+::vector$<$ \mbox{\hyperlink{classchaiscript_1_1Boxed__Value}{Boxed\+\_\+\+Value}} $>$ \&t\+\_\+params)
+\item 
+\mbox{\Hypertarget{classchaiscript_1_1detail_1_1Dispatch__Engine_a029123348f2fbb5c99d868a385ac7431}\label{classchaiscript_1_1detail_1_1Dispatch__Engine_a029123348f2fbb5c99d868a385ac7431}} 
+void {\bfseries new\+\_\+function\+\_\+call} (\mbox{\hyperlink{structchaiscript_1_1detail_1_1Stack__Holder}{Stack\+\_\+\+Holder}} \&t\+\_\+s, \mbox{\hyperlink{structchaiscript_1_1Type__Conversions_1_1Conversion__Saves}{Type\+\_\+\+Conversions\+::\+Conversion\+\_\+\+Saves}} \&t\+\_\+saves)
+\item 
+\mbox{\Hypertarget{classchaiscript_1_1detail_1_1Dispatch__Engine_ac47f062e0b6add315477e96838d789ca}\label{classchaiscript_1_1detail_1_1Dispatch__Engine_ac47f062e0b6add315477e96838d789ca}} 
+void {\bfseries pop\+\_\+function\+\_\+call} (\mbox{\hyperlink{structchaiscript_1_1detail_1_1Stack__Holder}{Stack\+\_\+\+Holder}} \&t\+\_\+s, \mbox{\hyperlink{structchaiscript_1_1Type__Conversions_1_1Conversion__Saves}{Type\+\_\+\+Conversions\+::\+Conversion\+\_\+\+Saves}} \&t\+\_\+saves)
+\item 
+\mbox{\Hypertarget{classchaiscript_1_1detail_1_1Dispatch__Engine_a5eb1727aec4ddf3cc9665b1d60ad0717}\label{classchaiscript_1_1detail_1_1Dispatch__Engine_a5eb1727aec4ddf3cc9665b1d60ad0717}} 
+void {\bfseries new\+\_\+function\+\_\+call} ()
+\item 
+\mbox{\Hypertarget{classchaiscript_1_1detail_1_1Dispatch__Engine_a0dabee18de7e4247af3c930e238b0dca}\label{classchaiscript_1_1detail_1_1Dispatch__Engine_a0dabee18de7e4247af3c930e238b0dca}} 
+void {\bfseries pop\+\_\+function\+\_\+call} ()
+\item 
+\mbox{\Hypertarget{classchaiscript_1_1detail_1_1Dispatch__Engine_a6d3157b94fd5fa408d591bdb718a9a6c}\label{classchaiscript_1_1detail_1_1Dispatch__Engine_a6d3157b94fd5fa408d591bdb718a9a6c}} 
+\mbox{\hyperlink{structchaiscript_1_1detail_1_1Stack__Holder}{Stack\+\_\+\+Holder}} \& {\bfseries get\+\_\+stack\+\_\+holder} ()
+\item 
+const Stack\+Data \& \mbox{\hyperlink{classchaiscript_1_1detail_1_1Dispatch__Engine_a7ee0696171b1c3f7ef72a85cdaba6e57}{get\+\_\+stack\+\_\+data}} () const
+\item 
+\mbox{\Hypertarget{classchaiscript_1_1detail_1_1Dispatch__Engine_a6bdbb8d514dbac78e6a1b05036696aa6}\label{classchaiscript_1_1detail_1_1Dispatch__Engine_a6bdbb8d514dbac78e6a1b05036696aa6}} 
+Stack\+Data \& {\bfseries get\+\_\+stack\+\_\+data} ()
+\item 
+\mbox{\Hypertarget{classchaiscript_1_1detail_1_1Dispatch__Engine_a95d56d2a81f865e0bbf8d8e691f143e0}\label{classchaiscript_1_1detail_1_1Dispatch__Engine_a95d56d2a81f865e0bbf8d8e691f143e0}} 
+\mbox{\hyperlink{classchaiscript_1_1parser_1_1ChaiScript__Parser__Base}{parser\+::\+Chai\+Script\+\_\+\+Parser\+\_\+\+Base}} \& {\bfseries get\+\_\+parser} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{classchaiscript_1_1detail_1_1Dispatch__Engine_a9a292bdcf531e9e168792fd1508a65b5}{new\+\_\+scope}} (\mbox{\hyperlink{structchaiscript_1_1detail_1_1Stack__Holder}{Stack\+\_\+\+Holder}} \&t\+\_\+holder)
+\begin{DoxyCompactList}\small\item\em Adds a new scope to the stack. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{classchaiscript_1_1detail_1_1Dispatch__Engine_afb9ecfd7d743f10ad335c4e80e4031a2}{pop\+\_\+scope}} (\mbox{\hyperlink{structchaiscript_1_1detail_1_1Stack__Holder}{Stack\+\_\+\+Holder}} \&t\+\_\+holder)
+\begin{DoxyCompactList}\small\item\em Pops the current scope from the stack. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{classchaiscript_1_1detail_1_1Dispatch__Engine_a07dbfde18bcec7d2486c2a87f9e27218}{new\+\_\+stack}} (\mbox{\hyperlink{structchaiscript_1_1detail_1_1Stack__Holder}{Stack\+\_\+\+Holder}} \&t\+\_\+holder)
+\begin{DoxyCompactList}\small\item\em Pushes a new stack on to the list of stacks. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classchaiscript_1_1detail_1_1Dispatch__Engine_a0e43b324c87ae6cc77ba42e0be51ada6}\label{classchaiscript_1_1detail_1_1Dispatch__Engine_a0e43b324c87ae6cc77ba42e0be51ada6}} 
+static void {\bfseries pop\+\_\+stack} (\mbox{\hyperlink{structchaiscript_1_1detail_1_1Stack__Holder}{Stack\+\_\+\+Holder}} \&t\+\_\+holder)
+\item 
+\mbox{\Hypertarget{classchaiscript_1_1detail_1_1Dispatch__Engine_a92d3ee69bea816fd4b3a473f3798ea72}\label{classchaiscript_1_1detail_1_1Dispatch__Engine_a92d3ee69bea816fd4b3a473f3798ea72}} 
+static bool {\bfseries is\+\_\+attribute\+\_\+call} (const std\+::vector$<$ \mbox{\hyperlink{namespacechaiscript_a0c4629731b82bec640c9b485efca2e8a}{Proxy\+\_\+\+Function}} $>$ \&t\+\_\+funs, const std\+::vector$<$ \mbox{\hyperlink{classchaiscript_1_1Boxed__Value}{Boxed\+\_\+\+Value}} $>$ \&t\+\_\+params, bool t\+\_\+has\+\_\+params, const \mbox{\hyperlink{classchaiscript_1_1Type__Conversions__State}{Type\+\_\+\+Conversions\+\_\+\+State}} \&t\+\_\+conversions)
+\item 
+\mbox{\Hypertarget{classchaiscript_1_1detail_1_1Dispatch__Engine_ae32e2631a8bdcc8d018a3c9665b20e0d}\label{classchaiscript_1_1detail_1_1Dispatch__Engine_ae32e2631a8bdcc8d018a3c9665b20e0d}} 
+static void {\bfseries save\+\_\+function\+\_\+params} (\mbox{\hyperlink{structchaiscript_1_1detail_1_1Stack__Holder}{Stack\+\_\+\+Holder}} \&t\+\_\+s, std\+::initializer\+\_\+list$<$ \mbox{\hyperlink{classchaiscript_1_1Boxed__Value}{Boxed\+\_\+\+Value}} $>$ t\+\_\+params)
+\item 
+\mbox{\Hypertarget{classchaiscript_1_1detail_1_1Dispatch__Engine_a23591ee00c7b67e7f313da68f9e32529}\label{classchaiscript_1_1detail_1_1Dispatch__Engine_a23591ee00c7b67e7f313da68f9e32529}} 
+static void {\bfseries save\+\_\+function\+\_\+params} (\mbox{\hyperlink{structchaiscript_1_1detail_1_1Stack__Holder}{Stack\+\_\+\+Holder}} \&t\+\_\+s, std\+::vector$<$ \mbox{\hyperlink{classchaiscript_1_1Boxed__Value}{Boxed\+\_\+\+Value}} $>$ \&\&t\+\_\+params)
+\item 
+\mbox{\Hypertarget{classchaiscript_1_1detail_1_1Dispatch__Engine_a0b83af9f7aa4ccb6730f5101d442e52d}\label{classchaiscript_1_1detail_1_1Dispatch__Engine_a0b83af9f7aa4ccb6730f5101d442e52d}} 
+static void {\bfseries save\+\_\+function\+\_\+params} (\mbox{\hyperlink{structchaiscript_1_1detail_1_1Stack__Holder}{Stack\+\_\+\+Holder}} \&t\+\_\+s, const std\+::vector$<$ \mbox{\hyperlink{classchaiscript_1_1Boxed__Value}{Boxed\+\_\+\+Value}} $>$ \&t\+\_\+params)
+\item 
+\mbox{\Hypertarget{classchaiscript_1_1detail_1_1Dispatch__Engine_aa95346b4794ef37e105bd6e76b83251f}\label{classchaiscript_1_1detail_1_1Dispatch__Engine_aa95346b4794ef37e105bd6e76b83251f}} 
+static Stack\+Data \& {\bfseries get\+\_\+stack\+\_\+data} (\mbox{\hyperlink{structchaiscript_1_1detail_1_1Stack__Holder}{Stack\+\_\+\+Holder}} \&t\+\_\+holder)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Main class for the dispatchkit. Handles management of the object stack, functions and registered types. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classchaiscript_1_1detail_1_1Dispatch__Engine_a87a14335f868052de7b363841d98da87}\label{classchaiscript_1_1detail_1_1Dispatch__Engine_a87a14335f868052de7b363841d98da87}} 
+\index{chaiscript::detail::Dispatch\_Engine@{chaiscript::detail::Dispatch\_Engine}!add@{add}}
+\index{add@{add}!chaiscript::detail::Dispatch\_Engine@{chaiscript::detail::Dispatch\_Engine}}
+\doxysubsubsection{\texorpdfstring{add()}{add()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily void chaiscript\+::detail\+::\+Dispatch\+\_\+\+Engine\+::add (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classchaiscript_1_1Boxed__Value}{Boxed\+\_\+\+Value}}}]{obj,  }\item[{const std\+::string \&}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Set the value of an object, by name. If the object is not available in the current scope it is created \mbox{\Hypertarget{classchaiscript_1_1detail_1_1Dispatch__Engine_abbb5ab49a4b1156478fd3beee6ac0ace}\label{classchaiscript_1_1detail_1_1Dispatch__Engine_abbb5ab49a4b1156478fd3beee6ac0ace}} 
+\index{chaiscript::detail::Dispatch\_Engine@{chaiscript::detail::Dispatch\_Engine}!add@{add}}
+\index{add@{add}!chaiscript::detail::Dispatch\_Engine@{chaiscript::detail::Dispatch\_Engine}}
+\doxysubsubsection{\texorpdfstring{add()}{add()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily void chaiscript\+::detail\+::\+Dispatch\+\_\+\+Engine\+::add (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{namespacechaiscript_a0c4629731b82bec640c9b485efca2e8a}{Proxy\+\_\+\+Function}} \&}]{f,  }\item[{const std\+::string \&}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Add a new named Proxy\+\_\+\+Function to the system. 
+
+\mbox{\Hypertarget{classchaiscript_1_1detail_1_1Dispatch__Engine_a806407e3f0c85fd0f6d6f8db296ef7ef}\label{classchaiscript_1_1detail_1_1Dispatch__Engine_a806407e3f0c85fd0f6d6f8db296ef7ef}} 
+\index{chaiscript::detail::Dispatch\_Engine@{chaiscript::detail::Dispatch\_Engine}!add@{add}}
+\index{add@{add}!chaiscript::detail::Dispatch\_Engine@{chaiscript::detail::Dispatch\_Engine}}
+\doxysubsubsection{\texorpdfstring{add()}{add()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily void chaiscript\+::detail\+::\+Dispatch\+\_\+\+Engine\+::add (\begin{DoxyParamCaption}\item[{const Type\+\_\+\+Conversion \&}]{d }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Add a new conversion for upcasting to a base class. 
+
+\mbox{\Hypertarget{classchaiscript_1_1detail_1_1Dispatch__Engine_ae33094dfaf79392ee19116da2bf83f68}\label{classchaiscript_1_1detail_1_1Dispatch__Engine_ae33094dfaf79392ee19116da2bf83f68}} 
+\index{chaiscript::detail::Dispatch\_Engine@{chaiscript::detail::Dispatch\_Engine}!add@{add}}
+\index{add@{add}!chaiscript::detail::Dispatch\_Engine@{chaiscript::detail::Dispatch\_Engine}}
+\doxysubsubsection{\texorpdfstring{add()}{add()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily void chaiscript\+::detail\+::\+Dispatch\+\_\+\+Engine\+::add (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classchaiscript_1_1Type__Info}{Type\+\_\+\+Info}} \&}]{ti,  }\item[{const std\+::string \&}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Registers a new named type. 
+
+\mbox{\Hypertarget{classchaiscript_1_1detail_1_1Dispatch__Engine_ae2286c56e4ffa40cb0e0a3e34b72be4a}\label{classchaiscript_1_1detail_1_1Dispatch__Engine_ae2286c56e4ffa40cb0e0a3e34b72be4a}} 
+\index{chaiscript::detail::Dispatch\_Engine@{chaiscript::detail::Dispatch\_Engine}!add\_get\_object@{add\_get\_object}}
+\index{add\_get\_object@{add\_get\_object}!chaiscript::detail::Dispatch\_Engine@{chaiscript::detail::Dispatch\_Engine}}
+\doxysubsubsection{\texorpdfstring{add\_get\_object()}{add\_get\_object()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classchaiscript_1_1Boxed__Value}{Boxed\+\_\+\+Value}}\& chaiscript\+::detail\+::\+Dispatch\+\_\+\+Engine\+::add\+\_\+get\+\_\+object (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{t\+\_\+name,  }\item[{\mbox{\hyperlink{classchaiscript_1_1Boxed__Value}{Boxed\+\_\+\+Value}}}]{obj,  }\item[{\mbox{\hyperlink{structchaiscript_1_1detail_1_1Stack__Holder}{Stack\+\_\+\+Holder}} \&}]{t\+\_\+holder }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Adds a named object to the current scope \begin{DoxyWarning}{Warning}
+This version does not check the validity of the name it is meant for internal use only 
+\end{DoxyWarning}
+\mbox{\Hypertarget{classchaiscript_1_1detail_1_1Dispatch__Engine_a75110954cf0855152f83f00b68486943}\label{classchaiscript_1_1detail_1_1Dispatch__Engine_a75110954cf0855152f83f00b68486943}} 
+\index{chaiscript::detail::Dispatch\_Engine@{chaiscript::detail::Dispatch\_Engine}!add\_global@{add\_global}}
+\index{add\_global@{add\_global}!chaiscript::detail::Dispatch\_Engine@{chaiscript::detail::Dispatch\_Engine}}
+\doxysubsubsection{\texorpdfstring{add\_global()}{add\_global()}}
+{\footnotesize\ttfamily void chaiscript\+::detail\+::\+Dispatch\+\_\+\+Engine\+::add\+\_\+global (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classchaiscript_1_1Boxed__Value}{Boxed\+\_\+\+Value}} \&}]{obj,  }\item[{const std\+::string \&}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Adds a new global (non-\/const) shared object, between all the threads. 
+
+\mbox{\Hypertarget{classchaiscript_1_1detail_1_1Dispatch__Engine_a00a015ef8d5a4178b3ebf0398d7265b8}\label{classchaiscript_1_1detail_1_1Dispatch__Engine_a00a015ef8d5a4178b3ebf0398d7265b8}} 
+\index{chaiscript::detail::Dispatch\_Engine@{chaiscript::detail::Dispatch\_Engine}!add\_global\_const@{add\_global\_const}}
+\index{add\_global\_const@{add\_global\_const}!chaiscript::detail::Dispatch\_Engine@{chaiscript::detail::Dispatch\_Engine}}
+\doxysubsubsection{\texorpdfstring{add\_global\_const()}{add\_global\_const()}}
+{\footnotesize\ttfamily void chaiscript\+::detail\+::\+Dispatch\+\_\+\+Engine\+::add\+\_\+global\+\_\+const (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classchaiscript_1_1Boxed__Value}{Boxed\+\_\+\+Value}} \&}]{obj,  }\item[{const std\+::string \&}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Adds a new global shared object, between all the threads. 
+
+\mbox{\Hypertarget{classchaiscript_1_1detail_1_1Dispatch__Engine_ad844dca713a57b2f4cede69f26c89b20}\label{classchaiscript_1_1detail_1_1Dispatch__Engine_ad844dca713a57b2f4cede69f26c89b20}} 
+\index{chaiscript::detail::Dispatch\_Engine@{chaiscript::detail::Dispatch\_Engine}!add\_global\_no\_throw@{add\_global\_no\_throw}}
+\index{add\_global\_no\_throw@{add\_global\_no\_throw}!chaiscript::detail::Dispatch\_Engine@{chaiscript::detail::Dispatch\_Engine}}
+\doxysubsubsection{\texorpdfstring{add\_global\_no\_throw()}{add\_global\_no\_throw()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classchaiscript_1_1Boxed__Value}{Boxed\+\_\+\+Value}} chaiscript\+::detail\+::\+Dispatch\+\_\+\+Engine\+::add\+\_\+global\+\_\+no\+\_\+throw (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classchaiscript_1_1Boxed__Value}{Boxed\+\_\+\+Value}} \&}]{obj,  }\item[{const std\+::string \&}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Adds a new global (non-\/const) shared object, between all the threads. 
+
+\mbox{\Hypertarget{classchaiscript_1_1detail_1_1Dispatch__Engine_a61dd4dfc6eb09443c9242e147913832c}\label{classchaiscript_1_1detail_1_1Dispatch__Engine_a61dd4dfc6eb09443c9242e147913832c}} 
+\index{chaiscript::detail::Dispatch\_Engine@{chaiscript::detail::Dispatch\_Engine}!add\_object@{add\_object}}
+\index{add\_object@{add\_object}!chaiscript::detail::Dispatch\_Engine@{chaiscript::detail::Dispatch\_Engine}}
+\doxysubsubsection{\texorpdfstring{add\_object()}{add\_object()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void chaiscript\+::detail\+::\+Dispatch\+\_\+\+Engine\+::add\+\_\+object (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{name,  }\item[{\mbox{\hyperlink{classchaiscript_1_1Boxed__Value}{Boxed\+\_\+\+Value}}}]{obj }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Adds a named object to the current scope \begin{DoxyWarning}{Warning}
+This version does not check the validity of the name it is meant for internal use only 
+\end{DoxyWarning}
+\mbox{\Hypertarget{classchaiscript_1_1detail_1_1Dispatch__Engine_a134c703b1586f96dcd583949f96053e7}\label{classchaiscript_1_1detail_1_1Dispatch__Engine_a134c703b1586f96dcd583949f96053e7}} 
+\index{chaiscript::detail::Dispatch\_Engine@{chaiscript::detail::Dispatch\_Engine}!add\_object@{add\_object}}
+\index{add\_object@{add\_object}!chaiscript::detail::Dispatch\_Engine@{chaiscript::detail::Dispatch\_Engine}}
+\doxysubsubsection{\texorpdfstring{add\_object()}{add\_object()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void chaiscript\+::detail\+::\+Dispatch\+\_\+\+Engine\+::add\+\_\+object (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{t\+\_\+name,  }\item[{\mbox{\hyperlink{classchaiscript_1_1Boxed__Value}{Boxed\+\_\+\+Value}}}]{obj,  }\item[{\mbox{\hyperlink{structchaiscript_1_1detail_1_1Stack__Holder}{Stack\+\_\+\+Holder}} \&}]{t\+\_\+holder }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Adds a named object to the current scope \begin{DoxyWarning}{Warning}
+This version does not check the validity of the name it is meant for internal use only 
+\end{DoxyWarning}
+\mbox{\Hypertarget{classchaiscript_1_1detail_1_1Dispatch__Engine_a1b3da9d1e308feb3034ea4263bb12b28}\label{classchaiscript_1_1detail_1_1Dispatch__Engine_a1b3da9d1e308feb3034ea4263bb12b28}} 
+\index{chaiscript::detail::Dispatch\_Engine@{chaiscript::detail::Dispatch\_Engine}!boxed\_cast@{boxed\_cast}}
+\index{boxed\_cast@{boxed\_cast}!chaiscript::detail::Dispatch\_Engine@{chaiscript::detail::Dispatch\_Engine}}
+\doxysubsubsection{\texorpdfstring{boxed\_cast()}{boxed\_cast()}}
+{\footnotesize\ttfamily template$<$typename Type $>$ \\
+decltype(auto) chaiscript\+::detail\+::\+Dispatch\+\_\+\+Engine\+::boxed\+\_\+cast (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classchaiscript_1_1Boxed__Value}{Boxed\+\_\+\+Value}} \&}]{bv }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+casts an object while applying any Dynamic\+\_\+\+Conversion available 
+
+\mbox{\Hypertarget{classchaiscript_1_1detail_1_1Dispatch__Engine_a620ebc6ceef6369c7270dcdc1d7bfc17}\label{classchaiscript_1_1detail_1_1Dispatch__Engine_a620ebc6ceef6369c7270dcdc1d7bfc17}} 
+\index{chaiscript::detail::Dispatch\_Engine@{chaiscript::detail::Dispatch\_Engine}!call\_exists@{call\_exists}}
+\index{call\_exists@{call\_exists}!chaiscript::detail::Dispatch\_Engine@{chaiscript::detail::Dispatch\_Engine}}
+\doxysubsubsection{\texorpdfstring{call\_exists()}{call\_exists()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classchaiscript_1_1Boxed__Value}{Boxed\+\_\+\+Value}} chaiscript\+::detail\+::\+Dispatch\+\_\+\+Engine\+::call\+\_\+exists (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ \mbox{\hyperlink{classchaiscript_1_1Boxed__Value}{Boxed\+\_\+\+Value}} $>$ \&}]{params }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns true if a call can be made that consists of the first parameter (the function) with the remaining parameters as its arguments. \mbox{\Hypertarget{classchaiscript_1_1detail_1_1Dispatch__Engine_a36a57d90cdc9b5369527751380a9fc80}\label{classchaiscript_1_1detail_1_1Dispatch__Engine_a36a57d90cdc9b5369527751380a9fc80}} 
+\index{chaiscript::detail::Dispatch\_Engine@{chaiscript::detail::Dispatch\_Engine}!dump\_function@{dump\_function}}
+\index{dump\_function@{dump\_function}!chaiscript::detail::Dispatch\_Engine@{chaiscript::detail::Dispatch\_Engine}}
+\doxysubsubsection{\texorpdfstring{dump\_function()}{dump\_function()}}
+{\footnotesize\ttfamily void chaiscript\+::detail\+::\+Dispatch\+\_\+\+Engine\+::dump\+\_\+function (\begin{DoxyParamCaption}\item[{const std\+::pair$<$ const std\+::string, \mbox{\hyperlink{namespacechaiscript_a0c4629731b82bec640c9b485efca2e8a}{Proxy\+\_\+\+Function}} $>$ \&}]{f }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Dump function to stdout. 
+
+\mbox{\Hypertarget{classchaiscript_1_1detail_1_1Dispatch__Engine_ad20a765e206457c6b888797b2606747e}\label{classchaiscript_1_1detail_1_1Dispatch__Engine_ad20a765e206457c6b888797b2606747e}} 
+\index{chaiscript::detail::Dispatch\_Engine@{chaiscript::detail::Dispatch\_Engine}!dump\_object@{dump\_object}}
+\index{dump\_object@{dump\_object}!chaiscript::detail::Dispatch\_Engine@{chaiscript::detail::Dispatch\_Engine}}
+\doxysubsubsection{\texorpdfstring{dump\_object()}{dump\_object()}}
+{\footnotesize\ttfamily void chaiscript\+::detail\+::\+Dispatch\+\_\+\+Engine\+::dump\+\_\+object (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classchaiscript_1_1Boxed__Value}{Boxed\+\_\+\+Value}} \&}]{o }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Dump object info to stdout. 
+
+\mbox{\Hypertarget{classchaiscript_1_1detail_1_1Dispatch__Engine_a2351127e7d164f3e8b2bed03e603621d}\label{classchaiscript_1_1detail_1_1Dispatch__Engine_a2351127e7d164f3e8b2bed03e603621d}} 
+\index{chaiscript::detail::Dispatch\_Engine@{chaiscript::detail::Dispatch\_Engine}!dump\_system@{dump\_system}}
+\index{dump\_system@{dump\_system}!chaiscript::detail::Dispatch\_Engine@{chaiscript::detail::Dispatch\_Engine}}
+\doxysubsubsection{\texorpdfstring{dump\_system()}{dump\_system()}}
+{\footnotesize\ttfamily void chaiscript\+::detail\+::\+Dispatch\+\_\+\+Engine\+::dump\+\_\+system (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Dump all system info to stdout. 
+
+\mbox{\Hypertarget{classchaiscript_1_1detail_1_1Dispatch__Engine_ac9deded42a4f34ee6df82a35c827833b}\label{classchaiscript_1_1detail_1_1Dispatch__Engine_ac9deded42a4f34ee6df82a35c827833b}} 
+\index{chaiscript::detail::Dispatch\_Engine@{chaiscript::detail::Dispatch\_Engine}!dump\_type@{dump\_type}}
+\index{dump\_type@{dump\_type}!chaiscript::detail::Dispatch\_Engine@{chaiscript::detail::Dispatch\_Engine}}
+\doxysubsubsection{\texorpdfstring{dump\_type()}{dump\_type()}}
+{\footnotesize\ttfamily void chaiscript\+::detail\+::\+Dispatch\+\_\+\+Engine\+::dump\+\_\+type (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classchaiscript_1_1Type__Info}{Type\+\_\+\+Info}} \&}]{type }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Dump type info to stdout. 
+
+\mbox{\Hypertarget{classchaiscript_1_1detail_1_1Dispatch__Engine_ab79f14d595def08c8be75ddbf299c2dc}\label{classchaiscript_1_1detail_1_1Dispatch__Engine_ab79f14d595def08c8be75ddbf299c2dc}} 
+\index{chaiscript::detail::Dispatch\_Engine@{chaiscript::detail::Dispatch\_Engine}!function\_exists@{function\_exists}}
+\index{function\_exists@{function\_exists}!chaiscript::detail::Dispatch\_Engine@{chaiscript::detail::Dispatch\_Engine}}
+\doxysubsubsection{\texorpdfstring{function\_exists()}{function\_exists()}}
+{\footnotesize\ttfamily bool chaiscript\+::detail\+::\+Dispatch\+\_\+\+Engine\+::function\+\_\+exists (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{name }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Return true if a function exists. 
+
+\mbox{\Hypertarget{classchaiscript_1_1detail_1_1Dispatch__Engine_ab8846759cf538d624688d09e7b6157d1}\label{classchaiscript_1_1detail_1_1Dispatch__Engine_ab8846759cf538d624688d09e7b6157d1}} 
+\index{chaiscript::detail::Dispatch\_Engine@{chaiscript::detail::Dispatch\_Engine}!get\_function@{get\_function}}
+\index{get\_function@{get\_function}!chaiscript::detail::Dispatch\_Engine@{chaiscript::detail::Dispatch\_Engine}}
+\doxysubsubsection{\texorpdfstring{get\_function()}{get\_function()}}
+{\footnotesize\ttfamily std\+::pair$<$size\+\_\+t, std\+::shared\+\_\+ptr$<$std\+::vector$<$ \mbox{\hyperlink{namespacechaiscript_a0c4629731b82bec640c9b485efca2e8a}{Proxy\+\_\+\+Function}}$>$ $>$ $>$ chaiscript\+::detail\+::\+Dispatch\+\_\+\+Engine\+::get\+\_\+function (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{t\+\_\+name,  }\item[{const size\+\_\+t}]{t\+\_\+hint }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Return a function by name. 
+
+\mbox{\Hypertarget{classchaiscript_1_1detail_1_1Dispatch__Engine_a2f14bb06df066dee8e6414d162c6783e}\label{classchaiscript_1_1detail_1_1Dispatch__Engine_a2f14bb06df066dee8e6414d162c6783e}} 
+\index{chaiscript::detail::Dispatch\_Engine@{chaiscript::detail::Dispatch\_Engine}!get\_function\_object@{get\_function\_object}}
+\index{get\_function\_object@{get\_function\_object}!chaiscript::detail::Dispatch\_Engine@{chaiscript::detail::Dispatch\_Engine}}
+\doxysubsubsection{\texorpdfstring{get\_function\_object()}{get\_function\_object()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classchaiscript_1_1Boxed__Value}{Boxed\+\_\+\+Value}} chaiscript\+::detail\+::\+Dispatch\+\_\+\+Engine\+::get\+\_\+function\+\_\+object (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{t\+\_\+name }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxyReturn}{Returns}
+a function object (\mbox{\hyperlink{classchaiscript_1_1Boxed__Value}{Boxed\+\_\+\+Value}} wrapper) if it exists 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std\+::range\+\_\+error} & if it does not \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classchaiscript_1_1detail_1_1Dispatch__Engine_a0bb97eabe3f8d9906345e8335389bbc3}\label{classchaiscript_1_1detail_1_1Dispatch__Engine_a0bb97eabe3f8d9906345e8335389bbc3}} 
+\index{chaiscript::detail::Dispatch\_Engine@{chaiscript::detail::Dispatch\_Engine}!get\_function\_object\_int@{get\_function\_object\_int}}
+\index{get\_function\_object\_int@{get\_function\_object\_int}!chaiscript::detail::Dispatch\_Engine@{chaiscript::detail::Dispatch\_Engine}}
+\doxysubsubsection{\texorpdfstring{get\_function\_object\_int()}{get\_function\_object\_int()}}
+{\footnotesize\ttfamily std\+::pair$<$size\+\_\+t, \mbox{\hyperlink{classchaiscript_1_1Boxed__Value}{Boxed\+\_\+\+Value}}$>$ chaiscript\+::detail\+::\+Dispatch\+\_\+\+Engine\+::get\+\_\+function\+\_\+object\+\_\+int (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{t\+\_\+name,  }\item[{const size\+\_\+t}]{t\+\_\+hint }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxyReturn}{Returns}
+a function object (\mbox{\hyperlink{classchaiscript_1_1Boxed__Value}{Boxed\+\_\+\+Value}} wrapper) if it exists 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std\+::range\+\_\+error} & if it does not \textbackslash{}warn does not obtain a mutex lock. \\
+\hline
+\end{DoxyExceptions}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classchaiscript_1_1detail_1_1Dispatch__Engine_a2f14bb06df066dee8e6414d162c6783e}{get\+\_\+function\+\_\+object}} for public version 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classchaiscript_1_1detail_1_1Dispatch__Engine_a8e6bfd827af494e6d1d51102e36151aa}\label{classchaiscript_1_1detail_1_1Dispatch__Engine_a8e6bfd827af494e6d1d51102e36151aa}} 
+\index{chaiscript::detail::Dispatch\_Engine@{chaiscript::detail::Dispatch\_Engine}!get\_function\_objects@{get\_function\_objects}}
+\index{get\_function\_objects@{get\_function\_objects}!chaiscript::detail::Dispatch\_Engine@{chaiscript::detail::Dispatch\_Engine}}
+\doxysubsubsection{\texorpdfstring{get\_function\_objects()}{get\_function\_objects()}}
+{\footnotesize\ttfamily std\+::map$<$std\+::string, \mbox{\hyperlink{classchaiscript_1_1Boxed__Value}{Boxed\+\_\+\+Value}}$>$ chaiscript\+::detail\+::\+Dispatch\+\_\+\+Engine\+::get\+\_\+function\+\_\+objects (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get a map of all functions that can be seen from a scripting context \mbox{\Hypertarget{classchaiscript_1_1detail_1_1Dispatch__Engine_af3b0b4077b110009cc4b410a7129ad48}\label{classchaiscript_1_1detail_1_1Dispatch__Engine_af3b0b4077b110009cc4b410a7129ad48}} 
+\index{chaiscript::detail::Dispatch\_Engine@{chaiscript::detail::Dispatch\_Engine}!get\_functions@{get\_functions}}
+\index{get\_functions@{get\_functions}!chaiscript::detail::Dispatch\_Engine@{chaiscript::detail::Dispatch\_Engine}}
+\doxysubsubsection{\texorpdfstring{get\_functions()}{get\_functions()}}
+{\footnotesize\ttfamily std\+::vector$<$std\+::pair$<$std\+::string, \mbox{\hyperlink{namespacechaiscript_a0c4629731b82bec640c9b485efca2e8a}{Proxy\+\_\+\+Function}} $>$ $>$ chaiscript\+::detail\+::\+Dispatch\+\_\+\+Engine\+::get\+\_\+functions (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get a vector of all registered functions. 
+
+\mbox{\Hypertarget{classchaiscript_1_1detail_1_1Dispatch__Engine_a6edef1432891cff37db5011a02e85c99}\label{classchaiscript_1_1detail_1_1Dispatch__Engine_a6edef1432891cff37db5011a02e85c99}} 
+\index{chaiscript::detail::Dispatch\_Engine@{chaiscript::detail::Dispatch\_Engine}!get\_locals@{get\_locals}}
+\index{get\_locals@{get\_locals}!chaiscript::detail::Dispatch\_Engine@{chaiscript::detail::Dispatch\_Engine}}
+\doxysubsubsection{\texorpdfstring{get\_locals()}{get\_locals()}}
+{\footnotesize\ttfamily std\+::map$<$std\+::string, \mbox{\hyperlink{classchaiscript_1_1Boxed__Value}{Boxed\+\_\+\+Value}}$>$ chaiscript\+::detail\+::\+Dispatch\+\_\+\+Engine\+::get\+\_\+locals (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxyReturn}{Returns}
+All values in the local thread state, added through the \mbox{\hyperlink{classchaiscript_1_1detail_1_1Dispatch__Engine_a806407e3f0c85fd0f6d6f8db296ef7ef}{add()}} function 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classchaiscript_1_1detail_1_1Dispatch__Engine_aa7574d414838534e8d9e8edf78c08ae2}\label{classchaiscript_1_1detail_1_1Dispatch__Engine_aa7574d414838534e8d9e8edf78c08ae2}} 
+\index{chaiscript::detail::Dispatch\_Engine@{chaiscript::detail::Dispatch\_Engine}!get\_object@{get\_object}}
+\index{get\_object@{get\_object}!chaiscript::detail::Dispatch\_Engine@{chaiscript::detail::Dispatch\_Engine}}
+\doxysubsubsection{\texorpdfstring{get\_object()}{get\_object()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classchaiscript_1_1Boxed__Value}{Boxed\+\_\+\+Value}} chaiscript\+::detail\+::\+Dispatch\+\_\+\+Engine\+::get\+\_\+object (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{name,  }\item[{std\+::atomic\+\_\+uint\+\_\+fast32\+\_\+t \&}]{t\+\_\+loc,  }\item[{\mbox{\hyperlink{structchaiscript_1_1detail_1_1Stack__Holder}{Stack\+\_\+\+Holder}} \&}]{t\+\_\+holder }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Searches the current stack for an object of the given name includes a special overload for the \+\_\+ place holder object to ensure that it is always in scope. \mbox{\Hypertarget{classchaiscript_1_1detail_1_1Dispatch__Engine_a6ff4da2293e539bf32eb270e5346a3bb}\label{classchaiscript_1_1detail_1_1Dispatch__Engine_a6ff4da2293e539bf32eb270e5346a3bb}} 
+\index{chaiscript::detail::Dispatch\_Engine@{chaiscript::detail::Dispatch\_Engine}!get\_parent\_locals@{get\_parent\_locals}}
+\index{get\_parent\_locals@{get\_parent\_locals}!chaiscript::detail::Dispatch\_Engine@{chaiscript::detail::Dispatch\_Engine}}
+\doxysubsubsection{\texorpdfstring{get\_parent\_locals()}{get\_parent\_locals()}}
+{\footnotesize\ttfamily std\+::map$<$std\+::string, \mbox{\hyperlink{classchaiscript_1_1Boxed__Value}{Boxed\+\_\+\+Value}}$>$ chaiscript\+::detail\+::\+Dispatch\+\_\+\+Engine\+::get\+\_\+parent\+\_\+locals (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxyReturn}{Returns}
+All values in the local thread state in the parent scope, or if it doesn\textquotesingle{}t exist, the current scope. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classchaiscript_1_1detail_1_1Dispatch__Engine_a8214ba189970defa0d950a488909a8cf}\label{classchaiscript_1_1detail_1_1Dispatch__Engine_a8214ba189970defa0d950a488909a8cf}} 
+\index{chaiscript::detail::Dispatch\_Engine@{chaiscript::detail::Dispatch\_Engine}!get\_scripting\_objects@{get\_scripting\_objects}}
+\index{get\_scripting\_objects@{get\_scripting\_objects}!chaiscript::detail::Dispatch\_Engine@{chaiscript::detail::Dispatch\_Engine}}
+\doxysubsubsection{\texorpdfstring{get\_scripting\_objects()}{get\_scripting\_objects()}}
+{\footnotesize\ttfamily std\+::map$<$std\+::string, \mbox{\hyperlink{classchaiscript_1_1Boxed__Value}{Boxed\+\_\+\+Value}}$>$ chaiscript\+::detail\+::\+Dispatch\+\_\+\+Engine\+::get\+\_\+scripting\+\_\+objects (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get a map of all objects that can be seen from the current scope in a scripting context \mbox{\Hypertarget{classchaiscript_1_1detail_1_1Dispatch__Engine_a7ee0696171b1c3f7ef72a85cdaba6e57}\label{classchaiscript_1_1detail_1_1Dispatch__Engine_a7ee0696171b1c3f7ef72a85cdaba6e57}} 
+\index{chaiscript::detail::Dispatch\_Engine@{chaiscript::detail::Dispatch\_Engine}!get\_stack\_data@{get\_stack\_data}}
+\index{get\_stack\_data@{get\_stack\_data}!chaiscript::detail::Dispatch\_Engine@{chaiscript::detail::Dispatch\_Engine}}
+\doxysubsubsection{\texorpdfstring{get\_stack\_data()}{get\_stack\_data()}}
+{\footnotesize\ttfamily const Stack\+Data\& chaiscript\+::detail\+::\+Dispatch\+\_\+\+Engine\+::get\+\_\+stack\+\_\+data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns the current stack make const/non const versions \mbox{\Hypertarget{classchaiscript_1_1detail_1_1Dispatch__Engine_a7ffba1752bfae0ae30ef62abd5f76667}\label{classchaiscript_1_1detail_1_1Dispatch__Engine_a7ffba1752bfae0ae30ef62abd5f76667}} 
+\index{chaiscript::detail::Dispatch\_Engine@{chaiscript::detail::Dispatch\_Engine}!get\_type@{get\_type}}
+\index{get\_type@{get\_type}!chaiscript::detail::Dispatch\_Engine@{chaiscript::detail::Dispatch\_Engine}}
+\doxysubsubsection{\texorpdfstring{get\_type()}{get\_type()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classchaiscript_1_1Type__Info}{Type\+\_\+\+Info}} chaiscript\+::detail\+::\+Dispatch\+\_\+\+Engine\+::get\+\_\+type (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{name,  }\item[{bool}]{t\+\_\+throw = {\ttfamily true} }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns the type info for a named type. 
+
+\mbox{\Hypertarget{classchaiscript_1_1detail_1_1Dispatch__Engine_a6c7f17aedd8c835cf01bd9d5c40c7f7c}\label{classchaiscript_1_1detail_1_1Dispatch__Engine_a6c7f17aedd8c835cf01bd9d5c40c7f7c}} 
+\index{chaiscript::detail::Dispatch\_Engine@{chaiscript::detail::Dispatch\_Engine}!get\_type\_name@{get\_type\_name}}
+\index{get\_type\_name@{get\_type\_name}!chaiscript::detail::Dispatch\_Engine@{chaiscript::detail::Dispatch\_Engine}}
+\doxysubsubsection{\texorpdfstring{get\_type\_name()}{get\_type\_name()}}
+{\footnotesize\ttfamily std\+::string chaiscript\+::detail\+::\+Dispatch\+\_\+\+Engine\+::get\+\_\+type\+\_\+name (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classchaiscript_1_1Type__Info}{Type\+\_\+\+Info}} \&}]{ti }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns the registered name of a known type\+\_\+info object compares the \char`\"{}bare\+\_\+type\+\_\+info\char`\"{} for the broadest possible match \mbox{\Hypertarget{classchaiscript_1_1detail_1_1Dispatch__Engine_aa66d41f71ae9a09182228664d5de7527}\label{classchaiscript_1_1detail_1_1Dispatch__Engine_aa66d41f71ae9a09182228664d5de7527}} 
+\index{chaiscript::detail::Dispatch\_Engine@{chaiscript::detail::Dispatch\_Engine}!get\_types@{get\_types}}
+\index{get\_types@{get\_types}!chaiscript::detail::Dispatch\_Engine@{chaiscript::detail::Dispatch\_Engine}}
+\doxysubsubsection{\texorpdfstring{get\_types()}{get\_types()}}
+{\footnotesize\ttfamily std\+::vector$<$std\+::pair$<$std\+::string, \mbox{\hyperlink{classchaiscript_1_1Type__Info}{Type\+\_\+\+Info}}$>$ $>$ chaiscript\+::detail\+::\+Dispatch\+\_\+\+Engine\+::get\+\_\+types (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Return all registered types. 
+
+\mbox{\Hypertarget{classchaiscript_1_1detail_1_1Dispatch__Engine_a0ed05463e05e4a77b6801a26bd44c763}\label{classchaiscript_1_1detail_1_1Dispatch__Engine_a0ed05463e05e4a77b6801a26bd44c763}} 
+\index{chaiscript::detail::Dispatch\_Engine@{chaiscript::detail::Dispatch\_Engine}!is\_type@{is\_type}}
+\index{is\_type@{is\_type}!chaiscript::detail::Dispatch\_Engine@{chaiscript::detail::Dispatch\_Engine}}
+\doxysubsubsection{\texorpdfstring{is\_type()}{is\_type()}}
+{\footnotesize\ttfamily bool chaiscript\+::detail\+::\+Dispatch\+\_\+\+Engine\+::is\+\_\+type (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classchaiscript_1_1Boxed__Value}{Boxed\+\_\+\+Value}} \&}]{r,  }\item[{const std\+::string \&}]{user\+\_\+typename }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+return true if the \mbox{\hyperlink{classchaiscript_1_1Boxed__Value}{Boxed\+\_\+\+Value}} matches the registered type by name 
+
+\mbox{\Hypertarget{classchaiscript_1_1detail_1_1Dispatch__Engine_a30b1aa8fc6cce58457201a337478ad07}\label{classchaiscript_1_1detail_1_1Dispatch__Engine_a30b1aa8fc6cce58457201a337478ad07}} 
+\index{chaiscript::detail::Dispatch\_Engine@{chaiscript::detail::Dispatch\_Engine}!new\_scope@{new\_scope}}
+\index{new\_scope@{new\_scope}!chaiscript::detail::Dispatch\_Engine@{chaiscript::detail::Dispatch\_Engine}}
+\doxysubsubsection{\texorpdfstring{new\_scope()}{new\_scope()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void chaiscript\+::detail\+::\+Dispatch\+\_\+\+Engine\+::new\+\_\+scope (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Adds a new scope to the stack. 
+
+\mbox{\Hypertarget{classchaiscript_1_1detail_1_1Dispatch__Engine_a9a292bdcf531e9e168792fd1508a65b5}\label{classchaiscript_1_1detail_1_1Dispatch__Engine_a9a292bdcf531e9e168792fd1508a65b5}} 
+\index{chaiscript::detail::Dispatch\_Engine@{chaiscript::detail::Dispatch\_Engine}!new\_scope@{new\_scope}}
+\index{new\_scope@{new\_scope}!chaiscript::detail::Dispatch\_Engine@{chaiscript::detail::Dispatch\_Engine}}
+\doxysubsubsection{\texorpdfstring{new\_scope()}{new\_scope()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily static void chaiscript\+::detail\+::\+Dispatch\+\_\+\+Engine\+::new\+\_\+scope (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structchaiscript_1_1detail_1_1Stack__Holder}{Stack\+\_\+\+Holder}} \&}]{t\+\_\+holder }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Adds a new scope to the stack. 
+
+\mbox{\Hypertarget{classchaiscript_1_1detail_1_1Dispatch__Engine_a07dbfde18bcec7d2486c2a87f9e27218}\label{classchaiscript_1_1detail_1_1Dispatch__Engine_a07dbfde18bcec7d2486c2a87f9e27218}} 
+\index{chaiscript::detail::Dispatch\_Engine@{chaiscript::detail::Dispatch\_Engine}!new\_stack@{new\_stack}}
+\index{new\_stack@{new\_stack}!chaiscript::detail::Dispatch\_Engine@{chaiscript::detail::Dispatch\_Engine}}
+\doxysubsubsection{\texorpdfstring{new\_stack()}{new\_stack()}}
+{\footnotesize\ttfamily static void chaiscript\+::detail\+::\+Dispatch\+\_\+\+Engine\+::new\+\_\+stack (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structchaiscript_1_1detail_1_1Stack__Holder}{Stack\+\_\+\+Holder}} \&}]{t\+\_\+holder }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Pushes a new stack on to the list of stacks. 
+
+\mbox{\Hypertarget{classchaiscript_1_1detail_1_1Dispatch__Engine_ae06c588ed9b8687fcff54a1c50ad903e}\label{classchaiscript_1_1detail_1_1Dispatch__Engine_ae06c588ed9b8687fcff54a1c50ad903e}} 
+\index{chaiscript::detail::Dispatch\_Engine@{chaiscript::detail::Dispatch\_Engine}!pop\_scope@{pop\_scope}}
+\index{pop\_scope@{pop\_scope}!chaiscript::detail::Dispatch\_Engine@{chaiscript::detail::Dispatch\_Engine}}
+\doxysubsubsection{\texorpdfstring{pop\_scope()}{pop\_scope()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void chaiscript\+::detail\+::\+Dispatch\+\_\+\+Engine\+::pop\+\_\+scope (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Pops the current scope from the stack. 
+
+\mbox{\Hypertarget{classchaiscript_1_1detail_1_1Dispatch__Engine_afb9ecfd7d743f10ad335c4e80e4031a2}\label{classchaiscript_1_1detail_1_1Dispatch__Engine_afb9ecfd7d743f10ad335c4e80e4031a2}} 
+\index{chaiscript::detail::Dispatch\_Engine@{chaiscript::detail::Dispatch\_Engine}!pop\_scope@{pop\_scope}}
+\index{pop\_scope@{pop\_scope}!chaiscript::detail::Dispatch\_Engine@{chaiscript::detail::Dispatch\_Engine}}
+\doxysubsubsection{\texorpdfstring{pop\_scope()}{pop\_scope()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily static void chaiscript\+::detail\+::\+Dispatch\+\_\+\+Engine\+::pop\+\_\+scope (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structchaiscript_1_1detail_1_1Stack__Holder}{Stack\+\_\+\+Holder}} \&}]{t\+\_\+holder }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Pops the current scope from the stack. 
+
+\mbox{\Hypertarget{classchaiscript_1_1detail_1_1Dispatch__Engine_a76984dc42a66b3c896db3a09a40cb042}\label{classchaiscript_1_1detail_1_1Dispatch__Engine_a76984dc42a66b3c896db3a09a40cb042}} 
+\index{chaiscript::detail::Dispatch\_Engine@{chaiscript::detail::Dispatch\_Engine}!set\_global@{set\_global}}
+\index{set\_global@{set\_global}!chaiscript::detail::Dispatch\_Engine@{chaiscript::detail::Dispatch\_Engine}}
+\doxysubsubsection{\texorpdfstring{set\_global()}{set\_global()}}
+{\footnotesize\ttfamily void chaiscript\+::detail\+::\+Dispatch\+\_\+\+Engine\+::set\+\_\+global (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classchaiscript_1_1Boxed__Value}{Boxed\+\_\+\+Value}} \&}]{obj,  }\item[{const std\+::string \&}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Updates an existing global shared object or adds a new global shared object if not found. 
+
+\mbox{\Hypertarget{classchaiscript_1_1detail_1_1Dispatch__Engine_a04711d182e337b38cbbec3cfd4586b87}\label{classchaiscript_1_1detail_1_1Dispatch__Engine_a04711d182e337b38cbbec3cfd4586b87}} 
+\index{chaiscript::detail::Dispatch\_Engine@{chaiscript::detail::Dispatch\_Engine}!set\_locals@{set\_locals}}
+\index{set\_locals@{set\_locals}!chaiscript::detail::Dispatch\_Engine@{chaiscript::detail::Dispatch\_Engine}}
+\doxysubsubsection{\texorpdfstring{set\_locals()}{set\_locals()}}
+{\footnotesize\ttfamily void chaiscript\+::detail\+::\+Dispatch\+\_\+\+Engine\+::set\+\_\+locals (\begin{DoxyParamCaption}\item[{const std\+::map$<$ std\+::string, \mbox{\hyperlink{classchaiscript_1_1Boxed__Value}{Boxed\+\_\+\+Value}} $>$ \&}]{t\+\_\+locals }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Sets all of the locals for the current thread state. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em t\+\_\+locals} & The map$<$name, value$>$ set of variables to replace the current state with\\
+\hline
+\end{DoxyParams}
+\mbox{\hyperlink{classchaiscript_1_1detail_1_1Any}{Any}} existing locals are removed and the given set of variables is added 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Chai\+Script-\/6.\+1.\+0/include/chaiscript/dispatchkit/dispatchkit.\+hpp\end{DoxyCompactItemize}

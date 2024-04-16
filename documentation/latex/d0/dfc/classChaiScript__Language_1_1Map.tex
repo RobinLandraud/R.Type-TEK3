@@ -1,0 +1,134 @@
+\hypertarget{classChaiScript__Language_1_1Map}{}\doxysection{Chai\+Script\+\_\+\+Language\+::Map Class Reference}
+\label{classChaiScript__Language_1_1Map}\index{ChaiScript\_Language::Map@{ChaiScript\_Language::Map}}
+
+
+Maps strings to Objects.  
+
+
+
+
+{\ttfamily \#include $<$chaiscript\+\_\+prelude\+\_\+docs.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classChaiScript__Language_1_1Range}{Range}} \mbox{\hyperlink{classChaiScript__Language_1_1Map_a7de155403d0b2af24aaec90a189413da}{range}} ()
+\begin{DoxyCompactList}\small\item\em Returns an object that implements the \mbox{\hyperlink{classChaiScript__Language_1_1Range}{Range}} concept for the \mbox{\hyperlink{classChaiScript__Language_1_1Map__Pair}{Map\+\_\+\+Pair}}\textquotesingle{}s in this \mbox{\hyperlink{classChaiScript__Language_1_1Map}{Map}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classChaiScript__Language_1_1Const__Range}{Const\+\_\+\+Range}} \mbox{\hyperlink{classChaiScript__Language_1_1Map_ab87ddaf6a9df73f225e6c9f80fad40ea}{range}} () const
+\begin{DoxyCompactList}\small\item\em Returns an object that implements the \mbox{\hyperlink{classChaiScript__Language_1_1Const__Range}{Const\+\_\+\+Range}} concept for the \mbox{\hyperlink{classChaiScript__Language_1_1Map__Pair}{Map\+\_\+\+Pair}}\textquotesingle{}s in this \mbox{\hyperlink{classChaiScript__Language_1_1Map}{Map}}. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classChaiScript__Language_1_1Map_aa5fa7342b7bb595d24b749a8984fa691}{size}} () const
+\begin{DoxyCompactList}\small\item\em Returns the number of elements in the \mbox{\hyperlink{classChaiScript__Language_1_1Map}{Map}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classChaiScript__Language_1_1Object}{Object}} \mbox{\hyperlink{classChaiScript__Language_1_1Map_a29572af3f3b4aad384f2dafda0e5cf9e}{operator\mbox{[}$\,$\mbox{]}}} (\mbox{\hyperlink{classChaiScript__Language_1_1string}{string}})
+\begin{DoxyCompactList}\small\item\em Returns the item at the given key, creating an undefined \mbox{\hyperlink{classChaiScript__Language_1_1Object}{Object}} if the key does not yet exist in the map. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classChaiScript__Language_1_1Map_a485df5caa26a575a2c8e56746e453e8d}{clear}} ()
+\begin{DoxyCompactList}\small\item\em Clears the map of all items. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classChaiScript__Language_1_1Map_ad39abd85a47918431953f7a195c273f6}{count}} (\mbox{\hyperlink{classChaiScript__Language_1_1string}{string}}) const
+\begin{DoxyCompactList}\small\item\em Returns the number of items in the \mbox{\hyperlink{classChaiScript__Language_1_1Map}{Map}} with the given key. Returns 0 or 1 since this is not an std\+::multimap. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classChaiScript__Language_1_1Map_a715c7d58a12733eef1ba45785232e83c}{empty}} () const
+\begin{DoxyCompactList}\small\item\em Returns true if the map contains no items. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Maps strings to Objects. 
+
+Chai\+Script has a built in shortcut for generating \mbox{\hyperlink{classChaiScript__Language_1_1Map}{Map}} objects\+:
+
+Example\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{eval> \mbox{\hyperlink{namespacechaiscript_a7f9fcf9713fa8a33bcc304a16ac2834b}{var}} m = [\textcolor{stringliteral}{"{}a"{}}:1, \textcolor{stringliteral}{"{}b"{}}:2];}
+\DoxyCodeLine{[<a,1>, <b,2>]}
+\DoxyCodeLine{eval> m.count(\textcolor{stringliteral}{"{}a"{}});}
+\DoxyCodeLine{1}
+\DoxyCodeLine{eval> m.count(\textcolor{stringliteral}{"{}c"{}});}
+\DoxyCodeLine{0}
+\DoxyCodeLine{eval> m.size();}
+\DoxyCodeLine{2}
+
+\end{DoxyCode}
+
+
+Implemented as std\+::map$<$\+Boxed\+\_\+\+Value$>$
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classChaiScript__Language_1_1Map__Pair}{Map\+\_\+\+Pair}} 
+
+chaiscript\+::bootstrap\+::standard\+\_\+library\+::map\+\_\+type 
+\end{DoxySeeAlso}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classChaiScript__Language_1_1Map_a485df5caa26a575a2c8e56746e453e8d}\label{classChaiScript__Language_1_1Map_a485df5caa26a575a2c8e56746e453e8d}} 
+\index{ChaiScript\_Language::Map@{ChaiScript\_Language::Map}!clear@{clear}}
+\index{clear@{clear}!ChaiScript\_Language::Map@{ChaiScript\_Language::Map}}
+\doxysubsubsection{\texorpdfstring{clear()}{clear()}}
+{\footnotesize\ttfamily void Chai\+Script\+\_\+\+Language\+::\+Map\+::clear (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Clears the map of all items. 
+
+\mbox{\Hypertarget{classChaiScript__Language_1_1Map_ad39abd85a47918431953f7a195c273f6}\label{classChaiScript__Language_1_1Map_ad39abd85a47918431953f7a195c273f6}} 
+\index{ChaiScript\_Language::Map@{ChaiScript\_Language::Map}!count@{count}}
+\index{count@{count}!ChaiScript\_Language::Map@{ChaiScript\_Language::Map}}
+\doxysubsubsection{\texorpdfstring{count()}{count()}}
+{\footnotesize\ttfamily int Chai\+Script\+\_\+\+Language\+::\+Map\+::count (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classChaiScript__Language_1_1string}{string}}}]{ }\end{DoxyParamCaption}) const}
+
+
+
+Returns the number of items in the \mbox{\hyperlink{classChaiScript__Language_1_1Map}{Map}} with the given key. Returns 0 or 1 since this is not an std\+::multimap. 
+
+\mbox{\Hypertarget{classChaiScript__Language_1_1Map_a715c7d58a12733eef1ba45785232e83c}\label{classChaiScript__Language_1_1Map_a715c7d58a12733eef1ba45785232e83c}} 
+\index{ChaiScript\_Language::Map@{ChaiScript\_Language::Map}!empty@{empty}}
+\index{empty@{empty}!ChaiScript\_Language::Map@{ChaiScript\_Language::Map}}
+\doxysubsubsection{\texorpdfstring{empty()}{empty()}}
+{\footnotesize\ttfamily bool Chai\+Script\+\_\+\+Language\+::\+Map\+::empty (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Returns true if the map contains no items. 
+
+\mbox{\Hypertarget{classChaiScript__Language_1_1Map_a29572af3f3b4aad384f2dafda0e5cf9e}\label{classChaiScript__Language_1_1Map_a29572af3f3b4aad384f2dafda0e5cf9e}} 
+\index{ChaiScript\_Language::Map@{ChaiScript\_Language::Map}!operator\mbox{[}\mbox{]}@{operator[]}}
+\index{operator\mbox{[}\mbox{]}@{operator[]}!ChaiScript\_Language::Map@{ChaiScript\_Language::Map}}
+\doxysubsubsection{\texorpdfstring{operator[]()}{operator[]()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classChaiScript__Language_1_1Object}{Object}} Chai\+Script\+\_\+\+Language\+::\+Map\+::operator\mbox{[}$\,$\mbox{]} (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classChaiScript__Language_1_1string}{string}}}]{ }\end{DoxyParamCaption})}
+
+
+
+Returns the item at the given key, creating an undefined \mbox{\hyperlink{classChaiScript__Language_1_1Object}{Object}} if the key does not yet exist in the map. 
+
+\mbox{\Hypertarget{classChaiScript__Language_1_1Map_a7de155403d0b2af24aaec90a189413da}\label{classChaiScript__Language_1_1Map_a7de155403d0b2af24aaec90a189413da}} 
+\index{ChaiScript\_Language::Map@{ChaiScript\_Language::Map}!range@{range}}
+\index{range@{range}!ChaiScript\_Language::Map@{ChaiScript\_Language::Map}}
+\doxysubsubsection{\texorpdfstring{range()}{range()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classChaiScript__Language_1_1Range}{Range}} Chai\+Script\+\_\+\+Language\+::\+Map\+::range (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns an object that implements the \mbox{\hyperlink{classChaiScript__Language_1_1Range}{Range}} concept for the \mbox{\hyperlink{classChaiScript__Language_1_1Map__Pair}{Map\+\_\+\+Pair}}\textquotesingle{}s in this \mbox{\hyperlink{classChaiScript__Language_1_1Map}{Map}}. 
+
+\mbox{\Hypertarget{classChaiScript__Language_1_1Map_ab87ddaf6a9df73f225e6c9f80fad40ea}\label{classChaiScript__Language_1_1Map_ab87ddaf6a9df73f225e6c9f80fad40ea}} 
+\index{ChaiScript\_Language::Map@{ChaiScript\_Language::Map}!range@{range}}
+\index{range@{range}!ChaiScript\_Language::Map@{ChaiScript\_Language::Map}}
+\doxysubsubsection{\texorpdfstring{range()}{range()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classChaiScript__Language_1_1Const__Range}{Const\+\_\+\+Range}} Chai\+Script\+\_\+\+Language\+::\+Map\+::range (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Returns an object that implements the \mbox{\hyperlink{classChaiScript__Language_1_1Const__Range}{Const\+\_\+\+Range}} concept for the \mbox{\hyperlink{classChaiScript__Language_1_1Map__Pair}{Map\+\_\+\+Pair}}\textquotesingle{}s in this \mbox{\hyperlink{classChaiScript__Language_1_1Map}{Map}}. 
+
+\mbox{\Hypertarget{classChaiScript__Language_1_1Map_aa5fa7342b7bb595d24b749a8984fa691}\label{classChaiScript__Language_1_1Map_aa5fa7342b7bb595d24b749a8984fa691}} 
+\index{ChaiScript\_Language::Map@{ChaiScript\_Language::Map}!size@{size}}
+\index{size@{size}!ChaiScript\_Language::Map@{ChaiScript\_Language::Map}}
+\doxysubsubsection{\texorpdfstring{size()}{size()}}
+{\footnotesize\ttfamily int Chai\+Script\+\_\+\+Language\+::\+Map\+::size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Returns the number of elements in the \mbox{\hyperlink{classChaiScript__Language_1_1Map}{Map}}. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Chai\+Script-\/6.\+1.\+0/include/chaiscript/language/chaiscript\+\_\+prelude\+\_\+docs.\+hpp\end{DoxyCompactItemize}

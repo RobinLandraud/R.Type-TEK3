@@ -1,0 +1,291 @@
+\hypertarget{classCollideComponent}{}\doxysection{Collide\+Component Class Reference}
+\label{classCollideComponent}\index{CollideComponent@{CollideComponent}}
+
+
+A component that handle a collision. Used to create a collision box.  
+
+
+
+
+{\ttfamily \#include $<$Collide\+Component.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classCollideComponent_ab322f6a8113dd1bf5ea5fe0c584123f4}{Collide\+Component}} (float width=1, float height=1, float deltaX=0, float deltaY=0)
+\begin{DoxyCompactList}\small\item\em Constructor of the \mbox{\hyperlink{classCollideComponent}{Collide\+Component}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classCollideComponent_aae4da345fc1f58c086abb30943a2bbef}{$\sim$\+Collide\+Component}} ()=default
+\item 
+\mbox{\hyperlink{classCollideComponent_ade2d9e6e2a631ac521fef7498342a0a4}{Collide\+Component}} (\mbox{\hyperlink{classCollideComponent}{Collide\+Component}} const \&)=default
+\item 
+\mbox{\hyperlink{classCollideComponent_ae6b0b50365d902c30d3c343aa7df8e80}{Collide\+Component}} (\mbox{\hyperlink{classCollideComponent}{Collide\+Component}} \&\&) noexcept=default
+\item 
+\mbox{\hyperlink{classCollideComponent}{Collide\+Component}} \& \mbox{\hyperlink{classCollideComponent_a411537fbe3e6b9dc3f0dfdfb320c749f}{operator=}} (\mbox{\hyperlink{classCollideComponent}{Collide\+Component}} const \&)=default
+\item 
+\mbox{\hyperlink{classCollideComponent}{Collide\+Component}} \& \mbox{\hyperlink{classCollideComponent_a0ca940a94f43b7f3d15ec7f81b9d2554}{operator=}} (\mbox{\hyperlink{classCollideComponent}{Collide\+Component}} \&\&) noexcept=default
+\item 
+bool \mbox{\hyperlink{classCollideComponent_ac1c70d32bb6cc6dae5f29be111ef6e35}{is\+Enable}} () const
+\begin{DoxyCompactList}\small\item\em Check if the collision is enable. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structCollideBox}{Collide\+Box}} \mbox{\hyperlink{classCollideComponent_a7bdda9b6ae752500af2baa68c48efec4}{get\+Collide\+Box}} () const
+\begin{DoxyCompactList}\small\item\em Get the collision box. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classCollideComponent_a3542245124c1cc828f839276e53d7aa3}{is\+Collide}} (\mbox{\hyperlink{classTransformComponent}{Transform\+Component}} \&transform, \mbox{\hyperlink{classCollideComponent}{Collide\+Component}} \&other, \mbox{\hyperlink{classTransformComponent}{Transform\+Component}} \&other\+Transform)
+\begin{DoxyCompactList}\small\item\em Check if the entity collide with another entity. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classCollideComponent_a132ea5a003e8425a0b8b1cf555e033b1}{is\+Collide}} (\mbox{\hyperlink{classTransformComponent}{Transform\+Component}} \&transform, float x, float y)
+\begin{DoxyCompactList}\small\item\em Check if the entity collide with a point. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classCollideComponent_a00b0c84255e7bcd6d7fb391db18027f6}{set\+Collide\+Box}} (\mbox{\hyperlink{structCollideBox}{Collide\+Box}} box)
+\begin{DoxyCompactList}\small\item\em Set the collision box. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classCollideComponent_a6dc45381623c3fb94ae4b692342bf03c}{set\+Enable}} (bool enable)
+\begin{DoxyCompactList}\small\item\em Set the collision enable. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structPosition2D__t}{Position2\+D\+\_\+t}} \mbox{\hyperlink{classCollideComponent_a4c97abfe1241ce9e7b1fa1de6dcba22c}{get\+Delta\+Pos}} () const
+\begin{DoxyCompactList}\small\item\em Get the delta position of the collision box. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classCollideComponent_ab322f6a8113dd1bf5ea5fe0c584123f4}\label{classCollideComponent_ab322f6a8113dd1bf5ea5fe0c584123f4}} 
+{\bfseries Collide\+Component} (float width=1, float height=1, float deltaX=0, float deltaY=0)
+\item 
+\mbox{\hyperlink{classCollideComponent_aae4da345fc1f58c086abb30943a2bbef}{$\sim$\+Collide\+Component}} ()=default
+\item 
+\mbox{\hyperlink{classCollideComponent_ade2d9e6e2a631ac521fef7498342a0a4}{Collide\+Component}} (\mbox{\hyperlink{classCollideComponent}{Collide\+Component}} const \&)=default
+\item 
+\mbox{\hyperlink{classCollideComponent_ae6b0b50365d902c30d3c343aa7df8e80}{Collide\+Component}} (\mbox{\hyperlink{classCollideComponent}{Collide\+Component}} \&\&) noexcept=default
+\item 
+\mbox{\hyperlink{classCollideComponent}{Collide\+Component}} \& \mbox{\hyperlink{classCollideComponent_a411537fbe3e6b9dc3f0dfdfb320c749f}{operator=}} (\mbox{\hyperlink{classCollideComponent}{Collide\+Component}} const \&)=default
+\item 
+\mbox{\hyperlink{classCollideComponent}{Collide\+Component}} \& \mbox{\hyperlink{classCollideComponent_a0ca940a94f43b7f3d15ec7f81b9d2554}{operator=}} (\mbox{\hyperlink{classCollideComponent}{Collide\+Component}} \&\&) noexcept=default
+\item 
+\mbox{\Hypertarget{classCollideComponent_ac1c70d32bb6cc6dae5f29be111ef6e35}\label{classCollideComponent_ac1c70d32bb6cc6dae5f29be111ef6e35}} 
+bool {\bfseries is\+Enable} () const
+\item 
+\mbox{\Hypertarget{classCollideComponent_a7bdda9b6ae752500af2baa68c48efec4}\label{classCollideComponent_a7bdda9b6ae752500af2baa68c48efec4}} 
+\mbox{\hyperlink{structCollideBox}{Collide\+Box}} {\bfseries get\+Collide\+Box} () const
+\item 
+\mbox{\Hypertarget{classCollideComponent_a3542245124c1cc828f839276e53d7aa3}\label{classCollideComponent_a3542245124c1cc828f839276e53d7aa3}} 
+bool {\bfseries is\+Collide} (\mbox{\hyperlink{classTransformComponent}{Transform\+Component}} \&transform, \mbox{\hyperlink{classCollideComponent}{Collide\+Component}} \&other, \mbox{\hyperlink{classTransformComponent}{Transform\+Component}} \&other\+Transform)
+\item 
+\mbox{\Hypertarget{classCollideComponent_a00b0c84255e7bcd6d7fb391db18027f6}\label{classCollideComponent_a00b0c84255e7bcd6d7fb391db18027f6}} 
+void {\bfseries set\+Collide\+Box} (\mbox{\hyperlink{structCollideBox}{Collide\+Box}} box)
+\item 
+\mbox{\Hypertarget{classCollideComponent_a6dc45381623c3fb94ae4b692342bf03c}\label{classCollideComponent_a6dc45381623c3fb94ae4b692342bf03c}} 
+void {\bfseries set\+Enable} (bool enable)
+\item 
+\mbox{\Hypertarget{classCollideComponent_a09933ab7da1b7cbaf473f3200faf39c3}\label{classCollideComponent_a09933ab7da1b7cbaf473f3200faf39c3}} 
+\mbox{\hyperlink{structPosition2D__t}{Position2\+D\+\_\+t}} {\bfseries get\+Delta\+Pos} () const
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A component that handle a collision. Used to create a collision box. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classCollideComponent_ab322f6a8113dd1bf5ea5fe0c584123f4}\label{classCollideComponent_ab322f6a8113dd1bf5ea5fe0c584123f4}} 
+\index{CollideComponent@{CollideComponent}!CollideComponent@{CollideComponent}}
+\index{CollideComponent@{CollideComponent}!CollideComponent@{CollideComponent}}
+\doxysubsubsection{\texorpdfstring{CollideComponent()}{CollideComponent()}\hspace{0.1cm}{\footnotesize\ttfamily [1/5]}}
+{\footnotesize\ttfamily Collide\+Component\+::\+Collide\+Component (\begin{DoxyParamCaption}\item[{float}]{width = {\ttfamily 1},  }\item[{float}]{height = {\ttfamily 1},  }\item[{float}]{deltaX = {\ttfamily 0},  }\item[{float}]{deltaY = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}
+
+
+
+Constructor of the \mbox{\hyperlink{classCollideComponent}{Collide\+Component}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em width} & Width of the collision box \\
+\hline
+{\em height} & Height of the collision box \\
+\hline
+{\em deltaX} & X position of the collision box relative to the entity \\
+\hline
+{\em deltaY} & Y position of the collision box relative to the entity \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classCollideComponent_aae4da345fc1f58c086abb30943a2bbef}\label{classCollideComponent_aae4da345fc1f58c086abb30943a2bbef}} 
+\index{CollideComponent@{CollideComponent}!````~CollideComponent@{$\sim$CollideComponent}}
+\index{````~CollideComponent@{$\sim$CollideComponent}!CollideComponent@{CollideComponent}}
+\doxysubsubsection{\texorpdfstring{$\sim$CollideComponent()}{~CollideComponent()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Collide\+Component\+::$\sim$\+Collide\+Component (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+Default destructor \mbox{\Hypertarget{classCollideComponent_ade2d9e6e2a631ac521fef7498342a0a4}\label{classCollideComponent_ade2d9e6e2a631ac521fef7498342a0a4}} 
+\index{CollideComponent@{CollideComponent}!CollideComponent@{CollideComponent}}
+\index{CollideComponent@{CollideComponent}!CollideComponent@{CollideComponent}}
+\doxysubsubsection{\texorpdfstring{CollideComponent()}{CollideComponent()}\hspace{0.1cm}{\footnotesize\ttfamily [2/5]}}
+{\footnotesize\ttfamily Collide\+Component\+::\+Collide\+Component (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classCollideComponent}{Collide\+Component}} const \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+Default copy constructor \mbox{\Hypertarget{classCollideComponent_ae6b0b50365d902c30d3c343aa7df8e80}\label{classCollideComponent_ae6b0b50365d902c30d3c343aa7df8e80}} 
+\index{CollideComponent@{CollideComponent}!CollideComponent@{CollideComponent}}
+\index{CollideComponent@{CollideComponent}!CollideComponent@{CollideComponent}}
+\doxysubsubsection{\texorpdfstring{CollideComponent()}{CollideComponent()}\hspace{0.1cm}{\footnotesize\ttfamily [3/5]}}
+{\footnotesize\ttfamily Collide\+Component\+::\+Collide\+Component (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classCollideComponent}{Collide\+Component}} \&\&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}, {\ttfamily [noexcept]}}
+
+Default move constructor \mbox{\Hypertarget{classCollideComponent_aae4da345fc1f58c086abb30943a2bbef}\label{classCollideComponent_aae4da345fc1f58c086abb30943a2bbef}} 
+\index{CollideComponent@{CollideComponent}!````~CollideComponent@{$\sim$CollideComponent}}
+\index{````~CollideComponent@{$\sim$CollideComponent}!CollideComponent@{CollideComponent}}
+\doxysubsubsection{\texorpdfstring{$\sim$CollideComponent()}{~CollideComponent()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Collide\+Component\+::$\sim$\+Collide\+Component (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+Default destructor \mbox{\Hypertarget{classCollideComponent_ade2d9e6e2a631ac521fef7498342a0a4}\label{classCollideComponent_ade2d9e6e2a631ac521fef7498342a0a4}} 
+\index{CollideComponent@{CollideComponent}!CollideComponent@{CollideComponent}}
+\index{CollideComponent@{CollideComponent}!CollideComponent@{CollideComponent}}
+\doxysubsubsection{\texorpdfstring{CollideComponent()}{CollideComponent()}\hspace{0.1cm}{\footnotesize\ttfamily [4/5]}}
+{\footnotesize\ttfamily Collide\+Component\+::\+Collide\+Component (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classCollideComponent}{Collide\+Component}} const \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+Default copy constructor \mbox{\Hypertarget{classCollideComponent_ae6b0b50365d902c30d3c343aa7df8e80}\label{classCollideComponent_ae6b0b50365d902c30d3c343aa7df8e80}} 
+\index{CollideComponent@{CollideComponent}!CollideComponent@{CollideComponent}}
+\index{CollideComponent@{CollideComponent}!CollideComponent@{CollideComponent}}
+\doxysubsubsection{\texorpdfstring{CollideComponent()}{CollideComponent()}\hspace{0.1cm}{\footnotesize\ttfamily [5/5]}}
+{\footnotesize\ttfamily Collide\+Component\+::\+Collide\+Component (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classCollideComponent}{Collide\+Component}} \&\&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}, {\ttfamily [noexcept]}}
+
+Default move constructor 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classCollideComponent_a7bdda9b6ae752500af2baa68c48efec4}\label{classCollideComponent_a7bdda9b6ae752500af2baa68c48efec4}} 
+\index{CollideComponent@{CollideComponent}!getCollideBox@{getCollideBox}}
+\index{getCollideBox@{getCollideBox}!CollideComponent@{CollideComponent}}
+\doxysubsubsection{\texorpdfstring{getCollideBox()}{getCollideBox()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structCollideBox}{Collide\+Box}} Collide\+Component\+::get\+Collide\+Box (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the collision box. 
+
+\begin{DoxyReturn}{Returns}
+The collision box 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classCollideComponent_a4c97abfe1241ce9e7b1fa1de6dcba22c}\label{classCollideComponent_a4c97abfe1241ce9e7b1fa1de6dcba22c}} 
+\index{CollideComponent@{CollideComponent}!getDeltaPos@{getDeltaPos}}
+\index{getDeltaPos@{getDeltaPos}!CollideComponent@{CollideComponent}}
+\doxysubsubsection{\texorpdfstring{getDeltaPos()}{getDeltaPos()}}
+{\footnotesize\ttfamily void Collide\+Component\+::get\+Delta\+Pos (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the delta position of the collision box. 
+
+\begin{DoxyReturn}{Returns}
+The delta position of the collision box 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classCollideComponent_a3542245124c1cc828f839276e53d7aa3}\label{classCollideComponent_a3542245124c1cc828f839276e53d7aa3}} 
+\index{CollideComponent@{CollideComponent}!isCollide@{isCollide}}
+\index{isCollide@{isCollide}!CollideComponent@{CollideComponent}}
+\doxysubsubsection{\texorpdfstring{isCollide()}{isCollide()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily bool Collide\+Component\+::is\+Collide (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classTransformComponent}{Transform\+Component}} \&}]{transform,  }\item[{\mbox{\hyperlink{classCollideComponent}{Collide\+Component}} \&}]{other,  }\item[{\mbox{\hyperlink{classTransformComponent}{Transform\+Component}} \&}]{other\+Transform }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Check if the entity collide with another entity. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em transform} & The transform of the entity \\
+\hline
+{\em other} & The other entity \\
+\hline
+{\em other\+Transform} & The transform of the other entity \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the entity collide with the other entity, false otherwise
+\end{DoxyReturn}
+if the collision box is collide with another collision box
+\begin{DoxyParams}{Parameters}
+{\em transform} & Transform of the entity\\
+\hline
+{\em other} & Other collision box\\
+\hline
+{\em other\+Transform} & Transform of the other entity \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the collision box is collide with another collision box 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classCollideComponent_a132ea5a003e8425a0b8b1cf555e033b1}\label{classCollideComponent_a132ea5a003e8425a0b8b1cf555e033b1}} 
+\index{CollideComponent@{CollideComponent}!isCollide@{isCollide}}
+\index{isCollide@{isCollide}!CollideComponent@{CollideComponent}}
+\doxysubsubsection{\texorpdfstring{isCollide()}{isCollide()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily bool Collide\+Component\+::is\+Collide (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classTransformComponent}{Transform\+Component}} \&}]{transform,  }\item[{float}]{x,  }\item[{float}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Check if the entity collide with a point. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em transform} & The transform of the entity \\
+\hline
+{\em x} & X position of the point \\
+\hline
+{\em y} & Y position of the point \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the entity collide with the point, false otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classCollideComponent_ac1c70d32bb6cc6dae5f29be111ef6e35}\label{classCollideComponent_ac1c70d32bb6cc6dae5f29be111ef6e35}} 
+\index{CollideComponent@{CollideComponent}!isEnable@{isEnable}}
+\index{isEnable@{isEnable}!CollideComponent@{CollideComponent}}
+\doxysubsubsection{\texorpdfstring{isEnable()}{isEnable()}}
+{\footnotesize\ttfamily bool Collide\+Component\+::is\+Enable (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Check if the collision is enable. 
+
+\begin{DoxyReturn}{Returns}
+true if the collision is enable 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classCollideComponent_a0ca940a94f43b7f3d15ec7f81b9d2554}\label{classCollideComponent_a0ca940a94f43b7f3d15ec7f81b9d2554}} 
+\index{CollideComponent@{CollideComponent}!operator=@{operator=}}
+\index{operator=@{operator=}!CollideComponent@{CollideComponent}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classCollideComponent}{Collide\+Component}}\& Collide\+Component\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classCollideComponent}{Collide\+Component}} \&\&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}, {\ttfamily [noexcept]}}
+
+Default move assignment operator \mbox{\Hypertarget{classCollideComponent_a0ca940a94f43b7f3d15ec7f81b9d2554}\label{classCollideComponent_a0ca940a94f43b7f3d15ec7f81b9d2554}} 
+\index{CollideComponent@{CollideComponent}!operator=@{operator=}}
+\index{operator=@{operator=}!CollideComponent@{CollideComponent}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classCollideComponent}{Collide\+Component}}\& Collide\+Component\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classCollideComponent}{Collide\+Component}} \&\&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}, {\ttfamily [noexcept]}}
+
+Default move assignment operator \mbox{\Hypertarget{classCollideComponent_a411537fbe3e6b9dc3f0dfdfb320c749f}\label{classCollideComponent_a411537fbe3e6b9dc3f0dfdfb320c749f}} 
+\index{CollideComponent@{CollideComponent}!operator=@{operator=}}
+\index{operator=@{operator=}!CollideComponent@{CollideComponent}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classCollideComponent}{Collide\+Component}}\& Collide\+Component\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classCollideComponent}{Collide\+Component}} const \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+Default copy assignment operator \mbox{\Hypertarget{classCollideComponent_a411537fbe3e6b9dc3f0dfdfb320c749f}\label{classCollideComponent_a411537fbe3e6b9dc3f0dfdfb320c749f}} 
+\index{CollideComponent@{CollideComponent}!operator=@{operator=}}
+\index{operator=@{operator=}!CollideComponent@{CollideComponent}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classCollideComponent}{Collide\+Component}}\& Collide\+Component\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classCollideComponent}{Collide\+Component}} const \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+Default copy assignment operator \mbox{\Hypertarget{classCollideComponent_a00b0c84255e7bcd6d7fb391db18027f6}\label{classCollideComponent_a00b0c84255e7bcd6d7fb391db18027f6}} 
+\index{CollideComponent@{CollideComponent}!setCollideBox@{setCollideBox}}
+\index{setCollideBox@{setCollideBox}!CollideComponent@{CollideComponent}}
+\doxysubsubsection{\texorpdfstring{setCollideBox()}{setCollideBox()}}
+{\footnotesize\ttfamily void Collide\+Component\+::set\+Collide\+Box (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structCollideBox}{Collide\+Box}}}]{box }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Set the collision box. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em box} & The collision box \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classCollideComponent_a6dc45381623c3fb94ae4b692342bf03c}\label{classCollideComponent_a6dc45381623c3fb94ae4b692342bf03c}} 
+\index{CollideComponent@{CollideComponent}!setEnable@{setEnable}}
+\index{setEnable@{setEnable}!CollideComponent@{CollideComponent}}
+\doxysubsubsection{\texorpdfstring{setEnable()}{setEnable()}}
+{\footnotesize\ttfamily void Collide\+Component\+::set\+Enable (\begin{DoxyParamCaption}\item[{bool}]{enable }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Set the collision enable. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em enable} & The collision enable \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Client/\+Component/Collide\+Component.\+hpp\end{DoxyCompactItemize}

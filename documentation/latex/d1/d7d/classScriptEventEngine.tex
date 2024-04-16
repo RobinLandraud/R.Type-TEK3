@@ -1,0 +1,185 @@
+\hypertarget{classScriptEventEngine}{}\doxysection{Script\+Event\+Engine Class Reference}
+\label{classScriptEventEngine}\index{ScriptEventEngine@{ScriptEventEngine}}
+
+
+A class that handle the \mbox{\hyperlink{classScript}{Script}} event engine. Used to handle the \mbox{\hyperlink{classScript}{Script}} event engine.  
+
+
+
+
+{\ttfamily \#include $<$Script\+Engine.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classScriptEventEngine_a557060ede7b8814a6ffe6e5ccce7e673}{Script\+Event\+Engine}} (\mbox{\hyperlink{classAEventEngine}{AEvent\+Engine}} \&event\+Engine)
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classScriptEventEngine_afdfd2bb42d20b88494195e58a9326ca9}{$\sim$\+Script\+Event\+Engine}} ()=default
+\item 
+void \mbox{\hyperlink{classScriptEventEngine_adcfe42b07773d0814a94e054ea93c497}{update}} ()
+\begin{DoxyCompactList}\small\item\em Update the event engine. \end{DoxyCompactList}\item 
+std\+::vector$<$ Key $>$ \& \mbox{\hyperlink{classScriptEventEngine_a6562d36bdbfd487e737dc596a233023b}{get\+Keys\+Pressed}} ()
+\begin{DoxyCompactList}\small\item\em Get the keys pressed. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classScriptEventEngine_a3bcf5962d4d7505ceda449b0ab338edd}{is\+Key\+Pressed}} (Key key)
+\begin{DoxyCompactList}\small\item\em Check if a key is pressed. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classScriptEventEngine_a8fae625575463975b1ae44a9e66afef9}{is\+Key\+Released}} (Key key)
+\begin{DoxyCompactList}\small\item\em Check if a key is released. \end{DoxyCompactList}\item 
+std\+::vector$<$ Key $>$ \& \mbox{\hyperlink{classScriptEventEngine_a2e36176914592c636120a8a8989ddbbd}{get\+Keys\+Released}} ()
+\begin{DoxyCompactList}\small\item\em Get the keys released. \end{DoxyCompactList}\item 
+std\+::vector$<$ Event\+Type $>$ \& \mbox{\hyperlink{classScriptEventEngine_a6dc2fef4aa7125e17aba1453f2328bb6}{get\+Events}} ()
+\begin{DoxyCompactList}\small\item\em Get the events. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classScriptEventEngine_a5a40b5659aae613094aee70a1c87ecd1}{is\+Event}} (Event\+Type event)
+\begin{DoxyCompactList}\small\item\em Check if an event is triggered. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structmouse__t}{mouse\+\_\+t}} \& \mbox{\hyperlink{classScriptEventEngine_a80880330d90e374f79bef20babd768c1}{get\+Mouse}} ()
+\begin{DoxyCompactList}\small\item\em Get the mouse. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A class that handle the \mbox{\hyperlink{classScript}{Script}} event engine. Used to handle the \mbox{\hyperlink{classScript}{Script}} event engine. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classScriptEventEngine_a557060ede7b8814a6ffe6e5ccce7e673}\label{classScriptEventEngine_a557060ede7b8814a6ffe6e5ccce7e673}} 
+\index{ScriptEventEngine@{ScriptEventEngine}!ScriptEventEngine@{ScriptEventEngine}}
+\index{ScriptEventEngine@{ScriptEventEngine}!ScriptEventEngine@{ScriptEventEngine}}
+\doxysubsubsection{\texorpdfstring{ScriptEventEngine()}{ScriptEventEngine()}}
+{\footnotesize\ttfamily Script\+Event\+Engine\+::\+Script\+Event\+Engine (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classAEventEngine}{AEvent\+Engine}} \&}]{event\+Engine }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em event\+Engine} & The event engine \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classScriptEventEngine_afdfd2bb42d20b88494195e58a9326ca9}\label{classScriptEventEngine_afdfd2bb42d20b88494195e58a9326ca9}} 
+\index{ScriptEventEngine@{ScriptEventEngine}!````~ScriptEventEngine@{$\sim$ScriptEventEngine}}
+\index{````~ScriptEventEngine@{$\sim$ScriptEventEngine}!ScriptEventEngine@{ScriptEventEngine}}
+\doxysubsubsection{\texorpdfstring{$\sim$ScriptEventEngine()}{~ScriptEventEngine()}}
+{\footnotesize\ttfamily Script\+Event\+Engine\+::$\sim$\+Script\+Event\+Engine (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+Default destructor 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classScriptEventEngine_a6dc2fef4aa7125e17aba1453f2328bb6}\label{classScriptEventEngine_a6dc2fef4aa7125e17aba1453f2328bb6}} 
+\index{ScriptEventEngine@{ScriptEventEngine}!getEvents@{getEvents}}
+\index{getEvents@{getEvents}!ScriptEventEngine@{ScriptEventEngine}}
+\doxysubsubsection{\texorpdfstring{getEvents()}{getEvents()}}
+{\footnotesize\ttfamily std\+::vector$<$ Event\+Type $>$ \& Script\+Event\+Engine\+::get\+Events (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the events. 
+
+\begin{DoxyReturn}{Returns}
+The events 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classScriptEventEngine_a6562d36bdbfd487e737dc596a233023b}\label{classScriptEventEngine_a6562d36bdbfd487e737dc596a233023b}} 
+\index{ScriptEventEngine@{ScriptEventEngine}!getKeysPressed@{getKeysPressed}}
+\index{getKeysPressed@{getKeysPressed}!ScriptEventEngine@{ScriptEventEngine}}
+\doxysubsubsection{\texorpdfstring{getKeysPressed()}{getKeysPressed()}}
+{\footnotesize\ttfamily std\+::vector$<$ Key $>$ \& Script\+Event\+Engine\+::get\+Keys\+Pressed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the keys pressed. 
+
+\begin{DoxyReturn}{Returns}
+The keys pressed 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classScriptEventEngine_a2e36176914592c636120a8a8989ddbbd}\label{classScriptEventEngine_a2e36176914592c636120a8a8989ddbbd}} 
+\index{ScriptEventEngine@{ScriptEventEngine}!getKeysReleased@{getKeysReleased}}
+\index{getKeysReleased@{getKeysReleased}!ScriptEventEngine@{ScriptEventEngine}}
+\doxysubsubsection{\texorpdfstring{getKeysReleased()}{getKeysReleased()}}
+{\footnotesize\ttfamily std\+::vector$<$ Key $>$ \& Script\+Event\+Engine\+::get\+Keys\+Released (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the keys released. 
+
+\begin{DoxyReturn}{Returns}
+The keys released 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classScriptEventEngine_a80880330d90e374f79bef20babd768c1}\label{classScriptEventEngine_a80880330d90e374f79bef20babd768c1}} 
+\index{ScriptEventEngine@{ScriptEventEngine}!getMouse@{getMouse}}
+\index{getMouse@{getMouse}!ScriptEventEngine@{ScriptEventEngine}}
+\doxysubsubsection{\texorpdfstring{getMouse()}{getMouse()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structmouse__t}{mouse\+\_\+t}} \& Script\+Event\+Engine\+::get\+Mouse (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the mouse. 
+
+\begin{DoxyReturn}{Returns}
+The mouse 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classScriptEventEngine_a5a40b5659aae613094aee70a1c87ecd1}\label{classScriptEventEngine_a5a40b5659aae613094aee70a1c87ecd1}} 
+\index{ScriptEventEngine@{ScriptEventEngine}!isEvent@{isEvent}}
+\index{isEvent@{isEvent}!ScriptEventEngine@{ScriptEventEngine}}
+\doxysubsubsection{\texorpdfstring{isEvent()}{isEvent()}}
+{\footnotesize\ttfamily bool Script\+Event\+Engine\+::is\+Event (\begin{DoxyParamCaption}\item[{Event\+Type}]{event }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Check if an event is triggered. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em event} & The event to check \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the event is triggered, false otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classScriptEventEngine_a3bcf5962d4d7505ceda449b0ab338edd}\label{classScriptEventEngine_a3bcf5962d4d7505ceda449b0ab338edd}} 
+\index{ScriptEventEngine@{ScriptEventEngine}!isKeyPressed@{isKeyPressed}}
+\index{isKeyPressed@{isKeyPressed}!ScriptEventEngine@{ScriptEventEngine}}
+\doxysubsubsection{\texorpdfstring{isKeyPressed()}{isKeyPressed()}}
+{\footnotesize\ttfamily bool Script\+Event\+Engine\+::is\+Key\+Pressed (\begin{DoxyParamCaption}\item[{Key}]{key }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Check if a key is pressed. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & The key to check \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the key is pressed, false otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classScriptEventEngine_a8fae625575463975b1ae44a9e66afef9}\label{classScriptEventEngine_a8fae625575463975b1ae44a9e66afef9}} 
+\index{ScriptEventEngine@{ScriptEventEngine}!isKeyReleased@{isKeyReleased}}
+\index{isKeyReleased@{isKeyReleased}!ScriptEventEngine@{ScriptEventEngine}}
+\doxysubsubsection{\texorpdfstring{isKeyReleased()}{isKeyReleased()}}
+{\footnotesize\ttfamily bool Script\+Event\+Engine\+::is\+Key\+Released (\begin{DoxyParamCaption}\item[{Key}]{key }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Check if a key is released. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & The key to check \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the key is released, false otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classScriptEventEngine_adcfe42b07773d0814a94e054ea93c497}\label{classScriptEventEngine_adcfe42b07773d0814a94e054ea93c497}} 
+\index{ScriptEventEngine@{ScriptEventEngine}!update@{update}}
+\index{update@{update}!ScriptEventEngine@{ScriptEventEngine}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void Script\+Event\+Engine\+::update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Update the event engine. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Client/\+Script/Script\+Engine.\+hpp\end{DoxyCompactItemize}

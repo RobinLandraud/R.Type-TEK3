@@ -1,0 +1,8 @@
+build
+r-type_client_engine
+.vscode
+.cache
+compile_commands.json
+html
+config_file
+latex

@@ -1,0 +1,92 @@
+\hypertarget{classchaiscript_1_1exception_1_1bad__boxed__cast}{}\doxysection{chaiscript\+::exception\+::bad\+\_\+boxed\+\_\+cast Class Reference}
+\label{classchaiscript_1_1exception_1_1bad__boxed__cast}\index{chaiscript::exception::bad\_boxed\_cast@{chaiscript::exception::bad\_boxed\_cast}}
+
+
+Thrown in the event that a \mbox{\hyperlink{classchaiscript_1_1Boxed__Value}{Boxed\+\_\+\+Value}} cannot be cast to the desired type.  
+
+
+
+
+{\ttfamily \#include $<$bad\+\_\+boxed\+\_\+cast.\+hpp$>$}
+
+Inheritance diagram for chaiscript\+::exception\+::bad\+\_\+boxed\+\_\+cast\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.926829cm]{d1/dae/classchaiscript_1_1exception_1_1bad__boxed__cast}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classchaiscript_1_1exception_1_1bad__boxed__cast_a82399d65ccb0da0c3a4f4e5852cfd62a}\label{classchaiscript_1_1exception_1_1bad__boxed__cast_a82399d65ccb0da0c3a4f4e5852cfd62a}} 
+{\bfseries bad\+\_\+boxed\+\_\+cast} (\mbox{\hyperlink{classchaiscript_1_1Type__Info}{Type\+\_\+\+Info}} t\+\_\+from, const std\+::type\+\_\+info \&t\+\_\+to, std\+::string t\+\_\+what) noexcept
+\item 
+\mbox{\Hypertarget{classchaiscript_1_1exception_1_1bad__boxed__cast_a8fc2b450a66d5507ddb0bbec079a7f2c}\label{classchaiscript_1_1exception_1_1bad__boxed__cast_a8fc2b450a66d5507ddb0bbec079a7f2c}} 
+{\bfseries bad\+\_\+boxed\+\_\+cast} (\mbox{\hyperlink{classchaiscript_1_1Type__Info}{Type\+\_\+\+Info}} t\+\_\+from, const std\+::type\+\_\+info \&t\+\_\+to)
+\item 
+\mbox{\Hypertarget{classchaiscript_1_1exception_1_1bad__boxed__cast_a177e95e89e4dafd48fd9b2df24345cd0}\label{classchaiscript_1_1exception_1_1bad__boxed__cast_a177e95e89e4dafd48fd9b2df24345cd0}} 
+{\bfseries bad\+\_\+boxed\+\_\+cast} (std\+::string t\+\_\+what) noexcept
+\item 
+\mbox{\Hypertarget{classchaiscript_1_1exception_1_1bad__boxed__cast_ae76bf6418250bbedb3830aa8c292162e}\label{classchaiscript_1_1exception_1_1bad__boxed__cast_ae76bf6418250bbedb3830aa8c292162e}} 
+{\bfseries bad\+\_\+boxed\+\_\+cast} (const \mbox{\hyperlink{classchaiscript_1_1exception_1_1bad__boxed__cast}{bad\+\_\+boxed\+\_\+cast}} \&)=default
+\item 
+const char $\ast$ \mbox{\hyperlink{classchaiscript_1_1exception_1_1bad__boxed__cast_a43901f00f4db8fcc924af77e40d4df1b}{what}} () const noexcept override
+\begin{DoxyCompactList}\small\item\em Description of what error occurred. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classchaiscript_1_1Type__Info}{Type\+\_\+\+Info}} \mbox{\hyperlink{classchaiscript_1_1exception_1_1bad__boxed__cast_a8c6bef75eb9a2dc02b49ba7f27372d50}{from}}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classchaiscript_1_1Type__Info}{Type\+\_\+\+Info}} contained in the \mbox{\hyperlink{classchaiscript_1_1Boxed__Value}{Boxed\+\_\+\+Value}}. \end{DoxyCompactList}\item 
+const std\+::type\+\_\+info $\ast$ \mbox{\hyperlink{classchaiscript_1_1exception_1_1bad__boxed__cast_ac14cb17c8329fc5f46dab37adc2e8eaa}{to}} = nullptr
+\begin{DoxyCompactList}\small\item\em std\+::type\+\_\+info of the desired (but failed) result type \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Thrown in the event that a \mbox{\hyperlink{classchaiscript_1_1Boxed__Value}{Boxed\+\_\+\+Value}} cannot be cast to the desired type. 
+
+It is used internally during function dispatch and may be used by the end user.
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{namespacechaiscript_a2de45834af1787f63a901a871414b749}{chaiscript\+::boxed\+\_\+cast}} 
+\end{DoxySeeAlso}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classchaiscript_1_1exception_1_1bad__boxed__cast_a43901f00f4db8fcc924af77e40d4df1b}\label{classchaiscript_1_1exception_1_1bad__boxed__cast_a43901f00f4db8fcc924af77e40d4df1b}} 
+\index{chaiscript::exception::bad\_boxed\_cast@{chaiscript::exception::bad\_boxed\_cast}!what@{what}}
+\index{what@{what}!chaiscript::exception::bad\_boxed\_cast@{chaiscript::exception::bad\_boxed\_cast}}
+\doxysubsubsection{\texorpdfstring{what()}{what()}}
+{\footnotesize\ttfamily const char$\ast$ chaiscript\+::exception\+::bad\+\_\+boxed\+\_\+cast\+::what (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [noexcept]}}
+
+
+
+Description of what error occurred. 
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classchaiscript_1_1exception_1_1bad__boxed__cast_a8c6bef75eb9a2dc02b49ba7f27372d50}\label{classchaiscript_1_1exception_1_1bad__boxed__cast_a8c6bef75eb9a2dc02b49ba7f27372d50}} 
+\index{chaiscript::exception::bad\_boxed\_cast@{chaiscript::exception::bad\_boxed\_cast}!from@{from}}
+\index{from@{from}!chaiscript::exception::bad\_boxed\_cast@{chaiscript::exception::bad\_boxed\_cast}}
+\doxysubsubsection{\texorpdfstring{from}{from}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classchaiscript_1_1Type__Info}{Type\+\_\+\+Info}} chaiscript\+::exception\+::bad\+\_\+boxed\+\_\+cast\+::from}
+
+
+
+\mbox{\hyperlink{classchaiscript_1_1Type__Info}{Type\+\_\+\+Info}} contained in the \mbox{\hyperlink{classchaiscript_1_1Boxed__Value}{Boxed\+\_\+\+Value}}. 
+
+\mbox{\Hypertarget{classchaiscript_1_1exception_1_1bad__boxed__cast_ac14cb17c8329fc5f46dab37adc2e8eaa}\label{classchaiscript_1_1exception_1_1bad__boxed__cast_ac14cb17c8329fc5f46dab37adc2e8eaa}} 
+\index{chaiscript::exception::bad\_boxed\_cast@{chaiscript::exception::bad\_boxed\_cast}!to@{to}}
+\index{to@{to}!chaiscript::exception::bad\_boxed\_cast@{chaiscript::exception::bad\_boxed\_cast}}
+\doxysubsubsection{\texorpdfstring{to}{to}}
+{\footnotesize\ttfamily const std\+::type\+\_\+info$\ast$ chaiscript\+::exception\+::bad\+\_\+boxed\+\_\+cast\+::to = nullptr}
+
+
+
+std\+::type\+\_\+info of the desired (but failed) result type 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Chai\+Script-\/6.\+1.\+0/include/chaiscript/dispatchkit/bad\+\_\+boxed\+\_\+cast.\+hpp\end{DoxyCompactItemize}

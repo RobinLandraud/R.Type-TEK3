@@ -1,0 +1,381 @@
+\hypertarget{classSFMLGraphicsEngine}{}\doxysection{SFMLGraphics\+Engine Class Reference}
+\label{classSFMLGraphicsEngine}\index{SFMLGraphicsEngine@{SFMLGraphicsEngine}}
+
+
+A class that handle the graphics. Used to draw graphics.  
+
+
+
+
+{\ttfamily \#include $<$SFMLGraphics\+Engine.\+hpp$>$}
+
+Inheritance diagram for SFMLGraphics\+Engine\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{de/db0/classSFMLGraphicsEngine}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classSFMLGraphicsEngine_ac12d68deb430ee8a1845a41616ac13ac}{SFMLGraphics\+Engine}} (sf\+::\+Render\+Window \&window)
+\begin{DoxyCompactList}\small\item\em Default constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classSFMLGraphicsEngine_aaf1c6150d8a7e7d156d922ca26a0ca8a}{$\sim$\+SFMLGraphics\+Engine}} () override=default
+\item 
+int \mbox{\hyperlink{classSFMLGraphicsEngine_ae061e6e238d84663bc45fc0b05b1a41f}{create\+Texture}} (const std\+::string name, const std\+::string source) override
+\begin{DoxyCompactList}\small\item\em Create a texture. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classSFMLGraphicsEngine_afd73ef2bf9ba9767a63d8d8e5d6687ba}{create\+Sprite}} (std\+::string name, std\+::string texture\+Name) override
+\begin{DoxyCompactList}\small\item\em Create a sprite. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classSFMLGraphicsEngine_a97f17d3dc4382bb770b500aa7c415c30}{draw\+Sprite}} (std\+::string name, float x, float y) override
+\begin{DoxyCompactList}\small\item\em Draw a sprite. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classSFMLGraphicsEngine_a79911e42bf7c6c9aa77ff38e2cfb3f8d}{create\+Circle}} (std\+::string name, float radius) override
+\begin{DoxyCompactList}\small\item\em Create a circle. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classSFMLGraphicsEngine_a50dd8953812c03ecbaed2f3cb2a9666f}{draw\+Circle}} (std\+::string name, float x, float y) override
+\begin{DoxyCompactList}\small\item\em Draw a circle. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classSFMLGraphicsEngine_a353e170f2a4220c9a41f7ea1e84b0ca0}{create\+Rectangle}} (std\+::string name, float width, float height) override
+\begin{DoxyCompactList}\small\item\em Create a rectangle. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classSFMLGraphicsEngine_ac82ee114e51614106c2c543f90793654}{draw\+Rectangle}} (std\+::string name, float x, float y) override
+\begin{DoxyCompactList}\small\item\em Draw a rectangle. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classSFMLGraphicsEngine_a874c755d55953dd2b6e45eeff01f6d79}{create\+Font}} (std\+::string name, std\+::string source) override
+\begin{DoxyCompactList}\small\item\em Create a font. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classSFMLGraphicsEngine_a2e7134527b71607d317597336e753b7a}{create\+Text}} (std\+::string name, std\+::string text, std\+::string font, unsigned int size) override
+\begin{DoxyCompactList}\small\item\em Create a text. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classSFMLGraphicsEngine_a9fd421c20ef7d76935dc322aa7ca0a4d}{draw\+Text}} (std\+::string name, float x, float y) override
+\begin{DoxyCompactList}\small\item\em Draw a text. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classSFMLGraphicsEngine_a834b9df3f2c717e7750a03a9bd6ccdc7}{change\+Text}} (std\+::string name, std\+::string text) override
+\begin{DoxyCompactList}\small\item\em Change the text of a text. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classSFMLGraphicsEngine_aacf22940a2ab02154923b06a6bb3ffc8}{get\+Text}} (std\+::string name) override
+\begin{DoxyCompactList}\small\item\em Get the text of a text. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A class that handle the graphics. Used to draw graphics. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classSFMLGraphicsEngine_ac12d68deb430ee8a1845a41616ac13ac}\label{classSFMLGraphicsEngine_ac12d68deb430ee8a1845a41616ac13ac}} 
+\index{SFMLGraphicsEngine@{SFMLGraphicsEngine}!SFMLGraphicsEngine@{SFMLGraphicsEngine}}
+\index{SFMLGraphicsEngine@{SFMLGraphicsEngine}!SFMLGraphicsEngine@{SFMLGraphicsEngine}}
+\doxysubsubsection{\texorpdfstring{SFMLGraphicsEngine()}{SFMLGraphicsEngine()}}
+{\footnotesize\ttfamily SFMLGraphics\+Engine\+::\+SFMLGraphics\+Engine (\begin{DoxyParamCaption}\item[{sf\+::\+Render\+Window \&}]{window }\end{DoxyParamCaption})}
+
+
+
+Default constructor. 
+
+Default constructor
+
+
+\begin{DoxyParams}{Parameters}
+{\em window} & The window \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classSFMLGraphicsEngine_aaf1c6150d8a7e7d156d922ca26a0ca8a}\label{classSFMLGraphicsEngine_aaf1c6150d8a7e7d156d922ca26a0ca8a}} 
+\index{SFMLGraphicsEngine@{SFMLGraphicsEngine}!````~SFMLGraphicsEngine@{$\sim$SFMLGraphicsEngine}}
+\index{````~SFMLGraphicsEngine@{$\sim$SFMLGraphicsEngine}!SFMLGraphicsEngine@{SFMLGraphicsEngine}}
+\doxysubsubsection{\texorpdfstring{$\sim$SFMLGraphicsEngine()}{~SFMLGraphicsEngine()}}
+{\footnotesize\ttfamily SFMLGraphics\+Engine\+::$\sim$\+SFMLGraphics\+Engine (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [default]}}
+
+Default destructor 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classSFMLGraphicsEngine_a834b9df3f2c717e7750a03a9bd6ccdc7}\label{classSFMLGraphicsEngine_a834b9df3f2c717e7750a03a9bd6ccdc7}} 
+\index{SFMLGraphicsEngine@{SFMLGraphicsEngine}!changeText@{changeText}}
+\index{changeText@{changeText}!SFMLGraphicsEngine@{SFMLGraphicsEngine}}
+\doxysubsubsection{\texorpdfstring{changeText()}{changeText()}}
+{\footnotesize\ttfamily void SFMLGraphics\+Engine\+::change\+Text (\begin{DoxyParamCaption}\item[{std\+::string}]{name,  }\item[{std\+::string}]{text }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Change the text of a text. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The name of the text \\
+\hline
+{\em text} & The new text \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classAGraphicsEngine_aaec3f306a4731ead0436c502f1e8708f}{AGraphics\+Engine}}.
+
+\mbox{\Hypertarget{classSFMLGraphicsEngine_a79911e42bf7c6c9aa77ff38e2cfb3f8d}\label{classSFMLGraphicsEngine_a79911e42bf7c6c9aa77ff38e2cfb3f8d}} 
+\index{SFMLGraphicsEngine@{SFMLGraphicsEngine}!createCircle@{createCircle}}
+\index{createCircle@{createCircle}!SFMLGraphicsEngine@{SFMLGraphicsEngine}}
+\doxysubsubsection{\texorpdfstring{createCircle()}{createCircle()}}
+{\footnotesize\ttfamily int SFMLGraphics\+Engine\+::create\+Circle (\begin{DoxyParamCaption}\item[{std\+::string}]{name,  }\item[{float}]{radius }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Create a circle. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The name of the circle \\
+\hline
+{\em radius} & The radius of the circle \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The id of the circle 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classAGraphicsEngine_ae361af1b96eb7237bda511aa241365dc}{AGraphics\+Engine}}.
+
+\mbox{\Hypertarget{classSFMLGraphicsEngine_a874c755d55953dd2b6e45eeff01f6d79}\label{classSFMLGraphicsEngine_a874c755d55953dd2b6e45eeff01f6d79}} 
+\index{SFMLGraphicsEngine@{SFMLGraphicsEngine}!createFont@{createFont}}
+\index{createFont@{createFont}!SFMLGraphicsEngine@{SFMLGraphicsEngine}}
+\doxysubsubsection{\texorpdfstring{createFont()}{createFont()}}
+{\footnotesize\ttfamily int SFMLGraphics\+Engine\+::create\+Font (\begin{DoxyParamCaption}\item[{std\+::string}]{name,  }\item[{std\+::string}]{source }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Create a font. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The name of the font \\
+\hline
+{\em source} & The source of the font \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The id of the font
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The name of the font \\
+\hline
+{\em source} & The source of the font \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The id of the font 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classAGraphicsEngine_afc5a76db4297c90f690546b57e9a67d3}{AGraphics\+Engine}}.
+
+\mbox{\Hypertarget{classSFMLGraphicsEngine_a353e170f2a4220c9a41f7ea1e84b0ca0}\label{classSFMLGraphicsEngine_a353e170f2a4220c9a41f7ea1e84b0ca0}} 
+\index{SFMLGraphicsEngine@{SFMLGraphicsEngine}!createRectangle@{createRectangle}}
+\index{createRectangle@{createRectangle}!SFMLGraphicsEngine@{SFMLGraphicsEngine}}
+\doxysubsubsection{\texorpdfstring{createRectangle()}{createRectangle()}}
+{\footnotesize\ttfamily int SFMLGraphics\+Engine\+::create\+Rectangle (\begin{DoxyParamCaption}\item[{std\+::string}]{name,  }\item[{float}]{width,  }\item[{float}]{height }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Create a rectangle. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The name of the rectangle \\
+\hline
+{\em width} & The width of the rectangle \\
+\hline
+{\em height} & The height of the rectangle \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The id of the rectangle 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classAGraphicsEngine_a5ed143df2dd6da34d2f347560e1f9e0c}{AGraphics\+Engine}}.
+
+\mbox{\Hypertarget{classSFMLGraphicsEngine_afd73ef2bf9ba9767a63d8d8e5d6687ba}\label{classSFMLGraphicsEngine_afd73ef2bf9ba9767a63d8d8e5d6687ba}} 
+\index{SFMLGraphicsEngine@{SFMLGraphicsEngine}!createSprite@{createSprite}}
+\index{createSprite@{createSprite}!SFMLGraphicsEngine@{SFMLGraphicsEngine}}
+\doxysubsubsection{\texorpdfstring{createSprite()}{createSprite()}}
+{\footnotesize\ttfamily int SFMLGraphics\+Engine\+::create\+Sprite (\begin{DoxyParamCaption}\item[{std\+::string}]{name,  }\item[{std\+::string}]{texture\+Name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Create a sprite. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The name of the sprite \\
+\hline
+{\em texture\+Name} & The name of the texture \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The id of the sprite 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classAGraphicsEngine_abe75c56795e50f12b99971214e054019}{AGraphics\+Engine}}.
+
+\mbox{\Hypertarget{classSFMLGraphicsEngine_a2e7134527b71607d317597336e753b7a}\label{classSFMLGraphicsEngine_a2e7134527b71607d317597336e753b7a}} 
+\index{SFMLGraphicsEngine@{SFMLGraphicsEngine}!createText@{createText}}
+\index{createText@{createText}!SFMLGraphicsEngine@{SFMLGraphicsEngine}}
+\doxysubsubsection{\texorpdfstring{createText()}{createText()}}
+{\footnotesize\ttfamily int SFMLGraphics\+Engine\+::create\+Text (\begin{DoxyParamCaption}\item[{std\+::string}]{name,  }\item[{std\+::string}]{text,  }\item[{std\+::string}]{font,  }\item[{unsigned int}]{size }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Create a text. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The name of the text \\
+\hline
+{\em text} & The text to display \\
+\hline
+{\em font} & The font of the text \\
+\hline
+{\em size} & The size of the text \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The id of the text 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classAGraphicsEngine_a1329ea180b53539c6b30d869a4d79a01}{AGraphics\+Engine}}.
+
+\mbox{\Hypertarget{classSFMLGraphicsEngine_ae061e6e238d84663bc45fc0b05b1a41f}\label{classSFMLGraphicsEngine_ae061e6e238d84663bc45fc0b05b1a41f}} 
+\index{SFMLGraphicsEngine@{SFMLGraphicsEngine}!createTexture@{createTexture}}
+\index{createTexture@{createTexture}!SFMLGraphicsEngine@{SFMLGraphicsEngine}}
+\doxysubsubsection{\texorpdfstring{createTexture()}{createTexture()}}
+{\footnotesize\ttfamily int SFMLGraphics\+Engine\+::create\+Texture (\begin{DoxyParamCaption}\item[{const std\+::string}]{name,  }\item[{const std\+::string}]{source }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Create a texture. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The name of the texture \\
+\hline
+{\em source} & The source of the texture \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The id of the texture 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classAGraphicsEngine}{AGraphics\+Engine}}.
+
+\mbox{\Hypertarget{classSFMLGraphicsEngine_a50dd8953812c03ecbaed2f3cb2a9666f}\label{classSFMLGraphicsEngine_a50dd8953812c03ecbaed2f3cb2a9666f}} 
+\index{SFMLGraphicsEngine@{SFMLGraphicsEngine}!drawCircle@{drawCircle}}
+\index{drawCircle@{drawCircle}!SFMLGraphicsEngine@{SFMLGraphicsEngine}}
+\doxysubsubsection{\texorpdfstring{drawCircle()}{drawCircle()}}
+{\footnotesize\ttfamily void SFMLGraphics\+Engine\+::draw\+Circle (\begin{DoxyParamCaption}\item[{std\+::string}]{name,  }\item[{float}]{x,  }\item[{float}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Draw a circle. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The name of the circle \\
+\hline
+{\em x} & The x position of the circle \\
+\hline
+{\em y} & The y position of the circle \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classAGraphicsEngine_a150581a88147360cc95c527104791bec}{AGraphics\+Engine}}.
+
+\mbox{\Hypertarget{classSFMLGraphicsEngine_ac82ee114e51614106c2c543f90793654}\label{classSFMLGraphicsEngine_ac82ee114e51614106c2c543f90793654}} 
+\index{SFMLGraphicsEngine@{SFMLGraphicsEngine}!drawRectangle@{drawRectangle}}
+\index{drawRectangle@{drawRectangle}!SFMLGraphicsEngine@{SFMLGraphicsEngine}}
+\doxysubsubsection{\texorpdfstring{drawRectangle()}{drawRectangle()}}
+{\footnotesize\ttfamily void SFMLGraphics\+Engine\+::draw\+Rectangle (\begin{DoxyParamCaption}\item[{std\+::string}]{name,  }\item[{float}]{x,  }\item[{float}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Draw a rectangle. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The name of the rectangle \\
+\hline
+{\em x} & The x position of the rectangle \\
+\hline
+{\em y} & The y position of the rectangle \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classAGraphicsEngine_a12976a4fa380d5737df47f29de64e768}{AGraphics\+Engine}}.
+
+\mbox{\Hypertarget{classSFMLGraphicsEngine_a97f17d3dc4382bb770b500aa7c415c30}\label{classSFMLGraphicsEngine_a97f17d3dc4382bb770b500aa7c415c30}} 
+\index{SFMLGraphicsEngine@{SFMLGraphicsEngine}!drawSprite@{drawSprite}}
+\index{drawSprite@{drawSprite}!SFMLGraphicsEngine@{SFMLGraphicsEngine}}
+\doxysubsubsection{\texorpdfstring{drawSprite()}{drawSprite()}}
+{\footnotesize\ttfamily void SFMLGraphics\+Engine\+::draw\+Sprite (\begin{DoxyParamCaption}\item[{std\+::string}]{name,  }\item[{float}]{x,  }\item[{float}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Draw a sprite. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The name of the sprite \\
+\hline
+{\em x} & The x position of the sprite \\
+\hline
+{\em y} & The y position of the sprite \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classAGraphicsEngine_a344e991d33906d83d9025248ec9960e5}{AGraphics\+Engine}}.
+
+\mbox{\Hypertarget{classSFMLGraphicsEngine_a9fd421c20ef7d76935dc322aa7ca0a4d}\label{classSFMLGraphicsEngine_a9fd421c20ef7d76935dc322aa7ca0a4d}} 
+\index{SFMLGraphicsEngine@{SFMLGraphicsEngine}!drawText@{drawText}}
+\index{drawText@{drawText}!SFMLGraphicsEngine@{SFMLGraphicsEngine}}
+\doxysubsubsection{\texorpdfstring{drawText()}{drawText()}}
+{\footnotesize\ttfamily void SFMLGraphics\+Engine\+::draw\+Text (\begin{DoxyParamCaption}\item[{std\+::string}]{name,  }\item[{float}]{x,  }\item[{float}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Draw a text. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The name of the text \\
+\hline
+{\em x} & The x position of the text \\
+\hline
+{\em y} & The y position of the text \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classAGraphicsEngine_a7ebb72bcf255d0d9039c46da619d252f}{AGraphics\+Engine}}.
+
+\mbox{\Hypertarget{classSFMLGraphicsEngine_aacf22940a2ab02154923b06a6bb3ffc8}\label{classSFMLGraphicsEngine_aacf22940a2ab02154923b06a6bb3ffc8}} 
+\index{SFMLGraphicsEngine@{SFMLGraphicsEngine}!getText@{getText}}
+\index{getText@{getText}!SFMLGraphicsEngine@{SFMLGraphicsEngine}}
+\doxysubsubsection{\texorpdfstring{getText()}{getText()}}
+{\footnotesize\ttfamily std\+::string SFMLGraphics\+Engine\+::get\+Text (\begin{DoxyParamCaption}\item[{std\+::string}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Get the text of a text. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The name of the text \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The text 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classAGraphicsEngine_a8bdbb347df5a513c3ffcbf12c0eaf44b}{AGraphics\+Engine}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Client/\+SFMLEngine/\+Graphics/SFMLGraphics\+Engine.\+hpp\item 
+Client/\+SFMLEngine/\+Graphics/SFMLGraphics\+Engine.\+cpp\end{DoxyCompactItemize}

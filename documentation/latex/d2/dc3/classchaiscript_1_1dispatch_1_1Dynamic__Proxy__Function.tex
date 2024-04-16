@@ -1,0 +1,57 @@
+\hypertarget{classchaiscript_1_1dispatch_1_1Dynamic__Proxy__Function}{}\doxysection{chaiscript\+::dispatch\+::Dynamic\+\_\+\+Proxy\+\_\+\+Function Class Reference}
+\label{classchaiscript_1_1dispatch_1_1Dynamic__Proxy__Function}\index{chaiscript::dispatch::Dynamic\_Proxy\_Function@{chaiscript::dispatch::Dynamic\_Proxy\_Function}}
+
+
+{\ttfamily \#include $<$proxy\+\_\+functions.\+hpp$>$}
+
+Inheritance diagram for chaiscript\+::dispatch\+::Dynamic\+\_\+\+Proxy\+\_\+\+Function\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{d2/dc3/classchaiscript_1_1dispatch_1_1Dynamic__Proxy__Function}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classchaiscript_1_1dispatch_1_1Dynamic__Proxy__Function_a980e891ba13d96f0fc036d149740c2df}\label{classchaiscript_1_1dispatch_1_1Dynamic__Proxy__Function_a980e891ba13d96f0fc036d149740c2df}} 
+{\bfseries Dynamic\+\_\+\+Proxy\+\_\+\+Function} (const int t\+\_\+arity, std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{structchaiscript_1_1AST__Node}{AST\+\_\+\+Node}} $>$ t\+\_\+parsenode, \mbox{\hyperlink{classchaiscript_1_1dispatch_1_1Param__Types}{Param\+\_\+\+Types}} t\+\_\+param\+\_\+types=\mbox{\hyperlink{classchaiscript_1_1dispatch_1_1Param__Types}{Param\+\_\+\+Types}}(), \mbox{\hyperlink{namespacechaiscript_a0c4629731b82bec640c9b485efca2e8a}{Proxy\+\_\+\+Function}} t\+\_\+guard=\mbox{\hyperlink{namespacechaiscript_a0c4629731b82bec640c9b485efca2e8a}{Proxy\+\_\+\+Function}}())
+\item 
+\mbox{\Hypertarget{classchaiscript_1_1dispatch_1_1Dynamic__Proxy__Function_ac674d4b7d70e5a8dc45bfaacee7f343a}\label{classchaiscript_1_1dispatch_1_1Dynamic__Proxy__Function_ac674d4b7d70e5a8dc45bfaacee7f343a}} 
+bool {\bfseries operator==} (const \mbox{\hyperlink{classchaiscript_1_1dispatch_1_1Proxy__Function__Base}{Proxy\+\_\+\+Function\+\_\+\+Base}} \&rhs) const override
+\item 
+\mbox{\Hypertarget{classchaiscript_1_1dispatch_1_1Dynamic__Proxy__Function_a74d2c5aabe3e5eaeff2fbd4ff1dd2297}\label{classchaiscript_1_1dispatch_1_1Dynamic__Proxy__Function_a74d2c5aabe3e5eaeff2fbd4ff1dd2297}} 
+bool {\bfseries call\+\_\+match} (const std\+::vector$<$ \mbox{\hyperlink{classchaiscript_1_1Boxed__Value}{Boxed\+\_\+\+Value}} $>$ \&vals, const \mbox{\hyperlink{classchaiscript_1_1Type__Conversions__State}{Type\+\_\+\+Conversions\+\_\+\+State}} \&t\+\_\+conversions) const override
+\item 
+\mbox{\Hypertarget{classchaiscript_1_1dispatch_1_1Dynamic__Proxy__Function_a0c32235c45c975b13dc6f94dcb15097a}\label{classchaiscript_1_1dispatch_1_1Dynamic__Proxy__Function_a0c32235c45c975b13dc6f94dcb15097a}} 
+\mbox{\hyperlink{namespacechaiscript_a0c4629731b82bec640c9b485efca2e8a}{Proxy\+\_\+\+Function}} {\bfseries get\+\_\+guard} () const
+\item 
+\mbox{\Hypertarget{classchaiscript_1_1dispatch_1_1Dynamic__Proxy__Function_a6a806c478db4718491d48dcd308c5c8b}\label{classchaiscript_1_1dispatch_1_1Dynamic__Proxy__Function_a6a806c478db4718491d48dcd308c5c8b}} 
+bool {\bfseries has\+\_\+parse\+\_\+tree} () const
+\item 
+\mbox{\Hypertarget{classchaiscript_1_1dispatch_1_1Dynamic__Proxy__Function_a8e5d11a20a1e377ab19138364b52694d}\label{classchaiscript_1_1dispatch_1_1Dynamic__Proxy__Function_a8e5d11a20a1e377ab19138364b52694d}} 
+const \mbox{\hyperlink{structchaiscript_1_1AST__Node}{AST\+\_\+\+Node}} \& {\bfseries get\+\_\+parse\+\_\+tree} () const
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classchaiscript_1_1dispatch_1_1Dynamic__Proxy__Function_ad108752d98aec45c8e6e936ae99aa1ab}\label{classchaiscript_1_1dispatch_1_1Dynamic__Proxy__Function_ad108752d98aec45c8e6e936ae99aa1ab}} 
+bool {\bfseries test\+\_\+guard} (const std\+::vector$<$ \mbox{\hyperlink{classchaiscript_1_1Boxed__Value}{Boxed\+\_\+\+Value}} $>$ \&params, const \mbox{\hyperlink{classchaiscript_1_1Type__Conversions__State}{Type\+\_\+\+Conversions\+\_\+\+State}} \&t\+\_\+conversions) const
+\item 
+\mbox{\Hypertarget{classchaiscript_1_1dispatch_1_1Dynamic__Proxy__Function_ab36b69c477c490a3422e453c7bf5ba9c}\label{classchaiscript_1_1dispatch_1_1Dynamic__Proxy__Function_ab36b69c477c490a3422e453c7bf5ba9c}} 
+std\+::pair$<$ bool, bool $>$ {\bfseries call\+\_\+match\+\_\+internal} (const std\+::vector$<$ \mbox{\hyperlink{classchaiscript_1_1Boxed__Value}{Boxed\+\_\+\+Value}} $>$ \&vals, const \mbox{\hyperlink{classchaiscript_1_1Type__Conversions__State}{Type\+\_\+\+Conversions\+\_\+\+State}} \&t\+\_\+conversions) const
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classchaiscript_1_1dispatch_1_1Dynamic__Proxy__Function_ad3da0080917a97e89e78b69f48ac9efa}\label{classchaiscript_1_1dispatch_1_1Dynamic__Proxy__Function_ad3da0080917a97e89e78b69f48ac9efa}} 
+\mbox{\hyperlink{classchaiscript_1_1dispatch_1_1Param__Types}{Param\+\_\+\+Types}} {\bfseries m\+\_\+param\+\_\+types}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{classA}{A}} Proxy\+\_\+\+Function implementation that is not type safe, the called function is expecting a vector$<$\+Boxed\+\_\+\+Value$>$ that it works with how it chooses. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Chai\+Script-\/6.\+1.\+0/include/chaiscript/dispatchkit/proxy\+\_\+functions.\+hpp\end{DoxyCompactItemize}

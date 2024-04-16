@@ -1,0 +1,50 @@
+\hypertarget{classchaiscript_1_1detail_1_1threading_1_1Thread__Storage}{}\doxysection{chaiscript\+::detail\+::threading\+::Thread\+\_\+\+Storage$<$ T $>$ Class Template Reference}
+\label{classchaiscript_1_1detail_1_1threading_1_1Thread__Storage}\index{chaiscript::detail::threading::Thread\_Storage$<$ T $>$@{chaiscript::detail::threading::Thread\_Storage$<$ T $>$}}
+
+
+{\ttfamily \#include $<$chaiscript\+\_\+threading.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classchaiscript_1_1detail_1_1threading_1_1Thread__Storage_a4886d372cf2521dfdcb41e086203d187}\label{classchaiscript_1_1detail_1_1threading_1_1Thread__Storage_a4886d372cf2521dfdcb41e086203d187}} 
+{\bfseries Thread\+\_\+\+Storage} (const \mbox{\hyperlink{classchaiscript_1_1detail_1_1threading_1_1Thread__Storage}{Thread\+\_\+\+Storage}} \&)=delete
+\item 
+\mbox{\Hypertarget{classchaiscript_1_1detail_1_1threading_1_1Thread__Storage_a9cb5e5cb7bdd1ccb5c27efcf9e1d3490}\label{classchaiscript_1_1detail_1_1threading_1_1Thread__Storage_a9cb5e5cb7bdd1ccb5c27efcf9e1d3490}} 
+{\bfseries Thread\+\_\+\+Storage} (\mbox{\hyperlink{classchaiscript_1_1detail_1_1threading_1_1Thread__Storage}{Thread\+\_\+\+Storage}} \&\&)=delete
+\item 
+\mbox{\Hypertarget{classchaiscript_1_1detail_1_1threading_1_1Thread__Storage_aabb4cf8a4beeb5b6628863ec5b137427}\label{classchaiscript_1_1detail_1_1threading_1_1Thread__Storage_aabb4cf8a4beeb5b6628863ec5b137427}} 
+\mbox{\hyperlink{classchaiscript_1_1detail_1_1threading_1_1Thread__Storage}{Thread\+\_\+\+Storage}} \& {\bfseries operator=} (const \mbox{\hyperlink{classchaiscript_1_1detail_1_1threading_1_1Thread__Storage}{Thread\+\_\+\+Storage}} \&)=delete
+\item 
+\mbox{\Hypertarget{classchaiscript_1_1detail_1_1threading_1_1Thread__Storage_a2eac32584af52fbe4e54f88e7f19a744}\label{classchaiscript_1_1detail_1_1threading_1_1Thread__Storage_a2eac32584af52fbe4e54f88e7f19a744}} 
+\mbox{\hyperlink{classchaiscript_1_1detail_1_1threading_1_1Thread__Storage}{Thread\+\_\+\+Storage}} \& {\bfseries operator=} (\mbox{\hyperlink{classchaiscript_1_1detail_1_1threading_1_1Thread__Storage}{Thread\+\_\+\+Storage}} \&\&)=delete
+\item 
+\mbox{\Hypertarget{classchaiscript_1_1detail_1_1threading_1_1Thread__Storage_a89180ed5f6495d26c18110b9c3420be9}\label{classchaiscript_1_1detail_1_1threading_1_1Thread__Storage_a89180ed5f6495d26c18110b9c3420be9}} 
+const T $\ast$ {\bfseries operator-\/$>$} () const
+\item 
+\mbox{\Hypertarget{classchaiscript_1_1detail_1_1threading_1_1Thread__Storage_ab5b9ada639326f3471fa2bd449e17334}\label{classchaiscript_1_1detail_1_1threading_1_1Thread__Storage_ab5b9ada639326f3471fa2bd449e17334}} 
+const T \& {\bfseries operator$\ast$} () const
+\item 
+\mbox{\Hypertarget{classchaiscript_1_1detail_1_1threading_1_1Thread__Storage_aaf47e95e9a9dd43b56d68dce8a582cd6}\label{classchaiscript_1_1detail_1_1threading_1_1Thread__Storage_aaf47e95e9a9dd43b56d68dce8a582cd6}} 
+T $\ast$ {\bfseries operator-\/$>$} ()
+\item 
+\mbox{\Hypertarget{classchaiscript_1_1detail_1_1threading_1_1Thread__Storage_a38abf2e4c7dbd0f110c35024355c7d89}\label{classchaiscript_1_1detail_1_1threading_1_1Thread__Storage_a38abf2e4c7dbd0f110c35024355c7d89}} 
+T \& {\bfseries operator$\ast$} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classchaiscript_1_1detail_1_1threading_1_1Thread__Storage_a9f763c77dd55a9bc3830033d6cf79eae}\label{classchaiscript_1_1detail_1_1threading_1_1Thread__Storage_a9f763c77dd55a9bc3830033d6cf79eae}} 
+void $\ast$ {\bfseries m\+\_\+key}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$typename T$>$\newline
+class chaiscript\+::detail\+::threading\+::\+Thread\+\_\+\+Storage$<$ T $>$}
+
+Typesafe thread specific storage. If threading is enabled, this class uses a mutex protected map. If threading is not enabled, the class always returns the same data, regardless of which thread it is called from. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Chai\+Script-\/6.\+1.\+0/include/chaiscript/\mbox{\hyperlink{chaiscript__threading_8hpp}{chaiscript\+\_\+threading.\+hpp}}\end{DoxyCompactItemize}

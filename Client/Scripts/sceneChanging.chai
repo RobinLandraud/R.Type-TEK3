@@ -1,0 +1,7 @@
+for (var i = 0; i < SceneManagerComponents.size(); ++i) {
+    if (SceneManagerComponents.exists(i)) {
+        if (SceneManagerComponents.isUpdatedAt(i)) {
+            print("is about to change scene");
+        }
+    }
+}

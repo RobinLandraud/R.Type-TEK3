@@ -1,0 +1,200 @@
+\hypertarget{classAEngine}{}\doxysection{AEngine Class Reference}
+\label{classAEngine}\index{AEngine@{AEngine}}
+
+
+Abstract class for engine. Used to manage all the other engines.  
+
+
+
+
+{\ttfamily \#include $<$AEngine.\+hpp$>$}
+
+Inheritance diagram for AEngine\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{d4/dd3/classAEngine}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classAEngine_a1589cd360614fd990dcdef605c3a667d}{AEngine}} ()
+\item 
+virtual \mbox{\hyperlink{classAEngine_a59a1f5f618599f06aad5a4a55ac97a0e}{$\sim$\+AEngine}} ()=default
+\item 
+virtual void \mbox{\hyperlink{classAEngine_a453357d2084b9e7f61a4bc07bcde82f9}{update}} ()=0
+\begin{DoxyCompactList}\small\item\em Update the engine. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classAEngine_a1d42333782684d315e7e6763b53b4bf2}{is\+Running}} () const
+\begin{DoxyCompactList}\small\item\em Check if the engine is running. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classAWindowEngine}{AWindow\+Engine}} \& \mbox{\hyperlink{classAEngine_aa47d2a1090d913152a146deb7154c05e}{get\+Window}} ()
+\begin{DoxyCompactList}\small\item\em Get the window engine. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classAGraphicsEngine}{AGraphics\+Engine}} \& \mbox{\hyperlink{classAEngine_a23ad3bbff6e3f2a67b332fcb29b2ae40}{get\+Graphics}} ()
+\begin{DoxyCompactList}\small\item\em Get the graphics engine. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classAEventEngine}{AEvent\+Engine}} \& \mbox{\hyperlink{classAEngine_af3de108ca966dcacecf9f1192fd34db0}{get\+Event}} ()
+\begin{DoxyCompactList}\small\item\em Get the event engine. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classAAudioEngine}{AAudio\+Engine}} \& \mbox{\hyperlink{classAEngine_a09e1e8ed5aeb96fa775d2a210459bc7f}{get\+Audio}} ()
+\begin{DoxyCompactList}\small\item\em Get the audio engine. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classAEngine_ad780bf34f679ffedafe305ee276049a1}{stop}} ()
+\begin{DoxyCompactList}\small\item\em Stop the engine. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{classAEngine_a72f4c28530fdab183f898a7ddebdd733}{running}}
+\item 
+std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classAEventEngine}{AEvent\+Engine}} $>$ \mbox{\hyperlink{classAEngine_a2187764b4b337103ffcb2d215cf63783}{event\+Engine}}
+\item 
+std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classAWindowEngine}{AWindow\+Engine}} $>$ \mbox{\hyperlink{classAEngine_a221ceea75c5299f3637861447a2e54f2}{window\+Engine}}
+\item 
+std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classAGraphicsEngine}{AGraphics\+Engine}} $>$ \mbox{\hyperlink{classAEngine_a6723d914d0b96c7ff59fa80098e9b98f}{graphics\+Engine}}
+\item 
+std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classAAudioEngine}{AAudio\+Engine}} $>$ \mbox{\hyperlink{classAEngine_af9d6249680009ec68ab1f287978ed58f}{audio\+Engine}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Abstract class for engine. Used to manage all the other engines. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classAEngine_a1589cd360614fd990dcdef605c3a667d}\label{classAEngine_a1589cd360614fd990dcdef605c3a667d}} 
+\index{AEngine@{AEngine}!AEngine@{AEngine}}
+\index{AEngine@{AEngine}!AEngine@{AEngine}}
+\doxysubsubsection{\texorpdfstring{AEngine()}{AEngine()}}
+{\footnotesize\ttfamily AEngine\+::\+AEngine (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Default constructor \mbox{\Hypertarget{classAEngine_a59a1f5f618599f06aad5a4a55ac97a0e}\label{classAEngine_a59a1f5f618599f06aad5a4a55ac97a0e}} 
+\index{AEngine@{AEngine}!````~AEngine@{$\sim$AEngine}}
+\index{````~AEngine@{$\sim$AEngine}!AEngine@{AEngine}}
+\doxysubsubsection{\texorpdfstring{$\sim$AEngine()}{~AEngine()}}
+{\footnotesize\ttfamily virtual AEngine\+::$\sim$\+AEngine (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [default]}}
+
+Default destructor 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classAEngine_a09e1e8ed5aeb96fa775d2a210459bc7f}\label{classAEngine_a09e1e8ed5aeb96fa775d2a210459bc7f}} 
+\index{AEngine@{AEngine}!getAudio@{getAudio}}
+\index{getAudio@{getAudio}!AEngine@{AEngine}}
+\doxysubsubsection{\texorpdfstring{getAudio()}{getAudio()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classAAudioEngine}{AAudio\+Engine}} \& AEngine\+::get\+Audio (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the audio engine. 
+
+\begin{DoxyReturn}{Returns}
+The audio engine 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classAEngine_af3de108ca966dcacecf9f1192fd34db0}\label{classAEngine_af3de108ca966dcacecf9f1192fd34db0}} 
+\index{AEngine@{AEngine}!getEvent@{getEvent}}
+\index{getEvent@{getEvent}!AEngine@{AEngine}}
+\doxysubsubsection{\texorpdfstring{getEvent()}{getEvent()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classAEventEngine}{AEvent\+Engine}} \& AEngine\+::get\+Event (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the event engine. 
+
+\begin{DoxyReturn}{Returns}
+The event engine 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classAEngine_a23ad3bbff6e3f2a67b332fcb29b2ae40}\label{classAEngine_a23ad3bbff6e3f2a67b332fcb29b2ae40}} 
+\index{AEngine@{AEngine}!getGraphics@{getGraphics}}
+\index{getGraphics@{getGraphics}!AEngine@{AEngine}}
+\doxysubsubsection{\texorpdfstring{getGraphics()}{getGraphics()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classAGraphicsEngine}{AGraphics\+Engine}} \& AEngine\+::get\+Graphics (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the graphics engine. 
+
+\begin{DoxyReturn}{Returns}
+The graphics engine 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classAEngine_aa47d2a1090d913152a146deb7154c05e}\label{classAEngine_aa47d2a1090d913152a146deb7154c05e}} 
+\index{AEngine@{AEngine}!getWindow@{getWindow}}
+\index{getWindow@{getWindow}!AEngine@{AEngine}}
+\doxysubsubsection{\texorpdfstring{getWindow()}{getWindow()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classAWindowEngine}{AWindow\+Engine}} \& AEngine\+::get\+Window (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the window engine. 
+
+\begin{DoxyReturn}{Returns}
+The window engine 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classAEngine_a1d42333782684d315e7e6763b53b4bf2}\label{classAEngine_a1d42333782684d315e7e6763b53b4bf2}} 
+\index{AEngine@{AEngine}!isRunning@{isRunning}}
+\index{isRunning@{isRunning}!AEngine@{AEngine}}
+\doxysubsubsection{\texorpdfstring{isRunning()}{isRunning()}}
+{\footnotesize\ttfamily bool AEngine\+::is\+Running (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Check if the engine is running. 
+
+\begin{DoxyReturn}{Returns}
+True if the engine is running 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classAEngine_ad780bf34f679ffedafe305ee276049a1}\label{classAEngine_ad780bf34f679ffedafe305ee276049a1}} 
+\index{AEngine@{AEngine}!stop@{stop}}
+\index{stop@{stop}!AEngine@{AEngine}}
+\doxysubsubsection{\texorpdfstring{stop()}{stop()}}
+{\footnotesize\ttfamily void AEngine\+::stop (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Stop the engine. 
+
+\mbox{\Hypertarget{classAEngine_a453357d2084b9e7f61a4bc07bcde82f9}\label{classAEngine_a453357d2084b9e7f61a4bc07bcde82f9}} 
+\index{AEngine@{AEngine}!update@{update}}
+\index{update@{update}!AEngine@{AEngine}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void AEngine\+::update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Update the engine. 
+
+
+
+Implemented in \mbox{\hyperlink{classSFMLEngine_a99dab254dc3d0d6b3827ecb1d4060481}{SFMLEngine}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classAEngine_af9d6249680009ec68ab1f287978ed58f}\label{classAEngine_af9d6249680009ec68ab1f287978ed58f}} 
+\index{AEngine@{AEngine}!audioEngine@{audioEngine}}
+\index{audioEngine@{audioEngine}!AEngine@{AEngine}}
+\doxysubsubsection{\texorpdfstring{audioEngine}{audioEngine}}
+{\footnotesize\ttfamily std\+::unique\+\_\+ptr$<$\mbox{\hyperlink{classAAudioEngine}{AAudio\+Engine}}$>$ AEngine\+::audio\+Engine\hspace{0.3cm}{\ttfamily [protected]}}
+
+Audio engine \mbox{\Hypertarget{classAEngine_a2187764b4b337103ffcb2d215cf63783}\label{classAEngine_a2187764b4b337103ffcb2d215cf63783}} 
+\index{AEngine@{AEngine}!eventEngine@{eventEngine}}
+\index{eventEngine@{eventEngine}!AEngine@{AEngine}}
+\doxysubsubsection{\texorpdfstring{eventEngine}{eventEngine}}
+{\footnotesize\ttfamily std\+::unique\+\_\+ptr$<$\mbox{\hyperlink{classAEventEngine}{AEvent\+Engine}}$>$ AEngine\+::event\+Engine\hspace{0.3cm}{\ttfamily [protected]}}
+
+Event engine \mbox{\Hypertarget{classAEngine_a6723d914d0b96c7ff59fa80098e9b98f}\label{classAEngine_a6723d914d0b96c7ff59fa80098e9b98f}} 
+\index{AEngine@{AEngine}!graphicsEngine@{graphicsEngine}}
+\index{graphicsEngine@{graphicsEngine}!AEngine@{AEngine}}
+\doxysubsubsection{\texorpdfstring{graphicsEngine}{graphicsEngine}}
+{\footnotesize\ttfamily std\+::unique\+\_\+ptr$<$\mbox{\hyperlink{classAGraphicsEngine}{AGraphics\+Engine}}$>$ AEngine\+::graphics\+Engine\hspace{0.3cm}{\ttfamily [protected]}}
+
+Graphics engine \mbox{\Hypertarget{classAEngine_a72f4c28530fdab183f898a7ddebdd733}\label{classAEngine_a72f4c28530fdab183f898a7ddebdd733}} 
+\index{AEngine@{AEngine}!running@{running}}
+\index{running@{running}!AEngine@{AEngine}}
+\doxysubsubsection{\texorpdfstring{running}{running}}
+{\footnotesize\ttfamily bool AEngine\+::running\hspace{0.3cm}{\ttfamily [protected]}}
+
+Check if the engine is running \mbox{\Hypertarget{classAEngine_a221ceea75c5299f3637861447a2e54f2}\label{classAEngine_a221ceea75c5299f3637861447a2e54f2}} 
+\index{AEngine@{AEngine}!windowEngine@{windowEngine}}
+\index{windowEngine@{windowEngine}!AEngine@{AEngine}}
+\doxysubsubsection{\texorpdfstring{windowEngine}{windowEngine}}
+{\footnotesize\ttfamily std\+::unique\+\_\+ptr$<$\mbox{\hyperlink{classAWindowEngine}{AWindow\+Engine}}$>$ AEngine\+::window\+Engine\hspace{0.3cm}{\ttfamily [protected]}}
+
+Window engine 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Client/\+AEngine/AEngine.\+hpp\item 
+Client/\+AEngine/AEngine.\+cpp\end{DoxyCompactItemize}

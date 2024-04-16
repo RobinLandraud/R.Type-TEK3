@@ -1,0 +1,248 @@
+\hypertarget{classClocksComponent}{}\doxysection{Clocks\+Component Class Reference}
+\label{classClocksComponent}\index{ClocksComponent@{ClocksComponent}}
+
+
+A component that handle a clock. Used to manage the time.  
+
+
+
+
+{\ttfamily \#include $<$Clocks\+Component.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classClocksComponent_a025a4af47712132edb34cac242ee89ee}{Clocks\+Component}} (float secondes=0.\+017)
+\begin{DoxyCompactList}\small\item\em Default constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classClocksComponent_abae6a2a940c1e2d1e50dd078b4f8de21}{$\sim$\+Clocks\+Component}} ()=default
+\item 
+\mbox{\hyperlink{classClocksComponent_a6d2347a6bba5bbcf4cbd643763f89c50}{Clocks\+Component}} (\mbox{\hyperlink{classClocksComponent}{Clocks\+Component}} const \&)=default
+\item 
+\mbox{\hyperlink{classClocksComponent_a597bc4210832e576b6585c7b8dc0da6b}{Clocks\+Component}} (\mbox{\hyperlink{classClocksComponent}{Clocks\+Component}} \&\&) noexcept=default
+\item 
+\mbox{\hyperlink{classClocksComponent}{Clocks\+Component}} \& \mbox{\hyperlink{classClocksComponent_addf188b190a2d97345b3d50a23cd9b03}{operator=}} (\mbox{\hyperlink{classClocksComponent}{Clocks\+Component}} const \&)=default
+\item 
+\mbox{\hyperlink{classClocksComponent}{Clocks\+Component}} \& \mbox{\hyperlink{classClocksComponent_a9e063f07c96c3f7d0939cba6d6f2b6ea}{operator=}} (\mbox{\hyperlink{classClocksComponent}{Clocks\+Component}} \&\&) noexcept=default
+\item 
+\mbox{\hyperlink{classClock}{Clock}} \& \mbox{\hyperlink{classClocksComponent_a507bc33158e6e9fae0dfe7fa2f181a9b}{get\+Clock}} (std\+::string name)
+\begin{DoxyCompactList}\small\item\em Get a clock. \end{DoxyCompactList}\item 
+std\+::unordered\+\_\+map$<$ std\+::string, \mbox{\hyperlink{classClock}{Clock}} $>$ \& \mbox{\hyperlink{classClocksComponent_ab5f4befe7cbb363c703eab30b65fd609}{get\+Clocks}} ()
+\begin{DoxyCompactList}\small\item\em Get all the clocks. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classClocksComponent_aed7357567bb2232733337042e30a9347}{add\+Clock}} (std\+::string name, float secondes)
+\begin{DoxyCompactList}\small\item\em Add a clock. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classClocksComponent_a6012ef8412ebd6806bf641173e6a2547}{remove\+Clock}} (std\+::string name)
+\begin{DoxyCompactList}\small\item\em Remove a clock. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classClock}{Clock}} \& \mbox{\hyperlink{classClocksComponent_a7e13a841f17803abbf2be680b2841e1b}{get\+Default\+Clock}} ()
+\begin{DoxyCompactList}\small\item\em Get the default clock. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classClocksComponent_a58b5eea1b0742b73c19b0405f0dacb59}{update\+Clocks}} ()
+\begin{DoxyCompactList}\small\item\em Update all the clocks. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classClocksComponent_a025a4af47712132edb34cac242ee89ee}\label{classClocksComponent_a025a4af47712132edb34cac242ee89ee}} 
+{\bfseries Clocks\+Component} (float secondes=0.\+017)
+\item 
+\mbox{\hyperlink{classClocksComponent_abae6a2a940c1e2d1e50dd078b4f8de21}{$\sim$\+Clocks\+Component}} ()=default
+\item 
+\mbox{\hyperlink{classClocksComponent_a6d2347a6bba5bbcf4cbd643763f89c50}{Clocks\+Component}} (\mbox{\hyperlink{classClocksComponent}{Clocks\+Component}} const \&)=default
+\item 
+\mbox{\hyperlink{classClocksComponent_a597bc4210832e576b6585c7b8dc0da6b}{Clocks\+Component}} (\mbox{\hyperlink{classClocksComponent}{Clocks\+Component}} \&\&) noexcept=default
+\item 
+\mbox{\hyperlink{classClocksComponent}{Clocks\+Component}} \& \mbox{\hyperlink{classClocksComponent_addf188b190a2d97345b3d50a23cd9b03}{operator=}} (\mbox{\hyperlink{classClocksComponent}{Clocks\+Component}} const \&)=default
+\item 
+\mbox{\hyperlink{classClocksComponent}{Clocks\+Component}} \& \mbox{\hyperlink{classClocksComponent_a9e063f07c96c3f7d0939cba6d6f2b6ea}{operator=}} (\mbox{\hyperlink{classClocksComponent}{Clocks\+Component}} \&\&) noexcept=default
+\item 
+\mbox{\Hypertarget{classClocksComponent_a562cbeaaea4b5a6d7a2fd881acf0b70f}\label{classClocksComponent_a562cbeaaea4b5a6d7a2fd881acf0b70f}} 
+\mbox{\hyperlink{classClock}{Clock}} \& {\bfseries get\+Clock} (std\+::string name)
+\item 
+\mbox{\Hypertarget{classClocksComponent_a5d81c94d57a29c82911ebffb6a953e62}\label{classClocksComponent_a5d81c94d57a29c82911ebffb6a953e62}} 
+std\+::unordered\+\_\+map$<$ std\+::string, \mbox{\hyperlink{classClock}{Clock}} $>$ \& {\bfseries get\+Clocks} ()
+\item 
+\mbox{\Hypertarget{classClocksComponent_aed7357567bb2232733337042e30a9347}\label{classClocksComponent_aed7357567bb2232733337042e30a9347}} 
+void {\bfseries add\+Clock} (std\+::string name, float secondes)
+\item 
+\mbox{\Hypertarget{classClocksComponent_a6012ef8412ebd6806bf641173e6a2547}\label{classClocksComponent_a6012ef8412ebd6806bf641173e6a2547}} 
+void {\bfseries remove\+Clock} (std\+::string name)
+\item 
+\mbox{\Hypertarget{classClocksComponent_a7cc31623ac1065ec9e357d8d34465d92}\label{classClocksComponent_a7cc31623ac1065ec9e357d8d34465d92}} 
+\mbox{\hyperlink{classClock}{Clock}} \& {\bfseries get\+Default\+Clock} ()
+\item 
+\mbox{\Hypertarget{classClocksComponent_a58b5eea1b0742b73c19b0405f0dacb59}\label{classClocksComponent_a58b5eea1b0742b73c19b0405f0dacb59}} 
+void {\bfseries update\+Clocks} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A component that handle a clock. Used to manage the time. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classClocksComponent_a025a4af47712132edb34cac242ee89ee}\label{classClocksComponent_a025a4af47712132edb34cac242ee89ee}} 
+\index{ClocksComponent@{ClocksComponent}!ClocksComponent@{ClocksComponent}}
+\index{ClocksComponent@{ClocksComponent}!ClocksComponent@{ClocksComponent}}
+\doxysubsubsection{\texorpdfstring{ClocksComponent()}{ClocksComponent()}\hspace{0.1cm}{\footnotesize\ttfamily [1/5]}}
+{\footnotesize\ttfamily Clocks\+Component\+::\+Clocks\+Component (\begin{DoxyParamCaption}\item[{float}]{secondes = {\ttfamily 0.017} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}
+
+
+
+Default constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em secondes} & The number of seconds \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classClocksComponent_abae6a2a940c1e2d1e50dd078b4f8de21}\label{classClocksComponent_abae6a2a940c1e2d1e50dd078b4f8de21}} 
+\index{ClocksComponent@{ClocksComponent}!````~ClocksComponent@{$\sim$ClocksComponent}}
+\index{````~ClocksComponent@{$\sim$ClocksComponent}!ClocksComponent@{ClocksComponent}}
+\doxysubsubsection{\texorpdfstring{$\sim$ClocksComponent()}{~ClocksComponent()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Clocks\+Component\+::$\sim$\+Clocks\+Component (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+Default destructor \mbox{\Hypertarget{classClocksComponent_a6d2347a6bba5bbcf4cbd643763f89c50}\label{classClocksComponent_a6d2347a6bba5bbcf4cbd643763f89c50}} 
+\index{ClocksComponent@{ClocksComponent}!ClocksComponent@{ClocksComponent}}
+\index{ClocksComponent@{ClocksComponent}!ClocksComponent@{ClocksComponent}}
+\doxysubsubsection{\texorpdfstring{ClocksComponent()}{ClocksComponent()}\hspace{0.1cm}{\footnotesize\ttfamily [2/5]}}
+{\footnotesize\ttfamily Clocks\+Component\+::\+Clocks\+Component (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classClocksComponent}{Clocks\+Component}} const \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+Default copy constructor \mbox{\Hypertarget{classClocksComponent_a597bc4210832e576b6585c7b8dc0da6b}\label{classClocksComponent_a597bc4210832e576b6585c7b8dc0da6b}} 
+\index{ClocksComponent@{ClocksComponent}!ClocksComponent@{ClocksComponent}}
+\index{ClocksComponent@{ClocksComponent}!ClocksComponent@{ClocksComponent}}
+\doxysubsubsection{\texorpdfstring{ClocksComponent()}{ClocksComponent()}\hspace{0.1cm}{\footnotesize\ttfamily [3/5]}}
+{\footnotesize\ttfamily Clocks\+Component\+::\+Clocks\+Component (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classClocksComponent}{Clocks\+Component}} \&\&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}, {\ttfamily [noexcept]}}
+
+Default move constructor \mbox{\Hypertarget{classClocksComponent_abae6a2a940c1e2d1e50dd078b4f8de21}\label{classClocksComponent_abae6a2a940c1e2d1e50dd078b4f8de21}} 
+\index{ClocksComponent@{ClocksComponent}!````~ClocksComponent@{$\sim$ClocksComponent}}
+\index{````~ClocksComponent@{$\sim$ClocksComponent}!ClocksComponent@{ClocksComponent}}
+\doxysubsubsection{\texorpdfstring{$\sim$ClocksComponent()}{~ClocksComponent()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Clocks\+Component\+::$\sim$\+Clocks\+Component (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+Default destructor \mbox{\Hypertarget{classClocksComponent_a6d2347a6bba5bbcf4cbd643763f89c50}\label{classClocksComponent_a6d2347a6bba5bbcf4cbd643763f89c50}} 
+\index{ClocksComponent@{ClocksComponent}!ClocksComponent@{ClocksComponent}}
+\index{ClocksComponent@{ClocksComponent}!ClocksComponent@{ClocksComponent}}
+\doxysubsubsection{\texorpdfstring{ClocksComponent()}{ClocksComponent()}\hspace{0.1cm}{\footnotesize\ttfamily [4/5]}}
+{\footnotesize\ttfamily Clocks\+Component\+::\+Clocks\+Component (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classClocksComponent}{Clocks\+Component}} const \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+Default copy constructor \mbox{\Hypertarget{classClocksComponent_a597bc4210832e576b6585c7b8dc0da6b}\label{classClocksComponent_a597bc4210832e576b6585c7b8dc0da6b}} 
+\index{ClocksComponent@{ClocksComponent}!ClocksComponent@{ClocksComponent}}
+\index{ClocksComponent@{ClocksComponent}!ClocksComponent@{ClocksComponent}}
+\doxysubsubsection{\texorpdfstring{ClocksComponent()}{ClocksComponent()}\hspace{0.1cm}{\footnotesize\ttfamily [5/5]}}
+{\footnotesize\ttfamily Clocks\+Component\+::\+Clocks\+Component (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classClocksComponent}{Clocks\+Component}} \&\&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}, {\ttfamily [noexcept]}}
+
+Default move constructor 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classClocksComponent_aed7357567bb2232733337042e30a9347}\label{classClocksComponent_aed7357567bb2232733337042e30a9347}} 
+\index{ClocksComponent@{ClocksComponent}!addClock@{addClock}}
+\index{addClock@{addClock}!ClocksComponent@{ClocksComponent}}
+\doxysubsubsection{\texorpdfstring{addClock()}{addClock()}}
+{\footnotesize\ttfamily void Clocks\+Component\+::add\+Clock (\begin{DoxyParamCaption}\item[{std\+::string}]{name,  }\item[{float}]{secondes }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Add a clock. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The name of the clock \\
+\hline
+{\em secondes} & The number of seconds \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classClocksComponent_a507bc33158e6e9fae0dfe7fa2f181a9b}\label{classClocksComponent_a507bc33158e6e9fae0dfe7fa2f181a9b}} 
+\index{ClocksComponent@{ClocksComponent}!getClock@{getClock}}
+\index{getClock@{getClock}!ClocksComponent@{ClocksComponent}}
+\doxysubsubsection{\texorpdfstring{getClock()}{getClock()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classClock}{Clock}} \& Clocks\+Component\+::get\+Clock (\begin{DoxyParamCaption}\item[{std\+::string}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get a clock. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The name of the clock \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The clock 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classClocksComponent_ab5f4befe7cbb363c703eab30b65fd609}\label{classClocksComponent_ab5f4befe7cbb363c703eab30b65fd609}} 
+\index{ClocksComponent@{ClocksComponent}!getClocks@{getClocks}}
+\index{getClocks@{getClocks}!ClocksComponent@{ClocksComponent}}
+\doxysubsubsection{\texorpdfstring{getClocks()}{getClocks()}}
+{\footnotesize\ttfamily std\+::unordered\+\_\+map$<$ std\+::string, \mbox{\hyperlink{classClock}{Clock}} $>$ \& Clocks\+Component\+::get\+Clocks (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get all the clocks. 
+
+Get the clocks.
+
+\begin{DoxyReturn}{Returns}
+All the clocks
+
+The clocks 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classClocksComponent_a7e13a841f17803abbf2be680b2841e1b}\label{classClocksComponent_a7e13a841f17803abbf2be680b2841e1b}} 
+\index{ClocksComponent@{ClocksComponent}!getDefaultClock@{getDefaultClock}}
+\index{getDefaultClock@{getDefaultClock}!ClocksComponent@{ClocksComponent}}
+\doxysubsubsection{\texorpdfstring{getDefaultClock()}{getDefaultClock()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classClock}{Clock}} \& Clocks\+Component\+::get\+Default\+Clock (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the default clock. 
+
+\begin{DoxyReturn}{Returns}
+The default clock 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classClocksComponent_a9e063f07c96c3f7d0939cba6d6f2b6ea}\label{classClocksComponent_a9e063f07c96c3f7d0939cba6d6f2b6ea}} 
+\index{ClocksComponent@{ClocksComponent}!operator=@{operator=}}
+\index{operator=@{operator=}!ClocksComponent@{ClocksComponent}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classClocksComponent}{Clocks\+Component}}\& Clocks\+Component\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classClocksComponent}{Clocks\+Component}} \&\&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}, {\ttfamily [noexcept]}}
+
+Default move assignment operator \mbox{\Hypertarget{classClocksComponent_a9e063f07c96c3f7d0939cba6d6f2b6ea}\label{classClocksComponent_a9e063f07c96c3f7d0939cba6d6f2b6ea}} 
+\index{ClocksComponent@{ClocksComponent}!operator=@{operator=}}
+\index{operator=@{operator=}!ClocksComponent@{ClocksComponent}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classClocksComponent}{Clocks\+Component}}\& Clocks\+Component\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classClocksComponent}{Clocks\+Component}} \&\&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}, {\ttfamily [noexcept]}}
+
+Default move assignment operator \mbox{\Hypertarget{classClocksComponent_addf188b190a2d97345b3d50a23cd9b03}\label{classClocksComponent_addf188b190a2d97345b3d50a23cd9b03}} 
+\index{ClocksComponent@{ClocksComponent}!operator=@{operator=}}
+\index{operator=@{operator=}!ClocksComponent@{ClocksComponent}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classClocksComponent}{Clocks\+Component}}\& Clocks\+Component\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classClocksComponent}{Clocks\+Component}} const \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+Default copy assignment operator \mbox{\Hypertarget{classClocksComponent_addf188b190a2d97345b3d50a23cd9b03}\label{classClocksComponent_addf188b190a2d97345b3d50a23cd9b03}} 
+\index{ClocksComponent@{ClocksComponent}!operator=@{operator=}}
+\index{operator=@{operator=}!ClocksComponent@{ClocksComponent}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classClocksComponent}{Clocks\+Component}}\& Clocks\+Component\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classClocksComponent}{Clocks\+Component}} const \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+Default copy assignment operator \mbox{\Hypertarget{classClocksComponent_a6012ef8412ebd6806bf641173e6a2547}\label{classClocksComponent_a6012ef8412ebd6806bf641173e6a2547}} 
+\index{ClocksComponent@{ClocksComponent}!removeClock@{removeClock}}
+\index{removeClock@{removeClock}!ClocksComponent@{ClocksComponent}}
+\doxysubsubsection{\texorpdfstring{removeClock()}{removeClock()}}
+{\footnotesize\ttfamily void Clocks\+Component\+::remove\+Clock (\begin{DoxyParamCaption}\item[{std\+::string}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Remove a clock. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The name of the clock \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classClocksComponent_a58b5eea1b0742b73c19b0405f0dacb59}\label{classClocksComponent_a58b5eea1b0742b73c19b0405f0dacb59}} 
+\index{ClocksComponent@{ClocksComponent}!updateClocks@{updateClocks}}
+\index{updateClocks@{updateClocks}!ClocksComponent@{ClocksComponent}}
+\doxysubsubsection{\texorpdfstring{updateClocks()}{updateClocks()}}
+{\footnotesize\ttfamily void Clocks\+Component\+::update\+Clocks (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Update all the clocks. 
+
+Update the clocks. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Client/\+Component/Clocks\+Component.\+hpp\end{DoxyCompactItemize}

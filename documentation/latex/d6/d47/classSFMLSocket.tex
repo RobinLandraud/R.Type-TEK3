@@ -1,0 +1,412 @@
+\hypertarget{classSFMLSocket}{}\doxysection{SFMLSocket Class Reference}
+\label{classSFMLSocket}\index{SFMLSocket@{SFMLSocket}}
+
+
+A class that handle the socket. Used to handle the socket.  
+
+
+
+
+{\ttfamily \#include $<$SFMLSocket.\+hpp$>$}
+
+Inheritance diagram for SFMLSocket\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{d6/d47/classSFMLSocket}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classSFMLSocket_a5731028bd361535664aee169e0df6beb}{SFMLSocket}} ()=default
+\item 
+\mbox{\hyperlink{classSFMLSocket_aeda98c0d1672eb5415796bd7103363b0}{SFMLSocket}} (\mbox{\hyperlink{classSFMLSocket}{SFMLSocket}} \&\&)=default
+\item 
+\mbox{\hyperlink{classSFMLSocket_a5de615fc1d021ab017574edd6c8979f2}{SFMLSocket}} (const \mbox{\hyperlink{classSFMLSocket}{SFMLSocket}} \&)=default
+\item 
+\mbox{\hyperlink{classSFMLSocket}{SFMLSocket}} \& \mbox{\hyperlink{classSFMLSocket_a17e33acbeb3085a622a5a6b3c0f84ee3}{operator=}} (\mbox{\hyperlink{classSFMLSocket}{SFMLSocket}} \&\&)=default
+\item 
+\mbox{\hyperlink{classSFMLSocket}{SFMLSocket}} \& \mbox{\hyperlink{classSFMLSocket_a35a68359b216667a24592b8153ec82e9}{operator=}} (const \mbox{\hyperlink{classSFMLSocket}{SFMLSocket}} \&)=default
+\item 
+\mbox{\hyperlink{classSFMLSocket_ada6094e7f76330eac766ce9e4e5addef}{$\sim$\+SFMLSocket}} () override=default
+\item 
+\mbox{\hyperlink{classASocket_ab681e60ce63943f3cc3be599dbc8a29d}{Socket\+Status}} \mbox{\hyperlink{classSFMLSocket_a913c7743424e000121220ac5ad459ddc}{bind}} (int \mbox{\hyperlink{classASocket_a645c4ffe2eb01d6a2e962ac830dfa75c}{port}}) override
+\begin{DoxyCompactList}\small\item\em Bind the socket to a port. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classSFMLSocket_aea54370a0021856f6944161c96657a71}{unbind}} () override
+\begin{DoxyCompactList}\small\item\em Unbind the socket. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classASocket_ab681e60ce63943f3cc3be599dbc8a29d}{Socket\+Status}} \mbox{\hyperlink{classSFMLSocket_afc28f5bcd971a40a89b7b72143cf4ecf}{send}} (const void $\ast$data, std\+::size\+\_\+t size, const std\+::string \&remote\+Address, unsigned short remote\+Port) override
+\begin{DoxyCompactList}\small\item\em Send data to another socket. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classASocket_ab681e60ce63943f3cc3be599dbc8a29d}{Socket\+Status}} \mbox{\hyperlink{classSFMLSocket_add1765d09aa276d73f53723a18b1c4cd}{receive}} (void $\ast$data, std\+::size\+\_\+t size, std\+::size\+\_\+t \&received, std\+::string \&remote\+Address, unsigned short \&remote\+Port) override
+\begin{DoxyCompactList}\small\item\em Receive data from a remote address. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classSFMLSocket_aba3c9ef5c25da1927145c2d94b35b5bd}{set\+Blocking}} (bool \mbox{\hyperlink{classASocket_ac1a4c20a9d319cda3a576503ebc00851}{blocking}}) override
+\begin{DoxyCompactList}\small\item\em Set the socket to blocking or not. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classSFMLSocket_a5731028bd361535664aee169e0df6beb}{SFMLSocket}} ()=default
+\item 
+\mbox{\hyperlink{classSFMLSocket_aeda98c0d1672eb5415796bd7103363b0}{SFMLSocket}} (\mbox{\hyperlink{classSFMLSocket}{SFMLSocket}} \&\&)=default
+\item 
+\mbox{\hyperlink{classSFMLSocket_a5de615fc1d021ab017574edd6c8979f2}{SFMLSocket}} (const \mbox{\hyperlink{classSFMLSocket}{SFMLSocket}} \&)=default
+\item 
+\mbox{\hyperlink{classSFMLSocket}{SFMLSocket}} \& \mbox{\hyperlink{classSFMLSocket_a17e33acbeb3085a622a5a6b3c0f84ee3}{operator=}} (\mbox{\hyperlink{classSFMLSocket}{SFMLSocket}} \&\&)=default
+\item 
+\mbox{\hyperlink{classSFMLSocket}{SFMLSocket}} \& \mbox{\hyperlink{classSFMLSocket_a35a68359b216667a24592b8153ec82e9}{operator=}} (const \mbox{\hyperlink{classSFMLSocket}{SFMLSocket}} \&)=default
+\item 
+\mbox{\hyperlink{classSFMLSocket_ada6094e7f76330eac766ce9e4e5addef}{$\sim$\+SFMLSocket}} () override=default
+\item 
+\mbox{\hyperlink{classASocket_ab681e60ce63943f3cc3be599dbc8a29d}{Socket\+Status}} \mbox{\hyperlink{classSFMLSocket_a913c7743424e000121220ac5ad459ddc}{bind}} (int \mbox{\hyperlink{classASocket_a645c4ffe2eb01d6a2e962ac830dfa75c}{port}}) override
+\begin{DoxyCompactList}\small\item\em Bind the socket to a port. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classSFMLSocket_aea54370a0021856f6944161c96657a71}{unbind}} () override
+\begin{DoxyCompactList}\small\item\em Unbind the socket. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classASocket_ab681e60ce63943f3cc3be599dbc8a29d}{Socket\+Status}} \mbox{\hyperlink{classSFMLSocket_afc28f5bcd971a40a89b7b72143cf4ecf}{send}} (const void $\ast$data, std\+::size\+\_\+t size, const std\+::string \&remote\+Address, unsigned short remote\+Port) override
+\begin{DoxyCompactList}\small\item\em Send data to a remote address. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classASocket_ab681e60ce63943f3cc3be599dbc8a29d}{Socket\+Status}} \mbox{\hyperlink{classSFMLSocket_add1765d09aa276d73f53723a18b1c4cd}{receive}} (void $\ast$data, std\+::size\+\_\+t size, std\+::size\+\_\+t \&received, std\+::string \&remote\+Address, unsigned short \&remote\+Port) override
+\begin{DoxyCompactList}\small\item\em Receive data from a remote address. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classSFMLSocket_aba3c9ef5c25da1927145c2d94b35b5bd}{set\+Blocking}} (bool \mbox{\hyperlink{classASocket_ac1a4c20a9d319cda3a576503ebc00851}{blocking}}) override
+\begin{DoxyCompactList}\small\item\em Set the socket to blocking. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+A class that handle the socket. Used to handle the socket. 
+
+A SFML socket class. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classSFMLSocket_a5731028bd361535664aee169e0df6beb}\label{classSFMLSocket_a5731028bd361535664aee169e0df6beb}} 
+\index{SFMLSocket@{SFMLSocket}!SFMLSocket@{SFMLSocket}}
+\index{SFMLSocket@{SFMLSocket}!SFMLSocket@{SFMLSocket}}
+\doxysubsubsection{\texorpdfstring{SFMLSocket()}{SFMLSocket()}\hspace{0.1cm}{\footnotesize\ttfamily [1/6]}}
+{\footnotesize\ttfamily SFMLSocket\+::\+SFMLSocket (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+Default constructor \mbox{\Hypertarget{classSFMLSocket_aeda98c0d1672eb5415796bd7103363b0}\label{classSFMLSocket_aeda98c0d1672eb5415796bd7103363b0}} 
+\index{SFMLSocket@{SFMLSocket}!SFMLSocket@{SFMLSocket}}
+\index{SFMLSocket@{SFMLSocket}!SFMLSocket@{SFMLSocket}}
+\doxysubsubsection{\texorpdfstring{SFMLSocket()}{SFMLSocket()}\hspace{0.1cm}{\footnotesize\ttfamily [2/6]}}
+{\footnotesize\ttfamily SFMLSocket\+::\+SFMLSocket (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classSFMLSocket}{SFMLSocket}} \&\&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+Default move constructor \mbox{\Hypertarget{classSFMLSocket_a5de615fc1d021ab017574edd6c8979f2}\label{classSFMLSocket_a5de615fc1d021ab017574edd6c8979f2}} 
+\index{SFMLSocket@{SFMLSocket}!SFMLSocket@{SFMLSocket}}
+\index{SFMLSocket@{SFMLSocket}!SFMLSocket@{SFMLSocket}}
+\doxysubsubsection{\texorpdfstring{SFMLSocket()}{SFMLSocket()}\hspace{0.1cm}{\footnotesize\ttfamily [3/6]}}
+{\footnotesize\ttfamily SFMLSocket\+::\+SFMLSocket (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classSFMLSocket}{SFMLSocket}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+Default copy constructor \mbox{\Hypertarget{classSFMLSocket_ada6094e7f76330eac766ce9e4e5addef}\label{classSFMLSocket_ada6094e7f76330eac766ce9e4e5addef}} 
+\index{SFMLSocket@{SFMLSocket}!````~SFMLSocket@{$\sim$SFMLSocket}}
+\index{````~SFMLSocket@{$\sim$SFMLSocket}!SFMLSocket@{SFMLSocket}}
+\doxysubsubsection{\texorpdfstring{$\sim$SFMLSocket()}{~SFMLSocket()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily SFMLSocket\+::$\sim$\+SFMLSocket (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [default]}}
+
+Default destructor \mbox{\Hypertarget{classSFMLSocket_a5731028bd361535664aee169e0df6beb}\label{classSFMLSocket_a5731028bd361535664aee169e0df6beb}} 
+\index{SFMLSocket@{SFMLSocket}!SFMLSocket@{SFMLSocket}}
+\index{SFMLSocket@{SFMLSocket}!SFMLSocket@{SFMLSocket}}
+\doxysubsubsection{\texorpdfstring{SFMLSocket()}{SFMLSocket()}\hspace{0.1cm}{\footnotesize\ttfamily [4/6]}}
+{\footnotesize\ttfamily SFMLSocket\+::\+SFMLSocket (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+Default constructor \mbox{\Hypertarget{classSFMLSocket_aeda98c0d1672eb5415796bd7103363b0}\label{classSFMLSocket_aeda98c0d1672eb5415796bd7103363b0}} 
+\index{SFMLSocket@{SFMLSocket}!SFMLSocket@{SFMLSocket}}
+\index{SFMLSocket@{SFMLSocket}!SFMLSocket@{SFMLSocket}}
+\doxysubsubsection{\texorpdfstring{SFMLSocket()}{SFMLSocket()}\hspace{0.1cm}{\footnotesize\ttfamily [5/6]}}
+{\footnotesize\ttfamily SFMLSocket\+::\+SFMLSocket (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classSFMLSocket}{SFMLSocket}} \&\&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+Move constructor \mbox{\Hypertarget{classSFMLSocket_a5de615fc1d021ab017574edd6c8979f2}\label{classSFMLSocket_a5de615fc1d021ab017574edd6c8979f2}} 
+\index{SFMLSocket@{SFMLSocket}!SFMLSocket@{SFMLSocket}}
+\index{SFMLSocket@{SFMLSocket}!SFMLSocket@{SFMLSocket}}
+\doxysubsubsection{\texorpdfstring{SFMLSocket()}{SFMLSocket()}\hspace{0.1cm}{\footnotesize\ttfamily [6/6]}}
+{\footnotesize\ttfamily SFMLSocket\+::\+SFMLSocket (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classSFMLSocket}{SFMLSocket}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+Copy constructor \mbox{\Hypertarget{classSFMLSocket_ada6094e7f76330eac766ce9e4e5addef}\label{classSFMLSocket_ada6094e7f76330eac766ce9e4e5addef}} 
+\index{SFMLSocket@{SFMLSocket}!````~SFMLSocket@{$\sim$SFMLSocket}}
+\index{````~SFMLSocket@{$\sim$SFMLSocket}!SFMLSocket@{SFMLSocket}}
+\doxysubsubsection{\texorpdfstring{$\sim$SFMLSocket()}{~SFMLSocket()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily SFMLSocket\+::$\sim$\+SFMLSocket (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [default]}}
+
+Default Destructor 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classSFMLSocket_a913c7743424e000121220ac5ad459ddc}\label{classSFMLSocket_a913c7743424e000121220ac5ad459ddc}} 
+\index{SFMLSocket@{SFMLSocket}!bind@{bind}}
+\index{bind@{bind}!SFMLSocket@{SFMLSocket}}
+\doxysubsubsection{\texorpdfstring{bind()}{bind()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classASocket_ab681e60ce63943f3cc3be599dbc8a29d}{Socket\+Status}} SFMLSocket\+::bind (\begin{DoxyParamCaption}\item[{int}]{port }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Bind the socket to a port. 
+
+Bind a socket on a port.
+
+
+\begin{DoxyParams}{Parameters}
+{\em port} & The port to bind \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The status of the socket
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em port} & the port you want the socket get bind on \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the status of the socket you tried to bind 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classASocket_a3584524463c48919111737977cd2dec6}{ASocket}}.
+
+\mbox{\Hypertarget{classSFMLSocket_a913c7743424e000121220ac5ad459ddc}\label{classSFMLSocket_a913c7743424e000121220ac5ad459ddc}} 
+\index{SFMLSocket@{SFMLSocket}!bind@{bind}}
+\index{bind@{bind}!SFMLSocket@{SFMLSocket}}
+\doxysubsubsection{\texorpdfstring{bind()}{bind()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classASocket_ab681e60ce63943f3cc3be599dbc8a29d}{Socket\+Status}} SFMLSocket\+::bind (\begin{DoxyParamCaption}\item[{int}]{port }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Bind the socket to a port. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em port} & Port to bind \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Socket status 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classASocket_a3584524463c48919111737977cd2dec6}{ASocket}}.
+
+\mbox{\Hypertarget{classSFMLSocket_a35a68359b216667a24592b8153ec82e9}\label{classSFMLSocket_a35a68359b216667a24592b8153ec82e9}} 
+\index{SFMLSocket@{SFMLSocket}!operator=@{operator=}}
+\index{operator=@{operator=}!SFMLSocket@{SFMLSocket}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classSFMLSocket}{SFMLSocket}}\& SFMLSocket\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classSFMLSocket}{SFMLSocket}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+Default copy assignment operator \mbox{\Hypertarget{classSFMLSocket_a35a68359b216667a24592b8153ec82e9}\label{classSFMLSocket_a35a68359b216667a24592b8153ec82e9}} 
+\index{SFMLSocket@{SFMLSocket}!operator=@{operator=}}
+\index{operator=@{operator=}!SFMLSocket@{SFMLSocket}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classSFMLSocket}{SFMLSocket}}\& SFMLSocket\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classSFMLSocket}{SFMLSocket}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+Copy assignment operator \mbox{\Hypertarget{classSFMLSocket_a17e33acbeb3085a622a5a6b3c0f84ee3}\label{classSFMLSocket_a17e33acbeb3085a622a5a6b3c0f84ee3}} 
+\index{SFMLSocket@{SFMLSocket}!operator=@{operator=}}
+\index{operator=@{operator=}!SFMLSocket@{SFMLSocket}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classSFMLSocket}{SFMLSocket}}\& SFMLSocket\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classSFMLSocket}{SFMLSocket}} \&\&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+Default move assignment operator \mbox{\Hypertarget{classSFMLSocket_a17e33acbeb3085a622a5a6b3c0f84ee3}\label{classSFMLSocket_a17e33acbeb3085a622a5a6b3c0f84ee3}} 
+\index{SFMLSocket@{SFMLSocket}!operator=@{operator=}}
+\index{operator=@{operator=}!SFMLSocket@{SFMLSocket}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classSFMLSocket}{SFMLSocket}}\& SFMLSocket\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classSFMLSocket}{SFMLSocket}} \&\&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+Move assignment operator \mbox{\Hypertarget{classSFMLSocket_add1765d09aa276d73f53723a18b1c4cd}\label{classSFMLSocket_add1765d09aa276d73f53723a18b1c4cd}} 
+\index{SFMLSocket@{SFMLSocket}!receive@{receive}}
+\index{receive@{receive}!SFMLSocket@{SFMLSocket}}
+\doxysubsubsection{\texorpdfstring{receive()}{receive()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classASocket_ab681e60ce63943f3cc3be599dbc8a29d}{Socket\+Status}} SFMLSocket\+::receive (\begin{DoxyParamCaption}\item[{void $\ast$}]{data,  }\item[{std\+::size\+\_\+t}]{size,  }\item[{std\+::size\+\_\+t \&}]{received,  }\item[{std\+::string \&}]{remote\+Address,  }\item[{unsigned short \&}]{remote\+Port }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Receive data from a remote address. 
+
+Recieve data from another socket.
+
+
+\begin{DoxyParams}{Parameters}
+{\em data} & The data to receive \\
+\hline
+{\em size} & The size of the data \\
+\hline
+{\em received} & The size of the data received \\
+\hline
+{\em remote\+Address} & The address of the remote \\
+\hline
+{\em remote\+Port} & The port of the remote \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The status of the socket
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em data} & the data you will receive \\
+\hline
+{\em size} & the size of the data you will receive \\
+\hline
+{\em remote\+Address} & the address of the socket that want to send you data \\
+\hline
+{\em remote\+Port} & the port of the socket that want to send you data \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the status of the socket after you receive data 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classASocket_ae8f7f9b72bdae53a34d4fd15d99a714a}{ASocket}}.
+
+\mbox{\Hypertarget{classSFMLSocket_add1765d09aa276d73f53723a18b1c4cd}\label{classSFMLSocket_add1765d09aa276d73f53723a18b1c4cd}} 
+\index{SFMLSocket@{SFMLSocket}!receive@{receive}}
+\index{receive@{receive}!SFMLSocket@{SFMLSocket}}
+\doxysubsubsection{\texorpdfstring{receive()}{receive()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classASocket_ab681e60ce63943f3cc3be599dbc8a29d}{Socket\+Status}} SFMLSocket\+::receive (\begin{DoxyParamCaption}\item[{void $\ast$}]{data,  }\item[{std\+::size\+\_\+t}]{size,  }\item[{std\+::size\+\_\+t \&}]{received,  }\item[{std\+::string \&}]{remote\+Address,  }\item[{unsigned short \&}]{remote\+Port }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Receive data from a remote address. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em data} & Data to receive \\
+\hline
+{\em size} & Size of the data \\
+\hline
+{\em received} & Size of the received data \\
+\hline
+{\em remote\+Address} & Remote address \\
+\hline
+{\em remote\+Port} & Remote port \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Socket status 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classASocket_ae8f7f9b72bdae53a34d4fd15d99a714a}{ASocket}}.
+
+\mbox{\Hypertarget{classSFMLSocket_afc28f5bcd971a40a89b7b72143cf4ecf}\label{classSFMLSocket_afc28f5bcd971a40a89b7b72143cf4ecf}} 
+\index{SFMLSocket@{SFMLSocket}!send@{send}}
+\index{send@{send}!SFMLSocket@{SFMLSocket}}
+\doxysubsubsection{\texorpdfstring{send()}{send()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classASocket_ab681e60ce63943f3cc3be599dbc8a29d}{Socket\+Status}} SFMLSocket\+::send (\begin{DoxyParamCaption}\item[{const void $\ast$}]{data,  }\item[{std\+::size\+\_\+t}]{size,  }\item[{const std\+::string \&}]{remote\+Address,  }\item[{unsigned short}]{remote\+Port }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Send data to another socket. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em data} & the data you want to send \\
+\hline
+{\em size} & the size of the data you want to send \\
+\hline
+{\em remote\+Address} & the address of the socket that you want to send data \\
+\hline
+{\em remote\+Port} & the port of the socket you want to send data \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the status of the socket after you tried to send data 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classASocket_ac017dbbd695a90845fecc37b9b283f24}{ASocket}}.
+
+\mbox{\Hypertarget{classSFMLSocket_afc28f5bcd971a40a89b7b72143cf4ecf}\label{classSFMLSocket_afc28f5bcd971a40a89b7b72143cf4ecf}} 
+\index{SFMLSocket@{SFMLSocket}!send@{send}}
+\index{send@{send}!SFMLSocket@{SFMLSocket}}
+\doxysubsubsection{\texorpdfstring{send()}{send()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classASocket_ab681e60ce63943f3cc3be599dbc8a29d}{Socket\+Status}} SFMLSocket\+::send (\begin{DoxyParamCaption}\item[{const void $\ast$}]{data,  }\item[{std\+::size\+\_\+t}]{size,  }\item[{const std\+::string \&}]{remote\+Address,  }\item[{unsigned short}]{remote\+Port }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Send data to a remote address. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em data} & Data to send \\
+\hline
+{\em size} & Size of the data \\
+\hline
+{\em remote\+Address} & Remote address \\
+\hline
+{\em remote\+Port} & Remote port \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Socket status 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classASocket_ac017dbbd695a90845fecc37b9b283f24}{ASocket}}.
+
+\mbox{\Hypertarget{classSFMLSocket_aba3c9ef5c25da1927145c2d94b35b5bd}\label{classSFMLSocket_aba3c9ef5c25da1927145c2d94b35b5bd}} 
+\index{SFMLSocket@{SFMLSocket}!setBlocking@{setBlocking}}
+\index{setBlocking@{setBlocking}!SFMLSocket@{SFMLSocket}}
+\doxysubsubsection{\texorpdfstring{setBlocking()}{setBlocking()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void SFMLSocket\+::set\+Blocking (\begin{DoxyParamCaption}\item[{bool}]{blocking }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Set the socket to blocking or not. 
+
+Change the blocking state of the socket.
+
+
+\begin{DoxyParams}{Parameters}
+{\em blocking} & The blocking state\\
+\hline
+{\em blocking} & the statement you want to put on the socket \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classASocket_aeb468ac309e5a0382fcc3832f779db61}{ASocket}}.
+
+\mbox{\Hypertarget{classSFMLSocket_aba3c9ef5c25da1927145c2d94b35b5bd}\label{classSFMLSocket_aba3c9ef5c25da1927145c2d94b35b5bd}} 
+\index{SFMLSocket@{SFMLSocket}!setBlocking@{setBlocking}}
+\index{setBlocking@{setBlocking}!SFMLSocket@{SFMLSocket}}
+\doxysubsubsection{\texorpdfstring{setBlocking()}{setBlocking()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void SFMLSocket\+::set\+Blocking (\begin{DoxyParamCaption}\item[{bool}]{blocking }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Set the socket to blocking. 
+
+Set the blocking mode of the socket.
+
+
+\begin{DoxyParams}{Parameters}
+{\em blocking} & The new blocking state \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classASocket_aeb468ac309e5a0382fcc3832f779db61}{ASocket}}.
+
+\mbox{\Hypertarget{classSFMLSocket_aea54370a0021856f6944161c96657a71}\label{classSFMLSocket_aea54370a0021856f6944161c96657a71}} 
+\index{SFMLSocket@{SFMLSocket}!unbind@{unbind}}
+\index{unbind@{unbind}!SFMLSocket@{SFMLSocket}}
+\doxysubsubsection{\texorpdfstring{unbind()}{unbind()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void SFMLSocket\+::unbind (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Unbind the socket. 
+
+Unbind a socket. 
+
+Implements \mbox{\hyperlink{classASocket_a9f732fa093959831dea0670e81ee31dc}{ASocket}}.
+
+\mbox{\Hypertarget{classSFMLSocket_aea54370a0021856f6944161c96657a71}\label{classSFMLSocket_aea54370a0021856f6944161c96657a71}} 
+\index{SFMLSocket@{SFMLSocket}!unbind@{unbind}}
+\index{unbind@{unbind}!SFMLSocket@{SFMLSocket}}
+\doxysubsubsection{\texorpdfstring{unbind()}{unbind()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void SFMLSocket\+::unbind (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Unbind the socket. 
+
+
+
+Implements \mbox{\hyperlink{classASocket_a9f732fa093959831dea0670e81ee31dc}{ASocket}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Client/\+SFMLEngine/SFMLSocket.\+hpp\item 
+Client/\+SFMLEngine/SFMLSocket.\+cpp\end{DoxyCompactItemize}

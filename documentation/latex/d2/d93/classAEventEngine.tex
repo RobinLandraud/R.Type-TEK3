@@ -1,0 +1,171 @@
+\hypertarget{classAEventEngine}{}\doxysection{AEvent\+Engine Class Reference}
+\label{classAEventEngine}\index{AEventEngine@{AEventEngine}}
+
+
+Abstract class for event engine. Used to manage events.  
+
+
+
+
+{\ttfamily \#include $<$AEvent\+Engine.\+hpp$>$}
+
+Inheritance diagram for AEvent\+Engine\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{d2/d93/classAEventEngine}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classAEventEngine_aba5c5269001ef499b0f25e98ce68a0e8}{AEvent\+Engine}} ()=default
+\item 
+virtual \mbox{\hyperlink{classAEventEngine_ac257ffe224e5c1b5c0a67b7a91381014}{$\sim$\+AEvent\+Engine}} ()=default
+\item 
+virtual void \mbox{\hyperlink{classAEventEngine_ae31d54a5e793c6ce869dec111bd3eb1c}{update}} ()=0
+\begin{DoxyCompactList}\small\item\em Update the event engine. \end{DoxyCompactList}\item 
+std\+::vector$<$ Key $>$ \& \mbox{\hyperlink{classAEventEngine_abb6494a165e42ed382c6f1d0343cd88a}{get\+Keys\+Pressed}} ()
+\begin{DoxyCompactList}\small\item\em Get the keys pressed. \end{DoxyCompactList}\item 
+std\+::vector$<$ Key $>$ \& \mbox{\hyperlink{classAEventEngine_ae7f65cadb467287e2a7d9a43c9b0b888}{get\+Keys\+Released}} ()
+\begin{DoxyCompactList}\small\item\em Get the keys released. \end{DoxyCompactList}\item 
+std\+::vector$<$ Event\+Type $>$ \& \mbox{\hyperlink{classAEventEngine_a6b811d70305f0e4f6db322237bd0e635}{get\+Events}} ()
+\begin{DoxyCompactList}\small\item\em Get the events. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structmouse__t}{mouse\+\_\+t}} \& \mbox{\hyperlink{classAEventEngine_aff75e1ca32a27e4ce649802d6abb952b}{get\+Mouse}} ()
+\begin{DoxyCompactList}\small\item\em Get the mouse. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ Key $>$ \mbox{\hyperlink{classAEventEngine_ab04d3e5b43c0869c0b404d1c3c6316c4}{keys\+Pressed}}
+\item 
+std\+::vector$<$ Key $>$ \mbox{\hyperlink{classAEventEngine_aeb1d3983dbe613e9f9f8e0bb6ebacc82}{keys\+Released}}
+\item 
+std\+::vector$<$ Event\+Type $>$ \mbox{\hyperlink{classAEventEngine_aab58b9930cc8cbc4ff2dc19033fabac6}{events}}
+\item 
+\mbox{\hyperlink{structmouse__t}{mouse\+\_\+t}} \mbox{\hyperlink{classAEventEngine_ac8545aab7d91ce331ebc6f9296a94e97}{mouse}} = \{0, 0, false, false, false, 0\}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Abstract class for event engine. Used to manage events. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classAEventEngine_aba5c5269001ef499b0f25e98ce68a0e8}\label{classAEventEngine_aba5c5269001ef499b0f25e98ce68a0e8}} 
+\index{AEventEngine@{AEventEngine}!AEventEngine@{AEventEngine}}
+\index{AEventEngine@{AEventEngine}!AEventEngine@{AEventEngine}}
+\doxysubsubsection{\texorpdfstring{AEventEngine()}{AEventEngine()}}
+{\footnotesize\ttfamily AEvent\+Engine\+::\+AEvent\+Engine (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+Default constructor \mbox{\Hypertarget{classAEventEngine_ac257ffe224e5c1b5c0a67b7a91381014}\label{classAEventEngine_ac257ffe224e5c1b5c0a67b7a91381014}} 
+\index{AEventEngine@{AEventEngine}!````~AEventEngine@{$\sim$AEventEngine}}
+\index{````~AEventEngine@{$\sim$AEventEngine}!AEventEngine@{AEventEngine}}
+\doxysubsubsection{\texorpdfstring{$\sim$AEventEngine()}{~AEventEngine()}}
+{\footnotesize\ttfamily virtual AEvent\+Engine\+::$\sim$\+AEvent\+Engine (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [default]}}
+
+Default destructor 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classAEventEngine_a6b811d70305f0e4f6db322237bd0e635}\label{classAEventEngine_a6b811d70305f0e4f6db322237bd0e635}} 
+\index{AEventEngine@{AEventEngine}!getEvents@{getEvents}}
+\index{getEvents@{getEvents}!AEventEngine@{AEventEngine}}
+\doxysubsubsection{\texorpdfstring{getEvents()}{getEvents()}}
+{\footnotesize\ttfamily std\+::vector$<$ Event\+Type $>$ \& AEvent\+Engine\+::get\+Events (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the events. 
+
+\begin{DoxyReturn}{Returns}
+the events
+
+The events 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classAEventEngine_abb6494a165e42ed382c6f1d0343cd88a}\label{classAEventEngine_abb6494a165e42ed382c6f1d0343cd88a}} 
+\index{AEventEngine@{AEventEngine}!getKeysPressed@{getKeysPressed}}
+\index{getKeysPressed@{getKeysPressed}!AEventEngine@{AEventEngine}}
+\doxysubsubsection{\texorpdfstring{getKeysPressed()}{getKeysPressed()}}
+{\footnotesize\ttfamily std\+::vector$<$ Key $>$ \& AEvent\+Engine\+::get\+Keys\+Pressed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the keys pressed. 
+
+\begin{DoxyReturn}{Returns}
+the keys pressed
+
+The keys pressed 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classAEventEngine_ae7f65cadb467287e2a7d9a43c9b0b888}\label{classAEventEngine_ae7f65cadb467287e2a7d9a43c9b0b888}} 
+\index{AEventEngine@{AEventEngine}!getKeysReleased@{getKeysReleased}}
+\index{getKeysReleased@{getKeysReleased}!AEventEngine@{AEventEngine}}
+\doxysubsubsection{\texorpdfstring{getKeysReleased()}{getKeysReleased()}}
+{\footnotesize\ttfamily std\+::vector$<$ Key $>$ \& AEvent\+Engine\+::get\+Keys\+Released (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the keys released. 
+
+\begin{DoxyReturn}{Returns}
+the keys released
+
+The keys released 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classAEventEngine_aff75e1ca32a27e4ce649802d6abb952b}\label{classAEventEngine_aff75e1ca32a27e4ce649802d6abb952b}} 
+\index{AEventEngine@{AEventEngine}!getMouse@{getMouse}}
+\index{getMouse@{getMouse}!AEventEngine@{AEventEngine}}
+\doxysubsubsection{\texorpdfstring{getMouse()}{getMouse()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structmouse__t}{mouse\+\_\+t}} \& AEvent\+Engine\+::get\+Mouse (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the mouse. 
+
+\begin{DoxyReturn}{Returns}
+The mouse 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classAEventEngine_ae31d54a5e793c6ce869dec111bd3eb1c}\label{classAEventEngine_ae31d54a5e793c6ce869dec111bd3eb1c}} 
+\index{AEventEngine@{AEventEngine}!update@{update}}
+\index{update@{update}!AEventEngine@{AEventEngine}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void AEvent\+Engine\+::update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Update the event engine. 
+
+
+
+Implemented in \mbox{\hyperlink{classSFMLEventEngine_a49ba3c0febab5d1ff27f3e388436342e}{SFMLEvent\+Engine}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classAEventEngine_aab58b9930cc8cbc4ff2dc19033fabac6}\label{classAEventEngine_aab58b9930cc8cbc4ff2dc19033fabac6}} 
+\index{AEventEngine@{AEventEngine}!events@{events}}
+\index{events@{events}!AEventEngine@{AEventEngine}}
+\doxysubsubsection{\texorpdfstring{events}{events}}
+{\footnotesize\ttfamily std\+::vector$<$Event\+Type$>$ AEvent\+Engine\+::events\hspace{0.3cm}{\ttfamily [protected]}}
+
+Events \mbox{\Hypertarget{classAEventEngine_ab04d3e5b43c0869c0b404d1c3c6316c4}\label{classAEventEngine_ab04d3e5b43c0869c0b404d1c3c6316c4}} 
+\index{AEventEngine@{AEventEngine}!keysPressed@{keysPressed}}
+\index{keysPressed@{keysPressed}!AEventEngine@{AEventEngine}}
+\doxysubsubsection{\texorpdfstring{keysPressed}{keysPressed}}
+{\footnotesize\ttfamily std\+::vector$<$Key$>$ AEvent\+Engine\+::keys\+Pressed\hspace{0.3cm}{\ttfamily [protected]}}
+
+Keys pressed \mbox{\Hypertarget{classAEventEngine_aeb1d3983dbe613e9f9f8e0bb6ebacc82}\label{classAEventEngine_aeb1d3983dbe613e9f9f8e0bb6ebacc82}} 
+\index{AEventEngine@{AEventEngine}!keysReleased@{keysReleased}}
+\index{keysReleased@{keysReleased}!AEventEngine@{AEventEngine}}
+\doxysubsubsection{\texorpdfstring{keysReleased}{keysReleased}}
+{\footnotesize\ttfamily std\+::vector$<$Key$>$ AEvent\+Engine\+::keys\+Released\hspace{0.3cm}{\ttfamily [protected]}}
+
+Keys released \mbox{\Hypertarget{classAEventEngine_ac8545aab7d91ce331ebc6f9296a94e97}\label{classAEventEngine_ac8545aab7d91ce331ebc6f9296a94e97}} 
+\index{AEventEngine@{AEventEngine}!mouse@{mouse}}
+\index{mouse@{mouse}!AEventEngine@{AEventEngine}}
+\doxysubsubsection{\texorpdfstring{mouse}{mouse}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structmouse__t}{mouse\+\_\+t}} AEvent\+Engine\+::mouse = \{0, 0, false, false, false, 0\}\hspace{0.3cm}{\ttfamily [protected]}}
+
+Mouse 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Client/\+AEngine/AEvent\+Engine.\+hpp\item 
+Client/\+AEngine/AEvent\+Engine.\+cpp\end{DoxyCompactItemize}

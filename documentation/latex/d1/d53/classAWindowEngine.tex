@@ -1,0 +1,117 @@
+\hypertarget{classAWindowEngine}{}\doxysection{AWindow\+Engine Class Reference}
+\label{classAWindowEngine}\index{AWindowEngine@{AWindowEngine}}
+
+
+Abstract class for window engine. Used to create and update the window.  
+
+
+
+
+{\ttfamily \#include $<$AWindow\+Engine.\+hpp$>$}
+
+Inheritance diagram for AWindow\+Engine\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{d1/d53/classAWindowEngine}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classAWindowEngine_a7c7079b1273ea77b0d3e8ab7152ee442}{AWindow\+Engine}} ()=default
+\item 
+virtual \mbox{\hyperlink{classAWindowEngine_ad8093560ebf792a87dedbe75f108298b}{$\sim$\+AWindow\+Engine}} ()=default
+\item 
+virtual void \mbox{\hyperlink{classAWindowEngine_a405089e987181e845cceef98a07f21bb}{close\+Window}} ()=0
+\begin{DoxyCompactList}\small\item\em Close the window. \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{classAWindowEngine_a40b81c2d3325f4eaa306fc25deef164d}{is\+Open}} ()=0
+\begin{DoxyCompactList}\small\item\em Check if the window is open. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classAWindowEngine_a96ce8f93010fa8dbf84e422b9b9f0239}{clear}} ()=0
+\begin{DoxyCompactList}\small\item\em Clear the window. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classAWindowEngine_a56e01ac2a54c1822dea0817c3186c525}{display}} ()=0
+\begin{DoxyCompactList}\small\item\em Display the window. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Abstract class for window engine. Used to create and update the window. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classAWindowEngine_a7c7079b1273ea77b0d3e8ab7152ee442}\label{classAWindowEngine_a7c7079b1273ea77b0d3e8ab7152ee442}} 
+\index{AWindowEngine@{AWindowEngine}!AWindowEngine@{AWindowEngine}}
+\index{AWindowEngine@{AWindowEngine}!AWindowEngine@{AWindowEngine}}
+\doxysubsubsection{\texorpdfstring{AWindowEngine()}{AWindowEngine()}}
+{\footnotesize\ttfamily AWindow\+Engine\+::\+AWindow\+Engine (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+Default constructor \mbox{\Hypertarget{classAWindowEngine_ad8093560ebf792a87dedbe75f108298b}\label{classAWindowEngine_ad8093560ebf792a87dedbe75f108298b}} 
+\index{AWindowEngine@{AWindowEngine}!````~AWindowEngine@{$\sim$AWindowEngine}}
+\index{````~AWindowEngine@{$\sim$AWindowEngine}!AWindowEngine@{AWindowEngine}}
+\doxysubsubsection{\texorpdfstring{$\sim$AWindowEngine()}{~AWindowEngine()}}
+{\footnotesize\ttfamily virtual AWindow\+Engine\+::$\sim$\+AWindow\+Engine (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [default]}}
+
+Default destructor 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classAWindowEngine_a96ce8f93010fa8dbf84e422b9b9f0239}\label{classAWindowEngine_a96ce8f93010fa8dbf84e422b9b9f0239}} 
+\index{AWindowEngine@{AWindowEngine}!clear@{clear}}
+\index{clear@{clear}!AWindowEngine@{AWindowEngine}}
+\doxysubsubsection{\texorpdfstring{clear()}{clear()}}
+{\footnotesize\ttfamily void AWindow\+Engine\+::clear (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Clear the window. 
+
+
+
+Implemented in \mbox{\hyperlink{classSFMLWindowEngine_a4bf64c45dbea8ff188c81bee6d67664b}{SFMLWindow\+Engine}}.
+
+\mbox{\Hypertarget{classAWindowEngine_a405089e987181e845cceef98a07f21bb}\label{classAWindowEngine_a405089e987181e845cceef98a07f21bb}} 
+\index{AWindowEngine@{AWindowEngine}!closeWindow@{closeWindow}}
+\index{closeWindow@{closeWindow}!AWindowEngine@{AWindowEngine}}
+\doxysubsubsection{\texorpdfstring{closeWindow()}{closeWindow()}}
+{\footnotesize\ttfamily void AWindow\+Engine\+::close\+Window (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Close the window. 
+
+
+
+Implemented in \mbox{\hyperlink{classSFMLWindowEngine_ad230d818e51235acee909caefe862878}{SFMLWindow\+Engine}}.
+
+\mbox{\Hypertarget{classAWindowEngine_a56e01ac2a54c1822dea0817c3186c525}\label{classAWindowEngine_a56e01ac2a54c1822dea0817c3186c525}} 
+\index{AWindowEngine@{AWindowEngine}!display@{display}}
+\index{display@{display}!AWindowEngine@{AWindowEngine}}
+\doxysubsubsection{\texorpdfstring{display()}{display()}}
+{\footnotesize\ttfamily void AWindow\+Engine\+::display (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Display the window. 
+
+
+
+Implemented in \mbox{\hyperlink{classSFMLWindowEngine_ae0b8260749d68e635424787bf759d45b}{SFMLWindow\+Engine}}.
+
+\mbox{\Hypertarget{classAWindowEngine_a40b81c2d3325f4eaa306fc25deef164d}\label{classAWindowEngine_a40b81c2d3325f4eaa306fc25deef164d}} 
+\index{AWindowEngine@{AWindowEngine}!isOpen@{isOpen}}
+\index{isOpen@{isOpen}!AWindowEngine@{AWindowEngine}}
+\doxysubsubsection{\texorpdfstring{isOpen()}{isOpen()}}
+{\footnotesize\ttfamily void AWindow\+Engine\+::is\+Open (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Check if the window is open. 
+
+\begin{DoxyReturn}{Returns}
+True if the window is open 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classSFMLWindowEngine_abcd5e6ddb39069910b4d02f57cee2ccf}{SFMLWindow\+Engine}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Client/\+AEngine/AWindow\+Engine.\+hpp\end{DoxyCompactItemize}

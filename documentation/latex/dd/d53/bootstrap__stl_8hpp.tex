@@ -1,0 +1,304 @@
+\hypertarget{bootstrap__stl_8hpp}{}\doxysection{Chai\+Script-\/6.1.0/include/chaiscript/dispatchkit/bootstrap\+\_\+stl.hpp File Reference}
+\label{bootstrap__stl_8hpp}\index{ChaiScript-\/6.1.0/include/chaiscript/dispatchkit/bootstrap\_stl.hpp@{ChaiScript-\/6.1.0/include/chaiscript/dispatchkit/bootstrap\_stl.hpp}}
+{\ttfamily \#include $<$functional$>$}\newline
+{\ttfamily \#include $<$memory$>$}\newline
+{\ttfamily \#include $<$stdexcept$>$}\newline
+{\ttfamily \#include $<$typeinfo$>$}\newline
+{\ttfamily \#include $<$vector$>$}\newline
+{\ttfamily \#include \char`\"{}bootstrap.\+hpp\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}boxed\+\_\+value.\+hpp\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}dispatchkit.\+hpp\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}operators.\+hpp\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}proxy\+\_\+constructors.\+hpp\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}register\+\_\+function.\+hpp\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}type\+\_\+info.\+hpp\char`\"{}}\newline
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structchaiscript_1_1bootstrap_1_1standard__library_1_1Bidir__Range}{chaiscript\+::bootstrap\+::standard\+\_\+library\+::\+Bidir\+\_\+\+Range$<$ Container, Iter\+Type $>$}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \mbox{\hyperlink{namespacechaiscript}{chaiscript}}
+\begin{DoxyCompactList}\small\item\em Namespace chaiscript contains every API call that the average user will be concerned with. \end{DoxyCompactList}\item 
+ \mbox{\hyperlink{namespacechaiscript_1_1bootstrap}{chaiscript\+::bootstrap}}
+\begin{DoxyCompactList}\small\item\em Classes and functions useful for bootstrapping of \mbox{\hyperlink{classchaiscript_1_1ChaiScript}{Chai\+Script}} and adding of new types. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{bootstrap__stl_8hpp_a3924e17461a3b1ed20f72cba63036bcb}\label{bootstrap__stl_8hpp_a3924e17461a3b1ed20f72cba63036bcb}} 
+{\footnotesize template$<$typename T $>$ }\\size\+\_\+t {\bfseries chaiscript\+::bootstrap\+::standard\+\_\+library\+::detail\+::count} (const T \&t\+\_\+target, const typename T\+::key\+\_\+type \&t\+\_\+key)
+\item 
+\mbox{\Hypertarget{bootstrap__stl_8hpp_af293e75e9187af6179ae3280da361fbd}\label{bootstrap__stl_8hpp_af293e75e9187af6179ae3280da361fbd}} 
+{\footnotesize template$<$typename T $>$ }\\void {\bfseries chaiscript\+::bootstrap\+::standard\+\_\+library\+::detail\+::insert} (T \&t\+\_\+target, const T \&t\+\_\+other)
+\item 
+\mbox{\Hypertarget{bootstrap__stl_8hpp_a418b07ec98e20c1ac20ba5f971dcb659}\label{bootstrap__stl_8hpp_a418b07ec98e20c1ac20ba5f971dcb659}} 
+{\footnotesize template$<$typename T $>$ }\\void {\bfseries chaiscript\+::bootstrap\+::standard\+\_\+library\+::detail\+::insert\+\_\+ref} (T \&t\+\_\+target, const typename T\+::value\+\_\+type \&t\+\_\+val)
+\item 
+{\footnotesize template$<$typename Bidir\+\_\+\+Type $>$ }\\void \mbox{\hyperlink{bootstrap__stl_8hpp_ab1a37f11885522faa2cc9ab5dec763d5}{chaiscript\+::bootstrap\+::standard\+\_\+library\+::detail\+::input\+\_\+range\+\_\+type\+\_\+impl}} (const std\+::string \&type, Module \&m)
+\begin{DoxyCompactList}\small\item\em Add \mbox{\hyperlink{structchaiscript_1_1bootstrap_1_1standard__library_1_1Bidir__Range}{Bidir\+\_\+\+Range}} support for the given Container\+Type. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename Type $>$ }\\void \mbox{\hyperlink{bootstrap__stl_8hpp_a595b3f3b155ba9d3f9fdbfc83c5667a6}{chaiscript\+::bootstrap\+::standard\+\_\+library\+::detail\+::insert\+\_\+at}} (Type \&container, int pos, const typename Type\+::value\+\_\+type \&v)
+\begin{DoxyCompactList}\small\item\em Algorithm for inserting at a specific position into a container. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename Type $>$ }\\void \mbox{\hyperlink{bootstrap__stl_8hpp_ad986537b8ad30e794dc25429c62923e9}{chaiscript\+::bootstrap\+::standard\+\_\+library\+::detail\+::erase\+\_\+at}} (Type \&container, int pos)
+\begin{DoxyCompactList}\small\item\em Algorithm for erasing a specific position from a container. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{bootstrap__stl_8hpp_a50e2ff8c9a8e38ab3f4b67571b990e80}\label{bootstrap__stl_8hpp_a50e2ff8c9a8e38ab3f4b67571b990e80}} 
+{\footnotesize template$<$typename Container\+Type $>$ }\\void {\bfseries chaiscript\+::bootstrap\+::standard\+\_\+library\+::input\+\_\+range\+\_\+type} (const std\+::string \&type, Module \&m)
+\item 
+\mbox{\Hypertarget{bootstrap__stl_8hpp_aafb39c22683de892edb0c7c360017144}\label{bootstrap__stl_8hpp_aafb39c22683de892edb0c7c360017144}} 
+{\footnotesize template$<$typename Container\+Type $>$ }\\Module\+Ptr {\bfseries chaiscript\+::bootstrap\+::standard\+\_\+library\+::input\+\_\+range\+\_\+type} (const std\+::string \&type)
+\item 
+{\footnotesize template$<$typename Container\+Type $>$ }\\void \mbox{\hyperlink{bootstrap__stl_8hpp_a79ad40d2c8f924f12cb33ae5b20145c4}{chaiscript\+::bootstrap\+::standard\+\_\+library\+::random\+\_\+access\+\_\+container\+\_\+type}} (const std\+::string \&, Module \&m)
+\item 
+\mbox{\Hypertarget{bootstrap__stl_8hpp_a0d14a0528d778019e5115a67a06feaab}\label{bootstrap__stl_8hpp_a0d14a0528d778019e5115a67a06feaab}} 
+{\footnotesize template$<$typename Container\+Type $>$ }\\Module\+Ptr {\bfseries chaiscript\+::bootstrap\+::standard\+\_\+library\+::random\+\_\+access\+\_\+container\+\_\+type} (const std\+::string \&type)
+\item 
+{\footnotesize template$<$typename Container\+Type $>$ }\\void \mbox{\hyperlink{bootstrap__stl_8hpp_a18dc18ba5e602693fbb6481c86762a0e}{chaiscript\+::bootstrap\+::standard\+\_\+library\+::assignable\+\_\+type}} (const std\+::string \&type, Module \&m)
+\item 
+\mbox{\Hypertarget{bootstrap__stl_8hpp_a5e5701d6b9330973910fe4344b14ef77}\label{bootstrap__stl_8hpp_a5e5701d6b9330973910fe4344b14ef77}} 
+{\footnotesize template$<$typename Container\+Type $>$ }\\Module\+Ptr {\bfseries chaiscript\+::bootstrap\+::standard\+\_\+library\+::assignable\+\_\+type} (const std\+::string \&type)
+\item 
+{\footnotesize template$<$typename Container\+Type $>$ }\\void \mbox{\hyperlink{bootstrap__stl_8hpp_a9a54c84b5e7631a1922ffe00d15f647e}{chaiscript\+::bootstrap\+::standard\+\_\+library\+::resizable\+\_\+type}} (const std\+::string \&, Module \&m)
+\item 
+\mbox{\Hypertarget{bootstrap__stl_8hpp_adf62a8eafdf8323b65c1beb699039127}\label{bootstrap__stl_8hpp_adf62a8eafdf8323b65c1beb699039127}} 
+{\footnotesize template$<$typename Container\+Type $>$ }\\Module\+Ptr {\bfseries chaiscript\+::bootstrap\+::standard\+\_\+library\+::resizable\+\_\+type} (const std\+::string \&type)
+\item 
+{\footnotesize template$<$typename Container\+Type $>$ }\\void \mbox{\hyperlink{bootstrap__stl_8hpp_a8d289fb39509da7afec1ec0b1d908ed4}{chaiscript\+::bootstrap\+::standard\+\_\+library\+::reservable\+\_\+type}} (const std\+::string \&, Module \&m)
+\item 
+\mbox{\Hypertarget{bootstrap__stl_8hpp_a286cc054abc19bc21210551de02b85c8}\label{bootstrap__stl_8hpp_a286cc054abc19bc21210551de02b85c8}} 
+{\footnotesize template$<$typename Container\+Type $>$ }\\Module\+Ptr {\bfseries chaiscript\+::bootstrap\+::standard\+\_\+library\+::reservable\+\_\+type} (const std\+::string \&type)
+\item 
+{\footnotesize template$<$typename Container\+Type $>$ }\\void \mbox{\hyperlink{bootstrap__stl_8hpp_a2d4190860902640b45646fc26e6f6bd9}{chaiscript\+::bootstrap\+::standard\+\_\+library\+::container\+\_\+type}} (const std\+::string \&, Module \&m)
+\item 
+\mbox{\Hypertarget{bootstrap__stl_8hpp_afbfbd9e9e5640f7ff88038c9a58e8e1e}\label{bootstrap__stl_8hpp_afbfbd9e9e5640f7ff88038c9a58e8e1e}} 
+{\footnotesize template$<$typename Container\+Type $>$ }\\Module\+Ptr {\bfseries chaiscript\+::bootstrap\+::standard\+\_\+library\+::container\+\_\+type} (const std\+::string \&type)
+\item 
+{\footnotesize template$<$typename Type $>$ }\\void \mbox{\hyperlink{bootstrap__stl_8hpp_acf69abe99989bbdb3707cdeb39a69f68}{chaiscript\+::bootstrap\+::standard\+\_\+library\+::default\+\_\+constructible\+\_\+type}} (const std\+::string \&type, Module \&m)
+\item 
+\mbox{\Hypertarget{bootstrap__stl_8hpp_a4cb7bc9ae8550e433bc6f2ddc22b082c}\label{bootstrap__stl_8hpp_a4cb7bc9ae8550e433bc6f2ddc22b082c}} 
+{\footnotesize template$<$typename Type $>$ }\\Module\+Ptr {\bfseries chaiscript\+::bootstrap\+::standard\+\_\+library\+::default\+\_\+constructible\+\_\+type} (const std\+::string \&type)
+\item 
+{\footnotesize template$<$typename Container\+Type $>$ }\\void \mbox{\hyperlink{bootstrap__stl_8hpp_a52a74af69f0fd6f17914d4dfc8ae8f34}{chaiscript\+::bootstrap\+::standard\+\_\+library\+::sequence\+\_\+type}} (const std\+::string \&, Module \&m)
+\item 
+\mbox{\Hypertarget{bootstrap__stl_8hpp_a19cad857d7c1a8e93252d54ebccbf8a2}\label{bootstrap__stl_8hpp_a19cad857d7c1a8e93252d54ebccbf8a2}} 
+{\footnotesize template$<$typename Container\+Type $>$ }\\Module\+Ptr {\bfseries chaiscript\+::bootstrap\+::standard\+\_\+library\+::sequence\+\_\+type} (const std\+::string \&type)
+\item 
+{\footnotesize template$<$typename Container\+Type $>$ }\\void \mbox{\hyperlink{bootstrap__stl_8hpp_a56010a85298e538f32ca159a6bf7a269}{chaiscript\+::bootstrap\+::standard\+\_\+library\+::back\+\_\+insertion\+\_\+sequence\+\_\+type}} (const std\+::string \&type, Module \&m)
+\item 
+\mbox{\Hypertarget{bootstrap__stl_8hpp_a2ae8f46c6dbf678b3695cf6b5976debc}\label{bootstrap__stl_8hpp_a2ae8f46c6dbf678b3695cf6b5976debc}} 
+{\footnotesize template$<$typename Container\+Type $>$ }\\Module\+Ptr {\bfseries chaiscript\+::bootstrap\+::standard\+\_\+library\+::back\+\_\+insertion\+\_\+sequence\+\_\+type} (const std\+::string \&type)
+\item 
+{\footnotesize template$<$typename Container\+Type $>$ }\\void \mbox{\hyperlink{bootstrap__stl_8hpp_a94739025162cde8479e815cb0f256226}{chaiscript\+::bootstrap\+::standard\+\_\+library\+::front\+\_\+insertion\+\_\+sequence\+\_\+type}} (const std\+::string \&type, Module \&m)
+\item 
+\mbox{\Hypertarget{bootstrap__stl_8hpp_add87c74a1b56113168bc60c7d6572409}\label{bootstrap__stl_8hpp_add87c74a1b56113168bc60c7d6572409}} 
+{\footnotesize template$<$typename Container\+Type $>$ }\\Module\+Ptr {\bfseries chaiscript\+::bootstrap\+::standard\+\_\+library\+::front\+\_\+insertion\+\_\+sequence\+\_\+type} (const std\+::string \&type)
+\item 
+{\footnotesize template$<$typename Pair\+Type $>$ }\\void \mbox{\hyperlink{bootstrap__stl_8hpp_ab3f4715ce75f84e4e8e7f2a1d62c37b1}{chaiscript\+::bootstrap\+::standard\+\_\+library\+::pair\+\_\+type}} (const std\+::string \&type, Module \&m)
+\item 
+\mbox{\Hypertarget{bootstrap__stl_8hpp_ad8bb470112a19c6a0f81c8b2d351d5c3}\label{bootstrap__stl_8hpp_ad8bb470112a19c6a0f81c8b2d351d5c3}} 
+{\footnotesize template$<$typename Pair\+Type $>$ }\\Module\+Ptr {\bfseries chaiscript\+::bootstrap\+::standard\+\_\+library\+::pair\+\_\+type} (const std\+::string \&type)
+\item 
+{\footnotesize template$<$typename Container\+Type $>$ }\\void \mbox{\hyperlink{bootstrap__stl_8hpp_a66c98a75b986549e36bb9080e56abbfe}{chaiscript\+::bootstrap\+::standard\+\_\+library\+::pair\+\_\+associative\+\_\+container\+\_\+type}} (const std\+::string \&type, Module \&m)
+\item 
+\mbox{\Hypertarget{bootstrap__stl_8hpp_aab1bd7acfac19c618e7920ad093495a4}\label{bootstrap__stl_8hpp_aab1bd7acfac19c618e7920ad093495a4}} 
+{\footnotesize template$<$typename Container\+Type $>$ }\\Module\+Ptr {\bfseries chaiscript\+::bootstrap\+::standard\+\_\+library\+::pair\+\_\+associative\+\_\+container\+\_\+type} (const std\+::string \&type)
+\item 
+{\footnotesize template$<$typename Container\+Type $>$ }\\void \mbox{\hyperlink{bootstrap__stl_8hpp_ab2378792453dc915790543566ddee624}{chaiscript\+::bootstrap\+::standard\+\_\+library\+::unique\+\_\+associative\+\_\+container\+\_\+type}} (const std\+::string \&, Module \&m)
+\item 
+\mbox{\Hypertarget{bootstrap__stl_8hpp_a2de22c8f3db3be293c613d3d5eb6d29b}\label{bootstrap__stl_8hpp_a2de22c8f3db3be293c613d3d5eb6d29b}} 
+{\footnotesize template$<$typename Container\+Type $>$ }\\Module\+Ptr {\bfseries chaiscript\+::bootstrap\+::standard\+\_\+library\+::unique\+\_\+associative\+\_\+container\+\_\+type} (const std\+::string \&type)
+\item 
+{\footnotesize template$<$typename Map\+Type $>$ }\\void \mbox{\hyperlink{bootstrap__stl_8hpp_a29c5d1ba31952f18fe93f4a6f6ce8234}{chaiscript\+::bootstrap\+::standard\+\_\+library\+::map\+\_\+type}} (const std\+::string \&type, Module \&m)
+\item 
+\mbox{\Hypertarget{bootstrap__stl_8hpp_a16aac0a7846751f3e7dc5e586a87943e}\label{bootstrap__stl_8hpp_a16aac0a7846751f3e7dc5e586a87943e}} 
+{\footnotesize template$<$typename Map\+Type $>$ }\\Module\+Ptr {\bfseries chaiscript\+::bootstrap\+::standard\+\_\+library\+::map\+\_\+type} (const std\+::string \&type)
+\item 
+{\footnotesize template$<$typename List\+Type $>$ }\\void \mbox{\hyperlink{bootstrap__stl_8hpp_a3f3e8a167283f17c391aad72024be2b6}{chaiscript\+::bootstrap\+::standard\+\_\+library\+::list\+\_\+type}} (const std\+::string \&type, Module \&m)
+\begin{DoxyCompactList}\small\item\em \href{http://www.sgi.com/tech/stl/List.html}{\texttt{ http\+://www.\+sgi.\+com/tech/stl/\+List.\+html}} \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{bootstrap__stl_8hpp_a0884c95abfd76c1ca7640f2581488049}\label{bootstrap__stl_8hpp_a0884c95abfd76c1ca7640f2581488049}} 
+{\footnotesize template$<$typename List\+Type $>$ }\\Module\+Ptr {\bfseries chaiscript\+::bootstrap\+::standard\+\_\+library\+::list\+\_\+type} (const std\+::string \&type)
+\item 
+{\footnotesize template$<$typename Vector\+Type $>$ }\\void \mbox{\hyperlink{bootstrap__stl_8hpp_a08f119b5351b0ea1dae0b5b5530d0c84}{chaiscript\+::bootstrap\+::standard\+\_\+library\+::vector\+\_\+type}} (const std\+::string \&type, Module \&m)
+\item 
+\mbox{\Hypertarget{bootstrap__stl_8hpp_a97fb4dc5b67d8aa91bf42422bb893c57}\label{bootstrap__stl_8hpp_a97fb4dc5b67d8aa91bf42422bb893c57}} 
+{\footnotesize template$<$typename Vector\+Type $>$ }\\Module\+Ptr {\bfseries chaiscript\+::bootstrap\+::standard\+\_\+library\+::vector\+\_\+type} (const std\+::string \&type)
+\item 
+{\footnotesize template$<$typename String $>$ }\\void \mbox{\hyperlink{bootstrap__stl_8hpp_aa407f5f04b3c9a25e6693e1642d2a53d}{chaiscript\+::bootstrap\+::standard\+\_\+library\+::string\+\_\+type}} (const std\+::string \&type, Module \&m)
+\item 
+\mbox{\Hypertarget{bootstrap__stl_8hpp_a471ba037ff7619d344959ee657596611}\label{bootstrap__stl_8hpp_a471ba037ff7619d344959ee657596611}} 
+{\footnotesize template$<$typename String $>$ }\\Module\+Ptr {\bfseries chaiscript\+::bootstrap\+::standard\+\_\+library\+::string\+\_\+type} (const std\+::string \&type)
+\item 
+{\footnotesize template$<$typename Future\+Type $>$ }\\void \mbox{\hyperlink{bootstrap__stl_8hpp_a87d1c6b6bb6a98be4533954c95e829df}{chaiscript\+::bootstrap\+::standard\+\_\+library\+::future\+\_\+type}} (const std\+::string \&type, Module \&m)
+\item 
+\mbox{\Hypertarget{bootstrap__stl_8hpp_a0e6fe4d54cb25f6073df156d34bca4f7}\label{bootstrap__stl_8hpp_a0e6fe4d54cb25f6073df156d34bca4f7}} 
+{\footnotesize template$<$typename Future\+Type $>$ }\\Module\+Ptr {\bfseries chaiscript\+::bootstrap\+::standard\+\_\+library\+::future\+\_\+type} (const std\+::string \&type)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This file contains utility functions for registration of STL container classes. The methodology used is based on the SGI STL concepts. \href{http://www.sgi.com/tech/stl/table_of_contents.html}{\texttt{ http\+://www.\+sgi.\+com/tech/stl/table\+\_\+of\+\_\+contents.\+html}} 
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{bootstrap__stl_8hpp_a18dc18ba5e602693fbb6481c86762a0e}\label{bootstrap__stl_8hpp_a18dc18ba5e602693fbb6481c86762a0e}} 
+\index{bootstrap\_stl.hpp@{bootstrap\_stl.hpp}!assignable\_type@{assignable\_type}}
+\index{assignable\_type@{assignable\_type}!bootstrap\_stl.hpp@{bootstrap\_stl.hpp}}
+\doxysubsubsection{\texorpdfstring{assignable\_type()}{assignable\_type()}}
+{\footnotesize\ttfamily template$<$typename Container\+Type $>$ \\
+void chaiscript\+::bootstrap\+::standard\+\_\+library\+::assignable\+\_\+type (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{type,  }\item[{\mbox{\hyperlink{classchaiscript_1_1Module}{Module}} \&}]{m }\end{DoxyParamCaption})}
+
+Add assignable concept to the given Container\+Type \href{http://www.sgi.com/tech/stl/Assignable.html}{\texttt{ http\+://www.\+sgi.\+com/tech/stl/\+Assignable.\+html}} \mbox{\Hypertarget{bootstrap__stl_8hpp_a56010a85298e538f32ca159a6bf7a269}\label{bootstrap__stl_8hpp_a56010a85298e538f32ca159a6bf7a269}} 
+\index{bootstrap\_stl.hpp@{bootstrap\_stl.hpp}!back\_insertion\_sequence\_type@{back\_insertion\_sequence\_type}}
+\index{back\_insertion\_sequence\_type@{back\_insertion\_sequence\_type}!bootstrap\_stl.hpp@{bootstrap\_stl.hpp}}
+\doxysubsubsection{\texorpdfstring{back\_insertion\_sequence\_type()}{back\_insertion\_sequence\_type()}}
+{\footnotesize\ttfamily template$<$typename Container\+Type $>$ \\
+void chaiscript\+::bootstrap\+::standard\+\_\+library\+::back\+\_\+insertion\+\_\+sequence\+\_\+type (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{type,  }\item[{\mbox{\hyperlink{classchaiscript_1_1Module}{Module}} \&}]{m }\end{DoxyParamCaption})}
+
+Add back insertion sequence concept to the given Container\+Type \href{http://www.sgi.com/tech/stl/BackInsertionSequence.html}{\texttt{ http\+://www.\+sgi.\+com/tech/stl/\+Back\+Insertion\+Sequence.\+html}} \mbox{\Hypertarget{bootstrap__stl_8hpp_a2d4190860902640b45646fc26e6f6bd9}\label{bootstrap__stl_8hpp_a2d4190860902640b45646fc26e6f6bd9}} 
+\index{bootstrap\_stl.hpp@{bootstrap\_stl.hpp}!container\_type@{container\_type}}
+\index{container\_type@{container\_type}!bootstrap\_stl.hpp@{bootstrap\_stl.hpp}}
+\doxysubsubsection{\texorpdfstring{container\_type()}{container\_type()}}
+{\footnotesize\ttfamily template$<$typename Container\+Type $>$ \\
+void chaiscript\+::bootstrap\+::standard\+\_\+library\+::container\+\_\+type (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{,  }\item[{\mbox{\hyperlink{classchaiscript_1_1Module}{Module}} \&}]{m }\end{DoxyParamCaption})}
+
+Add container concept to the given Container\+Type \href{http://www.sgi.com/tech/stl/Container.html}{\texttt{ http\+://www.\+sgi.\+com/tech/stl/\+Container.\+html}} \mbox{\Hypertarget{bootstrap__stl_8hpp_acf69abe99989bbdb3707cdeb39a69f68}\label{bootstrap__stl_8hpp_acf69abe99989bbdb3707cdeb39a69f68}} 
+\index{bootstrap\_stl.hpp@{bootstrap\_stl.hpp}!default\_constructible\_type@{default\_constructible\_type}}
+\index{default\_constructible\_type@{default\_constructible\_type}!bootstrap\_stl.hpp@{bootstrap\_stl.hpp}}
+\doxysubsubsection{\texorpdfstring{default\_constructible\_type()}{default\_constructible\_type()}}
+{\footnotesize\ttfamily template$<$typename Type $>$ \\
+void chaiscript\+::bootstrap\+::standard\+\_\+library\+::default\+\_\+constructible\+\_\+type (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{type,  }\item[{\mbox{\hyperlink{classchaiscript_1_1Module}{Module}} \&}]{m }\end{DoxyParamCaption})}
+
+Add default constructable concept to the given Type \href{http://www.sgi.com/tech/stl/DefaultConstructible.html}{\texttt{ http\+://www.\+sgi.\+com/tech/stl/\+Default\+Constructible.\+html}} \mbox{\Hypertarget{bootstrap__stl_8hpp_ad986537b8ad30e794dc25429c62923e9}\label{bootstrap__stl_8hpp_ad986537b8ad30e794dc25429c62923e9}} 
+\index{bootstrap\_stl.hpp@{bootstrap\_stl.hpp}!erase\_at@{erase\_at}}
+\index{erase\_at@{erase\_at}!bootstrap\_stl.hpp@{bootstrap\_stl.hpp}}
+\doxysubsubsection{\texorpdfstring{erase\_at()}{erase\_at()}}
+{\footnotesize\ttfamily template$<$typename Type $>$ \\
+void chaiscript\+::bootstrap\+::standard\+\_\+library\+::detail\+::erase\+\_\+at (\begin{DoxyParamCaption}\item[{Type \&}]{container,  }\item[{int}]{pos }\end{DoxyParamCaption})}
+
+
+
+Algorithm for erasing a specific position from a container. 
+
+\mbox{\Hypertarget{bootstrap__stl_8hpp_a94739025162cde8479e815cb0f256226}\label{bootstrap__stl_8hpp_a94739025162cde8479e815cb0f256226}} 
+\index{bootstrap\_stl.hpp@{bootstrap\_stl.hpp}!front\_insertion\_sequence\_type@{front\_insertion\_sequence\_type}}
+\index{front\_insertion\_sequence\_type@{front\_insertion\_sequence\_type}!bootstrap\_stl.hpp@{bootstrap\_stl.hpp}}
+\doxysubsubsection{\texorpdfstring{front\_insertion\_sequence\_type()}{front\_insertion\_sequence\_type()}}
+{\footnotesize\ttfamily template$<$typename Container\+Type $>$ \\
+void chaiscript\+::bootstrap\+::standard\+\_\+library\+::front\+\_\+insertion\+\_\+sequence\+\_\+type (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{type,  }\item[{\mbox{\hyperlink{classchaiscript_1_1Module}{Module}} \&}]{m }\end{DoxyParamCaption})}
+
+Front insertion sequence \href{http://www.sgi.com/tech/stl/FrontInsertionSequence.html}{\texttt{ http\+://www.\+sgi.\+com/tech/stl/\+Front\+Insertion\+Sequence.\+html}} \mbox{\Hypertarget{bootstrap__stl_8hpp_a87d1c6b6bb6a98be4533954c95e829df}\label{bootstrap__stl_8hpp_a87d1c6b6bb6a98be4533954c95e829df}} 
+\index{bootstrap\_stl.hpp@{bootstrap\_stl.hpp}!future\_type@{future\_type}}
+\index{future\_type@{future\_type}!bootstrap\_stl.hpp@{bootstrap\_stl.hpp}}
+\doxysubsubsection{\texorpdfstring{future\_type()}{future\_type()}}
+{\footnotesize\ttfamily template$<$typename Future\+Type $>$ \\
+void chaiscript\+::bootstrap\+::standard\+\_\+library\+::future\+\_\+type (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{type,  }\item[{\mbox{\hyperlink{classchaiscript_1_1Module}{Module}} \&}]{m }\end{DoxyParamCaption})}
+
+Add a Map\+Type container \href{http://www.sgi.com/tech/stl/Map.html}{\texttt{ http\+://www.\+sgi.\+com/tech/stl/\+Map.\+html}} \mbox{\Hypertarget{bootstrap__stl_8hpp_ab1a37f11885522faa2cc9ab5dec763d5}\label{bootstrap__stl_8hpp_ab1a37f11885522faa2cc9ab5dec763d5}} 
+\index{bootstrap\_stl.hpp@{bootstrap\_stl.hpp}!input\_range\_type\_impl@{input\_range\_type\_impl}}
+\index{input\_range\_type\_impl@{input\_range\_type\_impl}!bootstrap\_stl.hpp@{bootstrap\_stl.hpp}}
+\doxysubsubsection{\texorpdfstring{input\_range\_type\_impl()}{input\_range\_type\_impl()}}
+{\footnotesize\ttfamily template$<$typename Bidir\+\_\+\+Type $>$ \\
+void chaiscript\+::bootstrap\+::standard\+\_\+library\+::detail\+::input\+\_\+range\+\_\+type\+\_\+impl (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{type,  }\item[{\mbox{\hyperlink{classchaiscript_1_1Module}{Module}} \&}]{m }\end{DoxyParamCaption})}
+
+
+
+Add Bidir\+\_\+\+Range support for the given Container\+Type. 
+
+\mbox{\Hypertarget{bootstrap__stl_8hpp_a595b3f3b155ba9d3f9fdbfc83c5667a6}\label{bootstrap__stl_8hpp_a595b3f3b155ba9d3f9fdbfc83c5667a6}} 
+\index{bootstrap\_stl.hpp@{bootstrap\_stl.hpp}!insert\_at@{insert\_at}}
+\index{insert\_at@{insert\_at}!bootstrap\_stl.hpp@{bootstrap\_stl.hpp}}
+\doxysubsubsection{\texorpdfstring{insert\_at()}{insert\_at()}}
+{\footnotesize\ttfamily template$<$typename Type $>$ \\
+void chaiscript\+::bootstrap\+::standard\+\_\+library\+::detail\+::insert\+\_\+at (\begin{DoxyParamCaption}\item[{Type \&}]{container,  }\item[{int}]{pos,  }\item[{const typename Type\+::value\+\_\+type \&}]{v }\end{DoxyParamCaption})}
+
+
+
+Algorithm for inserting at a specific position into a container. 
+
+\mbox{\Hypertarget{bootstrap__stl_8hpp_a3f3e8a167283f17c391aad72024be2b6}\label{bootstrap__stl_8hpp_a3f3e8a167283f17c391aad72024be2b6}} 
+\index{bootstrap\_stl.hpp@{bootstrap\_stl.hpp}!list\_type@{list\_type}}
+\index{list\_type@{list\_type}!bootstrap\_stl.hpp@{bootstrap\_stl.hpp}}
+\doxysubsubsection{\texorpdfstring{list\_type()}{list\_type()}}
+{\footnotesize\ttfamily template$<$typename List\+Type $>$ \\
+void chaiscript\+::bootstrap\+::standard\+\_\+library\+::list\+\_\+type (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{type,  }\item[{\mbox{\hyperlink{classchaiscript_1_1Module}{Module}} \&}]{m }\end{DoxyParamCaption})}
+
+
+
+\href{http://www.sgi.com/tech/stl/List.html}{\texttt{ http\+://www.\+sgi.\+com/tech/stl/\+List.\+html}} 
+
+\mbox{\Hypertarget{bootstrap__stl_8hpp_a29c5d1ba31952f18fe93f4a6f6ce8234}\label{bootstrap__stl_8hpp_a29c5d1ba31952f18fe93f4a6f6ce8234}} 
+\index{bootstrap\_stl.hpp@{bootstrap\_stl.hpp}!map\_type@{map\_type}}
+\index{map\_type@{map\_type}!bootstrap\_stl.hpp@{bootstrap\_stl.hpp}}
+\doxysubsubsection{\texorpdfstring{map\_type()}{map\_type()}}
+{\footnotesize\ttfamily template$<$typename Map\+Type $>$ \\
+void chaiscript\+::bootstrap\+::standard\+\_\+library\+::map\+\_\+type (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{type,  }\item[{\mbox{\hyperlink{classchaiscript_1_1Module}{Module}} \&}]{m }\end{DoxyParamCaption})}
+
+Add a Map\+Type container \href{http://www.sgi.com/tech/stl/Map.html}{\texttt{ http\+://www.\+sgi.\+com/tech/stl/\+Map.\+html}} \mbox{\Hypertarget{bootstrap__stl_8hpp_a66c98a75b986549e36bb9080e56abbfe}\label{bootstrap__stl_8hpp_a66c98a75b986549e36bb9080e56abbfe}} 
+\index{bootstrap\_stl.hpp@{bootstrap\_stl.hpp}!pair\_associative\_container\_type@{pair\_associative\_container\_type}}
+\index{pair\_associative\_container\_type@{pair\_associative\_container\_type}!bootstrap\_stl.hpp@{bootstrap\_stl.hpp}}
+\doxysubsubsection{\texorpdfstring{pair\_associative\_container\_type()}{pair\_associative\_container\_type()}}
+{\footnotesize\ttfamily template$<$typename Container\+Type $>$ \\
+void chaiscript\+::bootstrap\+::standard\+\_\+library\+::pair\+\_\+associative\+\_\+container\+\_\+type (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{type,  }\item[{\mbox{\hyperlink{classchaiscript_1_1Module}{Module}} \&}]{m }\end{DoxyParamCaption})}
+
+Add pair associative container concept to the given Container\+Type \href{http://www.sgi.com/tech/stl/PairAssociativeContainer.html}{\texttt{ http\+://www.\+sgi.\+com/tech/stl/\+Pair\+Associative\+Container.\+html}} \mbox{\Hypertarget{bootstrap__stl_8hpp_ab3f4715ce75f84e4e8e7f2a1d62c37b1}\label{bootstrap__stl_8hpp_ab3f4715ce75f84e4e8e7f2a1d62c37b1}} 
+\index{bootstrap\_stl.hpp@{bootstrap\_stl.hpp}!pair\_type@{pair\_type}}
+\index{pair\_type@{pair\_type}!bootstrap\_stl.hpp@{bootstrap\_stl.hpp}}
+\doxysubsubsection{\texorpdfstring{pair\_type()}{pair\_type()}}
+{\footnotesize\ttfamily template$<$typename Pair\+Type $>$ \\
+void chaiscript\+::bootstrap\+::standard\+\_\+library\+::pair\+\_\+type (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{type,  }\item[{\mbox{\hyperlink{classchaiscript_1_1Module}{Module}} \&}]{m }\end{DoxyParamCaption})}
+
+bootstrap a given Pair\+Type \href{http://www.sgi.com/tech/stl/pair.html}{\texttt{ http\+://www.\+sgi.\+com/tech/stl/pair.\+html}} \mbox{\Hypertarget{bootstrap__stl_8hpp_a79ad40d2c8f924f12cb33ae5b20145c4}\label{bootstrap__stl_8hpp_a79ad40d2c8f924f12cb33ae5b20145c4}} 
+\index{bootstrap\_stl.hpp@{bootstrap\_stl.hpp}!random\_access\_container\_type@{random\_access\_container\_type}}
+\index{random\_access\_container\_type@{random\_access\_container\_type}!bootstrap\_stl.hpp@{bootstrap\_stl.hpp}}
+\doxysubsubsection{\texorpdfstring{random\_access\_container\_type()}{random\_access\_container\_type()}}
+{\footnotesize\ttfamily template$<$typename Container\+Type $>$ \\
+void chaiscript\+::bootstrap\+::standard\+\_\+library\+::random\+\_\+access\+\_\+container\+\_\+type (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{,  }\item[{\mbox{\hyperlink{classchaiscript_1_1Module}{Module}} \&}]{m }\end{DoxyParamCaption})}
+
+Add random\+\_\+access\+\_\+container concept to the given Container\+Type \href{http://www.sgi.com/tech/stl/RandomAccessContainer.html}{\texttt{ http\+://www.\+sgi.\+com/tech/stl/\+Random\+Access\+Container.\+html}} \begin{DoxyRefDesc}{Todo}
+\item[\mbox{\hyperlink{todo__todo000002}{Todo}}]we are prefering to keep the key as \textquotesingle{}int\textquotesingle{} to avoid runtime conversions during dispatch. reevaluate \end{DoxyRefDesc}
+
+
+\begin{DoxyRefDesc}{Todo}
+\item[\mbox{\hyperlink{todo__todo000003}{Todo}}]we are prefering to keep the key as \textquotesingle{}int\textquotesingle{} to avoid runtime conversions during dispatch. reevaluate \end{DoxyRefDesc}
+\mbox{\Hypertarget{bootstrap__stl_8hpp_a8d289fb39509da7afec1ec0b1d908ed4}\label{bootstrap__stl_8hpp_a8d289fb39509da7afec1ec0b1d908ed4}} 
+\index{bootstrap\_stl.hpp@{bootstrap\_stl.hpp}!reservable\_type@{reservable\_type}}
+\index{reservable\_type@{reservable\_type}!bootstrap\_stl.hpp@{bootstrap\_stl.hpp}}
+\doxysubsubsection{\texorpdfstring{reservable\_type()}{reservable\_type()}}
+{\footnotesize\ttfamily template$<$typename Container\+Type $>$ \\
+void chaiscript\+::bootstrap\+::standard\+\_\+library\+::reservable\+\_\+type (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{,  }\item[{\mbox{\hyperlink{classchaiscript_1_1Module}{Module}} \&}]{m }\end{DoxyParamCaption})}
+
+Add container reserve concept to the given Container\+Type \href{http://www.cplusplus.com/reference/stl/}{\texttt{ http\+://www.\+cplusplus.\+com/reference/stl/}} \mbox{\Hypertarget{bootstrap__stl_8hpp_a9a54c84b5e7631a1922ffe00d15f647e}\label{bootstrap__stl_8hpp_a9a54c84b5e7631a1922ffe00d15f647e}} 
+\index{bootstrap\_stl.hpp@{bootstrap\_stl.hpp}!resizable\_type@{resizable\_type}}
+\index{resizable\_type@{resizable\_type}!bootstrap\_stl.hpp@{bootstrap\_stl.hpp}}
+\doxysubsubsection{\texorpdfstring{resizable\_type()}{resizable\_type()}}
+{\footnotesize\ttfamily template$<$typename Container\+Type $>$ \\
+void chaiscript\+::bootstrap\+::standard\+\_\+library\+::resizable\+\_\+type (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{,  }\item[{\mbox{\hyperlink{classchaiscript_1_1Module}{Module}} \&}]{m }\end{DoxyParamCaption})}
+
+Add container resize concept to the given Container\+Type \href{http://www.cplusplus.com/reference/stl/}{\texttt{ http\+://www.\+cplusplus.\+com/reference/stl/}} \mbox{\Hypertarget{bootstrap__stl_8hpp_a52a74af69f0fd6f17914d4dfc8ae8f34}\label{bootstrap__stl_8hpp_a52a74af69f0fd6f17914d4dfc8ae8f34}} 
+\index{bootstrap\_stl.hpp@{bootstrap\_stl.hpp}!sequence\_type@{sequence\_type}}
+\index{sequence\_type@{sequence\_type}!bootstrap\_stl.hpp@{bootstrap\_stl.hpp}}
+\doxysubsubsection{\texorpdfstring{sequence\_type()}{sequence\_type()}}
+{\footnotesize\ttfamily template$<$typename Container\+Type $>$ \\
+void chaiscript\+::bootstrap\+::standard\+\_\+library\+::sequence\+\_\+type (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{,  }\item[{\mbox{\hyperlink{classchaiscript_1_1Module}{Module}} \&}]{m }\end{DoxyParamCaption})}
+
+Add sequence concept to the given Container\+Type \href{http://www.sgi.com/tech/stl/Sequence.html}{\texttt{ http\+://www.\+sgi.\+com/tech/stl/\+Sequence.\+html}} \mbox{\Hypertarget{bootstrap__stl_8hpp_aa407f5f04b3c9a25e6693e1642d2a53d}\label{bootstrap__stl_8hpp_aa407f5f04b3c9a25e6693e1642d2a53d}} 
+\index{bootstrap\_stl.hpp@{bootstrap\_stl.hpp}!string\_type@{string\_type}}
+\index{string\_type@{string\_type}!bootstrap\_stl.hpp@{bootstrap\_stl.hpp}}
+\doxysubsubsection{\texorpdfstring{string\_type()}{string\_type()}}
+{\footnotesize\ttfamily template$<$typename String $>$ \\
+void chaiscript\+::bootstrap\+::standard\+\_\+library\+::string\+\_\+type (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{type,  }\item[{\mbox{\hyperlink{classchaiscript_1_1Module}{Module}} \&}]{m }\end{DoxyParamCaption})}
+
+Add a String container \href{http://www.sgi.com/tech/stl/basic_string.html}{\texttt{ http\+://www.\+sgi.\+com/tech/stl/basic\+\_\+string.\+html}} \mbox{\Hypertarget{bootstrap__stl_8hpp_ab2378792453dc915790543566ddee624}\label{bootstrap__stl_8hpp_ab2378792453dc915790543566ddee624}} 
+\index{bootstrap\_stl.hpp@{bootstrap\_stl.hpp}!unique\_associative\_container\_type@{unique\_associative\_container\_type}}
+\index{unique\_associative\_container\_type@{unique\_associative\_container\_type}!bootstrap\_stl.hpp@{bootstrap\_stl.hpp}}
+\doxysubsubsection{\texorpdfstring{unique\_associative\_container\_type()}{unique\_associative\_container\_type()}}
+{\footnotesize\ttfamily template$<$typename Container\+Type $>$ \\
+void chaiscript\+::bootstrap\+::standard\+\_\+library\+::unique\+\_\+associative\+\_\+container\+\_\+type (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{,  }\item[{\mbox{\hyperlink{classchaiscript_1_1Module}{Module}} \&}]{m }\end{DoxyParamCaption})}
+
+Add unique associative container concept to the given Container\+Type \href{http://www.sgi.com/tech/stl/UniqueAssociativeContainer.html}{\texttt{ http\+://www.\+sgi.\+com/tech/stl/\+Unique\+Associative\+Container.\+html}} \mbox{\Hypertarget{bootstrap__stl_8hpp_a08f119b5351b0ea1dae0b5b5530d0c84}\label{bootstrap__stl_8hpp_a08f119b5351b0ea1dae0b5b5530d0c84}} 
+\index{bootstrap\_stl.hpp@{bootstrap\_stl.hpp}!vector\_type@{vector\_type}}
+\index{vector\_type@{vector\_type}!bootstrap\_stl.hpp@{bootstrap\_stl.hpp}}
+\doxysubsubsection{\texorpdfstring{vector\_type()}{vector\_type()}}
+{\footnotesize\ttfamily template$<$typename Vector\+Type $>$ \\
+void chaiscript\+::bootstrap\+::standard\+\_\+library\+::vector\+\_\+type (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{type,  }\item[{\mbox{\hyperlink{classchaiscript_1_1Module}{Module}} \&}]{m }\end{DoxyParamCaption})}
+
+Create a vector type with associated concepts \href{http://www.sgi.com/tech/stl/Vector.html}{\texttt{ http\+://www.\+sgi.\+com/tech/stl/\+Vector.\+html}} 

@@ -1,0 +1,169 @@
+\DoxyHorRuler{0}
+\hypertarget{LangKeywordRef_keywordattr}{}\doxysection{attr}\label{LangKeywordRef_keywordattr}
+Defines a Chai\+Script object attribute
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Attribute Definition ::= \textcolor{stringliteral}{"{}attr"{}} class\_name \textcolor{stringliteral}{"{}::"{}} attribute\_name}
+
+\end{DoxyCode}
+
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{LangObjectSystemRef}{Chai\+Script Language Object Model Reference}}
+\end{DoxySeeAlso}
+\DoxyHorRuler{0}
+\hypertarget{LangKeywordRef_keywordauto}{}\doxysection{auto}\label{LangKeywordRef_keywordauto}
+Defines a variable
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Variable ::= \textcolor{stringliteral}{"{}auto"{}} identifier}
+
+\end{DoxyCode}
+
+
+Synonym for \mbox{\hyperlink{LangKeywordRef_keywordvar}{var}}
+
+\DoxyHorRuler{0}
+\hypertarget{LangKeywordRef_keywordbreak}{}\doxysection{break}\label{LangKeywordRef_keywordbreak}
+Stops execution of a looping block.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Break Statement ::= \textcolor{stringliteral}{"{}break"{}}}
+
+\end{DoxyCode}
+
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{LangKeywordRef_keywordfor}{for}} 
+
+\mbox{\hyperlink{LangKeywordRef_keywordwhile}{while}}
+\end{DoxySeeAlso}
+\DoxyHorRuler{0}
+\hypertarget{LangKeywordRef_keyworddef}{}\doxysection{def}\label{LangKeywordRef_keyworddef}
+Begins a function or method definition
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Function Definition ::= \textcolor{stringliteral}{"{}def"{}} identifier \textcolor{stringliteral}{"{}("{}} [[type] arg (\textcolor{stringliteral}{"{},"{}} [type] arg)*] \textcolor{stringliteral}{"{})"{}} [\textcolor{stringliteral}{"{}:"{}} guard] block}
+\DoxyCodeLine{Method Definition ::= \textcolor{stringliteral}{"{}def"{}} class\_name \textcolor{stringliteral}{"{}::"{}} method\_name \textcolor{stringliteral}{"{}("{}} [[type] arg (\textcolor{stringliteral}{"{},"{}} [type] arg)*] \textcolor{stringliteral}{"{})"{}} [\textcolor{stringliteral}{"{}:"{}} guard] block}
+
+\end{DoxyCode}
+
+
+identifier\+: name of function. Required. args\+: comma-\/delimited list of parameter names with optional type specifiers. Optional. guards\+: guarding statement that act as a prerequisite for the function. Optional. \{ \}\+: scoped block as function body. Required.
+
+Functions return values in one of two ways\+:
+
+By using an explicit return call, optionally passing the value to be returned. By implicitly returning the value of the last expression (if it is not a while or for loop).
+
+Method definitions for known types extend those types with new methods. This includes C++ and Chai\+Script defined types. Method definitions for unknown types implicitly define the named type.
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{LangObjectSystemRef}{Chai\+Script Language Object Model Reference}}
+\end{DoxySeeAlso}
+\DoxyHorRuler{0}
+\hypertarget{LangKeywordRef_keywordelse}{}\doxysection{else}\label{LangKeywordRef_keywordelse}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{LangKeywordRef_keywordif}{if}}
+\end{DoxySeeAlso}
+\DoxyHorRuler{0}
+\hypertarget{LangKeywordRef_keywordfor}{}\doxysection{for}\label{LangKeywordRef_keywordfor}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{For Block ::= \textcolor{stringliteral}{"{}for"{}} \textcolor{stringliteral}{"{}("{}} [initial] \textcolor{stringliteral}{"{};"{}} stop\_condition \textcolor{stringliteral}{"{};"{}} loop\_expression \textcolor{stringliteral}{"{})"{}} block}
+
+\end{DoxyCode}
+ This loop can be broken using the \mbox{\hyperlink{LangKeywordRef_keywordbreak}{break}} command.
+
+\DoxyHorRuler{0}
+\hypertarget{LangKeywordRef_keywordfun}{}\doxysection{fun}\label{LangKeywordRef_keywordfun}
+Begins an anonymous function declaration (sometimes called a lambda).
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Lambda ::= \textcolor{stringliteral}{"{}fun"{}} \textcolor{stringliteral}{"{}("{}} [variable] (\textcolor{stringliteral}{"{},"{}} variable)*  \textcolor{stringliteral}{"{})"{}} block}
+
+\end{DoxyCode}
+
+
+{\itshape Example}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{comment}{// Generate an anonymous function object that adds 2 to its parameter}}
+\DoxyCodeLine{\mbox{\hyperlink{namespacechaiscript_a7f9fcf9713fa8a33bcc304a16ac2834b}{var}} f = \mbox{\hyperlink{namespacechaiscript_a629bad3e8026e3327ec8aae56e0b086f}{fun}}(x) \{ x + 2; \}}
+
+\end{DoxyCode}
+
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{LangKeywordRef_keyworddef}{def}} for more details on Chai\+Script functions
+\end{DoxySeeAlso}
+\DoxyHorRuler{0}
+\hypertarget{LangKeywordRef_keywordif}{}\doxysection{if}\label{LangKeywordRef_keywordif}
+Begins a conditional block of code that only executes if the condition evaluates as true. 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{If Block ::= \textcolor{stringliteral}{"{}if"{}} \textcolor{stringliteral}{"{}("{}} condition \textcolor{stringliteral}{"{})"{}} block}
+\DoxyCodeLine{Else If Block ::= \textcolor{stringliteral}{"{}else if"{}} \textcolor{stringliteral}{"{}("{}} condition \textcolor{stringliteral}{"{})"{}} block}
+\DoxyCodeLine{Else Block ::= \textcolor{stringliteral}{"{}else"{}} block}
+
+\end{DoxyCode}
+
+
+{\itshape Example}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keywordflow}{if} (\textcolor{keyword}{true}) \{}
+\DoxyCodeLine{  \textcolor{comment}{// do something}}
+\DoxyCodeLine{\} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (\textcolor{keyword}{false}) \{}
+\DoxyCodeLine{  \textcolor{comment}{// do something else}}
+\DoxyCodeLine{\} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{  \textcolor{comment}{// otherwise do this}}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+
+
+\DoxyHorRuler{0}
+\hypertarget{LangKeywordRef_keywordtry}{}\doxysection{try}\label{LangKeywordRef_keywordtry}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Try Block ::= \textcolor{stringliteral}{"{}try"{}} block }
+\DoxyCodeLine{ (\textcolor{stringliteral}{"{}catch"{}} [\textcolor{stringliteral}{"{}("{}} [type] variable \textcolor{stringliteral}{"{})"{}}] [\textcolor{stringliteral}{"{}:"{}} guards] block)+ }
+\DoxyCodeLine{   [\textcolor{stringliteral}{"{}finally"{}} block]}
+
+\end{DoxyCode}
+
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{namespaceChaiScript__Language_a9913570d8d0eb54d2e1db3cccb1ec1d8}{Chai\+Script\+\_\+\+Language\+::throw}}
+\end{DoxySeeAlso}
+\DoxyHorRuler{0}
+\hypertarget{LangKeywordRef_keywordwhile}{}\doxysection{while}\label{LangKeywordRef_keywordwhile}
+Begins a conditional block of code that loops 0 or more times, as long as the condition is true
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{While Block ::= \textcolor{stringliteral}{"{}while"{}} \textcolor{stringliteral}{"{}("{}} condition \textcolor{stringliteral}{"{})"{}} block}
+
+\end{DoxyCode}
+
+
+This loop can be broken using the \mbox{\hyperlink{LangKeywordRef_keywordbreak}{break}} command.
+
+\DoxyHorRuler{0}
+\hypertarget{LangKeywordRef_keywordvar}{}\doxysection{var}\label{LangKeywordRef_keywordvar}
+Defines a variable
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Variable ::= \textcolor{stringliteral}{"{}var"{}} identifier}
+
+\end{DoxyCode}
+
+
+Synonym for \mbox{\hyperlink{LangKeywordRef_keywordauto}{auto}} 

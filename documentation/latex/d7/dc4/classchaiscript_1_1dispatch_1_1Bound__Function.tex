@@ -1,0 +1,51 @@
+\hypertarget{classchaiscript_1_1dispatch_1_1Bound__Function}{}\doxysection{chaiscript\+::dispatch\+::Bound\+\_\+\+Function Class Reference}
+\label{classchaiscript_1_1dispatch_1_1Bound__Function}\index{chaiscript::dispatch::Bound\_Function@{chaiscript::dispatch::Bound\_Function}}
+
+
+{\ttfamily \#include $<$proxy\+\_\+functions.\+hpp$>$}
+
+Inheritance diagram for chaiscript\+::dispatch\+::Bound\+\_\+\+Function\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{d7/dc4/classchaiscript_1_1dispatch_1_1Bound__Function}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classchaiscript_1_1dispatch_1_1Bound__Function_a166fd53c5417e216bead3d2846372a10}\label{classchaiscript_1_1dispatch_1_1Bound__Function_a166fd53c5417e216bead3d2846372a10}} 
+{\bfseries Bound\+\_\+\+Function} (const \mbox{\hyperlink{namespacechaiscript_a131610313026f28092a69541b013d463}{Const\+\_\+\+Proxy\+\_\+\+Function}} \&t\+\_\+f, const std\+::vector$<$ \mbox{\hyperlink{classchaiscript_1_1Boxed__Value}{Boxed\+\_\+\+Value}} $>$ \&t\+\_\+args)
+\item 
+\mbox{\Hypertarget{classchaiscript_1_1dispatch_1_1Bound__Function_a8dd0496860a763327f0304860a1de0e9}\label{classchaiscript_1_1dispatch_1_1Bound__Function_a8dd0496860a763327f0304860a1de0e9}} 
+bool {\bfseries operator==} (const \mbox{\hyperlink{classchaiscript_1_1dispatch_1_1Proxy__Function__Base}{Proxy\+\_\+\+Function\+\_\+\+Base}} \&t\+\_\+f) const override
+\item 
+\mbox{\Hypertarget{classchaiscript_1_1dispatch_1_1Bound__Function_ae6fab57ed0afe971209ba4b025496091}\label{classchaiscript_1_1dispatch_1_1Bound__Function_ae6fab57ed0afe971209ba4b025496091}} 
+bool {\bfseries call\+\_\+match} (const std\+::vector$<$ \mbox{\hyperlink{classchaiscript_1_1Boxed__Value}{Boxed\+\_\+\+Value}} $>$ \&vals, const \mbox{\hyperlink{classchaiscript_1_1Type__Conversions__State}{Type\+\_\+\+Conversions\+\_\+\+State}} \&t\+\_\+conversions) const override
+\item 
+\mbox{\Hypertarget{classchaiscript_1_1dispatch_1_1Bound__Function_a4ee78191cfe5604c3c3d4c6c107c9e29}\label{classchaiscript_1_1dispatch_1_1Bound__Function_a4ee78191cfe5604c3c3d4c6c107c9e29}} 
+std\+::vector$<$ \mbox{\hyperlink{namespacechaiscript_a131610313026f28092a69541b013d463}{Const\+\_\+\+Proxy\+\_\+\+Function}} $>$ {\bfseries get\+\_\+contained\+\_\+functions} () const override
+\item 
+\mbox{\Hypertarget{classchaiscript_1_1dispatch_1_1Bound__Function_a1a3ab84c9784f25bcada73821c13496a}\label{classchaiscript_1_1dispatch_1_1Bound__Function_a1a3ab84c9784f25bcada73821c13496a}} 
+std\+::vector$<$ \mbox{\hyperlink{classchaiscript_1_1Boxed__Value}{Boxed\+\_\+\+Value}} $>$ {\bfseries build\+\_\+param\+\_\+list} (const std\+::vector$<$ \mbox{\hyperlink{classchaiscript_1_1Boxed__Value}{Boxed\+\_\+\+Value}} $>$ \&params) const
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classchaiscript_1_1dispatch_1_1Bound__Function_a6fadcf9859e2580fc6b10bb1dd2c34d8}\label{classchaiscript_1_1dispatch_1_1Bound__Function_a6fadcf9859e2580fc6b10bb1dd2c34d8}} 
+\mbox{\hyperlink{classchaiscript_1_1Boxed__Value}{Boxed\+\_\+\+Value}} {\bfseries do\+\_\+call} (const std\+::vector$<$ \mbox{\hyperlink{classchaiscript_1_1Boxed__Value}{Boxed\+\_\+\+Value}} $>$ \&params, const \mbox{\hyperlink{classchaiscript_1_1Type__Conversions__State}{Type\+\_\+\+Conversions\+\_\+\+State}} \&t\+\_\+conversions) const override
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classchaiscript_1_1dispatch_1_1Bound__Function_afd46e65112ae2a9841b44ba5b71a2802}\label{classchaiscript_1_1dispatch_1_1Bound__Function_afd46e65112ae2a9841b44ba5b71a2802}} 
+static std\+::vector$<$ \mbox{\hyperlink{classchaiscript_1_1Type__Info}{Type\+\_\+\+Info}} $>$ {\bfseries build\+\_\+param\+\_\+type\+\_\+info} (const \mbox{\hyperlink{namespacechaiscript_a131610313026f28092a69541b013d463}{Const\+\_\+\+Proxy\+\_\+\+Function}} \&t\+\_\+f, const std\+::vector$<$ \mbox{\hyperlink{classchaiscript_1_1Boxed__Value}{Boxed\+\_\+\+Value}} $>$ \&t\+\_\+args)
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+An implementation of Proxy\+\_\+\+Function that takes a Proxy\+\_\+\+Function and substitutes bound parameters into the parameter list at runtime, when call() is executed. it is used for bind(function, param1, \+\_\+, param2) style calls 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Chai\+Script-\/6.\+1.\+0/include/chaiscript/dispatchkit/proxy\+\_\+functions.\+hpp\end{DoxyCompactItemize}

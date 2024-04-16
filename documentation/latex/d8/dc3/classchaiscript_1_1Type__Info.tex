@@ -1,0 +1,73 @@
+\hypertarget{classchaiscript_1_1Type__Info}{}\doxysection{chaiscript\+::Type\+\_\+\+Info Class Reference}
+\label{classchaiscript_1_1Type__Info}\index{chaiscript::Type\_Info@{chaiscript::Type\_Info}}
+
+
+Compile time deduced information about a type.  
+
+
+
+
+{\ttfamily \#include $<$type\+\_\+info.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classchaiscript_1_1Type__Info_a98956eb92fc65d12d19e2ab158c337fd}\label{classchaiscript_1_1Type__Info_a98956eb92fc65d12d19e2ab158c337fd}} 
+constexpr {\bfseries Type\+\_\+\+Info} (const bool t\+\_\+is\+\_\+const, const bool t\+\_\+is\+\_\+reference, const bool t\+\_\+is\+\_\+pointer, const bool t\+\_\+is\+\_\+void, const bool t\+\_\+is\+\_\+arithmetic, const std\+::type\+\_\+info $\ast$t\+\_\+ti, const std\+::type\+\_\+info $\ast$t\+\_\+bare\+\_\+ti)
+\item 
+\mbox{\Hypertarget{classchaiscript_1_1Type__Info_a2fde44f722bb1f1c00674abe745d47eb}\label{classchaiscript_1_1Type__Info_a2fde44f722bb1f1c00674abe745d47eb}} 
+bool {\bfseries operator$<$} (const \mbox{\hyperlink{classchaiscript_1_1Type__Info}{Type\+\_\+\+Info}} \&ti) const noexcept
+\item 
+\mbox{\Hypertarget{classchaiscript_1_1Type__Info_a25676de160aeaa72cfb219f61885b9ff}\label{classchaiscript_1_1Type__Info_a25676de160aeaa72cfb219f61885b9ff}} 
+constexpr bool {\bfseries operator!=} (const \mbox{\hyperlink{classchaiscript_1_1Type__Info}{Type\+\_\+\+Info}} \&ti) const noexcept
+\item 
+\mbox{\Hypertarget{classchaiscript_1_1Type__Info_a7b6f90e5867abff3a941b7008c3e84fa}\label{classchaiscript_1_1Type__Info_a7b6f90e5867abff3a941b7008c3e84fa}} 
+constexpr bool {\bfseries operator!=} (const std\+::type\+\_\+info \&ti) const noexcept
+\item 
+\mbox{\Hypertarget{classchaiscript_1_1Type__Info_afbaab407f8f3ee951a06790431143cdf}\label{classchaiscript_1_1Type__Info_afbaab407f8f3ee951a06790431143cdf}} 
+constexpr bool {\bfseries operator==} (const \mbox{\hyperlink{classchaiscript_1_1Type__Info}{Type\+\_\+\+Info}} \&ti) const noexcept
+\item 
+\mbox{\Hypertarget{classchaiscript_1_1Type__Info_a37c6ff6af3fcc33d1817af8597d88ec6}\label{classchaiscript_1_1Type__Info_a37c6ff6af3fcc33d1817af8597d88ec6}} 
+constexpr bool {\bfseries operator==} (const std\+::type\+\_\+info \&ti) const noexcept
+\item 
+\mbox{\Hypertarget{classchaiscript_1_1Type__Info_ad482fc39fe52bbedaa6e70d4859193a5}\label{classchaiscript_1_1Type__Info_ad482fc39fe52bbedaa6e70d4859193a5}} 
+constexpr bool {\bfseries bare\+\_\+equal} (const \mbox{\hyperlink{classchaiscript_1_1Type__Info}{Type\+\_\+\+Info}} \&ti) const noexcept
+\item 
+\mbox{\Hypertarget{classchaiscript_1_1Type__Info_a30c3e8036de0558222311d98f6769652}\label{classchaiscript_1_1Type__Info_a30c3e8036de0558222311d98f6769652}} 
+constexpr bool {\bfseries bare\+\_\+equal\+\_\+type\+\_\+info} (const std\+::type\+\_\+info \&ti) const noexcept
+\item 
+\mbox{\Hypertarget{classchaiscript_1_1Type__Info_a0d7e384e9002dce2ea9f44e64e5a88a1}\label{classchaiscript_1_1Type__Info_a0d7e384e9002dce2ea9f44e64e5a88a1}} 
+constexpr bool {\bfseries is\+\_\+const} () const noexcept
+\item 
+\mbox{\Hypertarget{classchaiscript_1_1Type__Info_a991c970ec5375795d41098eb183868ad}\label{classchaiscript_1_1Type__Info_a991c970ec5375795d41098eb183868ad}} 
+constexpr bool {\bfseries is\+\_\+reference} () const noexcept
+\item 
+\mbox{\Hypertarget{classchaiscript_1_1Type__Info_a90a8164244fdfe115df35bbf0e7221ae}\label{classchaiscript_1_1Type__Info_a90a8164244fdfe115df35bbf0e7221ae}} 
+constexpr bool {\bfseries is\+\_\+void} () const noexcept
+\item 
+\mbox{\Hypertarget{classchaiscript_1_1Type__Info_ace0203c9b5765e14076e1b58db8e9322}\label{classchaiscript_1_1Type__Info_ace0203c9b5765e14076e1b58db8e9322}} 
+constexpr bool {\bfseries is\+\_\+arithmetic} () const noexcept
+\item 
+\mbox{\Hypertarget{classchaiscript_1_1Type__Info_ab96859c8c0ce13a0481ed79ef759bbe7}\label{classchaiscript_1_1Type__Info_ab96859c8c0ce13a0481ed79ef759bbe7}} 
+constexpr bool {\bfseries is\+\_\+undef} () const noexcept
+\item 
+\mbox{\Hypertarget{classchaiscript_1_1Type__Info_ae5400724ed218668c559791a7db1ed80}\label{classchaiscript_1_1Type__Info_ae5400724ed218668c559791a7db1ed80}} 
+constexpr bool {\bfseries is\+\_\+pointer} () const noexcept
+\item 
+\mbox{\Hypertarget{classchaiscript_1_1Type__Info_a5ea7ffed120a2f9506fe00f00aa56c46}\label{classchaiscript_1_1Type__Info_a5ea7ffed120a2f9506fe00f00aa56c46}} 
+std\+::string {\bfseries name} () const
+\item 
+\mbox{\Hypertarget{classchaiscript_1_1Type__Info_abd932561b0cf02d1c5d9c2add0d9ccad}\label{classchaiscript_1_1Type__Info_abd932561b0cf02d1c5d9c2add0d9ccad}} 
+std\+::string {\bfseries bare\+\_\+name} () const
+\item 
+\mbox{\Hypertarget{classchaiscript_1_1Type__Info_a628557657870c317f02d1b49885d3cc6}\label{classchaiscript_1_1Type__Info_a628557657870c317f02d1b49885d3cc6}} 
+constexpr const std\+::type\+\_\+info $\ast$ {\bfseries bare\+\_\+type\+\_\+info} () const
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Compile time deduced information about a type. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Chai\+Script-\/6.\+1.\+0/include/chaiscript/dispatchkit/type\+\_\+info.\+hpp\end{DoxyCompactItemize}

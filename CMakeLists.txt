@@ -1,0 +1,7 @@
+CMAKE_MINIMUM_REQUIRED(VERSION 3.6)
+set(CMAKE_CXX_STANDARD 20)
+set(CMAKE_CXX_STANDARD_REQUIRED True)
+set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
+
+add_subdirectory(Client)
+add_subdirectory(Server/ServerSide)

@@ -1,0 +1,606 @@
+Chai\+Script tries to follow the \href{http://semver.org/}{\texttt{ Semantic Versioning}} scheme. This basically means\+:
+
+
+\begin{DoxyItemize}
+\item Major Version Number\+: API changes / breaking changes
+\item Minor Version Number\+: New Features
+\item Patch Version Number\+: Minor changes / enhancements
+\end{DoxyItemize}\hypertarget{md_ChaiScript_6_1_0_cheatsheet_autotoc_md1}{}\doxysection{Initializing Chai\+Script}\label{md_ChaiScript_6_1_0_cheatsheet_autotoc_md1}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{chaiscript::ChaiScript chai; // loads stdlib from loadable module on file system}
+\DoxyCodeLine{chaiscript::ChaiScript chai(chaiscript::Std\_Lib::library()); // compiles in stdlib}
+
+\end{DoxyCode}
+
+
+Note that Chai\+Script cannot be used as a global / static object unless it is being compiled with {\ttfamily CHAISCRIPT\+\_\+\+NO\+\_\+\+THREADS}.\hypertarget{md_ChaiScript_6_1_0_cheatsheet_autotoc_md2}{}\doxysection{Adding Things To The Engine}\label{md_ChaiScript_6_1_0_cheatsheet_autotoc_md2}
+\hypertarget{md_ChaiScript_6_1_0_cheatsheet_autotoc_md3}{}\doxysubsection{Adding a Function / Method / Member}\label{md_ChaiScript_6_1_0_cheatsheet_autotoc_md3}
+\hypertarget{md_ChaiScript_6_1_0_cheatsheet_autotoc_md4}{}\doxysubsubsection{General}\label{md_ChaiScript_6_1_0_cheatsheet_autotoc_md4}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{chai.add(chaiscript::fun(\&function\_name), "{}function\_name"{});}
+\DoxyCodeLine{chai.add(chaiscript::fun(\&Class::method\_name), "{}method\_name"{});}
+\DoxyCodeLine{chai.add(chaiscript::fun(\&Class::member\_name), "{}member\_name"{});}
+
+\end{DoxyCode}
+\hypertarget{md_ChaiScript_6_1_0_cheatsheet_autotoc_md5}{}\doxysubsubsection{Bound Member Functions}\label{md_ChaiScript_6_1_0_cheatsheet_autotoc_md5}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{chai.add(chaiscript::fun(\&Class::method\_name, Class\_instance\_ptr), "{}method\_name"{});}
+\DoxyCodeLine{chai.add(chaiscript::fun(\&Class::member\_name, Class\_instance\_ptr), "{}member\_name"{});}
+
+\end{DoxyCode}
+\hypertarget{md_ChaiScript_6_1_0_cheatsheet_autotoc_md6}{}\doxysubsubsection{With Overloads}\label{md_ChaiScript_6_1_0_cheatsheet_autotoc_md6}
+\hypertarget{md_ChaiScript_6_1_0_cheatsheet_autotoc_md7}{}\doxyparagraph{Preferred}\label{md_ChaiScript_6_1_0_cheatsheet_autotoc_md7}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{chai.add(chaiscript::fun<ReturnType (ParamType1, ParamType2)>(\&function\_with\_overloads), "{}function\_name"{});}
+
+\end{DoxyCode}
+\hypertarget{md_ChaiScript_6_1_0_cheatsheet_autotoc_md8}{}\doxyparagraph{Alternative}\label{md_ChaiScript_6_1_0_cheatsheet_autotoc_md8}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{chai.add(chaiscript::fun(std::static\_cast<ReturnType (*)(ParamType1, ParamType2)>(\&function\_with\_overloads)), "{}function\_name"{});}
+
+\end{DoxyCode}
+ This overload technique is also used when exposing base member using derived type
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{struct Base}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{  int data;}
+\DoxyCodeLine{\};}
+\DoxyCodeLine{}
+\DoxyCodeLine{struct Derived : public Base}
+\DoxyCodeLine{\{\};}
+\DoxyCodeLine{}
+\DoxyCodeLine{chai.add(chaiscript::fun(static\_cast<int(Derived::*)>(\&Derived::data)), "{}data"{});}
+
+\end{DoxyCode}
+\hypertarget{md_ChaiScript_6_1_0_cheatsheet_autotoc_md9}{}\doxysubsubsection{Lambda}\label{md_ChaiScript_6_1_0_cheatsheet_autotoc_md9}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{chai.add(}
+\DoxyCodeLine{  chaiscript::fun<std::string (bool)>(}
+\DoxyCodeLine{    [](bool type) \{}
+\DoxyCodeLine{      if (type) \{ return "{}x"{}; \}}
+\DoxyCodeLine{      else \{ return "{}y"{}; \}}
+\DoxyCodeLine{    \}), "{}function\_name"{});}
+
+\end{DoxyCode}
+\hypertarget{md_ChaiScript_6_1_0_cheatsheet_autotoc_md10}{}\doxysubsubsection{Constructors}\label{md_ChaiScript_6_1_0_cheatsheet_autotoc_md10}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{chai.add(chaiscript::constructor<MyType ()>(), "{}MyType"{});}
+\DoxyCodeLine{chai.add(chaiscript::constructor<MyType (const MyType \&)>(), "{}MyType"{});}
+
+\end{DoxyCode}
+\hypertarget{md_ChaiScript_6_1_0_cheatsheet_autotoc_md11}{}\doxysubsection{Adding Types}\label{md_ChaiScript_6_1_0_cheatsheet_autotoc_md11}
+It\textquotesingle{}s not strictly necessary to add types, but it helps with many things. Cloning, better errors, etc.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{chai.add(chaiscript::user\_type<MyClass>(), "{}MyClass"{});}
+
+\end{DoxyCode}
+\hypertarget{md_ChaiScript_6_1_0_cheatsheet_autotoc_md12}{}\doxysubsection{Adding Type Conversions}\label{md_ChaiScript_6_1_0_cheatsheet_autotoc_md12}
+\mbox{\hyperlink{structUser}{User}} defined type conversions are possible, defined in either script or in C++.\hypertarget{md_ChaiScript_6_1_0_cheatsheet_autotoc_md13}{}\doxysubsubsection{Chai\+Script Defined Conversions}\label{md_ChaiScript_6_1_0_cheatsheet_autotoc_md13}
+Function objects (including lambdas) can be used to add type conversions from inside of Chai\+Script\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{add\_type\_conversion(type("{}string"{}), type("{}Type\_Info"{}), fun(s) \{ return type(s); \});}
+
+\end{DoxyCode}
+\hypertarget{md_ChaiScript_6_1_0_cheatsheet_autotoc_md14}{}\doxysubsubsection{C++ Defined Conversions}\label{md_ChaiScript_6_1_0_cheatsheet_autotoc_md14}
+Invoking a C++ type conversion possible with {\ttfamily static\+\_\+cast}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{chai.add(chaiscript::type\_conversion<T, bool>());}
+
+\end{DoxyCode}
+
+
+Calling a user defined type conversion that takes a lambda
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{chai.add(chaiscript::type\_conversion<TestBaseType, Type2>([](const TestBaseType \&t\_bt) \{ /* return converted thing */ \}));}
+
+\end{DoxyCode}
+\hypertarget{md_ChaiScript_6_1_0_cheatsheet_autotoc_md15}{}\doxysubsubsection{Class Hierarchies}\label{md_ChaiScript_6_1_0_cheatsheet_autotoc_md15}
+If you want objects to be convertable between base and derived classes, you must tell Chai\+Scritp about the relationship.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{chai.add(chaiscript::base\_class<Base, Derived>());}
+
+\end{DoxyCode}
+
+
+If you have multiple classes in your inheritance graph, you will probably want to tell Chai\+Script about all relationships.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{chai.add(chaiscript::base\_class<Base, Derived>());}
+\DoxyCodeLine{chai.add(chaiscript::base\_class<Derived, MoreDerived>());}
+\DoxyCodeLine{chai.add(chaiscript::base\_class<Base, MoreDerived>());}
+
+\end{DoxyCode}
+\hypertarget{md_ChaiScript_6_1_0_cheatsheet_autotoc_md16}{}\doxysubsubsection{Helpers}\label{md_ChaiScript_6_1_0_cheatsheet_autotoc_md16}
+\mbox{\hyperlink{classA}{A}} helper function exists for strongly typed and Chai\+Script {\ttfamily Vector} function conversion definition\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{chai.add(chaiscript::vector\_conversion<std::vector<int>>());}
+
+\end{DoxyCode}
+
+
+\mbox{\hyperlink{classA}{A}} helper function also exists for strongly typed and Chai\+Script {\ttfamily Map} function conversion definition\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{chai.add(chaiscript::map\_conversion<std::map<std::string, int>>());}
+
+\end{DoxyCode}
+
+
+This allows you to pass a Chai\+Script function to a function requiring {\ttfamily std\+::vector$<$int$>$}\hypertarget{md_ChaiScript_6_1_0_cheatsheet_autotoc_md17}{}\doxysubsection{Adding Objects}\label{md_ChaiScript_6_1_0_cheatsheet_autotoc_md17}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{chai.add(chaiscript::var(somevar), "{}somevar"{}); // copied in}
+\DoxyCodeLine{chai.add(chaiscript::var(std::ref(somevar), "{}somevar"{}); // by reference, shared between C++ and chai}
+\DoxyCodeLine{auto shareddouble = std::make\_shared<double>(4.3);}
+\DoxyCodeLine{chai.add(chaiscript::var(shareddouble), "{}shareddouble"{}); // by shared\_ptr, shared between c++ and chai}
+\DoxyCodeLine{chai.add(chaiscript::const\_var(somevar), "{}somevar"{}); // copied in and made const}
+\DoxyCodeLine{chai.add\_global\_const(chaiscript::const\_var(somevar), "{}somevar"{}); // global const. Throws if value is non-\/const, throws if object exists}
+\DoxyCodeLine{chai.add\_global(chaiscript::var(somevar), "{}somevar"{}); // global non-\/const, throws if object exists}
+\DoxyCodeLine{chai.set\_global(chaiscript::var(somevar), "{}somevar"{}); // global non-\/const, overwrites existing object}
+
+\end{DoxyCode}
+\hypertarget{md_ChaiScript_6_1_0_cheatsheet_autotoc_md18}{}\doxysubsection{Adding Namespaces}\label{md_ChaiScript_6_1_0_cheatsheet_autotoc_md18}
+Namespaces will not be populated until {\ttfamily import} is called. This saves memory and computing costs if a namespace is not imported into every Chai\+Script instance. 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{chai.register\_namespace([](chaiscript::Namespace\& math) \{}
+\DoxyCodeLine{    math["{}pi"{}] = chaiscript::const\_var(3.14159);}
+\DoxyCodeLine{    math["{}sin"{}] = chaiscript::var(chaiscript::fun([](const double x) \{ return sin(x); \})); \},}
+\DoxyCodeLine{    "{}math"{});}
+
+\end{DoxyCode}
+
+
+Import namespace in Chai\+Script 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{import("{}math"{})}
+\DoxyCodeLine{print(math.pi) // prints 3.14159}
+
+\end{DoxyCode}
+\hypertarget{md_ChaiScript_6_1_0_cheatsheet_autotoc_md19}{}\doxysection{Using STL}\label{md_ChaiScript_6_1_0_cheatsheet_autotoc_md19}
+Chai\+Script recognize many types from STL, but you have to add specific instantiation yourself.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{typedef std::vector<std::pair<int, std::string>> data\_list;}
+\DoxyCodeLine{data\_list my\_list\{ make\_pair(0, "{}Hello"{}), make\_pair(1, "{}World"{}) \};}
+\DoxyCodeLine{chai.add(chaiscript::bootstrap::standard\_library::vector\_type<data\_list>("{}DataList"{}));}
+\DoxyCodeLine{chai.add(chaiscript::bootstrap::standard\_library::pair\_type<data\_list::value\_type>("{}DataElement"{}));}
+\DoxyCodeLine{chai.add(chaiscript::var(\&my\_list), "{}data\_list"{});}
+\DoxyCodeLine{chai.eval(R"{}\_(}
+\DoxyCodeLine{    for(var i=0; i<data\_list.size(); ++i)}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{      print(to\_string(data\_list[i].first) + "{} "{} + data\_list[i].second)}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{  )\_"{});}
+
+\end{DoxyCode}
+\hypertarget{md_ChaiScript_6_1_0_cheatsheet_autotoc_md20}{}\doxysection{Executing Script}\label{md_ChaiScript_6_1_0_cheatsheet_autotoc_md20}
+\hypertarget{md_ChaiScript_6_1_0_cheatsheet_autotoc_md21}{}\doxysubsection{General}\label{md_ChaiScript_6_1_0_cheatsheet_autotoc_md21}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{chai.eval("{}print(\(\backslash\)"{}Hello World\(\backslash\)"{})"{});}
+\DoxyCodeLine{chai.eval(R"{}(print("{}Hello World"{}))"{});}
+
+\end{DoxyCode}
+\hypertarget{md_ChaiScript_6_1_0_cheatsheet_autotoc_md22}{}\doxysubsection{Unboxing Return Values}\label{md_ChaiScript_6_1_0_cheatsheet_autotoc_md22}
+Returns values are of the type {\ttfamily Boxed\+\_\+\+Value} which is meant to be opaque to the programmer. Use one of the unboxing methods to access the internal data.\hypertarget{md_ChaiScript_6_1_0_cheatsheet_autotoc_md23}{}\doxysubsubsection{Prefered}\label{md_ChaiScript_6_1_0_cheatsheet_autotoc_md23}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{chai.eval<double>("{}5.3 + 2.1"{}); // returns 7.4 as a C++ double}
+
+\end{DoxyCode}
+\hypertarget{md_ChaiScript_6_1_0_cheatsheet_autotoc_md24}{}\doxysubsubsection{Alternative}\label{md_ChaiScript_6_1_0_cheatsheet_autotoc_md24}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{auto v = chai.eval("{}5.3 + 2.1"{});}
+\DoxyCodeLine{chai.boxed\_cast<double>(v); // extracts double value from boxed\_value and applies known conversions}
+\DoxyCodeLine{chaiscript::boxed\_cast<double>(v); // free function version, does not know about conversions}
+
+\end{DoxyCode}
+\hypertarget{md_ChaiScript_6_1_0_cheatsheet_autotoc_md25}{}\doxysubsubsection{Converting Between Algebraic Types}\label{md_ChaiScript_6_1_0_cheatsheet_autotoc_md25}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{chaiscript::Boxed\_Number(chai.eval("{}5.3 + 2.1"{})).get\_as<int>(); // works with any number type}
+\DoxyCodeLine{// which is equivalent to, but much more automatic than:}
+\DoxyCodeLine{static\_cast<int>(chai.eval<double>("{}5.3+2.1"{})); // this version only works if we know that it's a double}
+
+\end{DoxyCode}
+\hypertarget{md_ChaiScript_6_1_0_cheatsheet_autotoc_md26}{}\doxysubsubsection{Conversion Caveats}\label{md_ChaiScript_6_1_0_cheatsheet_autotoc_md26}
+Conversion to {\ttfamily std\+::shared\+\_\+ptr$<$T$>$ \&} is supported for function calls, but if you attempt to keep a reference to a {\ttfamily shared\+\_\+ptr$<$$>$} you might invoke undefined behavior
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{comment}{// ok this is supported, you can register it with chaiscript engine}}
+\DoxyCodeLine{\textcolor{keywordtype}{void} nullify\_shared\_ptr(std::shared\_ptr<int> \&t) \{}
+\DoxyCodeLine{  t = \textcolor{keyword}{nullptr}}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keywordtype}{int} main()}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{  \textcolor{comment}{// do some stuff and create a chaiscript instance}}
+\DoxyCodeLine{  std::shared\_ptr<int> \&ptr = chai.eval<std::shared\_ptr<int> \&>(somevalue);}
+\DoxyCodeLine{  \textcolor{comment}{// DO NOT do this. Taking a non-\/const reference to a shared\_ptr is not }}
+\DoxyCodeLine{  \textcolor{comment}{// supported and causes undefined behavior in the chaiscript engine}}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\hypertarget{md_ChaiScript_6_1_0_cheatsheet_autotoc_md27}{}\doxysubsection{Sharing Values}\label{md_ChaiScript_6_1_0_cheatsheet_autotoc_md27}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{double \&d = chai.eval("{}var i = 5.2; i"{}); // d is now a reference to i in the script}
+\DoxyCodeLine{std::shared\_ptr<double> d = chai.eval("{}var i = 5.2; i"{}); // same result but reference counted}
+\DoxyCodeLine{}
+\DoxyCodeLine{d = 3;}
+\DoxyCodeLine{chai.eval("{}print(i)"{}); // prints 3}
+
+\end{DoxyCode}
+\hypertarget{md_ChaiScript_6_1_0_cheatsheet_autotoc_md28}{}\doxysubsection{Catching Eval Errors}\label{md_ChaiScript_6_1_0_cheatsheet_autotoc_md28}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{try \{}
+\DoxyCodeLine{  chai.eval("{}2.3 + \(\backslash\)"{}String\(\backslash\)"{}"{});}
+\DoxyCodeLine{\} catch (const chaiscript::exception::eval\_error \&e) \{}
+\DoxyCodeLine{  std::cout << "{}Error\(\backslash\)n"{} << e.pretty\_print() << '\(\backslash\)n';}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\hypertarget{md_ChaiScript_6_1_0_cheatsheet_autotoc_md29}{}\doxysubsection{Catching Errors Thrown From Script}\label{md_ChaiScript_6_1_0_cheatsheet_autotoc_md29}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{try \{}
+\DoxyCodeLine{  chai.eval("{}throw(runtime\_error(\(\backslash\)"{}error\(\backslash\)"{}))"{}, chaiscript::exception\_specification<int, double, float, const std::string \&, const std::exception \&>());}
+\DoxyCodeLine{\} catch (const double e) \{}
+\DoxyCodeLine{\} catch (int) \{}
+\DoxyCodeLine{\} catch (float) \{}
+\DoxyCodeLine{\} catch (const std::string \&) \{}
+\DoxyCodeLine{\} catch (const std::exception \&e) \{}
+\DoxyCodeLine{  // This is the one what will be called in the specific throw() above}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\hypertarget{md_ChaiScript_6_1_0_cheatsheet_autotoc_md30}{}\doxysubsection{Sharing Functions}\label{md_ChaiScript_6_1_0_cheatsheet_autotoc_md30}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{auto p = chai.eval<std::function<std::string (double)>>("{}to\_string"{}); }
+\DoxyCodeLine{p(5); // calls chaiscript's 'to\_string' function, returning std::string("{}5"{})}
+
+\end{DoxyCode}
+
+
+Note\+: backtick treats operators as normal functions
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{auto p = chai.eval<std::function<int (int, int)>>(`+`); }
+\DoxyCodeLine{p(5, 6); // calls chaiscript's '+' function, returning 11}
+
+\end{DoxyCode}
+
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{auto p = chai.eval<std::function<std::string (int, double)>>("{}fun(x,y) \{ to\_string(x) + to\_string(y); \}"{});}
+\DoxyCodeLine{p(3,4.2); // evaluates the lambda function, returning the string "{}34.2"{} to C++}
+
+\end{DoxyCode}
+\hypertarget{md_ChaiScript_6_1_0_cheatsheet_autotoc_md31}{}\doxysection{Language Reference}\label{md_ChaiScript_6_1_0_cheatsheet_autotoc_md31}
+\hypertarget{md_ChaiScript_6_1_0_cheatsheet_autotoc_md32}{}\doxysubsection{Variables}\label{md_ChaiScript_6_1_0_cheatsheet_autotoc_md32}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{var i; // uninitialized variable, can take any value on first assignment;}
+\DoxyCodeLine{auto j; // equiv to var}
+\DoxyCodeLine{}
+\DoxyCodeLine{var k = 5; // initialized to 5 (integer)}
+\DoxyCodeLine{var l := k; // reference to k}
+\DoxyCodeLine{auto \&m = k; // reference to k}
+\DoxyCodeLine{}
+\DoxyCodeLine{global g = 5; // creates a global variable. If global already exists, it is not re-\/added}
+\DoxyCodeLine{global g = 2; // global 'g' now equals 2}
+\DoxyCodeLine{}
+\DoxyCodeLine{global g2;}
+\DoxyCodeLine{if (g2.is\_var\_undef()) \{ g2 = 4; \} // only initialize g2 once, if global decl hit more than once}
+\DoxyCodeLine{}
+\DoxyCodeLine{GLOBAL g3; // all upper case version also accepted}
+
+\end{DoxyCode}
+\hypertarget{md_ChaiScript_6_1_0_cheatsheet_autotoc_md33}{}\doxysubsection{Looping}\label{md_ChaiScript_6_1_0_cheatsheet_autotoc_md33}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{// c-\/style for loops}
+\DoxyCodeLine{for (var i = 0; i < 100; ++i) \{ print(i); \}}
+
+\end{DoxyCode}
+
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{// while}
+\DoxyCodeLine{while (some\_condition()) \{ /* do something */ \}}
+
+\end{DoxyCode}
+
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{// ranged for}
+\DoxyCodeLine{for (x : [1,2,3]) \{ print(i); \}}
+
+\end{DoxyCode}
+
+
+Each of the loop styles can be broken using the {\ttfamily break} statement. For example\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{while (some\_condition()) \{}
+\DoxyCodeLine{  /* do something */}
+\DoxyCodeLine{  if (another\_condition()) \{ break; \}}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\hypertarget{md_ChaiScript_6_1_0_cheatsheet_autotoc_md34}{}\doxysubsection{Conditionals}\label{md_ChaiScript_6_1_0_cheatsheet_autotoc_md34}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{if (expression) \{ \}}
+
+\end{DoxyCode}
+
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{// C++17-\/style init-\/if blocks}
+\DoxyCodeLine{// Value of 'statement' is scoped for entire `if` block}
+\DoxyCodeLine{if (statement; expression) \{ \}}
+
+\end{DoxyCode}
+\hypertarget{md_ChaiScript_6_1_0_cheatsheet_autotoc_md35}{}\doxysubsection{Switch Statements}\label{md_ChaiScript_6_1_0_cheatsheet_autotoc_md35}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{var myvalue = 2}
+\DoxyCodeLine{switch (myvalue) \{}
+\DoxyCodeLine{    case (1) \{}
+\DoxyCodeLine{        print("{}My Value is 1"{});}
+\DoxyCodeLine{        break;}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{    case (2) \{}
+\DoxyCodeLine{        print("{}My Value is 2"{});}
+\DoxyCodeLine{        break;}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{    default \{}
+\DoxyCodeLine{        print("{}My Value is something else."{};}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\hypertarget{md_ChaiScript_6_1_0_cheatsheet_autotoc_md36}{}\doxysubsection{Built in Types}\label{md_ChaiScript_6_1_0_cheatsheet_autotoc_md36}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{var v = [1,2,3u,4ll,"{}16"{}, `+`]; // creates vector of heterogenous values}
+\DoxyCodeLine{var m = ["{}a"{}:1, "{}b"{}:2]; // map of string:value pairs}
+
+\end{DoxyCode}
+
+
+Floating point values default to {\ttfamily double} type and integers default to {\ttfamily int} type. All C++ suffixes such as {\ttfamily f}, {\ttfamily ll}, {\ttfamily u} as well as scientific notation are supported
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1.0 // double}
+\DoxyCodeLine{1.0f // float}
+\DoxyCodeLine{1.0l // long double}
+\DoxyCodeLine{1 // int}
+\DoxyCodeLine{1u // unsigned int}
+\DoxyCodeLine{1ul // unsigned long}
+\DoxyCodeLine{1ull // unsigned long long}
+
+\end{DoxyCode}
+
+
+Literals are automatically sized, just as in C++. For example\+: {\ttfamily 10000000000} is $>$ 32bits and the appropriate type is used to hold it on your platform.\hypertarget{md_ChaiScript_6_1_0_cheatsheet_autotoc_md37}{}\doxysubsection{Functions}\label{md_ChaiScript_6_1_0_cheatsheet_autotoc_md37}
+Note that any type of Chai\+Script function can be passed freely to C++ and automatically converted into an {\ttfamily std\+::function} object.\hypertarget{md_ChaiScript_6_1_0_cheatsheet_autotoc_md38}{}\doxysubsubsection{General}\label{md_ChaiScript_6_1_0_cheatsheet_autotoc_md38}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{def myfun(x, y) \{ x + y; \} // last statement in body is the return value}
+\DoxyCodeLine{def myfun(x, y) \{ return x + y; \} // equiv }
+
+\end{DoxyCode}
+\hypertarget{md_ChaiScript_6_1_0_cheatsheet_autotoc_md39}{}\doxysubsubsection{Optionally Typed}\label{md_ChaiScript_6_1_0_cheatsheet_autotoc_md39}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{def myfun(x, int y) \{ x + y; \} // requires y to be an int}
+
+\end{DoxyCode}
+\hypertarget{md_ChaiScript_6_1_0_cheatsheet_autotoc_md40}{}\doxysubsubsection{With Guards}\label{md_ChaiScript_6_1_0_cheatsheet_autotoc_md40}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{def myfun(x, int y) : y > 5 \{ x -\/ y; \} // only called if y > 5}
+
+\end{DoxyCode}
+\hypertarget{md_ChaiScript_6_1_0_cheatsheet_autotoc_md41}{}\doxysubsubsection{Methods}\label{md_ChaiScript_6_1_0_cheatsheet_autotoc_md41}
+Methods and functions are mostly equivalent
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{def string::add(int y) \{ this + to\_string(y); \}}
+\DoxyCodeLine{def add(string s, int y) \{ s + to\_string(y); \} //equiv functionality}
+\DoxyCodeLine{}
+\DoxyCodeLine{// calling new function/method}
+\DoxyCodeLine{"{}a"{}.add(1); // returns a1}
+\DoxyCodeLine{add("{}a"{}, 1); // returns a1, either calling syntax works with either def above}
+
+\end{DoxyCode}
+\hypertarget{md_ChaiScript_6_1_0_cheatsheet_autotoc_md42}{}\doxysubsubsection{Lambdas}\label{md_ChaiScript_6_1_0_cheatsheet_autotoc_md42}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{var l = fun(x) \{ x * 15; \}}
+\DoxyCodeLine{l(2) // returns 30}
+\DoxyCodeLine{}
+\DoxyCodeLine{var a = 13}
+\DoxyCodeLine{var m = fun[a](x) \{ x * a; \} }
+\DoxyCodeLine{m(3); // a was captured (by reference), returns 39}
+\DoxyCodeLine{}
+\DoxyCodeLine{var n = bind(fun(x,y) \{ x * y; \}, \_, 10);}
+\DoxyCodeLine{n(2); // returns 20 }
+
+\end{DoxyCode}
+\hypertarget{md_ChaiScript_6_1_0_cheatsheet_autotoc_md43}{}\doxysubsection{Chai\+Script Defined Types}\label{md_ChaiScript_6_1_0_cheatsheet_autotoc_md43}
+Define a type called \char`\"{}\+My\+Type\char`\"{} with one member value \char`\"{}a\char`\"{} and a getter\hypertarget{md_ChaiScript_6_1_0_cheatsheet_autotoc_md44}{}\doxysubsubsection{Preferred}\label{md_ChaiScript_6_1_0_cheatsheet_autotoc_md44}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{class MyType \{}
+\DoxyCodeLine{  var value;}
+\DoxyCodeLine{  def MyType() \{ this.value = "{}a"{}; \}}
+\DoxyCodeLine{  def get\_value() \{ "{}Value Is: "{} + this.value; \}}
+\DoxyCodeLine{\};}
+
+\end{DoxyCode}
+\hypertarget{md_ChaiScript_6_1_0_cheatsheet_autotoc_md45}{}\doxysubsubsection{Alternative}\label{md_ChaiScript_6_1_0_cheatsheet_autotoc_md45}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{attr MyType::value;}
+\DoxyCodeLine{def MyType::MyType() \{ this.value = "{}a"{}; \}}
+\DoxyCodeLine{def MyType::get\_value() \{ "{}Value Is: "{} + this.value; \}}
+
+\end{DoxyCode}
+\hypertarget{md_ChaiScript_6_1_0_cheatsheet_autotoc_md46}{}\doxysubsubsection{Using}\label{md_ChaiScript_6_1_0_cheatsheet_autotoc_md46}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{var m = MyType(); // calls constructor}
+\DoxyCodeLine{print(m.get\_value()); // prints "{}Value Is: a"{}}
+\DoxyCodeLine{print(get\_value(m)); // prints "{}Value Is: a"{}}
+
+\end{DoxyCode}
+\hypertarget{md_ChaiScript_6_1_0_cheatsheet_autotoc_md47}{}\doxysubsection{Dynamic Objects}\label{md_ChaiScript_6_1_0_cheatsheet_autotoc_md47}
+All Chai\+Script defined types and generic Dynamic\+\_\+\+Object support dynamic parameters
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{var o = Dynamic\_Object();}
+\DoxyCodeLine{o.f = fun(x) \{ print(x); \}}
+\DoxyCodeLine{o.f(3); // prints "{}3"{}}
+
+\end{DoxyCode}
+
+
+Implicit \textquotesingle{}this\textquotesingle{} is allowed\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{var o = Dynamic\_Object();}
+\DoxyCodeLine{o.x = 3;}
+\DoxyCodeLine{o.f = fun(y) \{ print(this.x + y); \}}
+\DoxyCodeLine{o.f(10); // prints 13}
+
+\end{DoxyCode}
+\hypertarget{md_ChaiScript_6_1_0_cheatsheet_autotoc_md48}{}\doxysubsection{Namespaces}\label{md_ChaiScript_6_1_0_cheatsheet_autotoc_md48}
+Namespaces in Chai\+Script are Dynamic Objects with global scope
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{namespace("{}math"{}) // create a new namespace}
+\DoxyCodeLine{}
+\DoxyCodeLine{math.square = fun(x) \{ x * x \} // add a function to the "{}math"{} namespace}
+\DoxyCodeLine{math.sum\_squares = fun(x, y) \{ math.square(x) + math.square(y) \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{print(math.square(4)) // prints 16}
+\DoxyCodeLine{print(math.sum\_squares(2, 5)) // prints 29}
+
+\end{DoxyCode}
+\hypertarget{md_ChaiScript_6_1_0_cheatsheet_autotoc_md49}{}\doxysubsubsection{Option Explicit}\label{md_ChaiScript_6_1_0_cheatsheet_autotoc_md49}
+If you want to disable dynamic parameter definitions, you can {\ttfamily set\+\_\+explicit}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{class My\_Class \{}
+\DoxyCodeLine{  def My\_Class() \{}
+\DoxyCodeLine{    this.set\_explicit(true);}
+\DoxyCodeLine{    this.x = 2; // this would fail with explicit set to true}
+\DoxyCodeLine{  \}}
+\DoxyCodeLine{\};}
+
+\end{DoxyCode}
+\hypertarget{md_ChaiScript_6_1_0_cheatsheet_autotoc_md50}{}\doxysubsection{method\+\_\+missing}\label{md_ChaiScript_6_1_0_cheatsheet_autotoc_md50}
+\mbox{\hyperlink{classA}{A}} function of the signature {\ttfamily method\+\_\+missing(object, name, param1, param2, param3)} will be called if an appropriate method cannot be found
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{def method\_missing(int i, string name, Vector v) \{}
+\DoxyCodeLine{  print("{}method\_missing(\$\{i\}, \$\{name\}), \$\{v.size()\} params"{});}
+\DoxyCodeLine{\}}
+\DoxyCodeLine{}
+\DoxyCodeLine{5.bob(1,2,3); // prints "{}method\_missing(5, bob, 3 params)"{}}
+
+\end{DoxyCode}
+
+
+{\ttfamily method\+\_\+missing} signature can be either 2 parameters or 3 parameters. If the signature contains two parameters it is treated as a property. If the property contains a function then additional parameters are passed to the contained function.
+
+If both a 2 parameter and a 3 parameter signature match, the 3 parameter function always wins.\hypertarget{md_ChaiScript_6_1_0_cheatsheet_autotoc_md51}{}\doxysubsection{Context}\label{md_ChaiScript_6_1_0_cheatsheet_autotoc_md51}
+
+\begin{DoxyItemize}
+\item {\ttfamily \+\_\+\+\_\+\+LINE\+\_\+\+\_\+} Current file line number
+\item {\ttfamily \+\_\+\+\_\+\+FILE\+\_\+\+\_\+} Full path of current file
+\item {\ttfamily \+\_\+\+\_\+\+CLASS\+\_\+\+\_\+} Name of current class
+\item {\ttfamily \+\_\+\+\_\+\+FUNC\+\_\+\+\_\+} Mame of current function
+\end{DoxyItemize}\hypertarget{md_ChaiScript_6_1_0_cheatsheet_autotoc_md52}{}\doxysection{Built In Functions}\label{md_ChaiScript_6_1_0_cheatsheet_autotoc_md52}
+\hypertarget{md_ChaiScript_6_1_0_cheatsheet_autotoc_md53}{}\doxysubsection{Disabling Built-\/\+Ins}\label{md_ChaiScript_6_1_0_cheatsheet_autotoc_md53}
+When constructing a Chai\+Script object, a vector of parameters can be passed in to disable or enable various built-\/in methods.
+
+Current options\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{enum class Options}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{  Load\_Modules,}
+\DoxyCodeLine{  No\_Load\_Modules,}
+\DoxyCodeLine{  External\_Scripts,}
+\DoxyCodeLine{  No\_External\_Scripts}
+\DoxyCodeLine{\};}
+
+\end{DoxyCode}
+\hypertarget{md_ChaiScript_6_1_0_cheatsheet_autotoc_md54}{}\doxysubsection{Evaluation}\label{md_ChaiScript_6_1_0_cheatsheet_autotoc_md54}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{eval("{}4 + 5"{}) // dynamically eval script string and returns value of last statement}
+\DoxyCodeLine{eval\_file("{}filename"{}) // evals file and returns value of last statement}
+\DoxyCodeLine{use("{}filename"{}) // evals file exactly once and returns value of last statement}
+\DoxyCodeLine{                // if the file had already been 'used' nothing happens and undefined is returned}
+
+\end{DoxyCode}
+
+
+Both {\ttfamily use} and {\ttfamily eval\+\_\+file} search the \textquotesingle{}usepaths\textquotesingle{} passed to the Chai\+Script constructor\hypertarget{md_ChaiScript_6_1_0_cheatsheet_autotoc_md55}{}\doxysubsection{JSON}\label{md_ChaiScript_6_1_0_cheatsheet_autotoc_md55}
+
+\begin{DoxyItemize}
+\item {\ttfamily from\+\_\+json} converts a JSON string into its strongly typed (map, vector, int, double, string) representations
+\item {\ttfamily to\+\_\+json} converts a Chai\+Script object (either a {\ttfamily Object} or one of map, vector, int, double, string) tree into its JSON string representation 
+\end{DoxyItemize}

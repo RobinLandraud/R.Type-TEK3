@@ -1,0 +1,238 @@
+\hypertarget{classChaiScript__Language_1_1Vector}{}\doxysection{Chai\+Script\+\_\+\+Language\+::Vector Class Reference}
+\label{classChaiScript__Language_1_1Vector}\index{ChaiScript\_Language::Vector@{ChaiScript\_Language::Vector}}
+
+
+\mbox{\hyperlink{classA}{A}} vector of Objects.  
+
+
+
+
+{\ttfamily \#include $<$chaiscript\+\_\+prelude\+\_\+docs.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classChaiScript__Language_1_1Object}{Object}} \mbox{\hyperlink{classChaiScript__Language_1_1Vector_a62f4aeacaa749b0c39973afce9eff8ac}{operator\mbox{[}$\,$\mbox{]}}} (int t\+\_\+index)
+\begin{DoxyCompactList}\small\item\em returns the \mbox{\hyperlink{classChaiScript__Language_1_1Object}{Object}} at the given index. Throws an exception if the index does not exist \end{DoxyCompactList}\item 
+const \mbox{\hyperlink{classChaiScript__Language_1_1Object}{Object}} \mbox{\hyperlink{classChaiScript__Language_1_1Vector_a51018ebbdfcb166c88f164746f96aba5}{operator\mbox{[}$\,$\mbox{]}}} (int t\+\_\+index) const
+\begin{DoxyCompactList}\small\item\em returns a const \mbox{\hyperlink{classChaiScript__Language_1_1Object}{Object}} at the given index. Throws an exception if the index does not exist. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classChaiScript__Language_1_1Object}{Object}} \mbox{\hyperlink{classChaiScript__Language_1_1Vector_a127186c8a26765803ffe737f4d0a6398}{back}} ()
+\begin{DoxyCompactList}\small\item\em returns the last item in the \mbox{\hyperlink{classChaiScript__Language_1_1Vector}{Vector}} \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classChaiScript__Language_1_1Vector_a06b4c13d022c7bcd0b39b57591a085f0}{clear}} ()
+\begin{DoxyCompactList}\small\item\em Clears the \mbox{\hyperlink{classChaiScript__Language_1_1Vector}{Vector}} of all items. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classChaiScript__Language_1_1Vector_ac206566218feffc7ecd81a8142398ac8}{empty}} ()
+\begin{DoxyCompactList}\small\item\em Returns true if the \mbox{\hyperlink{classChaiScript__Language_1_1Vector}{Vector}} is contains 0 items. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classChaiScript__Language_1_1Vector_a239918b2d9f79e00fddde042e0012909}{erase\+\_\+at}} (int t\+\_\+index)
+\begin{DoxyCompactList}\small\item\em Erases the element at the given index. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classChaiScript__Language_1_1Object}{Object}} \mbox{\hyperlink{classChaiScript__Language_1_1Vector_a7a552a0b6c1e59a943c27d49153491a5}{front}} ()
+\begin{DoxyCompactList}\small\item\em Returns the first item in the \mbox{\hyperlink{classChaiScript__Language_1_1Vector}{Vector}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classChaiScript__Language_1_1Vector_acde379e03c2b8b186ca5e5805300f1ab}{insert\+\_\+ref\+\_\+at}} (int, \mbox{\hyperlink{classChaiScript__Language_1_1Object}{Object}})
+\begin{DoxyCompactList}\small\item\em Inserts a new item in the \mbox{\hyperlink{classChaiScript__Language_1_1Vector}{Vector}} at the given index. The item is not cloned on insert. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classChaiScript__Language_1_1Vector_a4feabdfba9330044429966c58b7207f3}{insert\+\_\+at}} (int, \mbox{\hyperlink{classChaiScript__Language_1_1Object}{Object}})
+\begin{DoxyCompactList}\small\item\em Inserts a new item in the \mbox{\hyperlink{classChaiScript__Language_1_1Vector}{Vector}} at the given index. The item is cloned on insert. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classChaiScript__Language_1_1Vector_a676062fc84e0f112c0eff27eb9b2af28}{pop\+\_\+back}} ()
+\begin{DoxyCompactList}\small\item\em Removes the last item from the \mbox{\hyperlink{classChaiScript__Language_1_1Vector}{Vector}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classChaiScript__Language_1_1Vector_af4e28c5cfc0616d1195f5358499877eb}{push\+\_\+back\+\_\+ref}} (\mbox{\hyperlink{classChaiScript__Language_1_1Object}{Object}})
+\begin{DoxyCompactList}\small\item\em Adds an item to the end of the \mbox{\hyperlink{classChaiScript__Language_1_1Vector}{Vector}}. The item is not cloned. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classChaiScript__Language_1_1Vector_a0ae19b174dee1bef0016a19b8fd5e66f}{push\+\_\+back}} (\mbox{\hyperlink{classChaiScript__Language_1_1Object}{Object}})
+\begin{DoxyCompactList}\small\item\em Adds an item to the end of the \mbox{\hyperlink{classChaiScript__Language_1_1Vector}{Vector}}. The item is cloned. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classChaiScript__Language_1_1Range}{Range}} \mbox{\hyperlink{classChaiScript__Language_1_1Vector_aa695f477b53aed3932bcb64eb43cd468}{range}} ()
+\begin{DoxyCompactList}\small\item\em Returns a \mbox{\hyperlink{classChaiScript__Language_1_1Range}{Range}} object for the entire vector. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classChaiScript__Language_1_1Const__Range}{Const\+\_\+\+Range}} \mbox{\hyperlink{classChaiScript__Language_1_1Vector_afb7adafab6e7cfeaf14b25853f1165f9}{range}} () const
+\begin{DoxyCompactList}\small\item\em Returns a \mbox{\hyperlink{classChaiScript__Language_1_1Const__Range}{Const\+\_\+\+Range}} object for the entire vector. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classChaiScript__Language_1_1Vector_a5b111056e94989aa6587e1537686fd22}{size}} () const
+\begin{DoxyCompactList}\small\item\em Returns the number of elements in the \mbox{\hyperlink{classChaiScript__Language_1_1Vector}{Vector}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{classA}{A}} vector of Objects. 
+
+Chai\+Script includes a shortcut for creating a \mbox{\hyperlink{classChaiScript__Language_1_1Vector}{Vector}} of Objects
+
+Example\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{eval> \mbox{\hyperlink{namespacechaiscript_a7f9fcf9713fa8a33bcc304a16ac2834b}{var}} v = [1,2,3,4]}
+\DoxyCodeLine{[1, 2, 3, 4]}
+\DoxyCodeLine{eval> v[0];}
+\DoxyCodeLine{1}
+\DoxyCodeLine{eval> v.size();}
+\DoxyCodeLine{4}
+
+\end{DoxyCode}
+
+
+Implemented with std\+::vector$<$chaiscript\+::\+Boxed\+\_\+\+Value$>$
+
+\begin{DoxySeeAlso}{See also}
+chaiscript\+::bootstrap\+::standard\+\_\+library\+::vector\+\_\+type 
+\end{DoxySeeAlso}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classChaiScript__Language_1_1Vector_a127186c8a26765803ffe737f4d0a6398}\label{classChaiScript__Language_1_1Vector_a127186c8a26765803ffe737f4d0a6398}} 
+\index{ChaiScript\_Language::Vector@{ChaiScript\_Language::Vector}!back@{back}}
+\index{back@{back}!ChaiScript\_Language::Vector@{ChaiScript\_Language::Vector}}
+\doxysubsubsection{\texorpdfstring{back()}{back()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classChaiScript__Language_1_1Object}{Object}} Chai\+Script\+\_\+\+Language\+::\+Vector\+::back (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+returns the last item in the \mbox{\hyperlink{classChaiScript__Language_1_1Vector}{Vector}} 
+
+\mbox{\Hypertarget{classChaiScript__Language_1_1Vector_a06b4c13d022c7bcd0b39b57591a085f0}\label{classChaiScript__Language_1_1Vector_a06b4c13d022c7bcd0b39b57591a085f0}} 
+\index{ChaiScript\_Language::Vector@{ChaiScript\_Language::Vector}!clear@{clear}}
+\index{clear@{clear}!ChaiScript\_Language::Vector@{ChaiScript\_Language::Vector}}
+\doxysubsubsection{\texorpdfstring{clear()}{clear()}}
+{\footnotesize\ttfamily void Chai\+Script\+\_\+\+Language\+::\+Vector\+::clear (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Clears the \mbox{\hyperlink{classChaiScript__Language_1_1Vector}{Vector}} of all items. 
+
+\mbox{\Hypertarget{classChaiScript__Language_1_1Vector_ac206566218feffc7ecd81a8142398ac8}\label{classChaiScript__Language_1_1Vector_ac206566218feffc7ecd81a8142398ac8}} 
+\index{ChaiScript\_Language::Vector@{ChaiScript\_Language::Vector}!empty@{empty}}
+\index{empty@{empty}!ChaiScript\_Language::Vector@{ChaiScript\_Language::Vector}}
+\doxysubsubsection{\texorpdfstring{empty()}{empty()}}
+{\footnotesize\ttfamily bool Chai\+Script\+\_\+\+Language\+::\+Vector\+::empty (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns true if the \mbox{\hyperlink{classChaiScript__Language_1_1Vector}{Vector}} is contains 0 items. 
+
+\mbox{\Hypertarget{classChaiScript__Language_1_1Vector_a239918b2d9f79e00fddde042e0012909}\label{classChaiScript__Language_1_1Vector_a239918b2d9f79e00fddde042e0012909}} 
+\index{ChaiScript\_Language::Vector@{ChaiScript\_Language::Vector}!erase\_at@{erase\_at}}
+\index{erase\_at@{erase\_at}!ChaiScript\_Language::Vector@{ChaiScript\_Language::Vector}}
+\doxysubsubsection{\texorpdfstring{erase\_at()}{erase\_at()}}
+{\footnotesize\ttfamily void Chai\+Script\+\_\+\+Language\+::\+Vector\+::erase\+\_\+at (\begin{DoxyParamCaption}\item[{int}]{t\+\_\+index }\end{DoxyParamCaption})}
+
+
+
+Erases the element at the given index. 
+
+\mbox{\Hypertarget{classChaiScript__Language_1_1Vector_a7a552a0b6c1e59a943c27d49153491a5}\label{classChaiScript__Language_1_1Vector_a7a552a0b6c1e59a943c27d49153491a5}} 
+\index{ChaiScript\_Language::Vector@{ChaiScript\_Language::Vector}!front@{front}}
+\index{front@{front}!ChaiScript\_Language::Vector@{ChaiScript\_Language::Vector}}
+\doxysubsubsection{\texorpdfstring{front()}{front()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classChaiScript__Language_1_1Object}{Object}} Chai\+Script\+\_\+\+Language\+::\+Vector\+::front (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns the first item in the \mbox{\hyperlink{classChaiScript__Language_1_1Vector}{Vector}}. 
+
+\mbox{\Hypertarget{classChaiScript__Language_1_1Vector_a4feabdfba9330044429966c58b7207f3}\label{classChaiScript__Language_1_1Vector_a4feabdfba9330044429966c58b7207f3}} 
+\index{ChaiScript\_Language::Vector@{ChaiScript\_Language::Vector}!insert\_at@{insert\_at}}
+\index{insert\_at@{insert\_at}!ChaiScript\_Language::Vector@{ChaiScript\_Language::Vector}}
+\doxysubsubsection{\texorpdfstring{insert\_at()}{insert\_at()}}
+{\footnotesize\ttfamily void Chai\+Script\+\_\+\+Language\+::\+Vector\+::insert\+\_\+at (\begin{DoxyParamCaption}\item[{int}]{,  }\item[{\mbox{\hyperlink{classChaiScript__Language_1_1Object}{Object}}}]{ }\end{DoxyParamCaption})}
+
+
+
+Inserts a new item in the \mbox{\hyperlink{classChaiScript__Language_1_1Vector}{Vector}} at the given index. The item is cloned on insert. 
+
+\begin{DoxySeeAlso}{See also}
+insert\+\_\+ref 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classChaiScript__Language_1_1Vector_acde379e03c2b8b186ca5e5805300f1ab}\label{classChaiScript__Language_1_1Vector_acde379e03c2b8b186ca5e5805300f1ab}} 
+\index{ChaiScript\_Language::Vector@{ChaiScript\_Language::Vector}!insert\_ref\_at@{insert\_ref\_at}}
+\index{insert\_ref\_at@{insert\_ref\_at}!ChaiScript\_Language::Vector@{ChaiScript\_Language::Vector}}
+\doxysubsubsection{\texorpdfstring{insert\_ref\_at()}{insert\_ref\_at()}}
+{\footnotesize\ttfamily void Chai\+Script\+\_\+\+Language\+::\+Vector\+::insert\+\_\+ref\+\_\+at (\begin{DoxyParamCaption}\item[{int}]{,  }\item[{\mbox{\hyperlink{classChaiScript__Language_1_1Object}{Object}}}]{ }\end{DoxyParamCaption})}
+
+
+
+Inserts a new item in the \mbox{\hyperlink{classChaiScript__Language_1_1Vector}{Vector}} at the given index. The item is not cloned on insert. 
+
+\begin{DoxySeeAlso}{See also}
+insert\+\_\+ref 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classChaiScript__Language_1_1Vector_a62f4aeacaa749b0c39973afce9eff8ac}\label{classChaiScript__Language_1_1Vector_a62f4aeacaa749b0c39973afce9eff8ac}} 
+\index{ChaiScript\_Language::Vector@{ChaiScript\_Language::Vector}!operator\mbox{[}\mbox{]}@{operator[]}}
+\index{operator\mbox{[}\mbox{]}@{operator[]}!ChaiScript\_Language::Vector@{ChaiScript\_Language::Vector}}
+\doxysubsubsection{\texorpdfstring{operator[]()}{operator[]()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classChaiScript__Language_1_1Object}{Object}} Chai\+Script\+\_\+\+Language\+::\+Vector\+::operator\mbox{[}$\,$\mbox{]} (\begin{DoxyParamCaption}\item[{int}]{t\+\_\+index }\end{DoxyParamCaption})}
+
+
+
+returns the \mbox{\hyperlink{classChaiScript__Language_1_1Object}{Object}} at the given index. Throws an exception if the index does not exist 
+
+\mbox{\Hypertarget{classChaiScript__Language_1_1Vector_a51018ebbdfcb166c88f164746f96aba5}\label{classChaiScript__Language_1_1Vector_a51018ebbdfcb166c88f164746f96aba5}} 
+\index{ChaiScript\_Language::Vector@{ChaiScript\_Language::Vector}!operator\mbox{[}\mbox{]}@{operator[]}}
+\index{operator\mbox{[}\mbox{]}@{operator[]}!ChaiScript\_Language::Vector@{ChaiScript\_Language::Vector}}
+\doxysubsubsection{\texorpdfstring{operator[]()}{operator[]()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{classChaiScript__Language_1_1Object}{Object}} Chai\+Script\+\_\+\+Language\+::\+Vector\+::operator\mbox{[}$\,$\mbox{]} (\begin{DoxyParamCaption}\item[{int}]{t\+\_\+index }\end{DoxyParamCaption}) const}
+
+
+
+returns a const \mbox{\hyperlink{classChaiScript__Language_1_1Object}{Object}} at the given index. Throws an exception if the index does not exist. 
+
+\mbox{\Hypertarget{classChaiScript__Language_1_1Vector_a676062fc84e0f112c0eff27eb9b2af28}\label{classChaiScript__Language_1_1Vector_a676062fc84e0f112c0eff27eb9b2af28}} 
+\index{ChaiScript\_Language::Vector@{ChaiScript\_Language::Vector}!pop\_back@{pop\_back}}
+\index{pop\_back@{pop\_back}!ChaiScript\_Language::Vector@{ChaiScript\_Language::Vector}}
+\doxysubsubsection{\texorpdfstring{pop\_back()}{pop\_back()}}
+{\footnotesize\ttfamily void Chai\+Script\+\_\+\+Language\+::\+Vector\+::pop\+\_\+back (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Removes the last item from the \mbox{\hyperlink{classChaiScript__Language_1_1Vector}{Vector}}. 
+
+\mbox{\Hypertarget{classChaiScript__Language_1_1Vector_a0ae19b174dee1bef0016a19b8fd5e66f}\label{classChaiScript__Language_1_1Vector_a0ae19b174dee1bef0016a19b8fd5e66f}} 
+\index{ChaiScript\_Language::Vector@{ChaiScript\_Language::Vector}!push\_back@{push\_back}}
+\index{push\_back@{push\_back}!ChaiScript\_Language::Vector@{ChaiScript\_Language::Vector}}
+\doxysubsubsection{\texorpdfstring{push\_back()}{push\_back()}}
+{\footnotesize\ttfamily void Chai\+Script\+\_\+\+Language\+::\+Vector\+::push\+\_\+back (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classChaiScript__Language_1_1Object}{Object}}}]{ }\end{DoxyParamCaption})}
+
+
+
+Adds an item to the end of the \mbox{\hyperlink{classChaiScript__Language_1_1Vector}{Vector}}. The item is cloned. 
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classChaiScript__Language_1_1Vector_af4e28c5cfc0616d1195f5358499877eb}{push\+\_\+back\+\_\+ref}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classChaiScript__Language_1_1Vector_af4e28c5cfc0616d1195f5358499877eb}\label{classChaiScript__Language_1_1Vector_af4e28c5cfc0616d1195f5358499877eb}} 
+\index{ChaiScript\_Language::Vector@{ChaiScript\_Language::Vector}!push\_back\_ref@{push\_back\_ref}}
+\index{push\_back\_ref@{push\_back\_ref}!ChaiScript\_Language::Vector@{ChaiScript\_Language::Vector}}
+\doxysubsubsection{\texorpdfstring{push\_back\_ref()}{push\_back\_ref()}}
+{\footnotesize\ttfamily void Chai\+Script\+\_\+\+Language\+::\+Vector\+::push\+\_\+back\+\_\+ref (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classChaiScript__Language_1_1Object}{Object}}}]{ }\end{DoxyParamCaption})}
+
+
+
+Adds an item to the end of the \mbox{\hyperlink{classChaiScript__Language_1_1Vector}{Vector}}. The item is not cloned. 
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classChaiScript__Language_1_1Vector_a0ae19b174dee1bef0016a19b8fd5e66f}{push\+\_\+back}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classChaiScript__Language_1_1Vector_aa695f477b53aed3932bcb64eb43cd468}\label{classChaiScript__Language_1_1Vector_aa695f477b53aed3932bcb64eb43cd468}} 
+\index{ChaiScript\_Language::Vector@{ChaiScript\_Language::Vector}!range@{range}}
+\index{range@{range}!ChaiScript\_Language::Vector@{ChaiScript\_Language::Vector}}
+\doxysubsubsection{\texorpdfstring{range()}{range()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classChaiScript__Language_1_1Range}{Range}} Chai\+Script\+\_\+\+Language\+::\+Vector\+::range (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns a \mbox{\hyperlink{classChaiScript__Language_1_1Range}{Range}} object for the entire vector. 
+
+\mbox{\Hypertarget{classChaiScript__Language_1_1Vector_afb7adafab6e7cfeaf14b25853f1165f9}\label{classChaiScript__Language_1_1Vector_afb7adafab6e7cfeaf14b25853f1165f9}} 
+\index{ChaiScript\_Language::Vector@{ChaiScript\_Language::Vector}!range@{range}}
+\index{range@{range}!ChaiScript\_Language::Vector@{ChaiScript\_Language::Vector}}
+\doxysubsubsection{\texorpdfstring{range()}{range()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classChaiScript__Language_1_1Const__Range}{Const\+\_\+\+Range}} Chai\+Script\+\_\+\+Language\+::\+Vector\+::range (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Returns a \mbox{\hyperlink{classChaiScript__Language_1_1Const__Range}{Const\+\_\+\+Range}} object for the entire vector. 
+
+\mbox{\Hypertarget{classChaiScript__Language_1_1Vector_a5b111056e94989aa6587e1537686fd22}\label{classChaiScript__Language_1_1Vector_a5b111056e94989aa6587e1537686fd22}} 
+\index{ChaiScript\_Language::Vector@{ChaiScript\_Language::Vector}!size@{size}}
+\index{size@{size}!ChaiScript\_Language::Vector@{ChaiScript\_Language::Vector}}
+\doxysubsubsection{\texorpdfstring{size()}{size()}}
+{\footnotesize\ttfamily int Chai\+Script\+\_\+\+Language\+::\+Vector\+::size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Returns the number of elements in the \mbox{\hyperlink{classChaiScript__Language_1_1Vector}{Vector}}. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Chai\+Script-\/6.\+1.\+0/include/chaiscript/language/chaiscript\+\_\+prelude\+\_\+docs.\+hpp\end{DoxyCompactItemize}

@@ -1,0 +1,325 @@
+\hypertarget{classScriptSceneManagerComponents}{}\doxysection{Script\+Scene\+Manager\+Components Class Reference}
+\label{classScriptSceneManagerComponents}\index{ScriptSceneManagerComponents@{ScriptSceneManagerComponents}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classScriptSceneManagerComponents_aea7d403dcf15269d9e77fb4109b294be}{Script\+Scene\+Manager\+Components}} (\mbox{\hyperlink{classregistry}{registry}} \&reg)
+\begin{DoxyCompactList}\small\item\em The constructor of the class. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classScriptSceneManagerComponents_abf0197f0e67d5d02ed51ac531499ad89}{add}} (size\+\_\+t ent\+\_\+id)
+\begin{DoxyCompactList}\small\item\em Add a component to the entity. \end{DoxyCompactList}\item 
+size\+\_\+t \mbox{\hyperlink{classScriptSceneManagerComponents_a9a0d01685c9fa717eb02625db605522f}{size}} ()
+\begin{DoxyCompactList}\small\item\em Get the number of script scene manager components. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classSceneManager}{Scene\+Manager}} \& \mbox{\hyperlink{classScriptSceneManagerComponents_a5b89c539b9d8dafdfc78ed6e6775d6c1}{at}} (size\+\_\+t index)
+\begin{DoxyCompactList}\small\item\em Get a script scene manager component at a given index. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classScriptSceneManagerComponents_acaf3c382f66fc64159c384117108f28a}{exists}} (size\+\_\+t index)
+\begin{DoxyCompactList}\small\item\em Check if a script scene manager exists at a given index. \end{DoxyCompactList}\item 
+Scene\+Type \mbox{\hyperlink{classScriptSceneManagerComponents_ab6235e6eaf6d92bb5428ae48c886b570}{get\+Current\+Scene\+At}} (size\+\_\+t index)
+\begin{DoxyCompactList}\small\item\em Get the current scene at a given index. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classScriptSceneManagerComponents_a81928419137c66dd28d6f969978358e5}{change\+Scene\+At}} (size\+\_\+t index, Scene\+Type type)
+\begin{DoxyCompactList}\small\item\em Change the scene at a given index. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classScriptSceneManagerComponents_ae58330d0644e00a2b8720d9415c37c29}{set\+Update\+At}} (size\+\_\+t index, bool update)
+\begin{DoxyCompactList}\small\item\em Set the update at a given index. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classScriptSceneManagerComponents_a93ed26e25e99c725d1034852a2bb30bd}{is\+Updated\+At}} (size\+\_\+t index)
+\begin{DoxyCompactList}\small\item\em Check if the scene manager is updated at a given index. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classScriptSceneManagerComponents_a209ef9ebd061643f45dc42f1494bfe07}{set\+Entity\+Pos\+At}} (size\+\_\+t index, size\+\_\+t pos)
+\begin{DoxyCompactList}\small\item\em Set the entity position at a given index. \end{DoxyCompactList}\item 
+size\+\_\+t \mbox{\hyperlink{classScriptSceneManagerComponents_a36b75499f9b44a0b29cd57658b1e4c31}{get\+Entity\+Pos\+At}} (size\+\_\+t index)
+\begin{DoxyCompactList}\small\item\em Get the entity position at a given index. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classScriptSceneManagerComponents_afca8a854363b88fb3f3eb827e7c661d1}{is\+Start\+At}} (size\+\_\+t index)
+\begin{DoxyCompactList}\small\item\em Check if the scene manager is started at a given index. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classScriptSceneManagerComponents_a201b34ce001cc100fd63d139ad620372}{is\+Menu\+At}} (size\+\_\+t index)
+\begin{DoxyCompactList}\small\item\em Check if the scene manager is in the menu at a given index. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classScriptSceneManagerComponents_a1318f2827d5302389f2a348d0f1dda27}\label{classScriptSceneManagerComponents_a1318f2827d5302389f2a348d0f1dda27}} 
+bool {\bfseries is\+Settings\+At} (size\+\_\+t index)
+\item 
+bool \mbox{\hyperlink{classScriptSceneManagerComponents_afa4bd559acf7332faf1d4215f8eeab55}{is\+Game\+At}} (size\+\_\+t index)
+\begin{DoxyCompactList}\small\item\em Check if the scene manager is in the game at a given index. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classScriptSceneManagerComponents_a01799d791138ee40c3441731bc2c0289}{is\+End\+At}} (size\+\_\+t index)
+\begin{DoxyCompactList}\small\item\em Check if the scene manager is in the end at a given index. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classScriptSceneManagerComponents_a76c2bd5c065e13ae9d362e5d72d314d0}{is\+Stat\+At}} (size\+\_\+t index)
+\begin{DoxyCompactList}\small\item\em Check if the scene manager is in the stats at a given index. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classScriptSceneManagerComponents_aea7d403dcf15269d9e77fb4109b294be}\label{classScriptSceneManagerComponents_aea7d403dcf15269d9e77fb4109b294be}} 
+\index{ScriptSceneManagerComponents@{ScriptSceneManagerComponents}!ScriptSceneManagerComponents@{ScriptSceneManagerComponents}}
+\index{ScriptSceneManagerComponents@{ScriptSceneManagerComponents}!ScriptSceneManagerComponents@{ScriptSceneManagerComponents}}
+\doxysubsubsection{\texorpdfstring{ScriptSceneManagerComponents()}{ScriptSceneManagerComponents()}}
+{\footnotesize\ttfamily Script\+Scene\+Manager\+Components\+::\+Script\+Scene\+Manager\+Components (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classregistry}{registry}} \&}]{reg }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+The constructor of the class. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em reg} & The registry \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classScriptSceneManagerComponents_abf0197f0e67d5d02ed51ac531499ad89}\label{classScriptSceneManagerComponents_abf0197f0e67d5d02ed51ac531499ad89}} 
+\index{ScriptSceneManagerComponents@{ScriptSceneManagerComponents}!add@{add}}
+\index{add@{add}!ScriptSceneManagerComponents@{ScriptSceneManagerComponents}}
+\doxysubsubsection{\texorpdfstring{add()}{add()}}
+{\footnotesize\ttfamily void Script\+Scene\+Manager\+Components\+::add (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{ent\+\_\+id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Add a component to the entity. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ent\+\_\+id} & The entity id \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classScriptSceneManagerComponents_a5b89c539b9d8dafdfc78ed6e6775d6c1}\label{classScriptSceneManagerComponents_a5b89c539b9d8dafdfc78ed6e6775d6c1}} 
+\index{ScriptSceneManagerComponents@{ScriptSceneManagerComponents}!at@{at}}
+\index{at@{at}!ScriptSceneManagerComponents@{ScriptSceneManagerComponents}}
+\doxysubsubsection{\texorpdfstring{at()}{at()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classServerPropertiesComponent}{Server\+Properties\+Component}} \& Script\+Scene\+Manager\+Components\+::at (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get a script scene manager component at a given index. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & The index \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The script scene manager component 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classScriptSceneManagerComponents_a81928419137c66dd28d6f969978358e5}\label{classScriptSceneManagerComponents_a81928419137c66dd28d6f969978358e5}} 
+\index{ScriptSceneManagerComponents@{ScriptSceneManagerComponents}!changeSceneAt@{changeSceneAt}}
+\index{changeSceneAt@{changeSceneAt}!ScriptSceneManagerComponents@{ScriptSceneManagerComponents}}
+\doxysubsubsection{\texorpdfstring{changeSceneAt()}{changeSceneAt()}}
+{\footnotesize\ttfamily void Script\+Scene\+Manager\+Components\+::change\+Scene\+At (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{index,  }\item[{Scene\+Type}]{type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Change the scene at a given index. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & The index \\
+\hline
+{\em type} & The scene type \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classScriptSceneManagerComponents_acaf3c382f66fc64159c384117108f28a}\label{classScriptSceneManagerComponents_acaf3c382f66fc64159c384117108f28a}} 
+\index{ScriptSceneManagerComponents@{ScriptSceneManagerComponents}!exists@{exists}}
+\index{exists@{exists}!ScriptSceneManagerComponents@{ScriptSceneManagerComponents}}
+\doxysubsubsection{\texorpdfstring{exists()}{exists()}}
+{\footnotesize\ttfamily bool Script\+Scene\+Manager\+Components\+::exists (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Check if a script scene manager exists at a given index. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & The index \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the script scene manager exists, false otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classScriptSceneManagerComponents_ab6235e6eaf6d92bb5428ae48c886b570}\label{classScriptSceneManagerComponents_ab6235e6eaf6d92bb5428ae48c886b570}} 
+\index{ScriptSceneManagerComponents@{ScriptSceneManagerComponents}!getCurrentSceneAt@{getCurrentSceneAt}}
+\index{getCurrentSceneAt@{getCurrentSceneAt}!ScriptSceneManagerComponents@{ScriptSceneManagerComponents}}
+\doxysubsubsection{\texorpdfstring{getCurrentSceneAt()}{getCurrentSceneAt()}}
+{\footnotesize\ttfamily Scene\+Type Script\+Scene\+Manager\+Components\+::get\+Current\+Scene\+At (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the current scene at a given index. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & The index \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The current scene 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classScriptSceneManagerComponents_a36b75499f9b44a0b29cd57658b1e4c31}\label{classScriptSceneManagerComponents_a36b75499f9b44a0b29cd57658b1e4c31}} 
+\index{ScriptSceneManagerComponents@{ScriptSceneManagerComponents}!getEntityPosAt@{getEntityPosAt}}
+\index{getEntityPosAt@{getEntityPosAt}!ScriptSceneManagerComponents@{ScriptSceneManagerComponents}}
+\doxysubsubsection{\texorpdfstring{getEntityPosAt()}{getEntityPosAt()}}
+{\footnotesize\ttfamily size\+\_\+t Script\+Scene\+Manager\+Components\+::get\+Entity\+Pos\+At (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the entity position at a given index. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & The index \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The entity position 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classScriptSceneManagerComponents_a01799d791138ee40c3441731bc2c0289}\label{classScriptSceneManagerComponents_a01799d791138ee40c3441731bc2c0289}} 
+\index{ScriptSceneManagerComponents@{ScriptSceneManagerComponents}!isEndAt@{isEndAt}}
+\index{isEndAt@{isEndAt}!ScriptSceneManagerComponents@{ScriptSceneManagerComponents}}
+\doxysubsubsection{\texorpdfstring{isEndAt()}{isEndAt()}}
+{\footnotesize\ttfamily bool Script\+Scene\+Manager\+Components\+::is\+End\+At (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Check if the scene manager is in the end at a given index. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & The index \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the scene manager is in the end, false otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classScriptSceneManagerComponents_afa4bd559acf7332faf1d4215f8eeab55}\label{classScriptSceneManagerComponents_afa4bd559acf7332faf1d4215f8eeab55}} 
+\index{ScriptSceneManagerComponents@{ScriptSceneManagerComponents}!isGameAt@{isGameAt}}
+\index{isGameAt@{isGameAt}!ScriptSceneManagerComponents@{ScriptSceneManagerComponents}}
+\doxysubsubsection{\texorpdfstring{isGameAt()}{isGameAt()}}
+{\footnotesize\ttfamily bool Script\+Scene\+Manager\+Components\+::is\+Game\+At (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Check if the scene manager is in the game at a given index. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & The index \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the scene manager is in the game, false otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classScriptSceneManagerComponents_a201b34ce001cc100fd63d139ad620372}\label{classScriptSceneManagerComponents_a201b34ce001cc100fd63d139ad620372}} 
+\index{ScriptSceneManagerComponents@{ScriptSceneManagerComponents}!isMenuAt@{isMenuAt}}
+\index{isMenuAt@{isMenuAt}!ScriptSceneManagerComponents@{ScriptSceneManagerComponents}}
+\doxysubsubsection{\texorpdfstring{isMenuAt()}{isMenuAt()}}
+{\footnotesize\ttfamily bool Script\+Scene\+Manager\+Components\+::is\+Menu\+At (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Check if the scene manager is in the menu at a given index. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & The index \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the scene manager is in the menu, false otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classScriptSceneManagerComponents_afca8a854363b88fb3f3eb827e7c661d1}\label{classScriptSceneManagerComponents_afca8a854363b88fb3f3eb827e7c661d1}} 
+\index{ScriptSceneManagerComponents@{ScriptSceneManagerComponents}!isStartAt@{isStartAt}}
+\index{isStartAt@{isStartAt}!ScriptSceneManagerComponents@{ScriptSceneManagerComponents}}
+\doxysubsubsection{\texorpdfstring{isStartAt()}{isStartAt()}}
+{\footnotesize\ttfamily bool Script\+Scene\+Manager\+Components\+::is\+Start\+At (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Check if the scene manager is started at a given index. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & The index \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the scene manager is started, false otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classScriptSceneManagerComponents_a76c2bd5c065e13ae9d362e5d72d314d0}\label{classScriptSceneManagerComponents_a76c2bd5c065e13ae9d362e5d72d314d0}} 
+\index{ScriptSceneManagerComponents@{ScriptSceneManagerComponents}!isStatAt@{isStatAt}}
+\index{isStatAt@{isStatAt}!ScriptSceneManagerComponents@{ScriptSceneManagerComponents}}
+\doxysubsubsection{\texorpdfstring{isStatAt()}{isStatAt()}}
+{\footnotesize\ttfamily bool Script\+Scene\+Manager\+Components\+::is\+Stat\+At (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Check if the scene manager is in the stats at a given index. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & The index \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the scene manager is in the stats, false otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classScriptSceneManagerComponents_a93ed26e25e99c725d1034852a2bb30bd}\label{classScriptSceneManagerComponents_a93ed26e25e99c725d1034852a2bb30bd}} 
+\index{ScriptSceneManagerComponents@{ScriptSceneManagerComponents}!isUpdatedAt@{isUpdatedAt}}
+\index{isUpdatedAt@{isUpdatedAt}!ScriptSceneManagerComponents@{ScriptSceneManagerComponents}}
+\doxysubsubsection{\texorpdfstring{isUpdatedAt()}{isUpdatedAt()}}
+{\footnotesize\ttfamily bool Script\+Scene\+Manager\+Components\+::is\+Updated\+At (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Check if the scene manager is updated at a given index. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & The index \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the scene manager is updated, false otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classScriptSceneManagerComponents_a209ef9ebd061643f45dc42f1494bfe07}\label{classScriptSceneManagerComponents_a209ef9ebd061643f45dc42f1494bfe07}} 
+\index{ScriptSceneManagerComponents@{ScriptSceneManagerComponents}!setEntityPosAt@{setEntityPosAt}}
+\index{setEntityPosAt@{setEntityPosAt}!ScriptSceneManagerComponents@{ScriptSceneManagerComponents}}
+\doxysubsubsection{\texorpdfstring{setEntityPosAt()}{setEntityPosAt()}}
+{\footnotesize\ttfamily void Script\+Scene\+Manager\+Components\+::set\+Entity\+Pos\+At (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{index,  }\item[{size\+\_\+t}]{pos }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Set the entity position at a given index. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & The index \\
+\hline
+{\em pos} & The position \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classScriptSceneManagerComponents_ae58330d0644e00a2b8720d9415c37c29}\label{classScriptSceneManagerComponents_ae58330d0644e00a2b8720d9415c37c29}} 
+\index{ScriptSceneManagerComponents@{ScriptSceneManagerComponents}!setUpdateAt@{setUpdateAt}}
+\index{setUpdateAt@{setUpdateAt}!ScriptSceneManagerComponents@{ScriptSceneManagerComponents}}
+\doxysubsubsection{\texorpdfstring{setUpdateAt()}{setUpdateAt()}}
+{\footnotesize\ttfamily void Script\+Scene\+Manager\+Components\+::set\+Update\+At (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{index,  }\item[{bool}]{update }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Set the update at a given index. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & The index \\
+\hline
+{\em update} & The update \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classScriptSceneManagerComponents_a9a0d01685c9fa717eb02625db605522f}\label{classScriptSceneManagerComponents_a9a0d01685c9fa717eb02625db605522f}} 
+\index{ScriptSceneManagerComponents@{ScriptSceneManagerComponents}!size@{size}}
+\index{size@{size}!ScriptSceneManagerComponents@{ScriptSceneManagerComponents}}
+\doxysubsubsection{\texorpdfstring{size()}{size()}}
+{\footnotesize\ttfamily size\+\_\+t Script\+Scene\+Manager\+Components\+::size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the number of script scene manager components. 
+
+\begin{DoxyReturn}{Returns}
+The number of script scene manager components 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Client/\+Script/Script\+Scene\+Manager\+Components.\+hpp\end{DoxyCompactItemize}

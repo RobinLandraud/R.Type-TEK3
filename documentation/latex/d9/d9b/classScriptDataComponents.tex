@@ -1,0 +1,381 @@
+\hypertarget{classScriptDataComponents}{}\doxysection{Script\+Data\+Components Class Reference}
+\label{classScriptDataComponents}\index{ScriptDataComponents@{ScriptDataComponents}}
+
+
+The script data component.  
+
+
+
+
+{\ttfamily \#include $<$Script\+Data\+Components.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classScriptDataComponents_a11c3c533a7c1f121617de39684c995f0}{Script\+Data\+Components}} (\mbox{\hyperlink{classregistry}{registry}} \&reg)
+\begin{DoxyCompactList}\small\item\em The constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classScriptDataComponents_a2ac33f7d3bdbb366577bf0475d04bdec}{$\sim$\+Script\+Data\+Components}} ()=default
+\item 
+void \mbox{\hyperlink{classScriptDataComponents_ad25f1fe0348bebafcee611ce1a041227}{add}} (size\+\_\+t ent\+\_\+id)
+\begin{DoxyCompactList}\small\item\em Add a data component to an entity. \end{DoxyCompactList}\item 
+size\+\_\+t \mbox{\hyperlink{classScriptDataComponents_a813c64554ea5bb374a05a78baf0e5222}{size}} ()
+\begin{DoxyCompactList}\small\item\em Get the number of data components. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classDataComponent}{Data\+Component}} \& \mbox{\hyperlink{classScriptDataComponents_af54fc9a21a6a07eee08d76866ba64556}{at}} (size\+\_\+t index)
+\begin{DoxyCompactList}\small\item\em Get a data component. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classScriptDataComponents_a82f4147190971686d430cd76d9509f8d}{exists}} (size\+\_\+t index)
+\begin{DoxyCompactList}\small\item\em Check if a data component exists. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classScriptDataComponents_a0af3e7cb78766de5c7556de5fd993f24}{add\+String\+At}} (size\+\_\+t index, std\+::string key, std\+::string value)
+\begin{DoxyCompactList}\small\item\em Add a string to a data component. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classScriptDataComponents_a8af9f43073b0a6a9b634f5568aca2f9c}{set\+String\+At}} (size\+\_\+t index, std\+::string key, std\+::string value)
+\begin{DoxyCompactList}\small\item\em Set a string to a data component. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classScriptDataComponents_a8cac0e3e6dbeed8548dcefa8453c4bc7}{get\+String\+At}} (size\+\_\+t index, std\+::string key)
+\begin{DoxyCompactList}\small\item\em Get a string from a data component. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classScriptDataComponents_a4e4459a9fd777ada4e4887c8fc1a20a5}{add\+Int\+At}} (size\+\_\+t index, std\+::string key, int value)
+\begin{DoxyCompactList}\small\item\em Add an int to a data component. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classScriptDataComponents_ab53b0d9377d6950106babb6bd171cc39}{set\+Int\+At}} (size\+\_\+t index, std\+::string key, int value)
+\begin{DoxyCompactList}\small\item\em Set an int to a data component. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classScriptDataComponents_ab5e8ffafad8c23d4dd9bd3b80d14ede9}{get\+Int\+At}} (size\+\_\+t index, std\+::string key)
+\begin{DoxyCompactList}\small\item\em Get an int from a data component. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classScriptDataComponents_a0c70d8632b6227c0c9a7ad6a89b20448}{add\+Float\+At}} (size\+\_\+t index, std\+::string key, float value)
+\begin{DoxyCompactList}\small\item\em Add a float to a data component. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classScriptDataComponents_addce587b6d341776880a6ff85afc35c1}{set\+Float\+At}} (size\+\_\+t index, std\+::string key, float value)
+\begin{DoxyCompactList}\small\item\em Set a float to a data component. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{classScriptDataComponents_ac2c4d685ac5295d634299efbea1baece}{get\+Float\+At}} (size\+\_\+t index, std\+::string key)
+\begin{DoxyCompactList}\small\item\em Get a float from a data component. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classScriptDataComponents_a7ff610ed49e01fff0c591553e3ea243c}{add\+Bool\+At}} (size\+\_\+t index, std\+::string key, bool value)
+\begin{DoxyCompactList}\small\item\em Add a bool to a data component. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classScriptDataComponents_a5498d28435bdde311eea84d397c036d4}{set\+Bool\+At}} (size\+\_\+t index, std\+::string key, bool value)
+\begin{DoxyCompactList}\small\item\em Set a bool to a data component. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classScriptDataComponents_ae567856e5b024da5d5fd42c495d3a33a}{get\+Bool\+At}} (size\+\_\+t index, std\+::string key)
+\begin{DoxyCompactList}\small\item\em Get a bool from a data component. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The script data component. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classScriptDataComponents_a11c3c533a7c1f121617de39684c995f0}\label{classScriptDataComponents_a11c3c533a7c1f121617de39684c995f0}} 
+\index{ScriptDataComponents@{ScriptDataComponents}!ScriptDataComponents@{ScriptDataComponents}}
+\index{ScriptDataComponents@{ScriptDataComponents}!ScriptDataComponents@{ScriptDataComponents}}
+\doxysubsubsection{\texorpdfstring{ScriptDataComponents()}{ScriptDataComponents()}}
+{\footnotesize\ttfamily Script\+Data\+Components\+::\+Script\+Data\+Components (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classregistry}{registry}} \&}]{reg }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+The constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em reg} & The registry \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classScriptDataComponents_a2ac33f7d3bdbb366577bf0475d04bdec}\label{classScriptDataComponents_a2ac33f7d3bdbb366577bf0475d04bdec}} 
+\index{ScriptDataComponents@{ScriptDataComponents}!````~ScriptDataComponents@{$\sim$ScriptDataComponents}}
+\index{````~ScriptDataComponents@{$\sim$ScriptDataComponents}!ScriptDataComponents@{ScriptDataComponents}}
+\doxysubsubsection{\texorpdfstring{$\sim$ScriptDataComponents()}{~ScriptDataComponents()}}
+{\footnotesize\ttfamily Script\+Data\+Components\+::$\sim$\+Script\+Data\+Components (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+Default destructor 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classScriptDataComponents_ad25f1fe0348bebafcee611ce1a041227}\label{classScriptDataComponents_ad25f1fe0348bebafcee611ce1a041227}} 
+\index{ScriptDataComponents@{ScriptDataComponents}!add@{add}}
+\index{add@{add}!ScriptDataComponents@{ScriptDataComponents}}
+\doxysubsubsection{\texorpdfstring{add()}{add()}}
+{\footnotesize\ttfamily void Script\+Data\+Components\+::add (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{ent\+\_\+id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Add a data component to an entity. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ent\+\_\+id} & The entity id \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classScriptDataComponents_a7ff610ed49e01fff0c591553e3ea243c}\label{classScriptDataComponents_a7ff610ed49e01fff0c591553e3ea243c}} 
+\index{ScriptDataComponents@{ScriptDataComponents}!addBoolAt@{addBoolAt}}
+\index{addBoolAt@{addBoolAt}!ScriptDataComponents@{ScriptDataComponents}}
+\doxysubsubsection{\texorpdfstring{addBoolAt()}{addBoolAt()}}
+{\footnotesize\ttfamily void Script\+Data\+Components\+::add\+Bool\+At (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{index,  }\item[{std\+::string}]{key,  }\item[{bool}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Add a bool to a data component. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & The index of the data component \\
+\hline
+{\em key} & The key of the bool \\
+\hline
+{\em value} & The value of the bool \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classScriptDataComponents_a0c70d8632b6227c0c9a7ad6a89b20448}\label{classScriptDataComponents_a0c70d8632b6227c0c9a7ad6a89b20448}} 
+\index{ScriptDataComponents@{ScriptDataComponents}!addFloatAt@{addFloatAt}}
+\index{addFloatAt@{addFloatAt}!ScriptDataComponents@{ScriptDataComponents}}
+\doxysubsubsection{\texorpdfstring{addFloatAt()}{addFloatAt()}}
+{\footnotesize\ttfamily void Script\+Data\+Components\+::add\+Float\+At (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{index,  }\item[{std\+::string}]{key,  }\item[{float}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Add a float to a data component. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & The index of the data component \\
+\hline
+{\em key} & The key of the float \\
+\hline
+{\em value} & The value of the float \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classScriptDataComponents_a4e4459a9fd777ada4e4887c8fc1a20a5}\label{classScriptDataComponents_a4e4459a9fd777ada4e4887c8fc1a20a5}} 
+\index{ScriptDataComponents@{ScriptDataComponents}!addIntAt@{addIntAt}}
+\index{addIntAt@{addIntAt}!ScriptDataComponents@{ScriptDataComponents}}
+\doxysubsubsection{\texorpdfstring{addIntAt()}{addIntAt()}}
+{\footnotesize\ttfamily void Script\+Data\+Components\+::add\+Int\+At (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{index,  }\item[{std\+::string}]{key,  }\item[{int}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Add an int to a data component. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & The index of the data component \\
+\hline
+{\em key} & The key of the int \\
+\hline
+{\em value} & The value of the int \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classScriptDataComponents_a0af3e7cb78766de5c7556de5fd993f24}\label{classScriptDataComponents_a0af3e7cb78766de5c7556de5fd993f24}} 
+\index{ScriptDataComponents@{ScriptDataComponents}!addStringAt@{addStringAt}}
+\index{addStringAt@{addStringAt}!ScriptDataComponents@{ScriptDataComponents}}
+\doxysubsubsection{\texorpdfstring{addStringAt()}{addStringAt()}}
+{\footnotesize\ttfamily void Script\+Data\+Components\+::add\+String\+At (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{index,  }\item[{std\+::string}]{key,  }\item[{std\+::string}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Add a string to a data component. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & The index of the data component \\
+\hline
+{\em key} & The key of the string \\
+\hline
+{\em value} & The value of the string \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classScriptDataComponents_af54fc9a21a6a07eee08d76866ba64556}\label{classScriptDataComponents_af54fc9a21a6a07eee08d76866ba64556}} 
+\index{ScriptDataComponents@{ScriptDataComponents}!at@{at}}
+\index{at@{at}!ScriptDataComponents@{ScriptDataComponents}}
+\doxysubsubsection{\texorpdfstring{at()}{at()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classDataComponent}{Data\+Component}} \& Script\+Data\+Components\+::at (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get a data component. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & The index of the data component \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The data component 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classScriptDataComponents_a82f4147190971686d430cd76d9509f8d}\label{classScriptDataComponents_a82f4147190971686d430cd76d9509f8d}} 
+\index{ScriptDataComponents@{ScriptDataComponents}!exists@{exists}}
+\index{exists@{exists}!ScriptDataComponents@{ScriptDataComponents}}
+\doxysubsubsection{\texorpdfstring{exists()}{exists()}}
+{\footnotesize\ttfamily bool Script\+Data\+Components\+::exists (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Check if a data component exists. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & The index of the data component \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the data component exists, false otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classScriptDataComponents_ae567856e5b024da5d5fd42c495d3a33a}\label{classScriptDataComponents_ae567856e5b024da5d5fd42c495d3a33a}} 
+\index{ScriptDataComponents@{ScriptDataComponents}!getBoolAt@{getBoolAt}}
+\index{getBoolAt@{getBoolAt}!ScriptDataComponents@{ScriptDataComponents}}
+\doxysubsubsection{\texorpdfstring{getBoolAt()}{getBoolAt()}}
+{\footnotesize\ttfamily bool Script\+Data\+Components\+::get\+Bool\+At (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{index,  }\item[{std\+::string}]{key }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get a bool from a data component. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & The index of the data component \\
+\hline
+{\em key} & The key of the bool \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The value of the bool 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classScriptDataComponents_ac2c4d685ac5295d634299efbea1baece}\label{classScriptDataComponents_ac2c4d685ac5295d634299efbea1baece}} 
+\index{ScriptDataComponents@{ScriptDataComponents}!getFloatAt@{getFloatAt}}
+\index{getFloatAt@{getFloatAt}!ScriptDataComponents@{ScriptDataComponents}}
+\doxysubsubsection{\texorpdfstring{getFloatAt()}{getFloatAt()}}
+{\footnotesize\ttfamily float Script\+Data\+Components\+::get\+Float\+At (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{index,  }\item[{std\+::string}]{key }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get a float from a data component. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & The index of the data component \\
+\hline
+{\em key} & The key of the float \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The value of the float 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classScriptDataComponents_ab5e8ffafad8c23d4dd9bd3b80d14ede9}\label{classScriptDataComponents_ab5e8ffafad8c23d4dd9bd3b80d14ede9}} 
+\index{ScriptDataComponents@{ScriptDataComponents}!getIntAt@{getIntAt}}
+\index{getIntAt@{getIntAt}!ScriptDataComponents@{ScriptDataComponents}}
+\doxysubsubsection{\texorpdfstring{getIntAt()}{getIntAt()}}
+{\footnotesize\ttfamily int Script\+Data\+Components\+::get\+Int\+At (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{index,  }\item[{std\+::string}]{key }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get an int from a data component. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & The index of the data component \\
+\hline
+{\em key} & The key of the int \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The value of the int 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classScriptDataComponents_a8cac0e3e6dbeed8548dcefa8453c4bc7}\label{classScriptDataComponents_a8cac0e3e6dbeed8548dcefa8453c4bc7}} 
+\index{ScriptDataComponents@{ScriptDataComponents}!getStringAt@{getStringAt}}
+\index{getStringAt@{getStringAt}!ScriptDataComponents@{ScriptDataComponents}}
+\doxysubsubsection{\texorpdfstring{getStringAt()}{getStringAt()}}
+{\footnotesize\ttfamily std\+::string Script\+Data\+Components\+::get\+String\+At (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{index,  }\item[{std\+::string}]{key }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get a string from a data component. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & The index of the data component \\
+\hline
+{\em key} & The key of the string \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The value of the string 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classScriptDataComponents_a5498d28435bdde311eea84d397c036d4}\label{classScriptDataComponents_a5498d28435bdde311eea84d397c036d4}} 
+\index{ScriptDataComponents@{ScriptDataComponents}!setBoolAt@{setBoolAt}}
+\index{setBoolAt@{setBoolAt}!ScriptDataComponents@{ScriptDataComponents}}
+\doxysubsubsection{\texorpdfstring{setBoolAt()}{setBoolAt()}}
+{\footnotesize\ttfamily void Script\+Data\+Components\+::set\+Bool\+At (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{index,  }\item[{std\+::string}]{key,  }\item[{bool}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Set a bool to a data component. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & The index of the data component \\
+\hline
+{\em key} & The key of the bool \\
+\hline
+{\em value} & The value of the bool \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classScriptDataComponents_addce587b6d341776880a6ff85afc35c1}\label{classScriptDataComponents_addce587b6d341776880a6ff85afc35c1}} 
+\index{ScriptDataComponents@{ScriptDataComponents}!setFloatAt@{setFloatAt}}
+\index{setFloatAt@{setFloatAt}!ScriptDataComponents@{ScriptDataComponents}}
+\doxysubsubsection{\texorpdfstring{setFloatAt()}{setFloatAt()}}
+{\footnotesize\ttfamily void Script\+Data\+Components\+::set\+Float\+At (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{index,  }\item[{std\+::string}]{key,  }\item[{float}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Set a float to a data component. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & The index of the data component \\
+\hline
+{\em key} & The key of the float \\
+\hline
+{\em value} & The value of the float \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classScriptDataComponents_ab53b0d9377d6950106babb6bd171cc39}\label{classScriptDataComponents_ab53b0d9377d6950106babb6bd171cc39}} 
+\index{ScriptDataComponents@{ScriptDataComponents}!setIntAt@{setIntAt}}
+\index{setIntAt@{setIntAt}!ScriptDataComponents@{ScriptDataComponents}}
+\doxysubsubsection{\texorpdfstring{setIntAt()}{setIntAt()}}
+{\footnotesize\ttfamily void Script\+Data\+Components\+::set\+Int\+At (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{index,  }\item[{std\+::string}]{key,  }\item[{int}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Set an int to a data component. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & The index of the data component \\
+\hline
+{\em key} & The key of the int \\
+\hline
+{\em value} & The value of the int \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classScriptDataComponents_a8af9f43073b0a6a9b634f5568aca2f9c}\label{classScriptDataComponents_a8af9f43073b0a6a9b634f5568aca2f9c}} 
+\index{ScriptDataComponents@{ScriptDataComponents}!setStringAt@{setStringAt}}
+\index{setStringAt@{setStringAt}!ScriptDataComponents@{ScriptDataComponents}}
+\doxysubsubsection{\texorpdfstring{setStringAt()}{setStringAt()}}
+{\footnotesize\ttfamily void Script\+Data\+Components\+::set\+String\+At (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{index,  }\item[{std\+::string}]{key,  }\item[{std\+::string}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Set a string to a data component. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & The index of the data component \\
+\hline
+{\em key} & The key of the string \\
+\hline
+{\em value} & The value of the string \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classScriptDataComponents_a813c64554ea5bb374a05a78baf0e5222}\label{classScriptDataComponents_a813c64554ea5bb374a05a78baf0e5222}} 
+\index{ScriptDataComponents@{ScriptDataComponents}!size@{size}}
+\index{size@{size}!ScriptDataComponents@{ScriptDataComponents}}
+\doxysubsubsection{\texorpdfstring{size()}{size()}}
+{\footnotesize\ttfamily size\+\_\+t Script\+Data\+Components\+::size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the number of data components. 
+
+\begin{DoxyReturn}{Returns}
+The number of data components 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Client/\+Script/Script\+Data\+Components.\+hpp\end{DoxyCompactItemize}

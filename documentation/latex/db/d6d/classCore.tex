@@ -1,0 +1,112 @@
+\hypertarget{classCore}{}\doxysection{Core Class Reference}
+\label{classCore}\index{Core@{Core}}
+
+
+The core of the game. Used to initialize the game.  
+
+
+
+
+{\ttfamily \#include $<$Core.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classCore_a57451a17ebd32395e18a5850e0142c4f}{Core}} (int windowX=1920, int windowY=1080)
+\begin{DoxyCompactList}\small\item\em Constructor of the core. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classCore_a5057b209797afa0e0df08fd2be864164}{$\sim$\+Core}} ()=default
+\item 
+int \mbox{\hyperlink{classCore_a120abfc9b804771a9486e7b08532ffd5}{loop}} ()
+\begin{DoxyCompactList}\small\item\em Update the core. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classCore_ae422d21ea5f89d07ef233f4f40cfee6c}{init\+Start}} ()
+\begin{DoxyCompactList}\small\item\em Initialize the start of the core. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structServerToken}{Server\+Token}} \& \mbox{\hyperlink{classCore_a7d9b81ba44bd108ebe9e3a9688c1e2a1}{get\+Server\+Token}} ()
+\begin{DoxyCompactList}\small\item\em Get the server token. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classCore_a8ddb790295c14f7b4601c19b5d8cf4f3}{update\+Requests}} ()
+\begin{DoxyCompactList}\small\item\em Update the requests. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The core of the game. Used to initialize the game. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classCore_a57451a17ebd32395e18a5850e0142c4f}\label{classCore_a57451a17ebd32395e18a5850e0142c4f}} 
+\index{Core@{Core}!Core@{Core}}
+\index{Core@{Core}!Core@{Core}}
+\doxysubsubsection{\texorpdfstring{Core()}{Core()}}
+{\footnotesize\ttfamily Core\+::\+Core (\begin{DoxyParamCaption}\item[{int}]{windowX = {\ttfamily 1920},  }\item[{int}]{windowY = {\ttfamily 1080} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}
+
+
+
+Constructor of the core. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em windowX} & The width of the window \\
+\hline
+{\em windowY} & The height of the window \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classCore_a5057b209797afa0e0df08fd2be864164}\label{classCore_a5057b209797afa0e0df08fd2be864164}} 
+\index{Core@{Core}!````~Core@{$\sim$Core}}
+\index{````~Core@{$\sim$Core}!Core@{Core}}
+\doxysubsubsection{\texorpdfstring{$\sim$Core()}{~Core()}}
+{\footnotesize\ttfamily Core\+::$\sim$\+Core (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+Default destructor 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classCore_a7d9b81ba44bd108ebe9e3a9688c1e2a1}\label{classCore_a7d9b81ba44bd108ebe9e3a9688c1e2a1}} 
+\index{Core@{Core}!getServerToken@{getServerToken}}
+\index{getServerToken@{getServerToken}!Core@{Core}}
+\doxysubsubsection{\texorpdfstring{getServerToken()}{getServerToken()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structServerToken}{Server\+Token}} \& Core\+::get\+Server\+Token (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the server token. 
+
+\begin{DoxyReturn}{Returns}
+The server token 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classCore_ae422d21ea5f89d07ef233f4f40cfee6c}\label{classCore_ae422d21ea5f89d07ef233f4f40cfee6c}} 
+\index{Core@{Core}!initStart@{initStart}}
+\index{initStart@{initStart}!Core@{Core}}
+\doxysubsubsection{\texorpdfstring{initStart()}{initStart()}}
+{\footnotesize\ttfamily void Core\+::init\+Start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Initialize the start of the core. 
+
+Init the start of the core. \mbox{\Hypertarget{classCore_a120abfc9b804771a9486e7b08532ffd5}\label{classCore_a120abfc9b804771a9486e7b08532ffd5}} 
+\index{Core@{Core}!loop@{loop}}
+\index{loop@{loop}!Core@{Core}}
+\doxysubsubsection{\texorpdfstring{loop()}{loop()}}
+{\footnotesize\ttfamily int Core\+::loop (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Update the core. 
+
+The loop of the core.
+
+\begin{DoxyReturn}{Returns}
+Error code 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classCore_a8ddb790295c14f7b4601c19b5d8cf4f3}\label{classCore_a8ddb790295c14f7b4601c19b5d8cf4f3}} 
+\index{Core@{Core}!updateRequests@{updateRequests}}
+\index{updateRequests@{updateRequests}!Core@{Core}}
+\doxysubsubsection{\texorpdfstring{updateRequests()}{updateRequests()}}
+{\footnotesize\ttfamily void Core\+::update\+Requests (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Update the requests. 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Client/\+Core/Core.\+hpp\item 
+Client/\+Core/Core.\+cpp\end{DoxyCompactItemize}

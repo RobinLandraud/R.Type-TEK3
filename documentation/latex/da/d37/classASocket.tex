@@ -1,0 +1,376 @@
+\hypertarget{classASocket}{}\doxysection{ASocket Class Reference}
+\label{classASocket}\index{ASocket@{ASocket}}
+
+
+Abstract class for socket. Used to send and receive data.  
+
+
+
+
+{\ttfamily \#include $<$ASocket.\+hpp$>$}
+
+Inheritance diagram for ASocket\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{da/d37/classASocket}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{classASocket_ab681e60ce63943f3cc3be599dbc8a29d}{Socket\+Status}} \{ \newline
+{\bfseries SUCCES}
+, {\bfseries ERROR}
+, {\bfseries PENDING}
+, {\bfseries SUCCES}
+, \newline
+{\bfseries ERROR}
+, {\bfseries PENDING}
+ \}
+\begin{DoxyCompactList}\small\item\em Enum for socket status. used to know the status of the socket. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classASocket_ab681e60ce63943f3cc3be599dbc8a29d}\label{classASocket_ab681e60ce63943f3cc3be599dbc8a29d}} 
+enum {\bfseries Socket\+Status} \{ \newline
+{\bfseries SUCCES}
+, {\bfseries ERROR}
+, {\bfseries PENDING}
+, {\bfseries SUCCES}
+, \newline
+{\bfseries ERROR}
+, {\bfseries PENDING}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classASocket_a88f3c3888f371a46312ef74161e15ff8}{ASocket}} ()=default
+\item 
+\mbox{\hyperlink{classASocket_a18d004b6a6914c203e3c4f9868b67684}{ASocket}} (\mbox{\hyperlink{classASocket}{ASocket}} \&\&)=default
+\item 
+\mbox{\hyperlink{classASocket_ac2ec5738d2f1e765562b18577a58dd4f}{ASocket}} (const \mbox{\hyperlink{classASocket}{ASocket}} \&)=default
+\item 
+\mbox{\hyperlink{classASocket}{ASocket}} \& \mbox{\hyperlink{classASocket_a5c5c56496162a450263ef373a6634d74}{operator=}} (\mbox{\hyperlink{classASocket}{ASocket}} \&\&)=default
+\item 
+\mbox{\hyperlink{classASocket}{ASocket}} \& \mbox{\hyperlink{classASocket_ac75f0c6f499d4d10ffc60b2119f63b79}{operator=}} (const \mbox{\hyperlink{classASocket}{ASocket}} \&)=default
+\item 
+virtual \mbox{\hyperlink{classASocket_af45f8cbfd9328ac4ea89bba2f86e4af6}{$\sim$\+ASocket}} ()=default
+\item 
+virtual \mbox{\hyperlink{classASocket_ab681e60ce63943f3cc3be599dbc8a29d}{Socket\+Status}} \mbox{\hyperlink{classASocket_a3584524463c48919111737977cd2dec6}{bind}} (int \mbox{\hyperlink{classASocket_a645c4ffe2eb01d6a2e962ac830dfa75c}{port}})=0
+\begin{DoxyCompactList}\small\item\em Bind the socket to a port. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classASocket_a9f732fa093959831dea0670e81ee31dc}{unbind}} ()=0
+\begin{DoxyCompactList}\small\item\em Unbind the socket. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{classASocket_ab681e60ce63943f3cc3be599dbc8a29d}{Socket\+Status}} \mbox{\hyperlink{classASocket_ac017dbbd695a90845fecc37b9b283f24}{send}} (const void $\ast$data, std\+::size\+\_\+t size, const std\+::string \&remote\+Address, unsigned short remote\+Port)=0
+\begin{DoxyCompactList}\small\item\em Send data to a remote address. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{classASocket_ab681e60ce63943f3cc3be599dbc8a29d}{Socket\+Status}} \mbox{\hyperlink{classASocket_ae8f7f9b72bdae53a34d4fd15d99a714a}{receive}} (void $\ast$data, std\+::size\+\_\+t size, std\+::size\+\_\+t \&received, std\+::string \&remote\+Address, unsigned short \&remote\+Port)=0
+\begin{DoxyCompactList}\small\item\em Receive data from a remote address. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classASocket_aeb468ac309e5a0382fcc3832f779db61}{set\+Blocking}} (bool \mbox{\hyperlink{classASocket_ac1a4c20a9d319cda3a576503ebc00851}{blocking}})
+\begin{DoxyCompactList}\small\item\em Set the socket to blocking. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classASocket_a339b0ebb4ee94c38b694ef54711be829}{is\+Blocking}} () const
+\begin{DoxyCompactList}\small\item\em Check if the socket is blocking. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classASocket_a8c53201c2d0f170737068068a4856853}{get\+Port}} ()
+\begin{DoxyCompactList}\small\item\em Get the port. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classASocket_a88f3c3888f371a46312ef74161e15ff8}{ASocket}} ()=default
+\item 
+\mbox{\hyperlink{classASocket_a18d004b6a6914c203e3c4f9868b67684}{ASocket}} (\mbox{\hyperlink{classASocket}{ASocket}} \&\&)=default
+\item 
+\mbox{\hyperlink{classASocket_ac2ec5738d2f1e765562b18577a58dd4f}{ASocket}} (const \mbox{\hyperlink{classASocket}{ASocket}} \&)=default
+\item 
+\mbox{\hyperlink{classASocket}{ASocket}} \& \mbox{\hyperlink{classASocket_a5c5c56496162a450263ef373a6634d74}{operator=}} (\mbox{\hyperlink{classASocket}{ASocket}} \&\&)=default
+\item 
+\mbox{\hyperlink{classASocket}{ASocket}} \& \mbox{\hyperlink{classASocket_ac75f0c6f499d4d10ffc60b2119f63b79}{operator=}} (const \mbox{\hyperlink{classASocket}{ASocket}} \&)=default
+\item 
+virtual \mbox{\hyperlink{classASocket_af45f8cbfd9328ac4ea89bba2f86e4af6}{$\sim$\+ASocket}} ()=default
+\item 
+\mbox{\Hypertarget{classASocket_a2319089f37207352bcfc8bdc65372523}\label{classASocket_a2319089f37207352bcfc8bdc65372523}} 
+virtual \mbox{\hyperlink{classASocket_ab681e60ce63943f3cc3be599dbc8a29d}{Socket\+Status}} {\bfseries bind} (int \mbox{\hyperlink{classASocket_a645c4ffe2eb01d6a2e962ac830dfa75c}{port}})=0
+\item 
+\mbox{\Hypertarget{classASocket_a6712b2b2a8b3f213c9b5f6a94a7b53be}\label{classASocket_a6712b2b2a8b3f213c9b5f6a94a7b53be}} 
+virtual void {\bfseries unbind} ()=0
+\item 
+\mbox{\Hypertarget{classASocket_a40419b7abce9f5a2c117428f0ed7bee8}\label{classASocket_a40419b7abce9f5a2c117428f0ed7bee8}} 
+virtual \mbox{\hyperlink{classASocket_ab681e60ce63943f3cc3be599dbc8a29d}{Socket\+Status}} {\bfseries send} (const void $\ast$data, std\+::size\+\_\+t size, const std\+::string \&remote\+Address, unsigned short remote\+Port)=0
+\item 
+\mbox{\Hypertarget{classASocket_aac3a25bc194674c39f3c0b50f89d5eb6}\label{classASocket_aac3a25bc194674c39f3c0b50f89d5eb6}} 
+virtual \mbox{\hyperlink{classASocket_ab681e60ce63943f3cc3be599dbc8a29d}{Socket\+Status}} {\bfseries receive} (void $\ast$data, std\+::size\+\_\+t size, std\+::size\+\_\+t \&received, std\+::string \&remote\+Address, unsigned short \&remote\+Port)=0
+\item 
+\mbox{\Hypertarget{classASocket_a9523bbc39e8376713364cf699694f5a1}\label{classASocket_a9523bbc39e8376713364cf699694f5a1}} 
+virtual void {\bfseries set\+Blocking} (bool \mbox{\hyperlink{classASocket_ac1a4c20a9d319cda3a576503ebc00851}{blocking}})
+\item 
+\mbox{\Hypertarget{classASocket_a339b0ebb4ee94c38b694ef54711be829}\label{classASocket_a339b0ebb4ee94c38b694ef54711be829}} 
+bool {\bfseries is\+Blocking} () const
+\item 
+\mbox{\Hypertarget{classASocket_a8c53201c2d0f170737068068a4856853}\label{classASocket_a8c53201c2d0f170737068068a4856853}} 
+int {\bfseries get\+Port} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classASocket_a645c4ffe2eb01d6a2e962ac830dfa75c}{port}} = 0
+\item 
+bool \mbox{\hyperlink{classASocket_ac1a4c20a9d319cda3a576503ebc00851}{blocking}} = false
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Abstract class for socket. Used to send and receive data. 
+
+Abstract class for socket. 
+
+\doxysubsection{Member Enumeration Documentation}
+\mbox{\Hypertarget{classASocket_ab681e60ce63943f3cc3be599dbc8a29d}\label{classASocket_ab681e60ce63943f3cc3be599dbc8a29d}} 
+\index{ASocket@{ASocket}!SocketStatus@{SocketStatus}}
+\index{SocketStatus@{SocketStatus}!ASocket@{ASocket}}
+\doxysubsubsection{\texorpdfstring{SocketStatus}{SocketStatus}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{classASocket_ab681e60ce63943f3cc3be599dbc8a29d}{ASocket\+::\+Socket\+Status}}}
+
+
+
+Enum for socket status. used to know the status of the socket. 
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classASocket_a88f3c3888f371a46312ef74161e15ff8}\label{classASocket_a88f3c3888f371a46312ef74161e15ff8}} 
+\index{ASocket@{ASocket}!ASocket@{ASocket}}
+\index{ASocket@{ASocket}!ASocket@{ASocket}}
+\doxysubsubsection{\texorpdfstring{ASocket()}{ASocket()}\hspace{0.1cm}{\footnotesize\ttfamily [1/6]}}
+{\footnotesize\ttfamily ASocket\+::\+ASocket (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+Default constructor \mbox{\Hypertarget{classASocket_a18d004b6a6914c203e3c4f9868b67684}\label{classASocket_a18d004b6a6914c203e3c4f9868b67684}} 
+\index{ASocket@{ASocket}!ASocket@{ASocket}}
+\index{ASocket@{ASocket}!ASocket@{ASocket}}
+\doxysubsubsection{\texorpdfstring{ASocket()}{ASocket()}\hspace{0.1cm}{\footnotesize\ttfamily [2/6]}}
+{\footnotesize\ttfamily ASocket\+::\+ASocket (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classASocket}{ASocket}} \&\&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+Default move constructor \mbox{\Hypertarget{classASocket_ac2ec5738d2f1e765562b18577a58dd4f}\label{classASocket_ac2ec5738d2f1e765562b18577a58dd4f}} 
+\index{ASocket@{ASocket}!ASocket@{ASocket}}
+\index{ASocket@{ASocket}!ASocket@{ASocket}}
+\doxysubsubsection{\texorpdfstring{ASocket()}{ASocket()}\hspace{0.1cm}{\footnotesize\ttfamily [3/6]}}
+{\footnotesize\ttfamily ASocket\+::\+ASocket (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classASocket}{ASocket}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+Default copy constructor \mbox{\Hypertarget{classASocket_af45f8cbfd9328ac4ea89bba2f86e4af6}\label{classASocket_af45f8cbfd9328ac4ea89bba2f86e4af6}} 
+\index{ASocket@{ASocket}!````~ASocket@{$\sim$ASocket}}
+\index{````~ASocket@{$\sim$ASocket}!ASocket@{ASocket}}
+\doxysubsubsection{\texorpdfstring{$\sim$ASocket()}{~ASocket()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily virtual ASocket\+::$\sim$\+ASocket (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [default]}}
+
+Default destructor \mbox{\Hypertarget{classASocket_a88f3c3888f371a46312ef74161e15ff8}\label{classASocket_a88f3c3888f371a46312ef74161e15ff8}} 
+\index{ASocket@{ASocket}!ASocket@{ASocket}}
+\index{ASocket@{ASocket}!ASocket@{ASocket}}
+\doxysubsubsection{\texorpdfstring{ASocket()}{ASocket()}\hspace{0.1cm}{\footnotesize\ttfamily [4/6]}}
+{\footnotesize\ttfamily ASocket\+::\+ASocket (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+Default constructor \mbox{\Hypertarget{classASocket_a18d004b6a6914c203e3c4f9868b67684}\label{classASocket_a18d004b6a6914c203e3c4f9868b67684}} 
+\index{ASocket@{ASocket}!ASocket@{ASocket}}
+\index{ASocket@{ASocket}!ASocket@{ASocket}}
+\doxysubsubsection{\texorpdfstring{ASocket()}{ASocket()}\hspace{0.1cm}{\footnotesize\ttfamily [5/6]}}
+{\footnotesize\ttfamily ASocket\+::\+ASocket (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classASocket}{ASocket}} \&\&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+Move constructor \mbox{\Hypertarget{classASocket_ac2ec5738d2f1e765562b18577a58dd4f}\label{classASocket_ac2ec5738d2f1e765562b18577a58dd4f}} 
+\index{ASocket@{ASocket}!ASocket@{ASocket}}
+\index{ASocket@{ASocket}!ASocket@{ASocket}}
+\doxysubsubsection{\texorpdfstring{ASocket()}{ASocket()}\hspace{0.1cm}{\footnotesize\ttfamily [6/6]}}
+{\footnotesize\ttfamily ASocket\+::\+ASocket (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classASocket}{ASocket}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+Copy constructor \mbox{\Hypertarget{classASocket_af45f8cbfd9328ac4ea89bba2f86e4af6}\label{classASocket_af45f8cbfd9328ac4ea89bba2f86e4af6}} 
+\index{ASocket@{ASocket}!````~ASocket@{$\sim$ASocket}}
+\index{````~ASocket@{$\sim$ASocket}!ASocket@{ASocket}}
+\doxysubsubsection{\texorpdfstring{$\sim$ASocket()}{~ASocket()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily virtual ASocket\+::$\sim$\+ASocket (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [default]}}
+
+Default destructor 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classASocket_a3584524463c48919111737977cd2dec6}\label{classASocket_a3584524463c48919111737977cd2dec6}} 
+\index{ASocket@{ASocket}!bind@{bind}}
+\index{bind@{bind}!ASocket@{ASocket}}
+\doxysubsubsection{\texorpdfstring{bind()}{bind()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classASocket_ab681e60ce63943f3cc3be599dbc8a29d}{Socket\+Status}} ASocket\+::bind (\begin{DoxyParamCaption}\item[{int}]{port }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Bind the socket to a port. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em port} & Port to bind \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Socket status 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classSFMLSocket_a913c7743424e000121220ac5ad459ddc}{SFMLSocket}}, and \mbox{\hyperlink{classSFMLSocket_a913c7743424e000121220ac5ad459ddc}{SFMLSocket}}.
+
+\mbox{\Hypertarget{classASocket_a8c53201c2d0f170737068068a4856853}\label{classASocket_a8c53201c2d0f170737068068a4856853}} 
+\index{ASocket@{ASocket}!getPort@{getPort}}
+\index{getPort@{getPort}!ASocket@{ASocket}}
+\doxysubsubsection{\texorpdfstring{getPort()}{getPort()}}
+{\footnotesize\ttfamily int ASocket\+::get\+Port (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the port. 
+
+Get the port number of the socket.
+
+\begin{DoxyReturn}{Returns}
+The port
+
+int 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classASocket_a339b0ebb4ee94c38b694ef54711be829}\label{classASocket_a339b0ebb4ee94c38b694ef54711be829}} 
+\index{ASocket@{ASocket}!isBlocking@{isBlocking}}
+\index{isBlocking@{isBlocking}!ASocket@{ASocket}}
+\doxysubsubsection{\texorpdfstring{isBlocking()}{isBlocking()}}
+{\footnotesize\ttfamily bool ASocket\+::is\+Blocking (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Check if the socket is blocking. 
+
+\begin{DoxyReturn}{Returns}
+True if the socket is blocking
+
+bool 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classASocket_a5c5c56496162a450263ef373a6634d74}\label{classASocket_a5c5c56496162a450263ef373a6634d74}} 
+\index{ASocket@{ASocket}!operator=@{operator=}}
+\index{operator=@{operator=}!ASocket@{ASocket}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classASocket}{ASocket}}\& ASocket\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classASocket}{ASocket}} \&\&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+Default move assignment operator \mbox{\Hypertarget{classASocket_a5c5c56496162a450263ef373a6634d74}\label{classASocket_a5c5c56496162a450263ef373a6634d74}} 
+\index{ASocket@{ASocket}!operator=@{operator=}}
+\index{operator=@{operator=}!ASocket@{ASocket}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classASocket}{ASocket}}\& ASocket\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classASocket}{ASocket}} \&\&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+Move operator \mbox{\Hypertarget{classASocket_ac75f0c6f499d4d10ffc60b2119f63b79}\label{classASocket_ac75f0c6f499d4d10ffc60b2119f63b79}} 
+\index{ASocket@{ASocket}!operator=@{operator=}}
+\index{operator=@{operator=}!ASocket@{ASocket}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classASocket}{ASocket}}\& ASocket\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classASocket}{ASocket}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+Default copy assignment operator \mbox{\Hypertarget{classASocket_ac75f0c6f499d4d10ffc60b2119f63b79}\label{classASocket_ac75f0c6f499d4d10ffc60b2119f63b79}} 
+\index{ASocket@{ASocket}!operator=@{operator=}}
+\index{operator=@{operator=}!ASocket@{ASocket}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classASocket}{ASocket}}\& ASocket\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classASocket}{ASocket}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+Copy operator \mbox{\Hypertarget{classASocket_ae8f7f9b72bdae53a34d4fd15d99a714a}\label{classASocket_ae8f7f9b72bdae53a34d4fd15d99a714a}} 
+\index{ASocket@{ASocket}!receive@{receive}}
+\index{receive@{receive}!ASocket@{ASocket}}
+\doxysubsubsection{\texorpdfstring{receive()}{receive()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classASocket_ab681e60ce63943f3cc3be599dbc8a29d}{Socket\+Status}} ASocket\+::receive (\begin{DoxyParamCaption}\item[{void $\ast$}]{data,  }\item[{std\+::size\+\_\+t}]{size,  }\item[{std\+::size\+\_\+t \&}]{received,  }\item[{std\+::string \&}]{remote\+Address,  }\item[{unsigned short \&}]{remote\+Port }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Receive data from a remote address. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em data} & Data to receive \\
+\hline
+{\em size} & Size of the data \\
+\hline
+{\em received} & Size of the received data \\
+\hline
+{\em remote\+Address} & Remote address \\
+\hline
+{\em remote\+Port} & Remote port \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Socket status 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classSFMLSocket_add1765d09aa276d73f53723a18b1c4cd}{SFMLSocket}}, and \mbox{\hyperlink{classSFMLSocket_add1765d09aa276d73f53723a18b1c4cd}{SFMLSocket}}.
+
+\mbox{\Hypertarget{classASocket_ac017dbbd695a90845fecc37b9b283f24}\label{classASocket_ac017dbbd695a90845fecc37b9b283f24}} 
+\index{ASocket@{ASocket}!send@{send}}
+\index{send@{send}!ASocket@{ASocket}}
+\doxysubsubsection{\texorpdfstring{send()}{send()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classASocket_ab681e60ce63943f3cc3be599dbc8a29d}{Socket\+Status}} ASocket\+::send (\begin{DoxyParamCaption}\item[{const void $\ast$}]{data,  }\item[{std\+::size\+\_\+t}]{size,  }\item[{const std\+::string \&}]{remote\+Address,  }\item[{unsigned short}]{remote\+Port }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Send data to a remote address. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em data} & Data to send \\
+\hline
+{\em size} & Size of the data \\
+\hline
+{\em remote\+Address} & Remote address \\
+\hline
+{\em remote\+Port} & Remote port \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Socket status 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classSFMLSocket_afc28f5bcd971a40a89b7b72143cf4ecf}{SFMLSocket}}, and \mbox{\hyperlink{classSFMLSocket_afc28f5bcd971a40a89b7b72143cf4ecf}{SFMLSocket}}.
+
+\mbox{\Hypertarget{classASocket_aeb468ac309e5a0382fcc3832f779db61}\label{classASocket_aeb468ac309e5a0382fcc3832f779db61}} 
+\index{ASocket@{ASocket}!setBlocking@{setBlocking}}
+\index{setBlocking@{setBlocking}!ASocket@{ASocket}}
+\doxysubsubsection{\texorpdfstring{setBlocking()}{setBlocking()}}
+{\footnotesize\ttfamily void ASocket\+::set\+Blocking (\begin{DoxyParamCaption}\item[{bool}]{blocking }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Set the socket to blocking. 
+
+Set the blocking mode of the socket.
+
+
+\begin{DoxyParams}{Parameters}
+{\em blocking} & The new blocking state \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented in \mbox{\hyperlink{classSFMLSocket_aba3c9ef5c25da1927145c2d94b35b5bd}{SFMLSocket}}, and \mbox{\hyperlink{classSFMLSocket_aba3c9ef5c25da1927145c2d94b35b5bd}{SFMLSocket}}.
+
+\mbox{\Hypertarget{classASocket_a9f732fa093959831dea0670e81ee31dc}\label{classASocket_a9f732fa093959831dea0670e81ee31dc}} 
+\index{ASocket@{ASocket}!unbind@{unbind}}
+\index{unbind@{unbind}!ASocket@{ASocket}}
+\doxysubsubsection{\texorpdfstring{unbind()}{unbind()}}
+{\footnotesize\ttfamily void ASocket\+::unbind (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Unbind the socket. 
+
+
+
+Implemented in \mbox{\hyperlink{classSFMLSocket_aea54370a0021856f6944161c96657a71}{SFMLSocket}}, and \mbox{\hyperlink{classSFMLSocket_aea54370a0021856f6944161c96657a71}{SFMLSocket}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classASocket_ac1a4c20a9d319cda3a576503ebc00851}\label{classASocket_ac1a4c20a9d319cda3a576503ebc00851}} 
+\index{ASocket@{ASocket}!blocking@{blocking}}
+\index{blocking@{blocking}!ASocket@{ASocket}}
+\doxysubsubsection{\texorpdfstring{blocking}{blocking}}
+{\footnotesize\ttfamily bool ASocket\+::blocking = false\hspace{0.3cm}{\ttfamily [protected]}}
+
+Blocking state
+
+Blocking \mbox{\Hypertarget{classASocket_a645c4ffe2eb01d6a2e962ac830dfa75c}\label{classASocket_a645c4ffe2eb01d6a2e962ac830dfa75c}} 
+\index{ASocket@{ASocket}!port@{port}}
+\index{port@{port}!ASocket@{ASocket}}
+\doxysubsubsection{\texorpdfstring{port}{port}}
+{\footnotesize\ttfamily int ASocket\+::port = 0\hspace{0.3cm}{\ttfamily [protected]}}
+
+Port 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Client/\+AEngine/ASocket.\+hpp\item 
+Client/\+AEngine/ASocket.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,244 @@
+\hypertarget{classScriptDrawableComponents}{}\doxysection{Script\+Drawable\+Components Class Reference}
+\label{classScriptDrawableComponents}\index{ScriptDrawableComponents@{ScriptDrawableComponents}}
+
+
+The script drawable component.  
+
+
+
+
+{\ttfamily \#include $<$Script\+Drawable\+Components.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classScriptDrawableComponents_afad70ed99096858a738c4e9829698bcf}{Script\+Drawable\+Components}} (\mbox{\hyperlink{classregistry}{registry}} \&reg)
+\begin{DoxyCompactList}\small\item\em The constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classScriptDrawableComponents_a0503bb86b719d79c684b43cc2ba7cd70}{$\sim$\+Script\+Drawable\+Components}} ()=default
+\item 
+void \mbox{\hyperlink{classScriptDrawableComponents_ab2f368cfb2b5f4f216dcca74bf991416}{add}} (size\+\_\+t ent\+\_\+id, std\+::string name, Drawable\+Type type)
+\begin{DoxyCompactList}\small\item\em Add a drawable component to an entity. \end{DoxyCompactList}\item 
+size\+\_\+t \mbox{\hyperlink{classScriptDrawableComponents_a4dc55a7f721a3a51757e21a525a27b4a}{size}} ()
+\begin{DoxyCompactList}\small\item\em Get the number of drawable components. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classDrawableComponent}{Drawable\+Component}} \& \mbox{\hyperlink{classScriptDrawableComponents_a0b94b395e98e6f59d9a7a1f7de89b9db}{at}} (size\+\_\+t index)
+\begin{DoxyCompactList}\small\item\em Get a drawable component. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classScriptDrawableComponents_a3dc396c7044cea227a75924bf9bdc078}{exists}} (size\+\_\+t index)
+\begin{DoxyCompactList}\small\item\em Check if a drawable component exists. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classScriptDrawableComponents_a3e7a865d385fa815a7eb41921d9158a0}{is\+Enable\+At}} (size\+\_\+t index)
+\begin{DoxyCompactList}\small\item\em Check if a drawable component is enabled. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classScriptDrawableComponents_a072b3e67785a32163a223aa87ce78d0e}{set\+Enable\+At}} (size\+\_\+t index)
+\begin{DoxyCompactList}\small\item\em Set a drawable component as enabled. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classScriptDrawableComponents_a6e4a86e19ec7f87dad03f2a602d711f4}{set\+Disable\+At}} (size\+\_\+t index)
+\begin{DoxyCompactList}\small\item\em Set a drawable component as disabled. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classScriptDrawableComponents_afd7708bebf54b9251e3efea3d6588c5b}{get\+Name\+At}} (size\+\_\+t index)
+\begin{DoxyCompactList}\small\item\em Get the name of a drawable component. \end{DoxyCompactList}\item 
+Drawable\+Type \mbox{\hyperlink{classScriptDrawableComponents_a5ea52223099a093e57a4d5dcbf4cdbbb}{get\+Type\+At}} (size\+\_\+t index)
+\begin{DoxyCompactList}\small\item\em Get the type of a drawable component. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classScriptDrawableComponents_a304c78ad65fe0aeb86d1c18a684f5f38}{change\+Drawable\+At}} (size\+\_\+t index, std\+::string name, Drawable\+Type type)
+\begin{DoxyCompactList}\small\item\em Change the drawable of a drawable component. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The script drawable component. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classScriptDrawableComponents_afad70ed99096858a738c4e9829698bcf}\label{classScriptDrawableComponents_afad70ed99096858a738c4e9829698bcf}} 
+\index{ScriptDrawableComponents@{ScriptDrawableComponents}!ScriptDrawableComponents@{ScriptDrawableComponents}}
+\index{ScriptDrawableComponents@{ScriptDrawableComponents}!ScriptDrawableComponents@{ScriptDrawableComponents}}
+\doxysubsubsection{\texorpdfstring{ScriptDrawableComponents()}{ScriptDrawableComponents()}}
+{\footnotesize\ttfamily Script\+Drawable\+Components\+::\+Script\+Drawable\+Components (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classregistry}{registry}} \&}]{reg }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+The constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em reg} & The registry \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classScriptDrawableComponents_a0503bb86b719d79c684b43cc2ba7cd70}\label{classScriptDrawableComponents_a0503bb86b719d79c684b43cc2ba7cd70}} 
+\index{ScriptDrawableComponents@{ScriptDrawableComponents}!````~ScriptDrawableComponents@{$\sim$ScriptDrawableComponents}}
+\index{````~ScriptDrawableComponents@{$\sim$ScriptDrawableComponents}!ScriptDrawableComponents@{ScriptDrawableComponents}}
+\doxysubsubsection{\texorpdfstring{$\sim$ScriptDrawableComponents()}{~ScriptDrawableComponents()}}
+{\footnotesize\ttfamily Script\+Drawable\+Components\+::$\sim$\+Script\+Drawable\+Components (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+Default destructor 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classScriptDrawableComponents_ab2f368cfb2b5f4f216dcca74bf991416}\label{classScriptDrawableComponents_ab2f368cfb2b5f4f216dcca74bf991416}} 
+\index{ScriptDrawableComponents@{ScriptDrawableComponents}!add@{add}}
+\index{add@{add}!ScriptDrawableComponents@{ScriptDrawableComponents}}
+\doxysubsubsection{\texorpdfstring{add()}{add()}}
+{\footnotesize\ttfamily void Script\+Drawable\+Components\+::add (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{ent\+\_\+id,  }\item[{std\+::string}]{name,  }\item[{Drawable\+Type}]{type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Add a drawable component to an entity. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ent\+\_\+id} & The entity id \\
+\hline
+{\em name} & The name of the drawable component \\
+\hline
+{\em type} & The type of the drawable component \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classScriptDrawableComponents_a0b94b395e98e6f59d9a7a1f7de89b9db}\label{classScriptDrawableComponents_a0b94b395e98e6f59d9a7a1f7de89b9db}} 
+\index{ScriptDrawableComponents@{ScriptDrawableComponents}!at@{at}}
+\index{at@{at}!ScriptDrawableComponents@{ScriptDrawableComponents}}
+\doxysubsubsection{\texorpdfstring{at()}{at()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classDrawableComponent}{Drawable\+Component}} \& Script\+Drawable\+Components\+::at (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get a drawable component. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & The index of the drawable component \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The drawable component 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classScriptDrawableComponents_a304c78ad65fe0aeb86d1c18a684f5f38}\label{classScriptDrawableComponents_a304c78ad65fe0aeb86d1c18a684f5f38}} 
+\index{ScriptDrawableComponents@{ScriptDrawableComponents}!changeDrawableAt@{changeDrawableAt}}
+\index{changeDrawableAt@{changeDrawableAt}!ScriptDrawableComponents@{ScriptDrawableComponents}}
+\doxysubsubsection{\texorpdfstring{changeDrawableAt()}{changeDrawableAt()}}
+{\footnotesize\ttfamily void Script\+Drawable\+Components\+::change\+Drawable\+At (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{index,  }\item[{std\+::string}]{name,  }\item[{Drawable\+Type}]{type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Change the drawable of a drawable component. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & The index of the drawable component \\
+\hline
+{\em name} & The name of the drawable component \\
+\hline
+{\em type} & The type of the drawable component \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classScriptDrawableComponents_a3dc396c7044cea227a75924bf9bdc078}\label{classScriptDrawableComponents_a3dc396c7044cea227a75924bf9bdc078}} 
+\index{ScriptDrawableComponents@{ScriptDrawableComponents}!exists@{exists}}
+\index{exists@{exists}!ScriptDrawableComponents@{ScriptDrawableComponents}}
+\doxysubsubsection{\texorpdfstring{exists()}{exists()}}
+{\footnotesize\ttfamily bool Script\+Drawable\+Components\+::exists (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Check if a drawable component exists. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & The index of the drawable component \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the drawable component exists, false otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classScriptDrawableComponents_afd7708bebf54b9251e3efea3d6588c5b}\label{classScriptDrawableComponents_afd7708bebf54b9251e3efea3d6588c5b}} 
+\index{ScriptDrawableComponents@{ScriptDrawableComponents}!getNameAt@{getNameAt}}
+\index{getNameAt@{getNameAt}!ScriptDrawableComponents@{ScriptDrawableComponents}}
+\doxysubsubsection{\texorpdfstring{getNameAt()}{getNameAt()}}
+{\footnotesize\ttfamily std\+::string Script\+Drawable\+Components\+::get\+Name\+At (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the name of a drawable component. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & The index of the drawable component \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The name of the drawable component 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classScriptDrawableComponents_a5ea52223099a093e57a4d5dcbf4cdbbb}\label{classScriptDrawableComponents_a5ea52223099a093e57a4d5dcbf4cdbbb}} 
+\index{ScriptDrawableComponents@{ScriptDrawableComponents}!getTypeAt@{getTypeAt}}
+\index{getTypeAt@{getTypeAt}!ScriptDrawableComponents@{ScriptDrawableComponents}}
+\doxysubsubsection{\texorpdfstring{getTypeAt()}{getTypeAt()}}
+{\footnotesize\ttfamily Drawable\+Type Script\+Drawable\+Components\+::get\+Type\+At (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the type of a drawable component. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & The index of the drawable component \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Drawable\+Type The type of the drawable component 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classScriptDrawableComponents_a3e7a865d385fa815a7eb41921d9158a0}\label{classScriptDrawableComponents_a3e7a865d385fa815a7eb41921d9158a0}} 
+\index{ScriptDrawableComponents@{ScriptDrawableComponents}!isEnableAt@{isEnableAt}}
+\index{isEnableAt@{isEnableAt}!ScriptDrawableComponents@{ScriptDrawableComponents}}
+\doxysubsubsection{\texorpdfstring{isEnableAt()}{isEnableAt()}}
+{\footnotesize\ttfamily bool Script\+Drawable\+Components\+::is\+Enable\+At (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Check if a drawable component is enabled. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & The index of the drawable component \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the drawable component is enabled, false otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classScriptDrawableComponents_a6e4a86e19ec7f87dad03f2a602d711f4}\label{classScriptDrawableComponents_a6e4a86e19ec7f87dad03f2a602d711f4}} 
+\index{ScriptDrawableComponents@{ScriptDrawableComponents}!setDisableAt@{setDisableAt}}
+\index{setDisableAt@{setDisableAt}!ScriptDrawableComponents@{ScriptDrawableComponents}}
+\doxysubsubsection{\texorpdfstring{setDisableAt()}{setDisableAt()}}
+{\footnotesize\ttfamily void Script\+Drawable\+Components\+::set\+Disable\+At (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Set a drawable component as disabled. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & The index of the drawable component \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classScriptDrawableComponents_a072b3e67785a32163a223aa87ce78d0e}\label{classScriptDrawableComponents_a072b3e67785a32163a223aa87ce78d0e}} 
+\index{ScriptDrawableComponents@{ScriptDrawableComponents}!setEnableAt@{setEnableAt}}
+\index{setEnableAt@{setEnableAt}!ScriptDrawableComponents@{ScriptDrawableComponents}}
+\doxysubsubsection{\texorpdfstring{setEnableAt()}{setEnableAt()}}
+{\footnotesize\ttfamily void Script\+Drawable\+Components\+::set\+Enable\+At (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Set a drawable component as enabled. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & The index of the drawable component \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classScriptDrawableComponents_a4dc55a7f721a3a51757e21a525a27b4a}\label{classScriptDrawableComponents_a4dc55a7f721a3a51757e21a525a27b4a}} 
+\index{ScriptDrawableComponents@{ScriptDrawableComponents}!size@{size}}
+\index{size@{size}!ScriptDrawableComponents@{ScriptDrawableComponents}}
+\doxysubsubsection{\texorpdfstring{size()}{size()}}
+{\footnotesize\ttfamily size\+\_\+t Script\+Drawable\+Components\+::size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the number of drawable components. 
+
+\begin{DoxyReturn}{Returns}
+The number of drawable components 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Client/\+Script/Script\+Drawable\+Components.\+hpp\end{DoxyCompactItemize}

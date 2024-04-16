@@ -1,0 +1,183 @@
+\hypertarget{classScriptCollideComponents}{}\doxysection{Script\+Collide\+Components Class Reference}
+\label{classScriptCollideComponents}\index{ScriptCollideComponents@{ScriptCollideComponents}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classScriptCollideComponents_a003e3d3ac2db3def049761880577018f}{Script\+Collide\+Components}} (\mbox{\hyperlink{classregistry}{registry}} \&reg)
+\begin{DoxyCompactList}\small\item\em The constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classScriptCollideComponents_ab5269baa4724afff224464faada06158}{$\sim$\+Script\+Collide\+Components}} ()=default
+\item 
+void \mbox{\hyperlink{classScriptCollideComponents_a670358c3aa324dc367b60322e6368de1}{add}} (size\+\_\+t ent\+\_\+id, float width, float height, float deltaX, float deltaY)
+\begin{DoxyCompactList}\small\item\em Add a collide component to an entity. \end{DoxyCompactList}\item 
+size\+\_\+t \mbox{\hyperlink{classScriptCollideComponents_afdf0458cf490f55fa07de31645b6720b}{size}} ()
+\begin{DoxyCompactList}\small\item\em Get the number of collide components. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classCollideComponent}{Collide\+Component}} \& \mbox{\hyperlink{classScriptCollideComponents_acfaaae24930ff39122855cd53498e711}{at}} (size\+\_\+t index)
+\begin{DoxyCompactList}\small\item\em Get a collide component. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classScriptCollideComponents_a8747a649185e47408bb860170e10c59e}{exists}} (size\+\_\+t index)
+\begin{DoxyCompactList}\small\item\em Check if a collide component exists. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classScriptCollideComponents_a25fa5af34baa08df191c0f5cab308df5}{is\+Enable\+At}} (size\+\_\+t index)
+\begin{DoxyCompactList}\small\item\em Check if a collide component is enable. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structCollideBox}{Collide\+Box}} \mbox{\hyperlink{classScriptCollideComponents_a930dc2c747afaab0e4982d426b6be164}{get\+Collide\+Box\+At}} (size\+\_\+t index)
+\begin{DoxyCompactList}\small\item\em Get the collide box of a collide component. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classScriptCollideComponents_a4e1efd80f32bd3f1c5986f30b5bcfd1c}{is\+Collide\+At}} (size\+\_\+t index, size\+\_\+t other)
+\begin{DoxyCompactList}\small\item\em Check if a collide component is collide with another. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classScriptCollideComponents_a003e3d3ac2db3def049761880577018f}\label{classScriptCollideComponents_a003e3d3ac2db3def049761880577018f}} 
+\index{ScriptCollideComponents@{ScriptCollideComponents}!ScriptCollideComponents@{ScriptCollideComponents}}
+\index{ScriptCollideComponents@{ScriptCollideComponents}!ScriptCollideComponents@{ScriptCollideComponents}}
+\doxysubsubsection{\texorpdfstring{ScriptCollideComponents()}{ScriptCollideComponents()}}
+{\footnotesize\ttfamily Script\+Collide\+Components\+::\+Script\+Collide\+Components (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classregistry}{registry}} \&}]{reg }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+The constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em reg} & The registry \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classScriptCollideComponents_ab5269baa4724afff224464faada06158}\label{classScriptCollideComponents_ab5269baa4724afff224464faada06158}} 
+\index{ScriptCollideComponents@{ScriptCollideComponents}!````~ScriptCollideComponents@{$\sim$ScriptCollideComponents}}
+\index{````~ScriptCollideComponents@{$\sim$ScriptCollideComponents}!ScriptCollideComponents@{ScriptCollideComponents}}
+\doxysubsubsection{\texorpdfstring{$\sim$ScriptCollideComponents()}{~ScriptCollideComponents()}}
+{\footnotesize\ttfamily Script\+Collide\+Components\+::$\sim$\+Script\+Collide\+Components (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+Default destructor 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classScriptCollideComponents_a670358c3aa324dc367b60322e6368de1}\label{classScriptCollideComponents_a670358c3aa324dc367b60322e6368de1}} 
+\index{ScriptCollideComponents@{ScriptCollideComponents}!add@{add}}
+\index{add@{add}!ScriptCollideComponents@{ScriptCollideComponents}}
+\doxysubsubsection{\texorpdfstring{add()}{add()}}
+{\footnotesize\ttfamily void Script\+Collide\+Components\+::add (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{ent\+\_\+id,  }\item[{float}]{width,  }\item[{float}]{height,  }\item[{float}]{deltaX,  }\item[{float}]{deltaY }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Add a collide component to an entity. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ent\+\_\+id} & The entity id \\
+\hline
+{\em width} & The width of the collide component \\
+\hline
+{\em height} & The height of the collide component \\
+\hline
+{\em deltaX} & The delta x of the collide component \\
+\hline
+{\em deltaY} & The delta y of the collide component \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classScriptCollideComponents_acfaaae24930ff39122855cd53498e711}\label{classScriptCollideComponents_acfaaae24930ff39122855cd53498e711}} 
+\index{ScriptCollideComponents@{ScriptCollideComponents}!at@{at}}
+\index{at@{at}!ScriptCollideComponents@{ScriptCollideComponents}}
+\doxysubsubsection{\texorpdfstring{at()}{at()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classCollideComponent}{Collide\+Component}} \& Script\+Collide\+Components\+::at (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get a collide component. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & The index of the collide component \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The collide component 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classScriptCollideComponents_a8747a649185e47408bb860170e10c59e}\label{classScriptCollideComponents_a8747a649185e47408bb860170e10c59e}} 
+\index{ScriptCollideComponents@{ScriptCollideComponents}!exists@{exists}}
+\index{exists@{exists}!ScriptCollideComponents@{ScriptCollideComponents}}
+\doxysubsubsection{\texorpdfstring{exists()}{exists()}}
+{\footnotesize\ttfamily bool Script\+Collide\+Components\+::exists (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Check if a collide component exists. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & The index of the collide component \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the collide component exists, false otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classScriptCollideComponents_a930dc2c747afaab0e4982d426b6be164}\label{classScriptCollideComponents_a930dc2c747afaab0e4982d426b6be164}} 
+\index{ScriptCollideComponents@{ScriptCollideComponents}!getCollideBoxAt@{getCollideBoxAt}}
+\index{getCollideBoxAt@{getCollideBoxAt}!ScriptCollideComponents@{ScriptCollideComponents}}
+\doxysubsubsection{\texorpdfstring{getCollideBoxAt()}{getCollideBoxAt()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structCollideBox}{Collide\+Box}} Script\+Collide\+Components\+::get\+Collide\+Box\+At (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the collide box of a collide component. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & The index of the collide component \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{structCollideBox}{Collide\+Box}} The collide box of the collide component 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classScriptCollideComponents_a4e1efd80f32bd3f1c5986f30b5bcfd1c}\label{classScriptCollideComponents_a4e1efd80f32bd3f1c5986f30b5bcfd1c}} 
+\index{ScriptCollideComponents@{ScriptCollideComponents}!isCollideAt@{isCollideAt}}
+\index{isCollideAt@{isCollideAt}!ScriptCollideComponents@{ScriptCollideComponents}}
+\doxysubsubsection{\texorpdfstring{isCollideAt()}{isCollideAt()}}
+{\footnotesize\ttfamily bool Script\+Collide\+Components\+::is\+Collide\+At (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{index,  }\item[{size\+\_\+t}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Check if a collide component is collide with another. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & The index of the collide component \\
+\hline
+{\em other} & The index of the other collide component \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the collide component is collide with the other, false otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classScriptCollideComponents_a25fa5af34baa08df191c0f5cab308df5}\label{classScriptCollideComponents_a25fa5af34baa08df191c0f5cab308df5}} 
+\index{ScriptCollideComponents@{ScriptCollideComponents}!isEnableAt@{isEnableAt}}
+\index{isEnableAt@{isEnableAt}!ScriptCollideComponents@{ScriptCollideComponents}}
+\doxysubsubsection{\texorpdfstring{isEnableAt()}{isEnableAt()}}
+{\footnotesize\ttfamily bool Script\+Collide\+Components\+::is\+Enable\+At (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Check if a collide component is enable. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & The index of the collide component \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the collide component is enable, false otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classScriptCollideComponents_afdf0458cf490f55fa07de31645b6720b}\label{classScriptCollideComponents_afdf0458cf490f55fa07de31645b6720b}} 
+\index{ScriptCollideComponents@{ScriptCollideComponents}!size@{size}}
+\index{size@{size}!ScriptCollideComponents@{ScriptCollideComponents}}
+\doxysubsubsection{\texorpdfstring{size()}{size()}}
+{\footnotesize\ttfamily size\+\_\+t Script\+Collide\+Components\+::size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the number of collide components. 
+
+\begin{DoxyReturn}{Returns}
+The number of collide components 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Client/\+Script/Script\+Collide\+Components.\+hpp\end{DoxyCompactItemize}

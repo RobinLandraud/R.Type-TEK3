@@ -1,0 +1,18 @@
+for (var i = 0; i < SceneManagerComponents.size(); ++i) {
+    if (SceneManagerComponents.exists(i)) {
+        if (SceneManagerComponents.isUpdatedAt(i)) {
+            if (SceneManagerComponents.isMenuAt(i)) {
+                print("---------------------------------------")
+                print("test2.chai")
+                print("---------------------------------------")
+                var pos3D = Position3D_t(1, 1, 1)
+                print("Position3D_t pos3D created")
+                print("x: " + pos3D.x.to_string() + ", y: " + pos3D.y.to_string() + ", z: " + pos3D.z.to_string())
+                var pos3D_2 = Position3D_t()
+                print("\nPosition3D_t pos3D created with empty args constructor")
+                print("x: " + pos3D_2.x.to_string() + ", y: " + pos3D_2.y.to_string() + ", z: " + pos3D_2.z.to_string())
+                print("---------------------------------------")
+            }
+        }
+    }
+}

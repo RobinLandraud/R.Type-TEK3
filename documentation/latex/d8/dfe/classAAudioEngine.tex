@@ -1,0 +1,394 @@
+\hypertarget{classAAudioEngine}{}\doxysection{AAudio\+Engine Class Reference}
+\label{classAAudioEngine}\index{AAudioEngine@{AAudioEngine}}
+
+
+Abstract class for audio engine. Used to play sound and music.  
+
+
+
+
+{\ttfamily \#include $<$AAudio\+Engine.\+hpp$>$}
+
+Inheritance diagram for AAudio\+Engine\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{d8/dfe/classAAudioEngine}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classAAudioEngine_aa9df20bec565ce94fc7b1ff59083baba}{AAudio\+Engine}} ()=default
+\item 
+virtual \mbox{\hyperlink{classAAudioEngine_a95642e34e9e683f34d3cef7f320bab69}{$\sim$\+AAudio\+Engine}} ()=default
+\item 
+virtual int \mbox{\hyperlink{classAAudioEngine_af1d54c1aef91f95b1491b45660468b2d}{create\+Sound}} (std\+::string name, std\+::string source)=0
+\item 
+virtual void \mbox{\hyperlink{classAAudioEngine_a6bb2904de2a53309f710ebb76aaa3334}{play\+Sound}} (std\+::string name)=0
+\begin{DoxyCompactList}\small\item\em Play a sound. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classAAudioEngine_acf4ba4f3ac9a0f4e83f618f8debe98d1}{stop\+Sound}} (std\+::string name)=0
+\begin{DoxyCompactList}\small\item\em Stop a sound. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classAAudioEngine_a7722a34606b1c96e891f179d8b57c36e}{pause\+Sound}} (std\+::string name)=0
+\begin{DoxyCompactList}\small\item\em Pause a sound. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classAAudioEngine_a5c02d2d3e312e01db9bd5bb969ffa027}{resume\+Sound}} (std\+::string name)=0
+\begin{DoxyCompactList}\small\item\em Resume a sound. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classAAudioEngine_a0754c346980574acd2654ed0efc29cbe}{set\+Sound\+Volume}} (std\+::string name, float volume)=0
+\begin{DoxyCompactList}\small\item\em Set the volume of a sound. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classAAudioEngine_a878ede8e57ca06d65090fe5a052f4f3f}{set\+Sound\+Loop}} (std\+::string name, bool loop)=0
+\begin{DoxyCompactList}\small\item\em Set the loop of a sound. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classAAudioEngine_ab6f6761ba32299cd5606e606003a24ad}{set\+Sound\+Pitch}} (std\+::string name, float pitch)=0
+\begin{DoxyCompactList}\small\item\em Set the pitch of a sound. \end{DoxyCompactList}\item 
+virtual int \mbox{\hyperlink{classAAudioEngine_a24b560fb1da30920ece328e3d3cfde0c}{create\+Music}} (std\+::string name, std\+::string source)=0
+\begin{DoxyCompactList}\small\item\em Create a music. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classAAudioEngine_a37d9b45160417146165d8f46b5ddd32d}{play\+Music}} (std\+::string name)=0
+\begin{DoxyCompactList}\small\item\em Play a music. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classAAudioEngine_aa6f9525b39f20dbb8b186a6be44a15af}{stop\+Music}} (std\+::string name)=0
+\begin{DoxyCompactList}\small\item\em Stop a music. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classAAudioEngine_a5bd5013fe43a4349df169a22aa1c55df}{pause\+Music}} (std\+::string name)=0
+\begin{DoxyCompactList}\small\item\em Pause a music. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classAAudioEngine_aa078b5b2b998679750c4f82b78b4f1e3}{resume\+Music}} (std\+::string name)=0
+\begin{DoxyCompactList}\small\item\em Resume a music. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classAAudioEngine_a747442e2843e492a2e80c28ecc1588cc}{set\+Music\+Volume}} (std\+::string name, float volume)=0
+\begin{DoxyCompactList}\small\item\em Set the volume of a music. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classAAudioEngine_a1ae9f6ded036ff49d1fadc207e72e7f4}{set\+Music\+Loop}} (std\+::string name, bool loop)=0
+\begin{DoxyCompactList}\small\item\em Set the loop of a music. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classAAudioEngine_abe819cf164619df18856398066d966be}{set\+Music\+Pitch}} (std\+::string name, float pitch)=0
+\begin{DoxyCompactList}\small\item\em Set the pitch of a music. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Abstract class for audio engine. Used to play sound and music. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classAAudioEngine_aa9df20bec565ce94fc7b1ff59083baba}\label{classAAudioEngine_aa9df20bec565ce94fc7b1ff59083baba}} 
+\index{AAudioEngine@{AAudioEngine}!AAudioEngine@{AAudioEngine}}
+\index{AAudioEngine@{AAudioEngine}!AAudioEngine@{AAudioEngine}}
+\doxysubsubsection{\texorpdfstring{AAudioEngine()}{AAudioEngine()}}
+{\footnotesize\ttfamily AAudio\+Engine\+::\+AAudio\+Engine (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+Default constructor \mbox{\Hypertarget{classAAudioEngine_a95642e34e9e683f34d3cef7f320bab69}\label{classAAudioEngine_a95642e34e9e683f34d3cef7f320bab69}} 
+\index{AAudioEngine@{AAudioEngine}!````~AAudioEngine@{$\sim$AAudioEngine}}
+\index{````~AAudioEngine@{$\sim$AAudioEngine}!AAudioEngine@{AAudioEngine}}
+\doxysubsubsection{\texorpdfstring{$\sim$AAudioEngine()}{~AAudioEngine()}}
+{\footnotesize\ttfamily virtual AAudio\+Engine\+::$\sim$\+AAudio\+Engine (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [default]}}
+
+Default destructor 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classAAudioEngine_a24b560fb1da30920ece328e3d3cfde0c}\label{classAAudioEngine_a24b560fb1da30920ece328e3d3cfde0c}} 
+\index{AAudioEngine@{AAudioEngine}!createMusic@{createMusic}}
+\index{createMusic@{createMusic}!AAudioEngine@{AAudioEngine}}
+\doxysubsubsection{\texorpdfstring{createMusic()}{createMusic()}}
+{\footnotesize\ttfamily int AAudio\+Engine\+::create\+Music (\begin{DoxyParamCaption}\item[{std\+::string}]{name,  }\item[{std\+::string}]{source }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Create a music. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & Name of the music \\
+\hline
+{\em source} & Source of the music \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Error code 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classSFMLAudioEngine_ad005c17282a774d2faf7e33ca94dc4f0}{SFMLAudio\+Engine}}.
+
+\mbox{\Hypertarget{classAAudioEngine_af1d54c1aef91f95b1491b45660468b2d}\label{classAAudioEngine_af1d54c1aef91f95b1491b45660468b2d}} 
+\index{AAudioEngine@{AAudioEngine}!createSound@{createSound}}
+\index{createSound@{createSound}!AAudioEngine@{AAudioEngine}}
+\doxysubsubsection{\texorpdfstring{createSound()}{createSound()}}
+{\footnotesize\ttfamily int AAudio\+Engine\+::create\+Sound (\begin{DoxyParamCaption}\item[{std\+::string}]{name,  }\item[{std\+::string}]{source }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+source Source of the sound 
+
+Implemented in \mbox{\hyperlink{classSFMLAudioEngine_aad06ad5c73c7221a2161ed5300d2bf7a}{SFMLAudio\+Engine}}.
+
+\mbox{\Hypertarget{classAAudioEngine_a5bd5013fe43a4349df169a22aa1c55df}\label{classAAudioEngine_a5bd5013fe43a4349df169a22aa1c55df}} 
+\index{AAudioEngine@{AAudioEngine}!pauseMusic@{pauseMusic}}
+\index{pauseMusic@{pauseMusic}!AAudioEngine@{AAudioEngine}}
+\doxysubsubsection{\texorpdfstring{pauseMusic()}{pauseMusic()}}
+{\footnotesize\ttfamily void AAudio\+Engine\+::pause\+Music (\begin{DoxyParamCaption}\item[{std\+::string}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Pause a music. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & Name of the music \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{classSFMLAudioEngine_a108656f221b51f7455bf678adb29332f}{SFMLAudio\+Engine}}.
+
+\mbox{\Hypertarget{classAAudioEngine_a7722a34606b1c96e891f179d8b57c36e}\label{classAAudioEngine_a7722a34606b1c96e891f179d8b57c36e}} 
+\index{AAudioEngine@{AAudioEngine}!pauseSound@{pauseSound}}
+\index{pauseSound@{pauseSound}!AAudioEngine@{AAudioEngine}}
+\doxysubsubsection{\texorpdfstring{pauseSound()}{pauseSound()}}
+{\footnotesize\ttfamily void AAudio\+Engine\+::pause\+Sound (\begin{DoxyParamCaption}\item[{std\+::string}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Pause a sound. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & Name of the sound \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{classSFMLAudioEngine_aa747536c13f126cd93dae8ba6054ec15}{SFMLAudio\+Engine}}.
+
+\mbox{\Hypertarget{classAAudioEngine_a37d9b45160417146165d8f46b5ddd32d}\label{classAAudioEngine_a37d9b45160417146165d8f46b5ddd32d}} 
+\index{AAudioEngine@{AAudioEngine}!playMusic@{playMusic}}
+\index{playMusic@{playMusic}!AAudioEngine@{AAudioEngine}}
+\doxysubsubsection{\texorpdfstring{playMusic()}{playMusic()}}
+{\footnotesize\ttfamily void AAudio\+Engine\+::play\+Music (\begin{DoxyParamCaption}\item[{std\+::string}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Play a music. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & Name of the music \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{classSFMLAudioEngine_ac7ba513cdd9509278bc83fa7f78b08cc}{SFMLAudio\+Engine}}.
+
+\mbox{\Hypertarget{classAAudioEngine_a6bb2904de2a53309f710ebb76aaa3334}\label{classAAudioEngine_a6bb2904de2a53309f710ebb76aaa3334}} 
+\index{AAudioEngine@{AAudioEngine}!playSound@{playSound}}
+\index{playSound@{playSound}!AAudioEngine@{AAudioEngine}}
+\doxysubsubsection{\texorpdfstring{playSound()}{playSound()}}
+{\footnotesize\ttfamily void AAudio\+Engine\+::play\+Sound (\begin{DoxyParamCaption}\item[{std\+::string}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Play a sound. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & Name of the sound \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{classSFMLAudioEngine_a6bd91ea3b2e2cad5e598fe84f8e69141}{SFMLAudio\+Engine}}.
+
+\mbox{\Hypertarget{classAAudioEngine_aa078b5b2b998679750c4f82b78b4f1e3}\label{classAAudioEngine_aa078b5b2b998679750c4f82b78b4f1e3}} 
+\index{AAudioEngine@{AAudioEngine}!resumeMusic@{resumeMusic}}
+\index{resumeMusic@{resumeMusic}!AAudioEngine@{AAudioEngine}}
+\doxysubsubsection{\texorpdfstring{resumeMusic()}{resumeMusic()}}
+{\footnotesize\ttfamily void AAudio\+Engine\+::resume\+Music (\begin{DoxyParamCaption}\item[{std\+::string}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Resume a music. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & Name of the music \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{classSFMLAudioEngine_a7ab181c4da910413eb210705677fccf6}{SFMLAudio\+Engine}}.
+
+\mbox{\Hypertarget{classAAudioEngine_a5c02d2d3e312e01db9bd5bb969ffa027}\label{classAAudioEngine_a5c02d2d3e312e01db9bd5bb969ffa027}} 
+\index{AAudioEngine@{AAudioEngine}!resumeSound@{resumeSound}}
+\index{resumeSound@{resumeSound}!AAudioEngine@{AAudioEngine}}
+\doxysubsubsection{\texorpdfstring{resumeSound()}{resumeSound()}}
+{\footnotesize\ttfamily void AAudio\+Engine\+::resume\+Sound (\begin{DoxyParamCaption}\item[{std\+::string}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Resume a sound. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & Name of the sound \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{classSFMLAudioEngine_ab46e214b7636aa7c5b3dcfc3f343827f}{SFMLAudio\+Engine}}.
+
+\mbox{\Hypertarget{classAAudioEngine_a1ae9f6ded036ff49d1fadc207e72e7f4}\label{classAAudioEngine_a1ae9f6ded036ff49d1fadc207e72e7f4}} 
+\index{AAudioEngine@{AAudioEngine}!setMusicLoop@{setMusicLoop}}
+\index{setMusicLoop@{setMusicLoop}!AAudioEngine@{AAudioEngine}}
+\doxysubsubsection{\texorpdfstring{setMusicLoop()}{setMusicLoop()}}
+{\footnotesize\ttfamily void AAudio\+Engine\+::set\+Music\+Loop (\begin{DoxyParamCaption}\item[{std\+::string}]{name,  }\item[{bool}]{loop }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Set the loop of a music. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & Name of the music \\
+\hline
+{\em loop} & Enable or disable the loop \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{classSFMLAudioEngine_aa2570700332a7de0c0a0d52b5a3d85bd}{SFMLAudio\+Engine}}.
+
+\mbox{\Hypertarget{classAAudioEngine_abe819cf164619df18856398066d966be}\label{classAAudioEngine_abe819cf164619df18856398066d966be}} 
+\index{AAudioEngine@{AAudioEngine}!setMusicPitch@{setMusicPitch}}
+\index{setMusicPitch@{setMusicPitch}!AAudioEngine@{AAudioEngine}}
+\doxysubsubsection{\texorpdfstring{setMusicPitch()}{setMusicPitch()}}
+{\footnotesize\ttfamily void AAudio\+Engine\+::set\+Music\+Pitch (\begin{DoxyParamCaption}\item[{std\+::string}]{name,  }\item[{float}]{pitch }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Set the pitch of a music. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & Name of the music \\
+\hline
+{\em pitch} & Pitch of the music \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{classSFMLAudioEngine_a956024d0a07166f64e7e973e770d5615}{SFMLAudio\+Engine}}.
+
+\mbox{\Hypertarget{classAAudioEngine_a747442e2843e492a2e80c28ecc1588cc}\label{classAAudioEngine_a747442e2843e492a2e80c28ecc1588cc}} 
+\index{AAudioEngine@{AAudioEngine}!setMusicVolume@{setMusicVolume}}
+\index{setMusicVolume@{setMusicVolume}!AAudioEngine@{AAudioEngine}}
+\doxysubsubsection{\texorpdfstring{setMusicVolume()}{setMusicVolume()}}
+{\footnotesize\ttfamily void AAudio\+Engine\+::set\+Music\+Volume (\begin{DoxyParamCaption}\item[{std\+::string}]{name,  }\item[{float}]{volume }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Set the volume of a music. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & Name of the music \\
+\hline
+{\em volume} & Volume of the music \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{classSFMLAudioEngine_a21e375910eee71898215df8bf4596b51}{SFMLAudio\+Engine}}.
+
+\mbox{\Hypertarget{classAAudioEngine_a878ede8e57ca06d65090fe5a052f4f3f}\label{classAAudioEngine_a878ede8e57ca06d65090fe5a052f4f3f}} 
+\index{AAudioEngine@{AAudioEngine}!setSoundLoop@{setSoundLoop}}
+\index{setSoundLoop@{setSoundLoop}!AAudioEngine@{AAudioEngine}}
+\doxysubsubsection{\texorpdfstring{setSoundLoop()}{setSoundLoop()}}
+{\footnotesize\ttfamily void AAudio\+Engine\+::set\+Sound\+Loop (\begin{DoxyParamCaption}\item[{std\+::string}]{name,  }\item[{bool}]{loop }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Set the loop of a sound. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & Name of the sound \\
+\hline
+{\em loop} & Enable or disable the loop \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{classSFMLAudioEngine_aca2620a64776cf363f8672e609dcd47a}{SFMLAudio\+Engine}}.
+
+\mbox{\Hypertarget{classAAudioEngine_ab6f6761ba32299cd5606e606003a24ad}\label{classAAudioEngine_ab6f6761ba32299cd5606e606003a24ad}} 
+\index{AAudioEngine@{AAudioEngine}!setSoundPitch@{setSoundPitch}}
+\index{setSoundPitch@{setSoundPitch}!AAudioEngine@{AAudioEngine}}
+\doxysubsubsection{\texorpdfstring{setSoundPitch()}{setSoundPitch()}}
+{\footnotesize\ttfamily void AAudio\+Engine\+::set\+Sound\+Pitch (\begin{DoxyParamCaption}\item[{std\+::string}]{name,  }\item[{float}]{pitch }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Set the pitch of a sound. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & Name of the sound \\
+\hline
+{\em pitch} & Pitch of the sound \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{classSFMLAudioEngine_a399e56109db302682fe24d53ef25dc8e}{SFMLAudio\+Engine}}.
+
+\mbox{\Hypertarget{classAAudioEngine_a0754c346980574acd2654ed0efc29cbe}\label{classAAudioEngine_a0754c346980574acd2654ed0efc29cbe}} 
+\index{AAudioEngine@{AAudioEngine}!setSoundVolume@{setSoundVolume}}
+\index{setSoundVolume@{setSoundVolume}!AAudioEngine@{AAudioEngine}}
+\doxysubsubsection{\texorpdfstring{setSoundVolume()}{setSoundVolume()}}
+{\footnotesize\ttfamily void AAudio\+Engine\+::set\+Sound\+Volume (\begin{DoxyParamCaption}\item[{std\+::string}]{name,  }\item[{float}]{volume }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Set the volume of a sound. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & Name of the sound \\
+\hline
+{\em volume} & Volume of the sound \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{classSFMLAudioEngine_a8de8a55c93eb32575b6cdbe8c325bb80}{SFMLAudio\+Engine}}.
+
+\mbox{\Hypertarget{classAAudioEngine_aa6f9525b39f20dbb8b186a6be44a15af}\label{classAAudioEngine_aa6f9525b39f20dbb8b186a6be44a15af}} 
+\index{AAudioEngine@{AAudioEngine}!stopMusic@{stopMusic}}
+\index{stopMusic@{stopMusic}!AAudioEngine@{AAudioEngine}}
+\doxysubsubsection{\texorpdfstring{stopMusic()}{stopMusic()}}
+{\footnotesize\ttfamily void AAudio\+Engine\+::stop\+Music (\begin{DoxyParamCaption}\item[{std\+::string}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Stop a music. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & Name of the music \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{classSFMLAudioEngine_a37f8ddf259d8d9522cce737949356331}{SFMLAudio\+Engine}}.
+
+\mbox{\Hypertarget{classAAudioEngine_acf4ba4f3ac9a0f4e83f618f8debe98d1}\label{classAAudioEngine_acf4ba4f3ac9a0f4e83f618f8debe98d1}} 
+\index{AAudioEngine@{AAudioEngine}!stopSound@{stopSound}}
+\index{stopSound@{stopSound}!AAudioEngine@{AAudioEngine}}
+\doxysubsubsection{\texorpdfstring{stopSound()}{stopSound()}}
+{\footnotesize\ttfamily void AAudio\+Engine\+::stop\+Sound (\begin{DoxyParamCaption}\item[{std\+::string}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Stop a sound. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & Name of the sound \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{classSFMLAudioEngine_ad9c789fea1e5c0916ee0af9f1b8a9580}{SFMLAudio\+Engine}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Client/\+AEngine/AAudio\+Engine.\+hpp\end{DoxyCompactItemize}

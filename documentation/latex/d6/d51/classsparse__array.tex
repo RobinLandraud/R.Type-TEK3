@@ -1,0 +1,737 @@
+\hypertarget{classsparse__array}{}\doxysection{sparse\+\_\+array$<$ Component $>$ Class Template Reference}
+\label{classsparse__array}\index{sparse\_array$<$ Component $>$@{sparse\_array$<$ Component $>$}}
+
+
+A sparse array. Used to store components.  
+
+
+
+
+{\ttfamily \#include $<$Sparse.\+hpp$>$}
+
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+using \mbox{\hyperlink{classsparse__array_ab7403a6f935fa66034cce5bdcf49a9fc}{value\+\_\+type}} = std\+::optional$<$ Component $>$
+\item 
+using \mbox{\hyperlink{classsparse__array_a639d023286962a7b28f77fc4741e3f89}{reference\+\_\+type}} = \mbox{\hyperlink{classsparse__array_ab7403a6f935fa66034cce5bdcf49a9fc}{value\+\_\+type}} \&
+\item 
+using \mbox{\hyperlink{classsparse__array_ab45a3b0d907508f61baa7c185d6ed07f}{const\+\_\+reference\+\_\+type}} = \mbox{\hyperlink{classsparse__array_ab7403a6f935fa66034cce5bdcf49a9fc}{value\+\_\+type}} const  \&
+\item 
+using \mbox{\hyperlink{classsparse__array_a5f747e93a9406474b106bde9c66f01b7}{container\+\_\+t}} = std\+::vector$<$ \mbox{\hyperlink{classsparse__array_ab7403a6f935fa66034cce5bdcf49a9fc}{value\+\_\+type}} $>$
+\item 
+using \mbox{\hyperlink{classsparse__array_af1468a11a30a58090580d1fb399e3cc0}{size\+\_\+type}} = typename container\+\_\+t\+::size\+\_\+type
+\item 
+using \mbox{\hyperlink{classsparse__array_a1293c5b64d77bb97ed87e57c6276925e}{iterator}} = typename container\+\_\+t\+::iterator
+\item 
+using \mbox{\hyperlink{classsparse__array_a9beecc69673481f79844336194dfc1a2}{const\+\_\+iterator}} = typename container\+\_\+t\+::const\+\_\+iterator
+\item 
+using \mbox{\hyperlink{classsparse__array_ab7403a6f935fa66034cce5bdcf49a9fc}{value\+\_\+type}} = std\+::optional$<$ Component $>$
+\item 
+using \mbox{\hyperlink{classsparse__array_a639d023286962a7b28f77fc4741e3f89}{reference\+\_\+type}} = \mbox{\hyperlink{classsparse__array_ab7403a6f935fa66034cce5bdcf49a9fc}{value\+\_\+type}} \&
+\item 
+using \mbox{\hyperlink{classsparse__array_ab45a3b0d907508f61baa7c185d6ed07f}{const\+\_\+reference\+\_\+type}} = \mbox{\hyperlink{classsparse__array_ab7403a6f935fa66034cce5bdcf49a9fc}{value\+\_\+type}} const  \&
+\item 
+using \mbox{\hyperlink{classsparse__array_a5f747e93a9406474b106bde9c66f01b7}{container\+\_\+t}} = std\+::vector$<$ \mbox{\hyperlink{classsparse__array_ab7403a6f935fa66034cce5bdcf49a9fc}{value\+\_\+type}} $>$
+\item 
+using \mbox{\hyperlink{classsparse__array_af1468a11a30a58090580d1fb399e3cc0}{size\+\_\+type}} = typename container\+\_\+t\+::size\+\_\+type
+\item 
+using \mbox{\hyperlink{classsparse__array_a1293c5b64d77bb97ed87e57c6276925e}{iterator}} = typename container\+\_\+t\+::iterator
+\item 
+using \mbox{\hyperlink{classsparse__array_a9beecc69673481f79844336194dfc1a2}{const\+\_\+iterator}} = typename container\+\_\+t\+::const\+\_\+iterator
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classsparse__array_a9437af3619227d4ab973cad2f6bfa818}{sparse\+\_\+array}} ()=default
+\item 
+\mbox{\hyperlink{classsparse__array_a99d9756419717256dab5ce1aea62d8da}{sparse\+\_\+array}} (\mbox{\hyperlink{classsparse__array}{sparse\+\_\+array}} const \&)=default
+\item 
+\mbox{\hyperlink{classsparse__array_ad93b07fae9a6a1e0029768fd8aa22703}{sparse\+\_\+array}} (\mbox{\hyperlink{classsparse__array}{sparse\+\_\+array}} \&\&) noexcept=default
+\item 
+\mbox{\hyperlink{classsparse__array_a462f64cc46c81b54e7c7d1181f7b889f}{$\sim$sparse\+\_\+array}} ()=default
+\item 
+\mbox{\hyperlink{classsparse__array}{sparse\+\_\+array}} \& \mbox{\hyperlink{classsparse__array_a5ff49737017b8dd6c81f0fe144aa2a1e}{operator=}} (\mbox{\hyperlink{classsparse__array}{sparse\+\_\+array}} const \&)=default
+\item 
+\mbox{\hyperlink{classsparse__array}{sparse\+\_\+array}} \& \mbox{\hyperlink{classsparse__array_a1d5c704241a925d96358e92456dfeb10}{operator=}} (\mbox{\hyperlink{classsparse__array}{sparse\+\_\+array}} \&\&) noexcept=default
+\item 
+\mbox{\hyperlink{classsparse__array_a639d023286962a7b28f77fc4741e3f89}{reference\+\_\+type}} \mbox{\hyperlink{classsparse__array_a4aa1f2fae14ff1cecdc6e42ded260cad}{operator\mbox{[}$\,$\mbox{]}}} (size\+\_\+t idx)
+\begin{DoxyCompactList}\small\item\em Access the element at the given index. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classsparse__array_a08a5ff63d010f1e1a135e4559eff5946}{exists}} (size\+\_\+t idx) const
+\begin{DoxyCompactList}\small\item\em Check if the element at the given index exists. \end{DoxyCompactList}\item 
+Component \& \mbox{\hyperlink{classsparse__array_a59e757c8a15ce4e9100340df6338b3db}{at}} (size\+\_\+t idx)
+\begin{DoxyCompactList}\small\item\em Access the element at the given index. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classsparse__array_ab45a3b0d907508f61baa7c185d6ed07f}{const\+\_\+reference\+\_\+type}} \mbox{\hyperlink{classsparse__array_a1d66e1a1e11a9bcef70425c3c09eb6b4}{operator\mbox{[}$\,$\mbox{]}}} (size\+\_\+t idx) const
+\begin{DoxyCompactList}\small\item\em Access the element at the given index. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classsparse__array_a1293c5b64d77bb97ed87e57c6276925e}{iterator}} \mbox{\hyperlink{classsparse__array_a1cdf824b5897fb3ffc857843b37453b2}{begin}} ()
+\begin{DoxyCompactList}\small\item\em Get an iterator to the beginning of the sparse array. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classsparse__array_a9beecc69673481f79844336194dfc1a2}{const\+\_\+iterator}} \mbox{\hyperlink{classsparse__array_a25c3a93f84f860ee55bb25f8da67e358}{begin}} () const
+\begin{DoxyCompactList}\small\item\em Get a const iterator to the beginning of the sparse array. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classsparse__array_a9beecc69673481f79844336194dfc1a2}{const\+\_\+iterator}} \mbox{\hyperlink{classsparse__array_a8f6e23b67ea783baf53129f8907e297a}{cbegin}} () const
+\begin{DoxyCompactList}\small\item\em Get a const iterator to the beginning of the sparse array. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classsparse__array_a1293c5b64d77bb97ed87e57c6276925e}{iterator}} \mbox{\hyperlink{classsparse__array_af6749bdfbdc5200a77549f52594107eb}{end}} ()
+\begin{DoxyCompactList}\small\item\em Get an iterator to the end of the sparse array. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classsparse__array_a9beecc69673481f79844336194dfc1a2}{const\+\_\+iterator}} \mbox{\hyperlink{classsparse__array_a094425cbf56a592e130b67ecda68cd3d}{end}} () const
+\begin{DoxyCompactList}\small\item\em Get a const iterator to the end of the sparse array. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classsparse__array_a9beecc69673481f79844336194dfc1a2}{const\+\_\+iterator}} \mbox{\hyperlink{classsparse__array_adb95eba3fb7e88207a4374c04950d167}{cend}} () const
+\begin{DoxyCompactList}\small\item\em Get a const iterator to the end of the sparse array. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classsparse__array_af1468a11a30a58090580d1fb399e3cc0}{size\+\_\+type}} \mbox{\hyperlink{classsparse__array_a6679a2315be266da4c01ad97f00e51fd}{size}} () const
+\begin{DoxyCompactList}\small\item\em Get the size of the sparse array. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classsparse__array_a639d023286962a7b28f77fc4741e3f89}{reference\+\_\+type}} \mbox{\hyperlink{classsparse__array_aac3a3e84c75d57f529dec4b57d2063c7}{insert\+\_\+at}} (\mbox{\hyperlink{classsparse__array_af1468a11a30a58090580d1fb399e3cc0}{size\+\_\+type}} pos, Component const \&component)
+\begin{DoxyCompactList}\small\item\em Insert a component at the given position. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classsparse__array_a639d023286962a7b28f77fc4741e3f89}{reference\+\_\+type}} \mbox{\hyperlink{classsparse__array_a2fee5dd6c65139740ba402ac5cf53344}{insert\+\_\+at}} (\mbox{\hyperlink{classsparse__array_af1468a11a30a58090580d1fb399e3cc0}{size\+\_\+type}} pos, Component \&\&component)
+\begin{DoxyCompactList}\small\item\em Insert a component at the given position. \end{DoxyCompactList}\item 
+{\footnotesize template$<$class... Params$>$ }\\\mbox{\hyperlink{classsparse__array_a639d023286962a7b28f77fc4741e3f89}{reference\+\_\+type}} \mbox{\hyperlink{classsparse__array_af3829246022b40daaa77fd9332608ae4}{emplace\+\_\+at}} (\mbox{\hyperlink{classsparse__array_af1468a11a30a58090580d1fb399e3cc0}{size\+\_\+type}} pos, Params \&\&... args)
+\begin{DoxyCompactList}\small\item\em Emplace a component at the given position. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classsparse__array_ac0bea77704ce39c1a731dc69de8d9d2d}{erase}} (\mbox{\hyperlink{classsparse__array_af1468a11a30a58090580d1fb399e3cc0}{size\+\_\+type}} pos)
+\begin{DoxyCompactList}\small\item\em Erase the component at the given position. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classsparse__array_af1468a11a30a58090580d1fb399e3cc0}{size\+\_\+type}} \mbox{\hyperlink{classsparse__array_add04d031e1ccfadab8990129944f49f1}{get\+\_\+index}} (\mbox{\hyperlink{classsparse__array_ab7403a6f935fa66034cce5bdcf49a9fc}{value\+\_\+type}} const \&needle) const
+\begin{DoxyCompactList}\small\item\em Get the index of the given component. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classsparse__array_a9437af3619227d4ab973cad2f6bfa818}{sparse\+\_\+array}} ()=default
+\item 
+\mbox{\hyperlink{classsparse__array_a99d9756419717256dab5ce1aea62d8da}{sparse\+\_\+array}} (\mbox{\hyperlink{classsparse__array}{sparse\+\_\+array}} const \&)=default
+\item 
+\mbox{\hyperlink{classsparse__array_ad93b07fae9a6a1e0029768fd8aa22703}{sparse\+\_\+array}} (\mbox{\hyperlink{classsparse__array}{sparse\+\_\+array}} \&\&) noexcept=default
+\item 
+\mbox{\hyperlink{classsparse__array_a462f64cc46c81b54e7c7d1181f7b889f}{$\sim$sparse\+\_\+array}} ()=default
+\item 
+\mbox{\hyperlink{classsparse__array}{sparse\+\_\+array}} \& \mbox{\hyperlink{classsparse__array_a5ff49737017b8dd6c81f0fe144aa2a1e}{operator=}} (\mbox{\hyperlink{classsparse__array}{sparse\+\_\+array}} const \&)=default
+\item 
+\mbox{\hyperlink{classsparse__array}{sparse\+\_\+array}} \& \mbox{\hyperlink{classsparse__array_a1d5c704241a925d96358e92456dfeb10}{operator=}} (\mbox{\hyperlink{classsparse__array}{sparse\+\_\+array}} \&\&) noexcept=default
+\item 
+\mbox{\hyperlink{classsparse__array_a639d023286962a7b28f77fc4741e3f89}{reference\+\_\+type}} \mbox{\hyperlink{classsparse__array_a4aa1f2fae14ff1cecdc6e42ded260cad}{operator\mbox{[}$\,$\mbox{]}}} (size\+\_\+t idx)
+\item 
+\mbox{\hyperlink{classsparse__array_ab45a3b0d907508f61baa7c185d6ed07f}{const\+\_\+reference\+\_\+type}} \mbox{\hyperlink{classsparse__array_a1d66e1a1e11a9bcef70425c3c09eb6b4}{operator\mbox{[}$\,$\mbox{]}}} (size\+\_\+t idx) const
+\item 
+\mbox{\hyperlink{classsparse__array_a1293c5b64d77bb97ed87e57c6276925e}{iterator}} \mbox{\hyperlink{classsparse__array_a1cdf824b5897fb3ffc857843b37453b2}{begin}} ()
+\item 
+\mbox{\hyperlink{classsparse__array_a9beecc69673481f79844336194dfc1a2}{const\+\_\+iterator}} \mbox{\hyperlink{classsparse__array_a25c3a93f84f860ee55bb25f8da67e358}{begin}} () const
+\item 
+\mbox{\hyperlink{classsparse__array_a9beecc69673481f79844336194dfc1a2}{const\+\_\+iterator}} \mbox{\hyperlink{classsparse__array_a8f6e23b67ea783baf53129f8907e297a}{cbegin}} () const
+\item 
+\mbox{\hyperlink{classsparse__array_a1293c5b64d77bb97ed87e57c6276925e}{iterator}} \mbox{\hyperlink{classsparse__array_af6749bdfbdc5200a77549f52594107eb}{end}} ()
+\item 
+\mbox{\hyperlink{classsparse__array_a9beecc69673481f79844336194dfc1a2}{const\+\_\+iterator}} \mbox{\hyperlink{classsparse__array_a094425cbf56a592e130b67ecda68cd3d}{end}} () const
+\item 
+\mbox{\hyperlink{classsparse__array_a9beecc69673481f79844336194dfc1a2}{const\+\_\+iterator}} \mbox{\hyperlink{classsparse__array_adb95eba3fb7e88207a4374c04950d167}{cend}} () const
+\item 
+\mbox{\hyperlink{classsparse__array_af1468a11a30a58090580d1fb399e3cc0}{size\+\_\+type}} \mbox{\hyperlink{classsparse__array_a6679a2315be266da4c01ad97f00e51fd}{size}} () const
+\item 
+\mbox{\Hypertarget{classsparse__array_aac3a3e84c75d57f529dec4b57d2063c7}\label{classsparse__array_aac3a3e84c75d57f529dec4b57d2063c7}} 
+\mbox{\hyperlink{classsparse__array_a639d023286962a7b28f77fc4741e3f89}{reference\+\_\+type}} {\bfseries insert\+\_\+at} (\mbox{\hyperlink{classsparse__array_af1468a11a30a58090580d1fb399e3cc0}{size\+\_\+type}} pos, Component const \&component)
+\item 
+\mbox{\hyperlink{classsparse__array_a639d023286962a7b28f77fc4741e3f89}{reference\+\_\+type}} \mbox{\hyperlink{classsparse__array_a2fee5dd6c65139740ba402ac5cf53344}{insert\+\_\+at}} (\mbox{\hyperlink{classsparse__array_af1468a11a30a58090580d1fb399e3cc0}{size\+\_\+type}} pos, Component \&\&component)
+\item 
+\mbox{\Hypertarget{classsparse__array_a2562cba84b9dc0e772d557897bfc13e6}\label{classsparse__array_a2562cba84b9dc0e772d557897bfc13e6}} 
+{\footnotesize template$<$class... Params$>$ }\\\mbox{\hyperlink{classsparse__array_a639d023286962a7b28f77fc4741e3f89}{reference\+\_\+type}} {\bfseries emplace\+\_\+at} (\mbox{\hyperlink{classsparse__array_af1468a11a30a58090580d1fb399e3cc0}{size\+\_\+type}} pos, Params \&\&... args)
+\item 
+\mbox{\Hypertarget{classsparse__array_ac0bea77704ce39c1a731dc69de8d9d2d}\label{classsparse__array_ac0bea77704ce39c1a731dc69de8d9d2d}} 
+void {\bfseries erase} (\mbox{\hyperlink{classsparse__array_af1468a11a30a58090580d1fb399e3cc0}{size\+\_\+type}} pos)
+\item 
+\mbox{\Hypertarget{classsparse__array_add04d031e1ccfadab8990129944f49f1}\label{classsparse__array_add04d031e1ccfadab8990129944f49f1}} 
+\mbox{\hyperlink{classsparse__array_af1468a11a30a58090580d1fb399e3cc0}{size\+\_\+type}} {\bfseries get\+\_\+index} (\mbox{\hyperlink{classsparse__array_ab7403a6f935fa66034cce5bdcf49a9fc}{value\+\_\+type}} const \&needle) const
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$typename Component$>$\newline
+class sparse\+\_\+array$<$ Component $>$}
+
+A sparse array. Used to store components. 
+
+A sparse array class.
+
+
+\begin{DoxyParams}{Parameters}
+{\em Component} & The type of the elements of the array \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Typedef Documentation}
+\mbox{\Hypertarget{classsparse__array_a9beecc69673481f79844336194dfc1a2}\label{classsparse__array_a9beecc69673481f79844336194dfc1a2}} 
+\index{sparse\_array$<$ Component $>$@{sparse\_array$<$ Component $>$}!const\_iterator@{const\_iterator}}
+\index{const\_iterator@{const\_iterator}!sparse\_array$<$ Component $>$@{sparse\_array$<$ Component $>$}}
+\doxysubsubsection{\texorpdfstring{const\_iterator}{const\_iterator}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename Component $>$ \\
+using \mbox{\hyperlink{classsparse__array}{sparse\+\_\+array}}$<$ Component $>$\+::\mbox{\hyperlink{classsparse__array_a9beecc69673481f79844336194dfc1a2}{const\+\_\+iterator}} =  typename container\+\_\+t\+::const\+\_\+iterator}
+
+The const iterator type of the sparse array \mbox{\Hypertarget{classsparse__array_a9beecc69673481f79844336194dfc1a2}\label{classsparse__array_a9beecc69673481f79844336194dfc1a2}} 
+\index{sparse\_array$<$ Component $>$@{sparse\_array$<$ Component $>$}!const\_iterator@{const\_iterator}}
+\index{const\_iterator@{const\_iterator}!sparse\_array$<$ Component $>$@{sparse\_array$<$ Component $>$}}
+\doxysubsubsection{\texorpdfstring{const\_iterator}{const\_iterator}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename Component $>$ \\
+using \mbox{\hyperlink{classsparse__array}{sparse\+\_\+array}}$<$ Component $>$\+::\mbox{\hyperlink{classsparse__array_a9beecc69673481f79844336194dfc1a2}{const\+\_\+iterator}} =  typename container\+\_\+t\+::const\+\_\+iterator}
+
+The type of the const iterator of the array \mbox{\Hypertarget{classsparse__array_ab45a3b0d907508f61baa7c185d6ed07f}\label{classsparse__array_ab45a3b0d907508f61baa7c185d6ed07f}} 
+\index{sparse\_array$<$ Component $>$@{sparse\_array$<$ Component $>$}!const\_reference\_type@{const\_reference\_type}}
+\index{const\_reference\_type@{const\_reference\_type}!sparse\_array$<$ Component $>$@{sparse\_array$<$ Component $>$}}
+\doxysubsubsection{\texorpdfstring{const\_reference\_type}{const\_reference\_type}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename Component $>$ \\
+using \mbox{\hyperlink{classsparse__array}{sparse\+\_\+array}}$<$ Component $>$\+::\mbox{\hyperlink{classsparse__array_ab45a3b0d907508f61baa7c185d6ed07f}{const\+\_\+reference\+\_\+type}} =  \mbox{\hyperlink{classsparse__array_ab7403a6f935fa66034cce5bdcf49a9fc}{value\+\_\+type}} const\&}
+
+The const reference type of the sparse array \mbox{\Hypertarget{classsparse__array_ab45a3b0d907508f61baa7c185d6ed07f}\label{classsparse__array_ab45a3b0d907508f61baa7c185d6ed07f}} 
+\index{sparse\_array$<$ Component $>$@{sparse\_array$<$ Component $>$}!const\_reference\_type@{const\_reference\_type}}
+\index{const\_reference\_type@{const\_reference\_type}!sparse\_array$<$ Component $>$@{sparse\_array$<$ Component $>$}}
+\doxysubsubsection{\texorpdfstring{const\_reference\_type}{const\_reference\_type}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename Component $>$ \\
+using \mbox{\hyperlink{classsparse__array}{sparse\+\_\+array}}$<$ Component $>$\+::\mbox{\hyperlink{classsparse__array_ab45a3b0d907508f61baa7c185d6ed07f}{const\+\_\+reference\+\_\+type}} =  \mbox{\hyperlink{classsparse__array_ab7403a6f935fa66034cce5bdcf49a9fc}{value\+\_\+type}} const\&}
+
+The type of the const reference to the elements of the array \mbox{\Hypertarget{classsparse__array_a5f747e93a9406474b106bde9c66f01b7}\label{classsparse__array_a5f747e93a9406474b106bde9c66f01b7}} 
+\index{sparse\_array$<$ Component $>$@{sparse\_array$<$ Component $>$}!container\_t@{container\_t}}
+\index{container\_t@{container\_t}!sparse\_array$<$ Component $>$@{sparse\_array$<$ Component $>$}}
+\doxysubsubsection{\texorpdfstring{container\_t}{container\_t}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename Component $>$ \\
+using \mbox{\hyperlink{classsparse__array}{sparse\+\_\+array}}$<$ Component $>$\+::\mbox{\hyperlink{classsparse__array_a5f747e93a9406474b106bde9c66f01b7}{container\+\_\+t}} =  std\+::vector$<$\mbox{\hyperlink{classsparse__array_ab7403a6f935fa66034cce5bdcf49a9fc}{value\+\_\+type}}$>$}
+
+The container type of the sparse array \mbox{\Hypertarget{classsparse__array_a5f747e93a9406474b106bde9c66f01b7}\label{classsparse__array_a5f747e93a9406474b106bde9c66f01b7}} 
+\index{sparse\_array$<$ Component $>$@{sparse\_array$<$ Component $>$}!container\_t@{container\_t}}
+\index{container\_t@{container\_t}!sparse\_array$<$ Component $>$@{sparse\_array$<$ Component $>$}}
+\doxysubsubsection{\texorpdfstring{container\_t}{container\_t}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename Component $>$ \\
+using \mbox{\hyperlink{classsparse__array}{sparse\+\_\+array}}$<$ Component $>$\+::\mbox{\hyperlink{classsparse__array_a5f747e93a9406474b106bde9c66f01b7}{container\+\_\+t}} =  std\+::vector$<$\mbox{\hyperlink{classsparse__array_ab7403a6f935fa66034cce5bdcf49a9fc}{value\+\_\+type}}$>$}
+
+The type of the container used to store the elements of the array \mbox{\Hypertarget{classsparse__array_a1293c5b64d77bb97ed87e57c6276925e}\label{classsparse__array_a1293c5b64d77bb97ed87e57c6276925e}} 
+\index{sparse\_array$<$ Component $>$@{sparse\_array$<$ Component $>$}!iterator@{iterator}}
+\index{iterator@{iterator}!sparse\_array$<$ Component $>$@{sparse\_array$<$ Component $>$}}
+\doxysubsubsection{\texorpdfstring{iterator}{iterator}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename Component $>$ \\
+using \mbox{\hyperlink{classsparse__array}{sparse\+\_\+array}}$<$ Component $>$\+::\mbox{\hyperlink{classsparse__array_a1293c5b64d77bb97ed87e57c6276925e}{iterator}} =  typename container\+\_\+t\+::iterator}
+
+The iterator type of the sparse array \mbox{\Hypertarget{classsparse__array_a1293c5b64d77bb97ed87e57c6276925e}\label{classsparse__array_a1293c5b64d77bb97ed87e57c6276925e}} 
+\index{sparse\_array$<$ Component $>$@{sparse\_array$<$ Component $>$}!iterator@{iterator}}
+\index{iterator@{iterator}!sparse\_array$<$ Component $>$@{sparse\_array$<$ Component $>$}}
+\doxysubsubsection{\texorpdfstring{iterator}{iterator}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename Component $>$ \\
+using \mbox{\hyperlink{classsparse__array}{sparse\+\_\+array}}$<$ Component $>$\+::\mbox{\hyperlink{classsparse__array_a1293c5b64d77bb97ed87e57c6276925e}{iterator}} =  typename container\+\_\+t\+::iterator}
+
+The type of the iterator of the array \mbox{\Hypertarget{classsparse__array_a639d023286962a7b28f77fc4741e3f89}\label{classsparse__array_a639d023286962a7b28f77fc4741e3f89}} 
+\index{sparse\_array$<$ Component $>$@{sparse\_array$<$ Component $>$}!reference\_type@{reference\_type}}
+\index{reference\_type@{reference\_type}!sparse\_array$<$ Component $>$@{sparse\_array$<$ Component $>$}}
+\doxysubsubsection{\texorpdfstring{reference\_type}{reference\_type}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename Component $>$ \\
+using \mbox{\hyperlink{classsparse__array}{sparse\+\_\+array}}$<$ Component $>$\+::\mbox{\hyperlink{classsparse__array_a639d023286962a7b28f77fc4741e3f89}{reference\+\_\+type}} =  \mbox{\hyperlink{classsparse__array_ab7403a6f935fa66034cce5bdcf49a9fc}{value\+\_\+type}}\&}
+
+The reference type of the sparse array \mbox{\Hypertarget{classsparse__array_a639d023286962a7b28f77fc4741e3f89}\label{classsparse__array_a639d023286962a7b28f77fc4741e3f89}} 
+\index{sparse\_array$<$ Component $>$@{sparse\_array$<$ Component $>$}!reference\_type@{reference\_type}}
+\index{reference\_type@{reference\_type}!sparse\_array$<$ Component $>$@{sparse\_array$<$ Component $>$}}
+\doxysubsubsection{\texorpdfstring{reference\_type}{reference\_type}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename Component $>$ \\
+using \mbox{\hyperlink{classsparse__array}{sparse\+\_\+array}}$<$ Component $>$\+::\mbox{\hyperlink{classsparse__array_a639d023286962a7b28f77fc4741e3f89}{reference\+\_\+type}} =  \mbox{\hyperlink{classsparse__array_ab7403a6f935fa66034cce5bdcf49a9fc}{value\+\_\+type}}\&}
+
+The type of the reference to the elements of the array \mbox{\Hypertarget{classsparse__array_af1468a11a30a58090580d1fb399e3cc0}\label{classsparse__array_af1468a11a30a58090580d1fb399e3cc0}} 
+\index{sparse\_array$<$ Component $>$@{sparse\_array$<$ Component $>$}!size\_type@{size\_type}}
+\index{size\_type@{size\_type}!sparse\_array$<$ Component $>$@{sparse\_array$<$ Component $>$}}
+\doxysubsubsection{\texorpdfstring{size\_type}{size\_type}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename Component $>$ \\
+using \mbox{\hyperlink{classsparse__array}{sparse\+\_\+array}}$<$ Component $>$\+::\mbox{\hyperlink{classsparse__array_af1468a11a30a58090580d1fb399e3cc0}{size\+\_\+type}} =  typename container\+\_\+t\+::size\+\_\+type}
+
+The size type of the sparse array \mbox{\Hypertarget{classsparse__array_af1468a11a30a58090580d1fb399e3cc0}\label{classsparse__array_af1468a11a30a58090580d1fb399e3cc0}} 
+\index{sparse\_array$<$ Component $>$@{sparse\_array$<$ Component $>$}!size\_type@{size\_type}}
+\index{size\_type@{size\_type}!sparse\_array$<$ Component $>$@{sparse\_array$<$ Component $>$}}
+\doxysubsubsection{\texorpdfstring{size\_type}{size\_type}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename Component $>$ \\
+using \mbox{\hyperlink{classsparse__array}{sparse\+\_\+array}}$<$ Component $>$\+::\mbox{\hyperlink{classsparse__array_af1468a11a30a58090580d1fb399e3cc0}{size\+\_\+type}} =  typename container\+\_\+t\+::size\+\_\+type}
+
+The type of the size of the array \mbox{\Hypertarget{classsparse__array_ab7403a6f935fa66034cce5bdcf49a9fc}\label{classsparse__array_ab7403a6f935fa66034cce5bdcf49a9fc}} 
+\index{sparse\_array$<$ Component $>$@{sparse\_array$<$ Component $>$}!value\_type@{value\_type}}
+\index{value\_type@{value\_type}!sparse\_array$<$ Component $>$@{sparse\_array$<$ Component $>$}}
+\doxysubsubsection{\texorpdfstring{value\_type}{value\_type}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename Component $>$ \\
+using \mbox{\hyperlink{classsparse__array}{sparse\+\_\+array}}$<$ Component $>$\+::\mbox{\hyperlink{classsparse__array_ab7403a6f935fa66034cce5bdcf49a9fc}{value\+\_\+type}} =  std\+::optional$<$Component$>$}
+
+The value type of the sparse array \mbox{\Hypertarget{classsparse__array_ab7403a6f935fa66034cce5bdcf49a9fc}\label{classsparse__array_ab7403a6f935fa66034cce5bdcf49a9fc}} 
+\index{sparse\_array$<$ Component $>$@{sparse\_array$<$ Component $>$}!value\_type@{value\_type}}
+\index{value\_type@{value\_type}!sparse\_array$<$ Component $>$@{sparse\_array$<$ Component $>$}}
+\doxysubsubsection{\texorpdfstring{value\_type}{value\_type}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename Component $>$ \\
+using \mbox{\hyperlink{classsparse__array}{sparse\+\_\+array}}$<$ Component $>$\+::\mbox{\hyperlink{classsparse__array_ab7403a6f935fa66034cce5bdcf49a9fc}{value\+\_\+type}} =  std\+::optional$<$Component$>$}
+
+The type of the elements of the array 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classsparse__array_a9437af3619227d4ab973cad2f6bfa818}\label{classsparse__array_a9437af3619227d4ab973cad2f6bfa818}} 
+\index{sparse\_array$<$ Component $>$@{sparse\_array$<$ Component $>$}!sparse\_array@{sparse\_array}}
+\index{sparse\_array@{sparse\_array}!sparse\_array$<$ Component $>$@{sparse\_array$<$ Component $>$}}
+\doxysubsubsection{\texorpdfstring{sparse\_array()}{sparse\_array()}\hspace{0.1cm}{\footnotesize\ttfamily [1/6]}}
+{\footnotesize\ttfamily template$<$typename Component $>$ \\
+\mbox{\hyperlink{classsparse__array}{sparse\+\_\+array}}$<$ Component $>$\+::\mbox{\hyperlink{classsparse__array}{sparse\+\_\+array}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+Default constructor, you can add more constructors \mbox{\Hypertarget{classsparse__array_a99d9756419717256dab5ce1aea62d8da}\label{classsparse__array_a99d9756419717256dab5ce1aea62d8da}} 
+\index{sparse\_array$<$ Component $>$@{sparse\_array$<$ Component $>$}!sparse\_array@{sparse\_array}}
+\index{sparse\_array@{sparse\_array}!sparse\_array$<$ Component $>$@{sparse\_array$<$ Component $>$}}
+\doxysubsubsection{\texorpdfstring{sparse\_array()}{sparse\_array()}\hspace{0.1cm}{\footnotesize\ttfamily [2/6]}}
+{\footnotesize\ttfamily template$<$typename Component $>$ \\
+\mbox{\hyperlink{classsparse__array}{sparse\+\_\+array}}$<$ Component $>$\+::\mbox{\hyperlink{classsparse__array}{sparse\+\_\+array}} (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classsparse__array}{sparse\+\_\+array}}$<$ Component $>$ const \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+Copy constructor \mbox{\Hypertarget{classsparse__array_ad93b07fae9a6a1e0029768fd8aa22703}\label{classsparse__array_ad93b07fae9a6a1e0029768fd8aa22703}} 
+\index{sparse\_array$<$ Component $>$@{sparse\_array$<$ Component $>$}!sparse\_array@{sparse\_array}}
+\index{sparse\_array@{sparse\_array}!sparse\_array$<$ Component $>$@{sparse\_array$<$ Component $>$}}
+\doxysubsubsection{\texorpdfstring{sparse\_array()}{sparse\_array()}\hspace{0.1cm}{\footnotesize\ttfamily [3/6]}}
+{\footnotesize\ttfamily template$<$typename Component $>$ \\
+\mbox{\hyperlink{classsparse__array}{sparse\+\_\+array}}$<$ Component $>$\+::\mbox{\hyperlink{classsparse__array}{sparse\+\_\+array}} (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classsparse__array}{sparse\+\_\+array}}$<$ Component $>$ \&\&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}, {\ttfamily [noexcept]}}
+
+Move constructor \mbox{\Hypertarget{classsparse__array_a462f64cc46c81b54e7c7d1181f7b889f}\label{classsparse__array_a462f64cc46c81b54e7c7d1181f7b889f}} 
+\index{sparse\_array$<$ Component $>$@{sparse\_array$<$ Component $>$}!````~sparse\_array@{$\sim$sparse\_array}}
+\index{````~sparse\_array@{$\sim$sparse\_array}!sparse\_array$<$ Component $>$@{sparse\_array$<$ Component $>$}}
+\doxysubsubsection{\texorpdfstring{$\sim$sparse\_array()}{~sparse\_array()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename Component $>$ \\
+\mbox{\hyperlink{classsparse__array}{sparse\+\_\+array}}$<$ Component $>$\+::$\sim$\mbox{\hyperlink{classsparse__array}{sparse\+\_\+array}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+Default destructor \mbox{\Hypertarget{classsparse__array_a9437af3619227d4ab973cad2f6bfa818}\label{classsparse__array_a9437af3619227d4ab973cad2f6bfa818}} 
+\index{sparse\_array$<$ Component $>$@{sparse\_array$<$ Component $>$}!sparse\_array@{sparse\_array}}
+\index{sparse\_array@{sparse\_array}!sparse\_array$<$ Component $>$@{sparse\_array$<$ Component $>$}}
+\doxysubsubsection{\texorpdfstring{sparse\_array()}{sparse\_array()}\hspace{0.1cm}{\footnotesize\ttfamily [4/6]}}
+{\footnotesize\ttfamily template$<$typename Component $>$ \\
+\mbox{\hyperlink{classsparse__array}{sparse\+\_\+array}}$<$ Component $>$\+::\mbox{\hyperlink{classsparse__array}{sparse\+\_\+array}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+Default constructor \mbox{\Hypertarget{classsparse__array_a99d9756419717256dab5ce1aea62d8da}\label{classsparse__array_a99d9756419717256dab5ce1aea62d8da}} 
+\index{sparse\_array$<$ Component $>$@{sparse\_array$<$ Component $>$}!sparse\_array@{sparse\_array}}
+\index{sparse\_array@{sparse\_array}!sparse\_array$<$ Component $>$@{sparse\_array$<$ Component $>$}}
+\doxysubsubsection{\texorpdfstring{sparse\_array()}{sparse\_array()}\hspace{0.1cm}{\footnotesize\ttfamily [5/6]}}
+{\footnotesize\ttfamily template$<$typename Component $>$ \\
+\mbox{\hyperlink{classsparse__array}{sparse\+\_\+array}}$<$ Component $>$\+::\mbox{\hyperlink{classsparse__array}{sparse\+\_\+array}} (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classsparse__array}{sparse\+\_\+array}}$<$ Component $>$ const \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+Copy constructor \mbox{\Hypertarget{classsparse__array_ad93b07fae9a6a1e0029768fd8aa22703}\label{classsparse__array_ad93b07fae9a6a1e0029768fd8aa22703}} 
+\index{sparse\_array$<$ Component $>$@{sparse\_array$<$ Component $>$}!sparse\_array@{sparse\_array}}
+\index{sparse\_array@{sparse\_array}!sparse\_array$<$ Component $>$@{sparse\_array$<$ Component $>$}}
+\doxysubsubsection{\texorpdfstring{sparse\_array()}{sparse\_array()}\hspace{0.1cm}{\footnotesize\ttfamily [6/6]}}
+{\footnotesize\ttfamily template$<$typename Component $>$ \\
+\mbox{\hyperlink{classsparse__array}{sparse\+\_\+array}}$<$ Component $>$\+::\mbox{\hyperlink{classsparse__array}{sparse\+\_\+array}} (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classsparse__array}{sparse\+\_\+array}}$<$ Component $>$ \&\&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}, {\ttfamily [noexcept]}}
+
+Move constructor \mbox{\Hypertarget{classsparse__array_a462f64cc46c81b54e7c7d1181f7b889f}\label{classsparse__array_a462f64cc46c81b54e7c7d1181f7b889f}} 
+\index{sparse\_array$<$ Component $>$@{sparse\_array$<$ Component $>$}!````~sparse\_array@{$\sim$sparse\_array}}
+\index{````~sparse\_array@{$\sim$sparse\_array}!sparse\_array$<$ Component $>$@{sparse\_array$<$ Component $>$}}
+\doxysubsubsection{\texorpdfstring{$\sim$sparse\_array()}{~sparse\_array()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename Component $>$ \\
+\mbox{\hyperlink{classsparse__array}{sparse\+\_\+array}}$<$ Component $>$\+::$\sim$\mbox{\hyperlink{classsparse__array}{sparse\+\_\+array}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+Default Destructor 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classsparse__array_a59e757c8a15ce4e9100340df6338b3db}\label{classsparse__array_a59e757c8a15ce4e9100340df6338b3db}} 
+\index{sparse\_array$<$ Component $>$@{sparse\_array$<$ Component $>$}!at@{at}}
+\index{at@{at}!sparse\_array$<$ Component $>$@{sparse\_array$<$ Component $>$}}
+\doxysubsubsection{\texorpdfstring{at()}{at()}}
+{\footnotesize\ttfamily template$<$typename Component $>$ \\
+Component \& \mbox{\hyperlink{classsparse__array}{sparse\+\_\+array}}$<$ Component $>$\+::at (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{idx }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Access the element at the given index. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em idx} & The index of the element to access \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A reference to the element at the given index 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classsparse__array_a1cdf824b5897fb3ffc857843b37453b2}\label{classsparse__array_a1cdf824b5897fb3ffc857843b37453b2}} 
+\index{sparse\_array$<$ Component $>$@{sparse\_array$<$ Component $>$}!begin@{begin}}
+\index{begin@{begin}!sparse\_array$<$ Component $>$@{sparse\_array$<$ Component $>$}}
+\doxysubsubsection{\texorpdfstring{begin()}{begin()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily template$<$typename Component $>$ \\
+\mbox{\hyperlink{classsparse__array_a1293c5b64d77bb97ed87e57c6276925e}{iterator}} \mbox{\hyperlink{classsparse__array}{sparse\+\_\+array}}$<$ Component $>$\+::begin (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get an iterator to the beginning of the sparse array. 
+
+\begin{DoxyReturn}{Returns}
+An iterator to the beginning of the sparse array 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classsparse__array_a1cdf824b5897fb3ffc857843b37453b2}\label{classsparse__array_a1cdf824b5897fb3ffc857843b37453b2}} 
+\index{sparse\_array$<$ Component $>$@{sparse\_array$<$ Component $>$}!begin@{begin}}
+\index{begin@{begin}!sparse\_array$<$ Component $>$@{sparse\_array$<$ Component $>$}}
+\doxysubsubsection{\texorpdfstring{begin()}{begin()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily template$<$typename Component $>$ \\
+\mbox{\hyperlink{classsparse__array_a1293c5b64d77bb97ed87e57c6276925e}{iterator}} \mbox{\hyperlink{classsparse__array}{sparse\+\_\+array}}$<$ Component $>$\+::begin (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Iterator to the beginning of the array \mbox{\Hypertarget{classsparse__array_a25c3a93f84f860ee55bb25f8da67e358}\label{classsparse__array_a25c3a93f84f860ee55bb25f8da67e358}} 
+\index{sparse\_array$<$ Component $>$@{sparse\_array$<$ Component $>$}!begin@{begin}}
+\index{begin@{begin}!sparse\_array$<$ Component $>$@{sparse\_array$<$ Component $>$}}
+\doxysubsubsection{\texorpdfstring{begin()}{begin()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily template$<$typename Component $>$ \\
+\mbox{\hyperlink{classsparse__array_a9beecc69673481f79844336194dfc1a2}{const\+\_\+iterator}} \mbox{\hyperlink{classsparse__array}{sparse\+\_\+array}}$<$ Component $>$\+::begin (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get a const iterator to the beginning of the sparse array. 
+
+\begin{DoxyReturn}{Returns}
+A const iterator to the beginning of the sparse array 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classsparse__array_a25c3a93f84f860ee55bb25f8da67e358}\label{classsparse__array_a25c3a93f84f860ee55bb25f8da67e358}} 
+\index{sparse\_array$<$ Component $>$@{sparse\_array$<$ Component $>$}!begin@{begin}}
+\index{begin@{begin}!sparse\_array$<$ Component $>$@{sparse\_array$<$ Component $>$}}
+\doxysubsubsection{\texorpdfstring{begin()}{begin()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily template$<$typename Component $>$ \\
+\mbox{\hyperlink{classsparse__array_a9beecc69673481f79844336194dfc1a2}{const\+\_\+iterator}} \mbox{\hyperlink{classsparse__array}{sparse\+\_\+array}}$<$ Component $>$\+::begin (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+const Iterator to the beginning of the array \mbox{\Hypertarget{classsparse__array_a8f6e23b67ea783baf53129f8907e297a}\label{classsparse__array_a8f6e23b67ea783baf53129f8907e297a}} 
+\index{sparse\_array$<$ Component $>$@{sparse\_array$<$ Component $>$}!cbegin@{cbegin}}
+\index{cbegin@{cbegin}!sparse\_array$<$ Component $>$@{sparse\_array$<$ Component $>$}}
+\doxysubsubsection{\texorpdfstring{cbegin()}{cbegin()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename Component $>$ \\
+\mbox{\hyperlink{classsparse__array_a9beecc69673481f79844336194dfc1a2}{const\+\_\+iterator}} \mbox{\hyperlink{classsparse__array}{sparse\+\_\+array}}$<$ Component $>$\+::cbegin (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get a const iterator to the beginning of the sparse array. 
+
+\begin{DoxyReturn}{Returns}
+A const iterator to the beginning of the sparse array 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classsparse__array_a8f6e23b67ea783baf53129f8907e297a}\label{classsparse__array_a8f6e23b67ea783baf53129f8907e297a}} 
+\index{sparse\_array$<$ Component $>$@{sparse\_array$<$ Component $>$}!cbegin@{cbegin}}
+\index{cbegin@{cbegin}!sparse\_array$<$ Component $>$@{sparse\_array$<$ Component $>$}}
+\doxysubsubsection{\texorpdfstring{cbegin()}{cbegin()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename Component $>$ \\
+\mbox{\hyperlink{classsparse__array_a9beecc69673481f79844336194dfc1a2}{const\+\_\+iterator}} \mbox{\hyperlink{classsparse__array}{sparse\+\_\+array}}$<$ Component $>$\+::cbegin (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+const Iterator to the cbeginning of the array \mbox{\Hypertarget{classsparse__array_adb95eba3fb7e88207a4374c04950d167}\label{classsparse__array_adb95eba3fb7e88207a4374c04950d167}} 
+\index{sparse\_array$<$ Component $>$@{sparse\_array$<$ Component $>$}!cend@{cend}}
+\index{cend@{cend}!sparse\_array$<$ Component $>$@{sparse\_array$<$ Component $>$}}
+\doxysubsubsection{\texorpdfstring{cend()}{cend()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename Component $>$ \\
+\mbox{\hyperlink{classsparse__array_a9beecc69673481f79844336194dfc1a2}{const\+\_\+iterator}} \mbox{\hyperlink{classsparse__array}{sparse\+\_\+array}}$<$ Component $>$\+::cend (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get a const iterator to the end of the sparse array. 
+
+\begin{DoxyReturn}{Returns}
+A const iterator to the end of the sparse array 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classsparse__array_adb95eba3fb7e88207a4374c04950d167}\label{classsparse__array_adb95eba3fb7e88207a4374c04950d167}} 
+\index{sparse\_array$<$ Component $>$@{sparse\_array$<$ Component $>$}!cend@{cend}}
+\index{cend@{cend}!sparse\_array$<$ Component $>$@{sparse\_array$<$ Component $>$}}
+\doxysubsubsection{\texorpdfstring{cend()}{cend()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename Component $>$ \\
+\mbox{\hyperlink{classsparse__array_a9beecc69673481f79844336194dfc1a2}{const\+\_\+iterator}} \mbox{\hyperlink{classsparse__array}{sparse\+\_\+array}}$<$ Component $>$\+::cend (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+const Iterator to the cend of the array \mbox{\Hypertarget{classsparse__array_af3829246022b40daaa77fd9332608ae4}\label{classsparse__array_af3829246022b40daaa77fd9332608ae4}} 
+\index{sparse\_array$<$ Component $>$@{sparse\_array$<$ Component $>$}!emplace\_at@{emplace\_at}}
+\index{emplace\_at@{emplace\_at}!sparse\_array$<$ Component $>$@{sparse\_array$<$ Component $>$}}
+\doxysubsubsection{\texorpdfstring{emplace\_at()}{emplace\_at()}}
+{\footnotesize\ttfamily template$<$typename Component $>$ \\
+template$<$class... Params$>$ \\
+template$<$ class... Params $>$ \mbox{\hyperlink{classsparse__array_a639d023286962a7b28f77fc4741e3f89}{reference\+\_\+type}} \mbox{\hyperlink{classsparse__array}{sparse\+\_\+array}}$<$ Component $>$\+::emplace\+\_\+at (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classsparse__array_af1468a11a30a58090580d1fb399e3cc0}{size\+\_\+type}}}]{pos,  }\item[{Params \&\&...}]{args }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Emplace a component at the given position. 
+
+Emplace a component at a given position.
+
+
+\begin{DoxyParams}{Parameters}
+{\em pos} & The position to emplace the component at \\
+\hline
+{\em args} & The arguments to forward to the component constructor \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A reference to the emplaced component
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em pos} & The position where to emplace the component \\
+\hline
+{\em args} & The arguments to forward to the constructor of the component \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The reference to the emplaced component 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classsparse__array_af6749bdfbdc5200a77549f52594107eb}\label{classsparse__array_af6749bdfbdc5200a77549f52594107eb}} 
+\index{sparse\_array$<$ Component $>$@{sparse\_array$<$ Component $>$}!end@{end}}
+\index{end@{end}!sparse\_array$<$ Component $>$@{sparse\_array$<$ Component $>$}}
+\doxysubsubsection{\texorpdfstring{end()}{end()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily template$<$typename Component $>$ \\
+\mbox{\hyperlink{classsparse__array_a1293c5b64d77bb97ed87e57c6276925e}{iterator}} \mbox{\hyperlink{classsparse__array}{sparse\+\_\+array}}$<$ Component $>$\+::end (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get an iterator to the end of the sparse array. 
+
+\begin{DoxyReturn}{Returns}
+An iterator to the end of the sparse array 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classsparse__array_af6749bdfbdc5200a77549f52594107eb}\label{classsparse__array_af6749bdfbdc5200a77549f52594107eb}} 
+\index{sparse\_array$<$ Component $>$@{sparse\_array$<$ Component $>$}!end@{end}}
+\index{end@{end}!sparse\_array$<$ Component $>$@{sparse\_array$<$ Component $>$}}
+\doxysubsubsection{\texorpdfstring{end()}{end()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily template$<$typename Component $>$ \\
+\mbox{\hyperlink{classsparse__array_a1293c5b64d77bb97ed87e57c6276925e}{iterator}} \mbox{\hyperlink{classsparse__array}{sparse\+\_\+array}}$<$ Component $>$\+::end (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Iterator to the end of the array \mbox{\Hypertarget{classsparse__array_a094425cbf56a592e130b67ecda68cd3d}\label{classsparse__array_a094425cbf56a592e130b67ecda68cd3d}} 
+\index{sparse\_array$<$ Component $>$@{sparse\_array$<$ Component $>$}!end@{end}}
+\index{end@{end}!sparse\_array$<$ Component $>$@{sparse\_array$<$ Component $>$}}
+\doxysubsubsection{\texorpdfstring{end()}{end()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily template$<$typename Component $>$ \\
+\mbox{\hyperlink{classsparse__array_a9beecc69673481f79844336194dfc1a2}{const\+\_\+iterator}} \mbox{\hyperlink{classsparse__array}{sparse\+\_\+array}}$<$ Component $>$\+::end (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get a const iterator to the end of the sparse array. 
+
+\begin{DoxyReturn}{Returns}
+A const iterator to the end of the sparse array 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classsparse__array_a094425cbf56a592e130b67ecda68cd3d}\label{classsparse__array_a094425cbf56a592e130b67ecda68cd3d}} 
+\index{sparse\_array$<$ Component $>$@{sparse\_array$<$ Component $>$}!end@{end}}
+\index{end@{end}!sparse\_array$<$ Component $>$@{sparse\_array$<$ Component $>$}}
+\doxysubsubsection{\texorpdfstring{end()}{end()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily template$<$typename Component $>$ \\
+\mbox{\hyperlink{classsparse__array_a9beecc69673481f79844336194dfc1a2}{const\+\_\+iterator}} \mbox{\hyperlink{classsparse__array}{sparse\+\_\+array}}$<$ Component $>$\+::end (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+const Iterator to the end of the array \mbox{\Hypertarget{classsparse__array_ac0bea77704ce39c1a731dc69de8d9d2d}\label{classsparse__array_ac0bea77704ce39c1a731dc69de8d9d2d}} 
+\index{sparse\_array$<$ Component $>$@{sparse\_array$<$ Component $>$}!erase@{erase}}
+\index{erase@{erase}!sparse\_array$<$ Component $>$@{sparse\_array$<$ Component $>$}}
+\doxysubsubsection{\texorpdfstring{erase()}{erase()}}
+{\footnotesize\ttfamily template$<$typename Component $>$ \\
+void \mbox{\hyperlink{classsparse__array}{sparse\+\_\+array}}$<$ Component $>$\+::erase (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classsparse__array_af1468a11a30a58090580d1fb399e3cc0}{size\+\_\+type}}}]{pos }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Erase the component at the given position. 
+
+Erase the component at a given position.
+
+
+\begin{DoxyParams}{Parameters}
+{\em pos} & The position of the component to erase\\
+\hline
+{\em pos} & The position where to erase the component \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classsparse__array_a08a5ff63d010f1e1a135e4559eff5946}\label{classsparse__array_a08a5ff63d010f1e1a135e4559eff5946}} 
+\index{sparse\_array$<$ Component $>$@{sparse\_array$<$ Component $>$}!exists@{exists}}
+\index{exists@{exists}!sparse\_array$<$ Component $>$@{sparse\_array$<$ Component $>$}}
+\doxysubsubsection{\texorpdfstring{exists()}{exists()}}
+{\footnotesize\ttfamily template$<$typename Component $>$ \\
+bool \mbox{\hyperlink{classsparse__array}{sparse\+\_\+array}}$<$ Component $>$\+::exists (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{idx }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Check if the element at the given index exists. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em idx} & The index of the element to check \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the element exists, false otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classsparse__array_add04d031e1ccfadab8990129944f49f1}\label{classsparse__array_add04d031e1ccfadab8990129944f49f1}} 
+\index{sparse\_array$<$ Component $>$@{sparse\_array$<$ Component $>$}!get\_index@{get\_index}}
+\index{get\_index@{get\_index}!sparse\_array$<$ Component $>$@{sparse\_array$<$ Component $>$}}
+\doxysubsubsection{\texorpdfstring{get\_index()}{get\_index()}}
+{\footnotesize\ttfamily template$<$typename Component $>$ \\
+\mbox{\hyperlink{classsparse__array_af1468a11a30a58090580d1fb399e3cc0}{size\+\_\+type}} \mbox{\hyperlink{classsparse__array}{sparse\+\_\+array}}$<$ Component $>$\+::get\+\_\+index (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classsparse__array_ab7403a6f935fa66034cce5bdcf49a9fc}{value\+\_\+type}} const \&}]{needle }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the index of the given component. 
+
+Get the index of a given component.
+
+
+\begin{DoxyParams}{Parameters}
+{\em needle} & The component to get the index of \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The index of the given component
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em needle} & The const reference of the component to find \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The index of the component if found, std\+::nullopt otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classsparse__array_a2fee5dd6c65139740ba402ac5cf53344}\label{classsparse__array_a2fee5dd6c65139740ba402ac5cf53344}} 
+\index{sparse\_array$<$ Component $>$@{sparse\_array$<$ Component $>$}!insert\_at@{insert\_at}}
+\index{insert\_at@{insert\_at}!sparse\_array$<$ Component $>$@{sparse\_array$<$ Component $>$}}
+\doxysubsubsection{\texorpdfstring{insert\_at()}{insert\_at()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily template$<$typename Component $>$ \\
+\mbox{\hyperlink{classsparse__array_a639d023286962a7b28f77fc4741e3f89}{reference\+\_\+type}} \mbox{\hyperlink{classsparse__array}{sparse\+\_\+array}}$<$ Component $>$\+::insert\+\_\+at (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classsparse__array_af1468a11a30a58090580d1fb399e3cc0}{size\+\_\+type}}}]{pos,  }\item[{Component \&\&}]{component }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Insert a component at the given position. 
+
+Insert a component at a given position.
+
+
+\begin{DoxyParams}{Parameters}
+{\em pos} & The position to insert the component at \\
+\hline
+{\em component} & The component to insert \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A reference to the inserted component
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em pos} & The position where to insert the component \\
+\hline
+{\em component} & The rvalue reference of the component to insert \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The reference to the inserted component 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classsparse__array_a2fee5dd6c65139740ba402ac5cf53344}\label{classsparse__array_a2fee5dd6c65139740ba402ac5cf53344}} 
+\index{sparse\_array$<$ Component $>$@{sparse\_array$<$ Component $>$}!insert\_at@{insert\_at}}
+\index{insert\_at@{insert\_at}!sparse\_array$<$ Component $>$@{sparse\_array$<$ Component $>$}}
+\doxysubsubsection{\texorpdfstring{insert\_at()}{insert\_at()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily template$<$typename Component $>$ \\
+\mbox{\hyperlink{classsparse__array_a639d023286962a7b28f77fc4741e3f89}{reference\+\_\+type}} \mbox{\hyperlink{classsparse__array}{sparse\+\_\+array}}$<$ Component $>$\+::insert\+\_\+at (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classsparse__array_af1468a11a30a58090580d1fb399e3cc0}{size\+\_\+type}}}]{pos,  }\item[{Component \&\&}]{component }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Insert a component at a given position by moving it \mbox{\Hypertarget{classsparse__array_aac3a3e84c75d57f529dec4b57d2063c7}\label{classsparse__array_aac3a3e84c75d57f529dec4b57d2063c7}} 
+\index{sparse\_array$<$ Component $>$@{sparse\_array$<$ Component $>$}!insert\_at@{insert\_at}}
+\index{insert\_at@{insert\_at}!sparse\_array$<$ Component $>$@{sparse\_array$<$ Component $>$}}
+\doxysubsubsection{\texorpdfstring{insert\_at()}{insert\_at()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily template$<$typename Component $>$ \\
+\mbox{\hyperlink{classsparse__array_a639d023286962a7b28f77fc4741e3f89}{reference\+\_\+type}} \mbox{\hyperlink{classsparse__array}{sparse\+\_\+array}}$<$ Component $>$\+::insert\+\_\+at (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classsparse__array_af1468a11a30a58090580d1fb399e3cc0}{size\+\_\+type}}}]{pos,  }\item[{Component const \&}]{component }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Insert a component at the given position. 
+
+Insert a component at a given position.
+
+
+\begin{DoxyParams}{Parameters}
+{\em pos} & The position to insert the component at \\
+\hline
+{\em component} & The component to insert \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A reference to the inserted component
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em pos} & The position where to insert the component \\
+\hline
+{\em component} & The const reference of the component to insert \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The reference to the inserted component 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classsparse__array_a1d5c704241a925d96358e92456dfeb10}\label{classsparse__array_a1d5c704241a925d96358e92456dfeb10}} 
+\index{sparse\_array$<$ Component $>$@{sparse\_array$<$ Component $>$}!operator=@{operator=}}
+\index{operator=@{operator=}!sparse\_array$<$ Component $>$@{sparse\_array$<$ Component $>$}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily template$<$typename Component $>$ \\
+\mbox{\hyperlink{classsparse__array}{sparse\+\_\+array}}\& \mbox{\hyperlink{classsparse__array}{sparse\+\_\+array}}$<$ Component $>$\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classsparse__array}{sparse\+\_\+array}}$<$ Component $>$ \&\&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}, {\ttfamily [noexcept]}}
+
+Move assignment operator \mbox{\Hypertarget{classsparse__array_a1d5c704241a925d96358e92456dfeb10}\label{classsparse__array_a1d5c704241a925d96358e92456dfeb10}} 
+\index{sparse\_array$<$ Component $>$@{sparse\_array$<$ Component $>$}!operator=@{operator=}}
+\index{operator=@{operator=}!sparse\_array$<$ Component $>$@{sparse\_array$<$ Component $>$}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily template$<$typename Component $>$ \\
+\mbox{\hyperlink{classsparse__array}{sparse\+\_\+array}}\& \mbox{\hyperlink{classsparse__array}{sparse\+\_\+array}}$<$ Component $>$\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classsparse__array}{sparse\+\_\+array}}$<$ Component $>$ \&\&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}, {\ttfamily [noexcept]}}
+
+Move assignment operator \mbox{\Hypertarget{classsparse__array_a5ff49737017b8dd6c81f0fe144aa2a1e}\label{classsparse__array_a5ff49737017b8dd6c81f0fe144aa2a1e}} 
+\index{sparse\_array$<$ Component $>$@{sparse\_array$<$ Component $>$}!operator=@{operator=}}
+\index{operator=@{operator=}!sparse\_array$<$ Component $>$@{sparse\_array$<$ Component $>$}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily template$<$typename Component $>$ \\
+\mbox{\hyperlink{classsparse__array}{sparse\+\_\+array}}\& \mbox{\hyperlink{classsparse__array}{sparse\+\_\+array}}$<$ Component $>$\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classsparse__array}{sparse\+\_\+array}}$<$ Component $>$ const \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+Copy assignment operator \mbox{\Hypertarget{classsparse__array_a5ff49737017b8dd6c81f0fe144aa2a1e}\label{classsparse__array_a5ff49737017b8dd6c81f0fe144aa2a1e}} 
+\index{sparse\_array$<$ Component $>$@{sparse\_array$<$ Component $>$}!operator=@{operator=}}
+\index{operator=@{operator=}!sparse\_array$<$ Component $>$@{sparse\_array$<$ Component $>$}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily template$<$typename Component $>$ \\
+\mbox{\hyperlink{classsparse__array}{sparse\+\_\+array}}\& \mbox{\hyperlink{classsparse__array}{sparse\+\_\+array}}$<$ Component $>$\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classsparse__array}{sparse\+\_\+array}}$<$ Component $>$ const \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+Copy assignment operator \mbox{\Hypertarget{classsparse__array_a4aa1f2fae14ff1cecdc6e42ded260cad}\label{classsparse__array_a4aa1f2fae14ff1cecdc6e42ded260cad}} 
+\index{sparse\_array$<$ Component $>$@{sparse\_array$<$ Component $>$}!operator\mbox{[}\mbox{]}@{operator[]}}
+\index{operator\mbox{[}\mbox{]}@{operator[]}!sparse\_array$<$ Component $>$@{sparse\_array$<$ Component $>$}}
+\doxysubsubsection{\texorpdfstring{operator[]()}{operator[]()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily template$<$typename Component $>$ \\
+\mbox{\hyperlink{classsparse__array_a639d023286962a7b28f77fc4741e3f89}{reference\+\_\+type}} \mbox{\hyperlink{classsparse__array}{sparse\+\_\+array}}$<$ Component $>$\+::operator\mbox{[}$\,$\mbox{]} (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{idx }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Access the element at the given index. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em idx} & The index of the element to access \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A reference to the element at the given index 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classsparse__array_a4aa1f2fae14ff1cecdc6e42ded260cad}\label{classsparse__array_a4aa1f2fae14ff1cecdc6e42ded260cad}} 
+\index{sparse\_array$<$ Component $>$@{sparse\_array$<$ Component $>$}!operator\mbox{[}\mbox{]}@{operator[]}}
+\index{operator\mbox{[}\mbox{]}@{operator[]}!sparse\_array$<$ Component $>$@{sparse\_array$<$ Component $>$}}
+\doxysubsubsection{\texorpdfstring{operator[]()}{operator[]()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily template$<$typename Component $>$ \\
+\mbox{\hyperlink{classsparse__array_a639d023286962a7b28f77fc4741e3f89}{reference\+\_\+type}} \mbox{\hyperlink{classsparse__array}{sparse\+\_\+array}}$<$ Component $>$\+::operator\mbox{[}$\,$\mbox{]} (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{idx }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Operator \mbox{[}\mbox{]} \mbox{\Hypertarget{classsparse__array_a1d66e1a1e11a9bcef70425c3c09eb6b4}\label{classsparse__array_a1d66e1a1e11a9bcef70425c3c09eb6b4}} 
+\index{sparse\_array$<$ Component $>$@{sparse\_array$<$ Component $>$}!operator\mbox{[}\mbox{]}@{operator[]}}
+\index{operator\mbox{[}\mbox{]}@{operator[]}!sparse\_array$<$ Component $>$@{sparse\_array$<$ Component $>$}}
+\doxysubsubsection{\texorpdfstring{operator[]()}{operator[]()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily template$<$typename Component $>$ \\
+\mbox{\hyperlink{classsparse__array_ab45a3b0d907508f61baa7c185d6ed07f}{const\+\_\+reference\+\_\+type}} \mbox{\hyperlink{classsparse__array}{sparse\+\_\+array}}$<$ Component $>$\+::operator\mbox{[}$\,$\mbox{]} (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{idx }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Access the element at the given index. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em idx} & The index of the element to access \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A const reference to the element at the given index 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classsparse__array_a1d66e1a1e11a9bcef70425c3c09eb6b4}\label{classsparse__array_a1d66e1a1e11a9bcef70425c3c09eb6b4}} 
+\index{sparse\_array$<$ Component $>$@{sparse\_array$<$ Component $>$}!operator\mbox{[}\mbox{]}@{operator[]}}
+\index{operator\mbox{[}\mbox{]}@{operator[]}!sparse\_array$<$ Component $>$@{sparse\_array$<$ Component $>$}}
+\doxysubsubsection{\texorpdfstring{operator[]()}{operator[]()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily template$<$typename Component $>$ \\
+\mbox{\hyperlink{classsparse__array_ab45a3b0d907508f61baa7c185d6ed07f}{const\+\_\+reference\+\_\+type}} \mbox{\hyperlink{classsparse__array}{sparse\+\_\+array}}$<$ Component $>$\+::operator\mbox{[}$\,$\mbox{]} (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{idx }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+const Operator \mbox{[}\mbox{]} \mbox{\Hypertarget{classsparse__array_a6679a2315be266da4c01ad97f00e51fd}\label{classsparse__array_a6679a2315be266da4c01ad97f00e51fd}} 
+\index{sparse\_array$<$ Component $>$@{sparse\_array$<$ Component $>$}!size@{size}}
+\index{size@{size}!sparse\_array$<$ Component $>$@{sparse\_array$<$ Component $>$}}
+\doxysubsubsection{\texorpdfstring{size()}{size()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename Component $>$ \\
+\mbox{\hyperlink{classsparse__array_af1468a11a30a58090580d1fb399e3cc0}{size\+\_\+type}} \mbox{\hyperlink{classsparse__array}{sparse\+\_\+array}}$<$ Component $>$\+::size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the size of the sparse array. 
+
+\begin{DoxyReturn}{Returns}
+The size of the sparse array 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classsparse__array_a6679a2315be266da4c01ad97f00e51fd}\label{classsparse__array_a6679a2315be266da4c01ad97f00e51fd}} 
+\index{sparse\_array$<$ Component $>$@{sparse\_array$<$ Component $>$}!size@{size}}
+\index{size@{size}!sparse\_array$<$ Component $>$@{sparse\_array$<$ Component $>$}}
+\doxysubsubsection{\texorpdfstring{size()}{size()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename Component $>$ \\
+\mbox{\hyperlink{classsparse__array_af1468a11a30a58090580d1fb399e3cc0}{size\+\_\+type}} \mbox{\hyperlink{classsparse__array}{sparse\+\_\+array}}$<$ Component $>$\+::size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Size of the array 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Client/\+ECS/Sparse.\+hpp\end{DoxyCompactItemize}

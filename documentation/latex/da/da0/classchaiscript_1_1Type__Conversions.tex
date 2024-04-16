@@ -1,0 +1,84 @@
+\hypertarget{classchaiscript_1_1Type__Conversions}{}\doxysection{chaiscript\+::Type\+\_\+\+Conversions Class Reference}
+\label{classchaiscript_1_1Type__Conversions}\index{chaiscript::Type\_Conversions@{chaiscript::Type\_Conversions}}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structchaiscript_1_1Type__Conversions_1_1Conversion__Saves}{Conversion\+\_\+\+Saves}}
+\item 
+struct \mbox{\hyperlink{structchaiscript_1_1Type__Conversions_1_1Less__Than}{Less\+\_\+\+Than}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classchaiscript_1_1Type__Conversions_aac0230e9c121850a16e5ffc3472d547a}\label{classchaiscript_1_1Type__Conversions_aac0230e9c121850a16e5ffc3472d547a}} 
+{\bfseries Type\+\_\+\+Conversions} (const \mbox{\hyperlink{classchaiscript_1_1Type__Conversions}{Type\+\_\+\+Conversions}} \&t\+\_\+other)=delete
+\item 
+\mbox{\Hypertarget{classchaiscript_1_1Type__Conversions_a35317d75dc469ff868d36fd1a61d89f1}\label{classchaiscript_1_1Type__Conversions_a35317d75dc469ff868d36fd1a61d89f1}} 
+{\bfseries Type\+\_\+\+Conversions} (\mbox{\hyperlink{classchaiscript_1_1Type__Conversions}{Type\+\_\+\+Conversions}} \&\&)=default
+\item 
+\mbox{\Hypertarget{classchaiscript_1_1Type__Conversions_af1474374acb2206f316a0034868af077}\label{classchaiscript_1_1Type__Conversions_af1474374acb2206f316a0034868af077}} 
+\mbox{\hyperlink{classchaiscript_1_1Type__Conversions}{Type\+\_\+\+Conversions}} \& {\bfseries operator=} (const \mbox{\hyperlink{classchaiscript_1_1Type__Conversions}{Type\+\_\+\+Conversions}} \&)=delete
+\item 
+\mbox{\Hypertarget{classchaiscript_1_1Type__Conversions_a044c67fc0428ee55e8b6211b10bac118}\label{classchaiscript_1_1Type__Conversions_a044c67fc0428ee55e8b6211b10bac118}} 
+\mbox{\hyperlink{classchaiscript_1_1Type__Conversions}{Type\+\_\+\+Conversions}} \& {\bfseries operator=} (\mbox{\hyperlink{classchaiscript_1_1Type__Conversions}{Type\+\_\+\+Conversions}} \&\&)=default
+\item 
+\mbox{\Hypertarget{classchaiscript_1_1Type__Conversions_a16af44f58a9c61f826dcc5022a1fe7db}\label{classchaiscript_1_1Type__Conversions_a16af44f58a9c61f826dcc5022a1fe7db}} 
+const std\+::set$<$ const std\+::type\+\_\+info $\ast$, \mbox{\hyperlink{structchaiscript_1_1Type__Conversions_1_1Less__Than}{Less\+\_\+\+Than}} $>$ \& {\bfseries thread\+\_\+cache} () const
+\item 
+void \mbox{\hyperlink{classchaiscript_1_1Type__Conversions_a20a1cf396152c06b23af93ff01063d1e}{add\+\_\+conversion}} (const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classchaiscript_1_1detail_1_1Type__Conversion__Base}{detail\+::\+Type\+\_\+\+Conversion\+\_\+\+Base}} $>$ \&conversion)
+\item 
+\mbox{\Hypertarget{classchaiscript_1_1Type__Conversions_a5cf2b801577bcdc183980a2a42220ac6}\label{classchaiscript_1_1Type__Conversions_a5cf2b801577bcdc183980a2a42220ac6}} 
+{\footnotesize template$<$typename T $>$ }\\bool {\bfseries convertable\+\_\+type} () const
+\item 
+\mbox{\Hypertarget{classchaiscript_1_1Type__Conversions_a1e528d9cc62f7cc584bc05d473fd2d8e}\label{classchaiscript_1_1Type__Conversions_a1e528d9cc62f7cc584bc05d473fd2d8e}} 
+{\footnotesize template$<$typename To , typename From $>$ }\\bool {\bfseries converts} () const
+\item 
+\mbox{\Hypertarget{classchaiscript_1_1Type__Conversions_a0887607b3a754f0a819f20021292dcc0}\label{classchaiscript_1_1Type__Conversions_a0887607b3a754f0a819f20021292dcc0}} 
+bool {\bfseries converts} (const \mbox{\hyperlink{classchaiscript_1_1Type__Info}{Type\+\_\+\+Info}} \&to, const \mbox{\hyperlink{classchaiscript_1_1Type__Info}{Type\+\_\+\+Info}} \&from) const
+\item 
+\mbox{\Hypertarget{classchaiscript_1_1Type__Conversions_a453c18fe650eb8c73d3ae5c702100d66}\label{classchaiscript_1_1Type__Conversions_a453c18fe650eb8c73d3ae5c702100d66}} 
+{\footnotesize template$<$typename To $>$ }\\\mbox{\hyperlink{classchaiscript_1_1Boxed__Value}{Boxed\+\_\+\+Value}} {\bfseries boxed\+\_\+type\+\_\+conversion} (\mbox{\hyperlink{structchaiscript_1_1Type__Conversions_1_1Conversion__Saves}{Conversion\+\_\+\+Saves}} \&t\+\_\+saves, const \mbox{\hyperlink{classchaiscript_1_1Boxed__Value}{Boxed\+\_\+\+Value}} \&from) const
+\item 
+\mbox{\Hypertarget{classchaiscript_1_1Type__Conversions_ab7faa2f149a138558d6ed28dc82fe4e6}\label{classchaiscript_1_1Type__Conversions_ab7faa2f149a138558d6ed28dc82fe4e6}} 
+{\footnotesize template$<$typename From $>$ }\\\mbox{\hyperlink{classchaiscript_1_1Boxed__Value}{Boxed\+\_\+\+Value}} {\bfseries boxed\+\_\+type\+\_\+down\+\_\+conversion} (\mbox{\hyperlink{structchaiscript_1_1Type__Conversions_1_1Conversion__Saves}{Conversion\+\_\+\+Saves}} \&t\+\_\+saves, const \mbox{\hyperlink{classchaiscript_1_1Boxed__Value}{Boxed\+\_\+\+Value}} \&to) const
+\item 
+\mbox{\Hypertarget{classchaiscript_1_1Type__Conversions_ac2e2f86cf0daf25ee62374da39032dfb}\label{classchaiscript_1_1Type__Conversions_ac2e2f86cf0daf25ee62374da39032dfb}} 
+\mbox{\hyperlink{classchaiscript_1_1Boxed__Value}{Boxed\+\_\+\+Value}} {\bfseries boxed\+\_\+type\+\_\+conversion} (const \mbox{\hyperlink{classchaiscript_1_1Type__Info}{Type\+\_\+\+Info}} \&to, \mbox{\hyperlink{structchaiscript_1_1Type__Conversions_1_1Conversion__Saves}{Conversion\+\_\+\+Saves}} \&t\+\_\+saves, const \mbox{\hyperlink{classchaiscript_1_1Boxed__Value}{Boxed\+\_\+\+Value}} \&from) const
+\item 
+\mbox{\Hypertarget{classchaiscript_1_1Type__Conversions_a23d01e1698ae4d2f122133959575d4df}\label{classchaiscript_1_1Type__Conversions_a23d01e1698ae4d2f122133959575d4df}} 
+\mbox{\hyperlink{classchaiscript_1_1Boxed__Value}{Boxed\+\_\+\+Value}} {\bfseries boxed\+\_\+type\+\_\+down\+\_\+conversion} (const \mbox{\hyperlink{classchaiscript_1_1Type__Info}{Type\+\_\+\+Info}} \&from, \mbox{\hyperlink{structchaiscript_1_1Type__Conversions_1_1Conversion__Saves}{Conversion\+\_\+\+Saves}} \&t\+\_\+saves, const \mbox{\hyperlink{classchaiscript_1_1Boxed__Value}{Boxed\+\_\+\+Value}} \&to) const
+\item 
+\mbox{\Hypertarget{classchaiscript_1_1Type__Conversions_a1aeeeb185022108980c6b437a8f4261c}\label{classchaiscript_1_1Type__Conversions_a1aeeeb185022108980c6b437a8f4261c}} 
+std\+::vector$<$ \mbox{\hyperlink{classchaiscript_1_1Boxed__Value}{Boxed\+\_\+\+Value}} $>$ {\bfseries take\+\_\+saves} (\mbox{\hyperlink{structchaiscript_1_1Type__Conversions_1_1Conversion__Saves}{Conversion\+\_\+\+Saves}} \&t\+\_\+saves)
+\item 
+\mbox{\Hypertarget{classchaiscript_1_1Type__Conversions_ae00ca14e5547cce2797f74331c96d1ff}\label{classchaiscript_1_1Type__Conversions_ae00ca14e5547cce2797f74331c96d1ff}} 
+bool {\bfseries has\+\_\+conversion} (const \mbox{\hyperlink{classchaiscript_1_1Type__Info}{Type\+\_\+\+Info}} \&to, const \mbox{\hyperlink{classchaiscript_1_1Type__Info}{Type\+\_\+\+Info}} \&from) const
+\item 
+\mbox{\Hypertarget{classchaiscript_1_1Type__Conversions_af445becd6db27e4ffcdce2f78fa55d5b}\label{classchaiscript_1_1Type__Conversions_af445becd6db27e4ffcdce2f78fa55d5b}} 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classchaiscript_1_1detail_1_1Type__Conversion__Base}{detail\+::\+Type\+\_\+\+Conversion\+\_\+\+Base}} $>$ {\bfseries get\+\_\+conversion} (const \mbox{\hyperlink{classchaiscript_1_1Type__Info}{Type\+\_\+\+Info}} \&to, const \mbox{\hyperlink{classchaiscript_1_1Type__Info}{Type\+\_\+\+Info}} \&from) const
+\item 
+\mbox{\Hypertarget{classchaiscript_1_1Type__Conversions_ae93fcfce556e22f8065fba61867371e6}\label{classchaiscript_1_1Type__Conversions_ae93fcfce556e22f8065fba61867371e6}} 
+\mbox{\hyperlink{structchaiscript_1_1Type__Conversions_1_1Conversion__Saves}{Conversion\+\_\+\+Saves}} \& {\bfseries conversion\+\_\+saves} () const
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classchaiscript_1_1Type__Conversions_ac6661caa897be26447b231eb9ff5e162}\label{classchaiscript_1_1Type__Conversions_ac6661caa897be26447b231eb9ff5e162}} 
+static void {\bfseries enable\+\_\+conversion\+\_\+saves} (\mbox{\hyperlink{structchaiscript_1_1Type__Conversions_1_1Conversion__Saves}{Conversion\+\_\+\+Saves}} \&t\+\_\+saves, bool t\+\_\+val)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classchaiscript_1_1Type__Conversions_a20a1cf396152c06b23af93ff01063d1e}\label{classchaiscript_1_1Type__Conversions_a20a1cf396152c06b23af93ff01063d1e}} 
+\index{chaiscript::Type\_Conversions@{chaiscript::Type\_Conversions}!add\_conversion@{add\_conversion}}
+\index{add\_conversion@{add\_conversion}!chaiscript::Type\_Conversions@{chaiscript::Type\_Conversions}}
+\doxysubsubsection{\texorpdfstring{add\_conversion()}{add\_conversion()}}
+{\footnotesize\ttfamily void chaiscript\+::\+Type\+\_\+\+Conversions\+::add\+\_\+conversion (\begin{DoxyParamCaption}\item[{const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classchaiscript_1_1detail_1_1Type__Conversion__Base}{detail\+::\+Type\+\_\+\+Conversion\+\_\+\+Base}} $>$ \&}]{conversion }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxyRefDesc}{Todo}
+\item[\mbox{\hyperlink{todo__todo000012}{Todo}}]error if a conversion already exists \end{DoxyRefDesc}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Chai\+Script-\/6.\+1.\+0/include/chaiscript/dispatchkit/type\+\_\+conversions.\+hpp\end{DoxyCompactItemize}

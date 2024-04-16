@@ -1,0 +1,209 @@
+\hypertarget{classClient}{}\doxysection{Client Class Reference}
+\label{classClient}\index{Client@{Client}}
+
+
+Class for the client. Used to connect to the lobby and send/receive messages.  
+
+
+
+
+{\ttfamily \#include $<$Client.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classClient_ac13ad1e98c47db57ce0823dc735261cd}{Client}} ()=default
+\item 
+\mbox{\hyperlink{classClient_aa2ba94adc728a555bf154c055edf0f1a}{$\sim$\+Client}} ()=default
+\item 
+void \mbox{\hyperlink{classClient_a426342236c0f0a31e75e01e170d12301}{send\+Create\+Lobby}} ()
+\begin{DoxyCompactList}\small\item\em Send a create lobby request. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classClient_a1b1728e35a141e6c2eb346c58c2f3460}{ask\+Create}} (const std\+::vector$<$ int $>$ \&)
+\begin{DoxyCompactList}\small\item\em Ask the user if he wants to create a lobby. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classClient_a5498639c26f7ee16547518b8e6dfb21e}{get\+Hub\+List}} ()
+\begin{DoxyCompactList}\small\item\em Get the list of the lobbies. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classClient_a06ad105562a695252a90e39d04162eb4}{check\+Message}} ()
+\begin{DoxyCompactList}\small\item\em Check if there is a message to read. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classClient_a495002b7287eb665b5e5d7123d7cc321}{start\+Client}} ()
+\begin{DoxyCompactList}\small\item\em Start the client. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classClient_ac8dbe9e1012e2721e65290d3967ec636}{connect}} ()
+\begin{DoxyCompactList}\small\item\em Connect to the server. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classClient_acbd98188d70df1a14bbd29312e4c6d88}{connect\+Lobby}} (int \mbox{\hyperlink{classClient_a33fcf8444e9ca2aec694c407ef1328e1}{port}})
+\begin{DoxyCompactList}\small\item\em Connect to the lobby. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classClient_a426342236c0f0a31e75e01e170d12301}\label{classClient_a426342236c0f0a31e75e01e170d12301}} 
+void {\bfseries send\+Create\+Lobby} ()
+\item 
+\mbox{\Hypertarget{classClient_a1b1728e35a141e6c2eb346c58c2f3460}\label{classClient_a1b1728e35a141e6c2eb346c58c2f3460}} 
+void {\bfseries ask\+Create} (const std\+::vector$<$ int $>$ \&)
+\item 
+\mbox{\Hypertarget{classClient_a5498639c26f7ee16547518b8e6dfb21e}\label{classClient_a5498639c26f7ee16547518b8e6dfb21e}} 
+void {\bfseries get\+Hub\+List} ()
+\item 
+\mbox{\Hypertarget{classClient_a495002b7287eb665b5e5d7123d7cc321}\label{classClient_a495002b7287eb665b5e5d7123d7cc321}} 
+void {\bfseries start\+Client} ()
+\item 
+\mbox{\Hypertarget{classClient_a8d00b40aafb2fc1d52bfe95c717c01ae}\label{classClient_a8d00b40aafb2fc1d52bfe95c717c01ae}} 
+void {\bfseries handle\+Client\+Status} ()
+\item 
+\mbox{\Hypertarget{classClient_ab78b93dd8f5db12999aecb2a6e596d5a}\label{classClient_ab78b93dd8f5db12999aecb2a6e596d5a}} 
+void {\bfseries communicate} ()
+\item 
+\mbox{\Hypertarget{classClient_a85fce855d1e592c6add1f3d8151d8fb2}\label{classClient_a85fce855d1e592c6add1f3d8151d8fb2}} 
+void {\bfseries listen} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+sf\+::\+Ip\+Address \mbox{\hyperlink{classClient_a651070682f39126541669fc95ab13083}{send\+IP}} = sf\+::\+Ip\+Address\+::get\+Local\+Address()
+\item 
+sf\+::\+Udp\+Socket \mbox{\hyperlink{classClient_aad2bb0e372ea8b6c1eca27b954b9fc80}{socket}}
+\item 
+unsigned short \mbox{\hyperlink{classClient_a33fcf8444e9ca2aec694c407ef1328e1}{port}} \{\}
+\item 
+unsigned short \mbox{\hyperlink{classClient_ae42cd5b237df6c509dddaf9aa1d0dc69}{port\+Server}} \{\}
+\item 
+std\+::string \mbox{\hyperlink{classClient_a989817815d95a2a9d22826c310613456}{name}}
+\item 
+\mbox{\Hypertarget{classClient_a73c61c5c8a59c8261986cd02bc41148c}\label{classClient_a73c61c5c8a59c8261986cd02bc41148c}} 
+int {\bfseries connect\+Port}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Class for the client. Used to connect to the lobby and send/receive messages. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classClient_ac13ad1e98c47db57ce0823dc735261cd}\label{classClient_ac13ad1e98c47db57ce0823dc735261cd}} 
+\index{Client@{Client}!Client@{Client}}
+\index{Client@{Client}!Client@{Client}}
+\doxysubsubsection{\texorpdfstring{Client()}{Client()}}
+{\footnotesize\ttfamily Client\+::\+Client (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+Default constructor \mbox{\Hypertarget{classClient_aa2ba94adc728a555bf154c055edf0f1a}\label{classClient_aa2ba94adc728a555bf154c055edf0f1a}} 
+\index{Client@{Client}!````~Client@{$\sim$Client}}
+\index{````~Client@{$\sim$Client}!Client@{Client}}
+\doxysubsubsection{\texorpdfstring{$\sim$Client()}{~Client()}}
+{\footnotesize\ttfamily Client\+::$\sim$\+Client (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+Default destructor 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classClient_a1b1728e35a141e6c2eb346c58c2f3460}\label{classClient_a1b1728e35a141e6c2eb346c58c2f3460}} 
+\index{Client@{Client}!askCreate@{askCreate}}
+\index{askCreate@{askCreate}!Client@{Client}}
+\doxysubsubsection{\texorpdfstring{askCreate()}{askCreate()}}
+{\footnotesize\ttfamily void Client\+::ask\+Create (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ int $>$ \&}]{lobby\+List }\end{DoxyParamCaption})}
+
+
+
+Ask the user if he wants to create a lobby. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em lobby\+List} & List of the lobbies \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classClient_a06ad105562a695252a90e39d04162eb4}\label{classClient_a06ad105562a695252a90e39d04162eb4}} 
+\index{Client@{Client}!checkMessage@{checkMessage}}
+\index{checkMessage@{checkMessage}!Client@{Client}}
+\doxysubsubsection{\texorpdfstring{checkMessage()}{checkMessage()}}
+{\footnotesize\ttfamily void Client\+::check\+Message (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Check if there is a message to read. 
+
+\mbox{\Hypertarget{classClient_ac8dbe9e1012e2721e65290d3967ec636}\label{classClient_ac8dbe9e1012e2721e65290d3967ec636}} 
+\index{Client@{Client}!connect@{connect}}
+\index{connect@{connect}!Client@{Client}}
+\doxysubsubsection{\texorpdfstring{connect()}{connect()}}
+{\footnotesize\ttfamily void Client\+::connect (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Connect to the server. 
+
+\mbox{\Hypertarget{classClient_acbd98188d70df1a14bbd29312e4c6d88}\label{classClient_acbd98188d70df1a14bbd29312e4c6d88}} 
+\index{Client@{Client}!connectLobby@{connectLobby}}
+\index{connectLobby@{connectLobby}!Client@{Client}}
+\doxysubsubsection{\texorpdfstring{connectLobby()}{connectLobby()}}
+{\footnotesize\ttfamily void Client\+::connect\+Lobby (\begin{DoxyParamCaption}\item[{int}]{port }\end{DoxyParamCaption})}
+
+
+
+Connect to the lobby. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em port} & Port of the lobby \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classClient_a5498639c26f7ee16547518b8e6dfb21e}\label{classClient_a5498639c26f7ee16547518b8e6dfb21e}} 
+\index{Client@{Client}!getHubList@{getHubList}}
+\index{getHubList@{getHubList}!Client@{Client}}
+\doxysubsubsection{\texorpdfstring{getHubList()}{getHubList()}}
+{\footnotesize\ttfamily void Client\+::get\+Hub\+List (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the list of the lobbies. 
+
+\mbox{\Hypertarget{classClient_a426342236c0f0a31e75e01e170d12301}\label{classClient_a426342236c0f0a31e75e01e170d12301}} 
+\index{Client@{Client}!sendCreateLobby@{sendCreateLobby}}
+\index{sendCreateLobby@{sendCreateLobby}!Client@{Client}}
+\doxysubsubsection{\texorpdfstring{sendCreateLobby()}{sendCreateLobby()}}
+{\footnotesize\ttfamily void Client\+::send\+Create\+Lobby (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Send a create lobby request. 
+
+\mbox{\Hypertarget{classClient_a495002b7287eb665b5e5d7123d7cc321}\label{classClient_a495002b7287eb665b5e5d7123d7cc321}} 
+\index{Client@{Client}!startClient@{startClient}}
+\index{startClient@{startClient}!Client@{Client}}
+\doxysubsubsection{\texorpdfstring{startClient()}{startClient()}}
+{\footnotesize\ttfamily void Client\+::start\+Client (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Start the client. 
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classClient_a989817815d95a2a9d22826c310613456}\label{classClient_a989817815d95a2a9d22826c310613456}} 
+\index{Client@{Client}!name@{name}}
+\index{name@{name}!Client@{Client}}
+\doxysubsubsection{\texorpdfstring{name}{name}}
+{\footnotesize\ttfamily std\+::string Client\+::name\hspace{0.3cm}{\ttfamily [protected]}}
+
+Name of the client \mbox{\Hypertarget{classClient_a33fcf8444e9ca2aec694c407ef1328e1}\label{classClient_a33fcf8444e9ca2aec694c407ef1328e1}} 
+\index{Client@{Client}!port@{port}}
+\index{port@{port}!Client@{Client}}
+\doxysubsubsection{\texorpdfstring{port}{port}}
+{\footnotesize\ttfamily unsigned short Client\+::port \{\}\hspace{0.3cm}{\ttfamily [protected]}}
+
+Port of the client \mbox{\Hypertarget{classClient_ae42cd5b237df6c509dddaf9aa1d0dc69}\label{classClient_ae42cd5b237df6c509dddaf9aa1d0dc69}} 
+\index{Client@{Client}!portServer@{portServer}}
+\index{portServer@{portServer}!Client@{Client}}
+\doxysubsubsection{\texorpdfstring{portServer}{portServer}}
+{\footnotesize\ttfamily unsigned short Client\+::port\+Server \{\}\hspace{0.3cm}{\ttfamily [protected]}}
+
+Port of the server \mbox{\Hypertarget{classClient_a651070682f39126541669fc95ab13083}\label{classClient_a651070682f39126541669fc95ab13083}} 
+\index{Client@{Client}!sendIP@{sendIP}}
+\index{sendIP@{sendIP}!Client@{Client}}
+\doxysubsubsection{\texorpdfstring{sendIP}{sendIP}}
+{\footnotesize\ttfamily sf\+::\+Ip\+Address Client\+::send\+IP = sf\+::\+Ip\+Address\+::get\+Local\+Address()\hspace{0.3cm}{\ttfamily [protected]}}
+
+IP of the server \mbox{\Hypertarget{classClient_aad2bb0e372ea8b6c1eca27b954b9fc80}\label{classClient_aad2bb0e372ea8b6c1eca27b954b9fc80}} 
+\index{Client@{Client}!socket@{socket}}
+\index{socket@{socket}!Client@{Client}}
+\doxysubsubsection{\texorpdfstring{socket}{socket}}
+{\footnotesize\ttfamily sf\+::\+Udp\+Socket Client\+::socket\hspace{0.3cm}{\ttfamily [protected]}}
+
+Socket of the client 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Client/\+Client/Client.\+hpp\item 
+Client/\+Client/Client.\+cpp\end{DoxyCompactItemize}

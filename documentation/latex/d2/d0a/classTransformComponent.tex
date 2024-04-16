@@ -1,0 +1,312 @@
+\hypertarget{classTransformComponent}{}\doxysection{Transform\+Component Class Reference}
+\label{classTransformComponent}\index{TransformComponent@{TransformComponent}}
+
+
+A component that handle a transform. Used to handle a transform.  
+
+
+
+
+{\ttfamily \#include $<$Transform\+Component.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classTransformComponent_a210e38876ed4c6232f688858be5ec949}{Transform\+Component}} (\mbox{\hyperlink{structPosition3D__t}{Position3\+D\+\_\+t}} pos=\{0, 0, 0\}, \mbox{\hyperlink{structSize2D__t}{Size2\+D\+\_\+t}} size=\{1, 1\}, float rot=0)
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classTransformComponent_a5b87b5a6fad643d61fb7c56f6886f9b0}{$\sim$\+Transform\+Component}} ()=default
+\item 
+\mbox{\hyperlink{classTransformComponent_a078cfe870aaafeaf8fdca098cd4bae26}{Transform\+Component}} (\mbox{\hyperlink{classTransformComponent}{Transform\+Component}} const \&)=default
+\item 
+\mbox{\hyperlink{classTransformComponent_adc5d4522394ce46783c5489ee86096eb}{Transform\+Component}} (\mbox{\hyperlink{classTransformComponent}{Transform\+Component}} \&\&) noexcept=default
+\item 
+\mbox{\hyperlink{classTransformComponent}{Transform\+Component}} \& \mbox{\hyperlink{classTransformComponent_a58668f9e36733a4e9d0a3759247265ea}{operator=}} (\mbox{\hyperlink{classTransformComponent}{Transform\+Component}} const \&)=default
+\item 
+\mbox{\hyperlink{classTransformComponent}{Transform\+Component}} \& \mbox{\hyperlink{classTransformComponent_ac729f63d824751cef343a65813745f37}{operator=}} (\mbox{\hyperlink{classTransformComponent}{Transform\+Component}} \&\&) noexcept=default
+\item 
+void \mbox{\hyperlink{classTransformComponent_a8a6c3b396038f10b0aaa707e9a65bf14}{set\+Position}} (float posX, float posY, float posZ)
+\begin{DoxyCompactList}\small\item\em Set the position of the entity. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classTransformComponent_a2f3edc5ecba7d1a14d11553433ca40b9}{move}} (float x, float y, float z)
+\begin{DoxyCompactList}\small\item\em Move the entity. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classTransformComponent_aa0f5e395ac3ab45e0504139a14a04ad2}{set\+Rotation}} (float rotation)
+\begin{DoxyCompactList}\small\item\em Set the rotation of the entity. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classTransformComponent_a72de37d08501ed46d1a27b025a432de8}{set\+Size}} (float height, float width)
+\begin{DoxyCompactList}\small\item\em Set the size of the entity. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classTransformComponent_a3267c5478b1aff6088345dfc30f01577}{rescale}} (float scale)
+\begin{DoxyCompactList}\small\item\em Rescale the entity. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structPosition3D__t}{Position3\+D\+\_\+t}} \mbox{\hyperlink{classTransformComponent_ac047db26c2e065986ad9a042faf749a7}{get\+Position}} () const
+\begin{DoxyCompactList}\small\item\em Get the position of the entity. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{classTransformComponent_a6bd5b60be7a3984b66df5c1d5bcafc12}{get\+Rotation}} () const
+\begin{DoxyCompactList}\small\item\em Get the rotation of the entity. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structSize2D__t}{Size2\+D\+\_\+t}} \mbox{\hyperlink{classTransformComponent_af0f088d84394c6947577a3cd7b2c3dde}{get\+Size}} () const
+\begin{DoxyCompactList}\small\item\em Get the size of the entity. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classTransformComponent_a210e38876ed4c6232f688858be5ec949}\label{classTransformComponent_a210e38876ed4c6232f688858be5ec949}} 
+{\bfseries Transform\+Component} (\mbox{\hyperlink{structPosition3D__t}{Position3\+D\+\_\+t}} pos=\{0, 0, 0\}, \mbox{\hyperlink{structSize2D__t}{Size2\+D\+\_\+t}} size=\{1, 1\}, float rot=0)
+\item 
+\mbox{\hyperlink{classTransformComponent_a5b87b5a6fad643d61fb7c56f6886f9b0}{$\sim$\+Transform\+Component}} ()=default
+\item 
+\mbox{\hyperlink{classTransformComponent_a078cfe870aaafeaf8fdca098cd4bae26}{Transform\+Component}} (\mbox{\hyperlink{classTransformComponent}{Transform\+Component}} const \&)=default
+\item 
+\mbox{\hyperlink{classTransformComponent_adc5d4522394ce46783c5489ee86096eb}{Transform\+Component}} (\mbox{\hyperlink{classTransformComponent}{Transform\+Component}} \&\&) noexcept=default
+\item 
+\mbox{\hyperlink{classTransformComponent}{Transform\+Component}} \& \mbox{\hyperlink{classTransformComponent_a58668f9e36733a4e9d0a3759247265ea}{operator=}} (\mbox{\hyperlink{classTransformComponent}{Transform\+Component}} const \&)=default
+\item 
+\mbox{\hyperlink{classTransformComponent}{Transform\+Component}} \& \mbox{\hyperlink{classTransformComponent_ac729f63d824751cef343a65813745f37}{operator=}} (\mbox{\hyperlink{classTransformComponent}{Transform\+Component}} \&\&) noexcept=default
+\item 
+\mbox{\Hypertarget{classTransformComponent_a8a6c3b396038f10b0aaa707e9a65bf14}\label{classTransformComponent_a8a6c3b396038f10b0aaa707e9a65bf14}} 
+void {\bfseries set\+Position} (float posX, float posY, float posZ)
+\item 
+\mbox{\Hypertarget{classTransformComponent_a2f3edc5ecba7d1a14d11553433ca40b9}\label{classTransformComponent_a2f3edc5ecba7d1a14d11553433ca40b9}} 
+void {\bfseries move} (float x, float y, float z)
+\item 
+\mbox{\Hypertarget{classTransformComponent_aa0f5e395ac3ab45e0504139a14a04ad2}\label{classTransformComponent_aa0f5e395ac3ab45e0504139a14a04ad2}} 
+void {\bfseries set\+Rotation} (float rotation)
+\item 
+\mbox{\Hypertarget{classTransformComponent_a72de37d08501ed46d1a27b025a432de8}\label{classTransformComponent_a72de37d08501ed46d1a27b025a432de8}} 
+void {\bfseries set\+Size} (float height, float width)
+\item 
+\mbox{\Hypertarget{classTransformComponent_a3267c5478b1aff6088345dfc30f01577}\label{classTransformComponent_a3267c5478b1aff6088345dfc30f01577}} 
+void {\bfseries rescale} (float scale)
+\item 
+\mbox{\Hypertarget{classTransformComponent_ac047db26c2e065986ad9a042faf749a7}\label{classTransformComponent_ac047db26c2e065986ad9a042faf749a7}} 
+\mbox{\hyperlink{structPosition3D__t}{Position3\+D\+\_\+t}} {\bfseries get\+Position} () const
+\item 
+\mbox{\Hypertarget{classTransformComponent_a6bd5b60be7a3984b66df5c1d5bcafc12}\label{classTransformComponent_a6bd5b60be7a3984b66df5c1d5bcafc12}} 
+float {\bfseries get\+Rotation} () const
+\item 
+\mbox{\Hypertarget{classTransformComponent_af0f088d84394c6947577a3cd7b2c3dde}\label{classTransformComponent_af0f088d84394c6947577a3cd7b2c3dde}} 
+\mbox{\hyperlink{structSize2D__t}{Size2\+D\+\_\+t}} {\bfseries get\+Size} () const
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A component that handle a transform. Used to handle a transform. 
+
+A component that holds the position, rotation and scale of an entity. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classTransformComponent_a210e38876ed4c6232f688858be5ec949}\label{classTransformComponent_a210e38876ed4c6232f688858be5ec949}} 
+\index{TransformComponent@{TransformComponent}!TransformComponent@{TransformComponent}}
+\index{TransformComponent@{TransformComponent}!TransformComponent@{TransformComponent}}
+\doxysubsubsection{\texorpdfstring{TransformComponent()}{TransformComponent()}\hspace{0.1cm}{\footnotesize\ttfamily [1/5]}}
+{\footnotesize\ttfamily Transform\+Component\+::\+Transform\+Component (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structPosition3D__t}{Position3\+D\+\_\+t}}}]{pos = {\ttfamily \{0,~0,~0\}},  }\item[{\mbox{\hyperlink{structSize2D__t}{Size2\+D\+\_\+t}}}]{size = {\ttfamily \{1,~1\}},  }\item[{float}]{rot = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}
+
+
+
+Constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pos} & The position of the entity \\
+\hline
+{\em size} & The size of the entity \\
+\hline
+{\em rot} & The rotation of the entity \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classTransformComponent_a5b87b5a6fad643d61fb7c56f6886f9b0}\label{classTransformComponent_a5b87b5a6fad643d61fb7c56f6886f9b0}} 
+\index{TransformComponent@{TransformComponent}!````~TransformComponent@{$\sim$TransformComponent}}
+\index{````~TransformComponent@{$\sim$TransformComponent}!TransformComponent@{TransformComponent}}
+\doxysubsubsection{\texorpdfstring{$\sim$TransformComponent()}{~TransformComponent()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Transform\+Component\+::$\sim$\+Transform\+Component (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+Constructor with position, size and rotation Default destructor \mbox{\Hypertarget{classTransformComponent_a078cfe870aaafeaf8fdca098cd4bae26}\label{classTransformComponent_a078cfe870aaafeaf8fdca098cd4bae26}} 
+\index{TransformComponent@{TransformComponent}!TransformComponent@{TransformComponent}}
+\index{TransformComponent@{TransformComponent}!TransformComponent@{TransformComponent}}
+\doxysubsubsection{\texorpdfstring{TransformComponent()}{TransformComponent()}\hspace{0.1cm}{\footnotesize\ttfamily [2/5]}}
+{\footnotesize\ttfamily Transform\+Component\+::\+Transform\+Component (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classTransformComponent}{Transform\+Component}} const \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+Default copy constructor \mbox{\Hypertarget{classTransformComponent_adc5d4522394ce46783c5489ee86096eb}\label{classTransformComponent_adc5d4522394ce46783c5489ee86096eb}} 
+\index{TransformComponent@{TransformComponent}!TransformComponent@{TransformComponent}}
+\index{TransformComponent@{TransformComponent}!TransformComponent@{TransformComponent}}
+\doxysubsubsection{\texorpdfstring{TransformComponent()}{TransformComponent()}\hspace{0.1cm}{\footnotesize\ttfamily [3/5]}}
+{\footnotesize\ttfamily Transform\+Component\+::\+Transform\+Component (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classTransformComponent}{Transform\+Component}} \&\&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}, {\ttfamily [noexcept]}}
+
+Default move constructor \mbox{\Hypertarget{classTransformComponent_a5b87b5a6fad643d61fb7c56f6886f9b0}\label{classTransformComponent_a5b87b5a6fad643d61fb7c56f6886f9b0}} 
+\index{TransformComponent@{TransformComponent}!````~TransformComponent@{$\sim$TransformComponent}}
+\index{````~TransformComponent@{$\sim$TransformComponent}!TransformComponent@{TransformComponent}}
+\doxysubsubsection{\texorpdfstring{$\sim$TransformComponent()}{~TransformComponent()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Transform\+Component\+::$\sim$\+Transform\+Component (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+Default destructor \mbox{\Hypertarget{classTransformComponent_a078cfe870aaafeaf8fdca098cd4bae26}\label{classTransformComponent_a078cfe870aaafeaf8fdca098cd4bae26}} 
+\index{TransformComponent@{TransformComponent}!TransformComponent@{TransformComponent}}
+\index{TransformComponent@{TransformComponent}!TransformComponent@{TransformComponent}}
+\doxysubsubsection{\texorpdfstring{TransformComponent()}{TransformComponent()}\hspace{0.1cm}{\footnotesize\ttfamily [4/5]}}
+{\footnotesize\ttfamily Transform\+Component\+::\+Transform\+Component (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classTransformComponent}{Transform\+Component}} const \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+Default copy constructor \mbox{\Hypertarget{classTransformComponent_adc5d4522394ce46783c5489ee86096eb}\label{classTransformComponent_adc5d4522394ce46783c5489ee86096eb}} 
+\index{TransformComponent@{TransformComponent}!TransformComponent@{TransformComponent}}
+\index{TransformComponent@{TransformComponent}!TransformComponent@{TransformComponent}}
+\doxysubsubsection{\texorpdfstring{TransformComponent()}{TransformComponent()}\hspace{0.1cm}{\footnotesize\ttfamily [5/5]}}
+{\footnotesize\ttfamily Transform\+Component\+::\+Transform\+Component (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classTransformComponent}{Transform\+Component}} \&\&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}, {\ttfamily [noexcept]}}
+
+Default move constructor 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classTransformComponent_ac047db26c2e065986ad9a042faf749a7}\label{classTransformComponent_ac047db26c2e065986ad9a042faf749a7}} 
+\index{TransformComponent@{TransformComponent}!getPosition@{getPosition}}
+\index{getPosition@{getPosition}!TransformComponent@{TransformComponent}}
+\doxysubsubsection{\texorpdfstring{getPosition()}{getPosition()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structPosition3D__t}{Position3\+D\+\_\+t}} Transform\+Component\+::get\+Position (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the position of the entity. 
+
+\begin{DoxyReturn}{Returns}
+The position of the entity 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classTransformComponent_a6bd5b60be7a3984b66df5c1d5bcafc12}\label{classTransformComponent_a6bd5b60be7a3984b66df5c1d5bcafc12}} 
+\index{TransformComponent@{TransformComponent}!getRotation@{getRotation}}
+\index{getRotation@{getRotation}!TransformComponent@{TransformComponent}}
+\doxysubsubsection{\texorpdfstring{getRotation()}{getRotation()}}
+{\footnotesize\ttfamily float Transform\+Component\+::get\+Rotation (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the rotation of the entity. 
+
+\begin{DoxyReturn}{Returns}
+The rotation of the entity 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classTransformComponent_af0f088d84394c6947577a3cd7b2c3dde}\label{classTransformComponent_af0f088d84394c6947577a3cd7b2c3dde}} 
+\index{TransformComponent@{TransformComponent}!getSize@{getSize}}
+\index{getSize@{getSize}!TransformComponent@{TransformComponent}}
+\doxysubsubsection{\texorpdfstring{getSize()}{getSize()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structSize2D__t}{Size2\+D\+\_\+t}} Transform\+Component\+::get\+Size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the size of the entity. 
+
+\begin{DoxyReturn}{Returns}
+The size of the entity 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classTransformComponent_a2f3edc5ecba7d1a14d11553433ca40b9}\label{classTransformComponent_a2f3edc5ecba7d1a14d11553433ca40b9}} 
+\index{TransformComponent@{TransformComponent}!move@{move}}
+\index{move@{move}!TransformComponent@{TransformComponent}}
+\doxysubsubsection{\texorpdfstring{move()}{move()}}
+{\footnotesize\ttfamily void Transform\+Component\+::move (\begin{DoxyParamCaption}\item[{float}]{x,  }\item[{float}]{y,  }\item[{float}]{z }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Move the entity. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & Move on X axis \\
+\hline
+{\em y} & Move on Y axis \\
+\hline
+{\em z} & Move on Z axis\\
+\hline
+{\em x} & The x position to move to \\
+\hline
+{\em y} & The y position to move to \\
+\hline
+{\em z} & The z position to move to \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classTransformComponent_ac729f63d824751cef343a65813745f37}\label{classTransformComponent_ac729f63d824751cef343a65813745f37}} 
+\index{TransformComponent@{TransformComponent}!operator=@{operator=}}
+\index{operator=@{operator=}!TransformComponent@{TransformComponent}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classTransformComponent}{Transform\+Component}}\& Transform\+Component\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classTransformComponent}{Transform\+Component}} \&\&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}, {\ttfamily [noexcept]}}
+
+Default move assignment operator \mbox{\Hypertarget{classTransformComponent_ac729f63d824751cef343a65813745f37}\label{classTransformComponent_ac729f63d824751cef343a65813745f37}} 
+\index{TransformComponent@{TransformComponent}!operator=@{operator=}}
+\index{operator=@{operator=}!TransformComponent@{TransformComponent}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classTransformComponent}{Transform\+Component}}\& Transform\+Component\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classTransformComponent}{Transform\+Component}} \&\&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}, {\ttfamily [noexcept]}}
+
+Default move assignment operator \mbox{\Hypertarget{classTransformComponent_a58668f9e36733a4e9d0a3759247265ea}\label{classTransformComponent_a58668f9e36733a4e9d0a3759247265ea}} 
+\index{TransformComponent@{TransformComponent}!operator=@{operator=}}
+\index{operator=@{operator=}!TransformComponent@{TransformComponent}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classTransformComponent}{Transform\+Component}}\& Transform\+Component\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classTransformComponent}{Transform\+Component}} const \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+Default copy assignment operator \mbox{\Hypertarget{classTransformComponent_a58668f9e36733a4e9d0a3759247265ea}\label{classTransformComponent_a58668f9e36733a4e9d0a3759247265ea}} 
+\index{TransformComponent@{TransformComponent}!operator=@{operator=}}
+\index{operator=@{operator=}!TransformComponent@{TransformComponent}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classTransformComponent}{Transform\+Component}}\& Transform\+Component\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classTransformComponent}{Transform\+Component}} const \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+Default copy assignment operator \mbox{\Hypertarget{classTransformComponent_a3267c5478b1aff6088345dfc30f01577}\label{classTransformComponent_a3267c5478b1aff6088345dfc30f01577}} 
+\index{TransformComponent@{TransformComponent}!rescale@{rescale}}
+\index{rescale@{rescale}!TransformComponent@{TransformComponent}}
+\doxysubsubsection{\texorpdfstring{rescale()}{rescale()}}
+{\footnotesize\ttfamily void Transform\+Component\+::rescale (\begin{DoxyParamCaption}\item[{float}]{scale }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Rescale the entity. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em scale} & Scale to apply\\
+\hline
+{\em scale} & The scale to apply to the entity \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classTransformComponent_a8a6c3b396038f10b0aaa707e9a65bf14}\label{classTransformComponent_a8a6c3b396038f10b0aaa707e9a65bf14}} 
+\index{TransformComponent@{TransformComponent}!setPosition@{setPosition}}
+\index{setPosition@{setPosition}!TransformComponent@{TransformComponent}}
+\doxysubsubsection{\texorpdfstring{setPosition()}{setPosition()}}
+{\footnotesize\ttfamily void Transform\+Component\+::set\+Position (\begin{DoxyParamCaption}\item[{float}]{posX,  }\item[{float}]{posY,  }\item[{float}]{posZ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Set the position of the entity. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em posX} & New position on X axis \\
+\hline
+{\em posY} & New position on Y axis \\
+\hline
+{\em posZ} & New position on Z axis \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classTransformComponent_aa0f5e395ac3ab45e0504139a14a04ad2}\label{classTransformComponent_aa0f5e395ac3ab45e0504139a14a04ad2}} 
+\index{TransformComponent@{TransformComponent}!setRotation@{setRotation}}
+\index{setRotation@{setRotation}!TransformComponent@{TransformComponent}}
+\doxysubsubsection{\texorpdfstring{setRotation()}{setRotation()}}
+{\footnotesize\ttfamily void Transform\+Component\+::set\+Rotation (\begin{DoxyParamCaption}\item[{float}]{rot }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Set the rotation of the entity. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em rotation} & New rotation\\
+\hline
+{\em rotation} & The rotation of the entity \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classTransformComponent_a72de37d08501ed46d1a27b025a432de8}\label{classTransformComponent_a72de37d08501ed46d1a27b025a432de8}} 
+\index{TransformComponent@{TransformComponent}!setSize@{setSize}}
+\index{setSize@{setSize}!TransformComponent@{TransformComponent}}
+\doxysubsubsection{\texorpdfstring{setSize()}{setSize()}}
+{\footnotesize\ttfamily void Transform\+Component\+::set\+Size (\begin{DoxyParamCaption}\item[{float}]{height,  }\item[{float}]{width }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Set the size of the entity. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em height} & New height \\
+\hline
+{\em width} & New width\\
+\hline
+{\em height} & The height of the entity \\
+\hline
+{\em width} & The width of the entity \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Client/\+Component/Transform\+Component.\+hpp\end{DoxyCompactItemize}

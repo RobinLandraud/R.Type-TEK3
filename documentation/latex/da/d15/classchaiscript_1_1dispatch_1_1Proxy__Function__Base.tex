@@ -1,0 +1,111 @@
+\hypertarget{classchaiscript_1_1dispatch_1_1Proxy__Function__Base}{}\doxysection{chaiscript\+::dispatch\+::Proxy\+\_\+\+Function\+\_\+\+Base Class Reference}
+\label{classchaiscript_1_1dispatch_1_1Proxy__Function__Base}\index{chaiscript::dispatch::Proxy\_Function\_Base@{chaiscript::dispatch::Proxy\_Function\_Base}}
+
+
+{\ttfamily \#include $<$proxy\+\_\+functions.\+hpp$>$}
+
+Inheritance diagram for chaiscript\+::dispatch\+::Proxy\+\_\+\+Function\+\_\+\+Base\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=0.677966cm]{da/d15/classchaiscript_1_1dispatch_1_1Proxy__Function__Base}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classchaiscript_1_1dispatch_1_1Proxy__Function__Base_ab902273d82237a6a47ad43cfe91c7ae6}\label{classchaiscript_1_1dispatch_1_1Proxy__Function__Base_ab902273d82237a6a47ad43cfe91c7ae6}} 
+\mbox{\hyperlink{classchaiscript_1_1Boxed__Value}{Boxed\+\_\+\+Value}} {\bfseries operator()} (const std\+::vector$<$ \mbox{\hyperlink{classchaiscript_1_1Boxed__Value}{Boxed\+\_\+\+Value}} $>$ \&params, const \mbox{\hyperlink{classchaiscript_1_1Type__Conversions__State}{chaiscript\+::\+Type\+\_\+\+Conversions\+\_\+\+State}} \&t\+\_\+conversions) const
+\item 
+const std\+::vector$<$ \mbox{\hyperlink{classchaiscript_1_1Type__Info}{Type\+\_\+\+Info}} $>$ \& \mbox{\hyperlink{classchaiscript_1_1dispatch_1_1Proxy__Function__Base_a4700d5d2ca7d1f314b9d03979150a5cb}{get\+\_\+param\+\_\+types}} () const
+\item 
+\mbox{\Hypertarget{classchaiscript_1_1dispatch_1_1Proxy__Function__Base_aa2166599a966a74b6e9ff0c985ab25b8}\label{classchaiscript_1_1dispatch_1_1Proxy__Function__Base_aa2166599a966a74b6e9ff0c985ab25b8}} 
+virtual bool {\bfseries operator==} (const \mbox{\hyperlink{classchaiscript_1_1dispatch_1_1Proxy__Function__Base}{Proxy\+\_\+\+Function\+\_\+\+Base}} \&) const =0
+\item 
+\mbox{\Hypertarget{classchaiscript_1_1dispatch_1_1Proxy__Function__Base_a68b845a71813eb199cf38e4ed84caa1f}\label{classchaiscript_1_1dispatch_1_1Proxy__Function__Base_a68b845a71813eb199cf38e4ed84caa1f}} 
+virtual bool {\bfseries call\+\_\+match} (const std\+::vector$<$ \mbox{\hyperlink{classchaiscript_1_1Boxed__Value}{Boxed\+\_\+\+Value}} $>$ \&vals, const \mbox{\hyperlink{classchaiscript_1_1Type__Conversions__State}{Type\+\_\+\+Conversions\+\_\+\+State}} \&t\+\_\+conversions) const =0
+\item 
+\mbox{\Hypertarget{classchaiscript_1_1dispatch_1_1Proxy__Function__Base_a0f1d8a3106217c2a50577ffe3fd5f48e}\label{classchaiscript_1_1dispatch_1_1Proxy__Function__Base_a0f1d8a3106217c2a50577ffe3fd5f48e}} 
+virtual bool {\bfseries is\+\_\+attribute\+\_\+function} () const
+\item 
+\mbox{\Hypertarget{classchaiscript_1_1dispatch_1_1Proxy__Function__Base_a2f793ca97cc767957127f8235373d12d}\label{classchaiscript_1_1dispatch_1_1Proxy__Function__Base_a2f793ca97cc767957127f8235373d12d}} 
+bool {\bfseries has\+\_\+arithmetic\+\_\+param} () const
+\item 
+\mbox{\Hypertarget{classchaiscript_1_1dispatch_1_1Proxy__Function__Base_a05ea56a80f24acbb5db0f141e0bce717}\label{classchaiscript_1_1dispatch_1_1Proxy__Function__Base_a05ea56a80f24acbb5db0f141e0bce717}} 
+virtual std\+::vector$<$ std\+::shared\+\_\+ptr$<$ const \mbox{\hyperlink{classchaiscript_1_1dispatch_1_1Proxy__Function__Base}{Proxy\+\_\+\+Function\+\_\+\+Base}} $>$ $>$ {\bfseries get\+\_\+contained\+\_\+functions} () const
+\item 
+bool \mbox{\hyperlink{classchaiscript_1_1dispatch_1_1Proxy__Function__Base_a426a0da32707885203a047789e36194d}{filter}} (const std\+::vector$<$ \mbox{\hyperlink{classchaiscript_1_1Boxed__Value}{Boxed\+\_\+\+Value}} $>$ \&vals, const \mbox{\hyperlink{classchaiscript_1_1Type__Conversions__State}{Type\+\_\+\+Conversions\+\_\+\+State}} \&t\+\_\+conversions) const
+\item 
+int \mbox{\hyperlink{classchaiscript_1_1dispatch_1_1Proxy__Function__Base_aa7a90c5444e0ddeaba1cf49390f494f0}{get\+\_\+arity}} () const
+\item 
+\mbox{\Hypertarget{classchaiscript_1_1dispatch_1_1Proxy__Function__Base_a5edec9b32f5ab9154d85b7925818ca13}\label{classchaiscript_1_1dispatch_1_1Proxy__Function__Base_a5edec9b32f5ab9154d85b7925818ca13}} 
+virtual bool {\bfseries compare\+\_\+first\+\_\+type} (const \mbox{\hyperlink{classchaiscript_1_1Boxed__Value}{Boxed\+\_\+\+Value}} \&bv, const \mbox{\hyperlink{classchaiscript_1_1Type__Conversions__State}{Type\+\_\+\+Conversions\+\_\+\+State}} \&t\+\_\+conversions) const
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classchaiscript_1_1dispatch_1_1Proxy__Function__Base_ac9db2d8e5fd7403c6bb8cea250b9568c}\label{classchaiscript_1_1dispatch_1_1Proxy__Function__Base_ac9db2d8e5fd7403c6bb8cea250b9568c}} 
+static bool {\bfseries compare\+\_\+type\+\_\+to\+\_\+param} (const \mbox{\hyperlink{classchaiscript_1_1Type__Info}{Type\+\_\+\+Info}} \&ti, const \mbox{\hyperlink{classchaiscript_1_1Boxed__Value}{Boxed\+\_\+\+Value}} \&bv, const \mbox{\hyperlink{classchaiscript_1_1Type__Conversions__State}{Type\+\_\+\+Conversions\+\_\+\+State}} \&t\+\_\+conversions)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classchaiscript_1_1dispatch_1_1Proxy__Function__Base_a10ace752d809cecd1411b241f3c8dac5}\label{classchaiscript_1_1dispatch_1_1Proxy__Function__Base_a10ace752d809cecd1411b241f3c8dac5}} 
+virtual \mbox{\hyperlink{classchaiscript_1_1Boxed__Value}{Boxed\+\_\+\+Value}} {\bfseries do\+\_\+call} (const std\+::vector$<$ \mbox{\hyperlink{classchaiscript_1_1Boxed__Value}{Boxed\+\_\+\+Value}} $>$ \&params, const \mbox{\hyperlink{classchaiscript_1_1Type__Conversions__State}{Type\+\_\+\+Conversions\+\_\+\+State}} \&t\+\_\+conversions) const =0
+\item 
+\mbox{\Hypertarget{classchaiscript_1_1dispatch_1_1Proxy__Function__Base_a5fde7dc2455418a583aac7331a5cf7ed}\label{classchaiscript_1_1dispatch_1_1Proxy__Function__Base_a5fde7dc2455418a583aac7331a5cf7ed}} 
+{\bfseries Proxy\+\_\+\+Function\+\_\+\+Base} (std\+::vector$<$ \mbox{\hyperlink{classchaiscript_1_1Type__Info}{Type\+\_\+\+Info}} $>$ t\+\_\+types, int t\+\_\+arity)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classchaiscript_1_1dispatch_1_1Proxy__Function__Base_a0065f3ed6369afa137ed0d8a37ab0546}\label{classchaiscript_1_1dispatch_1_1Proxy__Function__Base_a0065f3ed6369afa137ed0d8a37ab0546}} 
+static bool {\bfseries compare\+\_\+types} (const std\+::vector$<$ \mbox{\hyperlink{classchaiscript_1_1Type__Info}{Type\+\_\+\+Info}} $>$ \&tis, const std\+::vector$<$ \mbox{\hyperlink{classchaiscript_1_1Boxed__Value}{Boxed\+\_\+\+Value}} $>$ \&bvs, const \mbox{\hyperlink{classchaiscript_1_1Type__Conversions__State}{Type\+\_\+\+Conversions\+\_\+\+State}} \&t\+\_\+conversions)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classchaiscript_1_1dispatch_1_1Proxy__Function__Base_a782bca8d94ebe1f36b3a71b04ab33738}\label{classchaiscript_1_1dispatch_1_1Proxy__Function__Base_a782bca8d94ebe1f36b3a71b04ab33738}} 
+std\+::vector$<$ \mbox{\hyperlink{classchaiscript_1_1Type__Info}{Type\+\_\+\+Info}} $>$ {\bfseries m\+\_\+types}
+\item 
+\mbox{\Hypertarget{classchaiscript_1_1dispatch_1_1Proxy__Function__Base_abc49f7a158f0623b7c34f739480ac2dc}\label{classchaiscript_1_1dispatch_1_1Proxy__Function__Base_abc49f7a158f0623b7c34f739480ac2dc}} 
+int {\bfseries m\+\_\+arity}
+\item 
+\mbox{\Hypertarget{classchaiscript_1_1dispatch_1_1Proxy__Function__Base_a20a77620572dc19eca1e3be59a6102bc}\label{classchaiscript_1_1dispatch_1_1Proxy__Function__Base_a20a77620572dc19eca1e3be59a6102bc}} 
+bool {\bfseries m\+\_\+has\+\_\+arithmetic\+\_\+param}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Pure virtual base class for all Proxy\+\_\+\+Function implementations Proxy\+\_\+\+Functions are a type erasure of type safe C++ function calls. At runtime parameter types are expected to be tested against passed in types. Dispatch\+\_\+\+Engine only knows how to work with Proxy\+\_\+\+Function, no other function classes. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classchaiscript_1_1dispatch_1_1Proxy__Function__Base_a426a0da32707885203a047789e36194d}\label{classchaiscript_1_1dispatch_1_1Proxy__Function__Base_a426a0da32707885203a047789e36194d}} 
+\index{chaiscript::dispatch::Proxy\_Function\_Base@{chaiscript::dispatch::Proxy\_Function\_Base}!filter@{filter}}
+\index{filter@{filter}!chaiscript::dispatch::Proxy\_Function\_Base@{chaiscript::dispatch::Proxy\_Function\_Base}}
+\doxysubsubsection{\texorpdfstring{filter()}{filter()}}
+{\footnotesize\ttfamily bool chaiscript\+::dispatch\+::\+Proxy\+\_\+\+Function\+\_\+\+Base\+::filter (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ \mbox{\hyperlink{classchaiscript_1_1Boxed__Value}{Boxed\+\_\+\+Value}} $>$ \&}]{vals,  }\item[{const \mbox{\hyperlink{classchaiscript_1_1Type__Conversions__State}{Type\+\_\+\+Conversions\+\_\+\+State}} \&}]{t\+\_\+conversions }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Return true if the function is a possible match to the passed in values \mbox{\Hypertarget{classchaiscript_1_1dispatch_1_1Proxy__Function__Base_aa7a90c5444e0ddeaba1cf49390f494f0}\label{classchaiscript_1_1dispatch_1_1Proxy__Function__Base_aa7a90c5444e0ddeaba1cf49390f494f0}} 
+\index{chaiscript::dispatch::Proxy\_Function\_Base@{chaiscript::dispatch::Proxy\_Function\_Base}!get\_arity@{get\_arity}}
+\index{get\_arity@{get\_arity}!chaiscript::dispatch::Proxy\_Function\_Base@{chaiscript::dispatch::Proxy\_Function\_Base}}
+\doxysubsubsection{\texorpdfstring{get\_arity()}{get\_arity()}}
+{\footnotesize\ttfamily int chaiscript\+::dispatch\+::\+Proxy\+\_\+\+Function\+\_\+\+Base\+::get\+\_\+arity (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxyReturn}{Returns}
+the number of arguments the function takes or -\/1 if it is variadic 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classchaiscript_1_1dispatch_1_1Proxy__Function__Base_a4700d5d2ca7d1f314b9d03979150a5cb}\label{classchaiscript_1_1dispatch_1_1Proxy__Function__Base_a4700d5d2ca7d1f314b9d03979150a5cb}} 
+\index{chaiscript::dispatch::Proxy\_Function\_Base@{chaiscript::dispatch::Proxy\_Function\_Base}!get\_param\_types@{get\_param\_types}}
+\index{get\_param\_types@{get\_param\_types}!chaiscript::dispatch::Proxy\_Function\_Base@{chaiscript::dispatch::Proxy\_Function\_Base}}
+\doxysubsubsection{\texorpdfstring{get\_param\_types()}{get\_param\_types()}}
+{\footnotesize\ttfamily const std\+::vector$<$\mbox{\hyperlink{classchaiscript_1_1Type__Info}{Type\+\_\+\+Info}}$>$\& chaiscript\+::dispatch\+::\+Proxy\+\_\+\+Function\+\_\+\+Base\+::get\+\_\+param\+\_\+types (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns a vector containing all of the types of the parameters the function returns/takes if the function is variadic or takes no arguments (arity of 0 or -\/1), the returned value contains exactly 1 \mbox{\hyperlink{classchaiscript_1_1Type__Info}{Type\+\_\+\+Info}} object\+: the return type \begin{DoxyReturn}{Returns}
+the types of all parameters. ~\newline
+ 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Chai\+Script-\/6.\+1.\+0/include/chaiscript/dispatchkit/proxy\+\_\+functions.\+hpp\end{DoxyCompactItemize}

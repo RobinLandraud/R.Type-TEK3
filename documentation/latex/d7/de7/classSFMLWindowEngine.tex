@@ -1,0 +1,150 @@
+\hypertarget{classSFMLWindowEngine}{}\doxysection{SFMLWindow\+Engine Class Reference}
+\label{classSFMLWindowEngine}\index{SFMLWindowEngine@{SFMLWindowEngine}}
+
+
+A class that handle the window. Used to create a window.  
+
+
+
+
+{\ttfamily \#include $<$SFMLWindow\+Engine.\+hpp$>$}
+
+Inheritance diagram for SFMLWindow\+Engine\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{d7/de7/classSFMLWindowEngine}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classSFMLWindowEngine_ad09dc418b3446bd6d42673968b2431df}{SFMLWindow\+Engine}} (int size\+\_\+x=500, int size\+\_\+y=500, const std\+::string \&title=\char`\"{}R-\/Type\char`\"{})
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classSFMLWindowEngine_ade0430034d25a0777c37910ff2b75786}{$\sim$\+SFMLWindow\+Engine}} ()=default
+\item 
+void \mbox{\hyperlink{classSFMLWindowEngine_ad230d818e51235acee909caefe862878}{close\+Window}} () override
+\begin{DoxyCompactList}\small\item\em Close the window. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classSFMLWindowEngine_abcd5e6ddb39069910b4d02f57cee2ccf}{is\+Open}} () override
+\begin{DoxyCompactList}\small\item\em Check if the window is open. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classSFMLWindowEngine_a4bf64c45dbea8ff188c81bee6d67664b}{clear}} () override
+\begin{DoxyCompactList}\small\item\em Clear the window. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classSFMLWindowEngine_ae0b8260749d68e635424787bf759d45b}{display}} () override
+\begin{DoxyCompactList}\small\item\em Display the window. \end{DoxyCompactList}\item 
+sf\+::\+Render\+Window \& \mbox{\hyperlink{classSFMLWindowEngine_a1bb3d46aad3d7eb46d6d98a2a591d6d6}{get\+Window}} ()
+\begin{DoxyCompactList}\small\item\em Get the window. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A class that handle the window. Used to create a window. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classSFMLWindowEngine_ad09dc418b3446bd6d42673968b2431df}\label{classSFMLWindowEngine_ad09dc418b3446bd6d42673968b2431df}} 
+\index{SFMLWindowEngine@{SFMLWindowEngine}!SFMLWindowEngine@{SFMLWindowEngine}}
+\index{SFMLWindowEngine@{SFMLWindowEngine}!SFMLWindowEngine@{SFMLWindowEngine}}
+\doxysubsubsection{\texorpdfstring{SFMLWindowEngine()}{SFMLWindowEngine()}}
+{\footnotesize\ttfamily SFMLWindow\+Engine\+::\+SFMLWindow\+Engine (\begin{DoxyParamCaption}\item[{int}]{size\+\_\+x = {\ttfamily 500},  }\item[{int}]{size\+\_\+y = {\ttfamily 500},  }\item[{const std\+::string \&}]{title = {\ttfamily \char`\"{}R-\/Type\char`\"{}} }\end{DoxyParamCaption})}
+
+
+
+Constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em size\+\_\+x} & The size of the window on the x axis \\
+\hline
+{\em size\+\_\+y} & The size of the window on the y axis \\
+\hline
+{\em title} & The title of the window \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classSFMLWindowEngine_ade0430034d25a0777c37910ff2b75786}\label{classSFMLWindowEngine_ade0430034d25a0777c37910ff2b75786}} 
+\index{SFMLWindowEngine@{SFMLWindowEngine}!````~SFMLWindowEngine@{$\sim$SFMLWindowEngine}}
+\index{````~SFMLWindowEngine@{$\sim$SFMLWindowEngine}!SFMLWindowEngine@{SFMLWindowEngine}}
+\doxysubsubsection{\texorpdfstring{$\sim$SFMLWindowEngine()}{~SFMLWindowEngine()}}
+{\footnotesize\ttfamily SFMLWindow\+Engine\+::$\sim$\+SFMLWindow\+Engine (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+Default destructor 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classSFMLWindowEngine_a4bf64c45dbea8ff188c81bee6d67664b}\label{classSFMLWindowEngine_a4bf64c45dbea8ff188c81bee6d67664b}} 
+\index{SFMLWindowEngine@{SFMLWindowEngine}!clear@{clear}}
+\index{clear@{clear}!SFMLWindowEngine@{SFMLWindowEngine}}
+\doxysubsubsection{\texorpdfstring{clear()}{clear()}}
+{\footnotesize\ttfamily void SFMLWindow\+Engine\+::clear (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Clear the window. 
+
+Clear the window 
+
+Implements \mbox{\hyperlink{classAWindowEngine_a96ce8f93010fa8dbf84e422b9b9f0239}{AWindow\+Engine}}.
+
+\mbox{\Hypertarget{classSFMLWindowEngine_ad230d818e51235acee909caefe862878}\label{classSFMLWindowEngine_ad230d818e51235acee909caefe862878}} 
+\index{SFMLWindowEngine@{SFMLWindowEngine}!closeWindow@{closeWindow}}
+\index{closeWindow@{closeWindow}!SFMLWindowEngine@{SFMLWindowEngine}}
+\doxysubsubsection{\texorpdfstring{closeWindow()}{closeWindow()}}
+{\footnotesize\ttfamily void SFMLWindow\+Engine\+::close\+Window (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Close the window. 
+
+Close the window 
+
+Implements \mbox{\hyperlink{classAWindowEngine_a405089e987181e845cceef98a07f21bb}{AWindow\+Engine}}.
+
+\mbox{\Hypertarget{classSFMLWindowEngine_ae0b8260749d68e635424787bf759d45b}\label{classSFMLWindowEngine_ae0b8260749d68e635424787bf759d45b}} 
+\index{SFMLWindowEngine@{SFMLWindowEngine}!display@{display}}
+\index{display@{display}!SFMLWindowEngine@{SFMLWindowEngine}}
+\doxysubsubsection{\texorpdfstring{display()}{display()}}
+{\footnotesize\ttfamily void SFMLWindow\+Engine\+::display (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Display the window. 
+
+Display the window 
+
+Implements \mbox{\hyperlink{classAWindowEngine_a56e01ac2a54c1822dea0817c3186c525}{AWindow\+Engine}}.
+
+\mbox{\Hypertarget{classSFMLWindowEngine_a1bb3d46aad3d7eb46d6d98a2a591d6d6}\label{classSFMLWindowEngine_a1bb3d46aad3d7eb46d6d98a2a591d6d6}} 
+\index{SFMLWindowEngine@{SFMLWindowEngine}!getWindow@{getWindow}}
+\index{getWindow@{getWindow}!SFMLWindowEngine@{SFMLWindowEngine}}
+\doxysubsubsection{\texorpdfstring{getWindow()}{getWindow()}}
+{\footnotesize\ttfamily sf\+::\+Render\+Window \& SFMLWindow\+Engine\+::get\+Window (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the window. 
+
+Get the window
+
+\begin{DoxyReturn}{Returns}
+The window 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classSFMLWindowEngine_abcd5e6ddb39069910b4d02f57cee2ccf}\label{classSFMLWindowEngine_abcd5e6ddb39069910b4d02f57cee2ccf}} 
+\index{SFMLWindowEngine@{SFMLWindowEngine}!isOpen@{isOpen}}
+\index{isOpen@{isOpen}!SFMLWindowEngine@{SFMLWindowEngine}}
+\doxysubsubsection{\texorpdfstring{isOpen()}{isOpen()}}
+{\footnotesize\ttfamily bool SFMLWindow\+Engine\+::is\+Open (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Check if the window is open. 
+
+Check if the window is open
+
+\begin{DoxyReturn}{Returns}
+True if the window is open, false otherwise 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classAWindowEngine_a40b81c2d3325f4eaa306fc25deef164d}{AWindow\+Engine}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Client/\+SFMLEngine/\+Window/SFMLWindow\+Engine.\+hpp\item 
+Client/\+SFMLEngine/\+Window/SFMLWindow\+Engine.\+cpp\end{DoxyCompactItemize}

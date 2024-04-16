@@ -1,0 +1,39 @@
+\hypertarget{chaiscript__threading_8hpp}{}\doxysection{Chai\+Script-\/6.1.0/include/chaiscript/chaiscript\+\_\+threading.hpp File Reference}
+\label{chaiscript__threading_8hpp}\index{ChaiScript-\/6.1.0/include/chaiscript/chaiscript\_threading.hpp@{ChaiScript-\/6.1.0/include/chaiscript/chaiscript\_threading.hpp}}
+{\ttfamily \#include $<$unordered\+\_\+map$>$}\newline
+{\ttfamily \#include $<$thread$>$}\newline
+{\ttfamily \#include $<$mutex$>$}\newline
+{\ttfamily \#include \char`\"{}chaiscript\+\_\+defines.\+hpp\char`\"{}}\newline
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classchaiscript_1_1detail_1_1threading_1_1Thread__Storage}{chaiscript\+::detail\+::threading\+::\+Thread\+\_\+\+Storage$<$ T $>$}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \mbox{\hyperlink{namespacechaiscript}{chaiscript}}
+\begin{DoxyCompactList}\small\item\em Namespace chaiscript contains every API call that the average user will be concerned with. \end{DoxyCompactList}\item 
+ \mbox{\hyperlink{namespacechaiscript_1_1detail}{chaiscript\+::detail}}
+\begin{DoxyCompactList}\small\item\em Classes and functions reserved for internal use. Items in this namespace are not supported. \end{DoxyCompactList}\item 
+ \mbox{\hyperlink{namespacechaiscript_1_1detail_1_1threading}{chaiscript\+::detail\+::threading}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{namespacechaiscript_1_1detail_1_1threading_afd762d40a136a0bfc95943c19cd1b27d}\label{namespacechaiscript_1_1detail_1_1threading_afd762d40a136a0bfc95943c19cd1b27d}} 
+{\footnotesize template$<$typename T $>$ }\\using {\bfseries chaiscript\+::detail\+::threading\+::unique\+\_\+lock} = std\+::unique\+\_\+lock$<$ T $>$
+\item 
+\mbox{\Hypertarget{namespacechaiscript_1_1detail_1_1threading_a54be59246b5785e6474f8918cc2be327}\label{namespacechaiscript_1_1detail_1_1threading_a54be59246b5785e6474f8918cc2be327}} 
+{\footnotesize template$<$typename T $>$ }\\using {\bfseries chaiscript\+::detail\+::threading\+::shared\+\_\+lock} = std\+::unique\+\_\+lock$<$ T $>$
+\item 
+\mbox{\Hypertarget{namespacechaiscript_1_1detail_1_1threading_a172fdc8b012854fdf543fcbea0a174e1}\label{namespacechaiscript_1_1detail_1_1threading_a172fdc8b012854fdf543fcbea0a174e1}} 
+{\footnotesize template$<$typename T $>$ }\\using {\bfseries chaiscript\+::detail\+::threading\+::lock\+\_\+guard} = std\+::lock\+\_\+guard$<$ T $>$
+\item 
+\mbox{\Hypertarget{namespacechaiscript_1_1detail_1_1threading_ada57647a106d82424f23b5351bf2d3cb}\label{namespacechaiscript_1_1detail_1_1threading_ada57647a106d82424f23b5351bf2d3cb}} 
+using {\bfseries chaiscript\+::detail\+::threading\+::shared\+\_\+mutex} = std\+::mutex
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This file contains code necessary for thread support in Chai\+Script. If the compiler definition CHAISCRIPT\+\_\+\+NO\+\_\+\+THREADS is defined then thread safety is disabled in Chai\+Script. This has the result that some code is faster, because mutex locks are not required. It also has the side effect that the \mbox{\hyperlink{classchaiscript_1_1ChaiScript}{chaiscript\+::\+Chai\+Script}} object may not be accessed from more than one thread simultaneously. 

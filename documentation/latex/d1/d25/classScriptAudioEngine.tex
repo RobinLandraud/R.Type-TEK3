@@ -1,0 +1,333 @@
+\hypertarget{classScriptAudioEngine}{}\doxysection{Script\+Audio\+Engine Class Reference}
+\label{classScriptAudioEngine}\index{ScriptAudioEngine@{ScriptAudioEngine}}
+
+
+A class that handle the \mbox{\hyperlink{classScript}{Script}} audio engine.  
+
+
+
+
+{\ttfamily \#include $<$Script\+Engine.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classScriptAudioEngine_a7d47f5c269a8c9bca0a605ad054a5de8}{Script\+Audio\+Engine}} (\mbox{\hyperlink{classAAudioEngine}{AAudio\+Engine}} \&audio\+Engine)
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classScriptAudioEngine_acf4dd1117003b34df9a3a12db041cde9}{create\+Sound}} (std\+::string name, std\+::string source)
+\begin{DoxyCompactList}\small\item\em Create a sound. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classScriptAudioEngine_a737536924cf7cb7fe4bccbe072220916}{play\+Sound}} (std\+::string name)
+\begin{DoxyCompactList}\small\item\em Play a sound. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classScriptAudioEngine_afefbe2669d89b76e378bba55f055d76b}{stop\+Sound}} (std\+::string name)
+\begin{DoxyCompactList}\small\item\em Stop a sound. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classScriptAudioEngine_a6c8a9110d626eae039746260837f60c9}{pause\+Sound}} (std\+::string name)
+\begin{DoxyCompactList}\small\item\em Pause a sound. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classScriptAudioEngine_a8ea7e82f6021889a344b1a9401b84756}{resume\+Sound}} (std\+::string name)
+\begin{DoxyCompactList}\small\item\em Resume a sound. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classScriptAudioEngine_a867fca4e3fae61658f3a1c3bfddfddf7}{set\+Sound\+Volume}} (std\+::string name, float volume)
+\begin{DoxyCompactList}\small\item\em Set the volume of a sound. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classScriptAudioEngine_ad3202aeebf5480e5916949b6b7098601}{set\+Sound\+Loop}} (std\+::string name, bool loop)
+\begin{DoxyCompactList}\small\item\em Set the loop of a sound. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classScriptAudioEngine_a015faef0fdbb12ddeb309912ebe38424}{set\+Sound\+Pitch}} (std\+::string name, float pitch)
+\begin{DoxyCompactList}\small\item\em Set the pitch of a sound. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classScriptAudioEngine_a8e4fe3b05f16a1da0ef7b33a2794a430}{create\+Music}} (std\+::string name, std\+::string source)
+\begin{DoxyCompactList}\small\item\em Create a music. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classScriptAudioEngine_a5f2d72ee5020d2dca716e1ce8a423905}{play\+Music}} (std\+::string name)
+\begin{DoxyCompactList}\small\item\em Play a music. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classScriptAudioEngine_a07611606870077ecb57f355bb4ddb4e6}{stop\+Music}} (std\+::string name)
+\begin{DoxyCompactList}\small\item\em Stop a music. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classScriptAudioEngine_a894747e5fd2f70707d91a12e14705d75}{pause\+Music}} (std\+::string name)
+\begin{DoxyCompactList}\small\item\em Pause a music. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classScriptAudioEngine_a555c4df06f812809208ee833f9ab0db2}{resume\+Music}} (std\+::string name)
+\begin{DoxyCompactList}\small\item\em Resume a music. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classScriptAudioEngine_a52b796fa870e376bda758cb74fb9106c}{set\+Music\+Volume}} (std\+::string name, float volume)
+\begin{DoxyCompactList}\small\item\em Set the volume of a music. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classScriptAudioEngine_a3224bae4e5266db6257d6d92d76fc249}{set\+Music\+Loop}} (std\+::string name, bool loop)
+\begin{DoxyCompactList}\small\item\em Set the loop of a music. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classScriptAudioEngine_a6baffa1401e827d346793df7c46c7cb5}{set\+Music\+Pitch}} (std\+::string name, float pitch)
+\begin{DoxyCompactList}\small\item\em Set the pitch of a music. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A class that handle the \mbox{\hyperlink{classScript}{Script}} audio engine. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classScriptAudioEngine_a7d47f5c269a8c9bca0a605ad054a5de8}\label{classScriptAudioEngine_a7d47f5c269a8c9bca0a605ad054a5de8}} 
+\index{ScriptAudioEngine@{ScriptAudioEngine}!ScriptAudioEngine@{ScriptAudioEngine}}
+\index{ScriptAudioEngine@{ScriptAudioEngine}!ScriptAudioEngine@{ScriptAudioEngine}}
+\doxysubsubsection{\texorpdfstring{ScriptAudioEngine()}{ScriptAudioEngine()}}
+{\footnotesize\ttfamily Script\+Audio\+Engine\+::\+Script\+Audio\+Engine (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classAAudioEngine}{AAudio\+Engine}} \&}]{audio\+Engine }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em audio\+Engine} & The audio engine \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classScriptAudioEngine_a8e4fe3b05f16a1da0ef7b33a2794a430}\label{classScriptAudioEngine_a8e4fe3b05f16a1da0ef7b33a2794a430}} 
+\index{ScriptAudioEngine@{ScriptAudioEngine}!createMusic@{createMusic}}
+\index{createMusic@{createMusic}!ScriptAudioEngine@{ScriptAudioEngine}}
+\doxysubsubsection{\texorpdfstring{createMusic()}{createMusic()}}
+{\footnotesize\ttfamily void Script\+Audio\+Engine\+::create\+Music (\begin{DoxyParamCaption}\item[{std\+::string}]{name,  }\item[{std\+::string}]{source }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Create a music. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The name of the music \\
+\hline
+{\em source} & The source of the music \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classScriptAudioEngine_acf4dd1117003b34df9a3a12db041cde9}\label{classScriptAudioEngine_acf4dd1117003b34df9a3a12db041cde9}} 
+\index{ScriptAudioEngine@{ScriptAudioEngine}!createSound@{createSound}}
+\index{createSound@{createSound}!ScriptAudioEngine@{ScriptAudioEngine}}
+\doxysubsubsection{\texorpdfstring{createSound()}{createSound()}}
+{\footnotesize\ttfamily void Script\+Audio\+Engine\+::create\+Sound (\begin{DoxyParamCaption}\item[{std\+::string}]{name,  }\item[{std\+::string}]{source }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Create a sound. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The name of the sound \\
+\hline
+{\em source} & The source of the sound \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classScriptAudioEngine_a894747e5fd2f70707d91a12e14705d75}\label{classScriptAudioEngine_a894747e5fd2f70707d91a12e14705d75}} 
+\index{ScriptAudioEngine@{ScriptAudioEngine}!pauseMusic@{pauseMusic}}
+\index{pauseMusic@{pauseMusic}!ScriptAudioEngine@{ScriptAudioEngine}}
+\doxysubsubsection{\texorpdfstring{pauseMusic()}{pauseMusic()}}
+{\footnotesize\ttfamily void Script\+Audio\+Engine\+::pause\+Music (\begin{DoxyParamCaption}\item[{std\+::string}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Pause a music. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The name of the music \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classScriptAudioEngine_a6c8a9110d626eae039746260837f60c9}\label{classScriptAudioEngine_a6c8a9110d626eae039746260837f60c9}} 
+\index{ScriptAudioEngine@{ScriptAudioEngine}!pauseSound@{pauseSound}}
+\index{pauseSound@{pauseSound}!ScriptAudioEngine@{ScriptAudioEngine}}
+\doxysubsubsection{\texorpdfstring{pauseSound()}{pauseSound()}}
+{\footnotesize\ttfamily void Script\+Audio\+Engine\+::pause\+Sound (\begin{DoxyParamCaption}\item[{std\+::string}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Pause a sound. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The name of the sound \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classScriptAudioEngine_a5f2d72ee5020d2dca716e1ce8a423905}\label{classScriptAudioEngine_a5f2d72ee5020d2dca716e1ce8a423905}} 
+\index{ScriptAudioEngine@{ScriptAudioEngine}!playMusic@{playMusic}}
+\index{playMusic@{playMusic}!ScriptAudioEngine@{ScriptAudioEngine}}
+\doxysubsubsection{\texorpdfstring{playMusic()}{playMusic()}}
+{\footnotesize\ttfamily void Script\+Audio\+Engine\+::play\+Music (\begin{DoxyParamCaption}\item[{std\+::string}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Play a music. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The name of the music \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classScriptAudioEngine_a737536924cf7cb7fe4bccbe072220916}\label{classScriptAudioEngine_a737536924cf7cb7fe4bccbe072220916}} 
+\index{ScriptAudioEngine@{ScriptAudioEngine}!playSound@{playSound}}
+\index{playSound@{playSound}!ScriptAudioEngine@{ScriptAudioEngine}}
+\doxysubsubsection{\texorpdfstring{playSound()}{playSound()}}
+{\footnotesize\ttfamily void Script\+Audio\+Engine\+::play\+Sound (\begin{DoxyParamCaption}\item[{std\+::string}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Play a sound. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The name of the sound \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classScriptAudioEngine_a555c4df06f812809208ee833f9ab0db2}\label{classScriptAudioEngine_a555c4df06f812809208ee833f9ab0db2}} 
+\index{ScriptAudioEngine@{ScriptAudioEngine}!resumeMusic@{resumeMusic}}
+\index{resumeMusic@{resumeMusic}!ScriptAudioEngine@{ScriptAudioEngine}}
+\doxysubsubsection{\texorpdfstring{resumeMusic()}{resumeMusic()}}
+{\footnotesize\ttfamily void Script\+Audio\+Engine\+::resume\+Music (\begin{DoxyParamCaption}\item[{std\+::string}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Resume a music. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The name of the music \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classScriptAudioEngine_a8ea7e82f6021889a344b1a9401b84756}\label{classScriptAudioEngine_a8ea7e82f6021889a344b1a9401b84756}} 
+\index{ScriptAudioEngine@{ScriptAudioEngine}!resumeSound@{resumeSound}}
+\index{resumeSound@{resumeSound}!ScriptAudioEngine@{ScriptAudioEngine}}
+\doxysubsubsection{\texorpdfstring{resumeSound()}{resumeSound()}}
+{\footnotesize\ttfamily void Script\+Audio\+Engine\+::resume\+Sound (\begin{DoxyParamCaption}\item[{std\+::string}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Resume a sound. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The name of the sound \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classScriptAudioEngine_a3224bae4e5266db6257d6d92d76fc249}\label{classScriptAudioEngine_a3224bae4e5266db6257d6d92d76fc249}} 
+\index{ScriptAudioEngine@{ScriptAudioEngine}!setMusicLoop@{setMusicLoop}}
+\index{setMusicLoop@{setMusicLoop}!ScriptAudioEngine@{ScriptAudioEngine}}
+\doxysubsubsection{\texorpdfstring{setMusicLoop()}{setMusicLoop()}}
+{\footnotesize\ttfamily void Script\+Audio\+Engine\+::set\+Music\+Loop (\begin{DoxyParamCaption}\item[{std\+::string}]{name,  }\item[{bool}]{loop }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Set the loop of a music. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The name of the music \\
+\hline
+{\em loop} & The loop of the music \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classScriptAudioEngine_a6baffa1401e827d346793df7c46c7cb5}\label{classScriptAudioEngine_a6baffa1401e827d346793df7c46c7cb5}} 
+\index{ScriptAudioEngine@{ScriptAudioEngine}!setMusicPitch@{setMusicPitch}}
+\index{setMusicPitch@{setMusicPitch}!ScriptAudioEngine@{ScriptAudioEngine}}
+\doxysubsubsection{\texorpdfstring{setMusicPitch()}{setMusicPitch()}}
+{\footnotesize\ttfamily void Script\+Audio\+Engine\+::set\+Music\+Pitch (\begin{DoxyParamCaption}\item[{std\+::string}]{name,  }\item[{float}]{pitch }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Set the pitch of a music. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The name of the music \\
+\hline
+{\em pitch} & The pitch of the music \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classScriptAudioEngine_a52b796fa870e376bda758cb74fb9106c}\label{classScriptAudioEngine_a52b796fa870e376bda758cb74fb9106c}} 
+\index{ScriptAudioEngine@{ScriptAudioEngine}!setMusicVolume@{setMusicVolume}}
+\index{setMusicVolume@{setMusicVolume}!ScriptAudioEngine@{ScriptAudioEngine}}
+\doxysubsubsection{\texorpdfstring{setMusicVolume()}{setMusicVolume()}}
+{\footnotesize\ttfamily void Script\+Audio\+Engine\+::set\+Music\+Volume (\begin{DoxyParamCaption}\item[{std\+::string}]{name,  }\item[{float}]{volume }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Set the volume of a music. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The name of the music \\
+\hline
+{\em volume} & The volume of the music \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classScriptAudioEngine_ad3202aeebf5480e5916949b6b7098601}\label{classScriptAudioEngine_ad3202aeebf5480e5916949b6b7098601}} 
+\index{ScriptAudioEngine@{ScriptAudioEngine}!setSoundLoop@{setSoundLoop}}
+\index{setSoundLoop@{setSoundLoop}!ScriptAudioEngine@{ScriptAudioEngine}}
+\doxysubsubsection{\texorpdfstring{setSoundLoop()}{setSoundLoop()}}
+{\footnotesize\ttfamily void Script\+Audio\+Engine\+::set\+Sound\+Loop (\begin{DoxyParamCaption}\item[{std\+::string}]{name,  }\item[{bool}]{loop }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Set the loop of a sound. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The name of the sound \\
+\hline
+{\em loop} & The loop of the sound \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classScriptAudioEngine_a015faef0fdbb12ddeb309912ebe38424}\label{classScriptAudioEngine_a015faef0fdbb12ddeb309912ebe38424}} 
+\index{ScriptAudioEngine@{ScriptAudioEngine}!setSoundPitch@{setSoundPitch}}
+\index{setSoundPitch@{setSoundPitch}!ScriptAudioEngine@{ScriptAudioEngine}}
+\doxysubsubsection{\texorpdfstring{setSoundPitch()}{setSoundPitch()}}
+{\footnotesize\ttfamily void Script\+Audio\+Engine\+::set\+Sound\+Pitch (\begin{DoxyParamCaption}\item[{std\+::string}]{name,  }\item[{float}]{pitch }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Set the pitch of a sound. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The name of the sound \\
+\hline
+{\em pitch} & The pitch of the sound \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classScriptAudioEngine_a867fca4e3fae61658f3a1c3bfddfddf7}\label{classScriptAudioEngine_a867fca4e3fae61658f3a1c3bfddfddf7}} 
+\index{ScriptAudioEngine@{ScriptAudioEngine}!setSoundVolume@{setSoundVolume}}
+\index{setSoundVolume@{setSoundVolume}!ScriptAudioEngine@{ScriptAudioEngine}}
+\doxysubsubsection{\texorpdfstring{setSoundVolume()}{setSoundVolume()}}
+{\footnotesize\ttfamily void Script\+Audio\+Engine\+::set\+Sound\+Volume (\begin{DoxyParamCaption}\item[{std\+::string}]{name,  }\item[{float}]{volume }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Set the volume of a sound. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The name of the sound \\
+\hline
+{\em volume} & The volume of the sound \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classScriptAudioEngine_a07611606870077ecb57f355bb4ddb4e6}\label{classScriptAudioEngine_a07611606870077ecb57f355bb4ddb4e6}} 
+\index{ScriptAudioEngine@{ScriptAudioEngine}!stopMusic@{stopMusic}}
+\index{stopMusic@{stopMusic}!ScriptAudioEngine@{ScriptAudioEngine}}
+\doxysubsubsection{\texorpdfstring{stopMusic()}{stopMusic()}}
+{\footnotesize\ttfamily void Script\+Audio\+Engine\+::stop\+Music (\begin{DoxyParamCaption}\item[{std\+::string}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Stop a music. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The name of the music \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classScriptAudioEngine_afefbe2669d89b76e378bba55f055d76b}\label{classScriptAudioEngine_afefbe2669d89b76e378bba55f055d76b}} 
+\index{ScriptAudioEngine@{ScriptAudioEngine}!stopSound@{stopSound}}
+\index{stopSound@{stopSound}!ScriptAudioEngine@{ScriptAudioEngine}}
+\doxysubsubsection{\texorpdfstring{stopSound()}{stopSound()}}
+{\footnotesize\ttfamily void Script\+Audio\+Engine\+::stop\+Sound (\begin{DoxyParamCaption}\item[{std\+::string}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Stop a sound. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The name of the sound \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Client/\+Script/Script\+Engine.\+hpp\end{DoxyCompactItemize}

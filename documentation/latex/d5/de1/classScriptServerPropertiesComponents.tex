@@ -1,0 +1,214 @@
+\hypertarget{classScriptServerPropertiesComponents}{}\doxysection{Script\+Server\+Properties\+Components Class Reference}
+\label{classScriptServerPropertiesComponents}\index{ScriptServerPropertiesComponents@{ScriptServerPropertiesComponents}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classScriptServerPropertiesComponents_aa524b67b7f174939c12dc4f79df6c415}{Script\+Server\+Properties\+Components}} (\mbox{\hyperlink{classregistry}{registry}} \&reg)
+\begin{DoxyCompactList}\small\item\em The constructor of the class. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classScriptServerPropertiesComponents_a1abaabd98d2f087b0dacd46bfeb75dfa}{$\sim$\+Script\+Server\+Properties\+Components}} ()=default
+\item 
+void \mbox{\hyperlink{classScriptServerPropertiesComponents_a3812e73ea8265717b26d752327a61a66}{add}} (size\+\_\+t ent\+\_\+id, size\+\_\+t server\+\_\+id)
+\begin{DoxyCompactList}\small\item\em Add a server properties component to an entity. \end{DoxyCompactList}\item 
+size\+\_\+t \mbox{\hyperlink{classScriptServerPropertiesComponents_a61c8ba1099723e4ed86c6145d745de3f}{size}} ()
+\begin{DoxyCompactList}\small\item\em Get the number of script server properties components. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classServerPropertiesComponent}{Server\+Properties\+Component}} \& \mbox{\hyperlink{classScriptServerPropertiesComponents_a8501df24bf3d3de5069f2447e5a4fae8}{at}} (size\+\_\+t index)
+\begin{DoxyCompactList}\small\item\em Get a script server properties component at a given index. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classScriptServerPropertiesComponents_a279764f59bb7f73d9078c4f7caf025f8}{exists}} (size\+\_\+t index)
+\begin{DoxyCompactList}\small\item\em Check if a script transform component exists at a given index. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classScriptServerPropertiesComponents_ad09defe07a34ee1cea1d96f7b89f23cd}{is\+Update\+At}} (size\+\_\+t index)
+\begin{DoxyCompactList}\small\item\em Check if a script server properties component is updated at a given index. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classScriptServerPropertiesComponents_a7fdc70a741e925fc243bbe485fe3423d}{set\+Method\+List\+At}} (size\+\_\+t index, std\+::vector$<$ \mbox{\hyperlink{structServerPropertiesComponent_1_1BufferMethod}{Server\+Properties\+Component\+::\+Buffer\+Method}} $>$ method\+\_\+list)
+\begin{DoxyCompactList}\small\item\em Set the method list of a script server properties component at a given index. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classScriptServerPropertiesComponents_a03b2bd6689abf8ed5df8e53ff8ae4a58}{add\+Method\+At}} (size\+\_\+t index, \mbox{\hyperlink{structServerPropertiesComponent_1_1BufferMethod}{Server\+Properties\+Component\+::\+Buffer\+Method}} method)
+\begin{DoxyCompactList}\small\item\em Add a method to a script server properties component at a given index. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classScriptServerPropertiesComponents_ab6e80e69911434432af5a449c0090e72}{Build\+And\+Add\+Method\+At}} (size\+\_\+t index, u\+\_\+int64\+\_\+t header, std\+::string buffer)
+\begin{DoxyCompactList}\small\item\em Build and add a method to a script server properties component at a given index. \end{DoxyCompactList}\item 
+size\+\_\+t \mbox{\hyperlink{classScriptServerPropertiesComponents_a99990224a79f4c91ddaa67fd7499676a}{get\+Id\+At}} (size\+\_\+t index)
+\begin{DoxyCompactList}\small\item\em Get the id of a script server properties component at a given index. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classScriptServerPropertiesComponents_aa524b67b7f174939c12dc4f79df6c415}\label{classScriptServerPropertiesComponents_aa524b67b7f174939c12dc4f79df6c415}} 
+\index{ScriptServerPropertiesComponents@{ScriptServerPropertiesComponents}!ScriptServerPropertiesComponents@{ScriptServerPropertiesComponents}}
+\index{ScriptServerPropertiesComponents@{ScriptServerPropertiesComponents}!ScriptServerPropertiesComponents@{ScriptServerPropertiesComponents}}
+\doxysubsubsection{\texorpdfstring{ScriptServerPropertiesComponents()}{ScriptServerPropertiesComponents()}}
+{\footnotesize\ttfamily Script\+Server\+Properties\+Components\+::\+Script\+Server\+Properties\+Components (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classregistry}{registry}} \&}]{reg }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+The constructor of the class. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em reg} & The registry \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classScriptServerPropertiesComponents_a1abaabd98d2f087b0dacd46bfeb75dfa}\label{classScriptServerPropertiesComponents_a1abaabd98d2f087b0dacd46bfeb75dfa}} 
+\index{ScriptServerPropertiesComponents@{ScriptServerPropertiesComponents}!````~ScriptServerPropertiesComponents@{$\sim$ScriptServerPropertiesComponents}}
+\index{````~ScriptServerPropertiesComponents@{$\sim$ScriptServerPropertiesComponents}!ScriptServerPropertiesComponents@{ScriptServerPropertiesComponents}}
+\doxysubsubsection{\texorpdfstring{$\sim$ScriptServerPropertiesComponents()}{~ScriptServerPropertiesComponents()}}
+{\footnotesize\ttfamily Script\+Server\+Properties\+Components\+::$\sim$\+Script\+Server\+Properties\+Components (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+Default destructor 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classScriptServerPropertiesComponents_a3812e73ea8265717b26d752327a61a66}\label{classScriptServerPropertiesComponents_a3812e73ea8265717b26d752327a61a66}} 
+\index{ScriptServerPropertiesComponents@{ScriptServerPropertiesComponents}!add@{add}}
+\index{add@{add}!ScriptServerPropertiesComponents@{ScriptServerPropertiesComponents}}
+\doxysubsubsection{\texorpdfstring{add()}{add()}}
+{\footnotesize\ttfamily void Script\+Server\+Properties\+Components\+::add (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{ent\+\_\+id,  }\item[{size\+\_\+t}]{server\+\_\+id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Add a server properties component to an entity. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ent\+\_\+id} & The entity id \\
+\hline
+{\em server\+\_\+id} & The server id \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classScriptServerPropertiesComponents_a03b2bd6689abf8ed5df8e53ff8ae4a58}\label{classScriptServerPropertiesComponents_a03b2bd6689abf8ed5df8e53ff8ae4a58}} 
+\index{ScriptServerPropertiesComponents@{ScriptServerPropertiesComponents}!addMethodAt@{addMethodAt}}
+\index{addMethodAt@{addMethodAt}!ScriptServerPropertiesComponents@{ScriptServerPropertiesComponents}}
+\doxysubsubsection{\texorpdfstring{addMethodAt()}{addMethodAt()}}
+{\footnotesize\ttfamily void Script\+Server\+Properties\+Components\+::add\+Method\+At (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{index,  }\item[{\mbox{\hyperlink{structServerPropertiesComponent_1_1BufferMethod}{Server\+Properties\+Component\+::\+Buffer\+Method}}}]{method }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Add a method to a script server properties component at a given index. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & The index \\
+\hline
+{\em method} & The method \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classScriptServerPropertiesComponents_a8501df24bf3d3de5069f2447e5a4fae8}\label{classScriptServerPropertiesComponents_a8501df24bf3d3de5069f2447e5a4fae8}} 
+\index{ScriptServerPropertiesComponents@{ScriptServerPropertiesComponents}!at@{at}}
+\index{at@{at}!ScriptServerPropertiesComponents@{ScriptServerPropertiesComponents}}
+\doxysubsubsection{\texorpdfstring{at()}{at()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classServerPropertiesComponent}{Server\+Properties\+Component}} \& Script\+Server\+Properties\+Components\+::at (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get a script server properties component at a given index. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & The index \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The script server properties component 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classScriptServerPropertiesComponents_ab6e80e69911434432af5a449c0090e72}\label{classScriptServerPropertiesComponents_ab6e80e69911434432af5a449c0090e72}} 
+\index{ScriptServerPropertiesComponents@{ScriptServerPropertiesComponents}!BuildAndAddMethodAt@{BuildAndAddMethodAt}}
+\index{BuildAndAddMethodAt@{BuildAndAddMethodAt}!ScriptServerPropertiesComponents@{ScriptServerPropertiesComponents}}
+\doxysubsubsection{\texorpdfstring{BuildAndAddMethodAt()}{BuildAndAddMethodAt()}}
+{\footnotesize\ttfamily void Script\+Server\+Properties\+Components\+::\+Build\+And\+Add\+Method\+At (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{index,  }\item[{u\+\_\+int64\+\_\+t}]{header,  }\item[{std\+::string}]{buffer }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Build and add a method to a script server properties component at a given index. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & The index \\
+\hline
+{\em header} & The header \\
+\hline
+{\em buffer} & The buffer \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classScriptServerPropertiesComponents_a279764f59bb7f73d9078c4f7caf025f8}\label{classScriptServerPropertiesComponents_a279764f59bb7f73d9078c4f7caf025f8}} 
+\index{ScriptServerPropertiesComponents@{ScriptServerPropertiesComponents}!exists@{exists}}
+\index{exists@{exists}!ScriptServerPropertiesComponents@{ScriptServerPropertiesComponents}}
+\doxysubsubsection{\texorpdfstring{exists()}{exists()}}
+{\footnotesize\ttfamily bool Script\+Server\+Properties\+Components\+::exists (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Check if a script transform component exists at a given index. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & The index \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the script transform component exists, false otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classScriptServerPropertiesComponents_a99990224a79f4c91ddaa67fd7499676a}\label{classScriptServerPropertiesComponents_a99990224a79f4c91ddaa67fd7499676a}} 
+\index{ScriptServerPropertiesComponents@{ScriptServerPropertiesComponents}!getIdAt@{getIdAt}}
+\index{getIdAt@{getIdAt}!ScriptServerPropertiesComponents@{ScriptServerPropertiesComponents}}
+\doxysubsubsection{\texorpdfstring{getIdAt()}{getIdAt()}}
+{\footnotesize\ttfamily size\+\_\+t Script\+Server\+Properties\+Components\+::get\+Id\+At (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the id of a script server properties component at a given index. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & The index \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The id 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classScriptServerPropertiesComponents_ad09defe07a34ee1cea1d96f7b89f23cd}\label{classScriptServerPropertiesComponents_ad09defe07a34ee1cea1d96f7b89f23cd}} 
+\index{ScriptServerPropertiesComponents@{ScriptServerPropertiesComponents}!isUpdateAt@{isUpdateAt}}
+\index{isUpdateAt@{isUpdateAt}!ScriptServerPropertiesComponents@{ScriptServerPropertiesComponents}}
+\doxysubsubsection{\texorpdfstring{isUpdateAt()}{isUpdateAt()}}
+{\footnotesize\ttfamily bool Script\+Server\+Properties\+Components\+::is\+Update\+At (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Check if a script server properties component is updated at a given index. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & The index \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the script server properties component is updated, false otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classScriptServerPropertiesComponents_a7fdc70a741e925fc243bbe485fe3423d}\label{classScriptServerPropertiesComponents_a7fdc70a741e925fc243bbe485fe3423d}} 
+\index{ScriptServerPropertiesComponents@{ScriptServerPropertiesComponents}!setMethodListAt@{setMethodListAt}}
+\index{setMethodListAt@{setMethodListAt}!ScriptServerPropertiesComponents@{ScriptServerPropertiesComponents}}
+\doxysubsubsection{\texorpdfstring{setMethodListAt()}{setMethodListAt()}}
+{\footnotesize\ttfamily void Script\+Server\+Properties\+Components\+::set\+Method\+List\+At (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{index,  }\item[{std\+::vector$<$ \mbox{\hyperlink{structServerPropertiesComponent_1_1BufferMethod}{Server\+Properties\+Component\+::\+Buffer\+Method}} $>$}]{method\+\_\+list }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Set the method list of a script server properties component at a given index. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & The index \\
+\hline
+{\em method\+\_\+list} & The method list \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classScriptServerPropertiesComponents_a61c8ba1099723e4ed86c6145d745de3f}\label{classScriptServerPropertiesComponents_a61c8ba1099723e4ed86c6145d745de3f}} 
+\index{ScriptServerPropertiesComponents@{ScriptServerPropertiesComponents}!size@{size}}
+\index{size@{size}!ScriptServerPropertiesComponents@{ScriptServerPropertiesComponents}}
+\doxysubsubsection{\texorpdfstring{size()}{size()}}
+{\footnotesize\ttfamily size\+\_\+t Script\+Server\+Properties\+Components\+::size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the number of script server properties components. 
+
+\begin{DoxyReturn}{Returns}
+The number of script server properties components 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Client/\+Script/Script\+Server\+Properties\+Components.\+hpp\end{DoxyCompactItemize}

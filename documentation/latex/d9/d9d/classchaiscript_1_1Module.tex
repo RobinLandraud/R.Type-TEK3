@@ -1,0 +1,43 @@
+\hypertarget{classchaiscript_1_1Module}{}\doxysection{chaiscript\+::Module Class Reference}
+\label{classchaiscript_1_1Module}\index{chaiscript::Module@{chaiscript::Module}}
+
+
+Holds a collection of \mbox{\hyperlink{classchaiscript_1_1ChaiScript}{Chai\+Script}} settings which can be applied to the \mbox{\hyperlink{classchaiscript_1_1ChaiScript}{Chai\+Script}} runtime. Used to implement loadable module support.  
+
+
+
+
+{\ttfamily \#include $<$dispatchkit.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classchaiscript_1_1Module_a1ee3bc70085f19a571195008fc4b74ab}\label{classchaiscript_1_1Module_a1ee3bc70085f19a571195008fc4b74ab}} 
+\mbox{\hyperlink{classchaiscript_1_1Module}{Module}} \& {\bfseries add} (\mbox{\hyperlink{classchaiscript_1_1Type__Info}{Type\+\_\+\+Info}} ti, std\+::string name)
+\item 
+\mbox{\Hypertarget{classchaiscript_1_1Module_a8d0261f6f781c26690aca8d35543d762}\label{classchaiscript_1_1Module_a8d0261f6f781c26690aca8d35543d762}} 
+\mbox{\hyperlink{classchaiscript_1_1Module}{Module}} \& {\bfseries add} (Type\+\_\+\+Conversion d)
+\item 
+\mbox{\Hypertarget{classchaiscript_1_1Module_a5722dac5643b004053cdeda15a45b27a}\label{classchaiscript_1_1Module_a5722dac5643b004053cdeda15a45b27a}} 
+\mbox{\hyperlink{classchaiscript_1_1Module}{Module}} \& {\bfseries add} (\mbox{\hyperlink{namespacechaiscript_a0c4629731b82bec640c9b485efca2e8a}{Proxy\+\_\+\+Function}} f, std\+::string name)
+\item 
+\mbox{\Hypertarget{classchaiscript_1_1Module_a3fa74c390a3ffea1328344e3c4ee2058}\label{classchaiscript_1_1Module_a3fa74c390a3ffea1328344e3c4ee2058}} 
+\mbox{\hyperlink{classchaiscript_1_1Module}{Module}} \& {\bfseries add\+\_\+global\+\_\+const} (\mbox{\hyperlink{classchaiscript_1_1Boxed__Value}{Boxed\+\_\+\+Value}} t\+\_\+bv, std\+::string t\+\_\+name)
+\item 
+\mbox{\Hypertarget{classchaiscript_1_1Module_ac7f8fddfc852b5309c51d1055efafe9f}\label{classchaiscript_1_1Module_ac7f8fddfc852b5309c51d1055efafe9f}} 
+\mbox{\hyperlink{classchaiscript_1_1Module}{Module}} \& {\bfseries eval} (const std\+::string \&str)
+\item 
+\mbox{\Hypertarget{classchaiscript_1_1Module_a7ca2879b8771dacf5fbfee6e76f232b8}\label{classchaiscript_1_1Module_a7ca2879b8771dacf5fbfee6e76f232b8}} 
+{\footnotesize template$<$typename Eval , typename Engine $>$ }\\void {\bfseries apply} (Eval \&t\+\_\+eval, Engine \&t\+\_\+engine) const
+\item 
+\mbox{\Hypertarget{classchaiscript_1_1Module_a9e2348f0dde384a135a23d7ff0f4ce3f}\label{classchaiscript_1_1Module_a9e2348f0dde384a135a23d7ff0f4ce3f}} 
+bool {\bfseries has\+\_\+function} (const \mbox{\hyperlink{namespacechaiscript_a0c4629731b82bec640c9b485efca2e8a}{Proxy\+\_\+\+Function}} \&new\+\_\+f, const std\+::string \&name)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Holds a collection of \mbox{\hyperlink{classchaiscript_1_1ChaiScript}{Chai\+Script}} settings which can be applied to the \mbox{\hyperlink{classchaiscript_1_1ChaiScript}{Chai\+Script}} runtime. Used to implement loadable module support. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Chai\+Script-\/6.\+1.\+0/include/chaiscript/dispatchkit/dispatchkit.\+hpp\end{DoxyCompactItemize}
